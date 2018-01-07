@@ -1,0 +1,211 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de organizar las animaciones a un nivel aún mayor que las posibilidades solas de "Mixer",
+
+con la modalidad de Animation Layer, podemos ampliar mucho más las posibilidades de animación, otros 
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Workflow:
+_________
+
+
+
+	_requerimietno:
+
+		_primero seleccionamos un objeto el cuál ya debe de tener una animación creada
+
+
+	_requerimiento:
+
+		_luego seleccionamos este y vamos al panel "KP/L", "Animation Panel", así veremos que ya existe una 
+
+		layer/capa, de "animación base", la cuál, corresponderá a la animacion que el objeto deseado ya debe de 
+
+		tener y, sobre la cuál, vamos ha realizar las nuevas capas de modificación
+
+
+	_consideración:
+	
+		_hay que considerar que las propiedades animables en mútiples capas de animación agregadas sober una
+
+		layer/capa base, son las que hemos agregado en un comienzo en la "capa base"
+
+
+		_esto quiere decir que si hacemo "Marked/marcado", de ciertos elemento ha animar en la capa base, serán
+
+		sólo estos elementos los que podremos animar en futura layers/capas, agregadas para hacer modificaciones
+
+
+		_por esta razón, debemos tener precaución al seleccionar las propiedades de elemento a incluir en la
+
+		animación base
+
+		
+		_así, como podemos ver, sería mejor incluir todos los atributos o la mmayor cantidad posible para
+ 
+		preveer futuras ajustes extras que se cotemplen posteriormente
+
+
+
+	_New Layer:
+
+		_con el objeto seleccionado podemos hacer "mouse left click", sobre el ícono "Create Animation Layer" en 		
+		el panel "Animation Layer", para así, crear una nueva capa de modificaicón
+
+
+	_Layer Active:
+
+		_podemos hacer una layer/capa, activa con solo seleccionarla, así, aparecerá sobre ésta un 
+
+		recuadro/Stroke, de color blando, esto nos indicará que la capa esta activa y seleccionada y lista 
+
+		para usar ó hacer animaciones sobre esta
+
+
+	_Layers Keyframes:
+
+		_podremos ver que hacer animaciones sobre una capa diferente a la "layer base", podremos ver que los
+
+		keyframes, se representan a través, de un color diferente en el timeline, esto nos permite diferenciar
+
+		de que estamos trabajando en una capa diferente de la capa base, de una manera visual
+
+
+	_New Timeliene per Layer:
+
+		_podremos ver también, que al seleccionar y activar una nueva capa y hacer keyframes, sobre el timeline,
+
+		de esta nueva layer, el timeline, se encontrará "vacío", osea sin los fotogramas correspondientes a la
+
+		layer base, ya que para cada layer, existe una timelene, propia, esto nos ayuda a tener una visulización
+
+		menos confusa al tener todos los fotogramas de todas las capas en una sola timelime
+
+
+	_Animation Mixer:
+
+		_también, podremos abrir el panel "Animation Mixer", "Alt + 0", para ajustar los weights, de las layers,
+
+		creadas en relación a la layer base
+
+	
+		_también, podemos hacer ajustes de offset, mesclas, cortes, entre otros tipos de ajustes dedicados
+	
+	
+	
+	_Setting Keysfrma - Zero:
+
+		_tenemos la posibilidad en el trabajo de ajuste con "animation layers", de utilizar una función al 
+
+		editar 	y crear animación a través, de keyframes en una nueva layer/capa, en el panel de animation 
+
+		layer, de hacer un "bypass", sobre un keyframe, animado en una nueva layer/capa, para así, utilizar la
+
+		función de "Save Zero Key", esta opción nos permite apagar la acción ó influencia de modificación de un 
+
+		keyframe, de una nueva capa para que así, sólo tenga influencia la capa base en un área determinada, 
+		esto es especialmente útil cuando la animación se complica y consideramos que es mejor hacer un bypass, 
+
+		de animación para que la animación cobre su "flow original", para luego seguir animando y haciendo 
+
+		ajustes respectivos, la opción de "Save Zero Key", se representa en el panel con un "0"
+
+
+
+	_Animation Editor FCurve:
+
+		_tenemos la posibilidad de también, de hacer ajustes no sólo en el panel "Animation Mixer", de nuevas
+
+		layers/capas, creadas si no, también, en el panel "Animation Editor FCurve Editor", de las capas nuevas
+
+		agregadas posteriormente, para esto contamos con dos diferentes métodos, estos son:
+
+
+			_hacer "mouse right click/", y escoger la opción de "Animation Editor..."
+
+
+			_también, disponemos de la opción en el panel "Amination Mixer", haciendo "mouse right click/",
+
+			sobre el click, deseado (no en el click base), y selecciona la opción de "Animation Editor"
+
+
+		así, podremos ver que se abre el panel "Animation Editor FCurve Editor", con la información solamente
+
+		de los keyframes, de la respectiva layer/capa, seleccionada
+
+
+
+	_Weighting the Layer Clips in the Mixer
+
+		_podemos ajustar el "weight/peso", ó influencia de una layer/cada, sobre las de "abajo", ó inferiores
+
+		a través, de un "slider", en el extremo derecho de cada click, en el panel "Amination Mixer", este
+
+		slider, tiene un fuelle de acción que va desde "0-1"
+
+
+		_así, si colocamos el "Slider", en "0", el click/layer/capa, no tendrá acción ó influencia sobre la 
+
+		estructura de layers/capas, más si colocamos un valor total de "1", la influencia de animación será
+
+		total sobre la estructura de animación de capas de animación
+
+
+
+	Layers functions:
+
+		_las layers/capas, creadas tienen diferentes funciones de acción las cuales podemos activar ó desactivar
+
+		dinámicamente en relación a nuestras necesidades en un momento determinado, estas son:
+
+
+			_M/Mute:
+
+				_podemos desactivar un layer/cada, temporalmente para hacer comparación y repercuciones
+
+				de la acción de un layer/capa, sobre la estructura de capas existentes
+
+
+			_S/Solo:
+
+				_podemos hacer un "solo", de capa para así, poder ver esa única acción de la capa 
+
+				seleccionada funcionando sin la influencia de las demás capas sobre esta capa aislada
+
+
+			_G/Ghost:
+
+				_tenemos la posibilidad de ver la trayectoria temporal del contenido animado de una 
+
+				layer/capa, determinada, de esta manera podremos ver el "flow", de animación de la capa
+
+
+				_para esto primero debemos activar la opción en el "viewport/Animation Ghosting"
+
+
+				_también, debemos activar la opción en el panel "Animation Mixer/Mix
+
+				/Animation Mixer Properties/Mix Current Options/", y activamos la opción "Ghost".
+
+				así, como también, podemos indicar un color de visualización para la capa base ó general
+		
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------
+
+
+
+

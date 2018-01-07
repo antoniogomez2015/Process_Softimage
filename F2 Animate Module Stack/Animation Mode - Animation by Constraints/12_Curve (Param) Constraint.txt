@@ -1,0 +1,162 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de vincular un objeto a las spliner/curves, que conforman una superficie/surface,
+
+NURBS, la cuál, servirá de superficie constraint, así, lograremos que el objeto/motive, se siña y limite
+
+a al paht/trayectoria, de la spline seleccionada
+
+
+NOTA:	es importante el sentido de spline, para el seguimiento sobre la superficie y las animaciones
+
+	posteriores, esto debe contemplarse a la hora de la creación de splines/curves, así, como en
+
+	su edición
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Surface (Param):
+________________
+
+
+
+	_priemro procedemos a crear las "spline/curves", que harán de "path/trayectoria", como guías de la superficie
+
+	ó "surface"
+
+
+	_luego procedemos a crear la superficie/surface, para esto, vamos ha "Model/Create/Surf. Mesh/Loft", así,
+
+	nos aparecerá un "picker", con el cuál, tendremos que seleccionar la primera spline/curve, y lugo la segunda
+
+	ó más de existir spline/curves, y, para finalizar hacemos "mouse right click", así, se creará una surface
+
+	nurbs, entre la ubicación de las splines/curves, seleccionadas
+
+
+	_ahora vamos a relacionar la spline/curve, con el objeto deseado, para esto, primero seleccionamos 
+
+	el objeto desedo/motive, y, con este seleccionamos vamos ha "Constraint/Curve (Param)", así, nos aparecerá
+
+	in "picker", con el cuál, tendremos que seleccionar la "spline", deseada
+
+
+	_así, quedará el sistema creado y ambos elementos relacionados, tanto el objecto como la surface, ó superficie
+
+	y podremos ver que se han agregado al elemento mesh/motive, en el "Explorer/Mesh-Motive/Polygon/Kinematics
+
+	/Constraints/", el elemento "Curve Cns", con el cuál, podremos controlar todo el sistema:
+
+
+
+----------------------------------------------------------------------------------------------------------------
+
+
+Surface:
+________
+
+
+	_Active:
+
+		_podemos activar ó desactivar el constraint
+
+
+	_Blend Weight:
+
+		_podemos ajustar la influencia ejercida del constraint
+
+
+	_U Location:
+
+		_este valor permite ajustar el desplazamiento sobre la cordenada "U", que el la que nos permitirá
+
+		realizar la animación del objeto/motive, sobre la superficie, en un desplazamineto hacia adelante ó
+
+		hacia atras, ó positivo y negativo
+
+
+	_v Location:
+
+		_este valor permite hacer ajuste de la posición objeto/motive, sobre la superficie, ej: pemrite
+
+		recolocar el objeto en la mitad de la superficie para que este quede en el centro de la surface,
+
+		antes de realizar la animación
+
+
+	Attach Point - Constrained Object:
+
+
+	_Affected by Orientation:
+
+		_podemos indicar que si el elemento "hijo/constraint" será afectado por la
+
+		orientación del elemento controlador al elemento "hijo/constraint", hacer
+
+		"Rotation", lo hará con la referencia de orientación del elemento controlador
+
+		no, con la su propia referencia en su punto centro ó donde este su "Pivot"
+
+
+		_Affected by Scalling:
+
+		_podemos indicar que si el elemento "hijo/constraint" será afectado por la
+
+		orientación del elemento controlador al elemento "hijo/constraint", hacer
+
+		"Scale", lo hará con la referencia de orientación del elemento controlador
+
+		no, con la su propia referencia en su punto centro ó donde este su "Pivot"
+
+
+		_X,Y,Z:
+
+			_podemos desplazar el elemento "hijo/constraint", al este tomar la posición
+
+			del elemento controlador, haciendo "offset", del elemento hijo/constraint, para
+
+			así, desplazarlo hasta una posición deseada
+
+
+		Coupling:
+
+			_RIGID:
+
+				_método más estricto de interpolación del constraint
+
+
+			_SOFT:
+
+				_método más suavizado de interpolación del constraint
+
+
+
+Tangency:
+_________
+
+
+	_Active:
+
+		_podemos activar las opciones de alineamiento personalizado
+
+
+	_X,Y,Z +/-:
+
+		_podemos seleccionar la cordenada de trabajo del alineamiento así su orientación,
+
+		si será positiva ó negativa según los cuadrantes de orientación
+
+
+Up Vector:
+__________
+
+
+--------------------------------------------------------------------------------------------------------------

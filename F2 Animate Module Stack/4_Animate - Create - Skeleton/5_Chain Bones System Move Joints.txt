@@ -1,0 +1,49 @@
+
+
+
+Digital Tutors Introduction to Rigging in XSI 2008
+
+
+
+	Skeleton System
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+Move Joint/Branch:
+__________________
+
+
+
+
+	_para tener un mayor control y manejo de las cadenas de huesos y sus ubicaciones y encajes con
+
+	las meshes, del character, en sus diferentes kinemáticas de las diferentes partes del cuerpo
+
+	disponemos de una herramienta para mover los joints, así, como su longitud ó tamaño individual
+
+
+	_para esto, vamos ha "Animate-Model/Create/Skeleton/", y activamos la herramienta de:
+
+	"Move Joint/Branch", ó a través, de su shortcut: "Control + J"
+
+
+	_de esta manera podremos hacer "mouse left click", sobre un bone, ó articulación y moverla ha un
+
+	sitio diferente de forma independiente sin tener que mover el resto de la cadena de huesos
+
+
+	_más también, disponemos de la opción para hacer correcciones en las posiciones de los bones, en 
+
+	las cadenas de huesos de poder mover un respectivo bone, más sus bones, emparentados ó hijos para
+
+	esto, debemos hacer "mouse midle click", sobre el bone, deseado así, se seleccionarán también, los
+
+	bones emparentados ó hijos, esto nos permitirá hacer ediciones más rápidas y avanzadas sobre las 
+	
+	meshes, respectivas a nuestros characteres

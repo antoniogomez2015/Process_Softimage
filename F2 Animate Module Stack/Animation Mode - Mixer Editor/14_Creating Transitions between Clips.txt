@@ -1,0 +1,186 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de hacer animación "NoLinear", ó animación no lineal, a través, del modo de animación
+
+avanzado de "animación mixer", el cuál, permite diferentes tipos de métodos y sistemas de animación:
+
+
+el modo de animación mixer, permite los siguientes tipos de datos
+
+
+	_FCurve Animation
+
+	_Expression Animation
+
+	_Constraints Animation
+
+	_Shape Animation
+
+	_Audio Animation
+
+	_Animation Layers
+
+	_Cached Animation
+
+	_Simulation Sources
+
+	_Image Clips
+
+
+
+Animación no lineal es la animación que no está limitada por el tiempo. Se le permite trabajar en la animación 
+
+a un alto nivel de control en cualquier punto de tiempo en la escena. Se le da un control de alto nivel sobre 
+
+la animación porque puede en cada capa mezclar secuencias de una manera no lineal y no destructiva. Además, 
+
+se puede reutilizar y afinar muchas fuentes de datos.
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Creating Transitions between Clips:
+___________________________________
+
+
+
+	_Las transiciones son una interpolación entre un clip a otro. Ellos hacen que la animación fluya suavemente 
+
+	entre los clips, en lugar de un tirón de repente en el inicio de la siguiente clip.
+
+
+	_Si está trabajando en un método pose a pose de animación utilizando clips de acción basados pose, es necesario
+ 
+	utilizar transiciones para evitar una animación de bloque buscando así, las transiciones son absolutamente 
+
+	necesarias para hacer la animación de "shape". Esto es porque tanto la shape, y pose clips de "acción" 
+
+	no contienen animación en sí mismos: son keys, que representan una deformación en particular (shape) ó plantean 
+
+	de un objeto.
+
+
+	_Hay tres tipos de transiciones que puede utilizar entre cargadores/tracks: estas son: "Estándar", "Cardenal", 
+
+	y el "Bridge/puente". Los clips están representados en el mezclador mixer, mediante barras de colores 
+
+	que conectan clips (transiciones válidos son negras
+
+
+		 _Standard transitions are purple.
+
+ 
+		_Cardinal transitions are red.
+
+
+		_Bridge transitions are light orange.
+
+
+
+NOTE:	no se pueden agregar transiciones entre clips, de audio
+
+
+
+	Adding a Standard or Cardinal Transition:
+	_________________________________________
+
+
+	_Transiciones "estándar", y "Cardinales", funcionan bien para la mayoría de las animaciones básicas. Ambos 
+
+	crean una curva de función de transición que se puede editar
+
+
+	_La transición "Standard", crea una transición directa de un clip a la siguiente.
+
+
+	_La transición "cardenal", interpola entre las fuentes/sources, de hasta cuatro clips más cercanas 
+
+	(dos clips antes y dos clips después de la transición). Esto da para una mezcla más suave que una transición 
+
+	Standard.
+
+
+	_Si los clips no se solapan en el tiempo, la interpolación es una mezcla ponderada entre el último fotograma 
+
+	del primer clip al primer fotograma del segundo clip. Si los clips se solapan, la interpolación es una mezcla 
+	ponderada entre los valores de recorte en cada frame.
+
+
+
+	To create a transition between clips:
+	_____________________________________
+
+
+	_primero vamos ha "mixer/view/", y nos aseguramos que la opción de visualización de "Transition Curve",
+
+	este activada
+
+
+	_para crear transiciones vamos ha "mixer/mix/", y allí, podremos seleccionar entre las diferentes opciones
+
+	disponibles, esas son
+
+
+		_Standard Transition Tool, (shortcut "T")
+
+
+		_Cardinal Transition Tool, (shortcut "C")
+
+
+		_Bridge Transition Tool, (shortcut "B")
+
+
+	_para esto deben estar activadas las opciones de auto transition en cada track, respectivo, para esto, 
+
+	hacemos "mouse right click/track properties/controls", y activamos la opción auto transition
+
+
+	_para editar un transition, podemos seleccionar estas en el mixer panel, entre los clips, y hacer "Enter",
+
+	ó "alt + enter", de esta manera entraremos a las opciones de la transición en la cuál, podremos ajustar
+
+	el peso/weight, de la misma, nombre, actividad, otros
+
+
+	Edit Transicion:
+	________________
+
+	_también, podemos editar la curva de transición de una transición, para esto, abrimos el panel FCurve Editor,
+
+	yendo ha "view/animation/animation editor", shortcut "control + 0", luego, seleccionamos una transición en el
+
+	mixer, y luego volvemos al panel FCurve Editor, y así, veremos la curve, que representa la transición de la
+
+	transición
+
+
+	Edit Advance:
+	_____________
+
+
+	_para tener un control total de las transición disponemos de su representación el "explorer"
+
+
+	_para esto, vamos ha "Explorer/Model/Mixer/Transitions1", y con transition1, seleccionada vamos ha
+
+	"FCurve Editor/Weight", así, seleccionando "weight", podremos editar la curve, específica que representa
+
+	la transición entre los clips, respectivos
+
+
+	Delete Transition:
+	__________________
+
+
+	_para esto, seleccionamos una transición creada en el mixer, luego hacemos "mouse right click/", y seleccionamos
+
+	la opción de "Delete"
+
+
+--------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,26 @@
+
+
+DETALLES
+
+
+tenemos la posibilidad de agregar sistema de ICETree, a elementos de la escena en relación sólo a los 
+
+"Stacks",de "Simulate", y dinámicos y efectos en general sobre la geometría, y otros elementos dinámcos
+
+relacionados como fields, cloth, soft body, rigid body, otros, los cuales pueden interactuar ó reaccionar
+
+ante los sistemas dinámicos y de partículas
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	_a través, de este controlador de ICETree, agregado al elemento deseado podremos setear y 
+
+	obtener diferentes elementos, en aplicaciones de "Stack/Particles", "Stack/Crowds",
+
+	"Stack/Lagoa", "Stack/Syflex", 
+
+

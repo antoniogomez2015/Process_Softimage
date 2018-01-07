@@ -1,0 +1,228 @@
+
+
+DETALLES
+
+
+tenemos la posibilidad de crear nuestros propios esquemas de efectos, deformadores, y sistemas de todo
+
+tipo y almacenarlos de manera práctica para un uso posterior rápido, es así, que para este tipo de
+
+opciones existen los "Compounds", ó nodos compuestos, los cuales integran ó se componen de una serie
+
+de configuraciones de nodos varios en su interior
+
+
+	
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Compound
+
+
+	_existen compounds, nativos del programa ICETre, y los configurados por nosotros, éstos bienen
+
+	organizados en categorías, de esta manera nosotros también, podemos crear nuestras propias
+
+	categorías y organizar a nuestras necesidades los compounds, que vayamos creando
+	
+
+
+	Crear un Compound:
+	__________________
+
+
+	_primero procedemos a crear la configuración de nodos deseados que conformarán el compound
+
+
+	_luego de finalizar de crear los nodos deseados, procedemos a seleccionar los nodos que
+
+	conformarán el compound
+
+
+	_luego, con los nodos seleccionados vamos ha "ICETree/Compound/", y seleccionamos 
+
+	"Create Compound", ó a través, del menú contextual, haciendo "mouse right click", sobre un nodo
+
+	seleccionamos y seleccionamos la opción de "Create Compound"
+
+
+
+
+	Configuración de un Compound Creado:
+	____________________________________
+
+
+
+	_al crear un compound entraremos a sus opciones de configuración automáticamente 
+
+
+	_luego, tendremos que configurar cuales serán sus puntos de entrada "In", y sus puntos 
+
+	de salida "Out"
+
+
+	_luego de haber creado los puntos de entrada y de salida del compound, ahora debemos renombrar
+
+	éstos con un nombre característico, por lo general le colocaremoos el nombre de la acción ó del
+
+	tipo de nodo a conectar en este puerto ó punto de entrada ó de salida
+
+
+
+
+	Exportar de un Compound Creado:
+	_______________________________
+
+
+
+	_para exportar un compound, creado debemos seleccionar éste e ir ha "ICETree/Compound/Export Compound",
+
+	así, podremos guardar el compound, creado en la categoría general de compound, del programa:
+
+
+	ó podríamos repetir este proceso a través, del menú contextual, haciendo "mouse right click", 
+
+	sobre un nodo del compound, creado seleccionamos la opción de "Export Compound"
+
+		
+		_Compounds
+
+			"C:\Users\mono\Autodesk\Softimage_2014\Data\Compounds"
+	
+
+
+
+
+
+	Importar Compounds Creados:
+	___________________________
+
+
+
+	_tenemos la posibilidad de importar compound, creados previamente en este mismo proyecto
+
+	u en otros proyecto, esto es especialmente útil a la hora de compartir proyectos y nodos
+
+	compounds, entre diferentes desarrolladores
+
+	
+	_para esto vamos ha "ICETre/Compounds/Import Compounds", así, nos mostrará un explorer,
+
+
+		_Compounds
+
+			"C:\Users\mono\Autodesk\Softimage_2014\Data\Compounds"
+
+
+
+	en el cuál, podremos buscar el compound, deeseado
+
+	
+
+
+
+	
+
+	Categorizar Compounds Creados:
+	______________________________
+
+
+
+	__tenemos la posibilidad de cargar ó importar los compounds, de forma permanente y organizada
+
+	en la estructura de "Tools", y "Stacks", del ICETree, de esta manera podremos tener los 
+
+	compounds, cargados y, más organizados y a la manos
+
+
+	_para esto, primero seleccionamos el compound, deseado en el ICETree, luego, con este seleccionado
+
+	vamos ha "ICETree/Compounds/Compound Properties"
+
+	
+	ó podríamos repetir este proceso a través, del menú contextual, haciendo "mouse right click", 
+
+	sobre un nodo del compound, creado seleccionamos la opción de "Compound Properties"
+
+
+	_así, se nos abrirá un panel contextual con diferentes opciones:
+
+
+
+		_Name:
+
+			_tenemos la posibilidad de asignarle un nombre
+
+		_Category:
+
+			_tenemos la posibilidad de indicar una categoría
+
+
+		_Task:
+
+			_esta opción es la más importante, ya que indica la estructura ó categoría
+
+			en la cuál, se ubicará el nodo compound
+
+			_ésta se expresa a través, de un orden descendente, por medio de nombres sin
+
+			separación más éstos tienen la notación camello entre ellos, ej:
+
+				
+				Tasks: DeformationEffects
+
+
+		_Author:
+
+
+			_tenemos la posibilidad de indicar un autor
+
+
+		_Descripción:
+
+			_esta opción es importante por que en ella podremos indicar las características
+
+			del compound y de los nodos que la componene, pero, sobre todo, podremos indicar
+
+			que tipos de nodos pueden y deben conectarse tanto en los puntos ó puertos de
+
+			entrada y como de salida, otros
+
+
+		_URL:
+
+			_tenemos la posibilidad de indicar una web
+
+
+		_Color:
+
+			_tenemos la posibilidad de indicar un color para nodo del compound
+
+
+		_Version:
+
+			_tenemos la posibilidad de indicar una versión del compound a modo de 
+
+			referencia y orden
+
+		
+
+
+		_Stack:
+
+			_tenemos la posibilidad de indicar un stack, relacional al compound
+
+
+		_Version Tag:
+
+			_tenemos la posibilidad de indicar una versión de etiquetado general
+	
+	
+
+
+
+

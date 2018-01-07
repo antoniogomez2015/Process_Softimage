@@ -1,0 +1,129 @@
+
+
+
+DETALLES
+
+
+Las acciones son paquetes de animación de bajo nivel, tales como curvas de función, las expresiones, las limitaciones 
+
+y los parámetros vinculados. Mediante la creación de un paquete que representa la animación, se puede trabajar en un nivel 
+
+superior de la animación que no está limitado por el tiempo
+
+
+Las acciones son los paquetes de cualquier tipo de animación, tales como curvas de función, las expresiones, 
+
+las limitaciones y los parámetros vinculados. Después de crear una acción, se carga como un clip en el mezclador 
+
+de animación, donde puede modificar la animación de una manera no lineal y no destructiva.
+
+
+Este paquete en el mezclador de animación le permite trabajar en un nivel superior de la animación que no está limitada 
+
+por el tiempo: se puede mover una acción en torno a cualquier parte a tiempo, apretar o estirar su longitud como quieras, 
+
+aplique una acción después de otras en secuencias, y mezclar dos o más acciones juntos para crear una nueva animación.
+
+
+Puede crear una biblioteca completa de acciones, como ciclos de pie o saltos, y utilizarlos como muchas veces como quieras 
+
+en una escena, o compartirlos entre cualquier número de modelos
+
+
+También puede crear acciones de compuestos/compounds, que son "contenedores" para múltiples acciones, incluyendo 
+
+la animación de diferentes fuentes/sources, (curvas de funciones, expresiones, restricciones y parámetros vinculados). 
+
+Trabajar con datos animaciones complejas convierte en una tarea más simple que tratar con múltiples fcurves.
+
+
+Dado que los datos de animación paquete/package, de acciones en una sola unidad utilizable, que hace que sea fácil 
+
+para copiar la animación de un modelo a otro, incluso si el modelo no comparte las mismas convenciones jerarquía, 
+
+escala, o de denominación. Cuando hay diferencias entre los modelos, se abre una plantilla para ayudar a trazar 
+
+los elementos del modelo correspondientes.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Modifying Action Clip Values:
+_____________________________
+
+
+
+
+	Puede modificar los valores de un clip debe hacer cambios específicos en un mismo clip de acción, 
+
+	dejando la fuente/source, de acción original intacta. Cómo realizar estos cambios depende de si la 
+
+	animación en el clip de la acción es a partir de curvas de función o de expresiones o limitaciones:
+
+
+	Cuando un clip de acción contiene datos de animación de una curva de función, puede modificar sus datos 
+
+	en la expresión del "efecto", lo que le permite modificar sólo eso clip. Esto se debe a que cada clip 
+
+	no mantiene su propia copia local de los datos de animación fcurve, como restricción y expresión 
+
+	clips que se hacen.
+
+
+	Al hacer modificar una expresión, se crea un efecto de clip que le permite utilizar un número de variables 
+
+	y funciones para modificar los datos "en la parte superior" de la animación fuente original. Vea más en
+
+	"Modifying Action Clips with Clip Effects."
+
+
+	Si modifica fcurves del clip directamente (por ejemplo, haciendo clic derecho en el clip y eligiendo Editor 
+
+	de Animación), modificará fuente/source, con acción/action de "effects", que afecta a todos los clips 
+
+	instanciados de esa fuente/source. (consulte Modificación Curvas de función de la Fuente).
+
+
+	Cuando un clip de acción contiene datos de animación de una restricción/constraint. o expresión, cada clip 
+
+	mantiene su propia copia local de los datos (que no comparte una fuente/source, de acción como clips basados
+
+	en fcurve hacen). Para obtener información sobre cómo hacerlo, consulte el siguiente procedimiento.
+
+
+NOTE:	Si cambia el nombre de un objeto manejado por un clip en el mixer, los elementos dentro del "effect", se 
+
+	actualizan para reflejar el nuevo nombre del objeto. Además, si ese clip, fue instanciado de una fuente/source, 
+
+	sin tener que pasar a través de una plantilla de conexión de mapeo para el objeto, a continuación, los nombres 
+
+	de las fuentes también se actualizan (para que instancias posteriores de clips no se mostrará un cuadro 
+
+	de diálogo de conexión-mapping).
+
+
+	Esto significa que usted puede confiar en los nombres que figuran en el editor de propiedades Instanced Acción 
+
+	como una representación exacta de lo que está siendo manejada, para que pueda utilizar estos dentro de sus 
+
+	propios scripts.
+
+
+
+	Modifying Expression or Constraint Data:
+	________________________________________
+
+
+	1_primero seleccionamos el clip, deseado en el mixer panel
+
+
+	2_luego hacemos "mouse right click/", y seleccionamos la opción de "clip properties", y vamos tab de 
+
+	"Clip Item Information"
+
+
+	3_Para editar los datos de una restricción o una expresión, seleccione un elemento en la columna de la 
+
+	videoclip y luego haga clic en el botón Datos-Clip específico Editar.
+

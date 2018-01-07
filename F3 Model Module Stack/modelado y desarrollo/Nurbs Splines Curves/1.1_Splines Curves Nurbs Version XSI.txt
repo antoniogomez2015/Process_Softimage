@@ -1,0 +1,223 @@
+
+
+
+
+desarrollos con splines ó curves y nurbs
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+Tipos de Splines:
+_________________
+
+
+	1.Draw Cubic by CVs; permite crear splines a partir de arcos de puntos a través de su relación de fuerza e 
+
+	influencia entre sí
+
+
+	2.Draw Cubic by Bezier + Knot Points; permite crear spline donde cada point creado es un point de bezier con 
+
+	handles y fuerzas resultantes
+
+
+	3.Draw Cubic by Knot Points; esta permite crear splines donde cada punto es point de fuerza e incluencia pero 
+
+	sin los handles de beizer
+
+
+	4.Draw Linear; esta permite crear spline en formar rectas indicadas por cada punto creado
+
+
+	5.Sketck, esta modalidad permite crear spline forma de trazo libre, crean puntos simples equidistantes entre sí
+	
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+Draw Cubic by Cvs Edición:
+__________________________
+
+
+	1.para crear una curva con esta modalidad vamos al menú 
+
+		_Model-Animate/Create/Curve/Draw Cubic Cvs
+
+
+	2.en una vista ortogonal ó axonométrica creamos puntos, a partir de tres puntos se empezarán a crear la 
+
+	spline
+
+
+	3.para terminar el proceso, al finalizar de crear los puntos necesarios de nuestra forma, le damos al mouse 
+
+	right click, y se desplegará un menú contextual, donde seleccionaremos: Open/Clouse, para así cerrar la curva
+
+
+	4.al crear los puntos que conforman la spline creada podemos finalizar la creación de pintos cambiando la 
+
+	herramienta por otra ó, mouse right click "Exit Tool"
+
+
+	5.las splines creadas con esta modalidad se componen de varios sub elementos estos son: (en modo de edición 
+
+	"Tweak User Normals Tool", su shortcut "M")
+
+
+	_vextex ó points, estos permiten mover los puntos de fuerza de control de la spline shortcut F9, al seleccionar 
+
+	un punto podemos desplegar su menú contextual para sus opciones, haciendo Control+Alt+Right Click, sobre el 
+
+	mismo
+
+
+	_otra forma de edición extendida de los vertex es con el modo de selección múltiple interactivo, que conmuta 
+
+	a edición a bezier, yendo al menú 
+
+		_Model/Modify/Component/Weak Component Tool, su shortcut "M", 
+
+	_esta incluso incorpora a los point ó vetex unos handles para controlar la influencia resultante en sus 
+
+	extremos
+
+
+	_en la forma de edición de aplines "Component/Weak Component Tool", seleccionando un point ó punto, podemos 
+
+	desplegar su menú contextual para ver sus opciones de edición individual, haciendo right click, sobre el 
+
+	mismo
+
+
+	_en la forma de edición de aplines "Component/Weak Component Tool", para agregar points de ajutes temporales 
+
+	a los segmentos, podemos hacer mouse midle click ó left click, y hacer los ajustes necesarios en la curve
+
+	
+	_en la forma de edición de aplines "Component/Weak Component Tool", para fijar un point temporalmente creado 
+
+	hacemos right click sobre el mismo, y en el menú contextual seleccionamos "Insert Knot"
+
+
+	_en la forma de edición de aplines "Component/Weak Component Tool", podemos convertir un punto normal en un 
+
+	punto bezier, haciendo right click/Make Knot Bezier, shortcut "B", así, al vertex le aparecerán los handle ó 
+
+	manejadores de fuerza
+
+
+	_en la forma de edición de aplines "Component/Weak Component Tool", podemos manejar las tangentes de los 
+
+	handles con la opción "Make Knot Bezier", tomando una tangente y haciendo mouse midle click and draw
+
+
+	_en la forma de edición de aplines "Component/Weak Component Tool", podemos unir ó hacer converger las 
+
+	tangentes separadas, seleccionado el point y haciendo right click/LBM Bind Broken Tangents
+
+
+	_en la forma de edición de aplines "Component/Weak Component Tool", podemos mover solo el point seleccionado, 
+
+	dejando inmóviles los handles del modo bezier, haciendo mouse midle click and draw, sobre el point 
+
+	seleccionado
+
+
+	_en la forma de edición de aplines "Component/Weak Component Tool", para poder editar los points en un modo 
+
+	de vista de user ó cámara en forma 3d, pero dentro del mismo plano 2d de creación, para esto, debemos activar
+
+	el modo de snap curve, a continuación seleccionamos un point y le damos right click sobre el mismo y activamos 
+
+	en el menú contextual la opción "Snap To Curve Plane", así, todos los point que conforman la spline se moverán 
+
+	en plano en el cuál fueron creados pero en un entorno 3d
+
+
+	6.para editar spline en modo sub elementos "Point" tenemos las opciones del menú Model/Modify/Curve, donde 
+
+	podemos agregar point, slinear, individualizar complejamente
+
+
+	7.para continuar con una curva en la cual en un paso anterior hemos salido de su modo de creación, 
+
+	seleccionamos la curve y, vamos al menú Modify/Curve/Add - Point Tool boy Cvs, y hacemos left click para 
+
+	continuar agregando puntos en la spline
+
+
+	8.si hemos salido del modo de creación ó de edición de curve splines, y no la hemos cerrado y deseamos hacerlo, 
+
+	para cerrarla seleccionamos la spline creada y vamos al menú Mode/Modify/Curve/Open/clouse
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+Para crear splines complejas:
+_____________________________
+
+
+
+	para unir 2 splines, creando un tercera spline resultante:
+
+
+	1.para esto vamos al menú Model/Create/Curve/marge, luego hacemos mouse left+click and draw, sobre las 2 
+
+	splines a unificar, e inmediatamente hacemos draw sobre uno de los vertexs de uno de los extremos de la 
+
+	primera spline, e inmediatamente despues hacemos draw sobre uno de los vertexs de uno de los extremos de la 
+
+	segunda spline, a contenuación creará una termira spline, con la forma de las dos anteriores y unida por los 
+
+	vetex que hemos seleccionados previamente
+
+
+	2.y en las opciones que se despliegan de la spline resultante, en Marge Curves/Clear/Inputs; escogemos entre 
+
+	hiden y delete
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+Procesos de Construcción:
+_________________________
+
+
+	Transform: V
+
+
+	_Tweak Curve: M
+
+
+		_Contextual Menú: Mouse Right Click
+
+
+		_Make Knot Non-Bezier: B
+
+
+		_Free Handle Temporal: Mouse Midle Click and Drag
+
+
+		_Knot Anckle: Mouse Midle Click and Drag (con un nodo seleccionado)
+
+
+		_Insert Knot: Mouse Midle Click y Soltar (en una spline, entre puntos)
+
+			_para luego hacer "Mouse Right Click/", y seleccionar "Insert Knot"
+
+
+		_Reomve Knot: "Mouse Right Click/", y seleccionar "Remove Knot"
+
+

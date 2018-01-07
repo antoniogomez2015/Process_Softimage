@@ -1,0 +1,186 @@
+
+
+
+DETALLES
+
+
+Las acciones son paquetes de animación de bajo nivel, tales como curvas de función, las expresiones, las limitaciones 
+
+y los parámetros vinculados. Mediante la creación de un paquete que representa la animación, se puede trabajar en un nivel 
+
+superior de la animación que no está limitado por el tiempo
+
+
+Las acciones son los paquetes de cualquier tipo de animación, tales como curvas de función, las expresiones, 
+
+las limitaciones y los parámetros vinculados. Después de crear una acción, se carga como un clip en el mezclador 
+
+de animación, donde puede modificar la animación de una manera no lineal y no destructiva.
+
+
+Este paquete en el mezclador de animación le permite trabajar en un nivel superior de la animación que no está limitada 
+
+por el tiempo: se puede mover una acción en torno a cualquier parte a tiempo, apretar o estirar su longitud como quieras, 
+
+aplique una acción después de otras en secuencias, y mezclar dos o más acciones juntos para crear una nueva animación.
+
+
+Puede crear una biblioteca completa de acciones, como ciclos de pie o saltos, y utilizarlos como muchas veces como quieras 
+
+en una escena, o compartirlos entre cualquier número de modelos
+
+
+También puede crear acciones de compuestos/compounds, que son "contenedores" para múltiples acciones, incluyendo 
+
+la animación de diferentes fuentes/sources, (curvas de funciones, expresiones, restricciones y parámetros vinculados). 
+
+Trabajar con datos animaciones complejas convierte en una tarea más simple que tratar con múltiples fcurves.
+
+
+Dado que los datos de animación paquete/package, de acciones en una sola unidad utilizable, que hace que sea fácil 
+
+para copiar la animación de un modelo a otro, incluso si el modelo no comparte las mismas convenciones jerarquía, 
+
+escala, o de denominación. Cuando hay diferencias entre los modelos, se abre una plantilla para ayudar a trazar 
+
+los elementos del modelo correspondientes.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Action Sources and Clips:
+_________________________
+
+
+	_Las acciones/actions, tienen dos partes: las fuentes/sources, y los clips. 
+
+
+	_así, Primero animamos los objetos en un modelo/model, y almacenamos la animación como una fuente/source 
+
+	de acción/action, de esta manera podremos instanciar esa fuente/source, como clips de acción/actions, 
+
+	en las pistas de la mezcladora de animación en el mixer.
+
+
+
+	Action Sources:
+	_______________
+
+
+NOTE:	al crear "Animate/Actions/Store/", creamos "Sources", dentro de la estructura del "Model/mixer"
+
+
+
+	_Piensa en las fuentes/sources, como el contenedor "nave nodriza" para la animación almacenada. Fuentes/sources,
+
+	de acción/action, contienen uno o más elementos de animación. Cada elemento de la animación contiene un nombre 
+
+	de parámetro y sus datos de animación (curva de la función, de expresión, de restricción, o parámetros vinculados).
+
+
+	_Para crear con éxito las fuentes/sources, lo que necesita saber es el tipo de animación que desee almacenar. 
+
+	
+	_Cuando se crea una fuente/source, de acción/action, el original se almacena en la carpeta del modelo/model, 
+
+	Fuentes/sources de la escena, tener las fuentes/sources, almacenadas en el nivel escena hace que sea fácil 
+
+	de ver las fuentes/sources, disponibles para cualquier modelo en esa escena. Además, usted puede copiar fácilmente 
+
+	las fuentes/sources, de un modelo a otro en este nivel (simplemente arrastrar y soltar las fuentes).
+
+
+	_La fuente de acción/action, original se almacena en el nivel de escena y una copia de referencia se almacena 
+
+	en el nodo del mezclador mixer, del modelo/model, por razones de conveniencia. Este último se muestra en cursiva 
+
+	para que usted sepa que está referenciado desde la ubicación de la fuente original.
+
+
+	_Puede modificar los datos de animación originales almacenados en una fuente/source
+
+
+	_Además, puede volver a la animación almacenada original, como las curvas de función originales, en cualquier 
+
+	momento mediante la aplicación de una fuente/source, de acción/action
+
+
+
+	Action Clips:
+	_____________
+
+
+NOTE:	al cargar "Sources", el mixer panel, creamos "Action Clips"
+
+
+	_Después de crear una fuente/source, de la acción/action, puede crear una instancia de un clip, se llama acción. 
+
+	Los clips de acción le permiten utilizar fuentes de acción en el mezclador de animación mixer. Usted puede crear 
+
+	cualquier número de clips de cada fuente/source.
+
+
+	Create Action Clips:
+
+
+		_tenemos la opción al momento de crear "sources", en el proceso ó protocolo de crear también, 
+
+		automáticamente "Actions Clips", agregados directamente en el mixer panel
+
+
+		_otra opción es abrir el panel mixer, yendo ha "View/Animation/Animation Mixer" ó Shortcut "Alt + 0",
+
+		y una vez, en el panel mixer, hacemos "mouse right click/", y seleccionamos la opción de "Insert Source",
+
+		en un área vacía de un track
+
+
+		_otra opción es ir al "Explorer/Model/Mixer/..", así, seleccionamos el "source", deseado y hacemos
+
+		"mouse left click and drag", y lo soltamos en un área disponible ó vacía en un track
+
+
+	_El clip, de acción en realidad no contiene ninguna animación en sí: simplemente hace referencia a la animación 
+
+	almacenada en la fuente/source. Básicamente, un clip, envuelve los datos de la animación en una fuente/source,
+
+	de acción/action, con información de tiempo. La información de temporización se describe cómo la animación 
+
+	en la fuente/source, se "tiró". El clip, se establecen las conexiones entre los datos de la animación de la fuente 
+
+	y los objetos desplazados en el modelo utilizando una plantilla de conexión y asignación de conexión de información.
+
+
+	_Para las curvas de función, el clip, simplemente hace una referencia a la animación en la fuente/source, 
+
+	de la acción - todos los clips, comparten las curvas de función de su origen. Sin embargo, si desea agregar 
+
+	animación a un clip, sin afectar a la fuente/source, puede utilizar efectos de clip como se describe a continuación.
+
+
+	_Para expresiones y constraint, cada clip, mantiene su propios datos locales que es independiente de la fuente/source. 
+
+	Esto significa que usted puede corregir los datos de cada clip sin afectar la fuente
+
+
+	_Para crear clips, de nivel superior, puede combinar varios clips de acción juntos en un clip compuesto
+
+
+
+	Clip Effects:
+	_____________
+
+
+	_Efectos de clip, permiten ajustar la animación en un clip sin afectar la fuente/source, de acción/action. 
+
+	Esto se aplica sólo a los clips que se crean a partir de fuentes de la curva de función. los efectos son
+
+	agregados a los clips al crear valores de efectos a un clip, por ejemplo, añadiendo ruido, compensaciones 
+
+	y otras operaciones de mayor nivel, sin tocar la animación original. Ellos se muestran como una barra amarilla 
+
+	en la parte superior de un clip de acción.
+
+
+--------------------------------------------------------------------------------------------------------------

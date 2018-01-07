@@ -1,0 +1,55 @@
+
+
+Detalles
+
+
+tenemos la posibilidad de trabajar con cuerpos rígidos/rigid bodies, en softimage, para realizas 
+
+diferentes tipos de simulaciones e interacciones
+
+para crear simulaciones en softimage, debemos ir a la sección de  simulaciones yendo ha "Simulate/Control+4"
+
+
+los sistemas de rigid body, por lo general requieren de la aplicación fields/fuerzas, en la escena, para que
+
+así, los sistemas rigid bodys, estén sometidos ha estas
+
+
+
+NOTA a continuación presentamos el características principales de los rigid bodies
+
+	_Actives, esto ebedecerán a fuerzas/fields, y serán por lo general los elementos colisionadores
+
+	_Passives, estos no obecederán a fuerzas/fields, y serán por lo general los elementos colisionados
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	_Dynamics Initial State/Velocity:
+	________________________________
+
+
+
+	_también podemos agregar una propiedad inicial a lementos rigid bodies, actives, para que comiencen la 
+
+	simulación de una forma deseada, para lo cuál contamos con el atributo velocidad
+
+
+		_para esto seleccionamos el mesh/motive, y vamos a la sección de "Dynamics initial State/Velocity/Linear",
+
+		en esta sección podremos agregar aceleración al objecto en cualquiera de las cordenadas X,Y,Z,
+
+		tanto en positivo como en negativo, ó includo en "Angular X,Y,Z", 
+
+
+	esta opción es especialmente útil para hacer simulaciones y animaciones sobre elementos de colisión ó
+
+	rigid body/passives
+	
+
+
+____________________________________________________________________________________________________
+

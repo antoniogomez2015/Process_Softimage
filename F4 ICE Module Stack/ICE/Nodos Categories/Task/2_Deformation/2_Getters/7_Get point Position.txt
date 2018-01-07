@@ -1,0 +1,57 @@
+
+
+DETALLES
+
+
+tenemos la posibilidad tanto de obtener ó setear ó configurar los datos que conforman un elemento mesh, 
+
+específicamente de sus sub-elementos vertex, para así, tener la posibilidad tanto de cambiar su
+
+morfología ó forma como también, deformala y hacerle modificaciones entre otros
+
+
+	Task/Deformation/Getters/Get point Position
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Get point Position
+
+
+	_este nodo nos permite reconverir una forma de geometría en otra a través, de un nodo 
+
+	"Get Point Position", ó modificar la original, agregando nodos modificadores entre éstos,
+
+	otros, permitiendo agregar nodos que permitan influir en el comportamiento de la misma
+
+
+	_este nodo permite suministrar datos de la posición de los vertex, de la misma forma ó de 
+
+	otra forma respectiva relacionada, otras funciones
+
+
+
+		-Get point Position-
+
+
+			_In:
+
+				_"Self/su misma forma", u otro elemento seleccionado
+
+
+			_Out:
+
+				_"Task/ Deformer/ Modifiers", ó "Set Point Position/Position"
+
+
+	así, veremos que la forma ó morfología del objeto ha cambiado, tanto por la acción de un
+
+	modificador como por la forma asignada por un "Get Point Position", otros
+
+
+
+
+

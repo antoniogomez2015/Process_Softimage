@@ -1,0 +1,86 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de animar ó mover las partículas a través, de una imágen ó una secuencia
+
+de imágenes, de esta manera, por medio de diferencia de luminancia en la imágen es posible
+
+afectar ó influir en la formación actual de las partículas en un tiemp determinado
+
+
+Tutorial: https://vimeo.com/19235073
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+NOTA:	ya tenemos que tener un sistema "Point Cloud", cargado en el ICETree, con sus respetivos 
+
+	elementos como el emisor y la/s superficies colisionadoras, otros
+
+	en el ejemplo utilizamos un sistema obtenido de "Get/Primitive/Point Cloud/Grid"
+
+
+
+	_ahora seleccionamos las partículas y vamos al ICE "Alt+9", y hacemos refresh
+
+
+	_ahora hacemos "ICETree/Create/Simulate ICE Tree", es conveniente bloquear el ICETree,
+
+	para que se mantenga el sistema de partículas siempre seleccionado
+
+
+	_ahora creamos "ICETree/Setters/Set Particles Shape", y conectamos su "Execute", al nodo
+
+	"ICETree/Port1", entramos en las opciones del nodo podremos ajustar la forma de las 
+	partículas
+
+
+	_ahora creamos "ICETree/Setters/Set Particles Size", y conectamos su "Execute", al nodo
+
+	"ICETree/Port2", si entramos en las opciones del nodo podemos ajustar el tamaño de las
+
+	partículas
+
+
+	_ahora agregamos el grid de partículas el ICETree, a través, de un Get Data
+
+	
+	_ahora creamos un "Get Point Position"
+
+
+	_ahora creamos un "Get Closest Location"
+
+	
+	_ahora creamos una mesh/motive, "Grid" 
+
+		_a la cuál, agregaremos un "Model(F3)/Material/Blinn", y se lo aplicamos al grid
+
+		_ahora debemos agregarle al grid un UVProyection, para esto seleccionamos la mesh/
+
+		motive, y vamos ha "Get/property/Texture Map/", y seleccionamos una cordenada 
+
+		_ahora vamos al RenderTree/Control+7, y agregamos un textura al blenn, material
+
+
+	_ahora relacionamos los nodos "Get Data-grid de la imagen", con el nodo 
+
+	"Get Closest Location/Geometry"	
+
+
+	_HODDO<<
+	
+		
+
+
+
+
+
+
+

@@ -1,0 +1,80 @@
+
+
+Detalles
+
+
+tenemos la posibilidad de crear cuerpos blandos "Soft Bodys", los cuales pueden interactura con fuerzas/fields,
+
+y demás interacciones dinámicas entre otros
+
+
+el workflow, de los sistemas soft bodys, en muy diferente al de los rigid bodys, por que en los soft bodys, no existe
+
+el sistema de "Enviroments", si no, que toda la información se registra de la misma mesh/motive, que hara de soft body,
+
+ej: "Explorer/mesh/Polygon Mesh/SoftBodyOp/", y en esta sección se guardarán todos los elementos 
+relacionados con el propio sistema
+
+de soft body, particular de cada mesh/motive, respectivo, como los "Obstacles/ostáculos", "Fuerzas/Fields", otros
+
+
+podemos crear elementos soft bodys, a partir elemento/objects, completos ó enteros ó a través de selecciones de 
+
+sub-elementos como vertices, otros, para que de esta manera partes de un elemento se mantengan estáticas mientras que
+
+otras tienen propiedades de rigid bodys, dinámicas, el proceso de workflow, para este proceso es el mismo que el proceso
+
+normal para objects, completos
+
+ 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+	Dynamics
+	________
+
+
+
+		_Use Body Animation:
+
+
+			_podemos activar este elemento soft body, para animaciones dinámicas
+
+			(para animar este elemento soft body, en el timeline)
+
+
+		_Inherit Initial Inertial:
+
+			_podemos activar herencia de la inercia inicial, esto quiere decir, que si
+
+			animamos el cuerpo blando en una dirección, este podrá seguir esa 
+			trayectoria así, se haya a cabado la animación, el cuerpo blando mantendrá
+
+			su trayectoria en forma de inercia continuada
+
+
+		_Soft Body Center:
+
+			_podemos activar el centro del balance del soft body, en el centro
+
+
+		_Soft Cluster Boundary:
+
+			_podemos activar límites para soft cluster
+
+
+		_Decay:
+
+			_podemos indicar un valor para el decaimiento ó fidelidad de los valores
+	
+
+
+	
+
+
+
+	
+____________________________________________________________________________________________________

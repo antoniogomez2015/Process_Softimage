@@ -1,0 +1,59 @@
+
+
+Detalles
+
+
+tenemos la posibilidad de crear cuerpos blandos "Soft Bodys", los cuales pueden interactura con fuerzas/fields,
+
+y demás interacciones dinámicas entre otros
+
+
+el workflow, de los sistemas soft bodys, en muy diferente al de los rigid bodys, por que en los soft bodys, no existe
+
+el sistema de "Enviroments", si no, que toda la información se registra de la misma mesh/motive, que hara de soft body,
+
+ej: "Explorer/mesh/Polygon Mesh/SoftBodyOp/", y en esta sección se guardarán todos los elementos 
+relacionados con el propio sistema
+
+de soft body, particular de cada mesh/motive, respectivo, como los "Obstacles/ostáculos", "Fuerzas/Fields", otros
+
+
+podemos crear elementos soft bodys, a partir elemento/objects, completos ó enteros ó a través de selecciones de 
+
+sub-elementos como vertices, otros, para que de esta manera partes de un elemento se mantengan estáticas mientras que
+
+otras tienen propiedades de rigid bodys, dinámicas, el proceso de workflow, para este proceso es el mismo que el proceso
+
+normal para objects, completos
+
+ 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Forces compartidas:
+___________________
+
+
+
+	_al crear más elementos soft bodys, y al tener estos sistemas independientes de soft body, es conveniente 
+
+	ahorrar recursos del sistema al evitar crear copiar de una misma fuerza al crear una copia de la misma fuerza 
+
+	para cada elemento creado, por esto es aconsejable al crear una nueva mesh/motive, soft body, seleccionarla 
+
+	e ir ha "Simulate/Modify/Soft Body/Apply Force", así, nos aparecerá un "Picker", con el cuál tendremos que
+
+	que seleccionar un fuerza existente en el viewport, ó en el "Explorer", para que así, esta fuerza existente 
+
+	sea agregada al nuevo elemento soft body, creado
+
+
+
+	
+
+
+
+	
+_______________________________________________________________________________________________________________
+

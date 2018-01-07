@@ -1,0 +1,56 @@
+
+
+
+Softimage XSI
+
+
+	Tenemos la posibilidad de crear de forma guiada estructuras de kinemática y sinemática de forma automatizada
+
+	a través, de una panel de opciones de tipo wizard, por medio del cuál, podremos crear sistemas con estándares
+
+	como bípedos, cuadrúpedos
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Stack Animate - Create - Character - Skinning Guide:
+_____________________________________________________
+
+	
+	_y luego de haber creado el sistema ó arquetipo y luego haber creado con éste posteriormente el sistema de skeleton 
+
+	and rigging
+
+
+	_a partir de éste punto ya no necesitaremos el sistema ó arquetipo inicial así, podremos ocultar éste en una nueva 
+
+	layer, ó eliminar éste a través, del panel outliner
+
+
+	_así, tendremos la posibilidad de aplicarle también, el proceso de skinning, ó envelope, para ésto debemos ir al
+
+	outliner, y selecionar el object, de tipo "Model", llamado en éste caso "Biped", y desplegar sus opciones ó contenido
+
+	hasta encontrar el elemento de tipo "Group", llamado "envelope_group"
+
+
+	_para a continuación seleccionar la mesh, del motivo ó character, y con ésta seleccionada ir ha 
+
+	"Stack Animate/Deform/Envelope/", y darle ha la opción de "Set Envelope", para que así, nos aparesca un "Picker", a 
+
+	través, del cuál, podremos ir al panel "Outliner", y seleccionar en éste caso el "Group", "envelope_group"
+
+
+	_y para finalizar el proceso debemos hacer "mouse right click", en una parte vacía del viewport, es posible que nos
+
+	aparesca un mensaje de confirmación al cuál, debemos indicarle que "Yes,", para que así, podamos ver el sistema ahora 
+
+	en funcionamiento en conjunto con la mesh, del motivo ó character
+
+
+	_y por último nos saldrá una ventana con la información de la configuración creada para el sistema de skinning, generado,
+
+	éste es: "Automatic Envelope Assignment", el cuál, podremos ajustar de ser requerido
+
+

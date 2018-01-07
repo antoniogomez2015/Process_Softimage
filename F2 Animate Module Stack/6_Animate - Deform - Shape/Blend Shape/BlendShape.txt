@@ -1,0 +1,278 @@
+
+
+
+para hacer modificaciones en nuestra geometría la podamos modificar de forma controlada y configurables a través de slides 
+
+de animación
+
+
+	1.para la edición y modificación de goemetría de cara al blend shape, debemos utilizar una ventana 
+
+
+	espacial "Shape Manager", yendo menú Animate/Deform/Shape Manager, es conveniente para una mejor proyección de la 
+
+	forma ir a una vista aximométitra deseada, por ejemplo; Right ó From, asi se cargarán las axis de la mesh de forma 
+
+	correcta en el panel Shape Manager
+
+
+	2.en el panel shape manager, podemos cambiar los modos de visualización, por defecto éste biene en 
+
+	wareframe, si vamos a display opcion, podremos cambiar los modos de visión igual que uno de los view port de la 
+
+	inerface
+
+
+	3.en el panel shape manager, veremos una estructura: Result/Default/"Shape", ésta shape, es el control 
+
+	donde se guardarán los cambios uqe hagamos a la forma seleccionada, memoria la podemos renombrar, duplicar, agregar 
+
+	nuevas, otros
+
+
+	4.la forma "shape", que crea por defecto panel la podemos renombrar para que esta sea la shape base 
+
+	del rostro por ejemplo, le ponemos un nombre como "default_pose"
+
+
+	5.podemos duplicarla y renombrarla la forma ó memoria duplicada y le colocarle un monbre descriptivo 
+
+	al resultado que desemos lograr ejemplo: "Smile"
+
+
+	6.ahora con la tag "smile", que creamos, procedemos a editar los sub elementos de la mesh, para editar 
+
+	la sonrisa ó smile que deseamos crear, para esto utlizamos la herramienta de edición múltiple, su shortcut es "M"
+
+
+	7.haciendo mouse right click en el editor del panel Shape Manger, podemos elegir las opciones de edición 
+
+	como por ejemplo edición proporcional, simetría, otros, para un mejor y mayor control de la forma resultante
+
+
+	8.en el sidebar de la derecha de la interface, podemos editar las opciones de las herramientas de edición 
+
+	por ejemplo, Symetry y Prop, "proporcional"
+
+
+	9.para controlar el radio de la herramienta proporcional su shortcut es B+left+draw ó B+midle+draw, 
+
+	y si con la herramienta de edición proporcional activa hacemos mouse right click, podemos hacer que ésta 
+
+	haga las acciones de Traslate, Rotate, Scale, de manera proporcional
+
+
+	10.luego de editar la geometría con la tag "slmile", seleccionada se abra creado dentro de la mesh 
+
+	un nuevo nodo, para verlo vamos al xplorer/mesh/Polygon Mesh/Clusters/Shape/"default_pose" y "smile"
+
+
+	11.tmabién en el panel shape manager, en su etiqueta "Animate", veremos que se han creado unos "slider", 
+
+	de animación con las tag que hacemos creado, en este caso default_pose y smile, con estos slider 
+
+	podemos animar ambos estados en grados de transición entre ambos
+
+
+	12.y también se habrán creado controles avanzados de animación, por que en el xplorer, se habrá creado 
+
+	un nodo de animación tipo "Mixer", con todos los controles para trabajar con el panel "Animation Mixer", 
+
+	su shortcut es Alt+0
+
+
+	13.si en el panel "Animation Mixer", hacemos doble click, sobre la capa de la mesh, aparecerán todas 
+
+	las tags que creamos en el panel Shape Manger, en forma de capa en el panel Animate Mixer, y así, 
+
+	podremos cambiar su ubicación en el tiempo así como influencia entre otras cosas 
+
+
+
+-----------------------------------------------------------------------------------------------------------------------
+
+
+Más otro método más completo para realizar y crear formas en blend shape es el siguiente:
+
+
+	1.para esto, debemos de cambiar en la barra superior de la interface del modo de edición 
+
+	"Modelling Construction Mode", a el modo "Shape Modelling Mode", para que este modo reconozca las forma
+
+	que modifiquemos como formas de blend shape
+
+
+	2.para crear de la forma inicial de blend shape de nuestro modelo, seleccionamos la mesh, y vamos al 
+
+	menú Animate/Deform/Shape/Store Shape Key, y en las opciones contextuales le colocamos un nombre 
+
+	descriptivo, ejemplo: mesh_default
+
+
+	3.en este punto se habrá creado un nuevo nodo en la mesh, para verlo vamos 
+
+	a xplorer/mesh/Poly Mesh/Clusters/Shape/"Mesh_default", que fué el nombre que le asignamos a la forma creada
+
+
+	4.a su vez, se habra creado un nodo de animación "Mixer/Sources/Shape/Mesh_defaul", con un controlador 
+
+	con el nombre que le colocamos a la forma creada "Mesh_default"
+
+
+	5.ahora, para crear nuevas formas procedemos al igual que haciamos en el Shape Manager, modificando 
+
+	la forma de nuestra necesidad con las herramientas de edición de sub elementos
+
+
+	6.al terminar de editar la mesh, hasta llevarla a la forma deseada podemos crear de esta un capa ó 
+
+	forma de blend shape, para esto, vamos al menú Animate/Deform/Shape/Store Shape Key, y en las opciones 
+
+	contextuales le colocamos un nombre descriptivo, ejemplo: smile, así, quedará guardada la forma que creamos
+
+
+	7.luego si deseamos podemos hacer Edit Freeze, y borrar así, todas las transformaciones de la mesh, 
+
+	ya que hemos creado y salvado las blend shapes deseadas
+
+	
+
+si deseamos animar las formas de blend shape que hemos creado con el método anterior
+
+
+	1.primero seleccionamos la mesh en la cuál creamos los blend shapes, luego abrimos el panel de Animation Mixer, 
+
+	su shortcut es Alt+0
+
+
+	2.al abrir el Animate Mixer, con la mesh en la cuál hemos creado los blend shape, el Animate Mixer, se abrira con 
+
+	los track de animación, los cuales los podemos ubicar en Xplorer/Mixer/Tracks/Animation/Mixer_Anim_Track y 
+
+	Mixer_Anim_Track1
+
+	
+	3.en el panel Animation Mixer, podemos eleminar los Tracks que estén repetidos, con en este caso esta repetido el 
+
+	track, Mixer_Anim_Track1", y para eliminarlo hacemos mouse right click sobre el track y le damos Delete Track
+
+
+	4.luego en el panel Animation Mixer, agregamos los blend shapes de la mesh, para esto en el panel Animation Mixer 
+
+	vamos a Tack/Add Shape Track, y agregamos una pista por cada una de nuestras formas de blend shapes que están en 
+
+	"Mixer/Source/Shape/ por ejemplo: mesh_default y contraccion"
+
+	
+podemos utilizar controles externos para controlar las formas de blend shape que hemos creasmo
+
+	1.primero creamos un spline, con una forma sugerida, por ejemplo; en forma de ceja, y la colocamos sobre la ceja del 
+
+	personaje
+
+
+	2.luego ésta forma de ceja la renombramos con un nombre descriptivo ejemplo: L_handle_ceja, y le asignamos un color
+
+
+	3.ahora vamos Edit/Freeze, y Control+K Local Transform/Neutral Pose/Use Current Pose, para setear las propiedades de
+
+	la spline
+
+
+	4.luego, para relacionar la spline en forma de ceja que creamos con la forma blend shape repectiva, seleccionamos la 
+
+	spline y vamos Control+K Local Transform/SRT	
+
+
+	5.en las propiedades locales de la spline en forma de ceja que creamos vamos a "Transform/SRT", y seleccionamos la 
+
+	propiedad axis, que deseamos relacionar, ejemplo: Trnaslate "Y"
+
+
+	6.luego seleccionamos la mesh, en la cuál hemos creado las formas de blend shapes, y abrimos el panel "Animation Mixer", su shortcut es Alt+0
+
+	7.con la spline en forma de ceja seleccionada y con sus propiedades locales abiertas; Control+k/Local Transform/SRT, luego hacemos pick y arrastramos la propiedad deseada, en este caso "Position Y", y lo soltamos en el pick de la propiedad de la blend shape deseada, en el panel Animation Mixer
+
+
+
+también podemos crear controles externos para controlar las formas blend shapes creadas con el panel Shape Manager
+
+
+	1.primero creamos un spline, con una forma sugerida, por ejemplo; en forma de ceja, y la colocamos sobre la ceja del 
+
+	personaje
+
+
+	2.luego ésta forma de ceja la renombramos con un nombre descriptivo ejemplo: L_handle_ceja, y le asignamos un color
+
+
+	3.ahora vamos Edit/Freeze, y Control+K Local Transform/Neutral Pose/Use Current Pose, para setear las propiedades de 
+
+	la spline
+
+
+	4.luego seleccionamos la mesh deseada y abrimos el panel Shape Manager, yendo al menú: 
+
+	Animate/Deform/Shape/Shape Manager
+
+
+	5.ahora procedemos a crear las formas de blend shape como indicamos en pasos anteriores
+
+
+	6.luego vamos a la tag de animación de las blend shapes creadas en el panel Shape ManagerAnimate
+
+
+	7.luego en el pick de animación de la forma blend shape/animate deseada, hacemos mouse right click, y en el menú: 
+
+	contextual abriamos el panel "Parameter Conection Editor"
+
+
+	8.así, se abrirá el panel "Parameter Conection Editor", con la forma de blend shape deseada, cargada en la opción 
+
+	del Parameter Conection Editor/Driven Target
+
+
+	9.y para ver todas las opciones avanzadas de la blend shape cargada en la opción Driven Target del panel: 
+
+	Parametter Conection Editor, vamos a las opciones "Driven Targer/All Nodes"
+
+
+	10.luego en las opciones de "Driving Source, del panel Parameter Conection Editor", cargamos la forma spline en 
+
+	forma de ceja
+
+
+	11.ahora en las propiedades de la spline en forma de ceja que hemos cargado en la opción Driving Source, 
+
+	seleccionamos la propiedad de axis que deseamos aigsnar para generar el control de la blend shapes, en este caso 
+
+	es Position "Y"
+
+
+	12.y luego en las propiedades de la forma blend shape cargada en la opción de Driven Target, seleccionamos "Weight"
+
+
+	13.luego hacemos "Link", en el panel Paremeter Conection Editor, para relacionar ambas propiedades y así vincular 
+
+	ambos parámetros
+
+
+	14.ahora para colocar ambos elementos en su posición inicial, desactivamos las propiedades temporalmente, para esto 
+
+	le damos a "Set Relative Values", en el panel Parameter Conection Editor
+
+
+	15.luego, colocamos los elementos en su posición definitiva, tanto la forma de spline en forma de ceja, como la forma
+
+	de blend shape, accionada ó ejecutada, cambiando su valor 0 a 1, en el panel Shape Manager, luego volvemos a activar 
+
+	el "Set relative values", en el panel Parametter Conection Editor, para así, setear los valores tanto en la forma 
+
+	activa como en la forma inactiva ó pasiva
+
+
+
+
+
+
+

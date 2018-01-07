@@ -1,0 +1,321 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de hacer animaciones a través, de la deformación de geometrías/meshes, de esta manera
+
+podremos animar las deformaciones realizadas sobre la morfologías de las meshes, respectivas en el tiempo,
+
+e incluso realizar sources, de animación, keys, otros
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+_Reference Mode:
+
+
+	_esta opción nos permite indicar el criterio de deformación que tomará el programa en relación a la forma
+
+	ó shape, del objeto original y la forma ó shape, del objeto ya deformado entre otras opciones
+
+
+
+---------------------------------------------------------------------------------------------------------------
+
+
+Reference Mode Opcions:
+_______________________
+
+
+	_para aceder a las opciones de "Reference Mode", vamos ha "Animate/Deform/Shape/", y seleccionamos la opción
+
+	de "References...", a´si, se nos abrirá un panel contextual con las opciones de reference mode:
+
+
+
+	Shape Animation:
+	________________
+
+
+
+	Descripción:
+	____________
+
+	Determina la manera en que se crean instancias de clips de forma/shape, (creados) en el mezclador cuando los
+
+	Keysframes, de la forma/shape, se guardan o aplican. Una vez almacenadas y aplicadas en una forma/shape, no 
+
+	se puede cambiar el modo de keyframe, de forma/shape, para ese grupo.
+
+
+
+
+		_Shape Instancing:
+
+
+			_Instance Only:
+
+				_Instancia Only; este modoo crea clips, de forma/shape, que son 10 cuadros de largo 
+
+				cuando se utiliza "Store and Apply Shape Key or Apply Shape Key commands". Así, estos 
+
+				se crean como instancias en pistas/tracks, separadas dentro de un clip, de forma/shape, 
+
+				compuesta.
+
+
+				_El único modo de Instancia no es compatible con el trabajo en el administrador de la 
+
+				forma/shape. Si usted tiene formas/shape, creadas para un objeto en estos modos, es 
+
+				necesario eliminar primero sus clips, de forma/shape, antes de poder trabajar con él 
+
+				en el administrador de la forma/shape.
+
+
+
+			_Mixed Weight (Shape Manager compliant): (opción por default)
+
+				_Modo Mixed Weight; (predeterminado) crea clips, que son, siempre y cuando la escena 
+
+				este con el weight/peso, de fcurves, ese pico en el cuadro/frame, actual cuando se 
+
+				utiliza "Store and Apply Shape Key or Apply Shape Key commands". Este modo es compatible 
+
+				con el trabajo en el administrador de la forma/shape.
+
+
+				_Estos clips, se crean en pistas separadas con curvas de weight/peso, predeterminado. 
+
+				Esto es útil si se desea controlar las formas/shapes, mediante la mezcla de los pesos 
+
+				de las diferentes formas/shapes, en lugar de la transición de una forma/shape, a otra, 
+
+				como usted puede con cualquiera de los modos de transición estándar o cardinales.
+
+
+				_Al almacenar y aplicar keysframes, de forma/shape, en este modo, se crea un conjunto 
+
+				de parámetros personalizados de weights/Pesos, de Forma/shape, para el objeto de 
+
+				ayudar a mezclar weihgts/pesos, fácilmente
+
+
+
+			_Standard Transition:
+
+				_Modo Standard Transition; crea clips, de forma/shape, de frame, a cero frames, se 
+
+				utiliza "Store and Apply Shape Key or Apply Shape Key commands". Se crea transiciones 
+
+				con una interpolación lineal en el espacio entre las formas/shapes, moviéndose 
+
+				directamente de una forma/shape, a la siguiente.Así obtendremos los resultados son 
+
+				una transición mecánica deseada.
+
+
+				_Estos clips, representan un punto de transición. Los clips, se crean instancias en 
+
+				la misma pista, y las transiciones se generan automáticamente entre ellos, por lo 
+
+				que es fácil crear una secuencia de forma/shape sencilla. Cada transición tiene una 
+
+				curva que se puede editar en el editor de animación.
+
+
+				_Si se crea una serie de objetos deformados y los selecciona como keyframes. de 
+
+				forma/shape, para un objeto, este modo hace que sea fácil crear transiciones entre 
+
+				ellos, más bien como un tipo de animación pose a pose. Usted puede crear las mismas 
+
+				transiciones entre clips, de forma/shape, manual utilizando la mezcla estándar de 
+
+				transición o cardenal Transición comandos en el mezclador de animación.
+
+
+				_Este modo y el modo cardenal Transición no son compatibles con el trabajo en el 
+
+				administrador de la forma/shape. Si usted tiene formas/shapes, creadas para un 
+
+				objeto en estos modos, es necesario eliminar primero sus clips, de forma/shape, 
+
+				antes de poder trabajar con él en el administrador de la forma/shape. 
+
+
+
+			_Cardinal Transition:
+
+				_Modo Cardinal Transition; crea clips, de frame, a cero frames/cuadros, se utiliza 
+
+				"Store and Apply Shape Key or Apply Shape Key commands". Este modo es el mismo que 
+
+				el modo de transición Standard excepto que crea transiciones con una interpolación 
+
+				cardenal en el espacio, lo que resulta en una curva suave, formando un arco que 
+
+				todavía pasa a través de cada keyframe, en forma/shape, de los fotogramas clave 
+
+				definidos.
+
+
+				_Necesita al menos cuatro clips, de forma/shape, para la curva, sea plenamente 
+
+				cardenal, pero tres clips, de forma/shape, le dará una curva demasiado suave. La 
+
+				interpolación en cualquier segmento está influenciada por los cuatro clips, de 
+
+				forma/shape, más cercanas.
+
+				
+				_Tenga en cuenta que la curva de transición en el clip, controla el weight/peso, 
+
+				del clip de forma/shape, en el tiempo, no la forma de la transición cardenal en 
+
+				el espacio
+
+
+
+			_Blended Weight (Shpe Manager compliant):
+
+				_Mode Blended Weight; crea clips, de forma que son de la misma longitud que la 
+
+				escena (siempre se puede cambiar la duración de los clips, como quieras después). 
+
+				Sin embargo, los pesos de forma para cada clip, no tienen fcurves creados 
+
+				automáticamente por ellos.
+		
+				Este es el modo por defecto para trabajar en el administrador de la forma/shape.
+
+
+
+
+	_Shape Reference:
+
+
+
+	Descripción:
+	____________
+
+
+	Determina cómo las formas/shape, se deforman en referencia a la geometría de la base del objeto de 
+
+	forma/shape, de animación que es el resultado de los operadores que se encuentran en la región de modelado 
+
+	de la historia de la construcción del objeto.
+
+
+
+
+			_Lacal Relative:
+
+				_Modo Lacal Relative; formas/shapes, se guardan con respecto al frame, de referencia 
+
+				local de cada punto. Cuando deforma la superficie, la forma/shape, mantiene su 
+
+				posición y orientación con respecto a sus alrededores inmediatos y deforma el objeto. 
+
+				Por ejemplo, si utiliza formas/shapes, de animar un bulto en un dedo y luego doblar 
+
+				el dedo, el tumor se mueve con el dedo, como era de esperar. Este modo es el 
+
+				predeterminado, pero también requiere más cálculo.
+
+
+				_Tenga en cuenta que en algunos casos, puede ser necesario congelar transformaciones 
+
+				del objeto antes de usar el modo relativo local.
+
+				Además, el modo Relative local, puede generar resultados incoherentes en las curvas 
+
+				debido a que el frame, de referencia local de puntos en curvas no siempre está bien 
+
+				definida y, a veces puede dar la vuelta.
+
+			
+
+			_Object Relative:
+
+				_Modo Object Relative; Shapes se almacenan con respecto al objeto como un todo. 
+
+				Si deformar el objeto, la forma/shape, se mueve con él, pero mantiene su orientación 
+
+				original. Si no hay una animación de deformación antes de guardar o las teclas 
+
+				de forma/shape Store, el efecto es el mismo que el modo relativo local.
+
+
+
+			_Absolute:
+
+				_Modo Absolute; Las formas/shapes, son absolutas y no relativas. Se almacenan en 
+
+				términos del sistema de coordenadas local del objeto. Si se deforma el objeto, 
+
+				el clúster con la forma/shape, no se ve afectada, con el efecto es similar a un 
+
+				"bloqueo".
+
+
+
+		_Relational Slect Shape Keys:
+
+			_Mantiene el vínculo entre los objetos de forma/shape, objetivo deformes que usted escoja 
+
+			para las keysframes, de forma/shape, utilizando el Deform, de forma  que elija la 
+
+			forma/shape, de Comando keyable, y el objeto que está deformando. Esto significa que los 
+
+			keyframes, de forma /shape, siguen impulsando la animación forma/shape, en el objeto.
+
+
+			_Mantiene el vínculo entre los objetos de forma/shape, objetivo deformes que usted escoja 
+
+			para las keyframes, de forma/shape, utilizando el Deform Forma Elija la forma de Comando 
+
+			de teclado y el objeto que está deformando. Esto significa que los kaeyframes, de 
+
+			forma/shape, siguen impulsando la animación forma en el objeto.
+
+			Cuando esta opción está desactivada, el vínculo entre los objetos de forma/shape, objetivo 
+
+			y el objeto deformante se rompe y las teclas de forma no maneje la animación forma.
+
+
+
+
+		_Apply Selected Shape Keys:
+
+			_Crea clips, de forma/shape, en el mezclador mixer, automáticamente al seleccionar los 
+
+			keyframes, de forma/shape, con el Deform Forma Elija la forma de Comando de teclado.
+
+
+		_Mute Deforms on Instantiation:
+
+			_Silencia cualquier deformar los operadores existentes en el objeto cuando se crea 
+
+			(instantiate) un clip, de forma/shape, en el mezclador. Esto evita que el operador no 
+
+			pueda borrarse cuando se crea un clip, de la forma/shape. Sin embargo, si un operador 
+
+			no soporta el silenciamiento, se borra incluso si esta opción está activada.
+
+
+
+
+
+
+
+
+
+
+

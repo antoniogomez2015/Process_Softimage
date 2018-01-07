@@ -1,0 +1,66 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de variar ó deformar el tiempo de reproducción de in clip, así, podremos ajustar
+
+la velocidad de reproducción de un clip determinado de forma personalizada a nuestra medida
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+TimeWarp Clip:
+______________
+
+
+
+
+	_primero debemos crear un source, de animación en el explorer
+
+
+	_luego debemos cargar el source, al mixer panel, para así, crear un clip
+
+
+	_luego hacemos "mouse right clip/", y seleccionamos la opción de "Clip Properties.."
+
+	
+	_así, vamos a las opciones del clip "Gneric/Time Control/Warp", las cuales son:
+
+
+		_Do Warp Active:
+
+
+			_podemos activar ó desactivar las opciones de timewarp, de un clip
+
+
+		_Clip Warp:
+
+			_opción indeterminada
+
+
+		_Warp FCurve:
+
+			_a través, de la FCurve, tiene dos keyframes, uno al comienzo y otro al final,
+
+			_podemos hacer "mouse right click/", y seleccionar "Lock in X,Y", así, podremos
+
+			desbloquear los keyframes, para poder ajustarlo ó moverlos
+
+
+			_a parte de mover los keysframes, predeterminados podemos agregar nuevos keyframes,
+
+			a través, de la herramienta de keyframes, ó en las opciones contextuales a través,
+
+			de "mouse right click"
+
+
+		así, podremos ajustar de forma personaliza el tiempo y la velocidad de reproducción
+
+		del clip, permiendo así, ajustar al detalle el comportamiento de los elementos manejados
+
+		por el source/clip
+			
+	

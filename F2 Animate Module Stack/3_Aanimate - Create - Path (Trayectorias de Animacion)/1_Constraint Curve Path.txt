@@ -1,0 +1,97 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de organizar elementos sobre trazados/path, e incluso animarlos sobre las trayectorias
+
+de los trazados, así, como hacer distribuciones y modelados procedurales, otros
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	_si lo necesitamos previamente podemos hacer duplicados especiales, para esto, seleccionamos el objecto
+
+	y hacemos Control + Shift + D, así, se abrirá el panel de "Duplicate Multiple", para así, hacer las 
+
+	instancias ó duplicamos necesarios
+
+
+	_ahora procedemos ha crear la spline, que hara de path/ó trayectoria de modelado y animación, otros, 
+
+	
+
+		_luego vamos ha "Create/Curve/", y activamos la herramienta "Draw Cubic by CVs",y luego para un mayor 
+
+		ajuste podemos activar la opcoón de auto ajuste en este caso de "Plane/grilla", en el panel 
+
+		de herramientas de la derechay procedemos a generar la spline, en la forma deseada, señida 
+
+		al grid, ó podemos también luego editarla para que tenga una forma diferente, y al finalizar
+
+		de crear la spline señida al grid, podemos volver a pasar el modo de auto ajuste de "plane",
+
+		ha "Global", para recuperar su estado normal
+
+
+	_la spline generada en el proceso anterior la podemos renombrar, ej: path_trayectoria
+
+
+	_ahora debemos relacionar ambos tipos de elementos, tantos los elementos mesh/motives, como la spline,
+
+
+		_para esto, seleccionamos primero los elementos mesh/motives
+
+
+		_y con este seleccionado vamos al panel de opciones de la "derecha/Contraint/Curve(Path)", así,
+
+		nos aparecerá un "Picker", con el cuál tendremos que seleccionar el spline, ha relacionar con el sistema
+
+		contraint, el cuál relacionará ambos elementos, como también, se nos abrirá una ventana contextual
+
+		con las opciones del contraint (Curve-path), estas son:
+
+
+			_Blend Weight:
+
+
+				_este atributo indica la presición que tendrán los mesh/motive, sobre la spline
+
+
+			_Path % Age:
+
+				_más si movemos este atributo veremos como los elementos mesh/motives, se
+
+				desplazan sobre la el path/trayectoria en proporción a nuestro desplazamiento
+
+
+				_pero para colocar instancias de forma consecutiva y ordenada sobre el path/trazado,
+
+				debemos aplicar un script, sobre el input, de este atributo, el comando es el
+
+				siguiente: "L(0,100)", éste distribuirá los elementos en el trazado más esta 
+
+				opción es para una distribución de elementos sobre el trazado más se habrán
+
+				perdido las propiedades de animación de este atributo, en ejemplo se utilizo
+
+				un valor real para script de "L(20)"
+
+
+			_más para cambiar las tangentes ó direcciones de los elementos mesh/motives, debemos 
+
+			a la petaña de "Tagency", dentro de las mismas propiedades del contraint/curvePath,
+
+			activamos esta opción y allí, podemos indicar la cordenada de trabajo de los elementos
+
+			mesh/motive, de ser necesario un ajuste ó cambio de dirección ó sentido de trabajo
+
+
+		_ya terminado el modelado procedural a través de splines/path/trazados, podemos borrar la spline,
+
+		si así, lo deseamos para continuar con otros procesos

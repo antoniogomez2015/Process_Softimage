@@ -1,0 +1,135 @@
+
+
+
+Proceso para Pie Inverso en Softimage XSI
+
+	del curso "Character Rigging in XSI 253mb"
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+Chains:
+_______
+
+
+
+	_primero creamos la cadena/chain, de la leg, ó pierna, ésta contiene sólo los bones de: 
+
+
+		_"Leg Root"
+
+			_"Femur"
+
+				_"Tibia",
+
+					_"Eff"
+
+
+	_luego debemos crear la cadena del pie "Foot", ésta se conforma de:
+
+
+		_"Foot Root"
+
+			_"Meta Tarso",
+
+				_"Tarso"
+
+					_Eff
+
+
+	_luego debemos crear la cadena del pie inverso "Inverse Foot", ésta se conforma de:
+
+
+		_"Inverse Root"
+
+
+			_"Inverse Meta Tarso",
+
+				_"Inverse Tarso"
+	
+					_Inverse Eff
+
+
+	_luego debemos crear la cadena auxiliar del pie inverso "Aux", ésta se conforma de:
+
+
+		_"Foot Aux Root"
+
+			_"Foot Aux"
+
+				_"Foot Aux Eff"
+
+
+	
+-----------------------------------------------------------------------------------------------------
+
+
+Parent:
+_______
+
+
+
+	_primero debemos emparentar la cadena de la pierna ó leg, a la cadena de pie ó foot, emparentando así,
+
+	el efector de la cadena del pie "L_Leg Eff", con el root, de la cadena "L_Foot Root"
+
+
+	_primero seleccionamos el elemento que será el padre, en este caso el root, del pie, "L_Foot Root"
+
+
+	_luego debemos hacer mouse left click, en "Constraint/Parent", así, nos aparecerá un "Picker", con el cuál,
+
+	tendremos que seleccionar al elemento que será hijo, en este caso "L_Leg Eff", así, ambas cadenas quedarán 
+
+	emparentadas y al mover root, de la cadena del root, se moverá al unísono el efector de la cadena de la pierna
+
+	ó leg
+
+
+
+	_debemos emparentar la cadena del pie inverso "Inverse Root", con la cadena auxiliar "Foot Aux Root",
+
+	emparentando así, el root, de la cadena del pie inverso, al efector de la cadena auxiliar
+
+
+	_primero seleccionamos el elemento que será el padre, en este caso el efector de la cadena auxiliar del pie
+
+	en este caso "Foot Aux Eff"
+
+
+	_luego debemos hacer mouse left click, en "Constraint/Parent", así, nos aparecerá un "Picker", con el cuál,
+
+	tendremos que seleccionar al elemento que será hijo, en este caso será el root, de la cadena de pie inverso,
+
+	"Inverse Root", así, ambas cadenas quedarán emparentadas y al mover el efector de la cadena auxiliar se
+
+	moverá al unísono la cadena completa del pie inverso
+
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+Constraint:
+___________
+
+
+	_primero es recomendable activar la opción de "Constraint/CnsComp", para que así, los elementos implicados
+
+	mantengan su posición
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+Parameters:
+___________
+
+

@@ -1,0 +1,36 @@
+
+
+DETALLES
+
+
+podemos tener una visualización fantasma/ghosh, de los objetos en movimiento en la escena a través,
+
+de diferentes visualizaciones así, como también, un filtrado para visualizar sólo determinados
+
+objectos con "Ghosh", ó visualizar todos los objectos con ghosh
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Temporal/ Ghosh:
+________________
+
+
+
+	_para desactivar temporalmente un elemento de la visualización en modo Ghosh, podemos 
+
+	seleccionar este e ir ha "Display/Ghosh/Unghosh Selection"
+
+
+	_para desabilitar el modo de visualización ghosh, para todos los objeto de la escena podemos
+
+	ir ha "Display/Unghosh All Objects"
+
+
+	_para ver las opciones de configuración avanzada del modo de visualización ghosh, podemos ir
+
+	ha "Display/Display Options (All Camaras)/Ghosting"
+
+
+

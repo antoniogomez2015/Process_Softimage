@@ -1,0 +1,34 @@
+
+Softimage XSI
+
+
+	Ambient occlusion
+
+	1_creamos un nuevo "Pass Emty"
+
+	2_luego vamos a "Explorer/AO Pass "shortcup (P)"/y seleccionamos los objetos "Background_Objects_partition""
+
+	3_con los objetos seleccionados le creamos a estos un nuevo material de tipo "Constant"
+
+	4_ahora abrimos el "Render Tree (Shift+7)", y cargamos el material que creamos, el "Constant"
+
+	5_luego creamos un nuevo nodo, yendo a: Nodes/Illumination/Ambient Occlusion
+
+	6_ahora remplazaremos la tag "Material/Constant", por el nodo que creamos "Ambient occlusion", lo reemplazaremos en las conexiones (Surface/Shadow/Photon)
+	
+	7_ahora abrimos las opciones del nodo "Ambient Occlusion", y manejamos las opciones de "Spread", y "Maximun distance"
+
+
+		OPCIONAL
+
+		en ocaciones será preciso eliminar algunas partes de la composición del "Pass AO", como por ejemplo: el "enviromento ó skydome", que le son inconvenientes 
+		ó se hacen ruido para la posproducción, por esta razón podemos utilizar las opción de crear particiones dentro del "Pass AO",
+
+		1_Partition: para hacer una partition, debemos primero seleccionar los elementos que deseamos incluir en la partición que deseamos crear
+
+		2_luego vamos al menú "Render/Pass/Partition/New Partition", en las opciones de la tag, de la partición que se crea ha esta le asignamos un nombre, ej "bg"
+
+		3_ahora vamos al "Explorer/(P), Pass AO/y buscamos la partición que creamos en este ejemplo "bg""
+
+		4_seleccionamos la partición "bg", que creamos le asignamos un material de tipo "Constant", así, el contenido de esta partición no influirá en el render "AO Pass", al ser esta partición totalmente blanca
+

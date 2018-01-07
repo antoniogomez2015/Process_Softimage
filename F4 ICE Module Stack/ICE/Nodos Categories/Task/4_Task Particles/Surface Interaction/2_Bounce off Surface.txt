@@ -1,0 +1,49 @@
+
+
+DETALLES
+
+
+tenemos la posibilidad de hacer que las partículas reboten sobre superficies determinadas
+
+de forma dinámica e interactiva 
+
+
+	Task/Particles/Surface Interaction/Bounce off Surface
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Bounce off Surface
+
+
+	_este es el nodo nos permite conectar un geometría de la escena y convertirla en una superficie
+
+	de rebote para el sistema de partículas
+
+
+	_por lo general este nodo va conectado ha:
+
+
+		-Bounce off Surface-
+
+
+			_In:
+
+				_Get Mesh/ Bounce off Surface/ Surface1
+
+
+			_Out:
+
+				_"Tool/ Simulation/ Simulation Root/ Execute"
+
+
+			
+
+
+
+		
+	
+

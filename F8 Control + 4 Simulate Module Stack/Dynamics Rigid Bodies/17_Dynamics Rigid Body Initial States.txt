@@ -1,0 +1,66 @@
+
+
+Detalles
+
+
+tenemos la posibilidad de trabajar con cuerpos rígidos/rigid bodies, en softimage, para realizas 
+
+diferentes tipos de simulaciones e interacciones
+
+para crear simulaciones en softimage, debemos ir a la sección de  simulaciones yendo ha "Simulate/Control+4"
+
+
+los sistemas de rigid body, por lo general requieren de la aplicación fields/fuerzas, en la escena, para que
+
+así, los sistemas rigid bodys, estén sometidos ha estas
+
+
+
+NOTA a continuación presentamos el características principales de los rigid bodies
+
+	_Actives, esto ebedecerán a fuerzas/fields, y serán por lo general los elementos colisionadores
+
+	_Passives, estos no obecederán a fuerzas/fields, y serán por lo general los elementos colisionados
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+	_Set Inital State:
+	__________________
+
+
+
+	_también tenemos la posibilidad de ajutar la posición ó ubicación de los elementos con rigid body,
+
+	luego de haberlos creado para que así, las simulaciones puedan realizarse en diferentes configuraciones
+
+	ó ubicaciones de los elementos sin que afecte el lugar ó la ubicación en que éstos fueron creados
+
+
+		_primero reubicamos el objecto en el lugar deseado según la lógica de la escena
+
+
+		_luego seleccionamos el elemento mesh/motive, y con este seleccionado vamos ha "Simulate/Modify/Rigid Body
+
+		/Set Initial State", así, se tomará esta nueva posición como punto de partida para inicialicemos
+
+		la simulación nuevamente
+
+
+	esta opción es especialmente útil para configurar elementos apilados para que estos tomen previamente
+
+	su posición a través de su peso ejercido por las fuerzas/fields, para luego de que han tomando su ubicación
+
+	natural en relación a su peso y volúmen entonces si, podemos hacer "Set Initial State", para que así,
+
+	la simulación empiece a partir de este punto, otros
+
+
+
+
+____________________________________________________________________________________________________

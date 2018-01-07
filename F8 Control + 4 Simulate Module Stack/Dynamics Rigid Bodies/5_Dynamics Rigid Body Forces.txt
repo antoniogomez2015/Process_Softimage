@@ -1,0 +1,48 @@
+
+
+Detalles
+
+
+los elementos rigid body, dentro de un sistema de "Enviroment", no tienen por que responder todos a las mismas
+
+fuerzas/fields, aplicada al sistema de enviroment, respectivo, de esta menera podemos personalizar 
+
+el comportamiento que tendrá cada elemento rigid body, de forma independiente para un mayor control y personalización,
+
+de esta manera, un elemento rigid body, determinado podrá responder sólo algunas de las fuerzas asignadas
+
+al sistema si así lo configuramos, otros
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Enviroment/Field:
+__________________
+
+
+	
+	Fuerzas Personalizadas:
+	_______________________
+
+
+	_tenemos la posibidad de activar ó desactivar el sistema de fuerzas para un elemento rigid body, determinado
+
+	para esto vamos ha "Foce Controller/Fonce", y podemos accesar a través de, "Simulate/Modify/Rigid Body
+
+	/Edit Rigid Body/Rigid Body Properties/Force Controller/Force Active", así, podemos activar el sistema
+
+	de fuerzas completo para este elemento si así, lo deseamos
+
+
+	_pero también, podemos hacer ajustes personalizados para no tener que desactivar todas las fuerzas 
+
+	a un elemento, si no, solamente algunas fuerzas seleccionadas ó personalizadas por nosotros, y no solo
+
+	podemos desactivarlas sino que también podemos graduar su influencia hasta valores muy bajo, otros
+
+_______________________________________________________________________________________________________________
+

@@ -1,0 +1,120 @@
+
+
+
+DETALLES
+
+
+podemos cambiar ó limitar la vida de las partículas a través del uso de condicionales y estados
+
+para así, a través, de una acción poder hacer que las partículas desaparezcan ó hagan otra acción
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+NOTA:	ya tenemos que tener un sistema "Point Cloud", cargado en el ICETree, con sus respetivos 
+
+	elementos como el emisor y la/s superficies colisionadoras, otros
+
+
+
+	_luego seleccionamos mesh/motive, que hará servirá de punto de control para el condicional
+
+	en la escena ó en el explorer, procedemos a cargarlo en el ICETree, hacendo "Shift+F3", 
+
+	ó arrastrándolo desde el explorer, este se cargará en una etiqueda "get Data"
+
+
+------------------------------------------------------------------------------------------------
+
+
+
+
+	_luego vamos ha "ICETree/Particle/States/State Machine", y lo creamos
+
+
+	_ahora relacionamos los nodos "State Machine/Execute", con el nodo "Somulation Root/Execute"
+
+
+	_luego vamos ha "ICETree/Particle/States/State", y lo creamos
+
+
+	_ahora relacionamos los nodos "State/Execute State", con el nodo 
+
+	"State Machine/Execute State1"
+
+
+	_luego vamos ha "ICETree/Particles/Conditionals/Test Collision With Surface", y lo creamos
+
+
+	_ahora relacionamos los nodos "Test Collision With Surface/Hit", con el nodo
+
+	"State/Trigger1", así, a través, de esta prueba se disparará el gatillo ó trigger
+
+	
+	_ahora relacionamos los nodos "Get Data - motive/Value", con el nodo 
+
+	"Test Coliision With Surface/Surface1", de esta manera, la "Triger", del "State", se
+
+	dispará cuando las partículas en este caso choquen con la superficie "Motive"
+
+
+	_leugo vamos ha "ICETree/particle/Timers/Star Timer", y lo creamos, el cuál indicará
+
+	la cantidad de tiempo que se reproducirán las partículas luego de ejecutarse el evento
+
+
+	_ahora relacionamos los nodos "Start Timer/Execute", con el nodo "State/Execute on Trigger1"
+
+	de esta manera, esta será la reacción del Trigger1, y el indicador del siguiente "Trigger"
+
+
+	_luego vamos ha "ICETree/Particle/Conditionals/Test Timer", y lo creamos
+
+
+	_ahora relacionamos los nodos "Test Timer/Result", con el nodo "State/Trigger2", para así,
+
+	configurar el siguiente "disparado", por el disparador anterior "Trigger1", así se activará
+
+	el siguiente trigger, el cuál será en este caso "Test Timer", el cuál, comprobará el tiempo 
+	actual
+
+
+	_luego vamos ha "ICETree/Particle/Deleting Particles/Delete Particle", y lo creamos
+
+
+	_ahora relacionamos los nodos "Delete Particle/Execute1", al nodo 
+
+	"State/Execute on Trigger2", así, las partículas se eleminarán al ser el tiempo actual
+
+	comprobado
+
+
+
+------------------------------------------------------------------------------------------------
+
+Lógica del ICETree
+__________________
+
+
+
+	primero se comprobará que las partículas colisionan con la superficie determinada 
+
+	"Test Collision With Surface", luego si es así, éstas dispararán el evento "Trigger1",
+
+	el cuál medirá el tiempo de duración restante de vida de las partículas en segundos  
+
+	"Start Timer", y, a su vez, dispararán "Trigger2", el siguiente evento "Test Timer",
+
+	el cuál comprobará el tiempo actual de la simulación y ejecutará la acción dentro 
+
+	de el evento la cuál es "Delete Particle", borrar las partículas en el tiempo actual
+
+	el cuál, ya posee un controlador el cuál es "Star Timer"
+
+
+
+

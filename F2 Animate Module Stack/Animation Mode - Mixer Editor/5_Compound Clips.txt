@@ -1,0 +1,191 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de hacer animación "NoLinear", ó animación no lineal, a través, del modo de animación
+
+avanzado de "animación mixer", el cuál, permite diferentes tipos de métodos y sistemas de animación:
+
+
+el modo de animación mixer, permite los siguientes tipos de datos
+
+
+	_FCurve Animation
+
+	_Expression Animation
+
+	_Constraints Animation
+
+	_Shape Animation
+
+	_Audio Animation
+
+	_Animation Layers
+
+	_Cached Animation
+
+	_Simulation Sources
+
+	_Image Clips
+
+
+
+Animación no lineal es la animación que no está limitada por el tiempo. Se le permite trabajar en la animación 
+
+a un alto nivel de control en cualquier punto de tiempo en la escena. Se le da un control de alto nivel sobre 
+
+la animación porque puede en cada capa mezclar secuencias de una manera no lineal y no destructiva. Además, 
+
+se puede reutilizar y afinar muchas fuentes de datos.
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Compound Clips:
+_______________
+
+
+
+	_Clips compuestos, son una forma de empaquetar varios clips juntos para que pueda trabajar con mayor facilidad. 
+
+	Por ejemplo, usted podría empaquetar un compuesto/compound, de karate movimiento que está hecho de una patada, 
+	puñetazo, y girar, y luego vuelva a usar este movimiento compuesto sobre otro personaje.
+
+	En el mezclador mixer, de animación, los clips, compuestos aparecen más oscuros que los clips ordinarios 
+
+	(verde oscuro para los compuestos de acción y azul oscuro para los compuestos de shape). 
+
+
+	_Después de crear un clip compuesto, se puede mover, escalar, copiar, ciclo, de rebote, y deformar todo el complejo 
+
+	a la vez. Cuando se crea un compuesto, la posición y las transiciones, efectos de clips, etc. que tenías en los 
+
+	clips individuales se mantienen intactos. También puede crear transiciones entre clips compuestos.
+
+
+	_Además, puede abrir un clip compuesto, modificar los clips dentro de ella, a continuación, cierre el clip compuesto
+ 
+	nuevo y tienen estos cambios se reflejarán sin tener que volver a crear el clip compuesto.
+
+
+	_Ciertos procedimientos crean automáticamente clips compuestos; por ejemplo, al guardar las llaves de forma, un 
+
+	compuesto separado se crea para cada grupo. Además, cuando se utiliza el comando Ecualizar para los clips de acción,
+ 
+	se crea un clip compuesto que contiene todos los subclips individuales que representan cada frecuencia animación
+
+
+
+NOTE:	_usted puede hacer clips compound, sólo de clips de "actions", y de "shapes"
+
+
+	_cada compound clips, sólo puede tener clips, de "actions", y de "shapes"
+
+
+	_usted no puede guardar "pressets", de compounds clips
+
+
+	_puede crear plot/volcados, de simples clips, de "actions", con toda la información de animación posible
+
+	pero no con información decompound, y constraint
+
+
+	_La congelació/Freezing, y la fusión/merging, de ambas permitirá crear un nuevo clip de varios clips existentes	
+	
+
+
+Local versus Global Time:
+_________________________
+
+
+
+	_Global Time:
+
+		_un respectivo clip, muestra en sus extremos superiores los datos del tiempo global al que estes corresponde
+
+		según la longitud del timeline
+
+
+	_Local Time:
+
+		_un respectivo clip, muestra en sus extremos inferiores los datos del tiempo local al que estes corresponde
+
+		según la longitud del clip, y por ende del source, en el explorer
+
+
+
+Creating Compound Clips:
+________________________
+
+
+
+	_primero seleccionamos los clips, deseados en mixer
+
+
+	_luego con los clips, deseados seleccionados vamos ha "mixer/clips/", y seleccionamos la opción de "Create Compound",
+
+	así, desaparecerán los clips, los cuales fueron seleccionados para crear el clip, compound, y aparecerá el clip,
+
+	compound, reemplazando éstos
+
+
+
+	Opening and Closing Compound Clips:
+	___________________________________
+
+
+	_pero los clips originales que fueron seleccionados para crear el clip, compound, no han sido borrados, sino,
+
+	incorporados dentro del compound, y para acceder nuevamente a los clips, originales debemos seleccionar el clip,
+
+	compound, e ir ha 
+
+
+		_"mixer/clips/", y seleccionar la opción de "Open Compound (Go In)", así, se abrirá un timeline
+
+		con los clips, originales para su vizualización y edición
+
+		
+		_otra opción más práctiva es hacer "mouse left doble click", sobre el clip, compound creado
+
+
+		_otra opción es hacer "mouse left right click/", y seleccionar la opción de "Expand"
+
+
+
+	Closing Compound Clips:
+	_______________________
+
+
+	_y para cerrar ó volver al compound, creado vamos ha 
+
+		
+		_"mixer/clips/", y seleccionamos la opción de "Close Compound (Go Out)"
+
+
+		_otra opción más práctiva es hacer "rePag", (debajo de la tecla FIN)
+
+
+
+	Removing Clips from the Compound:
+	_________________________________
+
+
+	_más tmabién, disponemos de la opción de eliminar el compound, para volver a colocar los clip, originales
+
+	seleccionados en su sitio ó posición original, para esto vamos ha 
+
+		
+		_"mixer/clips/", y seleccionamos la opción de "Explode Compound"
+
+
+		_otra opción más práctiva es hacer "mouse right click/", y seleccionar la opción de "Eplode"
+
+	
+
+
+--------------------------------------------------------------------------------------------------------------

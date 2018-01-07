@@ -1,0 +1,78 @@
+
+
+DETALLES
+
+
+tenemos la posibilidad tanto de hacer simulaciones de relieves y bajo relieves interactivos y dinámicos
+
+a través, de diferentes eleentos para lograr efectos y simulaciones avanzadas
+
+
+	Task/Deformation/Effects/Footprints
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Footprints
+
+
+	_este es el nodo nos permite nos permite convertir una superficie en una superficie blanda y
+
+	dinámica ó sensible a determinados elementos que pueden influir en esta deformándola temporalmente
+
+	ó no
+
+
+NOTE:	para este efecto dinámico no se requiere un sistema de partículas así, que habrá que crear un
+
+	"Point Cloud", y un "ICETree", al elemento a deformar previamente para que así, éste puede recibir
+
+	nodos y atributos de ICETree
+
+
+
+	_primero creamos el elemento mesh/motive, ej: "floor_proxi", que será deformado, este debe de tener 
+
+	una alta resolución para que logre expresar las deformaciones de manera pareciable y con calidad 
+
+	relativa a la misma
+
+
+	_luego seleccionamos el mesh/motive, que hara de objeto deformado, en este ejemplo es "floor_proxi",
+
+	y con este seleccionado vamos ha "ICETree", shortcut "Alt + 9" y vamos ha "ICETree/Create/", y acreamos
+
+	un "Simulated ICE Tree", así, se agregará en "Explorer/Mesh/", es stack de "Stack/Simulation/ICETree"
+
+
+	_ahora vamos ha "ICETree/Task/Deformation/Effects/", y agregamos el nodo "Footprints"
+
+
+		-Footprints-
+
+
+			_In:
+
+				_Get Geometry/feet
+
+
+			_Out:
+
+				_"ICETree/ Create/ Simulated ICE Tree/ Port1"
+
+
+	así, veremos que al animar los elementos "Get Geometry", en la escena el mesh/motive,
+
+	que recibe la deformación se verá deformado y, a su vez, éste mantendrá la deformación
+
+	en el tiemplo luego de que el elemento "Get Geoemtry", se mueven en el espacio retirándose
+
+	del elemento deformado
+
+
+
+
+

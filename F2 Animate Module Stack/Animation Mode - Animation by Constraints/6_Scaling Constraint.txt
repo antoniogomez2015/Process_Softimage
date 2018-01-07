@@ -1,0 +1,75 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de vincular diferentes elementos de diferentes manera de cara a mejorar la animación
+
+e interactividad entre los elemento para mejorar así, la flexibilidad y facilidad en el proceso de animación
+
+y de relación entre los elementos
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+_Scaling Constraint:
+
+
+	_tenemos la posibilidad de vincular la propiedade de un elemento a otro elemento, para que así,
+
+	al escalas las propiedades de escala de un elemento estas afecten a los otros elementos elementos
+
+	hijos/constraint
+
+
+		_primero seleccionamos el ó los elemento/s que serán "hijos/constraint/limitado"
+
+
+		_luego con este objeto seleccionado vamos ha "Contrain/", y hacemos click, en "Scaling", así,
+
+		los elementos "hijo/constraint", quedarán limitados/constraint, del elemento "parent", ó manejador
+
+		
+		_así, se agregará a los elemento/s "hijo/parent", en el "Explorer/Polygon Mesh/Kinematics/Constraint/",
+
+		será agregado el elemento "Scaling Cns", y, al hacer doble click, en este entraremos a sus opciones:
+
+
+		_de esta manera, al hacer "Scaling Offset/" en el elemento controlador, se escalarán también, las 
+
+		mismas propiedades del ó los elementos hijos/constraint
+
+		
+
+
+------------------------------------------------------------------------------------------------------------
+
+		Scalins Constraint:
+		___________________
+
+			_Active:
+
+				_tenemos la posibilidad de activar ó desactivar temporalmente un constraint
+
+
+			_Blend Weight:
+
+				_podemos ajustar la influencia ó fuerza de retardo ó inercia que tendrá ó ejercerá 
+
+				el contraint, sobre los sus elementos relacionados
+
+
+			Scaling Offset:
+			_______________
+
+
+			_X,Y,Z:
+
+				_podemos la posibilidad de escalar ó hacer escala en cadenadas específicas para que
+
+				así, estas cordenadas efecten a las codenadas similes en los objectos hijos/constraint
+
+

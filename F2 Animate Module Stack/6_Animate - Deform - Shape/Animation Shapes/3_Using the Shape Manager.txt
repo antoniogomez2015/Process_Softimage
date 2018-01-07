@@ -1,0 +1,44 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de hacer animaciones a través, de la deformación de geometrías/meshes, de esta manera
+
+podremos animar las deformaciones realizadas sobre la morfologías de las meshes, respectivas en el tiempo,
+
+e incluso realizar sources, de animación, keys, otros
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+_Using the Shape Manager:
+
+
+
+	El administrador/manager, de la forma/shaper que proporciona un entorno para la creación, modificación y 
+
+	animación formas/shapes. Para ayudarle a trabajar de manera eficiente, en el cuál, se puede ver inmediatamente 
+
+	los resultados de los cambios en el gestor de forma a medida que los hace.
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------
+
+
+The Cluster Shape Combiner:
+___________________________
+
+
+
+	El co
+
+

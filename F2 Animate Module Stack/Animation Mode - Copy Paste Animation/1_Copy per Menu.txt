@@ -1,0 +1,74 @@
+
+
+DETALLES
+
+
+podemos copiar proiedades de animación de un elemento a otro ó unos elementos a otros a través,
+
+de diferente métodos y funcionalidades
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Copy and Paste Menú Animation
+_____________________________
+
+
+
+	_Animation Menú:
+
+		_podemos seleccionar un elemento con animación en el timeline, y con este 
+		seleccionado vamos ha "Timeline/Animation/Copy Animation/", allí, tenemos
+
+		diferentes opciones, estas son:
+
+
+			_from Trnasforms:
+
+				_copia los valores de las propiedades locales tanto de transform,
+
+				scale, rotate and orientation
+
+
+			_from Scaling:
+
+				_copia los valores de las propiedades de local scale
+
+
+			_from Rotation:
+
+				_copia los valores de las propiedades de local rotation
+
+
+			_from Translation
+
+				_copia los valores de las propiedades de local translation
+
+
+			_from All Parameters, Expressions:
+
+				_copia todos los parámetro de expresiones asignadas
+
+
+			_from All Parameters, And Animation Type:
+
+				_copia todos los parámetros de animación local y, todos los tipos
+
+				de animación existentes en el mesh/motive
+
+
+			_from All Parameters, Expressions:
+
+				_ll
+
+			
+			_from All Parameters, FCurves:
+
+				_copia todos los parámetros de F Curve Editor
+
+
+			_from All Parameters, Layer Animation:
+
+				_copia todos los paámetro del panel layer editor
+

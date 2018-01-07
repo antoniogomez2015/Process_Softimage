@@ -1,0 +1,27 @@
+
+
+DETALLES
+
+
+El nodo ICETree es el nodo principal en cualquier árbol ICE. Debido a que esta es una simulación de 
+
+partículas, se simula el nodo ICETree. En cada trama, el nodo ICETree procesa todos los nodos y los 
+
+compuestos que están conectados a sus puertos, de arriba a abajo.
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	_seleccionamos cualquier elemento en el viewpoer/explorer, sea este de geometría ó dinámico
+
+
+	_luego abrimos el ICETree Panel/Alt+9
+
+
+	_ahora vmos ha "panel ICETree/Create/ICETree", así, se agregará el nodo principal de ICETree
+		
+
+		
+	

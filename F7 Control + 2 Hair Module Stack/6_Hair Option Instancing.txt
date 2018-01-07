@@ -1,0 +1,183 @@
+
+
+
+curso: Digital Tutors Intro to XSI Hair 2007
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+NOTE:	para tener una mejor visualización de los resultados de la sección effects, es recomendable
+
+	colocar en "Hair/General/Display Settings/Display Type", la opción de "Render Hair", así, 
+
+	podremos tener una visualización de los cambios estéticos directamente en el viewport
+
+
+NOTE:	en este punto de generación de geometrías a través, de hair system, es aconsejable bajar
+
+	el número de fibras ó filamentos a renpresentar en el render, ya que una alta cantidad de
+
+	elementos puede saturar el sistema, esto es aconsejable hacerlo antes de terminar con el 
+
+	proceso de instancing, para esto vamos a las opciones del hair system, yendo ha
+
+	"Hair/General/Display Settings/Total Hairs", en el cuál, tendremos que preferiblemente
+
+	colocar valores bajos entre ej: 50-200, para comenzar con el proceso de forma ligera
+
+
+
+-------------------------------------------------------------------------------------------------------
+
+
+
+
+Descripción:
+
+	esta opción nos permite generar instancias a través, de la información de las fibras ó filamentos
+
+	al mismo estilo ó función que los sistemas de partícuas y sus modos de spreads, lo cuál, es
+
+	especialmente útil para el desrrollo de sistemas complejos y altamente detallados de recubrimiento
+
+	como plumas y otros artilujios y otros elementos que van más allá, de las posibilidades que permiten
+
+	las fibras ó filamentos de forma natural ó básica por su simple configuración y personalización
+
+
+
+-------------------------------------------------------------------------------------------------------
+
+
+
+
+Hair/instancing:
+________________
+
+
+
+	_primero debemos preparar cuál, será el mesh/motive, que hará de instancia, este puede ser
+
+	un elemento único ó un conjunto, por ende, en este caso es mejor trabajar a través, de la 
+
+	generación por medio de "Groups", ó grupos en los cuales podremos introducir un elemento
+
+	ó varios elementos en un mismo grupo
+
+
+	_así, procedemos a generar la/s geometrías deseadas
+
+
+	_luego seleccionamos las geometrías creadas ó generadas y con estas seleccionadas vamos ha
+
+	"Edit/Create Group", este nuevo gurpo de elementos lo renombramos, ej: "Proxis"
+
+
+	_las instancias pueden ser dinámicas y animadas como tener modificadores que le permitan
+
+	ser modificadas en el tiempo, otros
+
+
+---------------------------------------------------------------------------------------------------
+
+
+Hair/Instancing
+
+
+	_Enable
+
+
+		_esta opción nos permte activar ó desactivar el sistema de generación por instancias
+
+			
+
+	_Instance group:
+
+		_en esta opciones a través, de un "picker", tendremos que seleccionar el grupo de
+
+		elementos que hemos creados previamente con los elementos deseados a través, de explorer 
+
+		contextual
+
+
+	_Instances on Guide Hairs_
+
+		_también, podemos activar las opciones de alineamiento de las instancias a través,
+
+		de la topología del objecto
+		
+
+	--------------------------------------------------------------------------------------------
+
+
+	Assignement
+
+	
+	_Object Assignement:
+	
+		_Random:
+
+			_esta opción es permite una asignación aleatoria en relación a la información
+
+			de generación ya prevista en el hair system
+
+
+		_Using Weightmap:
+
+			_más tenemos la posibilidad de una generación a través, de un weight map,
+
+			así, como de graduar la intensidad de este "Fuzzness"
+
+
+	--------------------------------------------------------------------------------------------
+
+
+	Orientation
+
+
+	_Type:
+
+		_None:
+
+			_esta opción desactiva las características de orientación en las instancias
+
+
+		_Tangent Map:
+
+			_esta opción nos permite indicar la orientación a través, de las tangentes
+
+			de un weight map, el cuál, podemos elegir
+
+
+		_Follow Object
+
+			_también, tenemos la posibilidad de generar en "Group", con un elemento proxi,
+
+			el cuál, será seguido "Orinet", por las instancias
+
+
+			_así, al seleccionar la opcion de "Follow Object", nos aparecerá un "picker",
+
+			con el cuál, podremos seleccionar el grupo con el proxi, a través de un explorer
+
+			contextual
+
+
+			_de esta manera al mover el elemento "proxi", se moverán las instancias hacia ese
+
+			sentido y orientación el objeto proxi
+
+
+	_Spread:
+
+		_también, podemos graduar la separación relativa entre las instancias generadas a través,
+
+		de un valor graduable
+
+
+		_así, como de también, elegir si deseamos una interpolación "linear", ó "Gausiana"
+		
+

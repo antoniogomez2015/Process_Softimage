@@ -1,0 +1,94 @@
+
+
+Detalles
+
+
+tenemos la posibilidad de utilizar ayudantes ó controladores de simulación para hacer más interactiva las simulaciones,
+
+estos los sistemas de contraints, para rigid bodies, los cuales hacer de fuerzas de inercia ó de fuerza
+
+centrífuca y de fuerza centrípeta, otras
+
+
+el constraint "Fixed", este mos permite relacionar ó hacer "parent/hijo", a un elemento rigid body, activo/active,
+
+con otro elemento rigid body active, así, uno seguirá al otro así, el primero obedesca a fuerzas/fields, diferentes
+
+ó si tiene animaciones aplicadas, otros
+
+ 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Fixed/Parent:
+_____________
+
+
+	_primero creamos ambas meshes, las cuales harán de rigid bodys, y las colocamos según la lógica de la escena
+
+	
+	_luego convertimos ambas meshes, las cuales hará de rigid bodys, y con estas seleccionadas vamos ha
+
+	"Simulate/Create/Rigid Body/active Rigid Body"
+
+
+	_ahora seleccionamos ambos elementos rigid bodys, y con estos seleccionados vamos ha "Simulate/Create
+
+	/Rigid Body/Ridig Constraint/Fixed", así, se generará el constraint entre ambos elementos, a continuación
+
+	los atributos del contraint "Fixed"
+
+
+		Rigid Dynamics Cns
+		__________________
+
+
+			_Active:
+
+				podemos activar ó desactivar el constraint, en cualquier momento
+
+			
+			_Visible:
+
+				podemos hacer visible ó nó el contraint en el viewport
+
+
+			_Attached Bodies Intercollide:
+
+				podemos hacer que los rigid bodys implicados colisionen entre sí ó no
+
+
+		Pose
+		____
+
+			
+			_Position:
+
+				podemos cambiar la posición inicial de los elementos rigid bodys
+
+
+			_Rotation:
+
+				podemos cambiar la rotación inicial de los elementos rigid bodys
+
+
+		Velocity
+		________
+
+
+			Linear:
+
+				podemos cambiar la dirección e impulso inicial de los elementos rigid bodys
+
+
+			Angular:
+
+				podemos cambiar la dirección e impulso en ángulo inicial de los elementos rigid bodys
+		
+
+
+
+	
+_______________________________________________________________________________________________________________
+

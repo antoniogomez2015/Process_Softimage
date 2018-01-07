@@ -1,0 +1,28 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de extraer trayectorias de animación del elementos animados para así, poder manipular ó modificar
+
+la trayectoria de animación de forma visual en el viewport, de forma dinámica e interactiva e incluso animada
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	_primero debemos seleccionar un elemento el cuál, posea animación
+
+
+	_luego seleccionamos el elemento con animación y con este seleccionado vamos ha "Animate/Tools/Plot/", y,
+
+	seleccionamos la opción "Curve"
+
+
+	así, podremos indicar el inicio y fin de la trayectoria extraida "start/end", así, como la resolución "Steps",
+
+	ó interpolación de fotogramas/keyframes

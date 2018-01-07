@@ -1,0 +1,178 @@
+http://es.xhamster.com/movies/2690952/hot_mature_mom_trying_hot_anal.html
+
+DETALLES
+
+
+a contnuación procederemos a realizar el proceso estandar de creación de configuración del proceso de rigging, de
+ 
+un character en Softimage, con todos sus controles
+
+
+a través, de un estudio estructurado y totalmente escalables por medio de módulos
+
+
+Tutorial:  Curso: D:\Nuevos Respaldos\DT_Softimage Bundle\DT_Softimage_Bundle_DVD1-6\Character Rigging in XSI
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+Skeleton leg and more:
+______________________
+
+
+
+a continuación procederemos con el proceso de creación de una pierna de un character bipedo, humano
+
+
+--------------------------------------------------------------------------------------------------------------
+
+
+Creación de Leg and Toe:
+________________________
+
+
+
+	1_en una visa de side-left/right, creamos la "leg/pierna", Root/ante piertna/pierna
+
+
+	2_luego creamos el "Toe/pie", Root/puente/bola, a continuación procedemos a renombrar ambas cadenas
+
+	tanto la cadena de la "Leg", como la del "Toe"
+
+
+	3_para alinear ambos roots, el de la pierna y el de el pie que hemos creado, seleccionamos el root del pie
+ 
+	y vamos al menú Transform/match Translation, y luego hacemos "Pick", en el handle de la pierna al cual
+ 
+	deseamos alinear al root del pie
+
+
+	4_ahora vamos hacer "Constraint", con el pie y la pierna que hemos creado, seleccionamos el "root del pie/toe" 
+
+	y vamos al menú Constrain/option/Position, y hacemos "Pick", en el "handle/eff", de la pierna con el midle 
+
+	button del mouse, así quedarán unidas ambas partes
+	
+
+
+--------------------------------------------------------------------------------------------------------------
+
+
+Creación de pie inverso:
+________________________
+
+
+	5_para articular los movimientos del pie es preciso crear kinemática complementaria, para esto crearemos 
+
+	"2", estructuras, la primera consiste en un cadena/chain, para articular el pie/toe, sobre los "finger/dedos", 
+
+	del pie, para que así, el pie ó pierna pueda pararse sobre los dedos del pie ó sobre la punta del pie, 
+
+	esta cadena consiste en crear un "L_Toe_Invert_Puente_Root", ubicado en la base del talón de pie/toe, 
+
+	la cuál, se proyecta como un puente de un único bone hasta las punta de los dedos 
+
+	"L_Toe_Invert_Puente_Effector", es conveniente pintar esta cadena/chain, ej: "red color"
+
+	
+	6_ahora vamos a crear una segunda estructura la cuál, se compone de 2 bones siguiendo la forma de la kinemática 
+
+	del pie, creada de forma invertida; creando el root, creando así, en la posición del handle del toe, ó punta
+
+	del pie el primer "L_Toe_Invert_Fingers_Root", el siguente bone, en "L_Toe_Invert_Ball", y el último bone 
+
+	effector, en el "L_Toe_Invert_Tobillo" (Tobillo/Ankle), es conveniente pintar esta cadena/chain, ej: "red Blue"
+
+
+	7_es conveniente para una mejor claridad y manejo colorear las diferentes chain, que intervienen en los
+ 
+	movimientos y articulaciones del pie/toe, para esto vamos al menú Palette/Wire Colors, seleccionamos un
+ 
+	color y hacemos Pick en las partes de la cadena que deseamos pintar del color seleccionado
+
+
+	8_ahora para alinear los elementos podemos utilizar la herramienta de menú transform/Mach Translation,  
+	
+	complementariamente también, podemos utilizar las opciones de "Snap", activando la opción de 
+
+	"Snap/Snap Point/Center", así, podremos utilizar el snap/center, haciendo "Control + mouse left click and draw"
+ 	
+
+	9_ahora vamos hacer "Contraint", para esto seleccionamos el "L_Toe_Invert_Fingers", y vamos ha 
+
+	"Constraint/Position", y hacemos "Picker", en el "L_Toe_Invert_Puente_Effector", así, al mover el efector 
+
+	del "L_Toe_Invert_Puente_Effector", así, esta moverá también la cadena de "L_Toe_Invert_Fingers", ahora también,
+
+	haremos contraint seleccionando "L_Toe_Effector", y vamos ha "Constrint/Position", y hacemos "Picker", en el
+
+	"L_Toe_Invert_Puente_Effector", para que también, se mueva el "L_Toe_Invert_Fingers", al mover el
+
+	"L_Toe_Invert_Puente_Effector",
+	
+
+
+	10_ahora vamos hacer "Constraint", seleccionando el "L_Leg_Effector", y vamos ha
+ 
+	"Constraint/Position", y hacemos "Picker", en "L_Toe_Invert__Fingers_Effector", así, al mover el
+
+	"L_Toe_Invert__Fingers_Effector", se moverán también, la estructura de la pierta/leg, y la estructura 
+
+	de "L_Toe_Invert_Finger", de forma invertida en relación a la kinemática del toe/pie
+
+
+	11_ahora para articular la bola del pie, vamos hacer constraint, seleccionando el bone "L_Toe_Carpo",
+
+	y vamos ha "Constraint/Position", y hacemos "Picker", en el bone "L_Toe_Invert_Meta_Carpo", así, al 
+
+	mover/translate, ó rotar/rotate, el "L_Toe_Invert_Meta_Carpo", hará la acción de la rotación de la bola
+
+	del pie, ó rotación en la base de los fingers/dedos
+
+
+	12_repetimos el mismo proceso de alineación del paso anterior "10", para alinear ambos bones "puente", de
+ 	
+	las cadenas pie y L_toe_mov_root
+
+
+	13_repetimos el mismo proceso de alineación del paso anterior "10", para alinear el handle 
+
+	"L_toe_mov_handle", de la cadena que emula de forma invertida la forma del pie/toe, con el root del 
+
+	pie/toe
+
+
+	14_ahora para emparentar y articular los movimiento del pie, seleccionamos el handle del pie/toe,
+ 
+	L_toe_handle y vamos al menú Constrain/Opcion/Position, luego hacemos Pick, en el root, de la cadena
+ 
+	L_toe_mov_root, que emula la forma del pie de forma invertida, así el pie flexionará hacia arriba y hacia
+ 
+	abajo
+
+
+	15_ahora vamos e emparentar el handle de leg/pierna y vamos al menú Constrain/Option/Position, y hacemos
+ 
+	pick en el handle "L_toe_mov_handle", de la cadena que emula de forma invertida la forma del pie; así,
+ 
+	podrá levantarse y articularse todo el pie a través de la pierna con toda la kinemática completa y lógica,
+ 
+	a traves del handle "L_toe_mov_handle"
+
+
+	16_ahora vamos a emparentar bones de forma cruzada para un mayor articulación del pie/toe, seleccionamos
+ 
+	el bone: L_toe_mov_handle, que va hacia el ball del pie y vamos al menú Constrain/Option/Position, y
+ 
+	hacemos Pick en el mismo bone pero de la cadena que emula la forma de pie invertida, el bone:
+ 
+	L_toe_mov_talon, que va hacia el talón del pie/toe ó hacia el handle de la cadena "L_toe_mov", así, la
+ 
+	cadena "L_toe_mov", podrá mover la flexión del pie
+
+
+

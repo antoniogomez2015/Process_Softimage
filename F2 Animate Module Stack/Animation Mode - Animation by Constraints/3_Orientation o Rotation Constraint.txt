@@ -1,0 +1,74 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de vincular diferentes elementos de diferentes manera de cara a mejorar la animación
+
+e interactividad entre los elemento para mejorar así, la flexibilidad y facilidad en el proceso de animación
+
+y de relación entre los elementos
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+_Orientation Constraint:
+
+
+	_tenemos la posibilidad de vincular la propiedad "Rotate", de un elemento a la "Rotaciónn", de otro
+
+	elemento para que así, al hacer "Rotate", del primer elemento "parent", sea afectada la rotación
+
+	del otro elemento "hijo", para esto:
+
+
+		_primero seleccionamos el ó los elemento/s que serán "hijos/constraint/limitado"
+
+
+		_luego con este objeto seleccionado vamos ha "Contrain/", y hacemos click, en "Orientation", así,
+
+		los elementos "hijo/constraint", quedarán limitados/constraint, del elemento "parent", ó manejador
+
+		
+		_así, se agregará a los elemento/s "hijo/parent", en el "Explorer/Polygon Mesh/Kinematics/Constraint/",
+
+		será agregado el elemento "Orientation Cns", y, al hacer doble click, en este entraremos a sus opciones:
+
+
+		_de esta manera, al rotar el elemento controlador, rotarán también, los elemento hijos/constraint
+
+
+------------------------------------------------------------------------------------------------------------
+
+		orientation/Rotation:
+		_____________________
+
+			_Active:
+
+				_tenemos la posibilidad de activar ó desactivar temporalmente un constraint
+
+
+			_Blend Weight:
+
+				_podemos ajustar la influencia ó fuerza de retardo ó inercia que tendrá ó ejercerá 
+
+				el contraint, sobre los sus elementos relacionados
+
+
+			Rotation Offset:
+			________________
+
+
+			_x,Y,Z:
+
+				_tenemos la posibilidad de hacer "offset", en cualquiera de las cordenadas de rotación
+
+				para hacer desfaces de rotación que nos permitan hacer ajustes para rotar el elemento
+
+				hasta una rotación deseada, otros
+
+---------------------------------------------------------------------------------------------------------------
+

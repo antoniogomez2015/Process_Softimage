@@ -1,0 +1,127 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de hacer animación "NoLinear", ó animación no lineal, a través, del modo de animación
+
+avanzado de "animación mixer", el cuál, permite diferentes tipos de métodos y sistemas de animación:
+
+
+el modo de animación mixer, permite los siguientes tipos de datos
+
+
+	_FCurve Animation
+
+	_Expression Animation
+
+	_Constraints Animation
+
+	_Shape Animation
+
+	_Audio Animation
+
+	_Animation Layers
+
+	_Cached Animation
+
+	_Simulation Sources
+
+	_Image Clips
+
+
+
+Animación no lineal es la animación que no está limitada por el tiempo. Se le permite trabajar en la animación 
+
+a un alto nivel de control en cualquier punto de tiempo en la escena. Se le da un control de alto nivel sobre 
+
+la animación porque puede en cada capa mezclar secuencias de una manera no lineal y no destructiva. Además, 
+
+se puede reutilizar y afinar muchas fuentes de datos.
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Working Wih Clips:
+__________________
+
+
+
+	_Clips son instancias de  "action", "shape", "audio", "animation layer", "cache file", or "image sources", que 
+
+	se han creado. Los clips están representados por las cajas en las pistas/tracks, en el mezclador mixer, que se 
+
+	así, los clips, se puede mover, escalar, copiar, cortar, ciclo/loops, de rebote/bounce, etc. Los clips definen 
+
+	la gama de frames, sobre los que los elementos de la fuente/source, están activas y reproducir.
+
+
+	_Mientras que las fuentes/sources, contienen datos tales como curvas de función o "shapes" de clusters, los 
+
+	clips contienen el control de tiempo y otras propiedades. Puede instanciar múltiples clips, de la misma fuente 
+
+	y modificar los clips independientemente uno de otro sin afectar a los datos de la fuente/source.
+
+
+
+	Clip Timing:
+	____________
+
+
+	_Una cosa importante a saber acerca de los clips, es que conducen la animación para el fotograma en el que 
+
+	empiezan pero no el fotograma en el que terminan. Al final del clip, el clip no está manejado por la animación: 
+
+	en un frame, antes de que el extremo que está manejado. Los números en el clip que muestra el clip de entrada 
+
+	y salida valores. Por ejemplo, si usted Keying, una animación en fotogramas 1 y 30, a continuación, crea una 
+
+	"acction", el videoclip In y Out valores son 1 y 30. El clip, de la pista tiene una duración de 30 cuadros.
+
+
+	
+	Add Tracks:
+	___________
+
+
+	_para agregar track, nuevos para agregar en estos nuevos clips, podemos ir a al "Mixer/Track/", y allí, 
+
+	seleccionar el tipo de track a insertar ó agregar entre los diferentes tipos
+
+
+	_otra opción es hacer "mouse right click/", en un área vacia de un click, existente y seleccionar la opción
+
+	de "Add Track/", y agregar el tipo de track, deseado como animation/shape....
+	
+
+
+
+	Adding Clips to a Track:
+	________________________
+
+
+	_el proceso de agregar clips, a tracks, existentes depende del tipo de clip, ha agregar, los cuales son:
+
+	"action", "shape animation", "audio", "cache file", "animation layer", or "image".
+
+
+	_el proceso general y más fácil para clips, a  tracks, existente en el panel mixer, es la siguiente:
+
+
+		_hacemos "mouse right click/", sobre una parte de un track, vacio y, seleccionamos "Insert Source..",
+
+		ó "Load Source From File", así, nos aparecerá un explorer, contextual, en el cuál tendremos que 
+
+		seleccionar el tipo de clip, a insertar
+
+	
+		_otra opción es ubicar el clip, deseado en el explorer y hacer "mouse left click and drag", hasta
+
+		el mixer, y soltarlo en un área de un track, vacío para agregar así, el clip, deseado
+
+	
+
+--------------------------------------------------------------------------------------------------------------

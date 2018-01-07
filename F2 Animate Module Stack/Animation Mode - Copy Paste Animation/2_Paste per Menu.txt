@@ -1,0 +1,37 @@
+
+
+DETALLES
+
+
+podemos copiar proiedades de animación de un elemento a otro ó unos elementos a otros a través,
+
+de diferente métodos y funcionalidades
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Copy and Paste Menú Animation
+_____________________________
+
+
+
+	_Animation Menú:
+
+		_podemos seleccionar un elemento con animación en el timeline, y con este
+ 
+		seleccionado vamos ha "Timeline/Animation/Paste Animation/", allí, tenemos
+
+		diferentes opciones, estas son:
+
+
+			_to Marked Parameters:
+
+				_esta opción nos permite pegar todos los parámetro marked/marcados
+
+
+			_to All Parameters:
+
+				_esta opción nos permite pegar todos los parámetro de forma
+
+				indistinta

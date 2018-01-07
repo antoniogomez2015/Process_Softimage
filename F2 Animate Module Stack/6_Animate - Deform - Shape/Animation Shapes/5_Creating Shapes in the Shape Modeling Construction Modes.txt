@@ -1,0 +1,139 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de hacer animaciones a través, de la deformación de geometrías/meshes, de esta manera
+
+podremos animar las deformaciones realizadas sobre la morfologías de las meshes, respectivas en el tiempo,
+
+e incluso realizar sources, de animación, keys, otros
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+_Creating Shapes in the Shape Modeling Construction Modes:
+
+
+	_Al crear formas/shapes, se puede utilizar cualquier número de operadores de deformación, incluyendo 
+
+	Envelopes, ya que las herramientas para esculpir las formas/shapes. Debido a que usted puede utilizar 
+
+	estos operadores de deformación para tareas distintas de animación de forma/shape, es necesario dejar 
+
+	que Softimage sepa cómo desea utilizarlos.
+
+
+	_A decir a Softimage cómo se está utilizando la deformación, es necesario seleccionar el modo de 
+
+	construcción correcta: Modelando, Forma/shape, Modelado, Animación, o forma secundaria. El modo 
+
+	pone el operador de la deformación en una de cuadro de regiones en la historia de la construcción del 
+
+	objeto que corresponde a ese modo.
+
+
+
+
+_Base Geometry in the Modeling Region:
+
+
+
+	_Debido a que las formas/shapes, se almacenan como compensaciones de la geometría de base, Softimage 
+
+	necesita saber qué deformaciones están destinados a ser almacenada en una forma. El estado de la geometría 
+
+	en la región de modelado de la historia de la construcción es la base desde la cuál, se crean todas las 
+
+	formas/shapes. Esto significa que si usted realiza un cambio en la geometría de base en el modo de modelado, 
+
+	las keysframes, de forma/shape, que se hace referencia a que se actualizan para reflejar estos cambios.
+
+
+	Tópicos ej:
+	___________
+
+
+	_La geometría del objeto es la culminación de todos los operadores de la región de modelado. Esta es la 
+
+	geometría de base utilizado para el establecimiento de claves de forma.
+
+
+	_el keyframe de forma/shape, sorprendida se encuentra en el modo de modelado de la forma/shape, en relación 
+
+	con esta geometría.
+
+	
+	_el keyframe de forma/shape, enojada se encuentra en el modo de modelado de la forma en relación con esta 
+
+	geometría.
+
+
+	_el keyframe de forma/shape, sorprendidos se actualiza, ya que está un desplazamiento de la geometría de 
+
+	base.
+
+
+	_el keyframe de forma/shape, enojada se actualiza, ya que está un desplazamiento de la geometría de base
+
+
+
+
+
+
+_Creating Shape Keys in Shape Modeling Mode:
+
+
+
+	_Si desea deformar la geometría de un objeto para crear keyframes, de forma/shape, para ello, tiene que 
+
+	cambiar primero en forma del modo de modelado mediante la selección de modelado de la forma/shape, de la 
+
+	lista Modo de construcción en el menú principal en la parte superior de la interfaz.
+
+
+	_Luego, cuando se utiliza para deformar operadores formas que crean, sus operadores se colocan en la parte 
+
+	superior de la región de modelado de la forma. Al guardar o almacenar un keyframe, de forma/shape, el efecto 
+
+	de estos operadores se almacena en un keyframe, de forma/shape
+
+
+	_La región Modelado Shape, contiene el nodo combinador Forma Cluster (ver El combinador Forma Cluster). 
+
+	Este nodo debe estar siempre en la parte inferior de todos los operadores utilizados en la región de 
+
+	modelado de la forma, ya que utiliza todos los operadores de deformación por encima de ella para crear 
+
+	las keyframes, de forma/shape
+
+
+	_Cuando se crea un clip, de la forma mediante la aplicación de una keyframe, de forma/shape, sólo los 
+
+	operadores de la región Modelado forma se eliminan excepto por el combinador Forma Cluster. Esto protege 
+
+	deformaciones animados que pueden estar presentes en las regiones anteriormente, tales como sobres en la 
+
+	región de Animación, de ser eliminado.
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+

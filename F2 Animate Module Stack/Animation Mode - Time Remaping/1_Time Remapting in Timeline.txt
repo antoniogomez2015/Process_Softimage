@@ -1,0 +1,153 @@
+
+
+DETALLES
+
+
+podemos ajustar el "Time Remaping", de una animación moviendo los fotogramas/keyframes, en el 
+
+timeline, de forma independiente ó haciendo una selección de un gurpo de ellos, de esta manera
+
+podremos mover la distancia/tiempo, relativa entre ellos permitiéndonos así, variar el "timing",
+
+ó flow, de la animación según la lógica de escena
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Time Remaping/ Timeline:
+________________________
+
+
+
+	_Selecciones de grupos:
+
+		_para seleccionar un grupo de keyframes, debemos hacer "Shift + mouse left click + 
+
+		drag", hacia el sentido de los fotogramas deseados
+
+		_así, se creará sobre los keyframes, seleccionados una "banda", de color blanda
+
+		la cuál, incica la serie de keyframes, que contiene y a su vez, dispone un unas 
+
+		fechas/arrows, en sus extremos al posarnos sobre esta
+
+
+
+	_desplazar banda de selección de grupos:
+
+		_al posarnos sobre una selección de grupos de keyrames, el cursor del mouse,
+
+		cambiará su forma cambiando a la forma de una "Mano extendida", esta nos indica
+
+		que podemos arrastras la selección para hacer ajustes en su posición respecto
+
+		a la posición de los keyframes, deseados (el movimiento ó desplazamiento de la
+
+		selección ó afecta ó mueve a los keyframes)
+
+
+
+	_desplazar selección de grupos:
+
+		_al posarnos sobre una selección de grupos de keyrames, el cursor del mouse,
+
+		cambiará su forma cambiando a la forma de una "Mano extendida", esta nos indica
+
+		que podemos arrastras la selección con "mouse midle click", así podremos arrastrar
+
+		la selección con los keyframes, que ésta tiene dentro permitiendonos ajustar bloques
+
+		completos de fotogramas ajustan así, el timing, de la animación
+
+
+
+	ampliar un selección de grupos:
+
+		_al posarnos en los extremos de una banda de selección el cursor cambiará a dos
+ 
+		tipos de flechas/arrows; una flecha de un sentido y otra flecha de dos sentidos
+
+		_donde la flecha de un sentido es la que nos permitirá amplicar la banda de 
+
+		selección
+
+
+		_la flecha de un sólo sentido aparece cuando nos posando en un extremo de la banda
+
+		de selección pero aún dentro de esta, no llegando al extremo límite de la banda
+
+		de selección
+
+		_el sentido de la flecha de un sólo sentido es en relación al sentido del extremo
+
+		más cercano de la banda de selección
+
+		_al aparecer la flecha, podemos hacer "mouse left click and draw", sobre esta, así,
+
+		podremos ajustar el tamaño de la banda de selección ampliándola ó reduciéndola
+		
+
+
+
+	_stretching or shrinking / estiramiento ó encogimiento:
+
+
+		_al posarnos en los extremos de una banda de selección el cursor cambiará a dos 
+
+		tipos de flechas/arrows; una flecha de un sentido y otra flecha de dos sentidos
+
+		_donde la flecha de un sentido es la que nos permitirá amplicar la banda de 
+
+		selección
+
+
+		_la flecha de un sólo sentido aparece cuando nos posando en un extremo de la banda
+
+		de selección pero aún dentro de esta, no llegando al extremo límite de la banda
+
+		de selección
+
+		_el sentido de la flecha de un sólo sentido es en relación al sentido del extremo
+
+		más cercano de la banda de selección
+
+		_al aparecer la flecha, podemos hacer "mouse midle click and draw", sobre esta, así,
+
+		podremos ajustar el tamaño de la banda de selección ampliándola ó reduciéndola más
+
+		el grupo de fotogramas que se encuentra dentro de la banda de selección, 
+
+		permitiéndonos ajustar así, de forma gradual el "timing", de un grupo de keydrames
+
+		completo a través, de un grupo de selección en el timeline
+
+
+
+	_duplicado de keyframes seleccionados:
+
+		_podemos duplicar un grupo de selecicón de keyframes, a través, de una banda de 
+		selección de grupos de keyframes
+
+		_ya teniendo una banda de selección con un grupo de keyframes, dentro podemos 
+
+		posarnos sobre la banda de selección y hacer "control + mouse left click and drag",
+
+		así, podremos arrastrar la banda de selección de keyframes duplicados hasta otra
+
+		posición en el timeline,
+
+		_ha hacer un duplicado de keyframes, a través, de una banda de selección la banda
+
+		se queda en el lugar donde la soltamos la última vez, no vuelve al lugar inicial
+
+		de la selcción original de keyframes
+		
+
+
+
+

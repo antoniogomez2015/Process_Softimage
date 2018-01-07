@@ -1,0 +1,54 @@
+
+
+Detalles
+
+
+también tenemos la posibilidad de utilizar proxis para solucionar problemas en donde un elemento rigid body,
+
+ej, active, se mete dentro una geometría rogid body, passive, y elemento active, sale despedido ó se desaparece,
+
+podemos solucionar este problema utilizando un proxi, ó copia limitada del elemento complejo rigid body, passive,
+
+que nos está generando problemas
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+Proxis:
+_______
+
+
+	
+	Proxis passves:
+	_______________
+
+
+	_si una mesh/motive, passive, es compleja y en la interacción con un elemento active, nos da problemas
+
+	podemos hacer un copia de la mesh/motive, passive problemática pero sólo de la parte problemática y no
+
+	de toda la superficie, para que así, el sistema de rigid body, se centre solo en la parte problemática
+
+	simplicadicada el no tener ya todo la mesh en su conjunto
+
+
+	_de esta manera lo que tenemos que hacer es convertir el elemento "Proxy", que creamos del área compleja
+
+	en un elemento rigid body, "Passive", y la mesh/motive, compleja que antes era rigid body, passive, ha esta
+
+	le eliminaremos sus propiedades de rigid body, para que ya no nos de más probleas y sólo funcione la
+
+	superficie proxi que creamos y configuramos previamente
+
+
+		_para esto, seleccionamos la mesh/motive, rigid bidy, passive, problemática y con esta seleccionada
+
+		vamos ha "Simulate/Modify/Rigid Body/Remove Rigid BOdy", así, volverá ha hacer una mesh, normal
+
+	por último lo que tendremos que hacer es hacer invisible al render la mesh, proxi, 
+
+_______________________________________________________________________________________________________________
+

@@ -1,0 +1,272 @@
+
+
+Detalles
+
+
+tenemos la posibilidad de trabajar con cuerpos rígidos/rigid bodies, en softimage, para realizas 
+
+diferentes tipos de simulaciones e interacciones
+
+para crear simulaciones en softimage, debemos ir a la sección de  simulaciones yendo ha "Simulate/Control+4"
+
+
+los sistemas de rigid body, por lo general requieren de la aplicación fields/fuerzas, en la escena, para que
+
+así, los sistemas rigid bodys, estén sometidos ha estas
+
+
+
+NOTA a continuación presentamos el características principales de los rigid bodies
+
+	_Actives, esto ebedecerán a fuerzas/fields, y serán por lo general los elementos colisionadores
+
+	_Passives, estos no obecederán a fuerzas/fields, y serán por lo general los elementos colisionados
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+Rigid Body WorkFlow:
+____________________
+
+
+	
+	Active Rigid Body:
+	__________________
+
+
+	_para crear elementos Active Rigid Bodys, osea elemento rígidos que respontan a las fuerzas/fields,
+
+	primero seleccionamos al mesh/motive, que hará de elemento colisionador y, con este seleccionado vamos
+
+	ha "Simulate/Create/Rigid Body/Active Rigid Body", así se abrirá una ventan contextual con todas las opciones
+
+	relacionadas con el sistemas de cuerpos rígidos asignado a este elemento, como los son:
+
+
+	Nota: estos atributos y parámetros son agregados tanto a elementos soft body "actives" y "passives"
+
+
+		_initial Properties, Dynammics initial State, Rigid Body Properties, Force Controles, todas estos
+
+	controles los estudiaremos al detalle posteriormente
+
+
+	_luego de haber creado un elemento soft body, podemos posteriormente acceder a estos abritubos dinámicos,
+
+	para esto, seleccionamos el mesh/motive, que hace de soft body, y, con este seleccionado tenemos las
+
+	siguientes opciones de acceso para llegar a estos atributos y controles, estas son:
+
+
+		_podemos ir ha "Siulate/Modify/Rigid Body/Edit Rigid Body", así se abrirán las opciones de "Rigid Body Properties"
+
+
+		_hacemos "alt+Enter", para acceder a las propiedades completas ó avanzadas del elemento
+
+
+		_tenemos también el acceso rápido al explorer itinerante: "Shift + F3"
+
+
+		_también podemos a la sección "Selection", en el panel tool, de la derecha de accesos rápidos
+
+
+		_como también podemos acceder directamente desde el "explorer/Control + 8", e inspeccionar el elemento
+
+		y los atributos deseados
+
+
+	en la mayoría de estas opciones los atributos se encontrarán en secciones diferentes ó apartados diferentes
+
+
+
+_______________________________________________________________________________________________________________
+
+
+
+	_Collision Shape:
+	_________________
+
+
+	_podemos ajustar la forma interpretativa que toma el sistema de rigid body, de la mesh/motive, esta puede ser
+
+	interpretada con un forma geométrica predeterminada ó una forma personalizada, por defecto biene un forma
+
+	geométrica predefinida, esta es un cubo, más disponemos de las siguientes opciones:
+
+
+		_para esto, vamos ha "Rigid Body Properties/Collisions/Colision:", en donde prodremos escoger
+
+		las siguientes opciones:
+
+
+			_BoundingBox:
+
+				se refiere al cubo perimetral posibles sobre la mesh/motive
+
+
+			_Bounding Capsule:
+
+				se refiere al capsula perimetral posibles sobre la mesh/motive
+
+
+			_Convex Hull:
+
+				se refiere a la proximidad perimetral posibles sobre la mesh/motive
+
+
+			_Actual Shape:
+
+				se refiere a la topología actual de la mesh/motive
+
+
+
+_______________________________________________________________________________________________________________
+
+
+
+	_Set Inital State:
+	__________________
+
+
+	_también tenemos la posibilidad de ajutar la posición ó ubicación de los elementos con rigid body,
+
+	luego de haberlos creado para que así, las simulaciones puedan realizarse en diferentes configuraciones
+
+	ó ubicaciones de los elementos sin que afecte el lugar ó la ubicación en que éstos fueron creados
+
+
+		_primero reubicamos el objecto en el lugar deseado según la lógica de la escena
+
+
+		_luego seleccionamos el elemento mesh/motive, y con este seleccionado vamos ha "Simulate/Modify/Rigid Body
+
+		/Set Initial State", así, se tomará esta nueva posición como punto de partida para inicialicemos
+
+		la simulación nuevamente
+
+
+	esta opción es especialmente útil para configurar elementos apilados para que estos tomen previamente
+
+	su posición a través de su peso ejercido por las fuerzas/fields, para luego de que han tomando su ubicación
+
+	natural en relación a su peso y volúmen entonces si, podemos hacer "Set Initial State", para que así,
+
+	la simulación empiece a partir de este punto, otros
+
+
+
+
+_______________________________________________________________________________________________________________
+
+
+
+	_Dynamics Initial State/Velocity:
+	________________________________
+
+
+	_también podemos agregar una propiedad inicial a lementos rigid bodies, actives, para que comiencen la 
+
+	simulación de una forma deseada, para lo cuál contamos con el atributo velocidad
+
+
+		_para esto seleccionamos el mesh/motive, y vamos a la sección de "Dynamics initial State/Velocity/Linear",
+
+		en esta sección podremos agregar aceleración al objecto en cualquiera de las cordenadas X,Y,Z,
+
+		tanto en positivo como en negativo, ó includo en "Angular X,Y,Z", 
+
+
+	esta opción es especialmente útil para hacer simulaciones y animaciones sobre elementos de colisión ó
+
+	rigid body/passives
+	
+
+
+_______________________________________________________________________________________________________________
+
+
+
+	_Active/Passive animable:
+	_________________________
+
+
+	_tmabién podemos interactuar entre los estados de los elementos rigid body, para poder así, animarlos 
+
+	para lograr simulaciones más controladas, como una alternativa a las opciones de "Dynamics Initial State/Velocity"
+
+
+	en esta modalidad las acciones se verán invertidas ya que por lo general los elementos "actives", son los 
+
+	que van hacia los elementos "Passives", más en este caso serán los elementos passivos los que irán hacia
+
+	los elementos activos
+
+
+		_primero configuramos los elementos rigid body passivos como el "floor"
+
+
+		_luego configuramos los elementos activos ha colisionar y configuramos su inicial estado
+
+
+		_ahora configuramos el elmentos que inicialmente será rigid body/passive, el cuál animaremos
+
+
+		_ahora procedemos ha animar es mesh/motive, rigid body, passive, que hará de colisionador,
+
+		lo animamos según la lógica de colisión de la escena, otros
+
+		
+		_así, luego de a penas ó antes preferiblemente de haber colisionado con los elementos 
+
+		rigid bidy "actives", deseados de la escena, podemos cambiar animando el estado del elemento 
+
+		rigid body, colisionador cambiandolo a un elemento rigid body "Active", ternimando la animación
+
+		del elemento colisionador en ese momento ya que éste al pasar a un elemento rigid body active, 
+
+		pasará a la simulación
+
+
+
+_______________________________________________________________________________________________________________
+
+
+
+	_Initial Properties/Mass:
+	_________________________
+
+
+	_el comportamiento de los elemento rigi bodys, y de las simulaciones y animaciones residuales dependen
+
+	de la conformación y distribución de la "Mass/Masa", de los elementos, la cuál interpretada y asignada
+
+	por el sistema de rigid body, a un elementos cuando este es creado ó asignado
+
+
+	la "Mass", por lo general se agrega al centro del boundingBox, del elementos y se representa a través
+
+	de un "X", cruz, que se agrega en el centro del elemento para indicarnos su ubicación actual, así, 
+
+	la ubicación de la masa en el objecto undicará su centro de gravedad como también, su dominante de peso
+
+	
+	también existe la excepción de que si cambiamos la ubicación del "Pivot/Insert", de la mesh/motive, 
+
+	también cambiará la apreciación del sistema rigid body, del centro de la mesh/motive
+
+
+		_para ajustar las características de la masa de un objeto debemos ir ha "Initial Properties/Mass"
+
+
+		_la masa del objecto biene configurada por defecto al centro de la masa, más para cambiar este parámetro
+
+		debemos activar las opciones de "Center of Mass", de esta manera podemos mover el centro de la masa
+
+		en condenadas X,Y,Z, en relación a la mesh/motive, y su topología
+
+

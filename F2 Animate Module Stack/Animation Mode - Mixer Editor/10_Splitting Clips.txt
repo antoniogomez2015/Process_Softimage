@@ -1,0 +1,65 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de hacer animación "NoLinear", ó animación no lineal, a través, del modo de animación
+
+avanzado de "animación mixer", el cuál, permite diferentes tipos de métodos y sistemas de animación:
+
+
+el modo de animación mixer, permite los siguientes tipos de datos
+
+
+	_FCurve Animation
+
+	_Expression Animation
+
+	_Constraints Animation
+
+	_Shape Animation
+
+	_Audio Animation
+
+	_Animation Layers
+
+	_Cached Animation
+
+	_Simulation Sources
+
+	_Image Clips
+
+
+
+Animación no lineal es la animación que no está limitada por el tiempo. Se le permite trabajar en la animación 
+
+a un alto nivel de control en cualquier punto de tiempo en la escena. Se le da un control de alto nivel sobre 
+
+la animación porque puede en cada capa mezclar secuencias de una manera no lineal y no destructiva. Además, 
+
+se puede reutilizar y afinar muchas fuentes de datos.
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Splitting Clips:
+________________
+
+
+
+	_primero colocamos el cabezal en el timeline, del mixer panel, en el tiempo deseado donde deseamos
+
+	aplicar el corde ó separar el clip, en dos partes
+
+
+	_luego vamos ha "mixer/clip/", y seleccionamos la opción de "Split at Current Time"
+
+
+	_también, podemos utilizar el shortcut, "N"
+
+	
+
+--------------------------------------------------------------------------------------------------------------

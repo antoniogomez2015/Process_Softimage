@@ -1,0 +1,142 @@
+
+
+DETALLES
+
+
+tenemos la posibilidad de agregar a un mismo de elemento de la escena varios sistemas de ICETrees,
+
+para que así, podamos setear y configurar elementos y atributos de deformación, topología y 
+
+parámetros en general más, elementos alternativos como particle system, efectos y otros, a través,
+
+de la inclusión de otro ICETree, conectado en el área de "Stack Simulate"
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Workflow ICETree Modeling:
+__________________________
+
+
+
+	_para crar un ICETree, en el "Stack Modeling"; a un elemento, debemos seleccionar dicho elemento 
+
+	de la escena al cuál, deseamos agregar un elemento de tipo ICETree,
+
+	
+	_luego, con el elemento seleccionado vamos al ICETree, a través, de su shortcut "Alt + 9", luego
+
+	vamos ha "ICETree/Create/Create ICE Tree", así al elemento deseado se le agregará un ICETree, 
+
+	en el "Stack Modeling", y a continuación podremos crear a partir de este momento nuestro arbol
+
+	de nodos ICETree, deseado
+
+
+
+
+
+Workflow ICETree Simulate:
+__________________________
+
+
+
+	_para crar un ICETree, en el "Stack Simulate"; a un elemento, debemos seleccionar dicho elemento 
+
+	de la escena al cuál, deseamos agregar un elemento de tipo ICETree,
+
+	
+	_luego, con el elemento seleccionado vamos al ICETree, a través, de su shortcut "Alt + 9", luego
+
+	vamos ha "ICETree/Create/Simulated ICE Tree", así al elemento deseado se le agregará un ICETree, 
+
+	el "Stack Simulate", y dentro de el se agregará el "ICETree", y a continuación podremos crear 
+
+	a partir de este momento nuestro arbol de nodos ICETree, deseado
+
+
+
+NOTE:	un elemento puede tener ó contener ambos de tipos de ICETrees, tanto uno en el "Stack Modeling",
+
+	como otro en el "Stack Simulate"
+
+
+
+
+
+
+Workflow ICETree Integración:
+_____________________________
+
+
+
+NOTE:	en este punto es preciso que en los nodos del "Stack Moling ICETree", los nombres de esto sean
+
+	cambiados a "Self", para evitar redundancia y conflictos semánticos entre los nombre de las 
+
+	instancias de las nodos, otro
+
+
+	_para esto, disponemos de una herramienta automática, la cuál, nos permite renombrar todos los
+
+	nodos de forma automática, para esto, vamos ha "ICETreeUser Tool", y aplicamos 
+
+	"Replace Object Name with Self..."
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+
+	_más tenemos la posibilidad traer el ICETree, que hemos realizado en el "Stack Modeling", al
+
+	ICETree, que hemos creado en "Stack Simulate", para así, poder utilizar el arbol de nodos que
+
+	que hemos creado previamente en el "ICETree - Stack Modeling", y continuar con esta información
+
+	en el ICETree, de "Stack Somulate"
+
+
+	_para esto, estando en el "Stack Simulate", debemos crear en éste un nodo de 
+
+	"Tool/Data Access/Set Data"
+
+
+		_Set Data:
+
+
+			_In:
+
+				_(varios)
+
+
+			_Out:
+
+				_(Set Data/Exexute), al nodod "Port/ICETree"
+
+
+
+	_ahora a través, del nodo "Set Data", debemos traer el ICETree, del stack modeling al ICETree,
+
+	del nodo simulate, para esto, entramos a las opciones del nodo "Set Data", y colocamos como
+
+	atributo el valor ej: "Self.Demo", infiriendo que el valor del atributo del ICETree, del
+
+	stack modeling haya sido "Demo"
+
+
+	_así, podremos ver que que el "Sef.", se hace común denominador entre ambos ICETrees, ya que 
+
+	ambos re refieren al mismos elemento y a los mismos atributos
+
+
+	_también, podremos observar que el nodo "Seet Data", se ha convertido en un nodo "Compound",
+
+	con los nodos básicos del ICETree, del "Stack Modeling", que ahora ha sido relacionado
+
+
+
+
+

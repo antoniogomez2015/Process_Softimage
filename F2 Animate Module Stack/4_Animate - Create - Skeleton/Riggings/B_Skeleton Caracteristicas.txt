@@ -1,0 +1,105 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de hacer diferentes configuraciones de de kinemática para varios usos y requerimiento
+
+determinados y específicos
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+---------------------------------------------------------------------------------------------------
+
+					      Joints
+
+
+
+Move Joint/Branch:
+__________________
+
+
+	_tenemos la posibilidad de mover joints/bones, independientemente de la estructura de bones/joints, de una
+
+	cadena/chain, de esta manera podemos hacer ajustes y reposicionar los bones, así, como de su longitud en 
+	relación a la ubicación y proporciones del modelo ó character, estos ajustes de los bones/joint, los podemos 
+	hacer de forma individual ó ajustar de forma emparentada, así, podremos mover un joint/bone, y, también, los 
+	bones emparentados a este 
+
+
+	_para esto, vamos ha "Animate/Create/Skeleton/", y hacemos click, en "Move Joint/Branch", y, para luego hacer 
+
+	los siugientes tipos de ajustes
+
+
+		_ajustes de joint/bones, individuales, para esto, nos posamos	en el bone/joint, deseado a ajustar 
+
+		su posición y hacemos "mouse left click and drag"
+
+
+		_ajustes de joint/bones, emparentados, para esto, nos posamos	en el bone/joint, deseado a ajustar 
+
+		su posición y hacemos "mouse midle click and drag"
+
+
+
+Joint Behavios
+______________
+
+
+	_tenemos la posibilidad de cambiar ó reasignar un "Root", de una cadena/chain, a un bone/hueso, determinado
+
+	para que así, podamos mantener de forma estática los joints, y bones, que antecedan a la nueva ubicación
+
+	del "Root", cambiando también el centro de gravedad y anclaje de la cadena
+
+
+	para esto, seleccionamos el bone, deseado de una cadena al cuál deseamos aplicarle el "root", de la cadena
+
+	y, con este seleccionado vamos ha sus propiedades, haciendo "Enter", y vamos a la sección "Joint Behavior/",
+
+	y activamos la opción de "Joint is Pseudo-Root", así, el joint, del bone, se convertirá en el nuevo "Root",
+
+	de la cadena/chain
+
+
+
+Break Chain:
+____________
+
+
+
+	_también, tenemos la posibilidad de cambiar la ubicación del "Effector", de una cadena permitiendonos así,
+
+	poder aislar los bones/huesos, consecutivos a la nueva ubicación del efector, ya que al cambiar la ubicación
+
+	del efector los bones, consecutivos quedarán fuera de la acción de la "iK", kinemática inverda
+
+
+	para esto, seleccionamos el joint, de un bone, en el cuál, deseamos aplicar el "Effector", y con el bone
+
+	seleccionado vamos ha "Animate/Create/Skeleton/", y hacemos click, en "Break Chain At Bone", así, cambiaremos
+
+	la ubicación del effector, hacia un joint, determinado
+
+
+
+
+---------------------------------------------------------------------------------------------------
+
+					      00
+
+
+00:
+_____________
+
+
+	_seleccionar una chain/cadena, con sus sub-elementos dentro (otros huesos y demás), para esto, hacemos
+
+	"mouse right click", sobre el "Root", ó "Effector", así, se seleccionarán sus elementos "Parents", ó hijos
+
+

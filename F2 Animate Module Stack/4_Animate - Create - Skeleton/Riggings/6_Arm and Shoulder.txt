@@ -1,0 +1,208 @@
+
+
+DETALLES
+
+
+	a contnuación procederemos a realizar el proceso estandar de creación de configuración del proceso de rigging, de
+ 
+	un character en Softimage, con todos sus controles
+
+
+	a través, de un estudio estructurado y totalmente escalables por medio de módulos
+
+
+		Tutorial:  Curso: D:\Nuevos Respaldos\DT_Softimage Bundle\DT_Softimage_Bundle_DVD1-6\Character Rigging in XSI
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+Arm and Shoulder:
+_________________
+
+
+
+a continuación procederemos con el proceso de creación de una pierna de un character bipedo, humano
+
+
+--------------------------------------------------------------------------------------------------------------
+
+
+
+20.para crear los brazos, vamos al viewport top, ahora vamos al menu Animate/Create/Skeleton/Draw 2D Chain, y 
+
+procedemos a dibujar la cadena de bones siguiendo la kinemática de los brazos, R_Arm_root/R_antebrazo/R_brazo; 
+
+antebrazo y brazo, luego los ajustamos a la ubicación del brazo
+
+
+
+21.ahora creamos una nueva cadena con un bone ó hueso, correspondiente a la palma de la mano, éste permitirá la 
+
+unión entre los dedos y el brazo, R_palma_root/R_palma
+
+
+
+22.luego creamos los finger ó dedos, independientes de la palma y el brazo, 
+
+R_finger_root/R_finger_superior/R_finger_media/R_finger_baja creamos un dedo y lo duplicamos, reubicando cada uno 
+
+a su posición respectiva, luego duplicamos cada dedo con Control+D, y editamos sus respectivos tamaños
+
+
+
+23.ahora vamos a alinear la cadena de la palma de la mano con el handle del brazo, para esto seleccionamos el root de 
+
+la palma y vamos al menú Transform/match Translation, y luego hacemos "Pick", en el handle de del brazo
+
+
+
+24.luego debemos emparentar la palma de la mano con el brazo, para esto seleccionamos el root de la palma de la mano 
+
+y vamos al menú Constrain/Parent, y hacemos pick en el handle del brazo con el midle button del mouse
+
+
+
+25.a la articulación de la muñeca podemos augenerarle un riggins con los atrobutos del handle del brazo; en 
+
+"Chain End Effector/Primary Display/Icon BOx"
+
+
+
+26.ahora para emparentar todos los finger ó dedos con el la palma de la mano y asi la mano y el brazo, seleccionamos 
+
+todos los roots de los dedos y vamos al menú/Constrain/Parent, y hacemos click en el handle de la palma de la mano con 
+
+el midle button del mouse
+
+
+
+27.en este punto empezamos hacer el riggings del brazo que hemos creado y configurado, para crear un manejador para 
+
+el codo ó articulación media del brazo creamos una forma sugerida con splines ó primitivas de curves
+
+
+	13.1.la forma con splines que hemos creada la ubicamos detras de la articulación del codo, a una distancia 
+
+	prudente para que no ostaculice el movimiento del brazo, la renombramos como ejemplo: handle_R_codo
+
+
+	13.2.para relacionar el handle, ejemplo: handle_R_codo, que hemos creado con el brazo, seleccionamos la sección 
+
+	del "bone" del antebrazo/"brazo", luego vamos al menú/Animate/Create/Skeleton/Chain Up Vector, luego seleccionamos 
+
+	el handle_R_codo, que creamos con el midle button del mouse  
+
+
+
+
+28.ahora creamos la clavícula, la cual permite articular el brazo con kinemática de la columna más los movimientos propios 
+
+del hombro
+
+
+	14.1.creamos un bone para la clavicula, a través de un chain ó cadena; root/R_clavicula, desde la región de la 
+
+	columna hacia la articulación del brazo respectivo
+
+
+	14.2.luego devemos alinear el handle de la clavicula con el root del brazo respectivo, para esto seleccionamos el 
+
+	handle de la calvicula y vamos al menú/transform/Match Translation, y seleccionamos el root del brazo con el 
+
+	midle button del mouse
+
+
+	14.3.ahora debemos emparentar la clavicula respectiva con el brazo respectivo, seleccionamos el root del brazo y 
+
+	vamos al menú Constrain/Parent, y hacemos Pick, en el handle de la clavicula con el midle button del mouse
+
+
+	14.3.para lograr un movimiento heredado con la misma kinemática entre la clavicular y el brazo, seleccionamos el 
+
+	root del brazo y vamos a las opciones del menu Constrain/opcion/Position, y seleccionamos el handle de la clavicula 
+
+	con el midle button del mouse, así, el handle de la clavicula hara los movimientos del hombro (problemas al aplicarlo)
+
+
+
+29.al handle del brazo respectivo debemos crearle un nuevo set de parámetros y un slider, para controlar la contracción de 
+
+los finger ó dedos de la handle ó mano respectiva
+
+
+	15.1.seleccionamos el handle del brazo y vamos al menú Animate/Create/Parameter/New Custom Parameter Set, y le 
+
+	colocamos un nombre, ejemplo: L_arm_handle_contraction
+
+
+	15.2.para crear un controlador que maneje la acción de la contracción de los dedos de la mano, seleccionamos el 
+
+	handle del brazo vamos al menú Animate/Create/Parameter/New Custom Parameter, y le colocamos un nomrbe, ejemplo: 
+	
+	L_arm_handle_contraction
+
+
+	15.3.luego, para asignarle los parámetros a controlar por el slider, vamos al menú: 
+
+	View/Animation/Parameter Conect Eitor
+
+
+	15.4.seleccionamos el handle del brazo respectivo, y los cargamos en el "Driving Source", con el botón refresh, y 
+
+	lo bloqueamos, en el panel Parameter Conection Editor, y seleccionamos la propiedad que creamos 
+
+	"L_arm_handle_contraction"
+
+
+	15.5.seleccionamos un finger ó dedo en sus bones respectivos, seleccionando en el siguiente orden; 
+
+	finger_inicial/finger-medio/finger_final; así se seteará la acción de kinemática de cada finger ó dedo, luego lo 
+
+	cargamos en "Driven Target", y le damos a refresh
+
+
+	15.6.ahora debemos indicar la cordenada de rotación de los dedos en cada uno de sus bones inicial, medio y final, 
+
+	debemos para esto colocar el modo de axis del elemento seleccionado de ""Global" a "Par ó parent", luego le damos 
+
+	al botón "link"
+
+
+	15.7.a continuación le damos al botón "Set Relative Values", para así colocar los elementos en su ubicación inicial
+
+
+		15.7.1.colocamos el valor del slider que creamos luego volvemos activar los valores dandole nuevamente al 
+
+		botón en "1"
+
+
+		15.7.2.y contraemos ó hacemos la acción del finger ó dedo respectivo
+
+
+		15.7.3.luego volvemos activar los valores dandole nuevamente al botón "Set relative Values", así quedará 
+
+		seteada la acción del dedo respectivo a través del hanle que creamos "Set Relative Values"
+
+
+		15.7.4.para cargar los demás dedos ó finger al slider L_arm_handle_contraction, seleccionamos uno por uno, 
+
+		seguiendo los pasos: 15.5, 15.6, 15.7, 15.7, 15.7.1, 15.7.2, 15.7.3
+
+
+30.para duplicar de forma reflejada el brazo ó arm que hemos creado y seteado y riggiado, seleccionamoshacemos haciendo 
+
+draw con el midle button del mouse, y seleccionamos todos los elementos u objetos, luego vamos al menú: 
+
+Animate/Create/Skeleton/Duplicate Simetry, y en la ventana indicamos las cordenadas y demás parámetros
+
+
+
+
+
+
+
+

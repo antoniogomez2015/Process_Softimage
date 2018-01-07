@@ -1,0 +1,96 @@
+
+
+
+DETALLES
+
+
+Las acciones son paquetes de animación de bajo nivel, tales como curvas de función, las expresiones, las limitaciones 
+
+y los parámetros vinculados. Mediante la creación de un paquete que representa la animación, se puede trabajar en un nivel 
+
+superior de la animación que no está limitado por el tiempo
+
+
+Las acciones son los paquetes de cualquier tipo de animación, tales como curvas de función, las expresiones, 
+
+las limitaciones y los parámetros vinculados. Después de crear una acción, se carga como un clip en el mezclador 
+
+de animación, donde puede modificar la animación de una manera no lineal y no destructiva.
+
+
+Este paquete en el mezclador de animación le permite trabajar en un nivel superior de la animación que no está limitada 
+
+por el tiempo: se puede mover una acción en torno a cualquier parte a tiempo, apretar o estirar su longitud como quieras, 
+
+aplique una acción después de otras en secuencias, y mezclar dos o más acciones juntos para crear una nueva animación.
+
+
+Puede crear una biblioteca completa de acciones, como ciclos de pie o saltos, y utilizarlos como muchas veces como quieras 
+
+en una escena, o compartirlos entre cualquier número de modelos
+
+
+También puede crear acciones de compuestos/compounds, que son "contenedores" para múltiples acciones, incluyendo 
+
+la animación de diferentes fuentes/sources, (curvas de funciones, expresiones, restricciones y parámetros vinculados). 
+
+Trabajar con datos animaciones complejas convierte en una tarea más simple que tratar con múltiples fcurves.
+
+
+Dado que los datos de animación paquete/package, de acciones en una sola unidad utilizable, que hace que sea fácil 
+
+para copiar la animación de un modelo a otro, incluso si el modelo no comparte las mismas convenciones jerarquía, 
+
+escala, o de denominación. Cuando hay diferencias entre los modelos, se abre una plantilla para ayudar a trazar 
+
+los elementos del modelo correspondientes.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Storing Static Poses (Current Values):
+______________________________________
+
+
+
+
+	------------------------------------------------------------------------------------------------------
+
+
+
+	Para almacenar una pose (acción estática), puede almacenar la animación en parámetros de transformación, 
+
+	los parámetros marcados, parámetros keyable, o los parámetros en el conjunto de teclas de caracteres. 
+
+	Escoge cualquiera de las acciones tienda comandos con valores actuales en su nombre para el tipo de animación 
+
+	que desee almacenar.
+
+
+	Estos comandos guarda una acción con los valores actuales, pero sin animación. La duración de acción de clip 
+
+	por defecto es de cinco marcos en el mezclador de animación.
+
+
+	Después de almacenar poses, puede configurar una secuencia de ellos y luego crear transiciones entre ellos 
+
+	para la animación-pose a pose en el mezclador mixer. Para obtener más información sobre las transiciones, 
+
+	consulte Creación de transiciones entre clips. También, puede almacenar poses keys, y experimentar 
+
+	con colocarlos en las pistas en el mezclador para bloquear una animación en bruto.
+
+
+TIP:	_Si usted está almacenando poses para esqueletos, es posible que desee utilizar el Crear 
+
+		_"Skeleton/Store Skeleton Pose command"
+
+
+	_Mientras que este comando es similar
+
+		_Store/Transformations - Current Values command
+
+
+	hay una diferencia que puede ser importante cuando se quiere instancia esas poses en la mesa de mezclas.
+

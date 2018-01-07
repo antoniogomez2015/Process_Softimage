@@ -1,0 +1,58 @@
+
+
+
+DETALLES
+
+
+podemos crear un sistema de límites para reproducción de partículas que se desenvuelven sobre una
+
+superficie (rebotando), podemos indicarle un valor de longitud de alcance de las partículas
+
+para que éstas tengan un tiempo de vida determinado
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+NOTA:	ya tenemos que tener un sistema "Point Cloud", cargado en el ICETree, con sus respetivos 
+
+	elementos como el emisor y la/s superficies colisionadoras, otros
+
+
+
+	_primero debemos tener un sistema de partículas creado, de los cualquiera de los métodos
+
+	existentes, sean estos pre establecidos ó personalizdos
+
+
+
+	_luego vamos ha "ICETree/Emission Control - Particles/Set Particle Age Limit", lo creamos y
+
+	conectamos los nodos "Set Particle Age Limit/Excecute", ha el nodo  emisor ej: 
+
+	"Emit from Geometry/Excecute on Emit1"
+
+
+
+	_luego vamos ha "ICETree/Deleting Particles - Particles/Delete Particle at Age Limit", lo 
+
+	creamos y conectamos los nodos "Delete Particle at Age Limit/Execute", al nodo 
+
+	"ICETree/Port2"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

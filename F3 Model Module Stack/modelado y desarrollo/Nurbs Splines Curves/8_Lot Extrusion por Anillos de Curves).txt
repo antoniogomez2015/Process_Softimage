@@ -1,0 +1,52 @@
+
+
+
+	Tenemos la posibilidad de crear superficies pologonales a partir de splines, complejas las cuáles, podrán
+
+	ser editables posteriormente
+
+	
+	_ésta modalidad nos pemritirá crear forma extensas y con muchas variaciones a partir de formas modulares,
+
+	y que pueden variar en la longitud y en el tiempo de la forma resultante
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	Lot:
+	____
+
+	_tenemos la posibilidad de extruir formas muy complejas a partir de rings,  ó anillos de formas a partir
+
+	de splines
+
+
+	_de ésta manera, podremos crear una spline, principal la cuál, hará de motivo de extrusión
+
+
+	_y dicha forma de tipo spline, lo más usual es duplicarla y hacer variaciones sobre ésta mientras que a su
+
+	vez, ésta se va lococando de forma paralelas ha modos de pilares de puente
+
+
+	_para posteriormente seleccionar la primera forma que creamos y, a continuación ir ha 
+
+	"Model/Create/Poly.Mesh/Lot", para que así, nos aparesca un "Picker", a través, del cuál, podrmeos ir
+
+	seleccionando las demás splines
+
+
+	_para que así, cuando hayamos de seleccionado todas las demás splines, respectivas hacer "Mouse Right Click",
+
+	para que así, el sistema genere la geometría respectiva
+
+
+	_como también, abra un panel en el cuál, podremos ajustar las características como resolución, otros, como
+
+	también, si deseamos conservar u ocualtar las splines, de trabajo
+
+	

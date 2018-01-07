@@ -1,0 +1,77 @@
+
+desarrollo poligonal Poly Mesh
+
+	1.para crear extruciones de sub elementos seleccionados, seleccionamos los sub elementos y vamos al menú Model/Modify/Poly Mesh/Extrude along Axis, ó su sortcut Control+D
+
+
+hacer bordes duros
+	
+	1.para hacer bordes duros en una mesh, seleccionamos los edges ó bordes y vamos al menú Model/Modify/Component/Mark Hard Edge/Vertex, ó en el menú contextual de los sub elementos con el shortcut control+Alt+Right+Click, y seleccionamos "Mark Hard Edges/Vertex"
+
+
+extruir sub elementos poligonales sobre trayectos spline
+
+	1.creamos la mesh a extruir, luego creasmos trayecto con ejemolo: "Draw Cubic by Cvs",  el sentido de inicio de la spline igual al sentido de la expresión
+
+	2.luego ubicamos la spline alineada sobre el poligono a extruir
+
+	3.ahora seleccionamos el sub elemento ó la cara del poligono a extruir que está alineado con la spline previamente creada,y vamos al menú Model/Modify/Extrude Along Curve
+
+	4.en las opciones contextuales editamos opciones como seguimiento de la spline, segmentos, bend, taper, transforms
+
+
+reflejar objetos
+
+	1.es recomendable entes de aplicar simetrías/mirrows, seleccionar los elementos y ir a Edit/Freeze, para así, aliminar las propiedades y nodos de transformación de edición y modelado previos, se puede hacer mirrow symetry de un elemento ó de varios a la vez	
+
+	2.para crear mirrow/symetry, primero seleccionamos el objeto ó meshes, luego vamos al menú Model/Modify/Symetrize Polygons, y en las opciones contexteuales podemos seleccionar las cordenadas axis, que tomara como creiterio para reflejar y duplicar el objeto, así como el grado de separación entre otros
+
+
+crear superficies NURBS, a través de 2 splines, generación "Lot"
+
+	1.para esto creamos 2 spline con las mismas cantidades de points, es recomendado duplicar las splines para que así, ambas tengan la misma cantidad de sub elementos
+
+	2.luego, seleccionamos ambas splines creadas, ahora vamos al menú Model/Create/Surg. Mesh/Lot, en opciones que se despliegan podemos indicar la cantidad de sub divisiones así, como deseamos ocultar ó eliminar las splines de referencia entre otros
+
+	3.si al crear la forma resultante de la proyección de ambas splines a través del modo de creación "Lot", la nurbs, resultante se crear con las normales invertidas a nuestro propósito, seleccionamos la nurbs, resultante y vamos al menú Model/Modify/Surf.Mesh/Invert Normals
+
+
+convertir NURBS, a Ply Mesh
+
+	1.para esto, seleccionamos la nurb, deseada y vamos al menú Model/Create/Poly. Mesh/Nurbs To Mesh
+
+
+extracción de geometría de geometría
+
+	1.para esto seleccionamos los sub elementos polígonos deseados, luego vamos al menú Model/Ply. Mesh/Extract Polygons (Keep)/(Delete), y escogemos entre "keep" y "Delete", si deseamos conservar los poligonos que hemos seleccionados previamente
+
+
+modelado simétrico con sub divisiones
+
+	1.creamos una forma polygonal y la colocamos en el centro del canvas, a esta le agregamos un loops de sub elementos de "edges", en su mitad donde se divide el canvas verticalmente
+
+	2.luego seleccionamos la mitad de sub elementos "Polygons", que corresponden a la mitad izquierda, y los suprimimos ó borramos "delete"
+
+	3.ahora seleccionamos el objeto mesh, que es la mitad restante derecha, y vamos al menú Model/Create/Poly Mesh/SubDivision, para crear una sub división, y en las opciones contextuales de creación seleccionamos el nivel de sub división y si queremos oculatar ó borrar la geometría inicial
+
+	4.y prodremos ver que la forma inicial poligonal está relacionada con la forma creada de sub división, de esta manera los sub elementosla forma poligonal modifican y tienen influencia en la forma de sub división, esto permite trabajar con menos puntos de referencia y edisión para un mejor y mayor manejo de geometría que en la forma de sub división
+
+	5.para una mayor visualización en el modelado es conveniente asignarle un material a la forma poligonal que controla la forma de sub división, para que así la forma poligonal deje ver fácilmente la forma de sub división
+
+	6.ahora seleccionamos la forma de sub división solamente, y vamos al menú Model/Modify/Symetrize Polygons, y en las opciones de creación indicamos la cordenada, distancia y referencia, de esta manera la forma de sub división trabajará simétricamente en si misma, más no la forma de polymesh
+
+
+crear formas poligonales a mano libre
+
+	1.para esto, vamos al menú Model/Modify/Poly Mesh/Add/Edit Polygon Toll, ó su shortcut "N", para crear formas hacemos pick, y vamos construyendo la forma a través de triángulos y cuadrados poligonales que vallamos creando y uniendo entre sí, para lograr formas complejas y personalizadas
+
+
+
+
+
+
+
+
+
+
+

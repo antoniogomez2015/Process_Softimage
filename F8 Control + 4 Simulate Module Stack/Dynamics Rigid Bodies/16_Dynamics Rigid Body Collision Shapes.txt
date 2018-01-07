@@ -1,0 +1,74 @@
+
+
+Detalles
+
+
+tenemos la posibilidad de trabajar con cuerpos rígidos/rigid bodies, en softimage, para realizas 
+
+diferentes tipos de simulaciones e interacciones
+
+para crear simulaciones en softimage, debemos ir a la sección de  simulaciones yendo ha "Simulate/Control+4"
+
+
+los sistemas de rigid body, por lo general requieren de la aplicación fields/fuerzas, en la escena, para que
+
+así, los sistemas rigid bodys, estén sometidos ha estas
+
+
+
+NOTA a continuación presentamos el características principales de los rigid bodies
+
+	_Actives, esto ebedecerán a fuerzas/fields, y serán por lo general los elementos colisionadores
+
+	_Passives, estos no obecederán a fuerzas/fields, y serán por lo general los elementos colisionados
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+	_Collision Shape:
+	_________________
+
+
+
+	_podemos ajustar la forma interpretativa que toma el sistema de rigid body, de la mesh/motive, esta puede ser
+
+	interpretada con un forma geométrica predeterminada ó una forma personalizada, por defecto biene un forma
+
+	geométrica predefinida, esta es un cubo, más disponemos de las siguientes opciones:
+
+
+		_para esto, vamos ha "Rigid Body Properties/Collisions/Colision:", en donde prodremos escoger
+
+		las siguientes opciones:
+
+
+			_BoundingBox:
+
+				se refiere al cubo perimetral posibles sobre la mesh/motive
+
+
+			_Bounding Capsule:
+
+				se refiere al capsula perimetral posibles sobre la mesh/motive
+
+
+			_Convex Hull:
+
+				se refiere a la proximidad perimetral posibles sobre la mesh/motive
+
+
+			_Actual Shape:
+
+				se refiere a la topología actual de la mesh/motive
+
+
+
+____________________________________________________________________________________________________
+
+

@@ -1,0 +1,232 @@
+
+
+
+curso: Digital Tutors Intro to XSI Hair 2007
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+Glosario/Metalenguaje:
+______________________
+
+
+	_Root: raiz del hair
+
+	_Tip: punta del hair
+
+	_Strands: estelas de hair
+
+
+
+---------------------------------------------------------------------------------------------------
+
+
+
+generación de hair:
+___________________
+
+
+	Geometry
+	________
+
+
+	_para esto vamos ha: "Hair/Create/Hair/", y seleccionamos la opción de "From Selection"
+
+
+		_podemos generar hair a través, de una geometría seleccionada
+
+
+		_como también, de sub-elementos (faces), seleccionados de una geometría ó mesh
+
+
+
+	_así, se agregará en el panel "Explorer/mesh/", la sección de "hair", la cuál, incluye
+
+	las opciones de configuración "Hair", así, como un material "Hair Material", entre otros
+
+
+
+	-----------------------------------------------------------------------------------------------
+
+
+	Splines
+	_______
+
+
+	_para esto vamos ha: "Hair/Create/Hair/", y seleccionamos la opción de "From Curves"
+
+
+		_primero generamos un spline, con la forma deseada, para esto vamos ha
+
+		Model-Animate/Create/Curve/..
+
+
+		_luego debemos duplicar ó crear nuevas splines, deseadas y colocarlas de forma
+
+		consecutiva en los lugares deseados
+
+
+		_posteriormente debemos selecconar las splines, de la misma forma consecutiva 
+
+		en que fueron colocadas en la forma que deseamos se cree el hair system, teniendo
+
+		en cuenta que esta modalidad es simular a los sistema de creación de geometría
+
+		de tipo "Loft"
+
+
+	_así, se agregará en el panel "Explorer/mesh/", la sección de "Hair-Spline", la cuál, incluye
+
+	las opciones de configuración "Hair", así, como un material "Hair Material", entre otros
+
+		
+
+
+
+
+
+---------------------------------------------------------------------------------------------------
+
+
+Fibers:
+_______
+
+
+	_tenemos la posibilidad de mover ó modificar las fibras ó filamentos que conforman el hair system,
+
+	de forma individual ó aislada de forma manual, para esto:
+
+
+		_primero seleccionamos el sistema hair
+
+
+		_luego entramos en el modo de sub-elementos/(vertex-Tip), al seleccionar un hair system, 
+
+		contaremos con la opción de sub-elementos "Tip", ó punta del cabello ó fibra ó filamento, 
+
+		shortcut (igual que vertex "F9") y así, con la herramienta de selección	podremos mover 
+
+		las fibras ó filamentos deseados como también, seleccionar un grupo ó todos los filamentos 
+
+		ó fibras y utilizar las diferentes herramientas de edición como rota, escalar, deformación 
+
+		y movimiento para intervenir la apariencia general del hair system, en general
+
+
+
+	_así, contamos con las siguientes herramientas de edición natural de fibras ó filamentos:
+
+
+		_Point Mode:
+
+
+			_esta opción equivale a la modificación ó modo de "curve", y sus sub-elementos
+
+			vertex, la cuál, es muy útil para la edición individual y libre que no tiene 
+
+			un comportamiento de marcado de cabello predeterminadamente
+
+
+			_esta opción es especialmente útil para dar torciones y otros efectos tanto para
+
+			cabello como para generación de otros tipos de elementos de fibras ó filamentos
+
+		
+		_Tip Mode:
+
+			_esta opción nos permite modificar la ubicación de las puntas de los filamentos
+
+			ó fibras hacia su root, ó raíz
+
+
+		_Strands Mode:
+
+			_como también, la opción de strands, ó estelas, esta opción nos permite manipular
+
+			el comportamiento del filamento ó fibra de forma más completa y personalizable
+
+			permitiendo movimiento más completos del mismo más permitiendo la posibilidad
+
+			de poder cambiar el punto de alclado de un filamento ó fibra en específica ó de 
+
+			un grupo selecciona ó del sistema en general
+
+
+			_así, podremos entrar en el modo strands, y seleccionar con cualquiera de las 
+
+			herramientas de seleccionar la fibras ó filamentos deseados y para luego editar
+
+			tanto la posición, escala, rotación, otros
+
+
+			_esta opción es especialmente útil para editar grupos pequeños de fibras ó 
+
+			filamentos como también la edición individual de ellos
+
+
+
+	_así, al manipular ó editar las fibras ó filamentos se agregará ha "Explorer/mesh/Hair", un grupo
+
+	de "MoveComponent[ej2]", como también, "Hair Generator operator", de esta menra podremos entrar
+
+	y eidtar ó eliminar las acciones ó modificaciones generadas anteriormente
+
+
+
+NOTE: 	cada filamento ó fibra representa aun grupo de hair, en el sistema así, que al modificar una fibra 
+
+	ó filamento se modificará un grupo de hair, contiguo ó perimetral al filamento ó fibra modificada 
+
+	ó personalizada
+
+
+
+
+---------------------------------------------------------------------------------------------------
+
+
+Display:
+________
+
+
+	_Stretchy:
+
+		_esta combierte a los sub elementos de las fibras ó filamentos del hair system editables 
+
+		y sensibles a las diferentes herramientas de edición como escala, rotación, distorción 
+
+		modificadores, otros
+
+
+		_esta opción es especialmente útil para hacer ediciones personalizadas y de grupo, ej:
+
+		podriamos seleccionar una serie de fibras ó filamentos contiguos a través, de sus "Tip", 
+
+		ó puntas y aplicar escala en la cordenada "Y", para que así, igualemos el largo ó longitud 
+
+		y posición alineada entre todas las puntas del cabello ó "Tip" lograndi así, un corde 
+
+		de cabello determinado, aunque es preferibles antes de igular puntas de longitudes desiguales
+
+		primero seleccionar con "Tip", un nivel de corte de la misma longitud y hacer 
+
+		"Hair/Modify/Cut"
+		
+
+
+
+	_Fix:
+
+		_esta opción es la por defecto y hace el cabello un elemento dinámico que responde a las
+
+		diferentes fuerzas e interacciones dinámicas disponibles en el programa
+
+
+	para modificar las opciones de display debemos primero seleccionar un hair system, y luego ir ha 
+
+	"Hair/Display/", y seleccionar una de las opciones disponibles
+	

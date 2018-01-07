@@ -1,0 +1,159 @@
+
+
+
+DETALLES
+
+
+podemos generar partítulas que estas tengan materiales con propiedades "alpha", por medio de ICETree
+
+que así, logremos mejores resultados de render
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+NOTA:	ya tenemos que tener un sistema "Point Cloud", cargado en el ICETree, con sus respetivos 
+
+	elementos como el emisor y la/s superficies colisionadoras, otros
+
+
+-----------------------------------------------------------------------------------------
+
+
+
+	_vamos ha "ICETree/Data Access/Set Data", ó "ICETree/Particle/Setters/Set Particle Color",
+
+	lo creamos, este nos permitirá configurar el color de las partículas y su canal alpha, 
+
+	en este caso de ejemplo ( ó, nos permite cambiar los colores de las partículas)
+
+
+		_entramos en "Set Data ó Set Particle Color/Explorer/Pount Cloud/Point Cloud/Color", 
+		ó escribimos directamente en el input lo siguiente "pointcloud.Color"
+
+
+	_ahora relacionamos los nodos "Set Data color ó Get particle Color/Execute", al nodo 
+
+	"Simulation Root/PostSimExecute1"
+
+
+	_vamos ha "ICETree/Data Access/Get Data", ó "ICETree/Particle/Getters/Get Particle Color" 
+
+	lo creamos, este nos permitirá configurar el ó un valor de vuelta al atributo de color que 
+	ya configuramos con el "Set Data", en este caso que contemple el canal alpha, y, que lleve 
+
+	ciertas características en ese canal
+
+
+		_entramos en "Set Data ó Get Particle Color/Explorer/Pount Cloud/Point Cloud/Color", 
+		ó escribimos directamente en el input lo siguiente "pointcloud.Color", para que así,
+
+		tome el valor actual de las particulas que es que ya le dimos con el "Set Data"
+
+
+	_vamos ha "ICETree/Color/Color to RGBA", lo creamos, de esta manera podremos desponer el
+
+	atributo de color que obtubimos de "Get Data Color", valor separados de R/G/B/A, y poder
+
+	así, manejar los atributos de manera separada ó independiente	
+
+
+	_vamos ha "ICETree/Color/RGBA to Color", lo creamos, de esta manera podremos volver a unir
+
+	los atributos de color separados en R/G/B/A, nuevamente un sólo atributo de color compuesto
+
+
+	_ahora relacionamos los nodos "Get Data Color/Value", con el nodo "Color to RGBA/Color"
+
+
+	_ahora relacionamos los nodos "Color to RGBA/RGB", con el nodo "RGBA to COLOR/RGB"
+, 
+	conectando así, sólo los valores respectivos R / G / B, dejando el "Alpha", disponible
+	
+	para una posterior configuración del canal alfa
+
+	
+
+	_vamos ha "ICETree/Math/Basic/FCurve", lo creamos, este nodo es un curva la cuál, nos
+
+	permitirá graduar los valores del canal alpha
+
+
+	_ahora relacionamos los nodos "FCurve/Out", con el nodo "RGBA to Color/Alpha", para que así,
+
+	sea a través, de la curva de control que se controle la densidad y gradación del canal alpha
+
+
+	_vamos ha "ICETree/Math/Basic/Add", lo creamos, este nos permitirá agregar valores
+ 
+	matemáticos como atributos
+
+	
+	_ahora relacionamos los nodos "Add/Result", con el nodo "FCurve/In", así le podremos agregar
+
+	valores incrementales +/-, a la curva de alphas
+
+
+	_vamos ha "ICETree/Particles/Getters/Get Particles Age Porcentage", lo creamos, así podremos
+
+	saber que porcentaje de vida tienen las partículas en este momento
+
+
+	ahora relacionamos los nodos "Get Particles Age Porcentage/Result", al nodo "Add/Value1"
+
+
+	_vamos ha "ICETree/Math/Basic/Multiply", lo creamos, 
+
+
+	_vamos ha "ICETree/Particles/Getters/Get Particle Age", lo creamos, así, podremos obtener
+
+	la edad de las partículas
+
+
+	_ahora relacionamos los nodos "Get Particle Age/Age", al nodo "Multiply/Value1",de esta 
+
+	manera multiplicaremos el valor de la edad de las partículas
+
+
+	_ahora relacionamos los nodos "Multiply/Result", con el nodo "Add/Value2", de esta manera
+
+	le sumaremos la edad "Get Particle Age", al porcentaje de las partículas 
+
+	"Get Particles Age Porcentage", a través del nodo "Add"
+
+
+
+------------------------------------------------------------------------------------------------
+
+Lógica del ICETree
+__________________
+
+
+	primero condiguramos un valor preliminar para el color de las partículas "Set Data" ó
+
+	"Set Particle Color", luego obtenemos esa data de color que hemos creado "Get Data" ó
+
+	"Get Particle Color", para con esta transformarla a sus valores primarios más alpha, 
+
+	quedando así, "Color to RGBA", luego volvemos a convertir esa información de color 
+
+	desglosa en un valor compuesto "RGBA to Color", pero filtrando el canal alpha, para su 
+
+	posterior edición, así, conectaremos un curva de control para calibrar el canal alpha
+
+	"FCurve", en la cuál, agregaremos atributos "Add", tanto del porcentaje de vida de las
+
+	partículas "Get Particle Age Porcentage", como un multiplicados "Multiply", para la
+
+	vida de las partículas "Get Particle Age", así, se unirán el porcentaje de la vida de las
+
+	partículas con la vida de la partícula en el tiempo actual, agregado a la curva que
+
+	controlará el canal alpha
+
+
+
+

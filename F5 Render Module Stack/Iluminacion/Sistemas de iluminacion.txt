@@ -1,0 +1,49 @@
+
+
+Iluminación en Softimage
+
+
+	Physical sky and sun:
+
+		Tutorial: Tutorial_softimage_Physical sky and sun / https://www.youtube.com/watch?v=pp2f-kT4GVc&hd=1
+
+		1_para crear el sistema de iluminación de sky and sun, vamos al "Menú/Render/Pass/Edit/Initialize Sky Shader"
+
+			1.1_en las opciones contextuales nos preguntará en que "Pass", deseamos agregar el "Sky_Shader_Setup", por defecto biene seleccionado el "Default_Pass"
+
+			1.2_SUn: nos permite la opción de seleccionar una "Light", existente en la escena para convertirla en la emisora del "Sun", haciendo "Pick", en ella, 
+			ó dejar el check box, activado para que cree una nueva luz orientada al centro la cuál será una infinite light
+
+
+		2_La zona horaria del "Sun", se aplicará por la inclinación de la "infinite light", entre más arriba este se encuentre indicará una zona horaria más cercana hacia las 12:00m,
+		y entre más inclinada este esta cercana al suelo, indicará una zona horaria cercana al ocaso ó poniente osea 6:00am/pm
+
+
+		3_Al hacer entrer y entrar a las propiedades de la "infinite light", podremos ajustar las características generales de la misma
+
+		
+		4_Para editar las propiedades del "Sun", vamos al "Menú/Render/Pass/Edit Current Pass", luego allí, vamos a la tag "Pass Shaders", y seleccionamos en "Enviroment",
+		el "Physical_Sky_mia_1", asignado que conforma el "Sun", haciendo doble click en el mismo para abrir sus propiedades
+
+
+
+
+		PHYSICAL_SKY_MIA	
+
+			1_Multipler: permite controlar el factor multiplicador de la itensidad del "Sun", ej: un factor de "2", duplica la intensidad del estado anterior
+
+			2_Sun Disk Scale: permite configurar la escala ó tamaño del Sun visible (cambiar su diámetro)
+
+			3.Sun Disk Intensity: permite controlar la intensidad del del Sun
+
+			4_Sun Glow Intensity: permite controlar la intensidad del glow del Sun
+
+
+		DIRECTIONAL LIGHT
+
+			Shadow Softness: podemos controlar la cantidad de suavizado de las sombras generadas por la iluminación
+
+				Samples: como tambien la cantidad de muestreo para conseguir sombras más suavizadas y gradadas
+
+
+

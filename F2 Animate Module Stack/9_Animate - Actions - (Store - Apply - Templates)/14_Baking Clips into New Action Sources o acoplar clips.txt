@@ -1,0 +1,176 @@
+
+
+
+DETALLES
+
+
+Las acciones son paquetes de animación de bajo nivel, tales como curvas de función, las expresiones, las limitaciones 
+
+y los parámetros vinculados. Mediante la creación de un paquete que representa la animación, se puede trabajar en un nivel 
+
+superior de la animación que no está limitado por el tiempo
+
+
+Las acciones son los paquetes de cualquier tipo de animación, tales como curvas de función, las expresiones, 
+
+las limitaciones y los parámetros vinculados. Después de crear una acción, se carga como un clip en el mezclador 
+
+de animación, donde puede modificar la animación de una manera no lineal y no destructiva.
+
+
+Este paquete en el mezclador de animación le permite trabajar en un nivel superior de la animación que no está limitada 
+
+por el tiempo: se puede mover una acción en torno a cualquier parte a tiempo, apretar o estirar su longitud como quieras, 
+
+aplique una acción después de otras en secuencias, y mezclar dos o más acciones juntos para crear una nueva animación.
+
+
+Puede crear una biblioteca completa de acciones, como ciclos de pie o saltos, y utilizarlos como muchas veces como quieras 
+
+en una escena, o compartirlos entre cualquier número de modelos
+
+
+También puede crear acciones de compuestos/compounds, que son "contenedores" para múltiples acciones, incluyendo 
+
+la animación de diferentes fuentes/sources, (curvas de funciones, expresiones, restricciones y parámetros vinculados). 
+
+Trabajar con datos animaciones complejas convierte en una tarea más simple que tratar con múltiples fcurves.
+
+
+Dado que los datos de animación paquete/package, de acciones en una sola unidad utilizable, que hace que sea fácil 
+
+para copiar la animación de un modelo a otro, incluso si el modelo no comparte las mismas convenciones jerarquía, 
+
+escala, o de denominación. Cuando hay diferencias entre los modelos, se abre una plantilla para ayudar a trazar 
+
+los elementos del modelo correspondientes.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Baking Clips into New Action Sources:
+_____________________________________
+
+
+
+
+	
+
+	Además de crear fuentes/sources, de acción/actions, mediante el almacenamiento de la animación, puede crear 
+
+	fuentes/sources, de "baking/acoplamiento" de varios clips juntos. Esto es útil para cuando se ha modificado 
+
+	un clip, por ejemplo, con escala, efectos de clip, o timewarps, y desea crear una nueva fuente/source, que 
+
+	incluye toda esta animación resultante. Para esto hay diferentes vías para hacerlo;
+
+
+		_Congelación/Freezing, acoplamiento/bakes, la animación de los clips, juntos por el trazado 
+
+		de la animación Fcurves, lo que resulta en una sola curva de función.
+
+
+		_La fusión/Margin, combina curvas de función "Fcurves", de animación, los clips juntos de animación,
+
+		son "plotting", ó combinados así, que el momento de los fotogramas claves "keys", original en los 
+
+		clips de acción se mantiene.
+
+
+	Si ha modificado los clips con timewarps, extrapolaciones, o los efectos de clip, la congelación es la única 
+
+	manera de salvar a estas modificaciones en una nueva fuente/source. Además, la congelación/freezing, es la única 
+
+	manera de acoplar/bakes, clips que se crean a partir de diferentes tipos de animación (fcurves, expresiones, 
+
+	restricciones, etc.), así como en una nueva fuente.
+
+
+	Si desea combinar varios clips juntos para hacer un clip sin crear una nueva fuente/source, puede utilizar clips 
+
+	compuestos
+
+
+
+	Freezing Clips into New Sources:
+	________________________________
+
+
+
+	Usted puede "congelar/Freezing", dos o más clips de acción para crear una nueva fuente/source de acción para 
+
+	que combine toda su animación (incluidos los efectos de clips, timewarps y extrapolaciones). Esto se hace 
+
+	mediante el trazado de la animación combinado de modo que se crea una curva de función para cada elemento 
+
+	de fuente en los clips.
+
+
+	Cuando usted congela clips, la información de tiempo y animación (por ejemplo, el control de tiempo y efectos 
+
+	de clip) de los clips originales no están disponibles en la nueva fuente/source.
+
+
+TIP	Puede limpiar los datos de captura de movimiento mediante la desactivación de los elementos de un clip y luego 
+
+	congelar a una nueva fuente/source, con los canales inactivos Ignorar cuando la opción en el cuadro de diálogo 
+
+	Freeze Clips congelación
+
+
+	To freeze clips into actions:
+
+
+	1_seleccione los clips, activos en el mixer panel los cuales desea hacer "Freezing Combine"
+
+
+	2_luego con los clips, deseados seleccionamos vamos ha "Mixer/Clips/Freeze", así, se abrirá una veneta
+
+	contextual con un grupo de opciones de configuración
+
+
+
+	Merging Clips into New Sources:
+	_______________________________
+
+
+	A diferencia de la congelación de clips juntos (que utiliza el plotting), puede combinar clips mediante 
+
+	la combinación de sus curvas de función Fcurve, juntos sin plotting. Esto significa que usted no destruye 
+
+	la información de las secuencias de acción/action, que se combinan entre sí (la sincronización llave original 
+
+	se mantiene).
+
+
+	La fusión/Margin, le permite combinar fácilmente secuencias de clips juntos en un clip, continuo que se puede 
+
+	mantener en la edición. Además, puede combinar juntos los clips que no manejan los mismos parámetros, 
+
+	como la fusión de la pinza que impulsa parte superior del cuerpo de un personaje con el clip que impulsa 
+
+	la parte inferior del cuerpo. También puede combinar fuentes juntos estáticos (posturas) para el uso de un 
+
+	flujo de trabajo de animación pose a pose.
+
+
+	Si ha recortado los valores valores de entrada / salida de un clip, sólo las partes recortadas se incluyen 
+
+	en la nueva fuente/source. Además, la curva de función resultante es estándar por lo que tiene la interpolación 
+
+	spline y no tiene una key, en cada fotograma
+
+
+NOTE:	Si ha utilizado timewarps, extrapolaciones, o los efectos de clip en los clips, sus resultados no se fusionan 
+
+	en la nueva fuente.
+
+
+	To merge clips together:
+
+
+	1_seleccione los clips deseados a acoplar
+
+
+	2_con los clips deseados seleccionados vamos ha "Mixer/Clips/Merge to New Source"

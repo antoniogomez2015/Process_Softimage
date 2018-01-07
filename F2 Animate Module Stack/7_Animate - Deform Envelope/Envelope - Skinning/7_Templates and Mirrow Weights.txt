@@ -1,0 +1,110 @@
+
+
+
+
+Envelope - Skinning
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+	Create symetry Mapping Template:
+	________________________________
+
+
+		_al tener un character bípedo y ha éste le hemos hecho el proceso de skeleton, rigging,
+
+		and skinning, ó envelope, en uno de sus lados, ej, el lado derecho del character para así,
+
+		corregir las inperfecciones del envelope
+
+
+		_vamos ha requirir el duplicar ó reflejar las correscciones que hemos hecho en el weight map
+
+		de unos de los lados hasta el otro lado por que de esta manera nos ahorraremos el trabajo
+
+		de hacerlo manualmente en el otro lado más, a sabiendas de que no nos quedará igual, ya que
+
+		esto es especialmente útil e importante en characters, simetricos
+
+
+		_así, al haber hecho las correcciones de la mited de un weight map, de un envelope, debemos
+
+		primero crear un "symetry Mapping Template" 
+
+
+		_para esto, seleccionamos la mesh, con el envelope, deseado y editado y con este seleccionado
+
+		vamos ha "Animate/Deform/Envelope/", y seleccionamos la opción de "Create symetry Mapping Template"
+
+
+		_así, se nos abrirá una ventana contextual con las siguientes opciones:
+
+
+			_Fill Symetry Template:
+
+				_esta opción debemos activarla
+
+
+			_Symetry Axis:
+
+				_en esta opción debemos escoger el plano de cordenada de acción, por lo 
+
+				general el por defecto esta bien
+
+
+			_Create Symetry Map:
+
+				_esta opción debemos activarla
+
+
+		así, se agregará en el "Explorer/Model/Mesh/Polymesh/Clusters/SymetryMapCls/SymetryMap",
+
+		cuál, demos habrir haciendo mouse left doble click, sobre éste 
+
+		
+		como también, la ventana con las opciones de ej: "Character_proof: SymetryMappingTemplate",
+
+		al cuál, le damores "Validate", y luego cerraremos la ventana
+
+
+		luego ha el "SymetryMap", lo podremos renombrar si así, lo requerimos
+
+
+
+
+	Mirrow Weights:
+	_______________
+
+
+		_a continuación del proceso de la creación de "Create symetry Mapping Template", debemos
+
+		seleccionar la mesh, que contiene el envelope, que hemos editado y entrar en el modo de
+
+		sub-elementos y seleccionar los vertex, que corresponden a la mitad del character, que
+
+		hemos editado
+
+		
+		_luego con la mitad, de los vertex, del character seleccionados vamos ha: 
+
+		"Aniamte/Deform/Envelope/Mirrow Weights"
+
+		
+		_así, podremos ver que los ajustes en el weight map, del envelope, que habiamos ajustado en
+
+		uno de los lados del character, ahora se han duplicado por simetría al otro lado también,
+
+		del character, más en el "Explorer/Model/Mesh/PolygonMesh/Clusters/SymetryMapCls/SymetryMap",
+
+		se agregado "Symetry Map Generator", el cuál, representa el weight map, reflejado
+
+
+	
+
+
+
+		

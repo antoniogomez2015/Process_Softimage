@@ -1,0 +1,50 @@
+
+
+
+	Extruir una Spline, a partir de otra Spline, ha modo de Path, ó trazado de extrusión
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	Extrude Along Curve:
+	____________________
+
+	_tenemos la posibilidad de extruir una forma spline, base ó personalizada a través, de otra spline. que
+
+	hará path, de extrusión lo cuál, es muy útil para procesos complejos de modelado
+
+
+	_para lo cuál, debemos de tener creado un spline, la cuál, hará de motivo ha extruir
+
+
+	_para posteriormente crear otra spline, la cuál, hará de path, ó trayectoria de extrusión
+
+
+	NOTE: es relevante que la spline, ha extruir está justo en la punta ó inicio del path, ó spline, 
+
+	trayectoria
+
+
+
+	Extrusión:
+
+	_para a continuación seleccionar primero la spline, que hará de motivo ha extruir para posteriormente
+
+	seleccionar la spline, que hará de path, ó trayectoria de extrusión y con ambas seleccionadas vamos ha
+
+	"Model/Create/Poly.Mesh/Extrude Along Curve"
+
+
+	_para que así, nos paresca un panel el cuál, podremos controlar todos los parámetro de extrusión incluso 
+
+	animar la trayectoria de extrusión y su evolución, resolución, morfología, otros
+
+
+	_así, como también, podremos dejar visible las splines, ocultar éstas ó directamente borrarlas
+
+
+

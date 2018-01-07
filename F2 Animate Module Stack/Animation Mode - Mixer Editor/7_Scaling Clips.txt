@@ -1,0 +1,94 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de hacer animación "NoLinear", ó animación no lineal, a través, del modo de animación
+
+avanzado de "animación mixer", el cuál, permite diferentes tipos de métodos y sistemas de animación:
+
+
+el modo de animación mixer, permite los siguientes tipos de datos
+
+
+	_FCurve Animation
+
+	_Expression Animation
+
+	_Constraints Animation
+
+	_Shape Animation
+
+	_Audio Animation
+
+	_Animation Layers
+
+	_Cached Animation
+
+	_Simulation Sources
+
+	_Image Clips
+
+
+
+Animación no lineal es la animación que no está limitada por el tiempo. Se le permite trabajar en la animación 
+
+a un alto nivel de control en cualquier punto de tiempo en la escena. Se le da un control de alto nivel sobre 
+
+la animación porque puede en cada capa mezclar secuencias de una manera no lineal y no destructiva. Además, 
+
+se puede reutilizar y afinar muchas fuentes de datos.
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Scaling Clips:
+______________
+
+
+
+	_Escalar un clip hace que sea más largo o más corto, la ralentización o aceleración de su animación, 
+
+	respectivamente. Puede escalar un clip de forma interactiva arrastrando, escalar a la ubicación del cursor 
+
+	de reproducción en un marco específico, o usar editor de propiedades de control de tiempo de un clip.
+
+
+	_Puede escalar clips de "actions", "shape" y de "compounds", incluidos los clips que tienen extrapolación 
+
+	(ciclos, las salidas, o sostenidos). Escalar un clip compuesto también escala los clips en él
+
+
+	_Tenga en cuenta que la escala es diferente de recorte/trimming, (cambio en el origen/source, y los valores fuera). 
+
+	Escalar un clip, se la escala la curva/curve, de peso/weight, junto con el clip, pero el recorte/trimming, de los 
+
+	puntos de entrada/in, - salida/out, recorta/trimming, el clip de forma independiente de las curvas de peso.
+
+
+	Scaling clips:
+	______________
+
+
+	_para escalar un clip, podemos tomarlo un clip, a través, de uno de sus extremos pero en su parte "media", así,
+
+	nos aparecerá un controlador rectángular de color amarillo en la parte media en el extremo seleccionado del cuál,
+
+	podremos hacer "mouse left click and drag", para así, podremos aumentar ó disminuir la longitud del click, respectivo
+
+
+	_otra opción de escalar un click, es hacer "mouse right click/", y seleccionar la opción de "Clip Properties",
+
+	y en la sección de "Time Control/General/Source Clippling", tenemos las opciones de "In/Out", con las cuales
+
+	podremos cambiar la duracción del clip
+	
+
+
+	
+
+
+--------------------------------------------------------------------------------------------------------------

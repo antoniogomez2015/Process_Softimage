@@ -1,0 +1,57 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de vincular los sub-elementos de un elemento como ej: una selección ó uno de los vertex, 
+
+ó faces, otros, para así, agregar a éstos un elemento "Cluster", para a través, de este elemento cluster poder
+
+acceder a los tados de ubicación y otros datos relacionados para diferentes procesos posibles posteriores tanto 
+
+sobre el elemento cluster, como de los sub-elementos del objecto y del mismo objecto en general
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Object to Cluster:
+__________________
+
+
+
+	_relacionar un "1", sub-elemento: 
+	_________________________________
+
+
+		_primero procedemos a crear un elemento tipo cluster, para esto vamos ha "Get/Primitive/Null", no 
+
+		es relevante la posición inicial del elemento "Null/Cluster"
+
+
+		_ahora seleccionamos el elemento cluster, creado y con este seleccionado vamos ha 
+
+		"Constraint/Object to Cluster", 
+
+
+		_así, nos aparecerá un "picker", con el cuál, tendremos que seleccionar al elemento al cuál, deseamos 
+
+		relacionar sus sub-elementos 
+
+
+		_de esta manera, este elemento pasará al modo de sub-elemento para que así, podamos seleccionar los sub-
+
+		elementos deseados a través, de un modo de selección como "mouse click and drag" 
+
+	
+		_así, se creará el sistema constraint, pasando el elemento cluster a la posición relactiva entre el grupo
+ 
+		de sub-elementos seleccionados
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------

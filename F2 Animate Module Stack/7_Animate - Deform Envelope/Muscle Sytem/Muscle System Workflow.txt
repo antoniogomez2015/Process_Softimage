@@ -1,0 +1,296 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de crear ó emular sistemas musculares de forma personalizada por nosotros
+
+haciendolo parte del proceso de skeleton, rigging and skinning, logrando así, excelentes resultados
+
+
+
+Tutorial: Muscle Rig Tutorial Softimage XSI
+
+		https://www.youtube.com/watch?v=vYtgLJq1sIk
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+NOTA:	el siguiente workflow, será realizado sólo para el "Arm", no para todo el body
+
+
+
+----------------------------------------------------------------------------------------------
+
+
+Creación del Músculo
+____________________
+
+
+
+	_primero cremos la forma del músculo a través de tres splines, que por lo general utilizamos
+
+	"Primitive/Curve/Circle", luego, estas tres splines, las ubicamos en relación a la lógica
+
+	del muscle, escalando un poco más la parte central del músculo, estas partes las podemos
+
+	renombrar de la siguiente manera para un mejor manejo
+
+		
+		_ArmJoin
+
+		_ArmMuscle
+
+		_ArmShoulder
+
+
+	_luego de haber creado y ubicado las splines, que conformarán el muscle, en su lugar 
+
+	respectivo según la lógica del muscle, debemos seleccionarlas en un orden contiguo, ej:
+
+
+		_primero seleccionamos "ArmJoin"
+
+		_luego seleccionamos "ArmMuscle"
+
+		_y por último seleccionamos "ArmShoulder"
+
+
+	y con estas seleccionadas vamos ha "Model/Create/Surf. Mesh/Lot", así, se creará el muscle
+
+	a través, de un sistema de NURBS, el cuál, podremos renombrar ej: "ArmMuscleSystem"
+
+
+	NOTA: en caso de quedar las normales invertidas a la hora de crear el muscle, a través, de
+
+	NURBS, podemos seleccionar la nurbs, creada e ir ha "Model/Modify/Surf. Mesh/Invert Normals"
+
+
+
+----------------------------------------------------------------------------------------------
+
+
+Creación de Skeleton
+_____________________
+
+
+
+	_es conveniente ó recomendable antes de aplicar este paso ir a una vista axonométrica como
+
+	top, from, left, right, según la ubicación del muscle system ó character
+
+
+	_ahora vamos ha "Create/Skeleton/2D Chain", y procedemos a crear la cadena de huesos sobre
+
+	el muscle system, por ejemplo la creación de un brazo/arm, el cuál consta de "ball houlder"
+
+	"Arm", y "ForeArm"
+
+
+
+----------------------------------------------------------------------------------------------
+
+
+Creación de Rigging and Setting
+_______________________________
+
+
+
+	_primero seleccionamos el bone/hueso, "foreArm", ó hueso que hará la extensión del músculo,
+
+	y con este seleccionamos vamos ha hacer "Parent", ó emparentamiento con el elemento
+
+	"ArmJoint"
+
+
+		_seleccionamos "foreArm", luego vamos ha "Constrain/Parent", así, nos aparecerá un
+
+		"Picker", con el cuál, tendremos que seleccionar la spline, "ArmJoint", es 
+
+		recomendable utilizar el "Explorer", para hacer selecciones más precisas así, 
+
+		al mover el bone, foreArm, se moverá ó arrastrará el muscle system
+
+
+
+	_ahora seleccionamos el bone/hueso, "Arm", ó hueso que reacciónará a la kinemática invertida
+
+	y con este seleccionado vamos ha hacer "Parent", ó emparentamiento con el elemento 
+
+	"ArmMuscle"
+
+
+		__seleccionamos "Arm", luego vamos ha "Constrain/Parent", así, nos aparecerá un
+
+		"Picker", con el cuál, tendremos que seleccionar la spline, "ArmMuscle", es 
+
+		recomendable utilizar el "Explorer", para hacer selecciones más precisas así, 
+
+		al mover el bone, foreArm, y Arm, se moverá ó arrastrará el muscle system
+
+
+NOTA:	estos pasos de "Parent", ó emparentamiento también, podemos hacerlo de forma manual por 
+
+	medio de el "Explorer/Control + 8", ej:	podemos seleccionar la spline, "ArmJoin", y 
+
+	arrastrarla con "mouse left click and drag", sobre el elemento, en este caso "foreArm",
+
+	así, quedará emparentada/Parent, la spline, "ArmJoin", el hueso/bone, "foreArm"
+
+	
+
+
+----------------------------------------------------------------------------------------------
+
+
+Character Set ó Model
+_____________________
+
+
+	
+	vamos ha crear un sistema "Character-Model", para organizar mejor los elementos y tener
+
+	un mejor manejo de la esctructura del muscle system, y de los elementos que lo componen
+
+
+	_primero seleccionamos los elementos restante del muscle system, que no han sido 
+
+	emparentados al "Skeleton System", los cuales serían en este caso "armShoulder", y 
+
+	"muscleSystem", ó la  NURBS, que conforma el muscle system, y, con ambos seleccionamos
+
+	vamos ha "Model/Create/Model/New Model", y le asignamos un nombre el character, ej:
+
+	"ArmMuscle"
+
+
+	_ahora seleccionamos el "Skeleton System", y vamos ha "Constrant/Parent", nos aparecerá
+
+	un "Picker", con el cuál selccionaremos en el explorer el "ArmMuscle", para que así, este
+
+	quede emparenta al sistema de huesos para que cuando este acticule acrticule todo el sistema
+
+
+
+
+----------------------------------------------------------------------------------------------
+
+
+Parameter Conection
+___________________
+
+
+
+NOTA	ahora vamos ha configurar las acciones ó estados que tendrá el muscle system, al articular
+
+	la kinemática del skeleton system
+
+
+	_primero seleccionamos el spline "armMuscle", yendo ha "Explorer/ArmSkeleton/ArmMuscle1/
+
+	armShoulder/Kinematcs/", y hacemos doble click, sobre "Local Transform", 
+
+
+	_y en "Local Transform", vamos ha "SRT/Scaling/", y hacemos "Mouse Right Click/Link With",
+
+	así, se nos abrirá el panel "Parameter Conection Editor", en el cuál, podremos relacionar 
+	los parámetros
+
+
+	NOTA: otra forma de abrir el panel "Parameter Conection Editor", es yendo ha 
+
+	"View/Animation/Parameter Conection Editor"
+
+
+	-----------------------------------------------------------------------------------
+
+	Relacionando atributos
+	______________________
+
+
+	Driving Source: aquí cargamos el elemento que será el manejador
+
+	
+	Driven Target: aquí cargaremos el elemento que será manejado
+
+
+	Ahora seleccionamos las propiedades a relacionar entre ambos elementos, en este caso,
+
+	serán las siguientes propiedades
+
+
+	_Driving/Manejador:
+
+
+		_ForeArm/rotz
+
+
+	_Driven/Manejado:
+
+
+		_armMuscle/"sclx", y "scly"
+
+
+	luego de seleccionadas ó espeficadas las propiedades entre ambos elementos en el panel
+
+	ahora vamos ha relacionarlas, para esto hacemos "mouse left click", en "Link", en el panel
+
+
+
+	-----------------------------------------------------------------------------------
+
+	Estados de las propiedades de animación
+	_______________________________________
+
+
+	_en el estado inflexión ó cuando el músculo esta relajado:
+
+
+		1_para esto, movemos la kinemática, del character, para extender la flexión
+
+		del músculo
+
+
+		2_luego ajustamos las propiedades deseadas en este caso "armMuscle/(sclx) y (scly)",
+
+		reduciendo el diámetro del círculo de la expline, para emular la relajación del
+
+		músculo, para editar las propiedades debemos ir ha "Explorer/ArmSkeleton/ArmMuscle1
+
+		/armShoulder/Kinematcs/", y hacemos doble click, sobre "Local Transform", 
+
+			
+			_también podríamos hacer "mouse right click/Set relative Value", en una
+
+			propiedad de "Local Transform/SRT", para desde aquí configurar los valores
+
+			ha animar como valores iniciales y finales
+
+
+
+		3_luego de haber configurado como deseamos que esté el músculo y el skeleton,
+ 
+		entonces hacemos "Set Relative Values", en el panel, para fijar estos combios como 
+
+		animación inicial
+
+
+	_en el estado de flexión ó cuando el músculo esta contraido, repetimos los pasos anteriores
+
+	del 1, al 3. cambiando los valores según la lógica del character
+
+
+	de esta manera, veremos que luego de haber seteado el systema el músculo reacciona con 
+
+	todo la lógica de los movimientos de la kinemátiva invertida
+
+
+
+
+
+

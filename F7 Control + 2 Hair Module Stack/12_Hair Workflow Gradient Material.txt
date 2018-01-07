@@ -1,0 +1,158 @@
+
+
+
+curso: Digital Tutors Intro to XSI Hair 2007
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+Hair Shader Otros Materiales:
+
+	
+	Gradient Material:
+	__________________
+
+
+	_primero seleccionamos el hair system, deseado
+
+
+	_luego abrimos el panel "Render Tree", yendo ha "Veiw/Renring-Texturing/Render Tree", ó a través,
+
+	de su shortcut "Shift + 7"
+
+
+	_luego para agregar un nodo de ambient occlusion vamos ha "Render Tree/Nodes/Illumination/",
+
+	y agregamos "Hair_Gradient_Material"
+
+
+
+	Hair_Gradient_Material:
+	_______________________
+
+		_así, primero desconectamos el material "Hair_Renderer"
+
+
+		_luego conectamos el "Hair_Gradient_Material", al "Hair_Material", en sus
+
+		conecciones "Surface", y "Shadow", sustituyendo así, ha "Hair_Renderer"
+
+
+
+	así, este material nos ofrece las siguientes características:
+
+
+
+	Illumination:
+	_____________
+
+
+		_difuse/gradient:
+
+			_esta opción nos permnite indicar el color base que tendrá el cabello ó fibra
+
+			tanto en un color uniforme como a través, de un gradiente de color
+
+
+		_ambient/gradient:
+
+			_esta opción nos permnite indicar un color ambiental que tendrá el cabello ó fibra
+
+			tanto en un color uniforme como a través, de un gradiente de color
+
+
+		_difuse/ambient blending:
+
+			_esta opción nos permnite fusionar el color base que tendrá el cabello ó fibra
+
+			con el color ambiental que tendrá el cabello ó fibra
+
+
+		_specular/gradient:
+
+			_esta opción nos permite agregar valores de especularidad tanto por color 
+
+			y luminancia como por decaimiento
+
+			
+
+	Transparency:
+	_____________
+
+
+		_name:
+
+			_tenemos la posibilidad de asignar un valor a la transparencia
+
+
+		_enable:
+
+			_tenemos la posibilidad de activar ó desactivar las opciones de transparencia
+
+
+		_overal transparency:
+		
+			_esta opción nos permite asignar un valor general ó master de la transparencia
+
+
+		_length/enable/gradient/value:
+
+			_podemos activar las opciones de transparencia de visualización de las fibras así,
+
+			podremos graduar su longitud a través, de una gradiente de luminancia y de un valor
+
+
+		_cross/enable/gradient/value:
+
+			_como también, podemos fusionar ambos valores tanto el de el root, ó raíz, como el de
+
+			la punta ó tip, a través, de un gradiente de luminancia y un valor 
+
+
+	Indirect Illumination:
+	______________________
+			
+
+		_name:
+
+			_tenemos la posibilidad de asignarle un nombre a la iluminación indirecta
+
+
+		_global illumination/caustic/final gathering:
+
+			_
+
+
+		_Translucency:
+
+			_
+
+
+		_Incandescence:
+
+			_Inner:
+
+				_
+
+
+			_Rim:
+
+				_
+
+
+			_Intensity:
+
+				_
+				
+
+
+
+
+NOTE:	Nodes/Illumination/Hair_Shading, es el material que biene asignado por defecto, que en el 
+
+	render tree, equivale al "Hair_Material"
+

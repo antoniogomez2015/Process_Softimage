@@ -1,0 +1,132 @@
+
+
+
+
+Envelope - Skinning
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+Weight Paint panel:
+___________________
+
+
+		_tenemos la posibilidad de editar el weight map, establecido por defecto para hacer
+
+		correcciones necesarios en algunos modelos y cinemáticas determinados
+
+
+		_para esto, debemos hacer "Control + 3", para acceder al "Weight Paint Panel", ó acceder
+
+		ha éste a través, de su ícono en el panel izquierdo en la parte inferior del mismo
+
+
+
+
+NOTE:	el criterio del weight map, y su edición es que cada bone del skeleton system, en el proceso de
+
+	envlope, le corresponde un color referencial ó representativo el cuál, tiene asignado una serie de
+
+	vertex, en relación a su radio ó perímetro
+
+
+	así, podremos incrementar ó decrementar la cantidad de vertex, asignados a un respectivo bone, para
+
+	variar así, la influencias sobre los vextes en general
+
+
+
+
+
+	Paint Tools:
+	____________
+
+
+		_en esta sección del "Weight Paint panel", encontramos las siguientes opciones:
+
+
+			_Smooth:
+
+				_esta opción permite suaviar ó hacer el efecto de blending
+
+			_Erase:
+
+				_esta opción permite borrar ó liberar vertex
+
+			_Reveal:
+
+				_esta opción permite revelar ó quitar el envelope
+
+			_Add:
+
+				_esta opción permite agregar ó pntar un área determinada 
+
+
+			_Opacity:
+
+				_esta opción permite graduar la intensidad del mapa creado
+
+			_Radius:
+
+				_esta opción permite variar el diámetro de la brocha de aplicación
+
+				para graduar el radio: "B + Mouse left click and drag left/right"				
+
+
+			_Palette:
+	
+				_esta opción es el ícono en forma de paleta de pintra y es el que 
+
+				activa la brush, de pintado de weight maps
+
+
+
+	Deformers:
+	__________
+
+
+		_en esta sección podremos seleccionar el bone, ó hueso de trabajo
+
+
+		
+			_Pick:
+
+				_esta opción nos permite seleccionar el bone, de trabajo de forma interactiva
+
+				a través, de in picker
+
+			
+				_primero seleccionamos la mesh, con el envelope, deseado a editar
+
+	
+				_luego hacer mouse left click, sobre el botón "Deformers/Pick", para empezar
+
+				ha editar el weight map
+
+
+			_Solo:
+
+				_esta opción nos permite hacer un "Solo", de visualización el bone, de trabajo
+
+				ocultando la visualización del color de los demás bones
+
+
+			_Pick by Vertex:
+
+				_esta opción nos permite hacer una seleccionar por vertex, para no tener que
+
+				concentrarnos en los bones, respectivos a determinados defectos a corregir si no,
+
+				que podremos seleccionar directamente un vertex, deseado y así, se seleccionará
+
+				automaticamente el bone, respectivo ha este vertex, seleccionado, de esta manera
+
+				podremos aplicar el brush, de pintado para comenzar la edición del weight map
+
+	
+
+

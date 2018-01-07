@@ -1,0 +1,200 @@
+
+
+Detalles
+
+
+podemos administrar todos los procesos generados y las relaciones entre estos y las fuerzas aplicadas a la escena,
+
+estos controladores se activan cuando agregamos ó convertimos en la escena a un elemento en un elemento 
+
+"rigid body"
+
+
+más para ver estos controles debemos ir ha "Explorer(control+8)/Enviroments (Scene)/List/Enviroment", 
+
+y desplegar los enviroments diponibles
+
+
+Tutorial:
+
+	Digital Tutors XSI Soft and Rigid Body in XSI, del Softimage Bundle DVD4, Video "12"
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+Rigid Body WorkFlow:
+____________________
+
+
+	
+	Enviroment(Scene):
+	__________________
+
+
+	_para ver los elemento generados y relacionados en el sistema de rigid body, debemos entrar ó desplegar
+
+	el elemento "List/Enviroment", el cuál nos mostrará los siguientes elementos:
+
+
+		_Rigid Bodys:
+
+			nos muestra el grupo de elementos con rigid body, tanto activos como pasivos
+
+
+		_Contraints:
+
+			nos muestra los constraint, existentes y relacionados con el sistema de rigid body
+
+
+		_Forces:
+
+			nos muestra las fuerzas implicadas en el sistema de rigid body
+
+
+		_Operations:
+
+			nos muestra la operación/algoritmo, actual ejecutandose en el sistema de rigid body
+
+			el operador por defecto que trae el sistema de rigid body, en el "PhysX Dynamics Operator",
+
+			y al entrar en sus opciones podemos controlar todas las opciones básicas y avanzadas
+
+			del comportamiento del sistema rigid body, así, podremos controlar los siguientes parámetros:
+
+
+				_Sub-Steps
+
+				_Sleeping
+
+				_Collisions
+
+				_Global Body Controls
+
+
+			más también tenemos la posibilidad de cambiar el tipo de operador que controla al sistema
+
+			de rigid body, para esto vamos ha "Preferences/", y hacemos mouse left doble click, sobre
+
+			la sección de "Simulation", para sus parámetros y atributos
+
+
+			_y en "Rigid BOdy Dynamics Engine", tenemos las siguientes opciones para escoger
+
+	
+				_PhysX by NVIDIA (viene por defecto)
+
+				_Open Dynamics Engine (ODE)
+
+
+		_para configurar el operador activamos podemos ir ha "Simulate/Modify/Rigid BOdy/Edit Simulate Properties",
+
+		así, se abrirá una ventana con todas las propiedades del controlador activo
+
+		
+		_Simulation Time Control:
+
+			nos muestra el control del tiempo de animación del sistema rigid body
+		
+
+		_Caches:
+
+			nos muestra las caches existentes en el sistema de rigid body
+
+		
+
+	_podemos agregar más de unn "Enviroment", para administrar en diferntes grupos de acción a los diferentes
+
+	elementos para que estos se afectados de forma más controlada por los diferetens controladores así, como
+
+	de fuerzas, otros
+
+	así como también, podemos de cambiar el tipo de controlador ó operador activado antes de crear el nuevo 
+
+	"Enviroment", esto permitirá que el nuevo enviroment, creado se genere con el el operador/controlador,
+
+	activado en ese momento, esto nos permitirá más adelante poder alternar entre los diferentes operadores
+
+	/controladores, existentes permitiendo así, que se activen los sólo los grupos/enviroment, que tengan
+
+	esos determinador operadores/controladores, activados en un momento determinado
+
+		
+		_para esto vamos ha "Simulate/Create/Rigid BodyEnviroment"
+
+
+	_así, se generará un nuevo "Enviroment", en List/Enviroment, los cuales tienen diferentes operadores/controladores,
+
+	estos los podemos renombrar para un mejor manejo
+
+
+	_de esta manera podemos activar un modo de operador en "Preferences/Simulate/Rigid BOdy Dynamics Engine",
+
+	así, el operador, seleccionado le corresponderá un "Enviroment", de los creados y también quedará activamos
+
+	
+	_de forma que al selecciona elementos en la escena y al convertirlos en elementos rigid bodys, passives, ó 
+
+	actives, estos se agregarán al grupo/enviroment, respectivo automáticamente
+
+
+	_y para cargar nuevos elementos creados rigid body al otro enviroment, debemos entonces volver a preferences,
+
+	y colocar el otro controlador, para así, poder crear los nuevos elementos rigid body, que se agregarán
+
+	al otro contenedor ó grupo enviroment
+
+
+	_otra forma más simple de intercambiar entre los diferentes tipos de controlador/operador, es simplemente
+
+	seleccionando el "Enviroment", deseado en el explorer/Enviroments, y hacemos mouse right click
+
+	/Set as Current Enviroment, así, este controlador será el que quede activado
+
+	_pero también, podemos apagar temporalmente un operador, para que solo funcione el que quede activo así,
+
+	los grupos enviroments, ambos estén activados, otros, para esto vamos ha "Explorer/Enviroments/Enviroment
+
+	deseado/Operators/ej:ODE Dynamics Operator", si hacemos mouse right click/Enable-Disable from here, podremos
+
+	activarlo ó desactivarle sin necesidad de ir a preferencias, podemos repetir e intercambiar este paso para los
+
+	demás operadores existentes
+
+	_también podemos reutilizar las fuerzas existentes en un grupo, arrastrando las fuerzas/fields, de un grupo
+
+	al otros grupo
+
+
+	_en caso será necesario compartir geometrías ó elementos rigid body, en ambos grupos enviroments,
+
+	para esto seleccionamos el elemento rigid body, del grupos de enviroment, deseado y hacemos mouse righ
+
+	click/Clone, así, clonaremos al elemento y podemos arrastrar el clon hasta el otro grupo/enviroment
+
+
+	_también podemos desactivar un grupo de enviroment, yendo ha "enviroment deseado/Simulate Time Control", 
+
+	y hacemos doble click, sobre el "Simulate Time Control", para entrar en sus propiedades y allí, desactivamos
+
+	la opción de "Active", de esta manera el grupo/enviromente, respectivo quedará dehabilitado hasta que se
+
+	vuelva ha activar esta opción
+
+
+	de esta manera podremos tener diferentes tipos de simulaciones con diferentes tipos de elementos y de
+
+	grupos ó enviroments
+
+
+	_cabe decir que si ambos grupos de enviroments, ó más reproducen a la vez, estos no interactuarán entre
+
+	sí, esto quiere decir que estos se mezclarán superponiendose las meshes, unos con otros, no colisionando
+
+	entre grupos enviroments
+
+
+_______________________________________________________________________________________________________________
+

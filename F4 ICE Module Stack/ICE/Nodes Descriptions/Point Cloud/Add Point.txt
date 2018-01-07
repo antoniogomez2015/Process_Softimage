@@ -1,0 +1,30 @@
+
+
+DETALLES
+
+
+el nodo "Add Point", permitirá agregar elementos por lo general partículas a un "Point Cloud"
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	_Tool/Point Cloud/Add Point
+
+		va conectado de forma general a un nodo "Repeat with Counter, ICETree"
+
+
+
+
+------------------------------------------------------------------------------------------------
+
+
+	_Search:
+
+		
+		debemos indicar un elemento al cuál irá relacionado ó podmos colocarle "Self",
+
+		para que relacione con sigo mismo y reciba parámetros de otros nodos
+

@@ -1,0 +1,84 @@
+
+
+
+DETALLES
+
+
+podemos crear un sistema de límites para reproducción de partículas que se desenvuelven sobre una
+
+superficie (rebotando), para que cuando se a cabe la superficie en la dirección en la que se
+
+desplazan las partículas éstas dejen de reproducirse
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+NOTA:	ya tenemos que tener un sistema "Point Cloud", cargado en el ICETree, con sus respetivos 
+
+	elementos como el emisor y la/s superficies colisionadoras, otros
+
+
+
+	_primero creamos una etiqueta para obtener la data de posición y estado de las artículas 
+
+	en su acción de rebote e interacción, este nodos es "ICETree/Data Access/Get Data", luego 
+
+	entramos en la opciones de "Get Data", haciendo doble click, en este y colocamos como valor
+
+	"self.PointPosition"
+
+
+	_luego vamos y creamos un "ICETree/Conversion/3D Vector to Scalar", luego relacionamos el 
+	nodo "Get Data/Value", con el nodo "3D Vector to Scalar/Vector"
+
+	
+	_luego vamos y creamos un "ICETree/Comparison - Math/Less Than (<)", y ahora relacionamos
+
+	los nodos "3D Vector to Scalar/Y", con el nodo "Less Than (<)/First"
+
+	
+	_Luego vamos y creamos un "ICETree/Constant/Scalar", y ahora relacionamos los nodos
+
+	"Scalar/Result", con el nodo "Less Than (<)/Second"
+
+
+	_Luego vamos y creamos un "ICETree/Deleting Particle - Particles/Delete Particle"
+
+
+	_Luego vamos y creamos un "ICETree/Excecution/If", y ahora relacionamos los nodos
+
+	"Delete Particle/Excecute", con el nodo "If/If True"
+
+
+	_también relacionamos los nodos ""Less Than (<)/Result", con el nodo "If/Condition"
+
+
+	_y por último relaciomos los nodo "If/Result", con el nodo "ICETree/Port2"
+
+
+
+La lógica de este arbol es, que si la posición de las partículas en los ejes de los cuadrantes del 
+
+viewport, es "Negativa (-)", ó menor que "(< = 0)", osea que si pasa del "grid", hacia abajo 
+
+indicado por un valor de escala de "0" / "Scalar = 0", y si es así, si esta condición se cumple 
+
+entonces elimíname todas las partículas que esten por debajo de cero "0", ó por debajo del grid
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+
+
+
+Digital Tutors Introduction to Rigging in XSI 2008
+
+
+
+	Skeleton System
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+Break Chain at Bone:
+____________________
+
+
+
+
+	_más en ciertas ocaciones necesitaremos cambiar el punto ó ubicación del efectos de una respectiva
+
+	cadena de huesos, para así, cambiar el punto relativo de la articulación principal, esto es 
+
+	especialmente útil para hacer distinciones entre partes de un body, ej, el "arm", de el "hand",
+
+
+	_así, al haber cambiado el punto ó ubicación del efector de la cadena de huesos de la punta de la mano 
+
+	a la base de la muñeca ó carpo, podremos así, flexionar el brazo sin tener que flexionar la mano de
+
+	forma articulada como si fuera un todo
+
+
+	_esto nos permite hacer cadenas de huesos más largas las cuales podremos seccionar ó segmentar a través,
+
+	de este método, ej, podríamos segmentar el bone, del hombro ó shoulder, de la sección del arm, y forearm..
+
+
+
+	_para esto, seleccionamos el bone, deseado y vamos ha "Animate-Model/Create/Skeleton/", y aplicamos
+
+	"Break Chain at Bone"
+
+
+	_así, para mover la nueva articulación de la nueva ubicación del efector, debemos seleccionar el respectivo
+
+	bone, ó hueso con "mouse left click", ó "mouse midle click", luego podremos mover la cadena a través, del
+
+	respectivo transform/axis
+
+
+	_como también, podremos hacer "mouse left click", sobre la punta de la cadena correspondiente a la otra
+
+	sección de la cadena de hueso ó el effector original por defecto y, moverlo a través, de su respectivo
+
+	transform/axis
+

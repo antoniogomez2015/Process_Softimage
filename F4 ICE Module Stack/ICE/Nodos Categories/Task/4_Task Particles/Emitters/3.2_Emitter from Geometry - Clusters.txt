@@ -1,0 +1,59 @@
+
+
+DETALLES
+
+
+El "Emitter from Geometry" es un nodo "Compound/compuesto", el cuál también nos permite la emisión
+
+de partículas no sólo a través de un "object mode", si no también, a través de selecciones 
+
+almacenadas en "Clusters", ó grupos de selecciones previamente realizadas por nosotros
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	_hacer selección de vertex, luego hacer "Edit/Create Cluster" ó "Control + L"
+
+	
+		así, se creará en el "Explorar/Mesh-motive/Polygon Mesh/Clusters/Name"
+
+
+
+---------------------------------------------------------------------------------------------
+	
+	
+	
+Particles por Clusters
+______________________
+
+
+
+
+NOTA:	ya tenemos que tener un sistema "Point Cloud", cargado en el ICETree, con sus respetivos 
+
+	elementos como el emisor y la/s superficies colisionadoras, otros
+
+
+
+
+	Emit from Geometry:
+	___________________
+
+
+
+		_hacemos doble click, sobre el "Emit from Geometry", y vamos ha la sección de
+
+		"Emit from Geometry/Emission Filter Parameters/Reference/", y allí, vamos al
+
+		"Explorer/Polygon Mesh/Clusters/Name/IsElement"
+
+
+
+	así, las partículas se emitirán a través de la selección almacenada en el cluster y no
+
+	de toda la superficie del elementos mesh/motive, respectivo		
+		
+	

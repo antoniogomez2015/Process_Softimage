@@ -1,0 +1,87 @@
+
+
+
+DETALLES
+
+
+Las acciones son paquetes de animación de bajo nivel, tales como curvas de función, las expresiones, las limitaciones 
+
+y los parámetros vinculados. Mediante la creación de un paquete que representa la animación, se puede trabajar en un nivel 
+
+superior de la animación que no está limitado por el tiempo
+
+
+Las acciones son los paquetes de cualquier tipo de animación, tales como curvas de función, las expresiones, 
+
+las limitaciones y los parámetros vinculados. Después de crear una acción, se carga como un clip en el mezclador 
+
+de animación, donde puede modificar la animación de una manera no lineal y no destructiva.
+
+
+Este paquete en el mezclador de animación le permite trabajar en un nivel superior de la animación que no está limitada 
+
+por el tiempo: se puede mover una acción en torno a cualquier parte a tiempo, apretar o estirar su longitud como quieras, 
+
+aplique una acción después de otras en secuencias, y mezclar dos o más acciones juntos para crear una nueva animación.
+
+
+Puede crear una biblioteca completa de acciones, como ciclos de pie o saltos, y utilizarlos como muchas veces como quieras 
+
+en una escena, o compartirlos entre cualquier número de modelos
+
+
+También puede crear acciones de compuestos/compounds, que son "contenedores" para múltiples acciones, incluyendo 
+
+la animación de diferentes fuentes/sources, (curvas de funciones, expresiones, restricciones y parámetros vinculados). 
+
+Trabajar con datos animaciones complejas convierte en una tarea más simple que tratar con múltiples fcurves.
+
+
+Dado que los datos de animación paquete/package, de acciones en una sola unidad utilizable, que hace que sea fácil 
+
+para copiar la animación de un modelo a otro, incluso si el modelo no comparte las mismas convenciones jerarquía, 
+
+escala, o de denominación. Cuando hay diferencias entre los modelos, se abre una plantilla para ayudar a trazar 
+
+los elementos del modelo correspondientes.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Actions and Other Animation on an Object:
+_________________________________________
+
+
+
+	_las acciones permiten combinar la animación de diferentes fuentes/sources, que actúa como un recipiente o envase. 
+
+	Cuando un parámetro está manejado por un clip, en un frame, dado, los valores de animación determinados 
+
+	por el mixer, de mezclas tienen prioridad sobre cualquier otro tipo de animación. El mezclador lee y escribe 
+
+	en una región virtual por encima de cualquier fcurves, o expresiones existentes a nivel de escena, pero no por 
+
+	debajo de las restricciones a nivel de escena.
+
+
+	Básicamente, clips, de acción anulan cualquier otra animación para el objeto en ese frame, más puede, sin embargo, 
+
+	tiner fcurves en un objeto (a nivel de escena) y mezclarlas con un clip de la acción sobre los mismos frames
+
+
+	_Si no hay animación en el objeto entre clips, el valor de la animación de la última trama del último clip, 
+
+	permanece activa hasta el siguiente clip.
+
+
+	_Entre los clips, el parámetro es manejado por cualquier animación que está pasando en el "fondo". Incluso 
+
+	en los frames, donde un parámetro es manejado por una acción, aún puede ajustar los valores y establecer 
+
+	los keysframes, para definir la animación de fondo. También puede utilizar una acción de relleno para establecer 
+
+	la animación de fondo
+	
+
+--------------------------------------------------------------------------------------------------------------

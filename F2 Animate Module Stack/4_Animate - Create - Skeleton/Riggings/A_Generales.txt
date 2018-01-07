@@ -1,0 +1,89 @@
+
+
+
+DETALLES
+
+
+a continuación expresiones generales sobre el workflow, relacionado con el proceso de skeleton, skinning, and rigging
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+---------------------------------------------------------------------------------------------------
+
+					      Constraints
+
+
+Parent:
+_______
+
+
+	_para hacer elementos parent, primero seleccionamos al elemento que será "hijo/chaild", luego vamos ha
+
+	"Costraint/Parent", luego hacemos "Picker", sobre el elemento que hará de padre/father con "mouse midle click"
+
+	
+	_también, podemos arrastras elemento dentro de otros para emparentarlos, haciendo "mouse left click and drag"
+
+
+
+
+---------------------------------------------------------------------------------------------------
+
+					      Selecttions
+
+
+Select Chain:
+_____________
+
+
+	_seleccionar una chain/cadena, con sus sub-elementos dentro (otros huesos y demás), para esto, hacemos
+
+	"mouse right click", sobre el "Root", ó "Effector", así, se seleccionarán sus elementos "Parents", ó hijos
+
+
+
+Select parcial Chain:
+_____________________
+
+
+	_podemos seleccionar ó hacer ó hacer visible una cadena a partir de cierto sub- elemento ó parte de la cadena,
+
+	para esto podemos hacer "mouse midle click", sobre el elemento a partir del cuál, deseamos empezar a visualizar
+
+	la continuación de la cadena/chain, a partir de este elemento seleccionado
+
+
+
+Bypass Parent:
+______________
+
+
+	_podemos hacer un bypass, y editar elemento ya emparentados, para que así, podamos moverlos, rotarlos y 
+
+	escalarlos indibidualmente sin que esto afecte a los demás elementos emparentados con este, para esto, activamos
+
+	la opción de "Constraint/ChildCom", (Chaild Transform Compensation)
+
+
+
+---------------------------------------------------------------------------------------------------
+
+					      Schematic
+
+
+	_tenemos la posibilidad de tener una visualización esquemática y de forma gráfica, para esto vamos ha
+
+	"View/General/Schematic", ó "Control + 9"
+
+
+	_en el panel "Schematic", podemos la estructura y gerarquías de elemento y sus relaciones entre sí, a través,
+
+	de árboles de gerarquías
+
+
+	_este panel es especial mente útil para hacer selecciones gráficas y modificaciones específicas entre otros	
+
+

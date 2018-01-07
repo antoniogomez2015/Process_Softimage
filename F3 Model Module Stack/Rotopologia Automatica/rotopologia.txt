@@ -1,0 +1,17 @@
+
+rotoscopia ó rotopología
+
+para reinterpretar hi-mesh, creadas por ejemplo en Zbrush en alta resolución, ahora podemos hacer una rotopología instantánea en sofimage para orbener de forma inmediata en low-mesh para nuestro desarrollo de rigging and skinning como animación entre otros procesos
+
+
+	1.seleccionamos la hi-mesh a convertir en una low-mesh
+
+	2.con la hi-mesh, seleccionada, vamos al menú Model/Modify/Poly. Mesh/"Polygon Reduction"
+
+	3.al aplicar el "Polygon Reduction", se desplegarán unas opciones contextuales y en Polygon Reduction Op/General/Reduction Amount/Ratio, allí podemos indicar el radio ó la proporción de polígonos a simplificar, esta opción hará una reducción poligonal a polígonos tirangulares
+
+	4.y yendo a las opciones en Polygon Reduction Op/General/Quad Preservation/Reduce parallel loops/Preserve quads lines, podemos recostruir la topología a través "Quads", por loops de polígonos cuadrados
+
+	5.al aplicar "Polygon Reduction", los polígonos quedan un poco tensionados entre sí, y para un mejor reacomodo podemos aplicar un modificador a la geometría resultante low-mesh
+
+		5.1.para esto, seleccionamos la  low-mesh, resultante y vamos al menú Model/Modify/Deform/Relax, y así, podremos hacer smooth a los polígonos, con la condición de la deformación gradual de la topología en relación a la cantidad del suavizado

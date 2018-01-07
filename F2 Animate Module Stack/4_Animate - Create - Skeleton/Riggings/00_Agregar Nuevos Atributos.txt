@@ -1,0 +1,98 @@
+
+
+DETALLES
+
+
+a contnuación procederemos a realizar el proceso estandar de creación de configuración del proceso de rigging, de
+ 
+un character en Softimage, con todos sus controles
+
+
+a través, de un estudio estructurado y totalmente escalables por medio de módulos
+
+
+Tutorial:  Curso: D:\Nuevos Respaldos\DT_Softimage Bundle\DT_Softimage_Bundle_DVD1-6\Character Rigging in XSI
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+Agregar nuevos atributos:
+________________________
+
+
+
+NOTA: Para crear nuestros propios slider ó controladores, aplicables para setear y ajustar cualquier propiedad 
+
+en conjunto con otros atributos especiales, estos controles altamente personalizables son especiales y específicos
+
+ para nuestro rigging a profundidad
+
+
+--------------------------------------------------------------------------------------------------------------
+
+
+
+	1.para administrar y setear parámetros entre diferentes alementos y propiedades debemos utilizarl el panel
+
+ 	de View/Animation/Parameter Conection Editor
+
+		1.1.en el panel Parameter Conection Editor, debemos cargar un Driving Source, para esto 
+
+		seleccionamos la mesh deseada y le damos al botón refresh y luego la bloqueamos con el candado en 	
+		el panel
+
+
+		1.2.en el panel Parameter Conection Editor, debemos cargar un Driven Target, para esto
+ 
+		seleccionamos la mesh deseada y le damos al botón refresh y luego la bloqueamos con el candado en
+ 	
+		el panel
+
+
+		1.3.ahora seleccionamos las propiedades que reaccionarán entre sí cuando unos parámetros 
+		
+		determinados cambien
+
+
+		1.4.luego de seleccionar las propiedades que serán relacionadas con los siguientes criterios: las
+ 
+		propiedades dentro de "Driven Source", manejarán a las propiedades dentro de "Driven Target",
+ 
+		luego de seleccionarlar precionamos "Link", para relacionarlas
+
+
+		1.5.luego debemos darle a "Set Relative Values", para colocar los elementos "las mesh", en el
+ 
+		lugar ó ubicación deseada, luego le volvemos a dar a "Set Relative Values", para activar los
+ 
+		settings que hemos configurado
+
+
+	2.para crearle y asignarle nuevos parámetros a un elemento ó mesh, seleccionamos el elemento y vamos al
+ 
+	menú Animate/Create/Parameter/New Custom Parameter Set, y le asignamos un nombre descriptivo, esto permite
+ 
+	asignarle un set que permite a su vez, asignarle nuevos elementos ó parámetros al mesh seleccionado
+
+		2.1.ahora para crearle nuevos parámetros al set que hemos creado a la mesh ó elemento, vamos al
+ 
+		menú Animate/Create/Parameter/New Custom parameter, a este nuevo valor le asignamos un nombre
+	
+		descriptivo, este valor corresponde al slider ó controlador
+
+
+		2.2.para accesar al slider ó controlador, podemos buscarlo por su nombre en las propiedades del
+ 
+		elemento en el explorer ó con su acceso directo Shift+F3
+
+
+		2.3.haora podemos utilizar este nuevo parámetro y slider para asignarme las propiedades que éste 
+
+		deberá controlar, a través del menú "Parameter Conection Editor"
+
+
+

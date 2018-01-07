@@ -1,0 +1,42 @@
+
+
+Detalles
+
+
+tenemos la posibilidad de crear constraints múltiples en una sola acción así, podremos agregar constrints,
+
+del mismo tipo de forma consecutiva sin tener que repetir el mismos proceso una y otra vez
+
+
+ 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Soft Body Workflow:
+___________________
+
+
+
+
+	los constraint, nos permiten agegar un fuerza de impulso ó velocidad de arranque
+
+	como también máximo ángulo de virado ó agarre
+
+
+	_de esta manera podemos podremos agregar torsión a objetos compuestos para que estos hagan
+
+	virados y crucen en una dirección determinada y tengan también una velocidad determinada
+
+
+	_otra función sería por ejemplo, activar la opción de "motor", a una wheel/rueda, que este
+
+	sujeta a otros elementos a través de una constraint/Hige, ó visagra, la cuál, podemos 
+
+	colocar en sentido de la rotación de la rueda y así, podriamos ativar la opción de "Motor",
+
+	para a través, de esta fuerza hacer que la rueda gire a una velocidad determinada, otros
+
+
+__________________________________________________________________________
+

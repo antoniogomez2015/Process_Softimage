@@ -1,0 +1,116 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de animar ó mover las partículas a través, de una imágen ó una secuencia
+
+de imágenes, de esta manera, por medio de diferencia de luminancia en la imágen es posible
+
+afectar ó influir en la formación actual de las partículas en un tiemp determinado
+
+
+Tutorial: https://vimeo.com/19235073
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+NOTA:	ya tenemos que tener un sistema "Point Cloud", cargado en el ICETree, con sus respetivos 
+
+	elementos como el emisor y la/s superficies colisionadoras, otros
+
+	en el ejemplo utilizamos un sistema obtenido de "Get/Primitive/Point Cloud/Grid"
+
+
+
+	_ahora seleccionamos las partículas y vamos al ICE "Alt+9", y hacemos refresh
+
+
+	_ahora hacemos "ICETree/Create/Simulate ICE Tree", es conveniente bloquear el ICETree,
+
+	para que se mantenga el sistema de partículas siempre seleccionado
+
+
+
+----------------------------------------------------------------------------------------------
+
+OPCIONAL
+________
+
+
+	_luego procedemos a crear una spline, para crear así, el path/trayectoria, la cuál
+
+	segirán las partículas
+
+
+	_luego vamos ha "ICETree/Particles/Motion Control/Flow Along Curve", y lo creamos
+
+
+	_ahora seleccionamos la splinr/path, en el viewport, ó Explorer, y hacemos "F3", y lo 
+
+	cargamos al "ICETree", haciendo mouse midle click, and draw
+
+
+	_luego relacionamos los nodos "Get Data-(path)/Value", con el nodo "Flow Along urve/Curve1"
+
+
+	_luego relacionamos los nodos "Flow Along Curve/Execute", con el nodo "Simulation Root
+
+	/Execute", así al inicializar la simulación las partículas segírán el path/trazado
+
+
+
+----------------------------------------------------------------------------------------------
+
+
+
+	_ahora vamos ha "ICETree/Particles/Strands/Create Strands", y lo creamos
+
+
+	_luego conectamos los nodos "Create Strands/Execute on Emit", con el nodo ej:
+
+	"Emit from Geometry/Execute on Emit", de esta manera ya estarán creados los strands/rastros
+
+
+	_ahora vamos ha "ICETree/Particles/Strands/Align Strands to Particle Trayectory", y lo 
+
+	creamos
+
+
+	_ahora conectamos los nodos "Align Strands to Particle Trayectory/Execute", al nodo
+
+	"Simulation Root/PostSimExexute1", así, este nodo será el controlar para el nodo 
+
+	"Create Strands", para con este, manejar los strands, tanto su longitud, dirección sobre 
+
+	la trayectoria, otros
+
+
+
+----------------------------------------------------------------------------------------------
+
+
+RENDER STRANDS
+______________
+
+
+
+	_para renderizar strands, es recomendable ir a las propiedades el sistema emisor/emitter,
+
+	para esto vamos ha ICETree/ej: Emit from Geometry, y hacemos doble click, sobre este nodo
+
+
+	_y vamos a las opciones de "Emit from Geometry/Initial Values/Shape/", y elegimos "Segments"
+
+
+	_la opción de representación de partículas "Segments", permite representar mejor las stands,
+
+	en el proceso de render
+
+
+

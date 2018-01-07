@@ -1,0 +1,57 @@
+
+
+Detalles
+
+
+también podemos ajustar ó segmentar la forma como interactúa el sistema rigid body, con las superficies y sus 
+
+relaciones directas, es posible a través, del uso de capas/layers, de relacionamiento de sistema rigid body
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+Layers:
+_______
+
+
+	
+	Relacionar surfaces:
+	___________________
+
+
+	_podemos segmentar el comportamiento ó alcance de los elementos con rigi body, de manera que podemos
+
+	configurar que colisionen con todos a la vez ó solo con algunos de nuestro interés, para este propósito
+
+	utilizaremos las capas/layers:
+
+
+		_primero seleccionamos el mesh/motive, rigid bidy, sea este "passive", ó "Active", y con este
+
+		seleccionado vamos ha "Simulate/Modify/Rigid Body/Edit Rigid Body/Rigid BOdy Properties/Collision
+
+		/Collide with:", y allí, podemos elegir si esta mesh, rigid body, colisionará con "Everything/Caulquiera",
+
+		"Nothing/Ninguno", Layer/capa"
+
+
+		_para casos específicos seleccionaremos la opción de "Layer", e indicaremos un valor ó un nivel,
+
+		ej: "1", ó "2", por defecto es "0", y debe de ser distinti de "0"
+
+
+		_de esta manera todos los elementos rigid body, que coincidan con un nivel de layer/capa, quedarán
+
+		relacionados como un sistema rigid body
+
+	
+
+
+
+
+_______________________________________________________________________________________________________________
+

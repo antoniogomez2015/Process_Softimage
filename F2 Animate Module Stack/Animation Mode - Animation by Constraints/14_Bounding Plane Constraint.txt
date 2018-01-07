@@ -1,0 +1,68 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de vincular la propiedad de "tranlate", y "Orientation", de objeto a un superficie
+
+de volúmen implícita, estas formas pueden ser sólo "Spheres", y "Cubes"
+
+
+así, el objecto/motive, estará limitado a la superficie "implícita", para estar influenciada fuera de esta,
+
+sobre esta y, dentro de esta, así, dispondremos de estas tres opciones
+
+
+
+NOTA:	opcionalmente podemos utilizar superficies/surfaces, NURBS, para referencias de "Bounding Volume",
+
+	en vez, de formas "implicit/cube", así, el sistema tomará el "Bounding box", de la forma nurbs
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Bounding Plane:
+_______________
+
+
+	_primero vamos ha "Get/Primitives/Implicit/Grid", así, podremos crear tanto un esfera como un cubo,
+
+	este lo posicionamos en relación a la lógica de la escena y el objecto mesh/motive
+
+
+	_luego, seleccionamos el elemento mesh/motive, el cuál, será limitado por el constraint, y, con este seleccionado
+
+	vamos ha "Constraint/Bounding Plane", así, nos aparecerá un "picker", con el cuál, podremos seleccionar 
+
+	el elemento "inplicit/Grid", de esta manera quedarán relacionados ambos elemento del sistema constraint
+
+
+	_así, podremos ver en el "outliner/mesh-motive/Kinematics/Constraints/", se creará un elemento 
+
+	"Bounding Plane Cns", con el cuál, podremos ajustar las opciones del constraint:
+
+
+
+---------------------------------------------------------------------------------------------------------------------
+
+
+	_active:
+
+		_podemos activar ó desactivar el constraint
+
+
+	_Blend Weight:
+
+		_podemos variar la infliencia ejercida por el constraint
+
+
+	
+			
+
+
+
+--------------------------------------------------------------------------------------------------------------

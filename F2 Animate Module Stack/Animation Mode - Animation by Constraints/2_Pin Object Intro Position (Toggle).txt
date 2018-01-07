@@ -1,0 +1,36 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de vincular diferentes elementos de diferentes manera de cara a mejorar la animación
+
+e interactividad entre los elemento para mejorar así, la flexibilidad y facilidad en el proceso de animación
+
+y de relación entre los elementos
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+_Pin Object intro Position (Toggle):
+
+
+
+	_tenemos la posibilidad de dejar a un elemento "fijo", en la escena, limitando/constraint, si "tranlation",
+
+	ó movimiento permitiendole así, sólo escalarse/scale, y rotar/rotate, para esto:
+
+
+		_primero seleccionar el elemento deseado a inmovilizar
+
+
+		_luego con el elemento seleccionado vamos ha "Constraint/Pin Object intro Position (Toggle)", así,
+			
+		aparecerá en el "Explorer/", un nuevo objeto llamado "TEMP_PIN", el cuál, representará con una esfera
+
+		muy pequeña en el centro del objecto seleccionado
+
+

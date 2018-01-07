@@ -1,0 +1,92 @@
+
+
+
+Softimage Camara Secuencer Editor
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+Camara Secuencer Editor:
+________________________
+
+
+	_Panel Camara Secuence Editor:
+
+		_papra accede ó abrir el panel debemos ir ha "View/Animation/Camara Secuence Editor"
+
+
+
+
+	-------------------------------------------------------------------------------------------
+
+
+
+	_Tracks:
+
+		_para crear secuencias de animación de cámaras, primero debemos crear "Tracks", de 
+
+		secuencias, para esto, vamos ha "Camara Secuencer Edior/Track/", y agregamos una
+
+		"Add Shot Track"
+
+
+		_otra opción es posarnos sobre un espacio vacio ó sobre otro track, existente y hacer
+
+		"mouse right click", y seleccionar la opción de "Add Shot Track", ó "Insert Shot Track"
+
+
+
+
+	-------------------------------------------------------------------------------------------
+
+
+
+	_Clips:
+
+		_para crear partes de una secuencia de animación de cámara es necesario la utilización
+
+		ó implementación de "Clips", de animación de cámara
+
+
+		_para esto, es necesario primero seleccionar un "track", en el panel "Camara Secuencer Editor",,
+
+		ya existente creado por nosotros previamente
+
+
+		_luego, vamos al panel "Camara Secuencer Editor/", y hacemos "mouse left click", sobre el
+
+		ícono "Add Clip to Current Frame", otra opción es hacer "mouse right click", sobre un track,
+
+		existente y seleccionar la oción de "Insert Shot Click", así, se agregará un "clip", de animación 
+
+		de cámara al "Track", seleccionado, ha este clip, a través, de sus extremos podemos graduar su longitud
+
+
+		_ahora, al clip, agregado debemos asignarle una cámara respetiva animada previamente, para
+
+		esto, hacemos "mouse right click", y seleccionamos la opción de "Clip Properties..."
+
+
+		_así, se abrirá una ventana contextual con las opciones del clip, de esta manera podremos ir
+
+		a las opciones de:
+
+
+			_Shot/Active Camara/, podremos seleccionar la cámara animada deseada para este clip
+
+
+		así, podremos repetir este proceso para los demás tracks, y clips, creados, de esta manera
+
+		podremos componer nuestras secuencias de animación de clips
+		 
+
+
+
+
+	-------------------------------------------------------------------------------------------
+
+

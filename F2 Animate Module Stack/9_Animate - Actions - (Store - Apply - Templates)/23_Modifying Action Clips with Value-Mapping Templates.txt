@@ -1,0 +1,122 @@
+
+
+
+DETALLES
+
+
+Las acciones son paquetes de animación de bajo nivel, tales como curvas de función, las expresiones, las limitaciones 
+
+y los parámetros vinculados. Mediante la creación de un paquete que representa la animación, se puede trabajar en un nivel 
+
+superior de la animación que no está limitado por el tiempo
+
+
+Las acciones son los paquetes de cualquier tipo de animación, tales como curvas de función, las expresiones, 
+
+las limitaciones y los parámetros vinculados. Después de crear una acción, se carga como un clip en el mezclador 
+
+de animación, donde puede modificar la animación de una manera no lineal y no destructiva.
+
+
+Este paquete en el mezclador de animación le permite trabajar en un nivel superior de la animación que no está limitada 
+
+por el tiempo: se puede mover una acción en torno a cualquier parte a tiempo, apretar o estirar su longitud como quieras, 
+
+aplique una acción después de otras en secuencias, y mezclar dos o más acciones juntos para crear una nueva animación.
+
+
+Puede crear una biblioteca completa de acciones, como ciclos de pie o saltos, y utilizarlos como muchas veces como quieras 
+
+en una escena, o compartirlos entre cualquier número de modelos
+
+
+También puede crear acciones de compuestos/compounds, que son "contenedores" para múltiples acciones, incluyendo 
+
+la animación de diferentes fuentes/sources, (curvas de funciones, expresiones, restricciones y parámetros vinculados). 
+
+Trabajar con datos animaciones complejas convierte en una tarea más simple que tratar con múltiples fcurves.
+
+
+Dado que los datos de animación paquete/package, de acciones en una sola unidad utilizable, que hace que sea fácil 
+
+para copiar la animación de un modelo a otro, incluso si el modelo no comparte las mismas convenciones jerarquía, 
+
+escala, o de denominación. Cuando hay diferencias entre los modelos, se abre una plantilla para ayudar a trazar 
+
+los elementos del modelo correspondientes.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Modifying Action Clips with Value-Mapping Templates:
+____________________________________________________
+
+
+
+
+	Plantillas de valor de mapeo proporcionan una forma para modificar automáticamente los valores de animación 
+
+	en una acción al crear clips. Por ejemplo, puede agregar un desplazamiento de manera que dos personajes 
+
+	no tratan de caminar en el mismo lugar al mismo tiempo. Al igual que en las plantillas de conexión de mapeo, 
+
+	plantillas de valor mapeo vamos a trazar la información antes de realizar una acción.
+
+	
+	Cada modelo puede tener varias plantillas valor y cada una de estas plantillas puede ser activa o no. 
+
+	El orden de las plantillas es el orden de su creación, que se enumeran en el explorador o en el menú 
+
+	Efecto Plantilla Valor en el mezclador de animación mixer.
+
+
+	Cuando se crea un clip de la acción, las reglas de la primera plantilla de valor mapeo activo se copian 
+
+	localmente en el clip. Usted puede modificar esta expresión local como se describe en Modificación de valores 
+
+	de acción de clip, pero los cambios sólo afectan a ese clip en particular - la próxima vez que una instancia 
+
+	de un clip, las reglas originales de la primera plantilla de valor mapeo activo se utilizará de nuevo 
+
+	(a menos que tenga ellos cambiado en el ínterin).
+
+
+
+	Creating Value-Mapping Templates:
+	_________________________________
+
+
+	Puede crear automáticamente una plantilla que contiene los desplazamientos de los valores de transformación 
+
+	de corriente entre dos objetos o puede crear una plantilla de valor mapeo vacío y luego añadir reglas 
+
+	manualmente.
+
+
+	1_Seleccione un objeto en la escena, y luego en la barra de herramientas Animate elegir
+
+
+	2_luego vamos ha "Animate/Actions/Templates/Create Empty Value Template."
+
+
+	Aunque nada parece haber sucedido, una plantilla de valor mapeo vacío fue creada de hecho para el modelo/model, 
+
+	principal del objeto seleccionado. Usted puede comprobar que en el modelo de "Explorer/Model/Mixer/Templates
+
+	/Value Mapping folder"
+
+
+	en el mixer panel, seleccione "Effects/Create Empty Value Template", así, se crea un modelo/model, para 
+
+	el modelo/model, actual y el Valor Mapa editor de propiedades se abre.
+
+
+	Una vez que haya creado una plantilla de valor mapeo vacío, puede agregar y modificar las reglas como se 
+
+	describe en Edición de plantillas de Valor Mapeo.
+
+
+	Este procedimiento funciona correctamente sólo cuando las dos jerarquías tienen el mismo número de hijos 
+
+	y la misma estructura sub-árbol.

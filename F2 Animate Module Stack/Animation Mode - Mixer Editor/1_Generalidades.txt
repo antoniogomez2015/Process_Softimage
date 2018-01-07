@@ -1,0 +1,288 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de hacer animación "NoLinear", ó animación no lineal, a través, del modo de animación
+
+avanzado de "animación mixer", el cuál, permite diferentes tipos de métodos y sistemas de animación:
+
+
+el modo de animación mixer, permite los siguientes tipos de datos
+
+
+	_FCurve Animation
+
+	_Expression Animation
+
+	_Constraints Animation
+
+	_Shape Animation
+
+	_Audio Animation
+
+	_Animation Layers
+
+	_Cached Animation
+
+	_Simulation Sources
+
+	_Image Clips
+
+
+
+Animación no lineal es la animación que no está limitada por el tiempo. Se le permite trabajar en la animación 
+
+a un alto nivel de control en cualquier punto de tiempo en la escena. Se le da un control de alto nivel sobre 
+
+la animación porque puede en cada capa mezclar secuencias de una manera no lineal y no destructiva. Además, 
+
+se puede reutilizar y afinar muchas fuentes de datos.
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+The Mixer Node:
+_______________
+
+
+
+	_El nodo mezclador "Mixer", se encuentra en todos los modelos "Models" (incluyendo la raíz de escena, 
+
+	"Scene Roots", que es también, es un modelo/model), tan pronto como se crea una fuente/source, de algún 
+
+	tipo de datos para un objeto en ese modelo/model, se crea un "nodo", de tipo "model", llamado "Mixer", 
+
+	este nodo contiene todos los datos relacionados con el uso del "mixer", de las fuentes que usted ha 
+
+	almacenado a datos de clip específicos.
+
+
+	_Cada modelo/model, puede tener sólo un "nodo", mezclador "mixer", lo que importa para el copiado 
+
+	de la animación 
+
+
+	_Para copiar todo el nodo Mezclador mixer, de un modelo/model, a otro, puede exportarlo como un preset 
+
+	.xsimixer y luego importarlo
+
+
+
+Creating Custom Folders for the Mixer:
+______________________________________
+
+
+
+	_Usando el explorador/explorer, puede crear sus propias carpetas personalizadas dentro nodo Mezclador Mixer, 
+
+	de un modelo/model. Esto le permite organizar sus fuentes y los clips de una manera lógica y jerárquica 
+
+	en vez de tener una larga lista de elementos.
+
+
+	_haciendo mouse right click, sobre una carpeta de la estructura de capeta del modo mixer, podemos seleccionar
+
+	entre las opciones "mouse right click/create folder - Add folder", así, podremos crear estructuras personalizadas
+
+
+
+Sources:
+________
+
+
+	_Sources, son sólo estos: animation, shape, audio, animation layer, cache file, or 
+
+	image clip data that you've stored.
+
+
+
+	Estructure:
+	___________
+
+
+	_cada vez, que es creado un "Source", es generado en el "explorer/scene/model/", un elemento de grupo
+
+	"Source"
+
+
+	_y adicionalmene también, es creada una copia de "source", creado, esta copia se representa en "cursiva",
+
+	en la misma estrcura de archivos
+
+
+	_los "Shape Sources", son guardados dentro la misma estructura más en una sección ó carpeta diferente
+
+	dentro de la misma estructura, esta nueva carpeta es llamada "Shape Folder"
+
+
+
+Clips:
+______
+
+
+	_Después de crear una fuente/source, puede ponerla en el "Mixer Panel", de animación donde se convierte 
+
+	en un clip en una pista. Un clip es sólo una instancia de la fuente/source, lo que significa que usted 
+
+	puede crear tantos clips como quieras de una fuente/source.
+
+
+	_Al modificar un clip, no cambia su fuente/source, pero al modificar la fuente/source, cambia todos los clips 
+
+	que están instanciadas de ella (con la excepción de los clips de "Actions" que provienen de fuentes de expresión 
+
+	y de "Constraints"
+
+
+
+Animation Layer Clips:
+______________________
+
+
+	
+	_Al crear capas de animación, las pistas y clips para las capas se crean automáticamente en el mezclador "Mixer",
+ 
+	Sin embargo, no se pueden mezclar clips de capa animación con otros elementos en el mismo mezclador  mixer
+
+
+
+Cache Clips:
+____________
+
+
+
+	_Si usted está trabajando con archivos de caché, pistas y clips de los archivos de caché aparecerá 
+
+	en el mezclador "Mixer", automáticamente Puede utilizar los clips como lo hace en los clips de "Actions" 
+
+	(a excepción de que no se puede crear clips de compuestos), pero no se pueden mezclar clips de caché 
+
+	con otros elementos en la mesa de mezclas.
+
+
+
+Compound Clips:
+_______________
+
+
+
+	_Una colección de clips puede ser empaquetado en un compuesto/compound, que permite para las operaciones 
+
+	a realizar a nivel de todo el compuesto/compound, los compuestos son una forma de empaquetar diferentes clips
+ 
+	juntos para que pueda trabajar con mayor facilidad 
+
+
+	_por ejemplo, usted podría empaquetar un compuesto de karate "movimiento", que está hecho de una patada, 
+
+	puñetazo, y girar, y luego el ciclo, copiar, escalar, o reutilizar este clip compuesto en otro personaje.
+
+
+	_Puede crear clips compuestos sólo a través, de "Actions", y de "Shape", clips
+
+
+
+Models and the Mixer:
+_____________________
+
+
+
+	_Los modelos/models, son contenedores, como mini escenas, que hacen que sea fácil de organizar los elementos 
+
+	que deben tenerse en conjunto, como todas las partes de un personaje. Contienen la geometría de las jerarquías,
+
+	así como la animación, shaders, y otras propiedades que se han aplicado a la misma, incluyendo la información 
+
+	"Mixer"
+
+
+	_Cada modelo/model, puede tener sólo un nodo mezclador mixer, que contiene datos del mezclador, los modelos 
+
+	son el único tipo de elementos en los que se pueden almacenar "actions", "shapes" de animación, o "audio". Si 
+
+	selecciona un objeto que no es un modelo y almacena una "action", o bien se almacena en el modelo de los padres 
+
+	(si ya existe), o en el "Scene_Root" (si no existe un modelo de los padres).
+
+
+	_Si los personajes de la escena no están dentro de modelos/models, sólo tiene un nodo mezclador mixer, para toda
+ 
+	la escena (Scene_Root), lo que significa que no se puede copiar fácilmente la animación (incluyendo la animación 
+
+	de forma/shape) de un personaje a otro
+
+
+
+Sharing Animation between Models:
+_________________________________
+
+
+
+	_Compartiendo la animación entre los modelos/models, es posible porque cada modelo tiene su propio espacio de 
+
+	nombres. Esto significa que cada objeto en la jerarquía de un único modelo debe tener un nombre único, pero los 
+
+	objetos en diferentes modelos puede tener el mismo nombre. Por ejemplo, si una acción contiene animación para 
+
+	left_arm de un modelo, se puede aplicar la acción a otro modelo y se conecta automáticamente a left_arm del 
+
+	segundo modelo.
+
+
+	_Esto significa que usted puede duplicar un modelo y tener los mismos nombres en cada uno, lo que hace que la 
+
+	animación de copia entre ellos muy simple. Si sus modelos contienen elementos con diferentes esquemas de 
+
+	nomenclatura, como L_ARM y LeftArm, puede utilizar las plantillas de conexión de mapeo para especificar las
+
+	conexiones adecuadas
+
+
+
+Duplicating Models:
+___________________
+
+
+	
+	_Al duplicar un modelo/model, que tiene un nodo Mixer, todas las fuentes/sources, y clips e información mezclador
+ 
+	en el nodo Mixer también se pueden duplicar. Usted tiene la opción de copiar o compartir las fuentes/sources, 
+
+	dependiendo de lo que se propuso para las opciones de animación
+
+
+	_Si duplica un modelo en el modo de derivación (mouse midlce click, permite seleccionar todos sus elementos
+ 
+	internos "branch/chaild", en él y pulse Ctrl + D), o si usted exporta e importar un modelo, todos los clips 
+
+	en que contiene están conectados según el caso. Esto incluye "shape keys", y "shape-animated" de animación 
+
+	en el modelo.
+
+
+	_Sin embargo, si se duplica un objeto que está manejado por un clip en el mezclador mixer, sin duplicar todo el 
+
+	modelo, el objeto duplicado no es será manejado por el mezclador mixer.
+
+
+
+Levels of Models for the Mixer:
+_______________________________
+
+
+	_Cuando se trabaja con mezcladoras mixers, y jerarquías, como un personaje, lo mejor es crear modelos/models, 
+
+	a nivel de caracteres (o superior); es decir, no crear modelos para cada mano, pie, pierna, etc. Si usted tiene 
+
+	muchos modelos anidados en los niveles inferiores, que hace que sea difícil para animar al personaje como un todo 
+
+	en el mezclador mixer, porque no va a tener un alto vista -nivel de toda la animación de tu personaje. Si desea
+ 
+	separar las diferentes partes del cuerpo dentro de un modelo, puede usar un clip compuesto para cada parte.
+
+
+--------------------------------------------------------------------------------------------------------------

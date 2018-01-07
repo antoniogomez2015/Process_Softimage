@@ -1,0 +1,97 @@
+
+
+
+curso: Digital Tutors Intro to XSI Hair 2007
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+Texture Map:
+____________
+
+
+
+	_tenemos la pobilidad de proyectar el color de una textura determinada sobre el color
+
+	del hair system, de forma interactiva, para esto:
+
+
+	_primero seleccionamos un elemento que contenga un hair system
+
+
+
+	Crear Texture Map:
+	__________________
+
+	_luego, con este seleccionamos vamos ha "Mode/Property/Texture Map/", y aplicamos una 
+
+	"Texture Map"
+
+
+	_así, se agregará en el "Explorer/Mesh/", un nodo de "Texture_Map/noIcon:pic [000]"
+
+
+
+	Texture Map:
+	____________
+
+	_de esta manera en las opciones de "Texture_Map", podemos buscar una textura en disco
+
+	por lo general utilizaremos la misma textura del modelo ó mesh/motive
+
+	_y en las opciones del texture map, debemos indicar las cordenadas UVs, que tiene el modelo
+
+	en "UV Property"
+
+
+
+	Transfer Map:
+	_____________
+
+	_ahora debemos relacionar la textura map, que hemos creado en el mesh/motive, con el
+
+	hair system, para esto:
+
+
+	_primero seleccionamos el hair system, y lego vamos a las opciones "Hair/Modify/", y hacemos
+
+	"mouse left clik", en "Transfer Map", 
+
+	
+	_luego nos aparecerá un "Picker", con el cuál, debemos ir al "Explorer/Mesh/",
+
+	y debemos hacer "mouse left click", sobre "Texture Map", así quedarán relacionados ambos 
+
+	sistemas, tanto el texture map, con el hair system
+
+
+	Aplicar Texture Map:
+	____________________
+
+
+	_ahora vamos a las opciones del shader, de hair system, para esto, vamos ha "Hair/Modify", y 
+
+	hacemos "mouse left click", sobre "Shader"
+
+
+	_ahora vamos a las opciones de "shader/Hair_renderer/Illumination/Difuse/Root Color/", y en nodo
+
+	de output, desplegamos las opciones y seleccionamos y buscamos "Clips", y seleccionamos entre 
+
+	los materiales disponibles el que corresponda al texture map, ej: "Dirt-3...."
+
+
+
+	Render:
+	_______
+
+
+	_así, al renderizar podremos ver que hair system toma el color de la textura del texture map,
+
+	en relación a la distribución de la imágen y sus colores en relación al uvs, del mesh/motive
+
+

@@ -1,0 +1,150 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de intercambiar trayectorias de animación en elementos animados para emular diferentes
+
+comportamientos determinados en ciertos casos requeridos de animaciones temporales entre otros
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+para este propósito disponemos de dos opciones alternativas cada una con ciertas características las cuales 
+
+presentamos a continuación
+
+
+
+
+	_Set Path:
+
+
+		NOTE: esta opción crea ó convierte a una spline, en una trayectoria a medida de los keyframes, que 
+
+		se desea animar
+
+
+		_esta opción es una de las mas completas [-la cuál, permite setear a una spline, creada por nosotros 
+
+		y, convertirla en una trayectoria de animación en su totalidad-], permitiendonos ajustar la cantidad 
+
+		de keyframes, que esta durará ó tendrá al momento de su conversión a trayectoria de animación asignada 
+
+		al elemento determinado ó deseado
+
+
+		_para esto, primero seleccionamos al elemento deseado de la escena y con este seleccionado vamos ha:
+
+		"Animate/Create/Path/", y seleccionamos la opción de "Set Path", así, nos aparecerá un "Picker", con 
+
+		el cuál, tendremos que seleccionar la spline, que hará de trayectoria ó de path, de animación
+
+
+		_así, el elemento deseado se desplazará ó tomará a toda la spline, como trayectoria de animación en la
+
+		cantidad de keyframes, deseados 
+
+
+
+
+	_Set Trayectory:
+
+
+		NOTE: esta opción crea ó convierte a una spline, en una trayectoria ya creada ó interpredada 
+
+		como tal y reasigna ha esta a un objeto ya naimado con keyframes establecidos así, el objeto
+
+		sólo tomará el área de la trayectoria necesaria de la misma para cubrir la cantidad de keyframes,
+
+		ya animados previamente de la misma
+
+		
+		_esta opción es alternativa [-la cuál, permite reasignar a una spline, creada por nosotros 
+
+		y, convertirla en una trayectoria de animación parcial ó preconfigurada-], lo que quiere decir
+
+		que el elemento animado tomará de la spline, reasignada como trayectoria de animación sólo el
+
+		área necesaria de la misma que cubra la cantidad de keyframes, animados en el mimos elemento 
+
+		en el sentido desde el final de la spline, hasta el inicio de la spline, lo cuál, hace un poco
+
+		imprecisa esta técnica de animación ó migración de trayectoria de animación aunque es útil para
+
+		ciertos casos de animación relativa
+
+
+		_para esto, primero seleccionamos al elemento deseado de la escena y con este seleccionado vamos ha:
+
+		"Animate/Create/Path/", y seleccionamos la opción de "Set Trayectory", así, nos aparecerá un "Picker", 
+
+		con el cuál, tendremos que seleccionar la spline, que hará de trayectoria ó de path, de animación
+
+
+		_así, el elemento deseado se desplazará parcialmente sobre la spline, como trayectoria de animación 
+
+		en la cantidad de keyframes, animados previamente
+
+
+
+
+
+	_Sustitute Imput:
+
+		_esta opción permite intercambiar trayectorias de animación a través, de trayectorias resignadas
+
+		ó de sólo keyframes, animados previamente sobre un objeto
+
+
+		Intercambio de trayectorias de trayectorias reasignadas previamente:
+		____________________________________________________________________
+
+
+			_primero seleccionamos la trayectoria de animación del objecto animado y con esta seleccionada
+
+			vamos ha "Edit/Operator/", y seleccionamos la opción de "Sustitute Imput", así, nos aparecerá
+
+			un "Picker", con el cuál, tendremos que seleccionar la nueva spline, que hará de trayectoria
+
+			de animación
+
+
+
+		Intercambio de trayectoria de animación en objectos con sólo keysframes:
+		________________________________________________________________________
+
+
+			_para esto, primero debemos convertir los keyframes, animados del objeto en una trayectoria
+
+			de aniamación
+
+
+			_primero seleccionamos el objecto deseado con keyframes, de animación y con este seleccionado
+
+			vamos ha "Animate/Create/Path", y seleccionamos la opción de "Convert Position Fcurves to Path",
+
+		
+			_así, la animación correspondiente a los keyframes, se registrará en una nueva trayectoria de 
+
+			animación visible a través, de una nueva spline, en la ubicación de la animación
+
+
+			_luego seleccionamos la nueva trayectoria de animación del objecto animado y con esta seleccionada
+
+			vamos ha "Edit/Operator/", y seleccionamos la opción de "Sustitute Imput", así, nos aparecerá
+
+			un "Picker", con el cuál, tendremos que seleccionar la nueva spline, que hará de trayectoria
+
+			de animación
+
+
+
+
+
+
+
+

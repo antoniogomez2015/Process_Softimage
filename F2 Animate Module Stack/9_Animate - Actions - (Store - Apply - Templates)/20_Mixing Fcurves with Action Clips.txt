@@ -1,0 +1,135 @@
+
+
+
+DETALLES
+
+
+Las acciones son paquetes de animación de bajo nivel, tales como curvas de función, las expresiones, las limitaciones 
+
+y los parámetros vinculados. Mediante la creación de un paquete que representa la animación, se puede trabajar en un nivel 
+
+superior de la animación que no está limitado por el tiempo
+
+
+Las acciones son los paquetes de cualquier tipo de animación, tales como curvas de función, las expresiones, 
+
+las limitaciones y los parámetros vinculados. Después de crear una acción, se carga como un clip en el mezclador 
+
+de animación, donde puede modificar la animación de una manera no lineal y no destructiva.
+
+
+Este paquete en el mezclador de animación le permite trabajar en un nivel superior de la animación que no está limitada 
+
+por el tiempo: se puede mover una acción en torno a cualquier parte a tiempo, apretar o estirar su longitud como quieras, 
+
+aplique una acción después de otras en secuencias, y mezclar dos o más acciones juntos para crear una nueva animación.
+
+
+Puede crear una biblioteca completa de acciones, como ciclos de pie o saltos, y utilizarlos como muchas veces como quieras 
+
+en una escena, o compartirlos entre cualquier número de modelos
+
+
+También puede crear acciones de compuestos/compounds, que son "contenedores" para múltiples acciones, incluyendo 
+
+la animación de diferentes fuentes/sources, (curvas de funciones, expresiones, restricciones y parámetros vinculados). 
+
+Trabajar con datos animaciones complejas convierte en una tarea más simple que tratar con múltiples fcurves.
+
+
+Dado que los datos de animación paquete/package, de acciones en una sola unidad utilizable, que hace que sea fácil 
+
+para copiar la animación de un modelo a otro, incluso si el modelo no comparte las mismas convenciones jerarquía, 
+
+escala, o de denominación. Cuando hay diferencias entre los modelos, se abre una plantilla para ayudar a trazar 
+
+los elementos del modelo correspondientes.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Mixing Fcurves with Action Clips:
+_________________________________
+
+
+
+
+	Normalmente, cuando hay un clip de acción en el mezclador mixer, se anula cualquier otra animación 
+
+	en ese objeto que cubre los mismos frames. Sin embargo, al seleccionar una opción en el editor 
+
+	Mixer Propiedades, puede mezclar fcurves directamente con un clip, de la acción/action sobre los mismos 
+
+	frames. Esto le permite mezclar animación del mezclador mixer, con la animación del nivel escena.
+
+
+	Por ejemplo, puede pegar un clip en el mezclador mixer, que contiene la animación final para un objeto, 
+
+	entonces usted puede mezclarlo con otra animación fcurve que ha añadido a ese objeto, como un ligero 
+
+	desplazamiento o un ajuste menor a un clip mocap.
+
+
+	Ser capaz de mezclar clips directamente con fcurves significa que usted puede crear fácilmente animaciones 
+
+	usando el mezclador mixer, así como usarlo para mezclar y ajustar animaciones finales. Usted puede mantener 
+
+	la manipulación y el establecimiento de keyframes, para el objeto animado y no tener que hacer su animación 
+
+	en un clip de mezclarlo con otro clip.
+
+
+
+	To mix fcurves with action clips:
+	_________________________________
+
+
+	1_Asegúrese de que el objeto tiene un clip de acción en el mezclador mixer, de la animación en el frame actual.
+
+
+	2_Abrir mezclador mixer, de animación de un modelo/model, (presione Alt + 0) y elija 
+
+	"Mixer/Mix/Animation Mixer Properties"
+
+
+	3_ vamos ha "Mixer/Mix/Animation Mixer Properties/", y activamos las opciones de 
+
+	"Mix Current Options/Mix Current Animation", así, estará disponible la opción de "Mix Weight"
+
+
+	4_Seleccione el objeto y establecer keys, para uno o más de los mismos parámetros que están contenidos 
+
+	en el clip de acción actual
+
+	Al selecciona la opción de "Mix Current Animation", y ej: luego la pierna izquierda y el brazo 
+
+	se giran un poco y luego son marcados/marked. El valor de "Mix Weight",determinan el grado de influencia 
+
+	de la animación fcurve tiene sobre la animación en el clip. Keys, este parámetro para mezclar los fcurves 
+
+	dentro y fuera de los clips de acción.
+
+
+	5_Utilice el control deslizante "Mix Weight", para controlar el peso asignado a la animación fcurve 
+
+	del parámetro que se está mezclado con el clip de acción.
+
+	Con el valor de "Mix Weight", establece en 1, esto es 100% de la animación fcurve. Tenga en cuenta que esto 
+
+	también incluye la actual "posición de no-clip" del objeto (silenciar la pista del clip de acción para verla), 
+
+	así como las keys de desplazamiento que pueda haber establecido. En el ejemplo anterior, el Club-bot estaba 
+
+	en una posición de pie cuando se añadieron las keys, de desplazamiento de rotación para el brazo y la pierna 
+
+	izquierda, por lo que la influencia se ve cuando se mezcla en el clip de acción.
+
+
+	6_"Set Keys" en el parámetro "Mix Weight", para mezclar los fcurves dentro y fuera del clip de acción/action. 
+
+	Por ejemplo, puede establecer cero keys (teclas de anclaje) con el parámetro "mix weight", ajustado a 0 
+
+	(fcurves no tienen peso) a cada lado de una keys, en el valor del "mix weight", establece en 1 
+
+	(fcurves tienen 100% de peso). La mezcla de animación fcurve  con el clip de acción, entonces de nuevo

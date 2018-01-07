@@ -1,0 +1,76 @@
+
+
+DETALLES
+
+
+El "Emitter from Geometry" es un nodo "Compound/compuesto", el cuál también nos permite la emisión
+
+de partículas no sólo a través de un "object mode", si no también, a través de mapas de selección
+
+almacenadas en un "Weight Map", que previamente ha sido realizado por nosotros
+
+
+esta opción es más precisa que la opción de "Clusters", ya que los weight maps, permiten incluir
+
+degradados ó desvanecimientos en sus selecciones
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	_hacer un weight map, seleccionamos el mesh/motive y vamos ha "Get/Property/Weight Map"	
+
+			
+		y para editar el mapa vamos ha "Get/Property/Map Paint Tool/Paint Tool", ó
+
+		hacemos "Control + 3", y hacemos "mouse left click", sobre el "pick", de la
+
+		paletita de color y empezamos a pintar el weight map, al finalizar, le damos ha
+
+		"Control + 1"
+	
+		
+
+
+---------------------------------------------------------------------------------------------
+	
+
+	
+	
+Particles por Weight Maps:
+_________________________
+
+
+
+
+NOTA:	ya tenemos que tener un sistema "Point Cloud", cargado en el ICETree, con sus respetivos 
+
+	elementos como el emisor y la/s superficies colisionadoras, otros
+
+
+
+
+	Emit from Geometry:
+	___________________
+
+
+
+		_hacemos doble click, sobre el "Emit from Geometry", y vamos ha la sección de
+
+		"Emit from Geometry/Emission Filter Parameters/Reference/", y allí, vamos al
+
+		"Explorar/Mesh-motive/Polygon Mesh/Clusters/WeightMaps Cls/WeightMap/", y 
+
+		seleccionamos "Weights"
+
+
+
+
+
+	así, las partículas se emitirán a través de la selección almacenada en el Weight Map y no
+
+	de toda la superficie del elementos mesh/motive, respectivo		
+		
+	

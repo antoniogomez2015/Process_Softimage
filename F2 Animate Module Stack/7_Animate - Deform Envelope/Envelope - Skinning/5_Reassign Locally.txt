@@ -1,0 +1,72 @@
+
+
+
+
+Envelope - Skinning
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+Reassign Locally:
+_________________
+
+
+		_también, tenemos la posibilidad prácticar de cambiar ó reasignar a un grupo de vertex,
+
+		respecitvos que responden ha un bone, respectiva para que ahora respondan ha otro bone,
+
+		deseado, esto nos permite hacer correcciones grupales de vertices, seleccionados de manera
+
+		práctiva y en un solo paso y directo
+
+
+		_para acceder ha estas opciones disponemos de dos vías, estas son:
+
+
+			_yendo ha "Animate/Deform/Envelope/", y seleccionando la opción de "Reassign Locally"
+
+
+			_ó a través, del "Weight Paint Panel/Edit Tools/", shortcut "Control + 3", seleccioando
+
+			la opción de "Local Reassign"
+
+			
+			_otra opción es a través, del panel "Weight Editor/", seleccionando la opción de 
+
+			"Reassign", aunque en el panel "Weight Editor", los vertex, serán reasignados al bone,
+
+			seleccionado en el mismo panel "Weight Editor", directamente
+
+
+
+		----------------------------------------------------------------------------------------------
+
+
+
+		Worflow:
+		________
+
+
+		_primero seleccionamos la mesh, con el envelope, deseado
+
+		
+		_luego entramos al modo de sub-element, vertex, y seleccionamos los vertex, deseados a cambiar
+
+		su bone, de influencia por otro
+
+		
+		_luego, con los vertex, seleccionados vamos y hacemos "mouse left click", sobre la opción de
+
+		"Local Reassign", ó "Reassign Locally", así, nos aparecerá un picker, con el cuál, tendremos
+
+		que seleccionar el bone, al cuál, deseados transferirle la influencia de los vertex, 
+
+		seleccionados y, para finalizar la acción hacer "mouse right click", sobre un área vacía ó
+
+		disponible en el canvas del viewport
+
+

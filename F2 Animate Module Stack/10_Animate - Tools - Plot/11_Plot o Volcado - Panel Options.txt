@@ -1,0 +1,234 @@
+
+
+Detalles
+
+
+tenemos la posibilidad de hacer Plot, ó volcados de objetos animados
+
+ 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+Plot to Actions:
+________________
+
+
+
+	Action Name:
+
+		_name:
+
+			_podemos asignarle un nombre a la acción generada, esta opción tiene sentido
+
+			sólo cuando vamos a guardar la acción del volcado
+
+
+
+	_Time span Otions:
+
+
+		_Start Frames:
+
+			_podemos indicar un rango de inicio para el volcado
+
+			
+		_End Frames:
+
+			_podemos indicar un rango de finalización para volcado
+
+
+		Step Value:
+
+			_podemos indicar un intervalor para el análisis de la interpolación ej,
+
+			si colocamos un valor de "1", analizará cara frame, y colocará un keyframe
+
+			en cada frame, analizado, si colocamos un valor de "3", analizará cada "3",
+
+			frames, y colocarán un keyframe, cada "3", frames, y así sucesivamente
+
+
+
+	FCurve Options:
+
+
+		_King of FCurve:
+
+			_Boolean:
+
+				_Boolean fcurves tiempo mapa para valores booleanos (verdadero o 
+
+				falso). Estos crean curvas de función escalera, útiles para el 
+
+				trazado alternos animados (on / off valores), mientras otro frame 
+
+				se evalúa y un keyframe,  se establece en cualquier otro frame
+
+
+			_Integer:
+
+				_Integer/Entero fcurves mapa tiempo para valores enteros. Estos 
+
+				también crean fcurves-escalera, útiles para trazar los valores de 
+
+				parámetros enteros, como los valores RGB.
+
+
+			_Standard:
+
+				_Estándar es el mismo tipo de fcurve tal como se utiliza en el 
+
+				editor de animación, el tiempo y los valores de ma
+
+
+			_Raw Data:
+
+				_Mapas de datos sin procesar valores de tiempo y, como fcurves 
+
+				estándar pero utilizando sólo interpolación lineal. Ellos requieren
+
+				menos memoria, lo que significa un tamaño de archivo más pequeño; 
+
+				Cuando las secuencias de animación son muy largas son especialmente
+ 
+				útiles se representan gráficamente, tal como de sesiones de captura
+ 
+				de movimiento.
+
+
+		_Interpolation:
+
+
+			_Constant:
+
+				_ Stepped Interpolation, también, conodica como interpolación 
+
+				Constante/Constant, conecta los keyframes, por segmentos de línea 
+
+				recta. El movimiento se caracteriza por una velocidad constante con 
+
+				los cambios en cada keyframe, creando una sensación mecánica a la 
+
+				animación.
+
+
+			_Linear:
+
+				_Interpolación lineal conecta llaves por segmentos de línea recta.
+
+				El movimiento se caracteriza por una velocidad constante con los 
+
+				cambios en cada tecla, creando una sensación mecánica a la 
+				animación.
+
+			_Spline:
+
+				_Spline de interpolación es la predeterminada. Se utiliza una 
+
+				interpolación spline curvada que hace que la curva de aceleración en 			
+				(fade in) y decelerar de (fade out) cada keyframe, lo que resulta en
+ 
+				una transición suave a una keyframe. Una curva spline a menudo le
+ 
+				permite utilizar una cantidad mínima de keyframes para lograr un 
+
+				aspecto animación fluida.
+
+
+			
+
+		_Process Rotation to ensure continuity:
+
+			_a los (360 grados) de rotaciones completas o más de un objecto se procesan
+ 
+			para la continuidad. Esta opción trata orientación como una entidad en lugar
+ 
+			de curvas de la función de rotación individuales. Esto permite que el 
+
+			procesamiento "Plot", para evitar "picos" en la continuidad de las curvas de 
+
+			rotación, cuando pueden saltar entre las representaciones equivalentes (pero
+ 
+			discontinuos). Procesamiento de la continuidad de la rotación se hace 
+
+			después de que se procese pero antes de ajuste de curvas
+
+
+		_Fit Plotted Values with FCurve
+
+			_Reduce el número de keyframes, en los fcurves resultantes del proceso
+ 
+			"Plot", 
+			
+
+
+		_Fit Tolerance:
+
+			_Si se selecciona la opción anterior, utilice esta opción para ajustar la 
+
+			cercanía de la forma de la curva. Los valores más pequeños respetan la forma
+ 
+			original de la curva más mediante el uso de más teclas, lo que resulta en un
+ 
+			ajuste que mantiene más cerca de la curva original.
+
+
+
+	Plotted Actions:
+
+		
+		_Apply Plotted Animation to Object:
+
+			_Se aplica la acción "Plotted," en los objetos seleccionados. La 
+
+			fuente/source, de la acción también se mantiene. Si anula la selección de
+ 
+			esta opción, se crea la fuente/source, de la acción con el Nombre de la 
+
+			acción que ha especificado en la sección de "Name" ixer/Sources/Animatión,
+
+			el modelo y en la carpeta sources/ Modelo a nivel escenaModel folder at the
+ 
+			scene level. A continuación, debe seleccionar la fuente y aplicarla al 
+
+			objeto de elegir las "Actions/Apply/Acción", sobre la barra de herramientas 
+
+			de Animación.
+
+
+		_Apply using Paste Keys rather than replace curve
+
+			_Pega los keyframes, de la animación "Plotted", para fcurves originales del
+
+			objeto en lugar de reemplazar todo el fcurve con el trazado, los keyframes,
+ 
+			pegados no necesitan ser del mismo tipo que el fcurve a los que se añaden
+
+			Por ejemplo, puede pegar los keyframes de datos sin formato a una fcurve
+ 
+			estándar, si anula la selección de esta opción, fcurves originales del 
+
+			objeto se sustituyen por los fcurves representados.
+
+
+		_Delete Plotted Ation:
+
+			_Elimina la fuente de acción trazado que se crea.Si anula la selección de 
+
+			esta opción, se crea una fuente de acción con el Nombre de la acción que ha 
+
+			especificado, pero hay que aplicarlo al objeto de elegir las 
+
+			"Actions/Apply/Action", comando Acción sobre la barra de herramientas
+ 
+			Animación.
+
+	
+
+
+	
+
+____________________________________________________________________________________________________

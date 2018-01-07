@@ -1,0 +1,243 @@
+
+creación de kinemática, joints y bones
+
+	1.para crear chains, joint y bones, vamos al menú Animate/Create/Skeleton/Draw 2D chain, luego hacemos click and draw, en relación a la forma de la kinemática del character y la chain creada
+
+	2.para agregar bones a una chain ya creada, seleccionamos el handle ó efector de la chain, luego vamos al menú Animate/Create/Skeleton/Add Bone to Chain, y continuamos la creación de bones, a partir del punto del efector ó handle
+
+	3.para eliminar una cadena entera con su root, bones, joints y handle, debemos seleccionar el "root", con el modo de selección de grupos, con el shortcut "mouse midle click", y le damos a suprimir, esto lo podemos hacer en el viewport ó en el xplorer
+
+	4.para mover bones y joints, vamos al menú Animate/Create/Skeleton/Move Joint Branch, ó su shortcut Control+J
+
+		4.1.seleccionamos un bone y haciendo left click and draw con la herramienta "Move Joint Branch", para mover de forma independiente el bone, repercutiendo así en relación de posición y extención con los bones contiguos al seleccionado
+
+		4.2.para mover el bone seleccionado y que éste arrastre los demás bones que estén bajo éste sin modificar sus relaciónes, con la herramienta "Move Joint Branch", seleccionamos el bone deseado y hacemos mouse midle click an draw, sobre el bone deseado, así movera de forma heredada toda la cadena bajo este
+
+
+
+
+
+ajuste y configuración de los joint y bones y chains
+
+	1.al seleccionar cada una de las partes de la kinemática podremos condigurar sus propiedades y atributos, aplicando "enter button", ó si directamente tenemos un seleccionado con la ventana de propiedades desplegada
+
+	2.en las propiedades de los mismos podremos configurar; nombre, tamaño de visualización, extensión, límites de rotación, otros
+
+
+propiedades de bone/joint/chain/eff/root/kinematic
+
+	generales
+
+	1.Name: aquí podemos indicar un nombre descriptivo para el bone
+
+	2.Lengh: aquí podemos indicar una longitud exacta para el bone
+
+	3.Bone Axis Offset: aquí podemos cambiar la orientación del pivot de toración del bone
+
+	4.Icon: aquí podremos elegir la forma visual que representará al bone
+
+	5.podemos crear una handle externo de un bone, para esto seleccionamos el bone y activamos sus propiedades de "Shadow Display/Type", éste handle lo podemos reubiar y modificar a nuestro gusto
+
+	kinematic Joint
+	
+	1.en las propiedades de un bone en Chain BOne/Kinematic Joint/Rotation Limit, es conveniente activar esta opción para indicar límites de rotación a bones de articulación correspondientes a la kinemática de nuestro character
+
+		1.1.limitar grados máximos: seleccionando un bone, para limitar ó marginar su capacidad máxima en grados de rotación de forma rápida y explícita, ésto lo hacemos flexionando ó articulando el bone hasta el grado máximo que deseamos luego, con el bone seleccionado vamos al menú Animate/Create/Skeleton/Set Maximun Rotation Limit, así quedará restringido los grados del flexionamiento
+
+		1.2.1.1.limitar grados mínimos: seleccionando un bone, para limitar ó marginar su capacidad mínima en grados de rotación de forma rápida y explícita, ésto lo hacemos flexionando ó articulando el bone hasta el grado mínimo que deseamos luego, con el bone seleccionado vamos al menú Animate/Create/Skeleton/Set Minimun Rotation Limit, así quedará restringido los grados del flexionamiento
+ 
+
+
+
+utilizar la kinemática con geometría sin necesidad de aplicar skinning a las mismas podemos utilizar emparentaminetos
+
+	1.para esto, debemo emparentar la geometría correspondiente al primer bone, con el primer bone
+
+	2.el segundo bone de la chain, con la segunda parte de la geometría
+
+	3.y así sucesivamente, en forma intercalada, la primera geometría emparentada con el primer bone y la siguiente de forma opuesta; emparentada con el bone, luego repetimos el proceso hasta haber terminado
+
+	4.asi, al articular cada bone, tendremos una articulación independiente, más si tomamos el efectos ó handle obtendremos una kinemática integrada y reciproca
+
+también podemos agregar roots ó clusters a una chain ó cadena para que adquiera propiedades avanzadas de kinemática, para hacer el efecto de varias cadenas trabajando en conjunto que hacen una kinemática completa y correcta (la cadena se mantiene completa)
+
+	1.para esto, seleccinamos el bone en el cual deseamos agregar un cluster ó root nuevo y vamos al menú Animate/Create/Skeleton/Break Chain At Bone, al hacer esto se activarán las opciones del Joint Behavior/Join's is Pseudo-Root, del bone en cuestión
+
+
+manejar los joints y handles es recomendable usar formas alámbricas de splines perimetrales para tener acceso y manejo del character, para esto es ideal
+	
+	1.utilizar la forma nativas alámbricas dedicadas a esta función, yendo al menú Model-Animate/Get/Primitive/Impicit; allí encontraremo gran número de formas geométricas para su utilización el proceso del rigging del character, lo limitado de estas formas es que no permite la edición ó modición de su forma, lo bueno es que no tienen geometria mesh, sino solamente una estructura alámbrica ó wareframe
+
+	2.también podemos utilizar formas geométricas de splines planas, yendo al menú Model-Animate/Get/Primitive/Curve, éstas formas tienen sólo una estructura alámbrica ó wareframe y sí permiten la edición de sus componentes y forma
+
+	4.también podemos crear nuestras fromas de splines personalizadas a través de las herramientas de apline en el menú Mode-Animate/Create/Curve/Draw Cubic
+
+	5.por último podemos utilizar formas geométricas ó creadas de polymesh, yendo al menú Model-Animate/Get/Primitive/Ply Mesh, éstas son totalmente editables pero hay que hacerles un proceso para quitarles las propiedades de mesh y que quede sólo la estructura alámbrica ó wareframe
+
+		5.1.para crear una copia alámbrica ó de wareframe de la forma y geometría de la mesh que hemos editado en el paso anterior para el proceso del rigging, debemos seleccionar los sub elementos "Edges", de la mesh e ir al menú Animate/Create/Curve/Extract From Edges
+
+		5.2.así, se creará un spline en el xplorer, ésta la seleccionamos, luego vamos al menú Edit/Freeze, ahora borramos la forma mesh, que previamente habíamos creado si no la necesitamos
+
+	6.la resetea la forma spline creada resultante a utilizar, es deseable resetear la pose en sus propiedades transformación, para esto, seleccionamos la splain y vamos a sus propiedades completas shoftcut Alt+Enter, y vamos a "Local Transfomr/Neutral Pose"
+
+		6.1.dentro de "Local Transfomr/Neutral Pose", podemos activar "Use Current Pose", así liberaremos a cero, las propiedades de transformación de la spline, dejándola reseteada para su uso
+
+		6.2.esto también lo podemos lograr seleccionando la spline y yendo al menú Transform/Set Neutral Pose
+
+		6.3.si desemos volver a tener activas las propiedades iniciales de la pline dentro de "Local Transfomr/Neutral Pose", podemos activar "reset", así, se restaurarán las propiedades iniciales
+
+	7.podemos utiliar los primitivos splines para crear controles graduales de transición para las animaciones de la kinemática de nuestro personaje
+
+		7.1.para esto, vamos el menú Model-Animate/Get/Primitive/Implicit/Cube, y los colocamos en el lugar del efector ó handle a controlar, para esto, seleccionamos el cube que creamos y vamos al menú Transform/match Translation, y hacemos Pick en el handle ó efector deseado
+
+		7.2.ahora para relacionar el cube que creamos como handle de animación con el handle ó efector de la kinemática deseada; seleccionamos el handle ó efector de la kinemática y vamos al menú Contrain/Option/Position, y hacemos pick, en el handle cube que creamos
+
+		7.3.al hacer constrain/position, en el handle ó efector se creará un controlador dentro del efector ó handle, ejemplo: eff/Kinematics/Constrainsts/"Position Cns", si a este le hacemos enter veremos sus propiedades
+
+		7.4.en las propiedades de "Position Cns", podemos avtivar éste ó desactivarlo, chekando en "Active", ó no
+
+		7.5.y si utilizamos las propiedades de Bend Weight entre valores de 1 a 0, graduaremos el fuerza del efecto de un punto a un punto b, así animaremos la transición entre ambos pasos ó punto de uticación y tiempo
+
+
+crear controles de seguimiento por ejemplo, para los ojos, podemos utilizar las propiedades de Constrain/Option/Direction
+
+	1.para esto, creamos un forma referencial al objeto a controlar a través de splines, luego esta spline la renombramos, le asignamos un color y la reubicamos en el lugar deseado donde realizará el control, luego seleccionamos la forma de mesh que obedesca  al control de spline y vamos al menú Constrain/Option/Direction, y hacemos pick, en el handle spline que creamos para tal control
+
+	2.el paso anterior lo podemos repetir para el otro ojo por ejemplo, colocando cada control paralelamente y equidistante a cada ojo
+
+	3.ambos controles de cada ojo lo podemos controlar con un control principal que meneje el movimiento de la vista entera, utilizando las propiedades de Constrain/Paremt
+
+	4.al crear los controles Constrain/Option/Direction, podemos controlar la axis a la cuál hara referencia el seguimiento
+
+	5.al crear los controles Constrain/Option/Direction, podemos también acivar propiedades de variación de la rotación de los elementos controlas, a través de las opciones "Target Offset", en sus axis X Y Z
+
+
+crear controles que permiten adherir, sujetar ó emparentar temporalmente elementos a través de las opciones Constrain/Option/Pose, esta opción es especial para simular sujetar elementos con las manos de nuestro character
+
+	1.para esto, debemos desactivar las propiedades de orientación de la chain ó cadena a aplicar el controlador, esto lo hacemos yendo al menú Constrain/CnsComp, y lo activamos temporalmente
+
+	2.ahora seleccionamos el elmento de mesh ó spline que deseamos emparentar temporalmente, y vamos al menú Constrain/Option/Pose, y hacemos pick, en el root, de la cadena ó chain deseada, ejemplo el root de la muñeca de la mano
+
+	3.ahora al mover el root de la muñeca de la mano, se moverá el elemento que temporalmente hemos relacionado la chain respectiva
+
+	4.y para activar ó desactivar el control de constrain del elemento, vamos a las opcioens de Pose Cns/Pose/Bend Weight, y allí, podemos cambiar su valor de 1 a 0,
+	
+	5.tmabién podemos indicar que propiedades interactúan, entre la position, Orientation, Scaling
+
+
+igualmente podemos hacer un control que permita rotar la pierta ó leg, entera desde su base ó ante pierna individualmente del root de la leg ó pierna
+
+	1.para esto, creamos una spline que sirva de handle para controlar la rotación de la pierna, la spline creada la colocamos detrás de la pierna respectiva, le colocamos un nombre descriptivo ejemplo: "L_handle_roll_leg", también le asignamos un color
+
+	2.a la forma spline que creamos le eliminamos las propiedades de edición, yendo a Edit/Freeze, luego, le liberamos sus propiedades básicas, seleccionando la spline y abriendo sus propiedades avanzadas con Alt+Enter/Local Transform/Neutral Pose/Use CurrentPose
+
+	3.ahora, seleccionamos el bone de la antepierna deseado y vamos al menú Constrain/Option/Chain To Vector
+
+	4.en las propiedades avanzadas del bone de la ante pierna "Chain Bone/Resolution Plane/Roll
+
+
+crear controles de movimiento limitado a través de controles de transformación, por ejemplo para modificar sólo unas propiedades de axis específicas, como por ejemplo las de rotación de una leg en roll rotation, permitiendo sólo el movimiento en las cordenadas "X" y "y", restringiendo la cordenada "Z"
+
+	1.para aplicar el control de forma individual, seleccionamos el handle ó spline a aplicar el control de transformación y, vamos al menú Animate/Get/Property/Transform Setup
+
+		1.1.en las opciones que se abrirán, Transform Setup/Tool recall/Tool, podremos escoger entre, escale, rotation y trsnlation 
+
+		1.2.en "Reference Mode", podemos indicar el modo de axis, si éste es global, local, reference, add, plane
+
+		1.3.a su vez, podemos indicar ó restringir las cordenadas axis en las que sólo deseamos trabajar y en la que nó
+
+		1.4.incluso, podemos indicar el modo de axis GOG, para que el tome como axis el centro del box del handle ó spline
+
+		1.5.se creará el control de transform Setup en el handle dentro de xplorer/NURBS Curve list/Transform Setup, le damos doble click ó enter, para desplegar sus propiedades
+
+	2.para aplicar el control de la forma de forma grupal, primero debemos seleccionar a los handles ó splines que sedeamos agrupas, luego vamos al menú Edit/Create Group, y le colocamos un nombre característico al grupo que hemos creado ejemplo: "handle_leg_roll"
+
+		2.1.ahora, seleccionamos el grupo que creamos "handle_leg_roll", y vamos al menú Animage/Get/Property/Transform Setup, y ejemplo: seleccionamos Translate/Global/"X" y "Y", esta definición se hemos aplicado al grupo "handle_leg_roll", que a su vez éste controla y afecto a los handle que este alberga
+
+		2.2.de esta manera dentromos un movimiento libre en cada handle por que individualmente no tienen controles, mientras que el grupo "handle_leg_roll", que creamos para ambos si teiene controles que afectan a ambos handles pos igual en su movimiento en conjunto a travñes del trupo y sus controles Transform Setup
+
+
+crear y setear un character aumenta altamente su productividad y manejo estandarizado si cremos un sistema "model character", para así, poder exportar el charater con todas sus propiedades de kinemática, riggins, skinning, modificadores, animaciones, otros, como también para tener un mejor control para la realización de animaciones
+
+	1.para crear un "model character", seleccionamos toda la kinemática del character, luego todos los elementos de rigging y skinning, como también, seleccionamos toda su geometría ó mesh del character
+
+	2.con todos los elementos del character seleccionado, vamos al menú Model/Create/Model/New Model, lo renombramos con un nombre caracteristico al character, ejemplo: "warrior1"
+
+	3.ahora si seleccionamos a "warrior1", en el xplorer y le damos mouse right click, y seleccionamos Export Model, podremos exportar el modelo para producción e integrarlo en otros proyectos con todas sus propiedades avanzadas
+
+	4.al crear un "model character", se creará un cluster, con el cuál podremos mover todo el character en su conjunto, seleccionando el "model character tag"
+
+	5.dentro del "model character", se encuentrarán los diferentes grupos como los de la mesh, la kinemática, el rigging, skinning, animación, otros
+
+
+hacer relaciones entre diferentes propiedades de elementos para hacer controles de rigging en elementos y sub elementos específicos
+
+	1.para esto, abrimos los atributos locales de ambos elemento, "Local Transform/SRT", su shortcuts Alt+Enter ó Control+K, luego arrastramos el icono de la propiedad que deseamos que sea la controladora de la primera mesh, y la soltamos en la propiedad a controlar en las propiedades de la otra forma, ejemplo: Translate "X", controle a Rotate "Y"
+
+
+hacer controles para modificar sub elementos de una geometría determinada a través de clusters
+
+	1.para esto. seleccionamos los sub elementos vertex, que deseamos controlar a través de un cluster
+
+	2.luego tenemos varias forma de crear un cluster, con los vertex seleccionados vamos al menú Edit/Create Cluster ó su shortcut Control+L
+
+	3.en este punto se habrá creado en nuevo nodo en las propiedades de la mesh seleccionada, para ver este nodo vamos al xplorer/mesh/Poly Mesh/Clusters/Point
+
+	4.así, accediendo al xplorer/mesh/Poly Mesh/Clusters/"Point", y haciendo doble click sobre éste, podemos tener acceso directo a la selección de sub elementos vextes que relacionamos con el cluster que creamos
+
+	5.para para un mejor control de cara al rigging, podemos hacer la selección de sub elementos vexte e ir al menú Edit/Create Cluster width Center, así, se creará el cluster pero con un handle visible para un mayor manejo y control, es cual se pueden emparentar con cualquier control de spline que creemos para su integración con el rigging, ó podemos seleccionar el handle que se crea con el cluster y entrar en sus propiedades y cambiar su visualización por ejemplo a circle, así, como cambiarle de color
+
+	6.al crear un cluster con centro, es posible que al movel la kinemática y el envelope ó skinning los sub elementos que obedecen al cluster, se queden estáticos por que el cluster no se mueve con el skinning, para solucionarlo debemos indicarle al sistema que estamos trabajando en modo "Modelling Construction Mode", para esto desplegamos esta pestaña y volvemos a selecciona "Modelling Construction Mode", así actuará el skinning independientemente de la acción de los clusters
+
+
+kinemática 3d, para elementos especiales como los no humanos como tentáculos, cabello, maquinaria, otros
+
+	1.para esto, vamos al menú Animate/Create/Skeleton/Draw 3D Chain, esta cadena de bones responde a fuerzas ó interacciones de 3 cordenadas axis, no colo la kinemática 2d, que obedece a flexiones y ha arcos 2d, que emulan la kinemática humana en articulaciones
+
+
+limitar atributos de handles y controles
+
+	1.los atributos que no apliquen en las acciones del control ó handle, por ejemplo si un handle hace una acción a través de su axis transition "Y", es conveniente bloquear los demás atributos para que éstos no tengan acción en el handle y no confundan al usuario
+
+	2.para bloquear atributos, seleccionamos los atributos que deseamos bloquear haciando control+left and cliks, luego hacemos right click, y sobre los atributos seleccionados y se abrirá un menú contextual y en él seleccionaremos "Lock", así sólo que quedará con acción los atributos que no bloqueamos
+
+	3.para ocultar los atributos bloqueados ó nó animables, seleccionamos los atributos bloqueados haciando control+left and cliks, luego hacemos right click, sobre los atributos seleccionados y se abrirá un menú contextual y en él seleccionaremos "Make Non-Keyable and hiden", así sólo quedarán visibles sólo los atributos que no hayamos bloqueado y ocultado, así lograremos un control estandarizado y ediciente que no permite confuciones ni distorciones en las acciones del rigging
+
+	4.para restaurar los atributos ocultos, vamos al menú Vew/Animation/"Keyable Parameter Editor"
+
+	5.con el handle ó controlador seleccionado y, en el menú "Keyable Parameter Editor", seleccionamos los atributos bloqueados haciendo control+left and cliks, y luego le damos a "Add>>", en el panel control+left and cliks, para así, agregar ó restaurar los atributos bloqueados nuevamente en el box, de atributos del handle ó controlador
+
+	
+	6.limitar el efecto slider ó de desplazamiento de un controlador ó handle en una axis que tiene una acción determinada 
+
+		6.1.para ésto, abrimos las opciones de kinemática del elemento controlador ó handle, con su shortcut Alt+Enter ó directamente Control+K
+
+		6.2.en las opciones de kinemática del elemento controlador ó handle, vamos en este caso a "pos Limit", (límite de posición), en el cuál, podemos indicar un mínimo y un máximo de desplazamiento
+
+		6.3.en las opciones de "pos Limit", en Minimun: seleccionamos la cordenada que conincida con la cordenada de acción del controlador ó handle, luego en el slider indicamos el grado de acción en números de unidades del atributo transition "Y", por ejemplo "0", y en Maximun: igualmente seleccionamos la cordenada que conincida con la cordenada de acción del controlador ó handle, y le colocamos el valor de desplazamiento de controlador ó handle, por ejemplo "2", así, quedará limitada la acción de desplazamineto del controlador ó handle en los grados indicados, así evitaremos un movimiento desmedido de los controladores ó handle en el prceso de animación
+
+
+crear "Create Character Key Set", para crear bloques y sub bloques de animación de elementos de characters
+
+	1.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+

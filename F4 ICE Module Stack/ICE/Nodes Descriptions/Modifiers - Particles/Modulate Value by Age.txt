@@ -1,0 +1,46 @@
+
+
+DETALLES
+
+
+el nodo "Modulate Value by Age", permitirá variar un valor de las partículas como cantidad de 
+
+emisión/Rate, tamaño/size, velocidad/speed, a través, de una curva de edad/age, de creación o 
+
+expresión de vida ó desarrollo ó desenvolvimiento
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	_Task/Particles/Modifiers/Modulate Value by Age
+
+		va conectado por lo general ha "Emit from Geometry/Rate,Size,Speed.."
+		
+
+
+------------------------------------------------------------------------------------------
+
+
+Modulate Value by Age
+_____________________
+
+
+	
+	_Curve Profile:
+
+		podemos crear un ajuste personalizado de la emisión a través, de una curva/curve,
+
+		de expresión la cuál es totalmente animable
+
+
+
+	_Ease Value:
+
+		podemos indicar un valor mínimo de la variación de entrada
+

@@ -1,0 +1,48 @@
+
+
+Detalles
+
+
+tenemos la posibilidad de crear constraints múltiples en una sola acción así, podremos agregar constrints,
+
+del mismo tipo de forma consecutiva sin tener que repetir el mismos proceso una y otra vez
+
+
+ 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Soft Body Workflow:
+___________________
+
+
+	_primero creamos las meshes/motives, que harán de soft body, y la ubicamos según la lógica de la escena
+
+
+	_luego seleccionamos las meshes/motives, que harán de soft body, y con estas seleccinadas vamos ha
+
+	"Simulate/Create/Rigid BOdy/Active - Passive Rigid Boby", respectivamente
+
+	
+	_luego seleccionamos vamos ha "Simulate/Create/Rigid Body/Multi Constraint Tool/ej: Hinge", así, nos
+
+	aparecerá un "Picker", con el cuál, tendremos que indicar cuál será el elemento rigid body, primario
+
+	para sujetar el constraint/Hinge, esto lo hacemos haciendo "mouse left click", sobe el elemento y, a
+
+	continuación nos pedirá que seleccionemos el siguiente elemento el cuál será el elemento rigid body, 
+
+	secundario para sujetar el constraint/Hinge, esto lo hacemos haciendo "mouse midle click", sobre el 
+
+	elemento
+
+
+	_posteriormente tendremos que repetir este proceso de los pasos anteriores haste terminar de setear 
+
+	a todos los elementos
+
+
+	
+_______________________________________________________________________________________________________________
+

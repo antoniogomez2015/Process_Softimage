@@ -1,0 +1,46 @@
+
+
+DETALLES
+
+
+El nodo "Simulate Root" es una "estación central" para los nodos de simulación ICE. Necesita ser 
+
+enchufado en el nodo ICETree. Este nodo le da fácil acceso a muchos puertos en los que se pueden 
+
+conectar en los nodos que se utilizan a menudo en las simulaciones. 
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	_primero creamos el elementos mesh/null, que hará de amisor de partículas
+
+	_luego con este seleccionado vamos ha "ICE/Particles/Create/Basic Emission", así se habrá
+
+	creardo el arbol en el "ICE Tree/Alt+9", del sistema de partículas sobre el elemento seleccionado
+
+	_este ICE Tree, se compone de los siguientes elementos en workflow:
+
+
+		_Data Access/GetData: el cuál contiene el elemento (mesh/null), de la escena
+	
+			va conectado en el "Emitter1"
+	
+			_Emitters/Emit from Gepmetry: el cuál es el compound, de emisión
+				
+				va conectado en el "Emiter"
+
+			_Simulation/Simulate Particles: el cuál es el controlador de la simulación
+
+				va conecta a "Simulate"
+
+				_Simulation/Simulation Root: el cuál es el "Estación Central"
+				
+					va conecta a "Port1
+"							
+					_ICE Tree: el cuál es el nodo de salida, debe renderizar
+
+					todo el proceso que conforma todo el arbol/tree
+		
+	

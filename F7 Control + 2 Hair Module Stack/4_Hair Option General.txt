@@ -1,0 +1,204 @@
+
+
+
+curso: Digital Tutors Intro to XSI Hair 2007
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+Hair/General:
+____________
+
+
+	_display type:
+
+		_guide hair:
+
+			_esta opción muestra sólo las guías vectoriales que representar el hair system,
+
+			esta la opción de visualización más rápida aunque no muestra detalles de 
+
+			estilización ni edición en el viewport
+
+
+		_render hair:
+
+			_esta opción muestra detalles de las fibras, filamentos ó cabellos en el viewport,
+
+			esto es especialmente útil a la hora de configurar efectos de estilizado y estolo
+
+			así, como algunos procesos, otros
+
+
+		_use display mode:
+
+			_esta opción muestra detalles de las fibras, filamentos ó cabellos en el viewport,
+
+			esto es especialmente útil a la hora de configurar efectos de estilizado y estolo
+
+			así, como algunos procesos, otros
+
+
+
+	_render hairs %:
+
+		_(indeterminado), no hay cambios al variar el valor
+
+
+	----------------------------------------------------------------------------------------------
+
+
+	Render Settings
+
+
+		_render hairs %:
+
+			_cantidad de porcentaje del total de fibras posibles a renderizar, donde hay
+
+			valores desde (0-100%), especialmente útil para disminuir la cantidad de hair,
+
+			deseado del todo a renderizar
+
+
+		_total hairs:
+
+			_esta opción nos permite indicar la cantidad de cabello a renderizar así, entre
+
+			mayor sea el valor que indiquemos mayor será la cantidad de cabello ó fibra
+
+			representado en el render
+
+
+	----------------------------------------------------------------------------------------------
+
+
+	Hair Geometry
+
+
+		_Maximum Depth:
+
+			_este valor influye en la profundidad que tendrá el cabello ó fibras yendo desde
+
+			valores de 0-64
+
+
+		_Maximum Size:
+
+			_este valor influye en la profundidad que tendrá el cabello ó fibras yendo desde
+
+			valores de 0-64
+
+
+	----------------------------------------------------------------------------------------------
+
+
+	Hair Multiplicity
+
+		
+		_strand multipler:
+
+			_este valor multiplica la cantidad de hair a renderizar
+
+
+		_splay type:
+
+			_proportional (default)
+
+				_esta opción hace la función de spread, los filamentos multiplicados
+
+				de manera proporcional tanto en su root, como en su tip
+
+
+			_Absolute:
+
+				_esta opción hacer la funcioón de spread, de forma absoluta ó integrada
+
+
+		_splay at tip:
+
+			_esta opción hace spread, sólamente en la tip, ó punta
+
+
+		_splay at root:
+
+			_esta opción hace spread, sólamente en la root, ó base
+
+
+	----------------------------------------------------------------------------------------------
+
+
+	Hair Generation
+
+
+		Allow stretching of hair segments:
+
+			_esta opción permite el estiramiento de las fibras ó filamentos
+
+		_hair segments:
+
+			_esta opción permite incrementar la cantidad de segmentos lo cuál,
+
+			aumenta la calidad del hair system, especialmente a la hora de agregar
+
+			efectos como los de turbulencia ó "kink"
+
+
+		_render quality:
+
+			_high (slower)
+
+				_esta es la opción que ofreme mejores resultados y es la que
+
+				biene por defecto
+
+			
+			_low (fastest)
+		
+				_esta es una opción alternativa la cuál, ofrece resultados más 
+
+				rápidos aunque con una mejor calidad
+
+
+	----------------------------------------------------------------------------------------------
+
+
+	Hair Collision
+
+
+		_collision type:
+
+			_average sphere (fast):
+
+				_esta opción ofrece un sistema de average a través, de la referencia
+
+				de una esfera, esta opción es rápida aunque poca precisa
+
+
+			_exact (slow):
+
+				_esta es la mejor opción y la más recomendada a la hora de buscar
+
+				presición en modelos complejos
+
+
+				NOTE: es impresindible colocar esta opción cuando deseamos hacer simulaciones
+
+				con fuerzas feilds, collision, dynamics basics, and advances
+
+
+			_XSI (fast rough):
+
+				_esta es una opción altra rápida aunque con resultados poco precisos
+
+
+	----------------------------------------------------------------------------------------------
+
+
+	_name:
+
+		_esta opción permite asignale un nombre al sistema en general
+

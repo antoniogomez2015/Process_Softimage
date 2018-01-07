@@ -1,0 +1,139 @@
+
+
+
+DETALLES
+
+
+Las acciones son paquetes de animación de bajo nivel, tales como curvas de función, las expresiones, las limitaciones 
+
+y los parámetros vinculados. Mediante la creación de un paquete que representa la animación, se puede trabajar en un nivel 
+
+superior de la animación que no está limitado por el tiempo
+
+
+Las acciones son los paquetes de cualquier tipo de animación, tales como curvas de función, las expresiones, 
+
+las limitaciones y los parámetros vinculados. Después de crear una acción, se carga como un clip en el mezclador 
+
+de animación, donde puede modificar la animación de una manera no lineal y no destructiva.
+
+
+Este paquete en el mezclador de animación le permite trabajar en un nivel superior de la animación que no está limitada 
+
+por el tiempo: se puede mover una acción en torno a cualquier parte a tiempo, apretar o estirar su longitud como quieras, 
+
+aplique una acción después de otras en secuencias, y mezclar dos o más acciones juntos para crear una nueva animación.
+
+
+Puede crear una biblioteca completa de acciones, como ciclos de pie o saltos, y utilizarlos como muchas veces como quieras 
+
+en una escena, o compartirlos entre cualquier número de modelos
+
+
+También puede crear acciones de compuestos/compounds, que son "contenedores" para múltiples acciones, incluyendo 
+
+la animación de diferentes fuentes/sources, (curvas de funciones, expresiones, restricciones y parámetros vinculados). 
+
+Trabajar con datos animaciones complejas convierte en una tarea más simple que tratar con múltiples fcurves.
+
+
+Dado que los datos de animación paquete/package, de acciones en una sola unidad utilizable, que hace que sea fácil 
+
+para copiar la animación de un modelo a otro, incluso si el modelo no comparte las mismas convenciones jerarquía, 
+
+escala, o de denominación. Cuando hay diferencias entre los modelos, se abre una plantilla para ayudar a trazar 
+
+los elementos del modelo correspondientes.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Restoring (Applying) the Animation in Action Sources to an Object:
+__________________________________________________________________
+
+
+
+
+	La aplicación de una acción pone la animación contenida en una fuente de la acción en un modelo. Esto es útil 
+
+	para la restauración de la animación si la había quitado al crear una acción, como para revertir la animación 
+
+	de un objeto a partir de una fuente/source, de la acción de regreso a las curvas de función Fcurve. También, 
+
+	puede aplicar la animación en una fuente/source de la acción/action a otro modelo de esta manera.
+
+
+	Debido a que la fuente/source, de la acción original puede estar bajo muchos modelos, por defecto se aplica 
+
+	al modelo al que está conectado (se puede comprobar en la carpeta del modelo fuentes/sources, a nivel de escena 
+
+	para ver qué modelo es el "dueño", que la fuente/source). Si ese modelo no está disponible, o si desea solicitar 
+
+	a otro modelo, puede seleccionar el modelo al que desea aplicar la acción.
+
+
+	La aplicación de una acción no crea un clip y no utiliza ninguna plantilla conexión ó el valor de asignación. 
+
+	Además, utiliza la sincronización de la animación original, por lo que no importa donde se encuentre el frame, 
+
+	actual cuando se aplica una acción de este tipo.
+
+
+NOTE:	este tipo de acciones no funciona con clip compounds/comuestos
+
+
+
+	Applying an Action Source:
+	__________________________
+
+
+	1_En el explorador/explorer, seleccione el source, de la acción/action que desea aplicar a partir de la carpeta 
+
+	del modelo/model/mixer/fuentes/sources, a nivel de escena o carpeta Fuentes/sources, del Mixer/Animación del 
+
+	modelo/model. La acción se aplica en el modelo /model, desde donde ha seleccionado la fuente/source, 
+
+	de la acción (en este caso, ej, es el modelo club_bot).
+
+
+	Si no desea que la acción que se aplicará al modelo original para la que se creó la acción, añadir 
+
+	el nuevo modelo/model, que desea a la selección (pulse Mayús o Ctrl y seleccione).
+
+
+
+	Applying Action Clip Modifications:
+	___________________________________
+
+
+
+	Digamos que usted ha creado una fuente/source, de acción/action, y creado numerosos clips de acción de ella 
+
+	en el mezclador mixer. Ha modificado cada uno de los clips de diferentes maneras, como añadir efectos clip, 
+
+	timewarps, etc. Ahora que desea aplicar la animación de los clips modificados de nuevo a la modelo.
+
+
+	Debido a que una Acción/action, funciona sólo en fuentes/sources, no se puede utilizar en los clips, que son 
+
+	simplemente instancias de una fuente/source,. Puede evitar esto, ya sea "freezing or merging the instanced" 
+
+	de los clips de instancia a una nueva fuente/source, dependiendo de cómo se ha modificado los clips, y luego 
+
+	aplicar la fuente/source, resultante a un modelo/model, eligiendo "Animate/Actions/Action"
+
+
+	Si usted ha hecho un clip de mezcla en el mixer panel, reajuste temporal, efectos de clip, o timewarps 
+
+	en los clips, es necesario congelar/freeze, todas las modificaciones de los clips, en una nueva fuente 
+
+	(elija Clip Freeze a Nueva Fuente).
+	
+
+	Si usted ha resincronizada (como escala) o se secuencian clips-fcurve solamente, entonces usted puede combinar 
+
+	los clips, (choose Clip  Merge to New Source), que mantiene el tiempo de keyframes, en las fuentes/sources, 
+
+	originales.
+	

@@ -1,0 +1,71 @@
+
+
+DETALLES
+
+
+podemos generar un sistema de partículas personalizado el cuál emita partículas a través
+
+de una spline, path/trayectoria, para que así, las partículas generen su "flow", a través,
+
+de la trayectoria especificada
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Emitter path
+____________
+
+	
+
+	_primero vamos ha "ICE/Get/Primitive/Point Cloud/Empty", de esta manera crearemos un sistema
+
+	de point Cloud, vacío para crear partículas de forma personalizada por nosotros
+
+
+	_luego seleccionamos "Point Cloud", que creamos y con este seleccionado vamos al 
+	
+	ICETree/Alt+9, luego hacemos "Refresh", para que este sea relacionado al panel,
+
+	es recomentable en este punto bloquedar el refresh, del panel activando el "candado"
+
+
+	_en el ICE, vamos ha "ICETree/Create/ICETree", para crear un ICETree del "Point Cloud"
+
+
+	_ahora debemos agregar la "spline", al ICETree, para esto, seleccionamos la 
+
+	spline, en el viewport ó explorer, y con esta seleccionada hacemos "Shift + F3",
+
+	y/ó hacemos luego "Mouse Midle Click and Draw", y la soltamos en el ICETree, para agregarla,
+
+	así, se agregará a través de una etiqueta "Get Data", con la información de la spline
+
+
+	_ahora vamos ha "ICETree/Particles/Emitters/Emit from Curve", y lo conectamos en el nodo
+
+	"INCETree/Port1"
+
+
+	_ahora relacionamos el nodo creado por nosotros "Get Data/Value", al nodo 
+
+	"Emit from Curve/Emiter1"
+
+
+	_luego vamos ha "ICETree/Simulation/Simulate Particles", y ahora debemos relacionar 
+
+	los nodos "Simulate Particle/Simulate", con el nodo "ICETree/Port2"
+
+
+	así, par partículas de desplazarán con un flow, a través, del spline/path, ó trayectoria
+
+	para editar los setting, de las partículas debemos hacer doble click sobre el nodo
+
+	"Emit from Curve"
+
+
+

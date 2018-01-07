@@ -1,0 +1,104 @@
+
+
+
+Softimage XSI
+
+
+	Tenemos la posibilidad de crear de forma guiada estructuras de kinemática y sinemática de forma automatizada
+
+	a través, de una panel de opciones de tipo wizard, por medio del cuál, podremos crear sistemas con estándares
+
+	como bípedos, cuadrúpedos
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Stack Animate - Create - Character - Guide:
+___________________________________________
+
+	
+	_tenemos la posibilidad de crear arquetipos de construcción a través, de los cuales podremos preconfigurar como 
+
+	deseamos crear y aplicar un sistema de rigging and skinning, sobre nuestro motivo ó character
+
+
+	_para lo cuál, diponemos el panel: "Stack Animate - Create - Character/", en el cuál, contaremos con las siguientes 
+
+	opciones:
+
+
+
+		_Biped Guide:
+
+			_ésta opción nos permitirá crear un arquetipo de tipo rig, de forma de humanoide el cuál, será por 
+
+			tanto un bípedo el cuál, nos servirá para emular cualquier character, de tipo humano ó similar de 
+
+			dos patas ó piernas respectivamente
+
+
+			_de ésta manera, podremos adaptar éste hasta ajustarlo hasta el tamaño y posición de nuestro 
+
+			character, real ó motivo de tipo mesh, a través, de sus respectivos handles, ó controles
+
+
+		_Biped Dog Leg Guide:
+
+			_ésta opción nos permitirá crear un arquetipo de tipo rig, de forma de Dog, perro ó el cuál, será 
+
+			por tanto un cuadrúpedo el cuál, nos servirá para emular cualquier character, de tipo animal ó 
+
+			similar de cuatro patas piernas ó tentáculos respectivamente y más
+
+
+			_de ésta manera, podremos adaptar éste hasta ajustarlo hasta el tamaño y posición de nuestro 
+
+			character, real ó motivo de tipo mesh, a través, de sus respectivos handles, ó controles
+
+
+		_Quadruped Guide:
+
+			_ésta opción nos permitirá crear un arquetipo de tipo rig, de forma de Dog, perro ó el cuál, será 
+
+			por tanto un cuadrúpedo el cuál, nos servirá para emular cualquier character, de tipo animal ó 
+
+			similar de cuatro patas piernas ó tentáculos respectivamente y más
+
+
+			_de ésta manera, podremos adaptar éste hasta ajustarlo hasta el tamaño y posición de nuestro 
+
+			character, real ó motivo de tipo mesh, a través, de sus respectivos handles, ó controles
+
+
+	_de ésta manera, con tan sólo ir al panel "Stack Animate - Create - Character/", y aplicar cualquier de las opciones 
+
+	de "Guide", como los son "Biped Guide", "Biped Dog Leg Guide", y "Quadruped Guide", se crearán respectivamente de 
+
+	forma automática de forma visible en le viewport, listar para ser configuradas sobre nuestro motivo ó character
+
+
+
+
+Character Guide Configuración:
+______________________________
+
+
+	_así, luego de haber crear en sistema ó arquetipo cualquiera de los tres disponibles vistos previamente tenemos la
+
+	posibilidad de configurar éstos sobre el motivo para que así, éste sismte ó tome la forma señida de nuestro motivo
+
+	ó character
+
+
+	_para cuál, dicho sistemas ó arquetipos disponen de handles ha modo de cubos de splines, los cuales podremos mover
+
+	en el viewport, para que así, de ésta manera, mover las partes del character, como arms, legs, otros, hasta que éstas
+
+	tomen la forma de nuestro motivo ó character, real en el viewport
+
+
+
+
+
+

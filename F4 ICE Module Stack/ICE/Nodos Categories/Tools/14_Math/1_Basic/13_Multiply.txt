@@ -1,0 +1,51 @@
+
+
+DETALLES
+
+
+tenemos la posibilidad de hacer multiplicaciones de valores determinados de forma exponencial a través,
+
+de dos entradas "value1", y "value2", permitiendo así, multiplicar cualquier valor sumado entre ambas
+
+entradas "values", y convertirlo en un valor exponencial para diferentes usos en diferentes procesos
+
+posteriores
+
+
+	Tool/Math/Matrix/Multiply
+
+	Tool/Math/Basic/Multiply
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Multiply
+
+
+	_este nodo nos permite multiplicar valores selectivos de ciertas propiedades que podemos indicar
+
+	aislando a el resto de atributos determinados que son colaterales a los atributos generales
+
+	de un elemento determinado
+	
+
+		-Multiply-
+
+
+			_In:
+
+				_ej: "Length"
+
+
+			_Out:
+
+				_"Sin (seno)"
+
+
+	
+
+
+

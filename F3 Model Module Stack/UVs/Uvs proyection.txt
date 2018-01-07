@@ -1,0 +1,44 @@
+
+UVs en Softimage
+
+crear UVs base
+
+la geometría en softimage no tiene Uvs por defecto, por ende al terminar el proceso de modelado debemos crearle una proyección de uv inicial
+
+	1.para esto, seleccionamos la geometría deseada y vamos al menú Model/Property/Texture Proyection/Uv
+
+	2.en modo objeto, podemos seleccionar las splines correspondientes a las proyecciones que hemos realizado en el modelo y, si ha estas le aplicamos "Enter", podremos abrir sus propiedades y cambiarles tanto el nombre como las cordenadas axis de proyección
+
+
+modos y entorno Texture Editor
+
+	1.seleccionar sub elementos vertex en panel texture editor, seleccionamos la herramienta rectangle Select Tool, su shortcut es "Q", directamente "W", varias veces
+
+	2.mover sub elementos seleccionados, seleccionamos la herramienta Translate Tool, su shortcut es "W", ó "W", varias veces
+
+	3.escalar proporcional sub elementos seleccionado, seleccionamos la herramienta Scale Tool, su shorcut es "R+left+click and Draw", escalar verticalmente "Midle+click and Draw", escalar horizontalmente "Right+click and draw"
+
+	4.rotar geometría, seleccionamos los sub elementos vertex, y vamos a la herramineta Rotate Tool, su shortcut es "E"
+
+	5.unir islas, seleccionamos los vertex de un extremo de una isla y, vamos a las opciones "Island Heal To Piked" y "Island Heal Piked"
+	
+	6.reflejar islas, seleccionamos los sub elementos de la isla deseada y vamos al menú Texture Editor/Tool/Flip Horizontal ó Flip Vertical
+
+	0.importar imágenes ó elementos de fondo para el canvas del texture editor tando para referencia como optener una mejor proyección y visión de los uvs en el proceso de exportación, para eso vamos al menú Texture Editor/Clips/Import Clip
+
+	0.exportar Uvs, para el proceso de mapeado y texturizado en otras aplicaciones, para esto vamos la menú Texture Editor/Edit/Stamp UV Mesh, ó su shotcut, Shift+S
+
+
+
+proyección uvs a partir de selecciones
+
+	1.para esto, debemos seleccionar los sub elementos poligonales deseados
+
+	2.luego abrimos el panel de "Textura Editor", yendo ha View/Rendering/Texturing/Texture Editor, ó con su shortcut Alt+7
+
+	3.con la selección de los sub elementos poligonales deseamos vamos al panel "Textura Editor", a las opciones de proyección y seleccionamos la que más se siña al tipo de proyección deseada, sea esta, plana, cilíndria, cábica, esférica, fragmental, otros
+
+	3.luego de elegir el tipo de proyección, debemos indicar las cordenadas que tomará como criterio para hacer la proyección correspondiente y vamos al panel "Textura Editor", a las opciones de proyección y seleccionamos la que más se siña al tipo de proyección deseada, sea esta, plana, cilíndria, cábica, esférica, fragmental, otros
+
+	4.luego en modo objeto, podemos seleccionar la spline correspondiente a la proyección deseada para poder corregir sus posición así como su tamaño y escala, con el fin de conseguir una mejor proyección que se adapte mejor a nuestros requerimiento en la relación a la forma deseada
+

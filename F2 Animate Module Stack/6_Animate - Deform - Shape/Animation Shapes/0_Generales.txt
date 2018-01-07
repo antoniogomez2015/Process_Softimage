@@ -1,0 +1,118 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de hacer animaciones a través, de la deformación de geometrías/meshes, de esta manera
+
+podremos animar las deformaciones realizadas sobre la morfologías de las meshes, respectivas en el tiempo,
+
+e incluso realizar sources, de animación, keys, otros
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+_Generales:
+
+
+	_Forma/shapes, de animación (a veces llamada morphing, mezclan formas, o endomorfo), es el proceso 
+
+	de deformación de un objeto en el tiempo. Para ello, se anima la forma geométrica (deformación) de un objeto 
+
+	utilizando grupos de puntos/clusters, y tomar "instantáneas" (keys, de forma) del objeto en diferentes poses, 
+
+	a continuación, se mezclan estas poses para animarlos.
+	
+	Softimage ofrece una serie de diferentes herramientas que puede utilizar para crear animación forma para 
+
+	que pueda trabajar en cualquier manera que usted se sienta cómodo.
+
+
+	En Softimage, toda la animación de forma se realiza en grupos de puntos. Esto significa que usted puede crear 
+
+	diferentes grupos en un objeto y crear keys, de forma/shape, para cada uno de ellos, o se puede tratar 
+
+	a un objeto completo como uno de cluster, y almacenar "shape keys", para él (consulte Selección de Cluster 
+
+	para keys shapes).
+
+
+	Puede utilizar la superficie (NURBS) u objetos de polígonos para crear la animación de forma/shape, o incluso 
+
+	curvas, partículas de ICE, y lattices, - ó cualquier geometría que tenga un número estático de puntos.
+
+
+	Puede crear keys shapes, de cualquier tipo de deformación, para producir animación forma/shape. Por ejemplo, 
+
+	puede almacenar keys shapes, para clústeres en un objeto moviendo puntos o deformando por spline, como para 
+
+	la animación facial y playback. O bien, puede crear una keys shape, para una deformación total de un objeto 
+
+	utilizando "envelopes", lattices, estiramiento rápido, o mapas de peso/weight. Para más información sobre 
+
+	las deformaciones en general, ver las deformaciones [Intercambio de Datos]
+
+
+	Después de crear sus keys shapes, puede animar cómo se ponderan las formas una contra el otra. Softimage usa 
+
+	el mezclador de animación mixer, bajo el hood, para combinar las formas/shapes. El mezclador es una poderosa 
+
+	herramienta que le da un alto grado de flexibilidad en la creación y la reelaboración de su animación forma.
+
+
+	Sin embargo, también se pueden utilizar otras herramientas y métodos para hacer su trabajo con la animación 
+
+	de formashapea. Para obtener más información sobre estas técnicas y herramientas, consulte Introducción Forma 
+
+	Herramientas de animación y Métodos.
+
+
+---------------------------------------------------------------------------------------------------------------
+
+
+The Cluster Shape Combiner:
+___________________________
+
+
+
+	El combinador Forma/shape, Cluster, es un operador bajo la geometría del objeto de forma de animación 
+
+	que le permite controlar la cantidad de cada punto en un clúster, de forma animada está influenciada 
+
+	por cada una de las deformaciopnes que se aplica a la misma. Para obtener más información, consulte Mezcla 
+
+	entre Clusters.
+
+
+	Este operador se crea tan pronto como se crea un clip de forma/shape, en el mixer panel, como si almacena 
+
+	y aplica una key shape, o ponerla en el mixer panel, para crear un clip de la forma.
+
+
+	El operador aparece en el modo "Shape Modeling Mode", del objeto de su historia de la construcción y su orden 
+
+	es importante. Como regla básica, animación forma/shape, se hace en todo lo que está por debajo del combinador 
+
+	Forma/shape, Cluster; los operadores que están por encima del combinador (en la región de Animación) 
+
+	se utilizan para crear las formas relativas.
+
+
+	esto quiere decir que al momento de clear "keys shapes", de cualquier elemento se creará en el explorer
+
+	"mesh-motive/Polygon Mesh/Shape Modeling/", la opción de "Cluster Shape Combiner", el cuál, será el controlador
+
+	de todas las animaciones "shapes"
+
+
+	como también, podremos "Shape Modeling Mode", haciendo soble click, en este y ajustar los "Weights", de cada
+
+	uno de los "key shapes", creados
+
+
+

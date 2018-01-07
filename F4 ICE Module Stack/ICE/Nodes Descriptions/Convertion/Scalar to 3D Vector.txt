@@ -1,0 +1,31 @@
+
+
+DETALLES
+
+
+el nodo "Scalar 3D Vector", nos permitirá escalar ó marginar/suprimir las cordenadas de trabajo de 
+las cordenadas en el espacio del viewport para un desarrollo personalizado
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	_Tool/Conversion/Scalar 3D Vector
+
+		va conectado por lo general ha "Vector 3D"
+
+		requiere por lo general un "Integer to Scalar"
+
+
+------------------------------------------------------------------------------------------
+
+
+	_Scalar to 3D Vector:
+
+		podemos indicarle un valor a las cordenas que han quedado libre ó disponibles
+
+

@@ -1,0 +1,121 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de hacer animación "NoLinear", ó animación no lineal, a través, del modo de animación
+
+avanzado de "animación mixer", el cuál, permite diferentes tipos de métodos y sistemas de animación:
+
+
+el modo de animación mixer, permite los siguientes tipos de datos
+
+
+	_FCurve Animation
+
+	_Expression Animation
+
+	_Constraints Animation
+
+	_Shape Animation
+
+	_Audio Animation
+
+	_Animation Layers
+
+	_Cached Animation
+
+	_Simulation Sources
+
+	_Image Clips
+
+
+
+Animación no lineal es la animación que no está limitada por el tiempo. Se le permite trabajar en la animación 
+
+a un alto nivel de control en cualquier punto de tiempo en la escena. Se le da un control de alto nivel sobre 
+
+la animación porque puede en cada capa mezclar secuencias de una manera no lineal y no destructiva. Además, 
+
+se puede reutilizar y afinar muchas fuentes de datos.
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Importing and Exporting the Animation Mixer:
+____________________________________________
+
+
+
+	_Puede importar y exportar todo el nodo Mezclador mixer, para un modelo, por lo que es fácil de compartir 
+
+	una instalación mezcladora completa entre los modelos, incluyendo acciones, formas, audio, capas de animación 
+
+	y clips de caché.
+
+
+	_Al exportar un mezclador, todo lo contenido en el nodo de mezclador del modelo (todas las pistas 
+
+	de la mezcladora, fuentes/sources, clips, transiciones, efectos de ponderación de clips, etc). se empaquetan 
+
+	en un archivo .xsimixer.
+
+
+	_Al importar un mezclador, se selecciona un modelo y seleccionar el archivo .xsimixer que desea utilizar para 
+	reemplazar mezclador existente del modelo.
+
+
+	Consideraciones:
+	________________
+
+
+	_Importación de un mezclador debe hacerse en un modelo con la misma estructura jerárquica como la de que exportó 
+
+	el mezclador.
+
+
+	_Las conexiones entre los modelos se hacen usando el nombre de los objetos dentro del modelo, por lo que deben 
+
+	existir los nombres de los objetos a los que los clips se refieren o bien no se conectarán el clip.
+
+
+	_Si los objetos dentro del modelo no coinciden, aparecerá un cuadro de diálogo Asignación de conexión aparece 
+
+	en la que puede asignar los nombres de objeto.
+
+
+
+	Exporting a Model's Mixer:
+	__________________________
+
+
+	_para exportar un mixer, ó acción, primero vamos al explorer y seleccionamos sea un model/mixer, ó un model/mixer/action
+
+
+	_luego vamos ha "Animate/Tools/Import-Export/", y seleccionamos las opciones de "Export Mixer", ó "Export Action"
+
+
+	Importing a Model's Mixer:
+	__________________________
+
+
+	_Seleccione un modelo con la misma estructura y las convenciones de nomenclatura jerárquica como aquella 
+
+	de la que se salvó el preset mezclador.
+
+
+	_luego vamos ha "Animate/Tools/Inport-Export/", y seleccionamos las opciones de "Import Mixer (replace)",
+
+	ó "Import Action", ó "Import Reference Action"
+
+
+NOTE:	Después de importar un mezclador mixer, para un modelo, es posible que usted necesita para agregar objetos 
+
+	al modelo. Si usted hace esto, los nuevos objetos no son manejados por el mezclador. Sin embargo, puede 
+
+	conectarlos al seleccionar el modelo y elegir "Actions/Apply/Reconnect Animation Mixer." 
+
+--------------------------------------------------------------------------------------------------------------

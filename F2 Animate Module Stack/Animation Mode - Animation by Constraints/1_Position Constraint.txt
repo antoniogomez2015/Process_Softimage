@@ -1,0 +1,142 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de vincular diferentes elementos de diferentes manera de cara a mejorar la animación
+
+e interactividad entre los elemento para mejorar así, la flexibilidad y facilidad en el proceso de animación
+
+y de relación entre los elementos
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+_Position Constraint:
+
+
+	_tenemos la posibilidad de vincular la propiedad "Translate", de un elemento a la "Orientation", de otro
+
+	elemento para que así, al hacer "translation", del primer elemento "parent", sea afectada la orientación
+
+	del otro elemento "hijo", para esto:
+
+
+		_primero seleccionamos el elemento se "hijo/constraint/limitado"
+
+
+		_luego con este objeto seleccionado vamos ha "Contrain/", y hacemos click, en "Position", así,
+
+		el primer elemento "hijo/constraint", tomará la posición del elemento "parent", ó manejador
+
+		
+		_así, se agregará el elemento "hijo/parent", en el "Explorer/Polygon Mesh/Kinematics/Constraint/",
+
+		será agregado el elemento "Position Cns", y, al hacer doble click, en este entraremos a sus opciones:
+
+
+------------------------------------------------------------------------------------------------------------
+
+		Position:
+		_________
+
+			_Active:
+
+				_tenemos la posibilidad de activar ó desactivar temporalmente un constraint
+
+
+			_Blend Weight:
+
+				_podemos ajustar la influencia ó fuerza de retardo ó inercia que tendrá ó ejercerá 
+
+				el contraint, sobre los sus elementos relacionados
+
+
+			Attack Point Constrained Object
+			_______________________________
+
+
+			_Affected by Orientation:
+
+				_podemos indicar que si el elemento "hijo/constraint" será afectado por la
+
+				orientación del elemento controlador al elemento "hijo/constraint", hacer
+
+				"Rotation", lo hará con la referencia de orientación del elemento controlador
+
+				no, con la su propia referencia en su punto centro ó donde este su "Pivot"
+
+
+			_Affected by Scalling:
+
+				_podemos indicar que si el elemento "hijo/constraint" será afectado por la
+
+				orientación del elemento controlador al elemento "hijo/constraint", hacer
+
+				"Scale", lo hará con la referencia de orientación del elemento controlador
+
+				no, con la su propia referencia en su punto centro ó donde este su "Pivot"
+
+
+			_X,Y,Z:
+
+				_podemos desplazar el elemento "hijo/constraint", al este tomar la posición
+
+				del elemento controlador, haciendo "offset", del elemento hijo/constraint, para
+
+				así, desplazarlo hasta una posición deseada
+
+
+			Constraining Object
+			___________________
+
+
+			_Affected by Orientation:
+
+				_tenemos la posibilidad de efectar la "Orientation", de elemento "hijo/constraint", 
+
+				con la "Rotation", del elemento controlador, al rotar este
+
+
+			_Affected by Scale:
+
+				_tenemos la posibilidad de efectar la "Orientation", de elemento "hijo/constraint", 
+
+				con la "Scale", del elemento controlador, al escalar este
+
+
+			_X,Y,Z:
+
+				_podemos desplazar el elemento "hijo/constraint", al este tomar la posición
+
+				del elemento controlador, haciendo "offset", del elemento hijo/constraint, para
+
+				así, desplazarlo hasta una posición deseada
+
+
+			Coupling
+			________
+
+
+			Coupling:
+
+				_RIGID:
+
+					_método más estricto de interpolación del constraint
+
+
+				_SOFT:
+
+					_método más suavizado de interpolación del constraint
+
+
+		upVector:
+		_________
+				
+
+
+---------------------------------------------------------------------------------------------------------------
+

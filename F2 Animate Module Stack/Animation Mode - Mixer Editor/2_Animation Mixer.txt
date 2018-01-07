@@ -1,0 +1,88 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de hacer animación "NoLinear", ó animación no lineal, a través, del modo de animación
+
+avanzado de "animación mixer", el cuál, permite diferentes tipos de métodos y sistemas de animación:
+
+
+el modo de animación mixer, permite los siguientes tipos de datos
+
+
+	_FCurve Animation
+
+	_Expression Animation
+
+	_Constraints Animation
+
+	_Shape Animation
+
+	_Audio Animation
+
+	_Animation Layers
+
+	_Cached Animation
+
+	_Simulation Sources
+
+	_Image Clips
+
+
+
+Animación no lineal es la animación que no está limitada por el tiempo. Se le permite trabajar en la animación 
+
+a un alto nivel de control en cualquier punto de tiempo en la escena. Se le da un control de alto nivel sobre 
+
+la animación porque puede en cada capa mezclar secuencias de una manera no lineal y no destructiva. Además, 
+
+se puede reutilizar y afinar muchas fuentes de datos.
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+The Animation Mixer:
+____________________
+
+
+
+	_El mezclador mixer, de animación le ofrece un control de alto nivel sobre la animación porque se puede 
+
+	superponer y mezclar secuencias de una manera no lineal y no destructiva, por lo que es la herramienta ideal 
+
+	para usar para la animación compleja. Le ayuda a reutilizar las animaciopnes y afinar los fotogramas clave,
+ 
+	expresiones y constraints. También, puede usar el mezclador mixer,  de animación con datos de animación "shape",
+ 
+	archivos de "audio", simulación en caché y datos de animación, capas de animación y clips de la secuencia 
+
+	de imágenes.
+
+
+	_El mezclador de animación mixer, se ve como un editor de video digital, pero en lugar de editar secuencias 
+
+	de vídeo, crea secuencias de animación, transiciones y mezclas. Toma todos los datos de animación subyacentes 
+
+	y los empaqueta en clips. Cada clip es una instancia de una fuente/source, de animación que se crea. En los 
+
+	frames, "cubiertos" por el clip, los datos almacenados en la fuente/source, a la animación.
+
+
+	_Una vez que tenga una biblioteca de fuentes/sources, creadas, puede llevarlos al mixer, de una manera 
+
+	completamente no destructiva (los datos originales se mantienen intactos), por lo que es fácil de experimentar.
+
+
+	_Después de iniciar la mezcla, siempre se puede volver atrás y cambiar los datos originales y se aplicará 
+
+	automáticamente todos los cambios. O si usted está trabajando con la animación que no puede ser fácilmente
+ 
+	editada, sólo puede agregar una capa de la animación en la parte superior de la misma, al igual que una capa 
+
+	de la animación en la parte superior de la capa de la animación base.
+
+--------------------------------------------------------------------------------------------------------------

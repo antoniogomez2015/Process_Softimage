@@ -1,0 +1,411 @@
+
+
+
+DETALLES
+
+
+Las acciones son paquetes de animación de bajo nivel, tales como curvas de función, las expresiones, las limitaciones 
+
+y los parámetros vinculados. Mediante la creación de un paquete que representa la animación, se puede trabajar en un nivel 
+
+superior de la animación que no está limitado por el tiempo
+
+
+Las acciones son los paquetes de cualquier tipo de animación, tales como curvas de función, las expresiones, 
+
+las limitaciones y los parámetros vinculados. Después de crear una acción, se carga como un clip en el mezclador 
+
+de animación, donde puede modificar la animación de una manera no lineal y no destructiva.
+
+
+Este paquete en el mezclador de animación le permite trabajar en un nivel superior de la animación que no está limitada 
+
+por el tiempo: se puede mover una acción en torno a cualquier parte a tiempo, apretar o estirar su longitud como quieras, 
+
+aplique una acción después de otras en secuencias, y mezclar dos o más acciones juntos para crear una nueva animación.
+
+
+Puede crear una biblioteca completa de acciones, como ciclos de pie o saltos, y utilizarlos como muchas veces como quieras 
+
+en una escena, o compartirlos entre cualquier número de modelos
+
+
+También puede crear acciones de compuestos/compounds, que son "contenedores" para múltiples acciones, incluyendo 
+
+la animación de diferentes fuentes/sources, (curvas de funciones, expresiones, restricciones y parámetros vinculados). 
+
+Trabajar con datos animaciones complejas convierte en una tarea más simple que tratar con múltiples fcurves.
+
+
+Dado que los datos de animación paquete/package, de acciones en una sola unidad utilizable, que hace que sea fácil 
+
+para copiar la animación de un modelo a otro, incluso si el modelo no comparte las mismas convenciones jerarquía, 
+
+escala, o de denominación. Cuando hay diferencias entre los modelos, se abre una plantilla para ayudar a trazar 
+
+los elementos del modelo correspondientes.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Choosing What to Store in an Action:
+____________________________________
+
+
+	_Antes de comenzar a almacenar las acciones y el trabajo en el mixer, de mezclas de animación, debe entender 
+
+	cómo se anima su modelo/character. Eso es lo que esta sección es acerca de: cómo animar determina qué comando 
+
+	que debe usar para guardar la animación en una fuente de acción. Por ejemplo, las limitaciones, los objetos 
+
+	de ruta de animación y parámetros personalizados todos tienen problemas específicos relacionados con la forma 
+
+	en que se almacenan las acciones.
+
+
+	_Cuando se crea una fuente de la acción, puede almacenar las transformaciones (escala, rotación, traducción), 
+
+	los parámetros marcados, parámetros keyable, parámetros animados, o conjuntos de caracteres fundamentales 
+
+	de los objetos seleccionados.
+
+
+NOTE:	_Si tiene varios objetos seleccionados en diferentes modelos (incluyendo submodelos), sólo los objetos 
+
+	en el mismo modelo que el primer objeto que ha seleccionado tendrán su animación almacena en una fuente/source. 
+
+	Esto se debe a que un solo modelo puede evaluarse a la vez
+	
+	
+	_Además, no se puede animación para los parámetros que se encuentran en el nivel de aplicación, pero no forman 
+
+	parte de un modelo del nodo Scene_Root. Esto incluye partición o la imagen Características del clip
+
+
+	_Siempre debe poner objetos en un modelo antes de guardar las fuentes/sources, de acción para ellos. Sin embargo, 
+
+	¿qué pasa si ya ha creado una fuente/source, de acción para un objeto animado antes de ponerlo en un modelo? 
+
+	Fácil! Se crea el modelo con el objeto animado en él, a continuación, copie las fuentes de acción del mezclador 
+
+	del Scene_Root a Mixer del nuevo modelo
+
+	
+	_Todos los comandos para almacenar (crear) las acciones están en el menú "Actions/Store", en la barra de 
+
+	herramientas Animación. Cuando esté listo para guardar una acción
+
+
+Types of Action Storage:
+________________________
+
+
+	_Current Values/Valores Actuales:
+	_________________________________ 
+
+
+	_almacena los valores actuales de los parámetros del objeto seleccionado 
+
+	para crear una pose estática, que es como una "hold pose". La fuente/source, de acción que se crea contiene 
+
+	los valores actuales del parámetro, pero sin animación. La duración de acción de clip, por defecto es de cinco 
+
+	frames, en el mezclador de animación mixer.
+
+
+	FCurves:
+	________
+
+
+	_almacena sólo valores de las FCcurves, de los objectos ó atributos seleccionados
+
+
+	All Sources:
+	____________
+
+
+	_almacena todos los recursos/sources, de animación  (fcurves, expressions, etc.), en los objetos ó atributos
+
+	seleccionados
+
+
+	Animation or Current Values:
+	____________________________
+
+
+	_almacena todos los parámetros de animación del objeto seleccionado, así como los valores estáticos actuales 
+
+	para parámetros no animados
+
+
+--------------------------------------------------------------------------------------------------------------
+
+
+	Descripción de los modos de almacenamiento "Action/Store/", por "variaciones"
+	_____________________________________________________________________________
+
+
+
+	------------------------------------------------------------------------------------------------------
+
+
+	El almacenamiento de las transformaciones de un objeto significa que la animación de sus parámetros 
+
+	de transformación locales (escala, rotación y traducción) se almacena.
+
+
+
+	Storing Transformations:
+	________________________
+
+
+		_Transformations - Fcurves stores:
+
+			_esta opción sólo almacena información de Fcurve Editor, de todos los objetos seleccionamos
+
+			 en "local and global transformation (scaling, rotation, and translation)"
+
+
+
+		_Transformations - Current Values:
+
+			_esta opción almacena sólo los valores actuales de los parámetros de transformación 
+
+			"locales y globales", del objeto seleccionado para crear "poses estáticas"
+
+
+
+		_Transformations - All Sources:
+
+
+			_almacena todas las fuentes/sources, de animación (fcurves, expresiones, etc.) sobre los 
+
+			parámetros de transformación "locales y globales", del objeto seleccionado
+
+
+
+		_Local Transformations - Animation or Current Values:
+
+
+			_almacena todos los parámetros animados locales de transformación del objeto seleccionado, 
+
+			así como los actuales valores estáticos para los parámetros no animados.
+
+
+	Aunque puede crear una acción basada en parámetros de transformación de un objeto sin marcar/marked, 
+
+	explícitamente, podría todavía ser una buena idea hacer marcas/marked, si quieres guardar los datos 
+
+	de animación para que sea más fácil de manejar; por ejemplo, puede marcar simplemente la translation: en 
+
+	X e Y y Z dejar fuera de la acción.
+
+
+
+	------------------------------------------------------------------------------------------------------
+
+
+
+	Cuando hace marca/marked, los parámetros antes de almacenar ó crear una acción, puede mantener los datos 
+
+	de animación en una acción - que almacena sólo los datos que desea almacenar. 
+
+
+
+	Storing Marked Parameters:
+	__________________________
+
+
+		_Marked Parameters - Fcurves:
+
+
+			_esta opción almacena todos los datos seleccionados y marcados/marked, de un objeto 
+
+			seleccionado
+
+
+		_Marked Parameters - Current Values:
+
+			_esta opción almacena sólo los valores actuales de los parámetros marcados/marked, 
+
+			del objeto seleccionado para crear una "pose estática".
+
+
+		_Marked Parameters - All Sources:
+
+			esta opción almacena todas las fuentes/sources, de animación (fcurves, expresiones, etc.) 
+
+			sobre los parámetros marcados/marked, del objeto seleccionado.
+
+
+		_ Marked Parameters - Animation or Current Values:
+
+			_esta opción almacena todos los parámetros marcados/marked, animados del objeto seleccionado, 
+
+			así, como los valores estáticos actuales no animados marcados/marked
+
+
+	También puede crear un conjunto de marcados/marked, para el objeto con los parámetros adecuados en ellos 
+
+	y luego guardar la animación. A continuación, puede almacenar las acciones de todo el conjunto o parámetros 
+
+	simplemente específicandolo dentro del conjunto.
+
+
+
+	------------------------------------------------------------------------------------------------------
+
+
+	Puede guardar la animación en parámetros keyable, de un objeto, que son los parámetros que se muestran 
+
+	en el panel de "keys Parameters" Keyable, le permiten mantener un conjunto específico de parámetros 
+
+	siempre disponibles para un objeto, sin necesidad de hacer marcas/marked, primero. ej: "Local Transform",
+
+	también, podríamos decir que esta opción es un "P-seudo Marked"
+
+
+	Keyable parameters, pueden ser cualquier tipo de parámetros que usted escoja, pero por defecto, que incluirá 
+
+	parámetros de transformación locales de un objeto. Puede establecer qué parámetros son keyable o no de un objeto 
+
+	usando el editor de parámetros keyable
+
+
+
+	Storing Keyable Parameters:
+	___________________________
+
+
+		_Keyable Parameters - Fcurves:
+
+			_esta opción almacena sólo los fcurves, sobre todos los parámetros keyable del objeto seleccionado
+
+
+		_Keyable Parameters - Current Values:
+
+			_esta opción almacena los valores actuales de los parámetros keyables, del objeto seleccionado 
+
+			para crear una "pose estática"
+
+
+		_Keyable Parameters - All Sources:
+
+			_esta opción almacena todas las fuentes/sources, de animación (fcurves, expresiones, etc.) 
+
+			sobre los parámetros keyables del objeto seleccionado.
+
+
+		_Keyable Parameters - Animation or Current:
+
+			_esta opción almacena todos los valores animados con parámetros "keyables", del objeto 
+
+			seleccionado, así, como los valores actuales de los parámetros estáticos no animados ó "keyables"
+
+
+
+	------------------------------------------------------------------------------------------------------
+
+
+	Puede guardar la animación en parámetros keyables, de un objeto que forman parte de un conjunto 
+
+	"key set", de caracteres. Un conjunto "key set", de carácter le permite mantener un conjunto específico 
+
+	de parámetros keyables, disponibles para modulación rápida sin necesidad de seleccionar cualquier cosa primero
+
+
+	Las acciones se almacenan sólo en un conjunto de carácter  de "key set", que se establece como actual, 
+
+	independientemente de lo que esté seleccionado en la escena
+
+
+
+	Storing Character Key Sets:
+	___________________________
+
+
+		_Character Key Set - Fcurves:
+
+			_esta opción almacena los fcurves, sobre todos los parámetros keyables, en el actual conjunto 
+
+			de "key set" de caracteres.
+
+
+		_Character Key Set - Animation or Current Values:
+
+			_esta opción almacena todos los parámetros animados keyables, en el conjunto de "key set", 
+
+			de caracteres actual, así, como los valores estáticos actuales no animados
+
+
+		_Character key Set - Animation or Current:
+
+			_esta opción almacena todos los valores animados con parámetros "keyables", del objeto 
+
+			seleccionado con "key set" de caracteres, así, como los valores actuales de los parámetros 
+
+			estáticos no animados ó "keyables"
+
+
+
+	------------------------------------------------------------------------------------------------------
+
+
+	Puede guardar la animación en cualquiera de los parámetros del objeto seleccionado que se animó.
+
+
+
+	Storing Animated Parameters:
+	____________________________
+
+
+
+		_Animated Parameters - Fcurves:
+
+			_esta opción almacena los fcurves, sobre todos los parámetros de animación del objeto seleccionado
+
+
+		_Animated Parameters - Fcurves & Expressions:
+			
+			_esta opción almacena los fcurves, y expresiones en todos los parámetros de animación del objeto 
+
+			seleccionado.
+
+
+
+	------------------------------------------------------------------------------------------------------
+
+
+	para almacenar "expressions", ó expresiones use cualquier comando con la opción " All Sources", ej;
+
+
+		_Transformations - All Sources
+
+		
+		_Marked Parameters - All Sources
+
+		
+		_Keyable Parameters - All Sources
+
+
+	también, podemos utilizar la opción de:
+
+		
+		_Animated Parameters - Fcurves & Expressions
+
+
+	esta última opción almacenar una acción que contiene todos los parámetros de los objetos seleccionados 
+
+	que se animan con las curvas de función y expresiones. Usted no tiene que marcar ningún parámetro primero.
+
+
+	Cuando guarde una fuente/source, de acción/action, que contiene una expresión, el nombre del modelo del 
+
+	parámetro de destino no se almacena. El objetivo debe ser un elemento dentro del modelo. Esto le permite 
+
+	llevar una acción/action, con una expresión entre los modelos
+
+
+
+

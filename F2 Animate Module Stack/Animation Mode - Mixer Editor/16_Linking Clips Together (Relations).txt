@@ -1,0 +1,92 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de hacer animación "NoLinear", ó animación no lineal, a través, del modo de animación
+
+avanzado de "animación mixer", el cuál, permite diferentes tipos de métodos y sistemas de animación:
+
+
+el modo de animación mixer, permite los siguientes tipos de datos
+
+
+	_FCurve Animation
+
+	_Expression Animation
+
+	_Constraints Animation
+
+	_Shape Animation
+
+	_Audio Animation
+
+	_Animation Layers
+
+	_Cached Animation
+
+	_Simulation Sources
+
+	_Image Clips
+
+
+
+Animación no lineal es la animación que no está limitada por el tiempo. Se le permite trabajar en la animación 
+
+a un alto nivel de control en cualquier punto de tiempo en la escena. Se le da un control de alto nivel sobre 
+
+la animación porque puede en cada capa mezclar secuencias de una manera no lineal y no destructiva. Además, 
+
+se puede reutilizar y afinar muchas fuentes de datos.
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Linking Clips Together (Relations):
+_____________________________________
+
+
+
+	_Cuando usted está sincronizando clips de diferentes tipos juntos en diferentes pistas, a menudo quiere que estos 
+
+	sean unidos entre sí. Por ejemplo, es posible que desee vincular un clip, de "audio", a un clip de la "shape", 
+
+	de una animación de sincronización de labios para que al mover un clip, a lo largo de la pista/track, el otro 
+
+	clip, también se mueve, el mantenimiento de su desplazamiento.
+
+
+	_Mediante la creación de una relación entre los clips, de estos clips, usted puede hacer esto. Las relaciones 
+
+	de clip, son un tipo de restricción de tiempo entre dos clips (maestro y esclavo) de manera que cuando se mueve 
+
+	un clip, el otro clip sigue proporcionalmente.
+
+
+	_Cuando se crea una relación de clips, el primero que debe seleccionar es el clip, que será el clip, maestro. 
+
+	Las relaciones de clips, tienen un sentido bidireccional que si a compensar o recortar uno de los clips, 
+
+	(ya sea maestro o esclavo de clip), afecta proporcionalmente el valor del otro clip. Además, se pueden invertir 
+
+	los clips, maestros y esclavos para que el maestro se convierte en el esclavo.
+
+
+	_para esto, seleccione dos clips, de tipo shape, audio, or compound action or shape, donde el primero que
+
+	seleccione será el master, y con ambos seleccionados vamos ha "mixer/Effects/", y escogemos la opción
+
+	de "Crete Relation", así, nos aparecerá una ventana contextual con las opciones de relacionamiento, de esta
+
+	manera podremos ver visualmente en el mixer panel, que los clips relacionados estarán unidos a través, de un
+
+	"link", de tipo arrow, de color azul en su extremo enterior, el cuál, nos indicará que si movemos un clip,
+
+	también, se moverá el otro clip, relacionado
+
+
+
+--------------------------------------------------------------------------------------------------------------

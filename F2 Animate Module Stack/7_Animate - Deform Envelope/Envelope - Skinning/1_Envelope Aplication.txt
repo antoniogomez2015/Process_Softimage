@@ -1,0 +1,91 @@
+
+
+
+
+Envelope - Skinning
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+Envelope:
+_________
+
+
+
+	-----------------------------------------------------------------------------------------------------
+
+
+	Skeleton Groups:
+	________________
+
+
+		_para aplicar el envelope ó skinning, podemos estar en el "Stack Modeling", más es preferible
+
+		estar en el "Stack Animation", (a´si, el programa no nos hará preguntas de confirmación)
+
+
+		_luego, es recomendable agrupar el skeleton system, todas sus partes y "branchs", ó
+
+		elementos emparentados ó hijos, para esto, podemos seleccionar todo el skeleton system,
+
+		con una selección de marco y, con un "filter/riggin/bone", ó individualmente con seleccionando
+
+		"Mouse Midle click", en las respectivas "Roots", de las diferentes cadenas que conforman
+
+		el skeleton system
+
+
+		_luego de seleccionar las chains, deseadas vamos ha "Edit/Create Group/", así, se creará una
+
+		grupo en el explorer, el cuál debremos renombrar ej: "Skeleton System"
+
+
+
+	-----------------------------------------------------------------------------------------------------
+
+
+	Envelope:
+	_________
+
+
+		_primero seleccionamos las meshes, ó mesh, que conforma el character
+
+
+		_luego con este ó estos seleccionados vamos ha "Animate/Deform/Envelope/", y aplicamos
+
+		"Set Envelope", así, nos aparecerá una ventana a la cuál, le diremos que "Yes", así, nos
+
+		aparecerá un picker, con el cual tendremos que ir al explorer y seleccionar el "group", 
+
+		que hemos creado previamente "Skeleton System", y para finalizar la acción debemos hacer
+
+		"mouse right click", sobre una área vacía ó disponible en canvas del viewport
+
+
+		_así, se agregará en el "Explorer/Mesh/Polygon Mesh/Clusters/", la siguiente estructura:
+
+		
+			_EnvelopWeightsCls
+
+				_Envelope_Weights
+
+					_Automatic Envelope Assignement
+
+
+		_y en el "Stack Animation", nos aparecerá el operador: "Envelope Operator"
+
+
+		NOTE:	para ver weigh point, en la mesh, del character, en dado caso que estén desactivados
+
+			vamos ha "Display/Attributes/Weight Points" 
+
+
+
+
+	
+
+

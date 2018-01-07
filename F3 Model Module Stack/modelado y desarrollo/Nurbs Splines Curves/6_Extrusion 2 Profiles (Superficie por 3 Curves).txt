@@ -1,0 +1,62 @@
+
+
+
+	Crear superficies poligonaes a través, de sólo 3 splines
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	Extrusion 2 Profiles:
+	_____________________
+
+	_tenemos la posibilidad de superficies complejas al modo de "NURBS", a través, de la utilización de 3,
+
+	splines, en éste caso
+
+
+	_de ésta manera, podremos crear un spline, principal la cuál, dará la parte principal de la forma así, como
+
+	la morfología de la misma
+
+
+	_más necesitaremos dos splines, más complementarias las cuáles, darán la volúmen ó profundidad de la forma
+
+	polymesh, resultante
+
+
+	EJEMPLO; para crear un empuñadura de un revolver, necesitaremos hacer la spline, principal correspondiente 
+
+	a la curvadura de la empuñadura, y dos spline complementarias una a cada expremo de la empuñadura con la 
+
+	forma arqueada indicando así, del grosor de la empuñadura
+
+
+
+	Creación:
+
+	_para lo cuál, tendremos que seleccionar primero la spline, principal para posteriormente con ésta 
+
+	seleccionada ir ha "Model/Create/PolyMesh/Extrusion 2 Profiles"
+
+
+	_para que así, nos aparesca un "Picker", a través, del cuál, el sistema nos estará indicando que tenemos
+
+	que seleccionar las otras dos splines, que harán de perfiles, complementarios para crear así, la forma
+
+	polymesh, resultante
+
+
+	_para que así, el sistema construya la polymesh, resultante en relación a la forma, volúmen y morfología
+
+	de las splines, seleccionadas como también, para que nos abra un panel en el cuál, podremos ajustar las
+
+	características como resolución de la geometría resultante entre otros como también, si deseamos ocultar
+
+	ó eliminar las splines, de trabajo
+
+
+

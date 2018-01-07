@@ -1,0 +1,83 @@
+
+
+DETALLES
+
+
+podemos generar un sistema de partículas personalizado el cuál emita partículas en sub-elementos
+
+como vertex, edges, faces, otros
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Emitter Sub-elements
+____________________
+
+	
+
+	_primero vamos ha "ICE/Get/Primitive/Point Cloud/Empty", de esta manera crearemos un sistema
+
+	de point Cloud, vacío para crear partículas de forma personalizada por nosotros
+
+
+	_luego seleccionamos "Point Cloud", que creamos y con este seleccionada vamos al 	
+	ICETree/Alt+9, luego hacemos "Refresh", para que este sea relacionado al panel,
+
+	es recomentable en este punto bloquedar el refresh, del panel activando el "candado"
+
+
+	_en el ICE, vamos ha "ICETree/Create/ICETree", para crear un ICETree del "Point Cloud"
+
+
+	_ahora debemos agregar el objeto ó geometría al ICETree, para esto, seleccionamos la 
+
+	mesh/motive, en el viewport ó explorer, y con esta seleccionada hacemos "Shift + F3",
+
+	y/ó hacemos luego "Mouse Midle Click and Draw", y la soltamos en el ICETree, para agregarla,
+
+	así, se agregará a través de una etiqueta "Get Data", con la información de la mesh/motive
+
+
+	_ahora hacemos doble click, para configurar la etiqueta "Get Data", del paso anterior y 
+
+	entramos en su "Explorer/Mesh-Motive/Polygon Mesh/", y seleccionamos la propiedad deseada,
+
+	ej: "PointPosition"
+
+	
+	_de esta manera que si sabemos el valor de la propiedad podemos escribirlo directamente
+
+	quedando en su conjunto así, ej: "emisorPro.PointPosition", de esta manera, despues del 
+
+	nombre que le hemos colocado a la geometría, colocamos un punto/doc, (.), y a continuación
+ 
+	sin dejar espacios colocamos el nombre exacto de la propiedad ha extraer
+
+
+	_ahora vamos ha "ICETree/Tool/Point Cloud/Add Point", para agregar un nodo que nos permita
+
+	agregar partículas personalizadas, este es el el nodo "Add Point"
+
+
+	_de esta manera debemos conectar ahora los nodos creados y conectamos el nodo 
+
+	"Get Data/Value", al nodo "Add Point/Position1", y luego el nodo "Add Point/Add"
+
+	al nodo "ICETree/Port1"
+
+
+	_ahora para seleccionar/obtener y editar atributos de las partículas podemos ir ha
+
+	"Particles/Setters/", y seleccionar entre diferentes opciones de atributos como
+
+	"Set Particle Color, Size, Scale, Speed, Shape, otros", luego cualquiera de estos
+
+	nodos debemos agregarlo al nodo "Add Point/On Creation1.."
+
+
+

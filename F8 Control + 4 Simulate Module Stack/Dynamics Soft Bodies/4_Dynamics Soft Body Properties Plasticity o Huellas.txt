@@ -1,0 +1,84 @@
+
+
+Detalles
+
+
+	tenemos la posibilidad de crear cuerpos blandos "Soft Bodys", los cuales pueden interactura con fuerzas/fields,
+
+	y demás interacciones dinámicas entre otros
+
+
+	el workflow, de los sistemas soft bodys, en muy diferente al de los rigid bodys, por que en los soft bodys, no 
+
+	existe el sistema de "Enviroments", si no, que toda la información se registra de la misma mesh/motive, que hara 
+
+	de soft body, ej: "Explorer/mesh/Polygon Mesh/SoftBodyOp/", y en esta sección se guardarán todos los elementos 
+
+	relacionados con el propio sistema de soft body, particular de cada mesh/motive, respectivo, como los 
+
+	"Obstacles/ostáculos", "Fuerzas/Fields", otros.
+
+
+	podemos crear elementos soft bodys, a partir elemento/objects, completos ó enteros ó a través de selecciones de 
+
+	sub-elementos como vertices, otros, para que de esta manera partes de un elemento se mantengan estáticas mientras 
+
+	que otras tienen propiedades de rigid bodys, dinámicas, el proceso de workflow, para este proceso es el mismo que 
+
+	el proceso normal para objects, completos
+
+
+ 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+	Plasticity
+	__________
+
+
+		_Threshold:
+
+			_este es el umbral del "Damping", de la plasticidad del cuerpo del soft Body
+
+			se puede utilizar con valores muy bajos aunque es más recomendable dejarlo
+
+			en cero "0", y graduar mejor el "Damping", ó mortiguación en valores 
+
+			cercanos a uno "1", como un "0.9",...
+
+
+		_Damping:
+
+			_es la capacidad de mortiguación de la deformación contigua de las partes
+
+			deformadas por eventos determinados, así, esta propiedad tratará de mantener
+
+			la superficie con su forma original permitiendo deformar sólo el área 
+
+			afectada, 
+
+
+			_donde un valor más bajo cercanos a cero "0", desactivará esta opción ó 
+
+			capacidad de mortiguación permitiendo deformar la forma del cuerpo blando
+ 
+			por completo, más valores cercanos a uno "1", permitirán una mortiguación
+
+			total con una acutancia absoluta y marcada entre las áreas deformadas y las
+
+			áreas no deformadas, permitiendo así, mantener el forma intacta del cuerpo
+
+			blando
+
+			
+			_esto es especialmente útil para hacer pisadas, huellas, marcar de 
+
+			neumáticos, efectos de disparos, otros
+
+
+
+
+	
+____________________________________________________________________________________________________

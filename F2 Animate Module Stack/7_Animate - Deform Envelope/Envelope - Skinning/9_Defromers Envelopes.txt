@@ -1,0 +1,94 @@
+
+
+
+
+Envelope - Skinning
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+	Deformers Envelopes:
+	____________________
+
+
+		_tenemos la posibilidad de agregar más elementos ha un envelope, ya creado, editado y 
+
+		reflejado para así, ganar puntos de estatilidad en lugados donde no existen bones, ó huesos 
+
+		como también, para agregar deformadores adicionales de la mesh, del character, como músculos
+
+		ó muscles, como también, podrían ser deformaciones de ciertas transformaciones en animaciones
+
+		determinadas como parte de la acción e interacción del personaje con los elementos de la escena
+
+
+
+		Deforms:
+		________
+
+
+		_así, un deformador podría cualquier elemento como un "Null Object", al cuál, podríamos cambiarle
+
+		su modo de visualización a´si, el color de su apline, otros
+
+
+		_luego debemos ubicar el proxi, deformador en el lugar deseado de acción dentro ó fuera del
+
+		character
+
+
+		_luego debemos seleccionar la mesh, del character, que tiene el envelope, deseado y con esta
+
+		seleccionada vamos nuevamente ha "Animate/Deform/Envelope/", y aplicamos "Set Envelope", así,
+
+		nos aparecerá un ventana contexutal con las siguientes opciones:
+
+
+
+			_Automatically Reassign Envelope:
+
+				_esta opción en conveniente dejarla desactivada ya que de activarla perderíamos
+
+				la edición previa que hayamos hecho en el envelope/weight map, y para finalizar 
+
+				la acción y cerrar la ventana contextual del damos ha "Ok"
+
+
+		_así, nos aparecerá un picker, con el cuál, podremos seleccionar el elemento proxi, que hará, de
+
+		deformrs, en este ej, en un elemento "Null Object", y para finalizar la acción debemos hacer 
+
+		"mouse right click", sobre un área vacía ó disponible en el canvas del viewport
+		
+
+
+
+		Reassign Vertex:
+		________________
+
+
+		_ahora debemos ir ha "Animate/Deform/Envelope/", e ir a la opción de "Edit Weights..", para
+
+		así, abrir éste panel
+
+
+		_luego debemos seleccionar el vertex, que deseados reasignar ha este proxi, deformador para que
+
+		éstos vertex, respondan ha este nuevo deformador
+
+
+		_leugo, con los vertex, deseados seleccionados debemos ir al panel "Edit Weght", y seleccionar
+
+		el elemento proxi, deformador, deseado que hemos creado previamente y, con este seleccionado
+
+		debemos ir ha "Edit Weight/", y darle ha "Reassign", así, éstos vertex, responderán ahora el
+
+		la influencia del elemento proxi, deformador
+		
+
+
+		

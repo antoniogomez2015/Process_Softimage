@@ -1,0 +1,59 @@
+
+
+
+	Extruir una Spline, a partir de otra Spline, ha modo de Path, ó trazado de extrusión
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	Curve Net:
+	__________
+
+	_tenemos la posibilidad de superficies complejas al modo de "NURBS", a través, de la utilización de 4, 
+
+	splines, las cuáles, deben de estar unidas a los extremos
+
+
+	_ésto es posible haciendo coincidir lo "Vertex", de los extremos de cada spline, por medio de la opción
+
+	de "Snap/Knots", y por medio del modo de edición de splines, "Tweak Curve", shortcut, "M"
+
+
+	_de ésta manera, tendremos que crear cuatro splines, dos para las cordenadas "U", y dos para las cordenadas
+
+	"V"
+
+
+
+	Create Curve Net:
+
+	_al ya tener las cuatro splines, creadas en la forma y morfología deseada, para luego, sin seleccionar 
+
+	ninguna spline, previamente vamos ha "Model/Create/Poly.Mesh/Curve Net", 
+
+
+	_para que así, el sistema nos muestre un "Picker", a través, del cuál, tendremos que seleccionar las 
+
+	splines, en orden; seleccionando así, por ejemplo las aplines, correspondientes al plano "U", para luego 
+
+	hacer "Mouse Right Click", 
+
+
+	_para luego seleccionar las otras dos splines, correspondientes al plano "V", de ésta manera, para luego 
+
+	hacer "Mouse Right Click", para que así, el sistema sepa cuál es cuál tipo de splines, en relación a las 
+
+	cordenadas
+
+
+	_de ésta manera, el sistema generará la superficie en relación a la forma y morfología de la splines, 
+
+	respectivas así, como también, el sistema abrirá un panel en el cuál, podremos ajustar las opciones de la 
+
+	superficie de polymesh, generada como también, que si deseamos ocultar ó eliminar la splines, del proceso
+
+

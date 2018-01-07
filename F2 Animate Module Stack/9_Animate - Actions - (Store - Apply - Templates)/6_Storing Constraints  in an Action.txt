@@ -1,0 +1,153 @@
+
+
+
+DETALLES
+
+
+Las acciones son paquetes de animación de bajo nivel, tales como curvas de función, las expresiones, las limitaciones 
+
+y los parámetros vinculados. Mediante la creación de un paquete que representa la animación, se puede trabajar en un nivel 
+
+superior de la animación que no está limitado por el tiempo
+
+
+Las acciones son los paquetes de cualquier tipo de animación, tales como curvas de función, las expresiones, 
+
+las limitaciones y los parámetros vinculados. Después de crear una acción, se carga como un clip en el mezclador 
+
+de animación, donde puede modificar la animación de una manera no lineal y no destructiva.
+
+
+Este paquete en el mezclador de animación le permite trabajar en un nivel superior de la animación que no está limitada 
+
+por el tiempo: se puede mover una acción en torno a cualquier parte a tiempo, apretar o estirar su longitud como quieras, 
+
+aplique una acción después de otras en secuencias, y mezclar dos o más acciones juntos para crear una nueva animación.
+
+
+Puede crear una biblioteca completa de acciones, como ciclos de pie o saltos, y utilizarlos como muchas veces como quieras 
+
+en una escena, o compartirlos entre cualquier número de modelos
+
+
+También puede crear acciones de compuestos/compounds, que son "contenedores" para múltiples acciones, incluyendo 
+
+la animación de diferentes fuentes/sources, (curvas de funciones, expresiones, restricciones y parámetros vinculados). 
+
+Trabajar con datos animaciones complejas convierte en una tarea más simple que tratar con múltiples fcurves.
+
+
+Dado que los datos de animación paquete/package, de acciones en una sola unidad utilizable, que hace que sea fácil 
+
+para copiar la animación de un modelo a otro, incluso si el modelo no comparte las mismas convenciones jerarquía, 
+
+escala, o de denominación. Cuando hay diferencias entre los modelos, se abre una plantilla para ayudar a trazar 
+
+los elementos del modelo correspondientes.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Storing Constraints:
+____________________
+
+
+
+
+	------------------------------------------------------------------------------------------------------
+
+
+
+	Usted debe marcar los parámetros afectados por la restricción/constraint, no el propio limitación/constraint.
+
+	Por ejemplo, si se aplica una restricción de dirección a un objeto, sus parámetros de rotación se ven afectados, 
+
+	por lo que aquellos son los que quieres marcar. A continuación, puede guardar la animación de la restricción 
+
+	con los parámetros de las tiendas Marcado - Todos los comandos Fuentes
+
+
+	Recuerde que las restricciones actúan en el espacio global, no el espacio local. Si está utilizando restricciones
+
+	y marcando/marked, parámetros, debe marcar las transformaciones globales (kine.global *.), luego la propia 
+
+	almacenar las constraints, con acciones con los parámetros a través, de  "Marked Parameters - All Sources"
+
+
+	Si va a guardar transformaciones en lugar de los parámetros marcados/marked, las limitaciones en el espacio global 
+
+	tienen prioridad sobre otra animación en el espacio local. A continuación, elija "Transformations - All Sources."
+
+
+	Puede almacenar más de una restricción/constraint, en una fuente/source de acción/action. Por ejemplo, si usted 
+
+	tiene tanto una posición y dirección de restricción/constrinat, sobre un objeto, puede almacenar los parámetros 
+
+	afectados, tanto para las restricciones en una fuente/source de acción/action.
+
+
+
+NOTE:	Si hay un "up-vector" en una restricción/constrain, el "up-vector" no está incluido con la restricción 
+
+	en la acción/action. Curvas de función "Fcurves", son las únicas fuentes/sources, de animación que son 
+
+	manejadas con parámetros de restricción/constraint, que se pueden almacenar en las acciones.
+
+
+	Si el nombre del objeto cambia de restricción/constraint, después de que usted crea (instancia) un clip,
+
+	de la fuente/source, de restricción, el clip no puede hacer referencia a ese objeto. Debe eliminar el clip,
+
+	y la instancia de esa fuente de nuevo.
+
+
+	------------------------------------------------------------------------------------------------------
+
+
+
+Mixing Constraints with Other Animation:
+________________________________________
+
+
+	
+	_Restricciones maneja las transformación global de un objeto, mientras que otros tipos de animación normalmente 
+
+	conducen la transformación local del objeto. Esto es importante cuando se quiere mezclar limitaciones/constraints, 
+
+	con otras animaciones en el mezclador mixer de animación. No hay parámetros de solapamiento entre la animación 
+
+	global y local en el mixer, lo que significa que simplemente no se pueden mezclar
+
+
+	_El uso del mixer, puede calcular los resultados de diferentes tipos de restricciones una contra la otra, pero 
+
+	no se pueden mezclar las limitaciones con las curvas de función o expresiones a menos que la animación 
+
+	se ha creado a nivel global (vea la siguiente solución)
+
+
+
+	------------------------------------------------------------------------------------------------------
+
+
+
+Creating an expression action on an intermediate object:
+________________________________________________________
+
+
+
+	_Una solución a la mezcla restricciones localmente es crear un objeto intermedio (por ejemplo, un cono) 
+
+	que comparte el mismo padre que el objeto de destino que usted quiere mezclar (por ejemplo, un cilindro) 
+
+	y restringir el cono en su lugar. Después escribe una expresión local para impulsar el cilindro de la animación 
+
+	del cono (por ejemplo, cylinder.posx = cone.posx). Guarde las expresiones locales en una acción y luego usar 
+
+	esa acción en lugar de una restricción de la acción. La ventaja es que te van a dar todo el poder de la propia 
+
+	limitación.
+
+
+

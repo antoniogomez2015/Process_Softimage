@@ -1,0 +1,158 @@
+
+
+DETALLES
+
+
+al crear cualquier sistema de partículas se crea automáticamente un "Point Cloud", en el "Explorer",
+
+es será el encargado de contener todos los nodos y elementos que se relacionarán con los demás 
+sistemas y elemento dentro de la estructura y lógica del programa
+
+a continuación presentamos las posibles formas de generar sistemas de partículas/point cloud
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	_ICE/Get/Primitive/Point Cloud/
+		
+		_aquí encontraremos opciones de creación de partículas estáticas a través de una 
+
+		foma geométrica como las expresadas a continuación:
+
+
+			_Cone
+
+			_Cube
+
+			_Cylinder
+
+			_Disc
+
+			_Grid
+
+			_Sphere
+
+			_Torus
+
+		
+		_más también tenemos la posibilidad de generar un elemento "Point Cloud" 
+
+		"Empty/Vacío", especialmente útil para crear sistemas altamente personalizados
+
+
+
+	_el "Point Cloud", se conforma de la estructura y elementos siguientes:
+
+
+		_Point CloudName/Particle Display:
+
+		
+			podemos configurar como se representarán las particulas en viewport, otros
+
+
+			_Display As:
+
+				podemos escoger entre formas geométricas ó dejar el modo automático
+
+			_Point Size (Pixel):
+
+				podemos variar el tamaño de la partícula en su visuzalización
+
+			_Display %:
+
+				podemos graduar la cantidad de partículas que serán representadas
+
+				en el viewport, para ahorrar así, recursos del sistema
+
+			_Animation Detail%:
+
+				podemos variar la cantidad de detalle representado en las aimaciones
+
+			_Sprite Opacity:
+
+				podemos graduar la opacidad de la instancias representadas, así, la
+
+				opacidad pude ser representada tanto por "Alpha", ó "Material 			
+				transparency"
+
+			_Show Trails:
+
+				mostrar colas/senderos
+
+			_Show Strands:
+
+				mostrar replicas
+
+			_Depth Soft:
+
+				mostrar elementos altamente suavizados
+
+			_Add Display Attributes:
+
+				podemos agregar atributos extras
+	
+						
+		_Simulation Setting:
+
+		
+			_Sub-frame Sampling:
+
+				podemos configurar la cantidad de de sub sampleos por fotograma
+
+			_Cache All Simulation Samples:
+
+				podemos activar la opción de cachear todos los sampleos de la 			
+				simulación
+	
+
+			_Open Cache Manager:
+
+				también podemos abrir el "Cache Manager", para exportar de forma 
+
+				controlada toda la simulación
+
+
+		_Visibility:
+
+
+			Diplay
+			______
+
+
+			_View Visibility:
+
+				visible en el viewport
+
+			_Render Visibility:
+
+				visible en el render
+
+			_Selectability:
+
+				opción si será seleccionable
+
+			_View Playback Visibility:
+
+				visible en el timeline de reproducción
+
+			_Ghosting:
+
+				activar visualización fantasma
+
+			_Ghost Type:
+
+				typo de visualización fantasma
+
+
+
+	_también podemos generar un "Point Cloud", a través de cualquier elemento de geometría ó 
+	null, otros, así estos servirán como emisores personalizados
+
+
+
+
+

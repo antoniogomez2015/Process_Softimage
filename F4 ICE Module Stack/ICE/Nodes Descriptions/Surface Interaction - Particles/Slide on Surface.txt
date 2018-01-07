@@ -1,0 +1,80 @@
+
+
+DETALLES
+
+
+el nodo "Slide on Surface", es un "Compount/pompuesto", y nos permitirá hacer que el flujo de un 
+
+sistema de partículas se desplace ó rebote sobre una superficie de una geometría ofreciendo 
+resistencia ño sirviendo de obstáculo
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	_Task/Particles/Surface Interaction/Slide on Surface
+
+		va conectado por lo general ha "Simulation Root/Excecute"
+		
+
+
+------------------------------------------------------------------------------------------
+
+
+Slide Parametters
+_________________
+
+
+
+	_Enable:
+
+		podemos activar ó desactivar el nodo
+
+
+	_Select Offset Method:
+
+		podemos elegir el método a utilizar, entre "Usar tamaño de la partícula", ó "usar 
+		la separación de la distancia"
+
+
+	_Offset Distance:
+
+		podemos ajustar la distancia de las partículas
+
+
+	_Surface Friction:
+
+		podemos ajustar la fricción de las partículas sobre la superficie
+
+
+	_Enable Rolling
+
+		podemos activer la opción de rolling / laminación ó uniformidad
+
+
+
+Drip/goteo Parameters
+_______________
+
+
+	_Angle Threshold:
+
+		podemos ajustar el umbral del ángulo
+
+
+	_Force Threshold:
+
+		podemos ajustar la fuerza del umbral
+
+	
+	_Min Neighring Particles:
+
+		podemos activar la opción de relincheo ó amplitud de las partículas
+
+
+	_Cutoff Distance to Neighboring Particles:
+
+		podemos ajustar la distancia del relincheo ó amplitud de las partículas
+

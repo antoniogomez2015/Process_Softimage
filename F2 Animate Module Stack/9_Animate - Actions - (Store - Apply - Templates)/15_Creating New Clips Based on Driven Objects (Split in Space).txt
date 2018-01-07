@@ -1,0 +1,89 @@
+
+
+
+DETALLES
+
+
+Las acciones son paquetes de animación de bajo nivel, tales como curvas de función, las expresiones, las limitaciones 
+
+y los parámetros vinculados. Mediante la creación de un paquete que representa la animación, se puede trabajar en un nivel 
+
+superior de la animación que no está limitado por el tiempo
+
+
+Las acciones son los paquetes de cualquier tipo de animación, tales como curvas de función, las expresiones, 
+
+las limitaciones y los parámetros vinculados. Después de crear una acción, se carga como un clip en el mezclador 
+
+de animación, donde puede modificar la animación de una manera no lineal y no destructiva.
+
+
+Este paquete en el mezclador de animación le permite trabajar en un nivel superior de la animación que no está limitada 
+
+por el tiempo: se puede mover una acción en torno a cualquier parte a tiempo, apretar o estirar su longitud como quieras, 
+
+aplique una acción después de otras en secuencias, y mezclar dos o más acciones juntos para crear una nueva animación.
+
+
+Puede crear una biblioteca completa de acciones, como ciclos de pie o saltos, y utilizarlos como muchas veces como quieras 
+
+en una escena, o compartirlos entre cualquier número de modelos
+
+
+También puede crear acciones de compuestos/compounds, que son "contenedores" para múltiples acciones, incluyendo 
+
+la animación de diferentes fuentes/sources, (curvas de funciones, expresiones, restricciones y parámetros vinculados). 
+
+Trabajar con datos animaciones complejas convierte en una tarea más simple que tratar con múltiples fcurves.
+
+
+Dado que los datos de animación paquete/package, de acciones en una sola unidad utilizable, que hace que sea fácil 
+
+para copiar la animación de un modelo a otro, incluso si el modelo no comparte las mismas convenciones jerarquía, 
+
+escala, o de denominación. Cuando hay diferencias entre los modelos, se abre una plantilla para ayudar a trazar 
+
+los elementos del modelo correspondientes.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Creating New Clips Based on Driven Objects (Split in Space):
+____________________________________________________________
+
+
+
+
+	Puede dividir un clip de acción basado en los objetos (o elementos de los objetos) que son impulsados por ese 
+
+	clip. Esto crea un nuevo clip basado sólo en los elementos que seleccione, lo que significa que se puede 
+
+	dividir un clip en muchos, cada uno con diferentes segmentos de la animación. Por ejemplo, se puede desacoplar 
+
+	las manos de un personaje del resto de su cuerpo por lo que puede animar por separado.
+
+
+	La división de un clip no creará una nueva fuente/source, de acción, pero que podría congelar el nuevo clip 
+
+	para crear una fuente/source
+
+
+NOTE:	Si divide un clip que tiene una deformación de tiempo, toda la deformación de tiempo se copia en las nuevas 
+
+	porciones de clip: el propio efecto de deformación de tiempo no se divide.
+
+
+
+	To create a new clip based on selected driven objects:
+	______________________________________________________
+
+
+	1_primero seleccione los clips, que desea split/separar
+
+
+	2_luego seleccione las partes de ej: del character como los arms..
+
+
+	3_luego con los sub-elementos seleccionados del elemento deseado vamos ha "Mixer/Clips/Split in Space"
+

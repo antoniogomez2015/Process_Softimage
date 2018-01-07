@@ -1,0 +1,54 @@
+
+
+DETALLES
+
+
+tenemos la posibilidad de hacer deformación en la mesh,motive, a través, de intervenciones secundarias 
+
+de otros elementos por medio del método de sustracción, el cuál, permite hacer relieves y depresiones
+
+en la mesh/motive, ó cualquier otro tipo de deformación como salida y configuración de nodos, ej: 
+
+"Sustract/Result", ha "in/Length"
+
+
+	Tool/Math/Basic/Sustract
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Sustract
+
+
+	_este nodo nos permite obtener datos relacionales tanto de la superficie que será deformada 
+
+	a través, de su valor de entrada secundaria "Second"
+
+	
+	_como obtener datos relacionales del elemento deformador, ej: de la escena como un "Null Object",
+
+	el cuál, deformará la mesh/motive, cuando éste se mueva en sus coordenadas en la escena, cerca
+
+	y sobre el mesh/motive, ésto a través, de su valor de entrada primario "First"
+
+
+		-Sustract-
+
+
+			_In:
+
+				_"Fisrt = Null deformador", y "Second = Get Point Position"
+
+
+			_Out:
+
+				_ej: "Length"
+
+
+	
+
+
+

@@ -1,0 +1,53 @@
+
+
+DETALLES
+
+
+tenemos la posibilidad de extraer los valores de una mesh, en este caso de geometría, de sub-elementos 
+
+vertex. 
+
+
+En sus coodenadas, en valores independientes: X,Y,Z, para así, poder intervenir en sus influencias
+
+de forma independiente uno de otro, esto es especialmente útil para un sin número de efectos y controles
+
+de deformación y edición como efectos especiales
+
+
+	Tool/Conversion/3D Vector to Scalar
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+3D Vector to Scalar
+
+
+	_este nodo nos permite extraer los valores de posición de los sub-elementos, vertex, de una 
+
+	geometría para un posterior control ó intervención en las mismas a través, de otros nodos
+
+
+
+		-3D Vector to Scalar-
+
+
+			_In:
+
+				_"Get Point Position", u otros, ha "vector/3D Vector to Scalar"
+
+
+			_Out:
+
+				_"3D Vector to Scalar/xyz", ha por lo general ha "Scalar to 3D Vector",
+
+				y otros nodos en cordenadas específicas
+
+
+	
+
+
+

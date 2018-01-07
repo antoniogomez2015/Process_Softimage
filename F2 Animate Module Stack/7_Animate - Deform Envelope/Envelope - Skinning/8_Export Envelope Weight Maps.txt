@@ -1,0 +1,75 @@
+
+
+
+
+Envelope - Skinning
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+	Export Envelope Weight Map:
+	___________________________
+
+
+		_tenemos la posibilidad de exportar el weight map, que hemos editado de un envelope, de un
+
+		character, para su uso posterior en ese mismo character, ó en otro character, similar dentro
+
+		de un workflow, determinado de estándares
+
+
+		_así, luego de haber editar el weight map, de un envelope, deseado dentro la mesh un character,
+
+		y luego haberlo duplicado por simetría tenemos la posibilidad de exportarlo
+
+
+		_primero vamos a la sección "Render/Render/Regions/", y activamos la herramienta de "Regions Tools",
+
+		y procedemos a enmarcar dentro de ésta ha nuestro character para tener un render preliminar de
+
+		éste, este paso nos sirve como un proxi, de visualización ó "Tumbnails", del archivo exportado
+
+
+		_luego debemos seleccionar la mesh, con el envelope, deseado y editado luego con este seleccionado 
+
+		vamos ha "Animate/Deform/Envelope/", y le damos ha "Edit Weights..", así, abriremos este panel
+
+
+
+
+		Edit Weights:
+		_____________
+
+
+		_y ya en el panel "Weight Edit", debemos ir a las opciones de "Edit Weight/File/Save Preset",
+
+		así, se nos abrirá un entana contextual de exportación en la cuál, podremos crear un carpeta
+
+		ej: "Export Envelope Weight Map", dentro de la cuál, podremos guardar el archivo con un nombre
+
+		ej: "Leg Envelope Weight Map"
+
+
+		_así, para luego cargar el weight map, del mismo envelope u otro de otro character podremos
+
+		de igual manera ir al panel "Edit Weight", y entrar a las opciones de "Edit Weight/File/Load Preset",
+
+		y buscar el archivos creado y guardado previamente y cargarlo para recuperar asi, la edición
+
+		realizada previamente al character original
+
+
+		_más en la ventana de exportación ó importación tendremos la opción de visualización a través, 
+
+		del ícono de "Tumbnail View", y así, podremos ver el preview, de la imágen de render que reliazamos
+
+		del character en la sección de render regiions tools...
+
+
+
+
+		

@@ -1,0 +1,77 @@
+
+
+
+Digital Tutors Introduction to Rigging in XSI 2008
+
+
+
+	Skeleton System
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+Generalidades:
+______________
+
+
+
+	---------------------------------------------------------------------------------------------
+
+
+
+	Bones/Skeleton Estructure:
+	__________________________
+
+
+	NOTE:	es altamente recomendable renombrar la estructura de huesos y articulaciones para así,
+
+		tener un mayor controla de las mismas tanto para su lado izquierdo (L_), como para su
+
+		lado derecho (R_)
+
+		
+
+		Estandar Universal:
+		___________________
+
+
+		_Head		 - Cabeza
+
+		_Neck		 - Cuello
+
+		_Shoulder	 - Hombros
+
+		_Arm		 - Brazo
+
+		_ForeArm	 - Antebrazo
+
+		_Carp		 - Carpo
+
+		_MetaCarp	 - Meta_Carpo
+
+		_Fingers	 - Dedos
+
+		_Spine		 - Spina_Dorsal/Columna
+
+		_Chests		 - Cadera
+
+		_Femur		 - Femur
+
+		_Tibia		 - Tibia
+
+		_MetaTarse	 - Meta_Tarso
+
+		_BallFingers 	 - Bola_del_ pie
+	
+		
+
+
+
+
+
+

@@ -1,0 +1,349 @@
+
+
+DETALLES
+
+
+El "Emitter from Geometry" es un nodo "Compound/compuesto", es responsable de crear y emitir las 
+
+partículas. En cada cuadro/frame, añade puntos y establece sus atributos como tamaño, color,
+
+velocidad, masa, forma, etc. Puede abrir editor de propiedades del "Compound" y cambiar todos estos 
+
+atributos como desee.
+
+
+El "Emitter from Geometry" generalmente se conectan a la parte superior del nodo raíz de la 
+
+simulación en una simulación de partículas porque es necesario para emitir las partículas antes que 
+
+nada puede pasar a ellos.
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	_Task/Particles/Emitter/Emitter from Geometry
+
+	
+		Va conectado por lo general al "Simulate Root/Emitter"
+
+
+
+---------------------------------------------------------------------------------------------
+		
+	
+
+Emission Parameters
+___________________
+
+
+	_Enable:
+
+		_esta opción activa ó desactiva la emisión de partículas
+
+
+	_Select Rate Type:
+
+		_esta opción permite indicar el criterio de emisión de partículas:
+
+
+			_Number of Particles Per Second_
+
+				_esta opción nos permite la emisión de partículas determinadas a través,
+
+				de un flujo sostenido con un intervalo sobre segundos
+
+
+			_Total Number of Particles:
+
+				_esta opción nos permite indicar la emisión de partículas determinadas
+
+				a través, de un número total de partículas, esto quiere decir que, si la
+
+				emisión es de "400", partículas, éstas se emitirán en una primera emisión
+
+				osea, en el primer segundo y, a partir de éste dejanrán de emitirse 
+
+				partículas
+
+
+	_Time Varing:
+
+		_esta opción indica si la emisión se hará bajo un criterio ponderado de los puntos de emisión
+
+		sean éstos por surface, ó cluster, de forma relativa ó ponderada:
+
+
+			_emisión relativa_
+
+				_ésta permite que la emisión se realice de forma aleatoria por toda la
+
+				superficie de emisión
+
+
+			_emisión ponderada:
+
+				_ésta permite que la emisión se realice de forma ponderada al centro de 
+
+				toda la superficie de emisión, emitiendo así, sólo un punto de partículas
+
+				por área de amisión
+
+
+	
+	_Emission Type:
+
+
+		_point:
+
+			_(indeterminado)
+
+
+		_surface:
+
+			_(indeterminado)
+
+		_volume:
+
+			_(indeterminado)
+
+
+	_Rete:
+
+		_frecuencia ó cantidad de partículas emitidas
+
+
+	_Seed:
+
+		_fuerza envío de las partículas generadas ó creadas
+
+
+
+Emission Filter Parameters
+__________________________
+
+
+	_Exect Rate:
+
+		_esta opción mantiene una relación fiel a la rantidad de emisión ó "Rate", 
+
+		de partículas, sin importar el tamaño del área de emisión aunque si respetando
+
+		su perímetro de emisión
+
+
+	_Proportional to Filtered Area:
+
+		_esta opción hace una ponderación de emisión del "rate", en relación al área de emisión
+
+		permitiendo así, graduar el flujo de emisión en relación al área de emisión
+
+
+	_Invert:
+
+		_esta opción invierte el área ó superficie especificada de emisión, invirtiendo así,
+
+		de una manera práctica el área de emisión
+
+
+
+	_Reference:
+
+
+		_surface:
+
+			_esta opción permite la emisión de partículas a través de una superficie determinada
+
+
+		_Cluster:
+
+			_esta opción permite la emisión de partículas a través de una selección de tipo cluster
+
+			determinada a través, de una selección previa
+
+
+		_Weights:
+
+			_esta opción permite la emisión de partículas a través de un weightMap, determinado 
+
+			a través, de una creación y edición previa determinada
+
+
+
+Initial Values
+______________
+
+
+
+	_Mass:
+
+		_este valor indica el peso/weight/mass, de las partículas ente las fuerzas/fields, 
+
+		implícitas ó relacionadas al sistemas de partículas así, entre variando el peso ó
+
+		masa de las partículas podremos variar su interacción con las fuerzas que 
+
+		intervienen en el sistema de partículas, entendiendo que la mass/masa, biene dada
+
+		por kilogramos
+
+
+	_Size:
+
+		_este valor indicar el tamaño ó diámetro de cada partícula, permitiendo así, variar
+
+		el tamaño de las mismas a nuestras necesidades
+
+
+	_Color
+
+		_este valor permite variar el color de edición de las partículas, esto quiere decir
+
+		que en este caso, podemos variar el color apreciativo de las partículas en el viewport,
+
+		para tener una mejor apreciación más estos cambios ó ajustes de color no tendrán 
+
+		influencia en el render
+
+
+	_Shape:
+
+		_esta opción nos permite cambiar la forma/shape, ó instancia representada como partículas
+
+		generadas por el sistema, así, disponemos de las siguientes opciones ó partículas:
+
+
+			_Point:
+
+				_esta opción recrea partículas en forma de "puntos"
+
+
+			_Segments:
+
+				_esta opción recrea partículas en forma de "segmentos"
+
+
+			_Disc:
+
+				_esta opción recrea partículas en forma de "discos"
+
+
+			_Rectangle:
+
+				_esta opción recrea partículas en forma de "rectángulos"
+
+	
+			_Sphere:
+
+				_esta opción recrea partículas en forma de "esferas"
+
+
+			_Box:
+
+				_esta opción recrea partículas en forma de "cubos"
+
+
+			_Cilynder:
+
+				_esta opción recrea partículas en forma de "cilindros"
+
+
+			_Capsule:
+
+			
+				_esta opción recrea partículas en forma de "cápsulas"
+
+
+			_Cone:
+
+				_esta opción recrea partículas en forma de "conos"
+
+
+			_Blob:
+
+
+				_(indeterminado ó general)
+
+
+	
+Orientation
+___________
+
+
+
+	_X,Y,Z,Angle:
+
+		_esta opción nos permite indicar cordenadas y ángulos de emisión especialmente útil para
+
+		ciertos casos de emisión
+
+
+	_Align to Surface Normal:
+
+		_esta opción permite alinear las partículas a las normales de la surface de emisión, esta
+
+		opción es útil para cierto tipo de emisión de partículas
+
+
+	_State ID:
+
+		_los ids, permiten signar ó limitar por grupos a partículas y elementos determinados por
+
+		nosotros a través, de ids, para que así, ciertos factores sólo afecten a ciertos elementos
+
+		con ids, determinados, esto es especialmente útil para efectar sólo a ciertos elementos
+
+		y no a todos a su conjunto
+
+
+
+	
+Directional and Speed
+_____________________
+
+	
+
+	_Select Emit DIrection:
+
+
+		_Use Emit Location Normal:
+
+			_esta opción permite indicar que la emisión se hará por la dirección actual de la
+
+			normal de la surface, de amisión (esta es la opción por defecto y la recomendada)
+
+
+		_Use Initial Direction Vector:
+
+			_esta opción permite indicar que la emisión se hará por la dirección del vector
+
+			inicial, lo que quiere decir que tomará la dirección que nosotros le indiquemos, 
+
+			entre "X,Y,Z", sin importar la dirección ó inclinación de la surface, esta opción 
+
+			es útil para ciertos casos
+
+
+
+Direction and Speed:
+____________________
+
+
+	_X,Y,Z:
+
+		_esta opción se activa con la opción del paso anterior "Use Initial Direction Vector"
+
+
+	_Speed:
+
+		_esta opción indica la velocidad con la que emitirán las partículas, así entre mayor sea
+
+		el valor indicado mayor será la velicidad de las partículas
+
+
+	_Fast Moving Emiter:
+
+		podemos
+	

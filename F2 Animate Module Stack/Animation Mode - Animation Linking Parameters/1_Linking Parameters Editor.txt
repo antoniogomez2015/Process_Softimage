@@ -1,0 +1,133 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de vincular diferentes elementos a través, de diferentes parámetros entre si
+
+de esta manera podremos hacer animaciones  y comportamientos interactivos entre diferentes elementos
+
+entre otros
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+_The Parameter Connection Editor: 
+
+
+	_para acceder al panel "Parameter Connection Editor", disponemos de varias opciones ó accesos:
+
+
+		_podemos ir al menú "View/Animation/", y seleccionar "Parameter Connection editor"
+
+
+		_también, podemos seleccionar el objecto a vincular en la escena e ir ha sus propiedades
+
+		avanzada haciendo "Alt + Enter", así, podremos ir a sus propiedades 
+
+		"Global/Local Transformation", en las cuales podremos seleccionar las propiedades deseadas
+
+		como por ejemplo: "Scale X", así, podremos hacer "mouse right click", sobre el ícono de 
+
+		acciones y seleccionar entre las opción de "Link With..", de esta manera se abrirá el panel
+
+		"Parameter Connection Editor", ya con los parámetros seleccionados
+
+
+		_esta misma operación tambén, la podemos repetir seleccionando las propiedades a relacionar 
+
+		directamente en el "Explorer/Mesh/Kinematics/Global-Local Transform/.."
+
+	
+------------------------------------------------------------------------------------------------------------
+
+
+
+Parameter Connection Editor:
+____________________________
+
+
+
+	_Driving Source:
+
+		_esta sección se refiere al objeto, elemento ó propiedad la/el cuál, será manejada/o
+
+
+
+	_Driven Target:
+
+		_esta sección se refiere al objeto, elemento ó propiedad la/el cuál, será la manejadora
+
+
+
+	_Link:
+
+		_esta opción nos permitirá relacionar ó linkear ó vincular los parámetros deseados
+
+	
+
+	_Set Relative Values:
+
+		_esta opción nos permitirá setear los estados iniciales y finales de los parámetros linkeados
+
+		ó relacionados, para que así, sean determinadas las relaciones de animación dinámica entre
+
+		ambos elementos y parámetros ahora comúnen
+
+
+		
+
+	_Link Options:
+
+		
+		_Link With:
+
+			_esta opción nos permite indicar el tipo de relacionamiento "Linking", entre los elementos
+
+			y parámetros simples ó directos
+
+
+		_Link With Multi:
+
+			__esta opción nos permite indicar el tipo de relacionamiento "Linking", entre los elementos
+
+			y parámetros para más de un parámetro manejador sobre los parámetro manejados
+
+
+		_Equals (=) Expression:
+
+			__esta opción nos permite indicar el tipo de relacionamiento "Linking", entre los elementos
+
+			y parámetros a través, de expresiones de programación
+
+
+
+
+NOTE:	también, disponemos de la opción de "Linking with Orientation", así, con sólo hacer "mouse right click", 
+
+	sobre el ícono de la propiedad de un objecto y seleccionar la opicón de "Linking With Orientation", ahora
+
+	podremos también incluir las opcioens de orientación en el relacionamiento de los objetos
+
+	
+	teniendo en cuenta los critrios de orientación del programa, los cuales son: "quaternion space",
+
+	y "Euler X, Y, and Z rotation parameters"
+
+
+
+
+	también tenemos la posibilidad de visulizar el relacionamiento entre objetos y propiedades directamente
+
+	en el viewport, para esto, en el viewport, deseado vamos a las opciones de visualización "en el ojito",
+
+	y activamos la opción de "Relations", así, al seleccionar a los objectos relacionados podremos ver la
+
+	abreviación de "Exp", de expresión, más un línea que indica hacia el elemento relacionado en cuestión
+	
+
+

@@ -1,0 +1,154 @@
+
+
+
+	Project Manager
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	Project Manager:
+	________________
+
+	_softimage, trabaja en base ha una estructara estricta de proyecto, para lo cuál, lo más recomendado es
+
+	crear una estructura ó capeta específica en la cuál, vamos ha depositar todos los elementos ha utilizar
+	
+	en softimage
+
+
+	_ya que al momento de crear un nuevo proyecto en ésta ruta especificada por nosotros, softimage, creará
+
+	en ésta una sub-estructura de archivos ó directorios
+
+
+	_los cuáles, tendrán cada uno de éstos una función específica
+
+
+
+	New Proyect/Scene:
+	__________________
+
+	_para crea y administrar un nuevo proyecto y escenas debemos ir ha "File/Project Manager", para que así, 
+
+	se abra una nueva ventana en la cuál, podremos crear y gestionar proyectos, escenas, otros
+
+
+	_de ésta manera, podremos darle ha "New Project", para que así, se nos abra otra ventana contextual en la
+
+	cuál, podremos indicar un nombre para el nuevo proyecto ha generar así, como una ruta específica de destino
+
+
+	_para por último darle ha New Scene, para que así una nueva escena sea abierta y podamos trabajar en éste
+
+	más ésta escena no está guardada ni tiene un nombre definido para lo cuál, debemos de guardar ésta escena
+
+	con un nombre característico ó personalizado dentro de nuestro proyecto
+
+
+
+	Project Structure:
+	__________________
+
+	_a continuación presentamos una descripción de la estructura de archivos de un proyecto:
+
+
+		_Actions:
+
+			_aquí se guardarán las acciones de animaciones
+
+
+		_Audio:
+
+			_aquí se guardarán los clips, y tracks, de audio utilizados en el proyecto
+
+
+		_Backup:
+
+			_respaldo frecuente en caso de errores y fallos del sistema
+
+
+		_Cache:
+
+
+		_Composites:
+
+			_aquí se guardarán las composición ó postproducción en softimage
+
+
+		_dotXSI:
+
+			_aquí se guardarán los archivos con formado dotXSI (Formato Nativo de Intercambio entre 
+
+			versiones de Softimage / XSI)
+
+
+		_Expressions:
+
+			_aquí se guardarán las expresiones, script, código realizado
+
+
+		_FCurves:
+
+			_aquí se guardarán las curvas de animación guardada y utilizadas
+
+
+		_MatLib:
+
+			_aquí se guardarán las librerías ó biblioteca de materiales utilizadas
+
+
+		_Models:
+
+			_aquí se guardarán los modelos de geometría guardados en escenas y en el proyecto
+
+
+		_Pictures:
+
+			_aquí se guardarán las imágenes y texturas utilizados en el proeycto
+
+
+		_Queries:
+
+			_(Indeterminado)
+
+
+		_Render_Archives:
+
+			_aquí se guardarán las escena en un formato de MentalRay, para render en granjas de render
+
+			ó proxis de escenas
+
+
+		_Render Pictures:
+
+			_aquí se guardarán los renders, que vayamos creando ó realizando
+
+
+		_Scene:
+
+			_aquí se guardarán todas las escenas del proyecto que vayamos guardando en el proyecto
+
+
+		_Scripts:
+
+			_aquí se guardarán scripts, realizados en javascript, phyton, para simulación, otros
+
+
+		_Simulation:
+
+			_aquí se guardarán todas las simulaciones y animación y parte de las caches generadas
+
+
+		_Synoptic:
+
+			_aquí se guardarán las vistas sinópticas generadas y guardadas (página version)
+
+
+		_Thumbnails:
+
+			_aquí se guardarán las miniaturas de los materiales, escenas, otros
+
+

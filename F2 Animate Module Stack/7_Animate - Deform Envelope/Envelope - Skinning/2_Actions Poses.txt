@@ -1,0 +1,70 @@
+
+
+
+
+Envelope - Skinning
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+	_Actions: (poses)
+
+
+		NOTE: para esta opción es altamente recomendable trabajar con "Models"
+
+
+		_tenemos la posibilidad de recrear poses, para un acceso fácil a la hora del proceso de animación
+
+		esto es de gran ayuda en el proceso del rigging, y la producción en animaciones diversas
+
+
+		_para esto, debemos seleccioanr todos los elementos que conforman el character ó de la perte
+
+		deseada del mismo, un método útil es hacer una selección de rectángulo sobre todo el character,
+
+		para seleccionar todos sus elementos ó a través del explorer
+
+
+		_luego de tener seleccionados todos los elementos del character, deseado vamos ha:
+
+		"Animate/Actions/Store/", y vamos a la sección se "Current Frames", y seleccionamos la opción
+
+		de "Transformations - Current Values"
+
+
+		_así, se creará un "Mixer", en el "Explorer", en el cuál, se podrá ver la siguiente estructura:
+
+		"Mixer/Sources/Animation/", y los sources, de poses, ó frames/freeze, que hayamos hecho del character,
+
+		respectivo
+
+		
+		_así, para aplicar un determinado "Source", de pose deseado en un determinado momento de la animación
+
+		basta con ir al "Explorer/Model/Mixer/Sources/Animation/", y seleccionar el "Source", deseado
+
+
+		_luego con el source, deseado seleccionado vamos ha "Animate/Actions/Apply/", y le damos ha:
+
+		"Action", en ocaciones es necesario darle al "Action", dos veces
+
+
+		_de esta manera el character tomará la pose que ha sido guardada previamente en el source, e pose
+
+		respectivo
+
+
+
+
+
+
+
+
+
+	
+
+

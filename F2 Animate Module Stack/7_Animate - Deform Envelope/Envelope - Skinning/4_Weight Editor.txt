@@ -1,0 +1,72 @@
+
+
+
+
+Envelope - Skinning
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+Weight Editor:
+______________
+
+
+		_más aún a parte de la edición de brush, ó pintado de vertice tenemos la posibilidad de la
+
+		edición específica ó personalizada de vertices en relación a su influencia relativa a los 
+
+		demás bones
+
+
+		_para accesar al panel "Weight Editor", disponemos de dos opciones, estas son:
+
+
+			_yendo al panel "Animate/Deform/Envelope/", y seleccionamos la opción de 
+
+			"Edit Weights"
+
+
+			_ó a través, del panel "Weight Paint Panel/Edit Tools", shortcut "Control + 3",
+
+			accediendo a la opción de "Weight Editor"
+
+
+
+		Weight Editor:
+		______________
+
+
+		_así, primero abrimos el panel "Weight Editor"
+
+
+		_luego seleccionamos la mesh, con el envelope, deseado
+
+
+		_luego entramos al modo de sub-elementos, vertex, de la mesh, con el envelope, deseado
+
+
+		_luego seleccionamos uno ó más vertex, a editar del weight map, del envelope
+
+
+		_de esta manera, el panel "Weight Editor", nos mostrará el los vertex, seleccionados y los
+
+		bones, implicados ó relacionados con dicho vextex
+
+
+		_así, en el panel weight editor, podremos seleccionar posteriormente el bone, deseado
+
+		ha eidtar su influencia sobre estos vertex, seleccionados moviendo el "slider", que aparece
+
+		en la parte media del panel "Weight Editor"
+
+
+		_esta paso lo podremos repetir para los diferente bones, e influencia ha editar
+
+
+		NOTE:	esta opción requiere un conocimiento previo de los nombres y cinemática del character,
+
+			por ende pude decirse que es una opción avanzada

@@ -1,0 +1,99 @@
+
+
+
+Digital Tutors Introduction to Rigging in XSI 2008
+
+
+
+	Skeleton System
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+Duplicate Symetry:
+__________________
+
+
+
+
+	_tenemos la posibilidad de ahorarnos mucho trabajo al duplicar de form reflejada el skeleton y el
+
+	proceso de rigging, que llevemos hasta ese determinado punto, como también, incluso podemos al unñisono
+
+	reflejar tanto el "skeleton system, el riggings, system, y el polymesh", de ser necesarion
+
+
+	_también, disponemos de la opción de invertir las cordenadas de los elementos reflejados para que así,
+
+	éstos presenten comportamiento inversos, esta opción es altamente recomendable
+
+
+	_para esto, debemos seleccionar los grupos de elementos deseados, tanto el skeleton system, el riggins,
+
+	system, y la meshes, respectivas de ser necesario, luego con éstas seleccionadas vamos ha: 
+
+	"Animate-Model/Skeleton/", y aplicamos "Duplicate Symetry", así, se nos abrirá una ventana contextual
+
+	con una serie de opciones:
+
+
+
+		_Duplicate Constraints: (activar)
+
+			_esta opción contempla a los constraint aplicados para la duplicación por simetría
+
+
+		_Share Parent:
+
+			_esta opción contempla a los elementos emparentados para la duplicación por simetría
+
+
+		_Freeze Negative Scaling: (activar)
+
+			_esta opción contempla invertir las cordenadas de ubicación para la duplicación por simetría
+
+
+		_Symetry Plane:
+
+			_esta opción permite seleccionar las cordenadas de trabajo de acción para la duplicación 
+
+			por simetría
+
+
+--------------------------------------------------------------------------------------------------------------
+
+
+
+Workflow:
+_________
+
+
+	_Free Transform:
+
+
+		_es recomendable incluso antes de crear los sistemas constraint, haber antes hecho "Free Transform",
+
+		a las respectivas spline, a utilizar como handles, para los diferentes constraints
+
+
+		_más despues de haber duplicado los sistemas por simetría es recomendable hacer ó volver hacer
+
+		"Free Transform", para que éstos que seteados a "0"
+
+
+	
+	_Rename:
+
+
+		_es altamente aconsejable renombrar de forma coherente las partes de los diferentes sistemas
+
+		reflejados ó no reflejados, ej: "L_Arm/L_ForeArm/L_Hand/L_Fingers..", y 
+
+		"R_Arm/R_ForeArm/R_Hand/R_Fingers..", así a los diferentes "handles", splines, respectivos
+
+

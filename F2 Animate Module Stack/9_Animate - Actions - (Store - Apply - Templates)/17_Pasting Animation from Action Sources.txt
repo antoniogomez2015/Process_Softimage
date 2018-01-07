@@ -1,0 +1,138 @@
+
+
+
+DETALLES
+
+
+Las acciones son paquetes de animación de bajo nivel, tales como curvas de función, las expresiones, las limitaciones 
+
+y los parámetros vinculados. Mediante la creación de un paquete que representa la animación, se puede trabajar en un nivel 
+
+superior de la animación que no está limitado por el tiempo
+
+
+Las acciones son los paquetes de cualquier tipo de animación, tales como curvas de función, las expresiones, 
+
+las limitaciones y los parámetros vinculados. Después de crear una acción, se carga como un clip en el mezclador 
+
+de animación, donde puede modificar la animación de una manera no lineal y no destructiva.
+
+
+Este paquete en el mezclador de animación le permite trabajar en un nivel superior de la animación que no está limitada 
+
+por el tiempo: se puede mover una acción en torno a cualquier parte a tiempo, apretar o estirar su longitud como quieras, 
+
+aplique una acción después de otras en secuencias, y mezclar dos o más acciones juntos para crear una nueva animación.
+
+
+Puede crear una biblioteca completa de acciones, como ciclos de pie o saltos, y utilizarlos como muchas veces como quieras 
+
+en una escena, o compartirlos entre cualquier número de modelos
+
+
+También puede crear acciones de compuestos/compounds, que son "contenedores" para múltiples acciones, incluyendo 
+
+la animación de diferentes fuentes/sources, (curvas de funciones, expresiones, restricciones y parámetros vinculados). 
+
+Trabajar con datos animaciones complejas convierte en una tarea más simple que tratar con múltiples fcurves.
+
+
+Dado que los datos de animación paquete/package, de acciones en una sola unidad utilizable, que hace que sea fácil 
+
+para copiar la animación de un modelo a otro, incluso si el modelo no comparte las mismas convenciones jerarquía, 
+
+escala, o de denominación. Cuando hay diferencias entre los modelos, se abre una plantilla para ayudar a trazar 
+
+los elementos del modelo correspondientes.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Pasting Animation from Action Sources:
+______________________________________
+
+
+
+
+	Otra forma de aplicar las fuentes de acción consiste en copiar la animación de una sola fuente y pegar en otra. 
+
+	Esto le permite tomar una porción de la animación de una fuente y reasignar a cualquier gama de frames en otra 
+
+	fuente/source, lo que le permite escalar y compensar la animación como de pegarlo.
+
+
+	Al pegar las fuentes/sources, de acción/action, puede especificar qué frames, de la animación que desea aplicar 
+
+	a otra fuente/source. Además, puede especificar el rango de fotogramas en los que desea pegar la acción/action, 
+
+	lo que le permite escalar o compensar la animación como de pegarlo. En esencia, le permite captar una serie 
+
+	de animación de una sola fuente/source, y asignarla a una gama de frames, en otra fuente/source.
+
+	
+	Por ejemplo, digamos que usted tiene una fuente/source, con las keyframes. en frames, 1 y 100. Si ha copiado 
+
+	frames, 1 a 100 y los pegó en el rango objetivo de frames, 25 y 75, entonces los keyframes, del frames, 1 sería 
+
+	en el fotograma 25 en el target Fuente/source, y el keyframe, de frame, 100 sería en el fotograma 75, 
+
+	comprimiendo así la animación.
+
+
+
+	To paste an action source:
+	__________________________
+
+
+	
+	1_En el explorador/explorer, seleccione la fuente/source, de la que va a copiar. Esta fuente se debe crear 
+
+	a partir de curvas de función
+
+
+	2_Pulse shift, para agregar el modelo/model, de destino a la selección. Este es el modelo/model, al que desea 
+
+	pegar la fuente/source.
+
+
+	3_así, vamos ha "Animation/Actions/Apply"
+
+
+
+	To specify what is being copied:
+	________________________________
+
+
+	La Fuente/source, muestra la fuente/source, que seleccionó. Esta es la fuente de la acción que se pega. 
+
+	El número de Fcurves muestra cuántos están contenidos en la fuente, que es únicamente con fines informativos.
+
+
+	Especifique la parte de la animación que desea pegar estableciendo los frames, de inicio y fin. El valor 
+
+	predeterminado es tomar el rango de la primera a la última keyframe, en la fuente/source. Tenga en cuenta 
+
+	que se trata de frames, de la fuente/source, no necesariamente lo que se muestran en el mixer, porque 
+
+	cualquier clip instanciado de la fuente/source, podría haber alterado su timming
+
+
+
+	To set up the target for pasting
+	________________________________
+
+
+	_El objetivo/target, es el modelo/model al que usted está pegando la fuente/source.
+
+
+	_Especifique el rango resultante mediante el establecimiento de los frames,s de "New Start", y 
+
+	"Nueva End". Esto le permite desfasar y escalar la animación como de pegarlo.
+
+
+	_Seleccione Ripple ondular cualquier animación existente en la fuente/source, que estaba en el rango 
+
+	resultante ha especificado aquí. Esto maneja la animación existente más adelante en el tiempo.
+
+	

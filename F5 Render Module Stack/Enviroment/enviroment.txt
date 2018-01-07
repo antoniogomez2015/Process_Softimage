@@ -1,0 +1,19 @@
+
+enviroment
+
+	Sistemas de skydome (entornos ó escenas dentro de espheres):
+
+		1_para utilizar sistemas de iluminación de tipo "infinite Light", para que éstos logren proyectar sombras sobre el "motivo",
+		es preciso desactivar las opciones "Explorer/Mesh/Visibility/Rendering/Shadow/y desactivamos "Caster", "Receiver"", de esta manera 
+		los rayos de luz que bienen desde el infinito "infinite light", logren pasar a través del "skydome", sin que este ofresca resistencia 
+		u obstrucción a los rayos, para que éstos logren llegar hasta el motivo para que así, puedan proyectar sombras
+
+
+		2_cuando utilizamos un "skydrome" ó "geosphere", para hacer un "enviroment", y deseamos que ésta imágen contenido en el sistema de skydome
+		no emite luz y contamine los elementos que conforman el motivo por medio de la GI, Final Gather ó Global Illumination, para esto, vamos al 
+		material que contiene el skydome por lo general el material es de tipo "Constan", en él, vamos a las opciones de:
+ 		"Constan/Indirect Illumination/"Global Illumination/ Caustic / Final Gather"/Radiance", allí, bajamos su intensidad yendo de "1", a "0",
+		así, lograremos que baje la cantidad de luz indirecta emitidad por el final gather, aunque este proceso hará más opaca la escena
+
+			2.1_para recuperar luminancia en la escena podemos seleccionar el skydome e ir ha "Render Tree/Material/Constant/image/RADSKY085",
+			y allí, bajar la "Display Gamma", y "Exposure (F-stop)", para así, aumentar la luminosidad de la escena perdida en el paso anterior 

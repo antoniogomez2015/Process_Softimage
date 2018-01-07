@@ -1,0 +1,60 @@
+
+
+
+DETALLES
+
+
+podemos generar partítulas a través de la colisión de varios objecto para así, las partículas sean
+
+emitidas a través, de la colisión de los objectos implicados, de esta menera podemos controlar
+
+el flujo y la emisión de las partículas de forma interactiva y dinámica
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+NOTA:	ya tenemos que tener un sistema "Point Cloud", cargado en el ICETree, con sus respetivos 
+
+	elementos como el emisor y la/s superficies colisionadoras, otros
+
+
+
+	_luego de tener ya un sistema de partículas a través de una superficie, ó messh/motive,
+
+	selección cluster, ó weight map, debemos crear también los elemento/s, que haran de 
+
+	colisionadores
+
+
+	_luego seleccionamos mesh/motive, que hará de colisionador en la escena ó en el explorer,
+
+	procedemos a cargarlo en el ICETree, hacendo "Shift+F3", ó arrastrándolo desde el explorer, 
+	este se cargará en una etiqueda "get Data"
+
+
+	_luego vamos ha "ICETree/Emission Control - Particles/Filter by Object intersection", 
+
+	y lo creamos
+
+
+	_ahora vamos ha relacionar los nodos "get Data/Out Name", con el nodo 
+
+	"Filter by Object intersection/Filter Geom1" 
+
+
+	_ahora vamos ha relacionar los nodos "Filter by Object intersection/Execution on Emit",
+
+	con el nodo "Emit from Geometry/Execute on Emit1"
+
+
+
+
+
+
+
+
+

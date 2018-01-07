@@ -1,0 +1,235 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de hacer animaciones a través, de la deformación de geometrías/meshes, de esta manera
+
+podremos animar las deformaciones realizadas sobre la morfologías de las meshes, respectivas en el tiempo,
+
+e incluso realizar sources, de animación, keys, otros
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+_Selecting Target Shapes to Create Shape Keys:
+
+
+
+
+NOTA:	esta es la opción más similar al proceso de "blend shape", de maya, y de otros programas que toman 
+
+	este proceso como un estandar como ZBrush, por ejemplo entre otros
+
+
+
+
+	_Para crear la animación de forma/shape, seleccionando formas ó geometrías de destino, primero debe 
+
+	crear una serie de objetos similares deformados de diferentes maneras. Los objetos deben tener el mismo 
+
+	tipo de geometría (malla poligonal o superficie NURBS) y la misma topología (número y disposición de 
+
+	puntos), como el objeto de base de que son la forma-animador. La forma más sencilla de hacerlo es 
+
+	duplicar el objeto base que desea darle forma-animado, y luego deformar cada una de las copias de una 
+
+	manera distinta que corresponderá a una forma de destino.
+
+
+	_A continuación, seleccione el objeto base, o clúster en ese objeto, y picker, ó (elija) los objetos 
+
+	deformados (formas meshes, objetivo) en un orden específico para crear keys, de forma/shape. Si 
+
+	selecciona un grupo, sólo la parte del objeto base que corresponde a este grupo crea la key, de la 
+
+	forma/shape, el resto del objeto se ignora.
+
+
+	_Selección de formas de destino establece una relación entre el objeto de base o clúster y las keys, de 
+
+	forma/shape, lo que permite ajustar con precisión las formas de destino y tienen esos ajustes aparecerá 
+
+	en el objeto de base o clúster. Por ejemplo, si su cliente piensa que la nariz es demasiado tiempo en una 
+
+	de las formas de destino, todo lo que tienes que hacer es cambiar la nariz para ello y la nariz en el 
+
+	objeto de base se actualiza. Sin embargo, usted puede optar por romper la relación entre el objeto 
+
+	/ cluster de base y sus formas de destino
+
+	
+	_Cuando haya terminado de seleccionar las formas de destino para crear keys de forma/shape, usted puede 
+
+	tener las keys de forma/shape, instanciados automáticamente en el mezclador de animación para crear clips, 
+
+	de forma/shape, o añadirlos a la mesa de mezclas más tarde
+
+
+	_Si no desea puede utilizar la mesa de mezclas (Mixer panel), se puede aplicar cada key, de forma/shape, 
+
+	al objeto base en diferentes frames
+
+
+
+
+---------------------------------------------------------------------------------------------------------------
+
+
+Workflow:
+_________
+
+
+
+Estas imágenes muestran los pasos básicos a seguir para la selección de formas de destino para crear keys, de 
+
+forma/shape.
+
+
+
+	_Crear el objeto base en una actitud neutral. Este es el objeto para ser deformado con las formas/shape, 
+
+	de destino.
+
+
+	_Duplicar este objeto tantas veces como el número de la meta de formas/shapes, que desea establecer. 
+
+	Moverlos fuera de la toma de la cámara.
+
+
+	_Deformar los duplicados utilizando cualquier método de deformación (incluso se puede animar las 
+
+	deformaciones). En este ejemplo, la boca se deforma en diferentes formas en cada uno de los de los
+
+	duplicados para representar diferentes fonemas para la voz.
+
+
+	_Seleccione el "Stack Shape Modeling", de la lista Modo de construcción en el menú principal en la parte 
+
+	superior de la interfaz.
+
+
+	NOTA: Si desea crear clips de forma/shape, automática en el mezclador cuando haya terminado de seleccionar 
+
+	las formas de destino, elija Deform/Shape/Preferences, a continuación, seleccione la opción keys, de 
+
+	forma/shape, seleccionada "Apply Selected Shape Keys" Preferencias de forma/shape.
+
+
+	_Seleccione el objeto de base o clúster que desea dar forma-animado. Si selecciona un grupo, se utilizan 
+
+	sólo las partes del objeto que corresponde a la agrupación seleccionada para crear las keys, formas/shapes.
+
+
+	_Elija "Deform/Shape/", en la barra de herramientas y elija la opción de "Select Shape Key"y haga "Picker",
+
+	ó selecciones cada uno de los objetos deformados en el orden que desea que las formas de destino para ser 
+
+	animados en el objeto base.
+
+
+
+
+Resumen:
+________
+
+
+	_en el modo "Stack Shape Medeling", seleccionamos la mesh, shape, base, y con esta seleccionada vamos ha
+
+	"Animate/Deform/Shape/", y seleccionamos la opción de "Select Shape Key", así, nos aparecerá un "Picker",
+
+	con el cuál, debemos hacer "mouse left click",, sobre cada una de las instancias de la mesh, motive, con
+
+	un modo ó grado de deformación
+
+
+	NOTE: debemos hacer mouse left click, sobre cada una de las mesh, motive, de forma consecutiva
+
+
+	_y al finalizar de seleccionar cada una de las instancias de las mesh, motives, debemos hacer 
+
+	"Mouse right click", para finalizar la acción respectiva
+
+
+	_así, se agregará en el "Explorer/Model/Mixer/Sources/Shapes/", un source, respectivo para cada una
+
+	de las instancias "Key Shapes", creadas
+
+
+	NOTE: es posible que al finalizar este proceso, la mesh, base quede con algún source, aplicado en el mixer,
+
+	por lo general será el último creado, para eliminar esto, debemor seleccionar la mesh, base e ir al miexer,
+
+	panel, shortcut "Alt + 0"
+
+
+	_de esta manera tendremos ahora disponibles los "Sources", para futuras animaciones en la mesh, base
+
+	u en otra meshes, relacionadas
+
+
+
+
+Relacionamiento:
+________________
+
+
+
+	_ahora para desvincular a las instancias de las meshes, que sirvieron de proxy, para generar las 
+
+	"Keys Shapes", de los "Sources", creados para así, poder eliminar estas meshes, instancias debemos
+
+	ir ha "Explorer", y buscamos a la mesh, "Base", u original de la cuál, se copiaron ó crearon las
+
+	otras instancias de que sirvieron de proxys
+
+
+	_yendo ha "Explorer/Model/Base/Polygon Mesh/Clusters", y allí encontraremos un cluster, principal
+
+	creado, este es "Shape", dentro del cuál encontraremos las relacionaes de todas las meshes, tanto
+
+	la original como las instancias ej:
+
+
+		_Base1
+
+		_blend_shape_buttom_ShapeKey 
+
+		_blend_shape_caps_ShapeKey
+
+		_blend_shape_eyes_ShapeKey  
+
+		_blend_shape_lips_ShapeKey 
+
+		_blend_shape_nose_ShapeKey 
+
+
+	_así, dentro de cada uno de los elementos del nuevo cluster "Shape", encontraremos al respectivo
+
+	elemento relacional excepto el el elemento "Base1", ej:
+
+		
+		_blend_shape_buttom_ShapeKey
+
+			_Copy Shape
+
+
+
+	_de esta manera, podremos seleccionar cada uno de estos elemento dentro del cluster "Shape", que contenga
+
+	un elemento "Copy Shape", como el del ejemplo anterior y aplicarle "Edit/Freeze", así, el relacionamiento
+
+	a las mesh, proxi, original será eliminado
+
+
+	_así, luego podremos borrar ó eliminar la meshes, proxis, ya que no nos son necesarios para otros procesos,
+
+	sin que este signifique que se tengan que borrar ó eliminar los sources, generados a través, de éstos
+
+	permitiendo así, poder reasignar éstos sources, generados a la mesh, original ó "base"
+

@@ -1,0 +1,46 @@
+
+
+DETALLES
+
+
+tenemos la posibilidad de convertir valores de las meshes, de la posición de sus sub-elementos, en 
+
+valores integrales o unicados 3D vector, de esta manera tendremos un control estandar con determinados 
+
+flujos de trabajo estándares
+
+
+	Tool/Conversion/Scalar to 3D Vector
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Scalar to 3D Vector
+
+
+	_este nodo nos permite extraer los valores de posición de los sub-elementos, vertex, de una 
+
+	geometría para un posterior control ó intervención en las mismas a través, de otros nodos
+
+
+
+		-Scalar to 3D Vector-
+
+
+			_In:
+
+				_"3D Vector to Scalar/xyz", ha "xyz/Scalar to 3D Vector"
+
+
+			_Out:
+
+				_"xyz/Scalar to 3D Vector" ha "Set Point Position", u otros
+
+
+	
+
+
+

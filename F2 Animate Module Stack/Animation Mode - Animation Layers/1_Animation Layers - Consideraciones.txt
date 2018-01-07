@@ -1,0 +1,47 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de organizar las animaciones a un nivel aún mayor que las posibilidades solas de "Mixer",
+
+con la modalidad de Animation Layer, podemos ampliar mucho más las posibilidades de animación, otros 
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+NOTA	podemos crear una capa base de animación en la cuál, podemos tener la esctructura base de una animación sea
+
+	esta a través, de una FCurva, de animación, Clip, Expresions, Vinculaciones, Constraints, otros
+
+
+	_y lego craar capas adicionales sobre esta capa base para así, poder hacer ajustes los cuales no serán
+
+	destructivos ya que éstos no modifican directamente la capa base original de la animación
+
+
+	_pero más allá, podremo utilizar de forma complementaria del panel de Animation Mixer, para ajustar los weights,
+
+	ó pesos de las capas creadas entre otras opciones para ajustar aún más las capacidades disponibles de animación
+
+
+---------------------------------------------------------------------------------------------------------------
+
+
+	_Debido a que las capas de animación utilizan el "Mixer", de animación, lo mejor es crear Models, "los models,
+
+	permiten crear (character), yendo ha "Model/Model/New Model", antes de empezar a animar con el "Mixer", se crean
+ 
+	secuencias de animación de "Mixeres", uno por "Model", por lo que si el objeto que desea animar no está en un
+ 
+	"Model", sus capas de animación permanecen en el "Mixer", de animación creada a nivel de la escena (en el nodo 
+
+	mixer del scene_root), que puede ser restrictivo
+
+
+

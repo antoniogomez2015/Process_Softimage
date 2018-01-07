@@ -1,0 +1,81 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de hacer animación "NoLinear", ó animación no lineal, a través, del modo de animación
+
+avanzado de "animación mixer", el cuál, permite diferentes tipos de métodos y sistemas de animación:
+
+
+el modo de animación mixer, permite los siguientes tipos de datos
+
+
+	_FCurve Animation
+
+	_Expression Animation
+
+	_Constraints Animation
+
+	_Shape Animation
+
+	_Audio Animation
+
+	_Animation Layers
+
+	_Cached Animation
+
+	_Simulation Sources
+
+	_Image Clips
+
+
+
+Animación no lineal es la animación que no está limitada por el tiempo. Se le permite trabajar en la animación 
+
+a un alto nivel de control en cualquier punto de tiempo en la escena. Se le da un control de alto nivel sobre 
+
+la animación porque puede en cada capa mezclar secuencias de una manera no lineal y no destructiva. Además, 
+
+se puede reutilizar y afinar muchas fuentes de datos.
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Ghosting Clips:
+_______________
+
+
+
+	_Cuando un objeto es manejado por dos o más clips, a la vez, (los clips se solapan en el tiempo), puede optar 
+
+	por ver la contribución de la animación de cada clip, en el objeto como un fantasma en la ventana gráfica. Debido 
+
+	a que se puede ver la animación original de cada clip y los resultados en el modelo, el efecto fantasma puede 
+
+	ayudarle a crear transiciones suaves y ponderación entre los clips, así, como establecer las compensaciones 
+
+	de poses.
+
+
+
+	_primero varios clips, almenos dos de ellos deben estar solapados en el mixer panel, para lograr el efecto ghosh,
+
+
+	_luego debemos activar las opciones de ghosh, en cada track, a traves´, de su ícono "g"
+
+
+	_luego debemos también, activar las opciones ghosh, del track, en sus propiedades para esto hacemos 
+
+	"mouse right click/", y seleccionamos la opción de "Track properties/Controls", y activamos la opción de "Ghosh"
+
+
+	_también, debemos activar las opciones Ghosh, en el viewport, para esto vamos ha "viewport/option", y seleccionamos
+
+	la opción de "Mixer Ghosh"
+
+
+--------------------------------------------------------------------------------------------------------------

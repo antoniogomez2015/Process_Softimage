@@ -1,0 +1,29 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de cambiar una trayectoria existente por otra trayectoria/path ó spline, de animación
+
+para así, generar animaciones totalmente diferentes unas de otras de forma fráctica e interactiva
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	_primero debemos seleccionar un elemento el cuál, posea animación con path/trayectoria, de animación
+
+
+	_luego seleccionamos el path/trayectoria, y con este seleccionado vamos ha "Edit/Operator/Sustitute Input", 
+
+	así, nos aparecerá un "Picker", con el cuál, tendremos que seleccionar la nueva path/trayectoria, 
+
+	de animación
+
+
+	así, podremos ver que el elemento mesh/motive, ahora es animado a través, de la nueva spline, path/
+
+	trayectoria
+

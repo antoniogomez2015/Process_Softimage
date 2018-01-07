@@ -1,0 +1,468 @@
+
+
+
+DETALLES
+
+
+Las acciones son paquetes de animación de bajo nivel, tales como curvas de función, las expresiones, las limitaciones 
+
+y los parámetros vinculados. Mediante la creación de un paquete que representa la animación, se puede trabajar en un nivel 
+
+superior de la animación que no está limitado por el tiempo
+
+
+Las acciones son los paquetes de cualquier tipo de animación, tales como curvas de función, las expresiones, 
+
+las limitaciones y los parámetros vinculados. Después de crear una acción, se carga como un clip en el mezclador 
+
+de animación, donde puede modificar la animación de una manera no lineal y no destructiva.
+
+
+Este paquete en el mezclador de animación le permite trabajar en un nivel superior de la animación que no está limitada 
+
+por el tiempo: se puede mover una acción en torno a cualquier parte a tiempo, apretar o estirar su longitud como quieras, 
+
+aplique una acción después de otras en secuencias, y mezclar dos o más acciones juntos para crear una nueva animación.
+
+
+Puede crear una biblioteca completa de acciones, como ciclos de pie o saltos, y utilizarlos como muchas veces como quieras 
+
+en una escena, o compartirlos entre cualquier número de modelos
+
+
+También puede crear acciones de compuestos/compounds, que son "contenedores" para múltiples acciones, incluyendo 
+
+la animación de diferentes fuentes/sources, (curvas de funciones, expresiones, restricciones y parámetros vinculados). 
+
+Trabajar con datos animaciones complejas convierte en una tarea más simple que tratar con múltiples fcurves.
+
+
+Dado que los datos de animación paquete/package, de acciones en una sola unidad utilizable, que hace que sea fácil 
+
+para copiar la animación de un modelo a otro, incluso si el modelo no comparte las mismas convenciones jerarquía, 
+
+escala, o de denominación. Cuando hay diferencias entre los modelos, se abre una plantilla para ayudar a trazar 
+
+los elementos del modelo correspondientes.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Modifying Action Clips with Clip Effects:
+_________________________________________
+
+
+
+
+	Cuando un clip de acción contiene datos de animación de una curva de función, puede modificar sus datos 
+
+	en la expresión del efecto clip. Al hacer esto, se crea un efecto de clip que le permite utilizar un número 
+
+	de variables y funciones para modificar los datos "en la parte superior" de la animación fuente/source,
+
+	de acción original
+
+
+	Animación procedente de una biblioteca de acciones almacenadas a menudo necesita ser modificado para adaptarse 
+
+	a una meta o entorno particular. Por ejemplo, puede tener un ciclo de paseo disponibles, pero el personaje ahora 
+
+	debe caminar sobre un obstáculo, lo que tiene que animar la pierna que se mueve sobre el obstáculo.
+
+
+	La animación que se creó o capturado originalmente para un carácter y que ahora debe ser aplicado a un carácter 
+
+	diferente que tiene diferentes proporciones.
+
+
+	Animación con numerosos keyframes, como la animación de captura de movimiento, debe ser ajustado, pero usted 
+
+	no quiere tocar la animación original, ya que puede ser difícil de editar.
+
+
+	Efectos de clip permiten cambiar la animación en un clip individual sin afectar la fuente/source, de la acción 
+
+	(lo que afecta a todos los clips instanciados de esa fuente/source) o tener que volver a crear el origen 
+
+	de la acción. Lo hacen mediante la adición de los valores que sólo eso clip, como el ruido, las compensaciones, 
+
+	y otras operaciones de nivel superior.
+
+
+	Esto significa que puede ajustar la animación "canales" individuales para cambiar la naturaleza del movimiento, 
+
+	utilizando la fuente original como base. Por ejemplo, puede agregar animación a las curvas de captura 
+
+	de movimiento sin tener que editarlos.
+
+
+NOTE:	Efectos de clip puede ser scripted, que le permite construir comportamientos muy complejos.
+
+
+	How Clip Effects Are Represented:
+	_________________________________
+
+
+	Cada efecto clip es un objeto independiente, asociados con su clip de acción o un clip compuesto. 
+
+	Se representa en el mezclador animación mixer, como una barra amarilla encima del propio clip de acción. 
+
+	Debido a que el efecto es una unidad independiente, puede activar o desactivar ésta, lo que le permite 
+
+	alternar entre la animación original del clip y la animación resultante del efecto fácilmente. Esto hace 
+
+	que sea fácil de probar y llevar a cabo cambios en su animación.
+
+
+
+	Levels of Clip Effects:
+	_______________________
+
+
+	Puede aplicar efectos de clip a cada elemento (parámetro) dentro de un clip, en sí mismo 
+
+	(todos los parámetros) todo clip o un clip compuesto para un efecto global sobre las múltiples clips dentro 
+
+	del complejo.
+
+
+	Si bien no se puede aplicar más de un efecto clip en el mismo clip, puede hacer que los "resultados" 
+
+	de múltiples efectos de clip mediante la creación de un clip compuesto y aplicar un efecto a la misma. 
+
+	Con clips compuestos, puede tener efectos complejos de anidación en capas.
+
+
+	Por ejemplo, usted tiene efectos clips en clips individuales, a continuación, colocar todos estos clips 
+
+	en un clip compuesto y aplicar un efecto de clip para el clip compuesto (por ejemplo, para agregar ruido,
+
+	deformaciones o valores aleatorios). Para un ejemplo simple de esto, vea Ejemplo: Crear un efecto 
+
+	videoclip anidada.
+
+
+	Después de crear un efecto de clip, los resultados se calculan en el mezclador de animación. Si se aplican 
+
+	varios efectos a un clip, que se calculan en la secuencia de la primera se aplica a durar.
+
+
+
+	Creating a Clip Effect:
+	_______________________
+
+
+	La forma básica de la utilización de efectos de clip es asociar una expresión efecto clip con cada uno de los 
+
+	elementos (parámetros) en el clip de acción. En otras palabras, se crea un efecto clip que tiene tantas 
+
+	entradas como el clip de acción tiene artículos
+
+
+	Clip de efecto de expresión de cada elemento hace referencia a las fuentes asociadas dentro del clip de acción 
+
+	y luego los modifica o anula éstps, en una variedad de maneras. Por ejemplo, si se ha añadido este + 3 como una 
+
+	expresión clip de efecto de la posición del pie X, el clip de acción proporciona un valor en el mier. 
+
+	En primer lugar, mira a la fuente/source de la animación para obtener un resultado y luego agrega el valor 3 
+
+	a la misma.
+
+
+	Las expresiones de efecto puede estar en blanco (por defecto), en cuyo caso se toma la animación "tal cual" 
+
+	de la acción. También puede crear funciones aritméticas utilizando una serie de variables de efectos especiales 
+
+	(véase Creación de variables de efecto).
+
+
+
+	To create a clip effect:
+	________________________
+
+
+	1_vamos al panel mixer editor
+
+
+	2_hacemos "mouse right click", sobre un source/clip, cargado previamente y, elegimos la opción 
+
+	de "Clip Priperties/Clip Item Information" 
+
+
+	3_Escriba una fórmula en la columna "Clip Effect". Puede utilizar las variables y los operadores matemáticos 
+
+	como Operadores y funciones enumeradas en Variables y compatibles.
+
+
+	Puede copiar y pegar fórmulas en la columna de la clip effect, utilizando el estándar Cortar, Copiar y Pegar 
+
+	atajos: Ctrl + X, Ctrl + C y Ctrl + V, respectivamente.
+
+
+	Seleccione los elementos haciendo clic en su Artículo # (Shift + clic o Ctrl + clic para seleccionar varias 
+
+	artículos, o haga clic en la columna de la videoclip para seleccionar todos los elementos), a continuación, 
+
+	haga clic en el botón Borrar Fx para borrar la expresión escrita de Clip Efecto los elementos seleccionados 
+
+	columna.
+
+
+	4_También, puede definir sus propias variables personalizadas que se hace referencia en la expresión 
+
+	(véase Creación de variables de efecto).
+
+
+	Se puede hacer referencia a esa variable en cualquiera de las expresiones de efecto al referirse a él por
+
+	su nombre. Por ejemplo, si la variable efecto se llama "Banana", entonces usted puede referirse a ella 
+
+	con este + banana, en una expresión. Cualquiera de las variables se pueden combinar en el mismo efecto clip 
+
+	de expresión; por ejemplo: "this+45*param+(Banana/weight)+gtime"
+
+
+	TIP: Si crea una variable personalizada utilizando un parámetro personalizado en un clip, el parámetro 
+
+	personalizado aparece en la página clip effect, en lugar de en un conjunto de parámetros personalizados,
+
+	lo que es fácil para que usted utilice. Consulte Creación de variables de efectos con parámetros 
+
+	personalizados para obtener más información.
+
+
+
+	Explorer Effects
+	________________
+
+
+	_al crear effects, de clip, se crean grupos ordenados en la estructura de archivos en el siguiente orden
+
+
+	"Explorer/Model/Mixer/Tracks/Animation/Mixer_Name_Track/Clip list/Source_Name/Intanced Action/ClipEffects/... "
+
+
+
+	 Creating a Nested Clip Effect
+	______________________________
+
+
+	podemos agregar nuevas parámetros anidados en un clip/source, para esto,
+
+
+	_primero seleccionamos un clip, en el mixer panel
+
+	
+	_luego vamos ha "animation/Create/Parameter/", y creación un "New Custom Parameter Set", así, podremos
+
+	asígnarle un nombre el nuevo parámetro creado dentro del source
+
+
+	_luego vamos ha "explorer/Model/Mixer/Mixer/Tracks/Animation/Clip list/SourceName/Custom/", hacemos
+
+	"mouse right click/", y escogemos la opción de "Set Scripted Operator", así se abrirá el panel de "Scrips",
+
+	así, en el panel scrips, podremos agregar los scrips, deseados para afectar a las demás propiedades
+
+	del source, y clips, creados
+
+	y en explorer se abregará "explorer/Model/Mixer/Mixer/Tracks/Animation/Clip list/SourceName/Custom/
+
+	propertieName/Scripted Op"
+
+
+	_luego seleccionamos el clip en el mixer panel y hacemos "mouse right click/", y seleccionamos la opciones
+
+	de "Clip Properties", así, veremos al final la opciones de propiedad que hemos agregado "properieName"
+
+
+
+	Variables:
+	__________
+
+
+	_this: 
+
+		_Valor del parámetro original del artículo. Esto le permite crear desfases del valor original en lugar 
+
+		de utilizar un nuevo valor por completo.
+
+
+	_cid:
+
+		_El número de identificación de ciclo/loops. Si usted ha completado un ciclo o rebotado un clip 
+
+		de la acción/action, en el mezclador de animación mixer, el clip original tiene un cid de 0, 
+
+		el primer ciclo tiene una cid de 1, y así, sucesivamente. Esto le permite incrementar y continua 
+
+		o disminuye un valor basado en el ciclo; por ejemplo, de modo que un coche se mueve hacia adelante 
+
+		con cada rotación de la rueda. Consulte Uso de ciclos en Efectos de clip.
+
+
+	_time:
+
+		_el tiempo local actual de la fuente/source, del clip, en cuestión de segundos. Si ciclo o rebotar 
+
+		el clip, los valores en el primer ciclo se repiten en el segundo, y así, sucesivamente.
+
+
+	_frame:
+
+		_El frme, local actual de la fuente/source, del clip. Una vez más, si usted ciclo/loops, o rebotar 
+
+		el clip, se repiten los valores. Tenga en cuenta que esto es siempre un número entero, incluso 
+
+		si el clip ha sido reducido y offset.
+
+
+	_gtime:
+
+		_El tiempo global actual de la escena
+
+
+	_gframe:
+
+		_El frame, global actual de la escena.
+
+
+	_weight:
+
+		_El valor de peso/weight, actual combinación del clip.
+
+
+	_Custom parameter name:
+
+
+		_Si ha creado un parámetro personalizado en el clip, puede acceder a su valor mediante el uso 
+
+		de su nombre en la expresión efecto, para cualquier artículo. Consulte Creación de variables 
+
+		de efectos con parámetros personalizados.
+
+
+	_param:
+
+		_Variable de efecto del tema en tiempo de evaluación. Consulte Creación de variables de efectos.
+
+
+	_iwarp:
+
+		_Efecto variable del artículo como indeformable para utilizar el valor original. 
+
+		Consulte Uso Deformaciones en Efectos de clip.
+
+	
+	_warp:
+
+		_Si ha creado un parámetro personalizado en el clip llamado "warp", el uso de este nombre 
+
+		en la expresión efecto, de cualquier elemento hace que el elemento de origen que deben tomarse 
+
+		a la vez, dictada por el parámetro de deformación. Consulte Uso Deformaciones en Efectos de clip.
+
+
+----------------------------------------------------------------------------------------------------------------
+
+
+Example:
+________
+
+
+	_5
+
+		_El valor del parámetro correspondiente es siempre 5, no importa lo que la animación está contenida 
+
+		en la acción.
+
+
+	_this + 5
+
+
+		_5 se añade al valor del parámetro de la acción en el frame, actual.
+
+
+	_(cid * 10) + this
+
+
+		_El valor del parámetro de la acción se utiliza para la duración del clip original, a continuación, 
+
+		se añade 10 para el primer ciclo/loop, se añade 20 para el segundo ciclo, y así sucesivamente.
+
+	
+
+----------------------------------------------------------------------------------------------------------------
+
+
+Supported Operators and Functions:
+__________________________________
+
+
+
+	Las expresiones en efectos de clip no utilizan exactamente la misma sintaxis que las expresiones del editor 
+
+	de expresiones. En expresiones de efectos de clip, puede utilizar cualquier operador o función con el apoyo 
+
+	de VBScript. Las siguientes tablas muestran los operadores y funciones más útiles.
+
+
+	+	Addition
+	
+	-	Subtraction
+
+	*	Multiplication
+
+	/	Division
+
+	^	Exponentiation
+
+	\	Integer division
+
+	Mod	Remainder
+
+	And	Logical conjunction
+
+	Imp	Logical implication
+
+	Not	Logical negation
+
+	Or	Logical disjunction
+
+	Xor	Logical exclusion
+
+
+
+	Functions:
+	__________
+
+	
+	Abs()	Absolute value
+
+	Cos()	Cosine
+
+	Fix(), Int()	Integer portion of a number	
+
+	Log()	Natural logarithm
+
+	Rnd()	Random number
+
+	Sgn()	The sign of a number: –1, 0, or 1
+
+	Sin()	Sine
+
+	Sqr()	Square root
+
+	Tan()	Tangent
+
+
+	Las expresiones de efecto pinza utilizan VBScript como un motor de la evaluación básica de expresiones 
+
+	no triviales, y en los casos simples, un motor de analizador y evaluación personalizada privada se utiliza.
+
+
+	Para obtener más información, consulte la documentación del lenguaje de 
+
+	Microsoft VBScript en http://msdn.microsoft.com/scripting/vbscript/doc/vbstoc.htm

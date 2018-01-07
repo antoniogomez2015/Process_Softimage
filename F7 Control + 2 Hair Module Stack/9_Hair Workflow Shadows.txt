@@ -1,0 +1,41 @@
+
+
+
+curso: Digital Tutors Intro to XSI Hair 2007
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+Hair Shadows:
+_____________
+
+
+
+	_primero debemos agregar iluminación en la escena a través, de luces, sean estas de point,
+
+	Infinite, Spots, otros
+
+
+	_luego debemos activar las opcioens de shadows, en las luces que deseamos que interactúen
+
+	con el sistema de hair system, yendo a las opciones de las luces en ej: 
+
+	"Point/Light/General/Shadows/Enable", para que las sombras sean visibles fácilmente es 
+
+	aconsejable colocar el valor "Umbral", en un valor aproximado de "0.20"
+
+
+	_luego también, activar las opciones de shadow map, de las luces para esto, vamos ha ej:
+
+	"Point/Light/Shadow Map/Use Shadow Map", y activamos esta opción
+
+
+	_otra alternativa contemplable es activar las opciones de "Volumetric Shadow Maps", para esto,
+
+	vamos ha "Point/Light/Shadow Map/Volumetric Shadow Maps", y activamos esta opción
+
+

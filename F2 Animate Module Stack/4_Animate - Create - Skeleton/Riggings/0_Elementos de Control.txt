@@ -1,0 +1,504 @@
+
+
+DETALLES
+
+
+a contnuación procederemos a realizar el proceso estandar de creación de configuración del proceso de rigging, de
+ 
+un character en Softimage, con todos sus controles
+
+
+a través, de un estudio estructurado y totalmente escalables por medio de módulos
+
+
+Tutorial:  Curso: D:\Nuevos Respaldos\DT_Softimage Bundle\DT_Softimage_Bundle_DVD1-6\Character Rigging in XSI
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+--------------------------------------------------------------------------------------------------------------
+
+
+
+Funciones Ütiles:
+_________________
+
+
+
+	------------------------------------------------------------------------------------------------------
+
+	
+	_Match All Transforms:
+
+		_esta opción nos permite hacer que un objeto tome la posición de otro como referencia de
+
+		ubicación, esto es especialmente útil para ubicar elementos en el proceso del rigging
+
+
+		_para esto, seleccionamos el objeto que deseamos que tome la nueva posición y con éste
+
+		seleccionado vamos ha "Transform/", y seleccionamos la opción de "Match All Transforms"
+
+
+
+	------------------------------------------------------------------------------------------------------
+
+
+	_Move Center to Bounding Box:
+
+		_esta opción nos permite cambiar la posición de el pivote de una spline, u otro elemento 
+
+		determinado y cambiarlo al centro de la masa del objeto
+
+
+		_para esto, seleccionamos el objeto deseado y con este seleccionado vamos ha "Transform/",
+
+		y seleccionamos la opción de "Move Center to Bounding Box", así, el pivit, pasará el centro
+
+		de la masa del objeto
+
+
+	------------------------------------------------------------------------------------------------------
+
+
+	_Pivot:
+
+
+		_para mover de forma personaliza primero debemos ir ha "Transform/", y chequear la opción de
+
+		"Modify Object Pivot"
+
+
+		_luego podremos seleccionar el objeto deseado, y hacer "Insert", (Versión Nav Maya), y mover
+
+		pibote hasta una nueva ubicación deseada
+		
+
+
+	------------------------------------------------------------------------------------------------------
+
+
+	_Free Transform:
+
+
+		_tenemos la posibilidad de limpiar ó liberar propiedades para procesos específicos con el rigging
+
+	
+		_para esto, primero es recomendable hacer a través, del pane, derecho "KP/L", ó por medio del
+
+		panel altenativo en "View/Animation/Keying Panel", ya que estas opciones si muestras los parámetros
+
+		actualizados y avanzados para este proceso
+
+
+		_para esto, seleccionamos el objeto a limpiar y, con este seleccionamos hacemos "Alt + Enter",
+
+		y vamos a las opciones de "Local Transform/Neutral Pose/Control/", y hacemos "Use Current Pose",
+
+		así, las propiedades de transformación del objeto todas pasarán a "Cero/0", mientras que el objeto
+
+		mantiene su posición actual sin modificación
+
+
+		_para esto, también, disponemos de opciones yendo ha "Transform/", y seleccionando entre ésteas:
+
+
+			_Freeze All Transforms
+
+			_Freeze Scaling
+
+			_Freeze Rotation
+
+			_Freeze Translation
+
+
+			_Set Nautral Pose
+
+			_Set Nutral Scaling
+
+			_Set Neutral Rotation
+
+			_Set Neutral Translation
+
+
+
+	------------------------------------------------------------------------------------------------------
+
+
+	_Transform Setup:
+
+
+		_en elementos de control específicos tenemos la posibilidad incluso de limitar los puntos
+
+		de control de éstos así, un determinado elemento spline, handle, que sólo debe de moverse
+
+		en una dirección dríamos limitar sus propidades respectivas tanto de: 
+
+		"Transform/Rotation/Scale/Orientation"
+
+
+		_de esta manera podríamos seleccionar a un elemento deseado e ir ha: 
+
+		"Animate-Model/Property/", y aplicar "Transform Setup", así, nos aparecerá una ventana contextual
+
+		en la cuál podremos elegir la propiedad a limitar, ej: "Tranform", así, podremos limitar una 
+
+		cordenada axis, específica de transform, otros
+
+
+
+
+	------------------------------------------------------------------------------------------------------
+
+
+	_Export Model:
+
+
+		_tenemos la posibilidad de trabajar con models, ó modelos lo que permite hacer un proceso más
+
+		extensible permitiendonos poder exportar el "Model", respectivo para así, tenerlo a disposición
+
+		para poder posteriormente importarlo en otros proyectos ó escenas
+
+
+		_para esto, primero debemos crear el ó los modelos deseados "Model/Create/New Model"
+
+
+		_luego vamos al "Explorer/", y hacemos "Mouse Right Click", sobre el model, deseado y,
+
+		seleccionamos la opción de "Export Model", así, nos aparecerá un ventana donde tendremos
+
+		que seleccionar la ruta de destino, por lo general es recomendable guardarlo en la ruta por
+
+		defect "Proyect-Name/Models"
+
+
+		_de esta menera podremos posteriormente crear otro proyecto ó escena e ir al:
+
+		"Browser", shortcut: "Control + 5", y buscar el "Path", del "proyecto/Model", donde guardamos
+
+		el modelo deseado
+
+
+		_así, luego de ubicar el modelo deseado guardado previamente podremos hacer:
+
+		"Mouse left click and drag", sobre un área vacía ó disponible en canvas para así, importar
+
+		el modelo deseado
+
+
+		_el model, exportado sólo contendrá los elementos dentro del model, en si mismos como los son
+
+		meshes, skeleton, handles, de control riggins, más no contendrá las elementos básicos de la 
+
+		escena como cámaras, lueces, otros, como tampoco los demás elementos creados en la escena
+
+
+
+
+	------------------------------------------------------------------------------------------------------
+
+
+	_Actions: (poses)
+
+
+		NOTE: para esta opción es altamente recomendable trabajar con "Models"
+
+
+		_tenemos la posibilidad de recrear poses, para un acceso fácil a la hora del proceso de animación
+
+		esto es de gran ayuda en el proceso del rigging, y la producción en animaciones diversas
+
+
+		_para esto, debemos seleccioanr todos los elementos que conforman el character ó de la perte
+
+		deseada del mismo, un método útil es hacer una selección de rectángulo sobre todo el character,
+
+		para seleccionar todos sus elementos
+
+
+		_luego de tener seleccionados todos los elementos del character, deseado vamos ha:
+
+		"Animate/Actions/Store/", y vamos a la sección se "Current Frames", y seleccionamos la opción
+
+		de "Transformations - Current Values"
+
+
+		_así, se creará un "Mixer", en el "Explorer", en el cuál, se podrá ver la siguiente estructura:
+
+		"Mixer/Sources/Animation/", y los sources, de poses, ó frames/freeze, que hayamos hecho del character,
+
+		respectivo
+
+		
+		_así, para aplicar un determinado "Source", de pose deseado en un determinado momento de la animación
+
+		basta con ir al "Explorer/Model/Mixer/Sources/Animation/", y seleccionar el "Source", deseado
+
+
+		_luego con el source, deseado seleccionado vamos ha "Animate/Actions/Apply/", y le damos ha:
+
+		"Action", en ocaciones es necesario darle al "Action", dos veces
+
+
+		_de esta manera el character tomará la pose que ha sido guardada previamente en el source, e pose
+
+		respectivo
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Formar para Riggins:
+____________________
+
+
+
+	_Extraer Spline de Polymesh:
+
+
+		_esta opción es especialmente útil para crear formas de control personalizadas para el proceso
+
+		del rigging
+
+
+		_para esto, colocamos la forma de polymesh, deseada en el lugar deseado, luego procedemos ha
+
+		seleccionar los sub-elementos "edges", deseados shortcut "F10", luego, con los edges, deseados
+
+		seleccionados vamos ha "Animate/Create/Curve/", y seleccionamos la opción de "Extract from Edges"
+
+
+		_así, se creará una nueva forma de spline, en el "Explorer/crvlist"
+
+
+		_más para poder eliminar la polymesh, original debemos desvincular éstas para esto, seleccionamos
+
+		la nueva spline, creada ej; "crvlist", y con esta selecciona vamos ha "Edit/", y hacemos "Freeze",
+
+		de esta manera habremos rompido con el relacionamiento y podremos así, borrar la mesh, original
+
+
+
+
+	Spline Color:
+
+
+		_también, tenemos la posibilidad de cambiarle el color a las splines, que creemos para el proceso
+
+		de rigging, para esto, disponemos de dos posibilidades:
+
+
+			_Pallete and Script Toolbar:
+
+
+				_para esto, debemos ha click, sobre el ícono de pintura en el menú izquierdo de la
+
+				parte inferior
+
+
+				_luego debemos seleccionar uno de los colores disponibles en la paleta superior, así,
+
+				nos aparecerá un picker, con el cuál, tendremos que seleccionar la spline, deseada 
+
+				para a´si, cambiar el color de ésta
+
+
+			_Display: (esta opción es la más recomendada)
+
+				_para esto, debemos ir ha: "Explorer/crvlist/", y hacer doble click, en "Display",
+				
+				así, nos preguntará di deseamos "You are about to edit shared properties. Do you
+
+				want to make", ha dicha pregunta contestaremos que "Yes/si", para hacer así, sólo 
+
+				una edición parcial del color y nos para todos los elementos
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+--------------------------------------------------------------------------------------------------------------
+
+
+
+Workflow Recomendado:
+_____________________
+
+
+
+	------------------------------------------------------------------------------------------------------
+
+	
+	_Spline Control:
+
+
+		_primero es recomendable crear las spline, de control y su forma relativa ó referencial a la parte
+
+		del modelo deseado
+
+
+		_leugo es recomendable asignarle ha ésta un color representativo
+
+
+
+	_Free Transform:
+
+		_luego, es recomendable ubicar la spline, en el lugar deseado y aplicar "Free Transform", para
+
+		que ésta tenga las propiedades libres para su utilización el proceso del rigging
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+--------------------------------------------------------------------------------------------------------------
+
+
+
+Constraint Descripción Rápida:
+______________________________
+
+
+
+	------------------------------------------------------------------------------------------------------
+
+	
+	_Aplicación:
+
+		_primero debemos seleccionar al elemento hijo y, luego debemos apliar el constraint, así, nos
+
+		aparecerá un picker, con el cuál, tendremos que seleccionar al elemento padre y, para finalizar
+
+		la operación tendremos que hacer "mouse right click", sober un área vacía en el canvas
+
+
+	_Consideración:
+
+
+		_para aplicar constraints, ha elementos que estén ó se encuentren separados del elemento ha hacer
+
+		constraint ó emparentar y, no deseamos que éste cambie de posición al hacer constraint, debemos 
+
+		entonces antes de aplicar constraint, activar la opción de "Constrint/CnsComp", así, al hacer
+
+		constrinat, éste respetará las posiciones de los elementos ha emparentar por medio de constriant
+
+
+
+	------------------------------------------------------------------------------------------------------
+
+
+
+	Constraint:
+	___________
+
+
+		---------------------------------------------------------------------------------------------
+
+
+
+		_Position:
+
+			_este nos permite emparentar propiedades de "Translación"
+
+		---------------------------------------------------------------------------------------------
+
+
+		_Orient:
+
+			_este nos permite emparentar propiedades de "Rotación"
+
+
+		---------------------------------------------------------------------------------------------
+
+		_Direction:
+
+			_este nos permite emparentar propiedades de dirección u orientación de los elementos,
+
+			esta opción es especialmente útil para hacer  ej; el seguimiento de los ojos, otros
+
+
+			_en el ejemplo anterior para que los ojos no miren a un punto y se vean biscos es 
+
+			recomendable activar la herramienta de "Constrint/CnsComp", ésta nos permitirá ajustar
+
+			de forma ó ajustar permanentemente la dirección ó paralelismo entre los ojos a la hora 
+
+			de seguir un punto de referencia, así, los ojos presentarán su efecto de paralaje 
+
+			natural
+
+
+		---------------------------------------------------------------------------------------------
+
+
+		_Pose:
+
+
+			_este es el inverso del constraint, "Position", ya que no se trata de ser el elemento padre
+
+			sino, de ser el elemento hijo, en las propiedades "Position/Scale/Rotation/Orientation"
+
+
+			_lo cuál, permite hacer un elemento esclavo por ej, de un sistema de skeleton, para animaciones
+
+			avanzados donde se pueden tomar y soltar objetos entre otros en momentos determinados a voluntad
+
+
+			_para mantener las distancias y posiciones relativas entre los elementos es recomentable antes de
+
+			aplicar el constraint, activar la opción de "Constraint/CnsComp"
+
+
+			_así, seleccionamos el elemento a hacer esclavp y con este seleccionado vamos ha "Constraint/", y
+
+			seleccionamos la opción de "Pose", así, nos aparecerá un picker, con el cuál, tendremos que seleccionar
+
+			por lo general una articulación, ej, el root, del carpo ó muneca de una mano, otros
+			
+
+
+		---------------------------------------------------------------------------------------------
+
+
+		_Chain Up Vector:
+
+
+			_este nos permite hacer rotaciones de elementos ó cadenas completas de bones, ó huesos
+
+
+			_este es especialmente útil para hacer rotaciones y correcciones de movimientos de 
+
+			articulasciones ó joints, como brazos/codos, y piernas/rodillas
+
+
+			_primero debemos crear un spline, que hará de handle, ó controlador y ésta debemos ubicarla
+
+			en relación a la cinemática de character
+
+
+			_así, para esto, seleccionamos el bone, primario de la flexión del joint, ó articulación, ej:
+
+			el "Femur, ó Humero", luego con este seleccionamos vamos ha "Constraint/", y aplicamos 
+
+			"Chain Up Vector", así, nos aparecerá un picker, con el cuál, tendremos que seleccionar el 
+
+			elemento que hará de handle
+
+

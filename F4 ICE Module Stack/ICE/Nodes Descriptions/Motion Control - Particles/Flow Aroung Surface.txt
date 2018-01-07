@@ -1,0 +1,67 @@
+
+
+DETALLES
+
+
+el nodo "Flow Aroung Surface", es un "Compount/pompuesto", y nos permitirá hacer que el flujo de un 
+
+sistema de partículas se desplace a través de una superficie de forma señida para su control
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	_Task/Particles/Motion Control ó Surface Interaction/Flow Aroung Control
+
+		va conectado por lo general ha "Simulation Root/Excecute"
+		
+
+
+------------------------------------------------------------------------------------------
+
+
+	_Weight:
+
+		podemos graduar la fuerza de la acción del flow
+
+	_Proximity Method:
+
+		podemos seleccionar el método de proximidad, entre "Surface", "Vertex", y "Smooth"
+
+	_Enable Cutoff Distance:
+
+		podemos activar el ajuste de distancia en las partículas y la superficie
+
+	_Cutoff Distance:
+
+		podemos graduar la distancia entre las partículas y la superficie
+
+	_Select Velocity Method:
+
+		podemos seleccionar el método de la velocidad, entre "Velocidad basada en la 
+		dirección", "Velocidad mantenida", "Seleccionar un nueva velocidad"
+
+	_New Velocity
+
+		podemos asígnar un valor numérico para velocidad deseada
+
+	_Filter Effect Based on Weight Angle:
+
+		podemos activar variar el efecto a través del peso del ángulo generado
+
+	_Align Surface Normal:
+
+		podemos alinear las normales de la superficie
+
+	_Local Vector
+	
+		ll
+
+	_Alignment Weight:
+
+		podemos alinear el vector de trabajo a una cordenada específica como X,Y,Z, así,
+
+		como también aumentar el peso ó fuerza de acción
+

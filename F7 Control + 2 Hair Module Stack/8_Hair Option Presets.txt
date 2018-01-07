@@ -1,0 +1,152 @@
+
+
+
+curso: Digital Tutors Intro to XSI Hair 2007
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+NOTE:	para tener una mejor visualización de los resultados de la sección effects, es recomendable
+
+	colocar en "Hair/General/Display Settings/Display Type", la opción de "Render Hair", así, 
+
+	podremos tener una visualización de los cambios estéticos directamente en el viewport
+
+
+
+
+Hair/Effects:
+____________
+
+
+	Frizz
+
+
+		_Frizz at Root:
+
+			_esta opción permite indicar la cantidad de frizz, ó rizo a la raíz, del
+
+			filamento ó fibra
+
+
+		_Frizz at Tip:
+
+			_esta opción permite indicar la cantidad de frizz, ó rizo a la punta, del
+
+			filamento ó fibra
+
+
+	--------------------------------------------------------------------------------------------
+
+
+		Frequency:
+
+			_esta opción permite indicar si tomará como criterio de acción las tres
+
+			cordenadas X,Y,Z
+
+
+
+	--------------------------------------------------------------------------------------------
+
+
+		Frizz Animation:
+
+			_Frizz anim:
+
+				_también, tenemos la posibilidad de hacer animaciones a través, de 
+
+				efectos como frizz, ó rizo, pudiendo agregar un valor ó parámetro
+
+				de fuerza ó agresividad ó cantidad en este atributo
+
+
+			_Anim speed:
+
+				_este características especial de animación por efecto requiere la
+				
+				implementación de velocidad para poder expresarse así, que debemos
+
+				indicar un valor mínimo de acción
+
+
+			_Direction:
+
+				_también, tenemos la posibilidad de manipular la durección que tendrá
+
+				la animación ó turbulencia por el efecto de frizz, ó rizo en la dirección
+
+				que más nos sea conveniente
+
+	
+
+
+	--------------------------------------------------------------------------------------------
+
+
+		Kink:
+
+			_Kink at root:
+
+				_esta opción permite agregar noise ó ruido, también podría interpretarse
+
+				como turbulencia que crea rizos, en este caso en la raiz, ó root
+
+
+			_Kink at tip:
+
+				_esta opción permite agregar noise ó ruido, también podría interpretarse
+
+				como turbulencia que crea rizos, en este caso en la punta, ó tip
+
+
+			_Frequency XYZ:
+
+				_esta opción permite indicar un intervalor de recuencia de animación
+
+				ó movimiento ó estado del efecto el cuál, podemos configurar sus cordenadas
+
+				individualmente ó en conjunto
+
+
+
+	--------------------------------------------------------------------------------------------
+
+
+		Thickness:
+
+			_Type:
+
+				_
+
+
+			_Root:
+
+				_
+
+
+			_Tip:
+
+				_
+
+
+
+			_Random scale:
+
+				_
+
+
+			_Cut map:
+
+				_
+
+
+			_Density map:
+
+				_
+
+
+

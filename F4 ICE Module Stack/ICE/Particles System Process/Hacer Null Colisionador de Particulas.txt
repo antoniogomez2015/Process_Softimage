@@ -1,0 +1,58 @@
+
+
+
+DETALLES
+
+
+podemos hacer que un "ICE/Get/Primitive/Null", se comporte y sea un elemento colisionador de 
+partículas para así, este haga resistencia y seomporte como un elemento "collider"
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+NOTA:	ya tenemos que tener un sistema "Point Cloud", cargado en el ICETree, con sus respetivos 
+
+	elementos como el emisor y la/s superficies colisionadoras, otros
+
+
+
+	_primero vamos ha "ICE/Get/Primitive/Null", y lo ubicamos según la lógica de la escena
+
+
+	_luego seleccionamos al null, object, en la escena ó en el explorer, procedemos a cargarlo
+
+	en el ICETree, hacendo "Shift+F3", ó arrastrándolo desde el explorer, este se cargará en una
+
+	etiqueda "get Data"
+
+
+	_luego vamos ha "ICETree/Conditionals - Particles/Test Indie Null"
+
+
+	_ahora vamos ha relacionar los nodos "get Data/Out Name", con el nodo 
+
+	"Test Indie Null/Null Name" 
+
+
+	_luego relacionamos los nodos "Test Indie Null/Result", con el nodo 
+
+	"Simulate Particles/Mute"
+
+
+
+así, al colocar el null, object, en la trayectoria ó flow, de las partículas veremos como este
+
+hara resistencia a las partículas haciendo de elemento collider
+
+
+
+
+
+
+
+
+

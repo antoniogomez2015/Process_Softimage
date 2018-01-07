@@ -1,0 +1,36 @@
+
+
+
+Digital Tutors Introduction to Rigging in XSI 2008
+
+
+
+	Skeleton System
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+Pseudo Roots:
+_____________
+
+
+
+
+	_en ocaciones es necesario la implementación ó cambio del root, ó punto de anclaje de una cadena
+
+	huesos para una articulación específica
+
+
+	_para esto, podemos seleccionar el bone, ó hueso el cuál, deseamos que temporalmente haga de roots,
+
+	de la cadena de huesos y entrar a sus opciones de configuración, shortcut: "Enter"
+
+
+	_así, podremos ir a las opciones de:
+
+		_"Kinematic Joint/General/Joint Behavior/", y activar la opción de "Jointis Pseudo-Root"

@@ -1,0 +1,94 @@
+
+
+DETALLES
+
+
+podemos tener una visualización fantasma/ghosh, de los objetos en movimiento en la escena a través,
+
+de diferentes visualizaciones así, como también, un filtrado para visualizar sólo determinados
+
+objectos con "Ghosh", ó visualizar todos los objectos con ghosh
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Modos de visualización / Ghosh Type
+___________________________________
+
+
+
+	_Object:
+
+		_esta modilidad permite ver "instancias", del objecto gradadas en color para sugerir
+
+		la velocidad del movimiento
+
+
+	_Point:
+
+		_esta modilidad permite ver una cadena de "Locators", del objecto gradadas en color 
+		para sugerir la velocidad del movimiento
+
+
+	_Pose:
+
+		_esta modilidad permite ver una cadena de "Axis", del objecto
+
+
+	_Velocity:
+
+		_esta modilidad permite ver una cadena de "Trayectorias", del objecto gradadas en 
+		color para sugerir la velocidad del movimiento
+
+
+	_Trail:
+
+		_esta modilidad permite ver una "Trayectoria", del objecto gradadas en color
+ 
+		para sugerir la velocidad del movimiento
+
+
+
+-------------------------------------------------------------------------------------------------
+
+
+
+Ghosh / Group:
+______________
+
+
+NOTA	esta opción sólo funciona con "Edit/Group", no con "Edit/Transform Group"
+
+
+
+	
+	_para poder visualizar los objecto en el modo de visualización en ghosh, primero debemos
+
+	activar el modo de visualización en ghosh, primero en el viewport/Animation Ghosting
+
+
+
+	_para activar el modo de visualización de ghosh, en un grupo vamos ha "Explorer/Group",
+
+	y hacemos doble click, en este para ver sus opciones, tmabién, podemos hacer esto al momento
+
+	de crear el grupo
+
+
+	_luego vamos ha "group/Animation Ghoshting..", y seleccionamos la opción "Ghosh members"
+
+
+	de esta menera, todos los elementos que esten dentro del group, tendrán "Ghosh"
+
+
+	_luego para editar el modo de visualización en cada elemento podemos acceder a esas opciones
+
+	yendo ha "Explorer/mesh-motive/Visibility/Animation/Ghosh Type/"
+
+
+
+
+
+
+

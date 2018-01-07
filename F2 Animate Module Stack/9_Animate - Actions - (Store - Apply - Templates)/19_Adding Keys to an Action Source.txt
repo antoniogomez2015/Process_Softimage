@@ -1,0 +1,138 @@
+
+
+
+DETALLES
+
+
+Las acciones son paquetes de animación de bajo nivel, tales como curvas de función, las expresiones, las limitaciones 
+
+y los parámetros vinculados. Mediante la creación de un paquete que representa la animación, se puede trabajar en un nivel 
+
+superior de la animación que no está limitado por el tiempo
+
+
+Las acciones son los paquetes de cualquier tipo de animación, tales como curvas de función, las expresiones, 
+
+las limitaciones y los parámetros vinculados. Después de crear una acción, se carga como un clip en el mezclador 
+
+de animación, donde puede modificar la animación de una manera no lineal y no destructiva.
+
+
+Este paquete en el mezclador de animación le permite trabajar en un nivel superior de la animación que no está limitada 
+
+por el tiempo: se puede mover una acción en torno a cualquier parte a tiempo, apretar o estirar su longitud como quieras, 
+
+aplique una acción después de otras en secuencias, y mezclar dos o más acciones juntos para crear una nueva animación.
+
+
+Puede crear una biblioteca completa de acciones, como ciclos de pie o saltos, y utilizarlos como muchas veces como quieras 
+
+en una escena, o compartirlos entre cualquier número de modelos
+
+
+También puede crear acciones de compuestos/compounds, que son "contenedores" para múltiples acciones, incluyendo 
+
+la animación de diferentes fuentes/sources, (curvas de funciones, expresiones, restricciones y parámetros vinculados). 
+
+Trabajar con datos animaciones complejas convierte en una tarea más simple que tratar con múltiples fcurves.
+
+
+Dado que los datos de animación paquete/package, de acciones en una sola unidad utilizable, que hace que sea fácil 
+
+para copiar la animación de un modelo a otro, incluso si el modelo no comparte las mismas convenciones jerarquía, 
+
+escala, o de denominación. Cuando hay diferencias entre los modelos, se abre una plantilla para ayudar a trazar 
+
+los elementos del modelo correspondientes.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Adding Keys to an Action Source:
+________________________________
+
+
+
+
+	Usted puede agregar keys, para funcionar curvas de animación almacenada en una fuente/source, de acción/acation, 
+
+	de ahorro de keys, de acción. Por ejemplo, usted puede trasnlate, un objeto y luego agregar una keys, con el 
+
+	botón "Acción Key",  para cambiar fcurves correspondientes de la fuente/source. Esto funciona sólo si hay una 
+
+	sola acción/action, que controla el objeto en el frame, actual.
+
+
+	Al igual que con la edición de la animación original en una fuente/source, de acción/action, las claves que se 
+
+	suman a las curvas de función de la fuente/source, afectar a todos los clips de acción que hacen referencia 
+
+	a que la fuente/source, de la acción, así, como cualquier clips futuros que creen de esa fuente/source
+
+
+	Por ejemplo, digamos que la posición de los brazos del Club-bot está mal en el origen de la acción. Cuando usted 
+
+	fija añadiendo keys, de acción, todos los clips creados a partir de esta fuente/source, se actualizan 
+
+	automáticamente.
+
+
+TIPS:	Si no desea que los clips de acción para compartir las mismas fuentes/sources, duplicar la fuente antes 
+
+	de generar ejemplares de los clips de ella (seleccionar la fuente/source, y pulse Ctrl + D).
+
+
+	Usted también, podría tener clips que comparten la misma fuente/source, pero luego modificar un clip 
+
+	con un efecto, esto le permite añadir una "capa/layer" de la animación sin afectar a su fuente/source
+
+
+	To add keys to an action source:
+	________________________________
+
+
+	1_Ir a un frame, que es controlado por el clip cuya fuente/source, que desea modificar mediante la adición 
+
+	de los keyframes.
+
+
+	2_Si cualquier otros clips son manejados por los mismos parámetros en ese frame, debemos silenciar sus pistas 
+
+	en el mezclador de animación mixer,  (click the "m/mute" button to the left of the track).
+
+
+	3_Ajuste los parámetros deseados; por ejemplo, mover el objeto a una nueva posición.
+
+NOTA: 	Los colores de los controles de animación pueden ser incorrectos en el panel Animación y editores 
+
+	de propiedades; que no reflejan adecuadamente si existe una key, en el frame, actual. Esto se debe a que 
+
+	las key, que se encuentran en el tiempo local de la acción más que el tiempo global de la escena.
+
+
+	4_Asegúrese de que se seleccionan los objetos correctos y los parámetros correctos que están marcados/marked. 
+
+	Es necesario seleccionar todos los objetos aplicables de forma explícita. Selecciones "Branch", y el árbol 
+
+	no se expanden automáticamente.
+
+
+	5_En el panel mixer, haga clic en el botón "Acción key", en la barra de comandos o pulse J. Nuevas keys, 
+
+	se añaden a las curvas de función de la fuente de la acción en el tiempo local correspondiente, teniendo 
+
+	en cuenta cualquier escala o deformación del clip.
+
+
+TIPS:	Al guardar un key, de acción/action, las compensaciones no se tienen en cuenta. Si hay un desplazamiento, 
+
+	los valores pueden saltar al hacer clic en key Acción.
+
+
+	Si la acción es una pose estática creado con " Transformation - Current or Marked Parameters - Current", 
+
+	haga clic en el botón "Offset Map", que está al lado del botón "Acción key"  para cambiar los valores de origen
+
+	del source.
+

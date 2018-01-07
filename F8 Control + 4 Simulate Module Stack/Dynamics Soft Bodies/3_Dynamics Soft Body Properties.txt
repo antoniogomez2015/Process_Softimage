@@ -1,0 +1,69 @@
+
+
+Detalles
+
+
+tenemos la posibilidad de crear cuerpos blandos "Soft Bodys", los cuales pueden interactura con fuerzas/fields,
+
+y demás interacciones dinámicas entre otros
+
+
+el workflow, de los sistemas soft bodys, en muy diferente al de los rigid bodys, por que en los soft bodys, no existe
+
+el sistema de "Enviroments", si no, que toda la información se registra de la misma mesh/motive, que hara de soft body,
+
+ej: "Explorer/mesh/Polygon Mesh/SoftBodyOp/", y en esta sección se guardarán todos los elementos 
+relacionados con el propio sistema
+
+de soft body, particular de cada mesh/motive, respectivo, como los "Obstacles/ostáculos", "Fuerzas/Fields", otros
+
+
+podemos crear elementos soft bodys, a partir elemento/objects, completos ó enteros ó a través de selecciones de 
+
+sub-elementos como vertices, otros, para que de esta manera partes de un elemento se mantengan estáticas mientras que
+
+otras tienen propiedades de rigid bodys, dinámicas, el proceso de workflow, para este proceso es el mismo que el proceso
+
+normal para objects, completos
+
+ 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+	Simulation
+	__________
+
+
+	NOTA	la animación no puede ejecutarse al mismo tiempo de de la simulación soft body,
+
+		de cuerpos blandos, por eso debemos indicar donde empieza y donde termina la 
+		animación, para a partir de este punto sí, comenzar con la simulación soft body
+
+
+		
+		_Star Frame:
+
+			_podermos indicar donde comenzará la simulación soft body, y, a su vez,
+
+			estamos indicando donde termina la animación
+
+
+		_End Frame:
+
+			_podemod indicar donde terminará la simulación soft body
+
+
+		_Iteractions per Frames:
+
+			_podemos indicar la iteración ó intervalo de cálculo entre fotogramas
+
+			para simulación soft body
+
+	
+
+
+
+	
+____________________________________________________________________________________________________

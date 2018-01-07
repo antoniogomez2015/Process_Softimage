@@ -1,0 +1,108 @@
+
+
+DETALLES
+
+
+tenemos la posibilidad tanto de agregar color a los sistemas de partículas tanto para la visualización
+
+en el viewport, como para el procedo de render
+
+
+	Task/Particles/Modifiers/Randomize Color by Gradient
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Randomize Color by Gradient
+
+
+	_este es el nodo nos permite nos permite setear de color las pertículas de forma personalizada
+
+	ó aleatoria
+
+
+		-Randomize Color by Gradient-
+
+
+			_In:
+
+				_none
+
+
+			_Out:
+
+				_"Task/ Particles/ Emitters/ Emit from Geometry/ Color"
+
+
+
+
+
+
+
+----------------------------------------------------------------------------------------
+
+
+
+Workflow para sólo visualización en el Viewport:
+
+
+	_para modificar el color de un sistema de partículas solamente en el viewport, basta
+
+	con simplemente asignarle un nodo de "Task/Particles/Modifiers/", relacionados con la
+
+	propiedad de color, ej: "Randomize Color by Gradient"
+
+
+
+
+
+----------------------------------------------------------------------------------------
+
+
+
+Workflow para sólo visualización en el Render Process:
+
+
+	_si deseamos que los nodos de "modifiers", ó modificación de color que hemos agregado al 
+
+	sistema de partículas se visualicen correctamente en el render, debemos pasar estos atributos
+
+	de color al módulo de render y el material asignado, ej: "phong", para esto:
+
+
+	_vamos al panel "Render Tree", shortcut "Shoft + 7"
+
+
+	_luego vamos ha "Render Tree/Data/Attribute/", y agregamos el nodo "Color Attribute"
+
+
+	_posteriormente conectamos el nodo "Color Attribute/out", al material ej: "Phong/diffuse"
+
+
+	_y en las opciones del nodo "Color Attribute":
+
+	
+		_Attribute:
+
+			_colocamos "Color", así, éste dejará pasar el atributo de color ya existente
+
+			en la composición del ICETree, y no la del "Color Attribute", por default
+
+
+	así, al renderizar veremos que se renderizará el color que hemos configurado en el ICETree
+
+
+
+NOTE:	este último proceso lo debemos repetir para cualquier modificador ó atributo de color agregado 
+
+	en el ICETree, para que de esta manera lo podamos ver en el render process
+
+
+
+
+		
+	
+

@@ -1,0 +1,141 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de hacer animaciones a través, de la deformación de geometrías/meshes, de esta manera
+
+podremos animar las deformaciones realizadas sobre la morfologías de las meshes, respectivas en el tiempo,
+
+e incluso realizar sources, de animación, keys, otros
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+_Store Shape Keys:
+
+
+
+	esta opción nos permite crear Shape Keys, ó animación por deformación de la manera más simple y directa
+
+	que nos ofrece softimage, la cuál, consiste en asignarle estados a un elemento determinado de la escena
+
+	como una mesh
+
+
+	se puede almacenar desde su estado natural ó no deformado del elemento ó mesh, original hasta ya estados
+
+	deformados del objeto mesh, es cuestión
+
+
+	de esta manera se creará su pripio mixer, en su propio modelo ó model, con los sources, y trackes, 
+
+	correspondientes a la cantidad de estados de deformación creados "Keys Shapes"
+
+
+
+---------------------------------------------------------------------------------------------------------------
+
+
+
+Deformaciones:
+______________
+
+
+
+	_para esto, primero debemos pasar al modo de edición de "Stack Shape Modeling", antes de comenzar ha
+
+	crear las "Keys shape"
+
+
+	_y opcionalmente tenemos la posibilidad de hacer previamente selecciones de tipo cluster, de partes
+
+	de los sub-elementos del objecto mesh, determinado
+
+
+	_y a continuación podemos proceder a deformar el objeto a través, de cualquier método de deformación
+
+	este método puede ser deformar los sub-elementos de forma manual, ó a través, de un deformador u otro
+
+	método necesario ó conveniente
+
+
+	_así, a partir de este punto se crearán automáticamente en este elemento los siguientes atributos:
+
+
+		_así, se agregará en el "Explorer/Mesh/Polygon Mesh/Stack/Shape Modeling/", se agregará las
+
+		deformaciones y deformadores modificadores aplicados al elemento mesh, respectivo así, como
+
+		también, las selecciones de tipo cluster, seleccionadas en el momento de la deformación sobre
+
+		el objeto específico
+
+
+
+
+---------------------------------------------------------------------------------------------------------------
+
+
+
+Sources Keys Shapes:
+____________________
+
+
+
+NOTE:	es altamente a consejable tener el modelo mesh/motive, dentro de un elemento de tipo "Model", ya que así,
+
+	éste tendrán independencia del elemento principal "root"
+
+
+	para esto, seleccionamos las meshes, deseadas y vamos ha "Model/Create Model/New Model"
+
+
+
+	---------------------------------------------------------------------------------------------------------
+
+
+
+	_luego, de haber hecho ó realizado deformaciones directas ó a través, de selecciones de tipo cluster,
+
+	sobre un objeto mesh, en modo "Stack Shape Modeling", 
+
+
+	_tenemos la posiblidad de crear de sources, los cuales podremos posteriormente utilizarlos el mixer,
+
+	como clips, de animación ó animarlos directamente en el timeline, en el mismo momento de su creación
+
+
+	_así, en el modo "Stack Shape Modeling", para crear un source de "Key Shape", de un estado de deformación 
+
+	determinado en un objecto, primero, debemos seleccionar éste e ir ha "Animate/Deform/Shape/", y seleccionar 
+
+	la opción de "Store Shape Key"
+
+
+	_así, al crear "Key Shape", ó Sources, se agregarán las opciones en el explorer:
+
+
+
+		_primero se agregará un elemento de tipo "Mixer"
+
+
+		_dentro del Mixer, habrán unas carpetas llamadas "Sources/Shape", la cuales, contendrán todos los 
+
+		"Key Shape", que hayamos creado para este respectivo objeto
+
+
+		_más al cargar éstos respectivamos sources, al mixer, se crearán clips, de animación para esto,se 
+
+		agregarán ó crearán los respectivos "Tracks/Animatión-Shapes", en el Explorer/Mixer
+
+
+		_así, como opcional ó alternativamente se crearán también, de ser necesarios elementos "Compounds
+
+		/Shapes", así, "Transitions", entre otros
+

@@ -1,0 +1,85 @@
+
+
+
+DETALLES
+
+
+podemos hacer que un "ICE/Get/Primitive/Null", se comporte como un elemento de control es cuál
+
+pueda fultrar que cuando las partículas pasen a través, de él, estas cambien de color ó hagan
+
+cualquier otra acción, esto es especialmente útil para procesos de animación efectos especiales
+
+no invasivos con los modelos y characters, ya que se usa un null object
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+NOTA:	ya tenemos que tener un sistema "Point Cloud", cargado en el ICETree, con sus respetivos 
+
+	elementos como el emisor y la/s superficies colisionadoras, otros
+
+
+
+	_primero vamos ha "ICE/Get/Primitive/Null", y lo ubicamos según la lógica de la escena
+
+
+	_luego seleccionamos al null, object, en la escena ó en el explorer, procedemos a cargarlo
+
+	en el ICETree, hacendo "Shift+F3", ó arrastrándolo desde el explorer, este se cargará en una
+
+	etiqueda "get Data"
+
+
+	_luego vamos ha "ICETree/Conditionals - Particles/Test Indie Null", y lo creamos
+
+
+	_ahora vamos ha relacionar los nodos "get Data/Out Name", con el nodo 
+
+	"Test Indie Null/Null Name" 
+
+
+	_luego vamos ha "ICETree/Setters - Particles/Set Particle Color", y lo creamos,
+
+	podría ser cualquiera de los nodos de "Set Particles ..."
+
+	
+	_luego vamos ha "ICETree/Execution/If", y lo creamos
+
+
+	_luego vamos ha "ICETree/Setters - Particles/Set Particle Color", y lo creamos
+
+
+	_ahora vamos ha relacionar los nodos "Test Indie Null/Result", con el nodo "If/Condition"
+
+
+	_ahora vamos a relacionar los nodos "Set Particle Color", con el nodo "If/If True"
+
+
+	_ahora vamos a relacionar los nodod "If/Result", con el nodo "ICETree/Port2"
+
+
+
+------------------------------------------------------------------------------------------------
+
+
+la lógica de este "ICETree", es que sea comprobado todo lo que seceda dentro del Null Object
+
+"Test Inside Null", como una condición "If/Condition", y todo lo que suceda ó pase dentro de
+
+el null object "ICETree/Port1", se tomará como verdadero "True", ó efectivo, para entonces así,
+
+cambiar el color "Set Particle Color", dentro del área afectacta "Test Inside Null"
+
+
+
+
+
+
+
+
+

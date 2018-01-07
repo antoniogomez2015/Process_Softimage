@@ -1,0 +1,103 @@
+
+
+DETALLES
+
+
+a continuación presentamos la lógica y agrupamiento de los nodos a través de su sistema de color 
+
+de los puertos tanto de entrada como de salida 
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	- (Negro): Polymorphic / acepta variada tipos de data, unresolved, es color negro en un 
+
+	nodo indica que el no está resuelto en sus conexiones
+
+
+	- (Naranja) Boolean / un valor Boleano, True or False.
+
+	
+	_ (Verde occuro) Integer / recibe un valor numérica entero, decimal, otros
+
+
+	_ (Verde manzana) Scalar / representa un número decimal flotante
+
+
+	_ (Rojo) Color / representa el valor del color en cuadrpe en canales "RGBA"
+
+
+	_ (mostaza 30%) 2D Vector / representa un vector de 2 dimensiones, vector [x, y], utilizado
+
+	para sescalar ej, UV coordinate
+
+
+	_ (mostaza 50%) 3D Vector / representa un vector de 3 dimensiones, vector [x,y,Z],
+
+	utilizado ej, para escalar posición, velocidad, fuerzas, otros
+
+
+	_ (mostaza 70%) 3D Vector / representa un vector de 4 dimensiones, vector [W,x,y,Z],
+
+	utilizado ej, para escalar diferentes entradas, otros
+
+
+	_ (Cyan 100%) Quaternion / cuaternio, usualmente utilizado para representar Orientación
+
+	fucionada/blending Quaternion
+
+
+	_ (Cyan 70%) Rotation / la rotación es representada po axis vector [x, y, z] y ángulos de 	
+	rotación
+
+
+	_ (Cyan 50%) 3x3 Matrix / representa una mtrís de 3 entradas 3x3, que pueden representar ej:
+
+	rotación y escala
+
+
+	_ (Cyan 25%) 4x4x Matrix / representa una mtrís de 4 entradas 4x4, que pueden representar 
+	ej: transformaciones (escala, rotación, and translación)
+
+
+	_ (Carmín) Shape / hace referencia a una geometría en la escena para determinar la forma
+
+	de las partículas con la forma de la geometría
+
+
+	_ (Violeta) Geometry / hace referencia a un objeto de geometría en la escena como polygon 
+	mesh, NURBS curve, NURBS surface, or point cloud, para tomar la superfice para la emisión de 
+	partículas
+
+
+	_ (Verde Grama) Surface Location / permite agregar un localizador sobre una superficie 	
+	de una geometría de la escena para didferentes procesos
+
+
+	_ (Azul Marino) String / podemos hacer cadenas/string, de characters/personajes, para 
+	configurar nodos de almacenamiento, otros
+
+
+	_ (Gris 25%) Topology / la topología de un objeto de la escena, polygon mesh, es usada para 
+	el modelado en ICE
+
+	
+	_ (Gris 75%) Execution / No es un tipo de datos en el sentido convencional. Se conecta los 
+	puertos de ejecución, tales como la salida de un conjunto de datos en un nodo Ejecutar o 
+	raíz para controlar el flujo de ejecución en el árbol.
+
+
+	_ (Verde Neutro) Reference / Además, no un tipo de datos en el sentido convencional. Esta es 
+	una referencia a un objeto, parámetro o atributo en la escena, expresada como una cadena de 
+	caracteres
+
+
+	
+
+
+
+
+	

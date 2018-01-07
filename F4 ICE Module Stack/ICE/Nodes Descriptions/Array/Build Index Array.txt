@@ -1,0 +1,29 @@
+
+
+DETALLES
+
+
+el nodo "Build Index Array", nos permitirá crear un índice de intancias de elemento que se crearán
+
+de forma modulada ó repetida sobre el
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	_Tool/Array/Build Index Array
+
+		va conectado por lo general ha "Integer to Scalar"
+		
+
+
+------------------------------------------------------------------------------------------
+
+
+	_Build Index Array:
+
+		podemos indicarle un valor numérico del 
+
+

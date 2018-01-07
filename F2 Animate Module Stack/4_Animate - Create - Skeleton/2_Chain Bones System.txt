@@ -1,0 +1,33 @@
+
+
+
+Digital Tutors Introduction to Rigging in XSI 2008
+
+
+
+	Skeleton System
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+Chain Bones System:
+___________________
+
+
+
+
+	_para crear cadenas ó chain, de bones, ó huesos, debemos primero colocar una vista de cámara 
+
+	axonométrica como por ej; from/left/roght/top..., 
+
+
+	_luego vamos ha "Animate-Model/Create/Skeleton/", y aplicamos "Draw 2D Chain", de esta manera 
+
+	podremos ir generando huesos y articulaciones en relación a la cinemática del modelo ó character
+
+

@@ -1,0 +1,33 @@
+
+
+
+Softimage XSI
+
+
+	Tenemos la posibilidad de crear de forma guiada estructuras de kinemática y sinemática de forma automatizada
+
+	a través, de una panel de opciones de tipo wizard, por medio del cuál, podremos crear sistemas con estándares
+
+	como bípedos, cuadrúpedos
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Stack Animate - Create - Character:
+___________________________________
+
+	
+	_éstos son sistemas estructurales a través, de los cuales podremos crear un sistema rigging and skinning, de forma
+
+	guiada y automatizada a través, de arquetipos visuales los cuales podremos posicionar y personalizar sobre nuestro
+
+	character, ó motivo ha animar
+
+
+	_de ésta manera, podremos focalizar lo controles así, como también, tener un visión más clara a la hora de hacer todo
+
+	el proceso de forma premeditada ó anticipada
+
+
+

@@ -1,0 +1,213 @@
+
+
+
+curso: Digital Tutors Intro to XSI Hair 2007
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Descripción:	esta opciones ofrecen caracterícas de como reaccionará el hair system, en relación
+
+		a las influencias ejercidas por las fuerzas/fields, aplicadas y relacionadas con el
+
+		hair system
+
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+
+opciones básicas Hair/Dynamics:
+_______________________________
+
+
+	Stiffness:
+
+
+		_esta opción nos permite indicar la cantidad de rigidéz que tendrá el hair system, ante
+
+		la influencia de los elementos y fuerzas dinámicas
+
+
+	_Root Stiffness:
+
+		_esta opción nos permite indicar la cantidad de rigidéz que tendrá el hair system, ante
+
+		la influencia de los elementos y fuerzas dinámicas específicamente en la raíz ó roots,
+
+		de las fibras que lo componen
+
+
+	_Dampening:
+
+		_esta opción nos permite indicar la cantidad relativa de rebote que tendrá el hair system,
+
+		ante de las diferentes interacciones con las fuerzas y elementos dinámicos
+
+
+	_Wiggle amplitude:
+
+		_esta opción permite indicar la amplitud de alietoriedad que tendrá el hair system, ante
+
+		la interacción el fuerzar y elementos dinámicos que interactúan con este
+
+
+	_Wiggle speed:
+
+		_esta opción permite indicar la velocidad de alietoriedad que tendrá el hair system, ante
+
+		la interacción el fuerzar y elementos dinámicos que interactúan con este
+
+			
+
+-----------------------------------------------------------------------------------------------------
+
+
+
+opciones avanzadas Hair/Create/Dynamics:
+________________________________________
+
+
+	Dynamics:
+
+
+		_primero seleccionamos el hair systema, deseado
+
+		
+		_luego vamos ha "Hair/Create/", y aplicamos "Dynamics", así se agregarán en 
+
+		"Explorer/Mesh/Hir/", las opciones de "Hair Dynamics Operator", las cuales se componen
+
+		de las siguientes características:
+
+	
+-----------------------------------------------------------------------------------------------------
+
+
+
+Hair Dynamics Operator:
+
+
+	_Mute:
+
+		_esta opción permite activar ó desactivar las opciones avanzadas dinámicas
+
+
+	_Reset Dynamics:
+
+
+		_esta opción nos permite crear una pseudo posición inicial y, a su vez, poder hacer
+
+		"reset", la simulación ó animación realizada sobre el hair system, de todas las 
+
+		interacciones como fields, obstacles, effects, animations. otros
+
+
+		_así, cada vez que terminamos de reproducir una simulación y deseamos volverla a 
+
+		reproducir desde su punto inicial, debemos hacer "Hair Dynamics Operator/Reset Dynamics",
+
+
+		así, el hair system, volverá a su posición inicial, eliminando la deformación sobre 
+
+		el mismo de una simulación anterior ó previa
+
+
+
+	Cache File
+	__________
+
+
+	Cache Mode:
+
+		_Live (W/o cache):
+
+			_esta opción permite el trabajo de la simulación dinámica en vivo sin la necesidad
+
+			de hacer un salvado frame to frame, de toda la simulación si no, tan sólo del un 
+
+			salvado general como un todo de la simulación, esto permite un workflow, más rápido 
+
+			para pruebas y ensayor previos
+
+
+			_así dicha memoria temporal en un solo archivo es eliminada ó reseteada cada vez,
+		
+			que hacemos "Reset Dynamics"
+
+
+		_Read & Write:
+
+			_esta nos permite hacer un cache más completo "frame to frame", así, podemos aignarle
+
+			un nombre y ubicación donde éste será guardado
+
+
+			_así, este se reseteará cada vez, que hagamos "Reset Dynamics", y se comenzará ha 
+
+			escribir nuevamente cada vez, que hagamos "Play", ó su shortcut "Alt + V"
+
+
+			_esta opción tiene la diferencia y ventaja con la opción anterior de que ésta guarda
+
+			en cache el peso de la simulación y permite luego, reproducirla de forma fácil y ligera
+
+
+		_Read Only:
+
+			_para reproducir simulaciones guardadas en el modo anterior "Read & Write", es necesario
+
+			colocar "cache mode", en modo de sólo lectura "Read Only", para que así, ésta al reproducir
+
+			"Play", no vuelva a grabar, ni al hacer "Reset Dynamics", se borre la simulación guardada
+
+			previamente
+
+
+	_File Name/Path:
+
+		_
+
+
+	_Delete Cache Files:
+
+		_
+
+
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+
+Workflow:
+
+
+	_así, es más recomendable trabajar con ambos páneles para tener a disposición todas las características
+
+	y posibilidades a la mano
+
+
+	_así, primero abrimos las opciones básicas, para lo cuál, disponemos de dos opciones, estas son:
+
+
+		_Explorer/Mesh/Hair/Dynamics
+
+
+		_Explorer/Mesh/Hair/Hair Generator Operator
+
+
+	así, podríamos bloquear la actualización de este panel para que no actuliza y no lo perdamos de vista
+
+
+
+	_también, debemos abrir las opciones avanzadas dinámicas, para esto vamos ha: 
+
+	
+		_Explorer/mesh/Hair/Hair Dynamics Operator
+
+		

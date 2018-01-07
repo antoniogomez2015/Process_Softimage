@@ -1,0 +1,67 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de animar ó mover las partículas a través, de una imágen ó una secuencia
+
+de imágenes, de esta manera, por medio de diferencia de luminancia en la imágen es posible
+
+afectar ó influir en la formación actual de las partículas en un tiemp determinado
+
+
+Tutorial: https://vimeo.com/19235073
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+NOTA:	ya tenemos que tener un sistema "Point Cloud", cargado en el ICETree, con sus respetivos 
+
+	elementos como el emisor y la/s superficies colisionadoras, otros
+
+	en el ejemplo utilizamos un sistema obtenido de "Get/Primitive/Point Cloud/Grid"
+
+
+
+	_ahora seleccionamos las partículas y vamos al ICE "Alt+9", y hacemos refresh
+
+
+	_ahora hacemos "ICETree/Create/Simulate ICE Tree", es conveniente bloquear el ICETree,
+
+	para que se mantenga el sistema de partículas siempre seleccionado
+
+
+	_luego procedemos a crear una spline, para crear así, el path/trayectoria, la cuál
+
+	segirán las partículas
+
+
+	_luego vamos ha "ICETree/Particles/Motion Control/Flow Along Curve", y lo creamos
+
+
+	_ahora seleccionamos la splinr/path, en el viewport, ó Explorer, y hacemos "F3", y lo 
+
+	cargamos al "ICETree", haciendo mouse midle click, and draw
+
+
+	_luego relacionamos los nodos "Get Data-(path)/Value", con el nodo "Flow Along urve/Curve1"
+
+
+	_luego relacionamos los nodos "Flow Along Curve/Execute", con el nodo "Simulation Root
+
+	/Execute", así al inicializar la simulación las partículas segírán el path/trazado
+
+
+		
+
+
+
+
+
+
+

@@ -1,0 +1,245 @@
+
+
+
+DETALLES
+
+
+Las acciones son paquetes de animación de bajo nivel, tales como curvas de función, las expresiones, las limitaciones 
+
+y los parámetros vinculados. Mediante la creación de un paquete que representa la animación, se puede trabajar en un nivel 
+
+superior de la animación que no está limitado por el tiempo
+
+
+Las acciones son los paquetes de cualquier tipo de animación, tales como curvas de función, las expresiones, 
+
+las limitaciones y los parámetros vinculados. Después de crear una acción, se carga como un clip en el mezclador 
+
+de animación, donde puede modificar la animación de una manera no lineal y no destructiva.
+
+
+Este paquete en el mezclador de animación le permite trabajar en un nivel superior de la animación que no está limitada 
+
+por el tiempo: se puede mover una acción en torno a cualquier parte a tiempo, apretar o estirar su longitud como quieras, 
+
+aplique una acción después de otras en secuencias, y mezclar dos o más acciones juntos para crear una nueva animación.
+
+
+Puede crear una biblioteca completa de acciones, como ciclos de pie o saltos, y utilizarlos como muchas veces como quieras 
+
+en una escena, o compartirlos entre cualquier número de modelos
+
+
+También puede crear acciones de compuestos/compounds, que son "contenedores" para múltiples acciones, incluyendo 
+
+la animación de diferentes fuentes/sources, (curvas de funciones, expresiones, restricciones y parámetros vinculados). 
+
+Trabajar con datos animaciones complejas convierte en una tarea más simple que tratar con múltiples fcurves.
+
+
+Dado que los datos de animación paquete/package, de acciones en una sola unidad utilizable, que hace que sea fácil 
+
+para copiar la animación de un modelo a otro, incluso si el modelo no comparte las mismas convenciones jerarquía, 
+
+escala, o de denominación. Cuando hay diferencias entre los modelos, se abre una plantilla para ayudar a trazar 
+
+los elementos del modelo correspondientes.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Storing Poses for Skeletons:
+____________________________
+
+
+
+
+	------------------------------------------------------------------------------------------------------
+
+
+
+	Almacenamiento de la animación en una acción/action, para un modelo debemos crea una fuente/source, que se añade 
+
+	a la lista de fuentes/sources, de animación, tanto de la modelo y el proyecto. Una vez que tenga una fuente/source, 
+
+	de la acción, puede crear uno o más clips de ella en el mezclador de animación mixer - cada clip es una instancia 
+
+	de esa fuente de acción.
+
+
+	En las imágenes de arriba, diferentes animaciones en el personaje Club-bot están cada guardan en una fuente 
+
+	de acción con un nombre apropiado: de pie, brazo onda, paso y mirar, y jimmy suelo.
+
+
+	Antes de guardar una acción, debe conocer el tipo de animación que se utiliza en el modelo 
+
+	(como curvas de función, restricciones o expresiones). Esto determina qué comandos que puedes usar para almacenar 
+
+	acciones. Para obtener más información, consulte Selección de qué almacenar en una acción.
+
+
+
+
+NOTE:	No se puede quitar la animación de una fuente de acción; por ejemplo, no se puede eliminar un fcurve 
+
+	que se almacena en una fuente.
+
+
+	Si crea fuentes de acción con diferentes velocidades de frames, puede haber errores de redondeo cuando usted 
+
+	instancie clips basados en las fuentes/sources.
+
+
+
+	Other Ways of Creating Action Sources:
+	______________________________________
+
+
+		_Plotting animation (see Plotting (Baking) Animation)
+
+
+		_Freezing clips (see Baking Clips into New Action Sources)
+
+
+		_Merging clips (see Merging Clips into New Sources)
+
+
+
+------------------------------------------------------------------------------------------------------
+
+
+
+Creating Action Sources
+
+
+	1_Crear un modelo que incluye los objetos que desea animar. Si selecciona un objeto que no es un modelo para 
+
+	almacenar una acción/action, se almacena en el modelo de los padres (si lo hay) o en el modelo de la Scene_Root,
+
+	de lo contrario
+
+
+	Además, siempre se debe poner objetos en un modelo antes de guardar las fuentes de acción para ellos. 
+
+	Sin embargo, ¿qué pasa si ya ha creado una fuente/source, de acción/action, para un objeto animado antes 
+
+	de ponerlo en un modelo? Fácil! Se crea el modelo con el objeto animado en él, a continuación, copie las fuentes 
+
+	de acción del mezclador del Scene_Root a Mixer del nuevo modelo
+
+
+	2_Animar los objetos que desee dentro del modelo. Se puede usar cualquier combinación de curvas de función 
+
+	y expresiones para animar las transformaciones y otros parámetros
+
+
+	Si el objeto no está animado, todavía se puede almacenar una "acción estática" (postura) que contiene 
+
+	una instantánea de los valores de los parámetros actuales, pero sin animación
+
+
+	3_Seleccione el modelo o los objetos en el modelo cuyos parámetros que desee incluir en la acción.
+
+
+NOTE:	Si tiene varios objetos seleccionados en diferentes modelos (incluyendo submodelos), sólo los objetos en el mismo 
+
+	modelo que el primer objeto que ha seleccionado tendrán su animación almacena en una fuente. Esto es porque 
+
+	un solo modelo puede ser evaluada a la vez.
+
+	
+	Si rama selecciona un objeto, la animación se almacenará en la acción de sus hijos también. Esto es a diferencia 
+
+	de ahorro de teclas y el trazado de las acciones, que trabajan sólo en la raíz de la selección
+
+
+	4_Si no está almacenando transformaciones, también debe marcar/marked los parámetros cuyos valores son animación 
+
+	o para 	ser incluido en la acción
+
+
+	5_y finalmente para crear una acción debemos ir ha "Animate/Action/Store/.."
+
+
+
+------------------------------------------------------------------------------------------------------
+
+
+Store Action> Current Values:
+
+
+
+	Optional Animation
+	__________________
+
+
+	key Mode:
+
+		
+		_Copy/Cut Entire Fcurves:
+
+			_esta opción permite copiar y cortar todos los valores de la entera Fcurve Editor
+
+
+		_Copy/Cut Keys:
+
+			_esta opción permite copiar y cortar los fotogramas claves actuales
+
+
+	_Ripple Keys:
+
+		_esta opción permite hacer ripple/riso, de los fotogramas claves
+
+
+	_Include Animation Layers:
+
+		_esta opción permite incluir la animación encontrada en las layers, de animación
+
+
+	New Source
+	__________
+
+
+	_Action Name:
+
+		_esta opción permite asignale un nombre a la acción creada
+
+
+	_Number de Items:
+
+		_esta opción se refiere a la cantidad de parámetros incluidos
+
+	
+	_Default In:
+
+		_esta opción indica el rango mínimo de frames, de la acción a crear
+
+
+	_Default Out:
+
+		_esta opción indica el rango máxima de frames, de la acción a crear
+
+
+	Once Done Creating the Source
+	_____________________________
+
+
+	_Remove Original Animation:
+
+		_esta opción permite indicar si deseamos remover la animación original del objeto/motive
+
+
+	_Add Source as a clip in the Mixer:
+
+		_esta opción nos permite indicar si deseamos incorporar los "sources", creados al mixer pane,
+
+		como clips, de animación
+
+
+	_Clip offset:
+
+		_esta opción nos permite desplazar el bloque de animación
+
+

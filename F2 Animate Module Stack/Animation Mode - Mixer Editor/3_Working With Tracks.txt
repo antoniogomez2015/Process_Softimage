@@ -1,0 +1,92 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de hacer animación "NoLinear", ó animación no lineal, a través, del modo de animación
+
+avanzado de "animación mixer", el cuál, permite diferentes tipos de métodos y sistemas de animación:
+
+
+el modo de animación mixer, permite los siguientes tipos de datos
+
+
+	_FCurve Animation
+
+	_Expression Animation
+
+	_Constraints Animation
+
+	_Shape Animation
+
+	_Audio Animation
+
+	_Animation Layers
+
+	_Cached Animation
+
+	_Simulation Sources
+
+	_Image Clips
+
+
+
+Animación no lineal es la animación que no está limitada por el tiempo. Se le permite trabajar en la animación 
+
+a un alto nivel de control en cualquier punto de tiempo en la escena. Se le da un control de alto nivel sobre 
+
+la animación porque puede en cada capa mezclar secuencias de una manera no lineal y no destructiva. Además, 
+
+se puede reutilizar y afinar muchas fuentes de datos.
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Working Wih Tracks:
+___________________
+
+
+
+	_Las pistas son el fondo en el que se agrega y clips de secuencia en el mezclador mixer, de animación. 
+
+	Hay seis tipos de pistas en el mezclador:
+
+
+	1_Pistas/tracks, de "capas de animación" son de color crema y sólo pueden contener clips de "capas" 
+
+	de la animación. 
+
+	Cuando se crea una capa de animación, pistas y clips para las capas aparecen automáticamente en el 
+
+	mezclador mixer
+
+
+	2_pistas/tracks, de "animación", son de un color verde intenso y sólo pueden contener "Actions", clips
+
+
+	3_pistas/tracks, "shapes", son de color azul y sólo pueden contener "Shape", clips, de animación
+
+
+	4_pistas/audio, son de color arena y sólo pueden contener "Audio", clips
+
+
+	5_Pistas/tracks, de "caché", son de color naranja claro y sólo pueden contener clips creados a partir 
+
+	de archivos de simulación o animación en caché. Cuando se crea un archivo de caché, puede elegir 
+
+	que archivos de caché se cargarán automáticamente como clips de la mesa de mezclas. No se puede utilizar 
+
+	clips de caché con otros elementos en la mesa de mezclas.
+
+
+	6_Pistas/tracks, de imagen son color púrpura y sólo pueden contener clips de imagen; sin embargo, 
+
+	no se definen como un elemento como lo son los otros tipos de pistas/trackss.
+
+
+	
+
+--------------------------------------------------------------------------------------------------------------

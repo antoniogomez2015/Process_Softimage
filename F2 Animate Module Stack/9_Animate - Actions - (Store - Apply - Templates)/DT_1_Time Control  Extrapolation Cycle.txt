@@ -1,0 +1,97 @@
+
+
+
+DETALLES
+
+
+Las acciones son paquetes de animación de bajo nivel, tales como curvas de función, las expresiones, las limitaciones 
+
+y los parámetros vinculados. Mediante la creación de un paquete que representa la animación, se puede trabajar en un nivel 
+
+superior de la animación que no está limitado por el tiempo
+
+
+Las acciones son los paquetes de cualquier tipo de animación, tales como curvas de función, las expresiones, 
+
+las limitaciones y los parámetros vinculados. Después de crear una acción, se carga como un clip en el mezclador 
+
+de animación, donde puede modificar la animación de una manera no lineal y no destructiva.
+
+
+Este paquete en el mezclador de animación le permite trabajar en un nivel superior de la animación que no está limitada 
+
+por el tiempo: se puede mover una acción en torno a cualquier parte a tiempo, apretar o estirar su longitud como quieras, 
+
+aplique una acción después de otras en secuencias, y mezclar dos o más acciones juntos para crear una nueva animación.
+
+
+Puede crear una biblioteca completa de acciones, como ciclos de pie o saltos, y utilizarlos como muchas veces como quieras 
+
+en una escena, o compartirlos entre cualquier número de modelos
+
+
+También puede crear acciones de compuestos/compounds, que son "contenedores" para múltiples acciones, incluyendo 
+
+la animación de diferentes fuentes/sources, (curvas de funciones, expresiones, restricciones y parámetros vinculados). 
+
+Trabajar con datos animaciones complejas convierte en una tarea más simple que tratar con múltiples fcurves.
+
+
+Dado que los datos de animación paquete/package, de acciones en una sola unidad utilizable, que hace que sea fácil 
+
+para copiar la animación de un modelo a otro, incluso si el modelo no comparte las mismas convenciones jerarquía, 
+
+escala, o de denominación. Cuando hay diferencias entre los modelos, se abre una plantilla para ayudar a trazar 
+
+los elementos del modelo correspondientes.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+DT_1_Time Control  Extrapolation Cycle:
+_______________________________________
+
+
+
+
+	esta opción nos permite hacer cycles, de loops, de un clip, en el mixer panel de forma muy fácil
+
+
+	_primero cargamos un clip en el mixer panel
+
+
+	_luego hacemos "mouse right clip/", sobre el clip, deseado y seleccionamos la opción de "Clip Properties"
+
+	
+	_y vamos a las opciones del clip "Generic/Time Control/Extrapolation/", así, tendremos las opciones de:
+
+	Expolation Before - After, estas opciones nos permiten agregar acciones antes ó después de un clip,
+
+	en el mixer panel, así, contamos con 4 diferentes opciones:
+
+
+		_no contribution:
+
+			_esta opción elemina cualquier tipo de contribución al clip respectivo
+
+
+		_Hold:
+
+			_esta opción permite agregar una serie de frames, al clip de forma estática ó bloquedados
+
+			del último fotograma respectivo
+
+
+		_Cycle:
+
+			_esta opción permite agregar "N", cantidad de ciclos ó de repeticiones del clip de forma
+
+			contigua al clip respectivo
+
+
+		_Bounce:
+
+			_esta opción permite agregar de forma contigua al clip, versiones del clip con reproducciones
+
+			forwarp y rewarp, ó hacia adelante y hacia atras

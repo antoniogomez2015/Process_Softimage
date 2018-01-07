@@ -1,0 +1,129 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de vincular diferentes elementos de diferentes manera de cara a mejorar la animación
+
+e interactividad entre los elemento para mejorar así, la flexibilidad y facilidad en el proceso de animación
+
+y de relación entre los elementos
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Descripción:
+
+	tenemos la posibilidad de hacer un constrint, de tipo simetría de una plano determinado a través, de una
+
+	cordenada espefífica para que a su vez. estos objetos reflejados/morrow, obedescan a los parámetros "Multi",
+
+	ó "Translate/Rotate/Scale", del elemento "parent", ó controlador
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+
+_Simetry Constraint:
+
+
+	_tenemos la posibilidad de vincular la propiedad "Multi", 'o "Translate/Rotate/Scale", de un elemento a la 
+
+	"Orientation", y "Translate/Rotate/Scale", de otro elemento para que así, al hacer "Translate/Rotate/Scale", 
+
+	del primer elemento "parent", sea afectada la orientación y "Translate/Rotate/Scale", de los elementos
+
+	relacionados del otro elemento "hijo", para esto:
+
+
+		_primero seleccionamos el elemento se "hijo/constraint/limitado"
+
+
+		_luego con este objeto seleccionado vamos ha "Contrain/", y hacemos click, en "Simetry", así,
+
+		los elementos quedarán relacionados
+
+		
+		_así, se agregará el elemento "hijo/parent", en el "Explorer/Polygon Mesh/Kinematics/Constraint/",
+
+		será agregado el elemento "Simetry Cns", y, al hacer doble click, en este entraremos a sus opciones:
+
+
+------------------------------------------------------------------------------------------------------------
+
+		Position:
+		_________
+
+			_Active:
+
+				_tenemos la posibilidad de activar ó desactivar temporalmente un constraint
+
+
+			_Plane of Simetry:
+
+				_XZ plane (y=0):
+
+					_podemos seleccionar una proyección en los planos XZ
+
+				_XY plane (z=0)
+
+					_podemos seleccionar una proyección en los planos XY
+
+				_YZ plane (x=0)
+
+					_podemos seleccionar una proyección en los planos YZ
+
+				
+
+			Scaling
+			_______
+
+
+			_Active:				
+
+				_tenemos la posibilidad de activar ó desactivar este grupo de propiedades del 
+
+				constraint, en los elementos hijos/constraint
+
+			_X,Y,Z:
+
+				_tenemos la posibilidad de hacer ajuster en cordenadas específicas de escala
+
+			
+			Rotation
+			________
+
+
+			_Active:				
+
+				_tenemos la posibilidad de activar ó desactivar este grupo de propiedades del 
+
+				constraint, en los elementos hijos/constraint
+
+			_X,Y,Z:
+
+				_tenemos la posibilidad de hacer ajuster en cordenadas específicas de rotación
+
+			
+			Position
+			________
+
+
+			_Active:				
+
+				_tenemos la posibilidad de activar ó desactivar este grupo de propiedades del 
+
+				constraint, en los elementos hijos/constraint
+
+			_X,Y,Z:
+
+				_tenemos la posibilidad de hacer ajuster en cordenadas específicas de posición
+
+			
+
+---------------------------------------------------------------------------------------------------------------
+

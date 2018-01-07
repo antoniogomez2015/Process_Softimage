@@ -1,0 +1,70 @@
+
+
+DETALLES
+
+
+tenemos la posibilidad de filtrar un tipo de dato determinado así, como también, reasignarle un valor
+
+
+
+
+	Tool/Execution/Filter
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Filter
+
+
+	_este es el nodo nos permite anteponer un "filter", a un nodo de atributo u otro, donde dicho 
+
+	atributo tiene valor por defecto, ej: un valor booleano "True/1" 
+
+
+	_así, a través, del nodo "Filter", podremos reasignale un valor a este atributo por defecto, ej:
+
+	a un valor de selección poligonal de tipo "cluster",  boleano "IsElement", el cuál, por defecto
+
+	tendrá un valor de "1"
+
+
+	_podríamos agregarle a esa selección un valor diferente anteponiéndole el nodo "Filter", así,
+
+	podríamos colocarle un valor a esa sola selección de "3", por ejemplo..
+
+
+	_más para esto también, necesitariamos agregar el nodo "Tool/Constant/Scalar", al nodo "Filter",
+
+	en su punto ó puerto de entrada "Value", ya que a través, del nodo escalar es que podremos
+
+	cambiar el valor del atributo deseado
+
+
+		-Filter-
+
+
+			_In:
+
+				_Get Geometry/feet
+
+
+			_Out:
+
+				_"ICETree/ Create/ Simulated ICE Tree/ Port1"
+
+
+	así, veremos que al animar los elementos "Get Geometry", en la escena el mesh/motive,
+
+	que recibe la deformación se verá deformado y, a su vez, éste mantendrá la deformación
+
+	en el tiemplo luego de que el elemento "Get Geoemtry", se mueven en el espacio retirándose
+
+	del elemento deformado
+
+
+
+
+

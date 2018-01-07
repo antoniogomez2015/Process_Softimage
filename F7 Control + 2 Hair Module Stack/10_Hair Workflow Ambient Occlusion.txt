@@ -1,0 +1,57 @@
+
+
+
+curso: Digital Tutors Intro to XSI Hair 2007
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+Hair Shader Ambient Occlusion:
+
+
+Descripción:
+____________
+
+
+	al material del mesh/motive, del character, tenemos la posibilidad de agregar opciones de
+
+	ambient occlusion, para que así, este reciba occlusión del hair system, este permite causar
+
+	un mayor relismo e interacciones entre ambos elementos al lograr una apariencia más realista
+
+
+
+	
+	Ambient Occlusion:
+	__________________
+
+
+	_primero seleccionamos el mesh/motive, del character, (no el proxi, del hair)
+
+
+	_luego abrimos el panel "Render Tree", yendo ha "Veiw/Renring-Texturing/Render Tree", ó a través,
+
+	de su shortcut "Shift + 7"
+
+
+	_luego para agregar un nodo de ambient occlusion vamos ha "Render Tree/Nodes/Illumination/",
+
+	y agregamos "Ambient occlusion"
+
+
+	_Ambient Occlusion Node:		
+
+
+		_luego conectamos el nodo "Phong/out" al nodo que cargamos "Ambient_occlusion/bright"
+
+
+		_luego conectamos el nodo "Ambient_Occlusion/out", al nodo "Scene_Material/Surface"
+
+
+	de esta manera el material del mesh/motive, resivirá ambient occlusion, del hair system
+		
+

@@ -1,0 +1,163 @@
+
+
+
+curso: Digital Tutors Intro to XSI Hair 2007
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Descripción:	esta opciones nos permitirán las posibilidad de hacer que el hair system, interactúe
+
+		con geometrías con el mesh/motive, del body, del character, así, como otros elementos
+
+		de la escena
+
+
+		en otra instancia también, a otras fuerzas/fields, implícitas en escena que ejercen
+
+		fuerzas colaterales entre otras opciones
+
+
+
+NOTE:	es importante antes de implementar el obstacle system, que ningún elemento del hair system,
+
+	se intercepte ó esté dentro de la mesh motive, que hará de obstacle, ya que de ser así, el 
+
+	sistema de obstacle, repelerá el hair system, deformando su estado y características de estilo
+
+	aplicadas por nosotros
+
+
+
+
+
+Hair/Enviroment/Obstacle:
+_________________________
+
+
+	Obstacle:
+
+
+		_tenemos la posibilidad de hacer ó convertir ciertas geometrías en obstáculos al sistema
+
+		hair system, para que así, éstas interactúen con el haur system, y éste respete las 
+
+		áreas de la respectiva mesh, para esto:
+
+		
+		_primero seleccionamos el hair system, deseado
+
+
+		_luego, vamos ha "Hair/Modify/Enviroment/", y seleccionamos "Set Obstacle", así, nos
+
+		aparecerá un "picker", con el cuál, tendremos que hacer "mouse left click", sobre el 
+
+		mesh motive, que hará de "Obstacle", al hair system
+
+
+		_al hacer esto se agregará en "Explorer/Mesh/Hair/Hair Generation Operator/", las opciones
+
+		de ej: "busto_obstacle (busto)", las cuales se conforman de las siguientes características:
+
+
+
+---------------------------------------------------------------------------------------------------------
+
+
+General
+_______
+
+
+		_Mute:
+
+			_esta opción nos permite activar ó desactivar la opción de "Obstacle", para estas
+
+			determinadas "meshes", respectivas
+
+
+		_Obstacle Name:
+
+			_esta opción nos permite indicar un nombre para el sistema de obstacles
+
+
+		_Obstacle Type:
+
+			_esta opción nos permite indicar el tipo de estructura de obstacle a utilizar
+
+			para la representación del sistema de obstáculos, entre las cuales tenemos:
+
+			
+			_B-Box:
+
+				_esta opción nos permite indicar que tome como referencia geométrica
+
+				un "Cubo", esta opción no es muy precisa en muchos casos donde la forma
+
+				a representar es compleja como un character, otros
+
+
+			_B_Sphere_
+
+				_esta opción nos permite indicar que tome como referencia geométrica
+
+				una "Esfera", esta opción no es muy precisa en muchos casos donde la forma
+
+				a representar es compleja como un character, otros
+
+
+			_Actual Shape:
+
+				_esta opción nos permite indicar que tome como referencia la misma geometría 
+
+				del mesh/motive, del character, esta opción es la más precisa en muchos casos 
+
+				donde la forma a representar es compleja como un character, otros
+
+
+		_Animatable Deformation:
+
+			_esta opción activa las opciones de obstacles, a las opciones de animación dinámica
+
+
+		_Double Face Collision:
+
+			_esta opción activa las opciones de colisión de ambos lados de la geometría obsáculo
+
+			tanto las caras internas y externas de la geometría, esto es ocaciones de muy útil
+
+			más puede relentizar el sistema ó sabre cargarlo
+		
+
+Physical
+________
+
+
+
+	_Friction:
+
+		_esta opción permite la fricción del hair system, sobre la geometría que sirve de obstacle
+
+
+
+	_Elasticity:
+
+		_esta opción permite la eslasticidad del hair system, sobre la geometría que sirve de obstacle
+
+
+	_Rush Length:
+
+		_esta opción permite la agilidad del hair system, sobre la geometría que sirve de obstacle
+
+
+	_Tolerance:
+
+		_esta opción permite la fluidéz del hair system, sobre la geometría que sirve de obstacle
+
+
+
+	
+
+

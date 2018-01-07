@@ -1,0 +1,134 @@
+
+
+DETALLES
+
+h
+Lagoa, es un sistema de simulación basado en nodos, de ICE, creado por Thiago Costa, su web (http://thiagocosta.net/) 
+
+este sistema es especialmente útil para fluidos, rigid bodies, soft bodys, and cloth
+
+Lagoa, viene el portugues, y significa laguna ó lago pequeño
+
+
+
+
+lista de reproducción:
+
+	Lagoa Multiphysics
+
+		https://www.youtube.com/playlist?list=PLgBgTdALf1XOgtBS-_LAZDQIaZodIfDzn
+
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	Pressets:
+	_________
+
+
+	_lo primero es irnos a la sección de ICE/F4
+
+
+	y en la sección de partículas tenemos las opciones de "Particle/Create/Lagoa Particles", los siguientes
+
+	pressets, ó "Compounds" que nos ofrecen las siguientes simulaciones listas para utilizar, estas son:
+
+
+		_Pouring Liquid:
+
+			este es un chorro de líquido
+
+
+		_Jelio:
+
+			este es un gelatina
+
+
+		_Sticky Paste:
+
+			este es pasta pegajosa (pasta de dientes)
+
+	
+		_Surface Tension:
+
+			este es un material con un alto grado de tensión
+
+
+		_Throw Breakable Structure:
+
+			este nos permite romper objetos
+
+
+		_Throw Elastic Clusters
+
+			este son nodos ó compounds necesarios para las simulaciones básicas, sin tener que
+
+			construir todo el arbol de ICE, desde el comienzo
+
+
+	_para hacer uso de estos pressets, ó compounds, necesitados los siguientes elementos:
+
+
+		_un emisor/emitter, este puede ser una geometría u otro elemento, y lo colocamos según la lógica
+
+		de la escena
+
+
+		_luego, necesitamos un elemento colisionador/collider, y lo colocamos según la lógica
+
+		de la escena
+
+
+	_ahora debemos seleccionar ambos elementos, así, primero seleccionamos la mesh/motive, que hará de emisor y
+
+	luego seleccionamos el mesh/motive, que hará de colisionador y, con ambos seleccionamos vamos ha ej:
+
+	"Particle/Create/Lagoa Particles/",  Pouring Liquid
+
+
+	_así, nos habrá agregado al "Explorer/Alt+8", un nuevo elemento, este es: ej: "Pouring_Liquid_from_Volume_PointCloud"
+
+	el cuál representará al sistema de Lagoa, en este caso de ejemplo en concreto
+
+
+	_más para manejar el sistema completo tendremos que entrar al panel de ICE/Alt+9, y hacer refresh, con el
+
+	sistema lagoa, seleccionado, así el sistema lagoa, presentará en el ICE, los siguiente nodos base:
+
+
+		_ICE Tree:
+
+			este es el nodo de salidos que los contendrá a todos
+
+
+		_Lagoa Setuo Puring Liquid from Volume
+
+			este es un contenedor "Compound", el contiene sistemas enteros editables a través de la 
+
+			letra "E", que hay sobre este
+
+
+		_asi, como también, contiene el nodo correspondiente al mesh/motive, que hace de emisor
+
+
+		_asi, como también, contiene el nodo correspondiente al mesh/motive, que hace de colisionador
+
+
+	_de esta manera, si hacemos mouse left click, sobre el ícono "E", del noso "Lagoa Setuo Puring Liquid from Volume",
+
+	entraremos a las opciones de los nodos especializados y otros nodos dentro del sistema lagoa
+
+
+	_más si hacemos mouse left double click, sobre el nodo "Lagoa Setuo Puring Liquid from Volume", nos 
+
+	aparecerá el panel con las opciones generales que conforman el "compound", "Lagoa Setuo Puring Liquid from Volume",
+
+	para obtener así, los controles establecidos para este
+
+	
+
+
+		
+	
+

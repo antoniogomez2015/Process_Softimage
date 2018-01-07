@@ -1,0 +1,201 @@
+
+
+
+Digital Tutors Introduction to Rigging in XSI 2008
+
+
+
+	Skeleton System
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+Bone Properties:
+________________
+
+
+
+
+	_para acceder a las opciones y propiedades de los bones, basta con hacer "Enter", con éstos
+
+	seleccionados y, para más opciones u opciones avanzadas podemos hacer "Alt + Enter"
+
+	
+	_también, podemos acceder a través, del "Explorer/Root/Bone/..", este método nos permite acceder
+
+	a las opciones de forma separada ó por grupos de propiedades
+
+
+
+	----------------------------------------------------------------------------------------------------
+
+
+
+	Root/Chain Root:
+	________________
+
+
+		_Name:
+
+			_tenemos la posibilidad de asignarle un nombre a la cadena de huesos
+
+
+		_Primary Display:
+
+			_tenemos la posibilidad de asignarle un forma de visualización al roots,
+
+			de la cadena
+
+
+		_Size:
+
+			_tenemos la posibilidad ajustar el tamaño de la forma de visualización de la cadena
+
+
+		_Shadow Display:
+
+			_tenemos la posibilidad de asignar un bone, proxi, a una distancia determinada
+
+			esto es especialmente útil en animaciones complejas donde podríamos necesitar 
+
+			tener un acceso remoto a una cadena determinada
+
+
+
+	----------------------------------------------------------------------------------------------------
+
+
+
+
+	Chain Bone:
+	___________
+
+
+		_éstas son las opciones básicas de cordenada de funcionamiento y articulación así, como su
+
+		longitud, visualización, tamaño y elementos proxis, para manejo más fácil de forma externa
+
+
+		_Lengh:
+
+			_tenemos la posibilidad de asignar una longitud ó largo específico
+
+
+		_Set Axis:
+
+			_tenemos la posibilidad de indicar un cordenada de trabajo ó flexión ó articulación
+
+
+		_Bone Axis Offset:
+
+			_tenemos la posibilidad de hacer ajuster personalizados de la cordenada de trabajo ó 
+
+			flexión ó articulación
+
+
+		_Bone Display:
+
+			_tenemos la posibilidad de indicar un forma de visualicación 
+
+
+		_Size:
+
+			_tenemos la posibilidad de indicar en tamaño ó grosor del bone ó hueso
+
+		
+		_Shadow Display:
+
+			_tenemos la posibilidad de asignar un bone, proxi, a una distancia determinada
+
+			esto es especialmente útil en animaciones complejas donde podríamos necesitar 
+
+			tener un acceso remoto a un bone determinado
+
+
+	----------------------------------------------------------------------------------------------------
+
+
+
+	Kinemactic Chain:
+	_________________
+
+
+		_éstas son las opciones de kinemática y kinemática inversa, solver, IKs, y criterios 
+
+		y tecnologías de funcionamiento disponemos de un shortcut: "Control + R"
+
+
+
+		IK Solver Behavior:
+		___________________
+
+
+		_Solver:
+
+			_Si|3D Solver (dejar por defecto)
+
+
+		_Solver Angles:
+
+			_Use Joint Rotation SI|3D Behavior (dejar por defecto)
+
+
+		_FK/IK Blend:
+
+			_0/1 (proproción de efecto del IK), esta opción es especialmente cuando
+
+			deseamos animar partes de un character a través, del skeleton pero sin 
+
+			tener las limitaciones de la kinemática inversa, ya que colocando un valor
+
+			de "0", desactivamos la kinemática inversa dejando libres los bones
+
+
+			como también, nos permite la realización de animaciones mixtas entre ambas
+
+			modalidades
+
+
+		_Fk/IK Ghosting:
+
+			_efecto de visualización fantasma
+
+
+		_Force IK:
+
+			_opción para forzar la kinemática por defecto
+
+
+		Error Threshold:
+		________________
+
+
+		_type:
+
+			_Solver Default (umbral del error, opción por defecto)
+
+
+		_Threshold:
+
+			_valor personalizable
+
+
+	----------------------------------------------------------------------------------------------------
+
+
+
+	Kinematic Joint:
+	________________
+
+
+		_éstas son las opciones de kinemática básicas de los huesos, las cuales hacen referente a
+
+		los limitadores de rotación, cordenadas y dirección entre otros
+
+
+

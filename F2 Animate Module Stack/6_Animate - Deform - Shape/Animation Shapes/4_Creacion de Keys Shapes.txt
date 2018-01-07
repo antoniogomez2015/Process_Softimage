@@ -1,0 +1,221 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de hacer animaciones a través, de la deformación de geometrías/meshes, de esta manera
+
+podremos animar las deformaciones realizadas sobre la morfologías de las meshes, respectivas en el tiempo,
+
+e incluso realizar sources, de animación, keys, otros
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+_consideraciones:
+
+
+
+	Hay algunas cosas que hay que hacer y entender acerca de las formas/shapes, antes de empezar. Mediante 
+
+	la comprensión de la importancia de los modelos/models, así como la geometría que se utiliza para 
+
+	la animación de forma/shapes, es posible prevenir algunos dolores de cabeza no deseados más adelante
+
+
+
+---------------------------------------------------------------------------------------------------------------
+
+
+Shape Animation and Models:
+___________________________
+
+
+
+	Antes de empezar a animar formas/shapes, es una buena idea crear un modelo/model, que contiene el objeto 
+
+	que va a ser la forma/shape, de animación. Este padre del objeto bajo un modo de modelo/model, que contiene 
+
+	su propio nodo Mixer panel.
+
+
+	En el siguiente ejemplo, el personaje Dr. Beck Bunsen cabeza, ojos, vasos, y el cabello son parte de un modelo 
+
+	llamado "Beck". Sólo ciertos grupos en la cabeza se deforman en diferentes formas/shapes,
+
+	para la sincronización de labios.
+
+
+	A continuación, puede volver a utilizar el modelo/model, con su animación forma/shape, en otra escena, 
+
+	la importación y la exportación mezclador mixer, completa del modelo, o duplicar el modelo con su animación 
+
+	de forma/shape.
+
+
+NOTE:	Puede copiar formas/shapes, de un modelo a otro si su geometría y grupos coinciden en términos de topología 
+
+	y el número de puntos.
+
+
+
+---------------------------------------------------------------------------------------------------------------
+
+
+Choosing the Cluster for the Shape Keys:
+________________________________________
+
+
+	Puede almacenar los keys shapes, para todo el objeto (la geometría completa), un conjunto de puntos, o puntos 
+
+	que están etiquetados, pero no guardan como un clúster.
+
+
+
+	Todo objeto: (sin cluster)
+	____________
+
+	Si selecciona un objeto entero, Softimage busca un clúster que contiene todos los puntos del objeto y almacena 
+
+	una forma/shape, en ella. Si no hay tal grupo, Softimage crea un clúster con todos los puntos del objeto 
+
+	y almacena una forma/shape, para ello. 
+
+	Es posible que desee hacer esto si usted está seleccionando los keys shapes, a partir de un conjunto 
+
+	de objetos deformados (véase la sección siguiente, Información general de Forma Herramientas de animación 
+
+	y Métodos, para más información).
+
+
+
+	Cluster de Puntos: (con cluster)
+	__________________
+
+	Si crea un clúster y selecciona, una forma/shape, es almacenada para ese clúster. Puede tener varios grupos 
+
+	de animación, al mismo tiempo en el mismo objeto, como con animación facial: un clúster para cada ceja, 
+
+	una para el labio superior, una para el labio inferior, etc.
+
+	Para ello, es necesario utilizar clips compuestos, como se describe en ponderación con clips compuestos.
+
+
+
+	Puntos Etiquetado: (seleccion directa)
+	__________________
+
+	Si etiqueta algunos puntos, Softimage busca la agrupación más pequeña que contiene todos los puntos que estén 
+
+	etiquetadas y almacenados de una forma/shape, en la agrupación. Si no hay tal grupo, Softimage crea un clúster 
+
+	que contiene los puntos marcados y luego almacena una forma para ello.
+
+
+
+---------------------------------------------------------------------------------------------------------------
+
+
+Tips for Working with Clusters:
+_______________________________
+
+
+
+	Para seleccionar fácilmente grupos, haga clic en el botón de Clusters en el panel Seleccionar. Esto abre 
+
+	un explorador en el que se puede ver una lista de grupos del objeto.
+
+
+	Asegúrese de guardar siempre los keys shapes, utilizando el mismo conjunto de puntos. Al deformar un objeto, 
+
+	sino almacenar una keys shapes, sólo para un grupo de puntos en ese objeto, los puntos deformados que no 
+
+	pertenecen a ese grupo encajen de nuevo a su posición original.
+
+
+	Para ayudarle a utilizar siempre el mismo grupo, se debe dar a los grupos de nombres significativos en lugar 
+
+	de los nombres por defecto de punto, Point1, etc. Por ejemplo, si va a crear fonemas o expresiones faciales, 
+
+	nombres descriptivos como left_eyebrow, right_mouth_corner o upper_lip que sea más fácil hacer un seguimiento 
+
+	de lo que está animando.
+
+
+	El nombre de la agrupación también se utiliza en la forma de clip compuesto tan pronto como se crea una clave 
+
+	de forma/shape, por lo que lo mejor es cambiar el nombre del grupo en cuanto se crea.
+
+
+	Además de las agrupaciones de denominación, siempre se debe dar nombres a los objetos antes de crear formas
+
+	/shapes, y secuencias de comandos para evitar problemas. Si cambia el nombre de un objeto de forma/shape, 
+
+	de animación (o clúster), una caja de conexión parece y le pedirá que especifique el nuevo nombre del objeto.
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------
+
+
+Deformations and Shape Reference Modes:
+_______________________________________
+
+
+
+	La forma de referencia para un objeto de forma/shape, de animación es la geometría del objeto que es el 
+
+	resultado de los operadores que se encuentran en la región de modelado de la historia de la construcción 
+
+	del objeto (ver Base Geometría en la Región Modeling). Todas los keys shapes, que guarde ó almacene, 
+
+	o seleccione se almacenan como la diferencia de posiciones de puntos de esta referencia. Además, se añade 
+
+	un nodo combinador Forma de clústeres "Cluster Shape Combiner", para la región de modelado de la forma en la 
+
+	historia de la construcción del modelo, lo que le permite definir la forma en que se ponderan los clusters 
+
+	(ver Mezcla entre Clusters).
+
+
+	Si ya ha utilizado anteriormente otro tipo de deformación en el objeto y luego modificar esa deformación 
+
+	en el modo de modelado (como al cambiar un valor de parámetro), la forma de referencia también se modifica 
+
+	(excepto en el modo Absoluto, donde la deformación se sobrescribe). Por ejemplo, si se hubiera aplicado una 
+
+	deformación de la torcedura en el modo de modelado y luego guardado una clave de forma en el modo de modelado 
+
+	de la forma, la forma retorcida se utiliza como referencia. Si posteriormente modifica el parámetro ángulo 
+
+	de la torcedura en el modo de modelado, la forma de referencia también se modifica.
+
+
+	Además, si se agrega operadores de deformación o de topología en el modo de modelado, la forma de referencia 
+
+	se actualiza según lo determinado por el modo de referencia de forma que usted elija.
+
+
+
+
+---------------------------------------------------------------------------------------------------------------
+
+
+Selecting a Reference Mode:
+___________________________
+
+
+	Al establecer el modo de referencia forma, usted tiene más control sobre cómo se comporta la forma en que el 
+
+	objeto se deforma en el modo de modelado después de configurar los keys shapes, usted debe seleccionar un modo 
+
+	antes de guardar o los keys shapes, al guardar en un grupo determinado. Sin embargo, puede cambiar los modos 
+
+	más tarde (consulte Cambio del modo de referencia Forma)

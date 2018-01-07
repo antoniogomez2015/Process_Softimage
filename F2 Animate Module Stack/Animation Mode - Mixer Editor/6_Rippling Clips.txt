@@ -1,0 +1,89 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de hacer animación "NoLinear", ó animación no lineal, a través, del modo de animación
+
+avanzado de "animación mixer", el cuál, permite diferentes tipos de métodos y sistemas de animación:
+
+
+el modo de animación mixer, permite los siguientes tipos de datos
+
+
+	_FCurve Animation
+
+	_Expression Animation
+
+	_Constraints Animation
+
+	_Shape Animation
+
+	_Audio Animation
+
+	_Animation Layers
+
+	_Cached Animation
+
+	_Simulation Sources
+
+	_Image Clips
+
+
+
+Animación no lineal es la animación que no está limitada por el tiempo. Se le permite trabajar en la animación 
+
+a un alto nivel de control en cualquier punto de tiempo en la escena. Se le da un control de alto nivel sobre 
+
+la animación porque puede en cada capa mezclar secuencias de una manera no lineal y no destructiva. Además, 
+
+se puede reutilizar y afinar muchas fuentes de datos.
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Rippling Clips:
+_______________
+
+
+
+	_Rippling/ondulación, es una manera de tener otros clips reaccionando a las acciones que se realizan en los clips, 
+	seleccionados, como mover, eliminar, añadir, descamación, o clips de ciclismo.
+
+
+	_rippling, se establece por pista en el mezclador mixer, de animación, por lo que todas las pistas con ondulación 
+
+	se ven afectados por cualquier clip siendo modificados en una pista de ondulación. Por ejemplo, si está en la
+ 
+	ondulación de una pista y mueve un clip a la derecha, todos los clips en todas las pistas de la ondulación que se 
+
+	inician después de que el clip se "empuja" a la derecha, así, mantener la distancia que fue originalmente entre los 
+
+	clips. Si ondulación está apagado, no se puede mover un clip más allá del inicio de la siguiente o el final de la 
+
+	anterior
+
+
+NOTE:	Si selecciona varios clips, ondulación afecta a todos los clips seleccionados en cualquier pista que se ha activado 
+
+	la ondulación, pero no los clips en las pistas que tienen ondulación apagado.
+
+
+
+To activate ripple:
+___________________
+
+
+
+	_active la opción de "rippling", en el ícono de cada track "r", en el mixer
+
+
+	_otra forma de activar el rippling, es hacer "mouse right click/Tracks Properties" y en "controls/", activar
+
+	la opción de "Ripple"
+
+
+--------------------------------------------------------------------------------------------------------------

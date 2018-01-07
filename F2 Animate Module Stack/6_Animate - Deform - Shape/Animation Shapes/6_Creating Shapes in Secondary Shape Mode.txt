@@ -1,0 +1,92 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de hacer animaciones a través, de la deformación de geometrías/meshes, de esta manera
+
+podremos animar las deformaciones realizadas sobre la morfologías de las meshes, respectivas en el tiempo,
+
+e incluso realizar sources, de animación, keys, otros
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+_Creating Shapes in Secondary Shape Mode:
+
+
+
+	_Si desea utilizar el "envelopes", de animación para crear keys de forma/shapes,, puede cambiar al modo 
+
+	de construcción Modelado forma/shape, secundaria y guardar las keys de la forma/shape, en referencia a la 
+
+	geometría de la envolvente/envelope, de animación. Éste es un modo útil para ajustar la deformación de la 
+
+	dotación para la animación de forma/shape, como para la fijación de la esquina o una boca o un pliegue del 
+
+	codo, o haciendo deformaciones basado en pose utilizando el enlace con los comandos
+
+
+	_Salvando las keys de forma/shape, en este modo también, se evita que el operador de envelopes, en la región 
+
+	de Animación de ser eliminadas cuando usted trae las keys, de la forma/shape, en la mezcladora mixer, para 
+
+	crear clips de forma/shape.
+
+
+	NOTA: Actualmente, el modo de Modelado forma secundaria sólo funciona con los envelopes. Creación de keys, 
+
+	de forma/shape, en este modo no puede dar resultados satisfactorios si se utiliza con otras deformaciones 
+
+	animadas.
+
+
+	_Al guardar o almacenar una key, de la forma/shape, en el modo de modelado de la forma/shape, secundaria, 
+
+	los efectos de los operadores en las regiones de modelado tanto el modelado de forma/shape, secundaria y la 
+
+	forma/shape, se almacenan en la forma/shape. Luego se retiran los operadores en ambas regiones al crear un 
+
+	clip, de la forma/shape, mediante la aplicación de una key, de forma/shape. Todas las keys, de forma/shape, 
+
+	se aplican a nivel del combinador de Forma/shape, Cluster en la parte inferior de la región Modeling 
+
+	forma/shape, incluyendo formas/shapes, creadas en el modo de forma/shape, secundaria.
+
+
+
+---------------------------------------------------------------------------------------------------------------
+
+
+
+He aquí un caso típico en el que se desea utilizar el modo de forma secundaria:
+
+
+
+	_El objeto de forma/shape, animada se ha aplicado como un envelope, a un Skeleton, y tiene un operador de 
+
+	envelope, en la región de Animación. El envelope, está animado por el esqueleto, como el hueso de la 
+
+	mandíbula para la animación de los movimientos de la boca para la sincronización de labios.
+
+
+	_Seleccione el modo de forma/shape, secundaria en la lista Modo de construcción en el menú principal en la 
+
+	parte superior de la interfaz.
+
+
+	_Utilice cualquier operador deformación o mover los puntos en el envelope, por ejemplo, para fijar la región 
+
+	de la boca en relación a cómo se anima la envolvente. Nuevos deformaciones se aplican en la región Modeling 
+
+	forma/shape, secundaria.
+
+
+	_Guarde/Save, y almacene/Store, o reemplazar una key, de forma/shape, como de costumbre.
+
+

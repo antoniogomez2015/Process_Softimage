@@ -1,0 +1,406 @@
+
+
+
+Softimage XSI
+
+
+	Tenemos la posibilidad de crear de forma guiada estructuras de kinemática y sinemática de forma automatizada
+
+	a través, de una panel de opciones de tipo wizard, por medio del cuál, podremos crear sistemas con estándares
+
+	como bípedos, cuadrúpedos
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Stack Animate - Create - Character - Rig Guide:
+________________________________________________
+
+	
+	_así, posteriormente de haber creado el sisma ó arquetipo de un character, y luego de haberlo configurado ha nuestras
+
+	necesidades podemos ahora a través, de éste obtener un sistema de rigging and skinning, personalizado el cuál, se 
+
+	creará en la posición y con las características que tenía el sistema arquetipo original que creamos y configuramos 
+
+	previamente
+
+
+	_así, lo que tendremos que hacer es sin la necesidad de seleccionar nada tanto en el viewport, como en el explorer,
+
+	si no que vamos directamente a las opciones de "Stack Animate - Create - Character/", y le damos ha:
+
+
+		_Rig form Biped Guide:
+
+			_así, al darle ha ésta opción nos saldrá un panel en el cuál, podremos ajustar las preferencias de la
+
+			conversión del sistema ó arquetipo en un sistema de rigging and skinning, totalmente funcional y 
+
+			operativo, de ésta manera, dispondremos en éste panel de las siguientes opciones:
+
+
+		_Chest Torso:
+
+		
+			_Chest:
+
+				_Type:
+
+					_Quaternion spine:
+
+						_la opción por defecto es la más recomendada
+
+				
+					_Skeleton spine:
+
+						_la opción por defecto es la más recomendada
+
+
+					_World Aligned Quaternion Spine:
+
+						_la opción por defecto es la más recomendada
+
+
+					_Near Axis Aligned Quaternion Spine:
+
+						_la opción por defecto es la más recomendada
+
+
+				_Spine:
+
+
+					_Fixed Length, length extension only frim slider:
+
+						_la opción por defecto es la más recomendada
+
+
+					_Stretches to meet chest icon:
+
+						_la opción por defecto es la más recomendada
+
+
+					_Divisions:
+
+						_la opción por defecto es la más recomendada
+
+
+
+				_Control Icons:
+
+
+					_Square controls:
+
+						_la opción por defecto es la más recomendada
+
+
+					_Cube controls:
+
+						_la opción por defecto es la más recomendada
+		
+
+			_Belly:
+
+				_Create Belly Setup:
+
+
+					_Active No belly:
+
+						_la opción por defecto es la más recomendada
+
+
+					_Meke belly:
+
+						_la opción por defecto es la más recomendada
+
+
+				_Belly Slide:
+
+
+					_Active No belly sliding:
+
+						_la opción por defecto es la más recomendada
+
+
+					_Slides of belly to even bounce falloff:
+
+						_la opción por defecto es la más recomendada
+
+					
+					_Perc:
+
+						_la opción por defecto es la más recomendada
+
+
+			_Head:
+
+
+				_Head:
+
+
+					_Skeleton head:
+
+						_la opción por defecto es la más recomendada
+
+
+					_Quaternion spine head:
+
+						_la opción por defecto es la más recomendada
+
+
+				_Head Spine:
+
+					
+					_Type Fixed Length, length extension only form slider:
+
+						_la opción por defecto es la más recomendada
+
+
+					_Head spine stretches to meet head icon:
+
+						_la opción por defecto es la más recomendada
+
+
+					_Divisions:
+
+						_la opción por defecto es la más recomendada
+
+
+				_Ears:
+
+
+					_Active:
+
+						_la opción por defecto es la más recomendada
+
+
+			_Limbs:
+
+				_Arm Rotation:
+
+			
+					_Order YZX - Best gimbar lock reduction:
+
+						_la opción por defecto es la más recomendada
+
+
+					_XYZ - Default:
+
+						_la opción por defecto es la más recomendada
+
+
+				_Symetrical Manipulation of Arms:
+
+		
+					_Type Symmetrical - Right Arm Scaled - 1:
+
+						_la opción por defecto es la más recomendada
+
+
+					_Non Symmetrical - Both arms have positive scaling:
+
+						_la opción por defecto es la más recomendada
+
+
+				_Arm Attachment:
+
+
+					_Type Arms are Children of Shoulders - FK arm style:
+
+						_la opción por defecto es la más recomendada
+
+
+					_Arms are Children of Hips Strugging shoulder style:
+
+						_la opción por defecto es la más recomendada (En éste caso ésta es mejor)
+
+
+				_Fingers:
+
+				
+					_Type Fingers are 2D chains:
+
+						_la opción por defecto es la más recomendada
+
+
+					_Fingers are 2D chains (non planar fongers):
+
+						_la opción por defecto es la más recomendada
+
+
+				_Toes:
+
+
+					_Type Three-bone toes:
+
+						_la opción por defecto es la más recomendada
+
+
+					_Two-bone toes:
+
+						_la opción por defecto es la más recomendada
+
+
+			_Roll Division:
+
+
+				_ForeArm Roll Subdivision:
+
+				
+					_Active:
+
+						_la opción por defecto es la más recomendada
+
+
+					_Number:
+
+						_la opción por defecto es la más recomendada
+
+
+				_Bicep Roll Subdivision:
+
+					
+					_Active:
+
+						_la opción por defecto es la más recomendada
+
+
+					_Number:
+
+						_la opción por defecto es la más recomendada
+
+
+				_Thigh Roll Subdivision:
+
+			
+					_Active:
+
+						_la opción por defecto es la más recomendada
+
+
+					_Number:
+
+						_la opción por defecto es la más recomendada
+
+
+			_Skin:
+
+				_Simple Sliding:
+
+					_la opción por defecto es la más recomendada
+
+
+				_ArmPits:
+
+					_la opción por defecto es la más recomendada
+
+
+				_Hips:
+
+					_la opción por defecto es la más recomendada
+
+
+			_Sliding and Volume Preservation:
+
+
+				_Thighs:
+
+					_la opción por defecto es la más recomendada
+
+
+			_Jpint Compression:
+
+
+				_Elbows:
+
+					_la opción por defecto es la más recomendada
+
+
+				_Knees:
+
+					_la opción por defecto es la más recomendada
+
+
+			_Shadow Rigs:
+
+
+				_Constraint Shadow Character:
+
+		
+					_Type None:
+
+						_la opción por defecto es la más recomendada
+
+
+					_SII3D Skeleton:
+
+						_la opción por defecto es la más recomendada
+
+
+					_XSI Skeleton:
+
+						_la opción por defecto es la más recomendada
+
+
+					_Null Hierachy:
+
+						_la opción por defecto es la más recomendada
+
+
+					_Box Hierachy:
+
+						_la opción por defecto es la más recomendada
+
+					_Box With IK Arms:
+
+						_la opción por defecto es la más recomendada
+
+
+					_Box With IK Legs:
+
+						_la opción por defecto es la más recomendada
+
+
+					_Box With IK Arms and Legs:
+
+						_la opción por defecto es la más recomendada
+
+
+				_Options:
+
+
+					_Hands:
+
+
+						_Generate Hands and Fingers:
+
+							_la opción por defecto es la más recomendada
+
+
+						_No Shadow Fingers:
+
+							_la opción por defecto es la más recomendada
+
+
+					_Create Unified Skeleton and Rig Model:
+
+						_la opción por defecto es la más recomendada
+
+
+					_Create Independient Lower Hierachy:
+
+						_la opción por defecto es la más recomendada
+
+
+
+		_Rig form Biped Leg Guide:
+
+			_para éstas opciones se procede a través, del mismo wizard, que para las opciones de "Biped"
+
+
+		_Rig form Quadruped Guide:
+
+			_para éstas opciones se procede a través, del mismo wizard, que para las opciones de "Biped"
+
+

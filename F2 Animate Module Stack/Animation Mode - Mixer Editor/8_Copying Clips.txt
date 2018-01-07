@@ -1,0 +1,70 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de hacer animación "NoLinear", ó animación no lineal, a través, del modo de animación
+
+avanzado de "animación mixer", el cuál, permite diferentes tipos de métodos y sistemas de animación:
+
+
+el modo de animación mixer, permite los siguientes tipos de datos
+
+
+	_FCurve Animation
+
+	_Expression Animation
+
+	_Constraints Animation
+
+	_Shape Animation
+
+	_Audio Animation
+
+	_Animation Layers
+
+	_Cached Animation
+
+	_Simulation Sources
+
+	_Image Clips
+
+
+
+Animación no lineal es la animación que no está limitada por el tiempo. Se le permite trabajar en la animación 
+
+a un alto nivel de control en cualquier punto de tiempo en la escena. Se le da un control de alto nivel sobre 
+
+la animación porque puede en cada capa mezclar secuencias de una manera no lineal y no destructiva. Además, 
+
+se puede reutilizar y afinar muchas fuentes de datos.
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Copying Clips:
+______________
+
+
+
+	_Puede copiar cualquier tipo de clip, incluyendo clips compuestos. Al copiar clips, crea un nuevo clip que hace
+
+	referencia a la misma fuente que el clip desde el que fue copiado. Al copiar un clip, compuesto, se crean nuevos 
+
+	clips, dentro del "model/mixer", así como un nuevo clip, compuesto y una fuente/source, de compuesto/compound.
+
+
+	_para copiar un clip, sea cuál sea primero seleccionamos el clip, el cuál, deseamos copiar y, con este seleccionado
+
+	hacemos "control + mouse left click and drag", hasta una ubicación deseada, así, el clip, sea duplicado
+
+
+	_este modo de acción de copiado de clips, aplica para operaciones de copiado dentro de un mismo mixer, ó entre
+
+	diferentes mixers, dentro de diferentes modelos/models
+
+
+--------------------------------------------------------------------------------------------------------------

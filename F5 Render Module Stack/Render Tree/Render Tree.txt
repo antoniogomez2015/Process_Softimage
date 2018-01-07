@@ -1,0 +1,69 @@
+
+Softimage Render Tree
+_____________________________________________________________
+
+1.al crear texturas y nodos en el Render Tree, podemos asignarles a éstos diferentes proyecciones de UVs Maps
+
+	1.para esto, seleccionamos el nodo ó textura y vamos al campo de texturas en el render tree, y seleccionamos la textura deseada para el nodo ó material
+
+
+2.a un material en el render tree podemos asigarle diferentes texturas sin necesidad de usar un nodo color mixer
+	
+	2.1.para esto, asignamos una primera textura al canal difuse del material
+
+	2.2.para asignarle otro material debemos hacer right+click sobre la sección Layer de el material, ejemplo un blind material, y le decimos "Add Layer", así, se crearán nuevos nodos de entrda para color y mask
+
+	2.3.luego debemos direccionar el los nodos que hemos creado, para esto hacemos right+click sobre la sección layers del material, ejemplo: blind material y le asignamos una propieda de entrada, ejemplo "difuse"
+
+
+3.para ajustar y modificar las texturas sobre las proyecciones de UVs sobre las meshes en tiempo real para uso en animaciones podemos utilizar la herramienta "Edit Proyection Tool"
+
+	3.1.primero las proyecciones aplicadas en la mesh deseada deben ser de la sección Render/Get/Property/Texture Map/, "porque con las Texture Proyection no funciona"
+	
+	3.2.luego seleccionamos la proyección deseada sobre la mesh	
+
+	3.3.posteriormente vamos al menú Render/Modify/Proyection/"Edit Proyection Tool"
+
+
+
+
+4.Weight Map, permite ajustar el peso ó aplicación del mapeado para diferentes usos, a través de una alpha generado aplicado por bodypaint
+
+	4.1.primero preferiblemente proyectamos un Texture Map, ante Texture Proyection en Render/Property/Texture
+
+	4.2.luego aplicamos el Render/Property/Weight Map, si deseamos lo renombramos y cerramos la ventana emergente, así, se creará un cluster en Explorer/Mesh/Polymesh/Clusters/WeightMapCls
+
+	4.3.ahora vamos al menú Weight Paint Panel y activamos "paint tool"
+
+	Paint Tool ShortCuts
+
+		1.brush size: mouse midle button+left/right
+
+		2.add: mouse left button
+
+		3.sub: Shift+mouse left button
+
+		4.Smooth: Control+mouse left button
+
+	4.4.ahora podremos vincular el mapa en alpha que hemos ejemplo: si aplicamos un deformer como el "Push", a este controlador slider, podemos conetarle el alpha cluster del alpha del Weight maps,
+	para esto vamos al slider del Push, y en su plug seleccionamos "Conect", y buscamos en Explorer/Mesh/Polymesh/Clusters/WeightmapCls/Weight_Map,
+	de esta manera la acción del deformador Push, quedará superditada por el mapa del weightmap, de esta manera podremos relacionar el weightmap con cualquier elemento
+
+	4.5.para conectar el weightmap a texturas, nodos y materiales podemos utilizar al nodo: Nodes/Data/Map LookUp/Color Map LookUp, y lo relacionamos a la propiedad de weight, por ejemplo a un nodo mix_2Colors
+
+		4.5.1.y en las propiedades del Color_Map_LookUp, selecvionamos en Map: en mapa generado del weightmap "Weight_Map (Weight Map)"
+
+
+
+
+
+NODOS
+
+	1.bump map
+		Render Tree/Nodes/Bump/Bump Generator, lo conectamos directo, ejemplo: a un blind material, 
+		para que apliquen las propiedades bump debemos activarla en la textura asociada, 
+		las propiedades del bump, se controlan en las propiedades de bump, del mapa ó textura asociada al mismo bump generator
+
+	2.displacement
+		para esto asignamos directamete al material la textua deseada a su punto de entrada Displacement, 
+		para controlar el desplazamiento debemos ir a las propiedades de la mesh en xplorer/mesh/Geometry Aproximation/tag displacement

@@ -1,0 +1,80 @@
+
+
+
+Softimage XSI
+
+
+
+	OBSERVACIONES:
+	
+	1_es conveniente mezclar ambas opciones para obtener los mejores resultados
+
+
+	2_para tanto bump map como para displacement map, la mesh, deseada debe tener creados sus Uvs, 
+
+	como una proyección hecha en softimage
+
+
+
+
+	Bump map
+
+		1_opción de bump map, con "render Tree/Nodes/bump/bump generator", al nodo "bump generator", 
+
+		le asignamos una imágen que hará de efecto "bump"
+
+
+			1.1_a la "tag image", de la imágen (puede ser normal map), que le asignamos al nodo 
+		
+			"bump generator", debemos activarle la opción de "Bump Mapping/Enable", para 
+
+			activar así, las opciones visibles del efecto bump
+
+
+				1.1.1_en las opciones del "tag image/Bump Mapping", podremos controlar las 
+
+				características del efecto "bump"
+
+					1.1.1.1_factor: permite controlar el factor de la intensidad del 
+
+					efecto bump
+
+
+					1.1.1.2_Step: es el factor de aglutinamiento ó resolución del bump, 
+
+					es aconsejable variar el factor X, Y, Z, en milésimas hasta obtener 
+
+					un valor visual aceptable al valor real del mapa bump ó normal map 
+
+					creado previamente
+
+					
+
+
+		1_ahora el nodo "bump generator", lo asignamos directamente al canal de "bump map", de la 
+
+		etiqueta primaria ó de salida del material
+
+
+
+	Displacement map
+
+		1_Creamos en el "Render Tree/Tag Image", y cargamos una imágen en ésta
+
+
+		2_la "Tag image", que creamos la asignamos a la etiqueta primaria del material 
+
+		"Material/Displacement", se creará una etiqueta intercalada "Color2scalar"
+
+
+		3_para la visualización y edición de las opciones de displacement map, vamos a 
+
+		"Explorer/Mesh/Polygon Mesh/Geometry Approximation", entramos a ver estas opciones, 
+
+		dandodle doble click a estas
+
+
+		4_ ya en en opciones de "Geometry Approximation" vamos "Geometry Approximation/Displacement"
+
+
+	

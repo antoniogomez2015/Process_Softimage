@@ -1,0 +1,28 @@
+
+
+DETALLES
+
+
+el nodo "3D Vector", permitirá un valor ó parámetros espaciales de un elemento abstracto ó del 
+viewport, otros
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	_Tool/Vector/3D Vector
+
+		va conectado de forma general a un nodo "Add Point/Posions1"
+
+
+
+
+------------------------------------------------------------------------------------------------
+
+
+	_Value:
+
+		
+		debemos indicar un valor numérico para cada cordenada de acción, estas son X,Y,Z
+

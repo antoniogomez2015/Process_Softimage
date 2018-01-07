@@ -1,0 +1,76 @@
+
+
+DETALLES
+
+
+tenemos la posibilidad tanto de extraer y setear ó configurar los datos que conforman un elemento 
+
+mesh, para tenerlos a nuestra disposición para cambios y modificaciones posteriores, específicamente 
+
+de sus sub-elementos vertex, para así, tener la posibilidad tanto de cambiar su morfología ó forma 
+
+como también, deformala y hacerle modificaciones entre otros
+
+
+	Task/Deformation/Setters/Set point Position
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Set point Position
+
+
+	_este nodo nos permite reconverir una forma de geometría en otra a través, de un nodo 
+
+	"Get Point Position", ó modificar la original, agregando nodos modificadores entre éstos,
+
+	otros, permitiendo agregar nodos que permitan influir en el comportamiento de la misma
+
+
+NOTE:	para este efecto dinámico no se requiere un sistema de partículas así, que habrá que crear un
+
+	"Point Cloud", y un "ICETree", al elemento a deformar previamente para que así, éste puede recibir
+
+	nodos y atributos de ICETree
+
+
+
+	_primero creamos el elemento mesh/motive, ej: "demo_proxi", que será deformado
+
+
+	_luego seleccionamos el mesh/motive, que hara de objeto deformado, en este ejemplo es "demo_proxi",
+
+	y con este seleccionado vamos ha "ICETree", shortcut "Alt + 9" y vamos ha "ICETree/Create/", y acreamos
+
+	un "Simulated ICE Tree", así, se agregará en "Explorer/Mesh/", es stack de "Stack/Simulation/ICETree"
+
+
+	_ahora vamos ha "ICETree/Task/Deformation/Setters/", y agregamos el nodo "Set point Position"
+
+
+		-Set point Position-
+
+
+			_In:
+
+				_(disponible) ej: "Get Point Position"
+
+
+			_Out:
+
+				_"ICETree/ Create/ Simulated ICE Tree/ Port1"
+
+
+	así, veremos que la forma ó morfología del objeto ha cambiado, ahora todos los vertex, que
+
+	conforman el mesh/motive, convergen en el centro del axis, de la escena, esto es por que todos
+
+	los vertex, ahora tienen coordenadas de posición: X,Y,Z = "0"
+
+
+
+
+

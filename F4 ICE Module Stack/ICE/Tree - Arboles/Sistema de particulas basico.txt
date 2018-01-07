@@ -1,0 +1,44 @@
+
+
+DETALLES
+
+
+a continuación haremos la configuración basíca para un emisor de partículas a partir de un elemento
+
+genérico como un "Null, mesh, otros"
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	_primero creamos el elementos mesh/null, que hará de amisor de partículas
+
+
+	_luego con este seleccionado vamos ha "ICE/Particles/Create/Basic Emission", así se habrá
+
+	creardo el arbol en el "ICE Tree/Alt+9", del sistema de partículas sobre el elemento seleccionado
+
+
+	_este ICE Tree, se compone de los siguientes elementos en workflow:
+
+
+		_Data Access/GetData: el cuál contiene el elemento (mesh/null), de la escena
+	
+			va conectado en el "Emitter1"
+	
+			_Emitters/Emit from Gepmetry: el cuál es el compound, de emisión
+				
+				va conectado en el "Emiter"
+
+			_Simulation/Simulate Particles: el cuál es el controlador de la simulación
+
+				va conecta a "Simulate"
+
+				_Simulation/Simulation Root: el cuál es el compound principal
+				
+					va conecta a "Port1
+"							
+					_ICE Tree: el cuál es el nodo de salida
+		
+	

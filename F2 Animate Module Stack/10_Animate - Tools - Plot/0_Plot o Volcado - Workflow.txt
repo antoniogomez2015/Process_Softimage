@@ -1,0 +1,48 @@
+
+
+Detalles
+
+
+tenemos la posibilidad de hacer Plot, ó volcados de objetos animados
+
+ 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Explorer:
+_________
+
+
+	
+	_Tag:
+
+
+		_en el "explorer/Scene_Root/", se crea en el directorio principal una nueva etiqueta
+
+		esta es "C-icon/Name", ej: "FlotToActions"
+
+
+	_Mixer:
+
+		_también, se crea un elemento de tipo "Mixer" el cuál contiene la siguiente línea
+
+		de archivos "Mixer/Sources/Animation/ProofSample(Scene_Root)"
+
+
+
+Plot/ Workflow:
+_______________
+
+
+
+	Keep/guardar animación:
+
+
+		_
+
+
+
+
+
+____________________________________________________________________________________________________

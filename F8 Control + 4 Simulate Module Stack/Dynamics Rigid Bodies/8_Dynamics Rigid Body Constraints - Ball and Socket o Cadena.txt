@@ -1,0 +1,112 @@
+
+
+Detalles
+
+
+tenemos la posibilidad de utilizar ayudantes ó controladores de simulación para hacer más interactiva las simulaciones,
+
+estos los sistemas de contraints, para rigid bodies, los cuales hacer de fuerzas de inercia ó de fuerza
+
+centrífuca y de fuerza centrípeta, otras
+
+
+el constraint "Ball and Socket", permite unir a dos elementos rigid bodys, por uno de sus extremos para que de
+
+esta manera uno pueda ejercer fuerza palanca sobre el otro, haciendo el constraint las veces de eslabón de cadena,
+
+aunque de forma predeterminada este hace de articulación ó palanca
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Ball and Socket/Cadena:
+_______________________
+
+
+	
+	Ball and Socket:
+	________________
+
+
+	_primero creamos ambos elementos mesh/motive, que harán de rigi body, y los colocamos contíguos según
+
+	la lógica de la escena más con cierta separación entre estos
+
+
+	_luego seleccionamos ambos elementos y los convertimos en elemento rigid body, active/passive, según 
+
+	la lógica de la escena
+
+
+	_ahora seleccionamos ambos elementos rigid bodys, y con ambos seleccionados vamos ha "Simulate/Create
+
+	/Rigid Body/Rigid Constraint/", y hacemos "Ball and Socket", así, se agregará el sistema de constraint,
+
+	entre ambos elemento rigid body, uniéndoles
+
+
+	_en este punto, al mover uno de los elementos rigid bodys, veremos que el otro elemento rigid body,
+
+	se mantendrá estático, esto se debe a que el modo de simulación del constraint, se encuentra 
+
+	en live/standar,
+
+
+	_para ajustar ó cambiar el modo de la simulación del constrinat, Ball and Socket, primero seleccionamos
+
+	el constraint, ball and socket, sea en el viewport, ó en el Explorer, y con este seleccionado vamos ha
+
+	"Simulate/Modify/Rigid Body/Edit Simulation Properties", así, se nos abrirá un panel con las opciones
+
+	posibles de simulación de este constraint en específico
+
+
+		_Play Mode:
+
+
+			esta opción nos permite ajustar el tipo de simulación permitira, y para conseguir una simulación
+
+			interactiva y dinámica debemos seleccionar la opción de "Interactive"
+
+
+		_también disponemos de los controles siguientes:
+
+
+			_SubSteps:
+
+			_Active:
+
+			_Time Reference:
+
+			_Scene Time:
+
+			_Sleeping:
+
+			_Collisions:
+
+			_Global Body Controls
+		
+
+			_Caching Files/Save Mixer:
+
+
+	_en este punto la simulación se comporta en forma de eslabón ó cadena más esta no presenta
+
+	inercia ó fuerzas centrífugas y centrípetas, para lograr estas fuerzas residuales es recomendable
+
+	agregar a la escena, una fuerza gravedad, para esto vamos ha "Simulate/Get/Forces/Gravity"
+
+
+	_así, veremos que al reproducir la simulación veremos que este mueve ahora como de forma de una
+
+	cadena de eslabones de pesos relacionados y que responden a fuerzas diversas expresadas anteriormente
+
+
+
+
+
+_______________________________________________________________________________________________________________
+

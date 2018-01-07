@@ -1,0 +1,89 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de vincular y verificar las propiedades "Up Vector/Dirección del elemento", lo cuál,
+
+por lo general es similar al constraint "Constraint/Direction"
+
+
+así, la propiedad "Constrinat/Up Vector", nos permitirá chequear elementos que tiene constraints, con la opción
+
+ó tab/Up Vector, los cuales son:  Direction, Position, Surface, 2-Point, 3-Point, or Curve (Path)
+
+
+de esta manera podemos editar la opción de "Tab/Up Vector", directamente en las opciones de estos constraint,
+
+específicamente 
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Up Vector:
+__________
+
+
+	_default:
+
+		_por default, viene hecho el constraint hacia si mismo
+
+
+	_select:
+
+		_podemos seleccionar al elemento al cuál este sigue "Up Vector/Direction"
+
+
+	_remove:
+
+		_podemos remover al elemento al cuál este sigue "Up Vector/Direction"
+
+
+	_pick New:
+
+		_podemos seleccionar un nuevo elemento al cuál siguer "Up Vector/Direction"
+
+
+	_create new:
+
+		_podemos crear un nuevo elemento al cuál este siguerá "Up Vector/Direction",
+
+		así, se creará un nuevo elemento referencial, este será un "implicit/cube"
+
+	_active:
+
+		_podemos activar las opciones de "Up Vector"
+
+
+	_roll:
+
+		_podemos hacer ajustes de rotación en la cordenada seleccionada
+
+
+	affect axis:
+
+
+	_X,Y,X +/-:
+
+		_podemos seleccionar la cordenada de acción así, como la orientación positiva 
+
+		ó negativa
+
+
+	_point at:
+
+	
+	_X,Y,Z +/-:
+
+		_podemos hacer ajustes de desplazamiento en las cordenadas deseadas para ajustar
+
+		la posición del elemento deseado
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------

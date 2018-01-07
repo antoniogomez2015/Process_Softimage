@@ -1,0 +1,130 @@
+
+
+Detalles
+
+
+tenemos la posibilidad de crear cuerpos blandos "Soft Bodys", los cuales pueden interactura con fuerzas/fields,
+
+y demás interacciones dinámicas entre otros
+
+
+el workflow, de los sistemas soft bodys, en muy diferente al de los rigid bodys, por que en los soft bodys, no existe
+
+el sistema de "Enviroments", si no, que toda la información se registra de la misma mesh/motive, que hara de soft body,
+
+ej: "mesh/Polygon Mesh/SoftBodyOp/", y en esta sección se guardarán todos los elementos relacionados con el propio sistema
+
+de soft body, particular de cada mesh/motive, respectivo, como los "Obstacles/ostáculos", "Fuerzas/Fields", otros
+
+
+podemos crear elementos soft bodys, a partir elemento/objects, completos ó enteros ó a través de selecciones de 
+
+sub-elementos como vertices, otros, para que de esta manera partes de un elemento se mantengan estáticas mientras que
+
+otras tienen propiedades de rigid bodys, dinámicas, el proceso de workflow, para este proceso es el mismo que el proceso
+
+normal para objects, completos
+
+ 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Soft Body Workflow:
+___________________
+
+
+	_primero creamos la mesh/motive, que hará de soft body, y la ubicamos según l lógica de la escena
+
+	
+	_luego seleccionamos la mesh/motive, que hará de soft body, y con esta seleccionada vamos ha "Simulate
+
+	/Create/Soft Body/From Selection", así, este elemento ya será un elemento soft body, ó cuerpo blando
+
+
+	_ahora seleccionamos el elemento soft body, deseado y con este seleccionamos vamos ha "Simulate/Get/Forces
+
+	/ej: Gravity", de esta manera, el elemento soft body, ya responderá a estas fuerzas físicas agregadas 
+
+	al sistema soft body, del elemento respectivo
+
+
+	_ahora para agregar elementos de colisión a los sistemas soft bodys, primero seleccionamos el elementos
+
+	soft body, deseado y con este seleccionado vamos ha "Simulate/Modify/Soft Body/Set Obstacle", así, nos aparecerá
+
+	un "Picker", con el cuál tendremos que seleccionar el elemento que hará de obstáculo ó de elemento colisionador
+
+	luego de haberlo seleccionado hacemos "mouse right click", para finalizar el proceso
+
+
+	_posteriormente para editar un sistema soft body, ya creado vamos ha "Explorer/Mesh_deseada/Polygons/", y hacemos
+
+	doble click, sobre "SoftBodyOp", para así, abrir todas las opciones del sistema de soft body, específico para
+
+	esta mesh/motive, determinada
+
+
+	_otra alternativa para ver las opciones de soft body, de un elemento soft body, posteriormente creado, seleccionamos
+
+	este y aplicamos "Alt+Enter"
+
+
+	_al crear un sistema de soft body, sobre los sub-elementos de una mesn/motive, como los vextex, por ejemplo
+
+	se agregará al "Explorer/Mesh_deseada/Polygon_Mesh/SoftBodyOp/Pint_AUTO(nombre)", donde "Pint_AUTO(nombre)",
+
+	es el grupo de selección ó "Cluster", de los sub-elementos con los cuales se creo el sistema parcial 
+
+	del soft body, sobre el elemento mesh/motive
+
+
+	_la selección de sub-elementos del grupo "Pint_AUTO(nombre)", puede ser ampliada, para esto, entramos al modo
+
+	de edición de sub-elementos, ej: vertex/F9, de la mesh/motive, con el sistema de Soft body, en el viewport, 
+
+	y en el modo de sub-elemento de vertex, por ejemplo, podemos ampliar la selección de vertex, existente así, 
+
+	debemos hacer "mouse midle click and draw", sobre la mesh motive, con soft body, deseada en modo de sub-elementos 
+
+	para asi, entrar en modo de modificación del "cluster", aplicado el cuál contiene la selección que corresponde 
+
+	al sistema de soft body, 
+
+
+	luego podemos empezar la amplicación de la sección de vertex, haciendo mouse left click and draw, para incrementar
+
+	la selección y, luego haber terminado el ajuste ó la nueva selección ampliada de sub-elementos, con estos seleccionamos 
+
+	hacemos "Control + Alt + mouse right click/Add to Cluster", así, la nueva selección que hemos realizado se agregará
+
+	al cluster, respectivo de contiene la selección del sistema soft body, respectivo
+
+
+
+	
+	Forces compartidas:
+	___________________
+
+
+	_al crear más elementos soft bodys, y al tener estos sistemas independientes de soft body, es conveniente 
+
+	ahorrar recursos del sistema al evitar crear copiar de una misma fuerza al crear una copia de la misma fuerza 
+
+	para cada elemento creado, por esto es aconsejable al crear una nueva mesh/motive, soft body, seleccionarla 
+
+	e ir ha "Simulate/Modify/Soft Body/Apply Force", así, nos aparecerá un "Picker", con el cuál tendremos que
+
+	que seleccionar un fuerza existente en el viewport, ó en el "Explorer", para que así, esta fuerza existente 
+
+	sea agregada al nuevo elemento soft body, creado
+
+
+
+	
+
+
+
+	
+_______________________________________________________________________________________________________________
+

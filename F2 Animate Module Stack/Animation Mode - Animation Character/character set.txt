@@ -1,0 +1,24 @@
+
+animation character:
+
+crea un character set, esta copción es alta mente recomendada a la hora de empezar ha animar un character ó personaje, por que permite crear grupos y sub grupos de atriburos animables del charater entre otras opciones
+
+	1.seleccionamos un elementos dentro la kinemática de nuestro personaje, por ejemplo; el root de la cadena del cuello
+
+	2.el root de la cadena del cuello que hemos seleccionado tiene unos atributos de animación por defecto ó, los que hemos creado y asignado nosotros como los que hemos dejado visibles para este elemento seleccionado en el atributo editor
+
+	3.de los atributos visibles del elementos seleccionado anteriormente debemos seleccionar los atributos que deseamos incorporar dentro del character set key, seleccionamos atributos haciendo Control+left click, sobre los atributos deseados
+
+	4.luego de seleccionar los atributos ha animar del elemento seleccionado, vamos debajo de la timeline de animación y desplegamos el icono de "Character Key Set", al lado de las opciones "Key All Keyable"
+
+	5.dentro del menú desplegable "Character Key Set", seleccionamos "Create Chatecter key Set", así, los atributos seleccionados en el atributo editor del elemetno se guardarán dentro del "Character Key Set", creado, y estarán listos y disponibles para la animación
+
+	6.al crear el "Character Key Set", nos aparecerá una venta contextual "New Character Key Set", en ella debemos asignarle un nombre descriptivo que identifique al grupo de atributos dentro del nuevo "Character Key Set",
+
+	7.a continuación se abrirá un ventana contextual con los atributos que asignamos dentro del nuevo "Character Key Set", éstos se presentarán con el nombre de que le asignamos al "Character Key Set", y dentro de este "Character Key Set", encontraremos todos los atributos que asignamos en forma de sliders, listos para hacer las acciones correspondiente a la animación que desiemos
+
+	8.ahora podemos filtrar opciones seleccionando en el menú "Key All Keyable", (al lado de la timeline), las opciones ó filtro de animación "Key Character Key Set", para así, poder seleccionar en la pestaña de abajo todos los charcter set y sub caracteres que hayamos creado, para de esta manera sólo aplicar animación a los grupos de propiedades que indiquemos
+
+	9.en el xplorer se creará iconos de character sets, por cada "Key All Keyable", que hemos creado
+
+	10.los Sub-Character Set Keys, que hemos creado se asignarán dentro dentro de los "Key All Keyable", en el xplorer

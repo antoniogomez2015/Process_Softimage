@@ -1,0 +1,47 @@
+
+
+DETALLES
+
+
+podemos obtener la data de cualquier elementos de la escena e incluso de eleentos y sub-elementos
+
+de una superficies como vertices específicos de una geometría, otros
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	_primero vamos ha la sección de ICE/F4
+
+
+	_luego seleccionamos el objeto deseado y con este seleccionamos abrimos al "ICE Tree/Alt+9"
+	
+
+	_ahora vamos ha "Ice Tree/Create/Ice Tree", para así, crear un nodo de salida de trabajo 
+
+	"Ice Tree"
+
+
+	_ahora abrimos el "Explorer/Control+8", y ubicamos en este la geometría deseada 
+
+	"mesh/polygon Mesh/Clusters/ej:Emisor"
+
+
+	_ahora creamos en "ICE Tree/Data Access/Get Data", hacemos doble click, en este y, nos 
+
+	saldrá un explorer, ó un "Picker", para que a través de estos podamos elegir el elemento 
+	deseado a relacionar su "data", con el ICE Tree, respectivo
+
+
+------------------------------------------------------------------------------------------
+
+
+	_también podemos indicarle un auto valor "self.Countervalue", para que así, tome los valores
+
+	de si mismo
+
+

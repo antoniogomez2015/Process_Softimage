@@ -1,0 +1,219 @@
+
+
+DETALLES
+
+
+podemos ajustar el "Time Remaping", de una animación reajustar grupos de propiedades de los 
+
+aplicadas en keyframes, en el timeline, de una animación, esta opción "Secuence", permite hacer time
+ 
+remapings, más avanzados ó específicos que simplemente hacer ajustes de timing, directamente en el 
+
+timeline, a través, de bandas de grupos de selección de kyeframes, ya que podemos seleccionar las
+ 
+porpiedades "Marked", que necesitemos ajustar aislando a las demás propiedades que deseamos que 
+
+permanescan en su estado original también, podemos hacer time remaping, de todos los objectos a la 
+
+vez, de una manera homogenia y en un solo paso
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Marked properties:
+__________________
+
+
+
+	_antes de hacer time remaping, con la opción de "Secuence", debemos decidir en relación a la
+ 
+	lógica de los cambios que desemos reliazar si es necesario hacer marked, de las propiedades
+ 
+	que deseamos ajustar para que así, podamos aislar las propiedades que no deseamos modificar
+
+
+	_podemos hacer marked, a las propiedades deseadas en barra inferior del timeline, ó en el
+
+	explorer, ó directamente en la propiedad específica haciendo click, en este
+
+
+	_luego de haber seleccionado las propiedades deseadas, es conveniente bloquearlas para que
+
+	éstas siempe se mantengan y sean las demás animables
+
+
+	_y en el caso concreto de utilizar propiedades "Marked", debemos colocar el modo de
+ 
+	animación en "Key Marded Parameters", debajo de la barra del timeline, para que así,
+
+	esta modalidad mantenga el criterio de aislamiento de las demás propiedades no animables
+
+
+-----------------------------------------------------------------------------------------------
+
+
+Secuence Time Remaping:
+_______________________
+
+
+
+	_primero seleccionamos el elemento ó objecto, y con este seleccionado vamos ha la barra
+
+	debajo del "Timeline/Animation/Secuence Animation/", allí, tenemos los siguiente parámetros:
+
+
+		_Marked Parameters:
+
+			_es opción activa sólo los parámetros seleccionados "Marked/marcados",
+
+			aislando a los demás parámetro que no están marcados
+
+
+		_All Parameters on Selection:
+
+			_esta opción activa todos los parámetros keyable/animables, en relación
+
+			a los parámetro marked/marcados
+
+
+		_All Scene:
+
+			_esta opción activar todos los parámetros de todos los elementos en la 
+
+			escena, (para utilizar esta opción, no debemos tener ningún elemento
+
+			seleccionado en la escena)
+
+
+-----------------------------------------------------------------------------------------------
+
+
+Opciones del panel Secuence:
+____________________________
+
+
+
+	Input Method:
+
+
+		_Offset and Scale:
+		__________________
+
+
+			_esta opción permite hacer tres acciones diferentes, estas son:
+
+
+			1_Offset: permite desplazar del bloque de keysframes, a través,
+
+			del timeline, hacia adelante y hacia atras, a través, 
+
+			de indicaciones de fotogramas/keyframes
+
+
+			2_Scale: es una escala del factor multiplicardor de la duración
+
+			del tiempo del bloque de keyframes, en el timeline, donde "1", es
+
+			el valor de todos los keysframes, del timeline, esto quiere decir, 
+
+			que si indicamos un valor de "3", el tiempo reproducción de la 
+
+			animación de duplicará "3", veces su valor original y, si colocamos
+	
+			por ejemplo un valor de "0.5", la animación se reproducirá en un 
+
+			tiempo de la mitad del tiempo original
+
+
+			_Pivot: permite hacer ajustes en la reación del pivote, ó punto
+
+			de anclaje del elemento
+
+
+		
+			
+
+	--------------------------------------------------------------------------------
+
+
+	Affected Scale & Offset Range / Retime Range Before (Frames):
+	_____________________________________________________________
+
+		
+		_Start:
+
+			_podemos indicar un rango de acción de inicio en el timeline
+
+
+		_End:
+
+			_podemos indicar un rango de acción de finalización en el timeline
+
+
+	--------------------------------------------------------------------------------
+
+
+	Retime Range After (Frames):
+	____________________________
+
+		
+		_esta opción sólo permite hace un solo cambio ó variación "Timing", aunque  
+
+		estan disponibles dos modalidades, estas son:
+
+			"Affected Scale & Offset Range / Retime Range Before (Frames)"
+
+			"Retime Range After (Frames)"
+
+
+		Criterio: esta modalidad no se basa en hacer "Scale", escala relativa
+
+		del total de la duración en el timeline, si no, directamente los fotogramas
+
+		que deseamos que dure la animación ej; si colocamos 20 - 50, la animación
+
+		pasará de durar de f = 0 - 100, fotogramas a durar ahora f = 20 - 50 
+
+
+
+		_Start:
+
+			_indica el tiempo inicial en el timeline, en el cuál, deseamos que
+
+			el afecte el time remapimg
+
+
+		_End:
+
+			_indica el tiempo final en el timeline, en el cuál, deseamos que
+
+			afecte el time remaping
+
+	
+	--------------------------------------------------------------------------------
+
+
+	Affected Items:
+
+		
+		_Layers: podemos limitar el alcance del timeremaping, a sólo esta capa ó 
+
+		a todas las capas/layers, de la escena, esta opción es válida ó tiene
+
+		utilidad solo cuando selecciónamos la opción de "Secuence/All Scene"
+
+
+			_All:
+
+				_afecta a todas las capas de la escena
+
+
+			_Current:
+
+					
+				_afecta sólo a la capa actual	
+
+
+

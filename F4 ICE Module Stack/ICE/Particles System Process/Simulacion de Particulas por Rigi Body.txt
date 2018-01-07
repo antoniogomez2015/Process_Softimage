@@ -1,0 +1,61 @@
+
+
+
+DETALLES
+
+
+podemos simular partítulas a través un nodo de simulación de rigid body "Simulate Rigid Bodies",
+
+el cuál hara las simulaciones relativamente igual al nodo "Simulate Particles", más el nodo
+
+"Simulate Rigid Bodies", nos permitirá agregarle obstáculos de geometría así, como elementos
+
+collider, ó solisionables, entre otros
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+NOTA:	ya tenemos que tener un sistema "Point Cloud", cargado en el ICETree, con sus respetivos 
+
+	elementos como el emisor y la/s superficies colisionadoras, otros
+
+
+
+	_ahora creamos un "ICETree/Particles/Simulation/Simulate Rigid Bodies", y lo creamos
+
+
+	_luego relacionamos los nodos "Simulate Rigid Bodies/Simulate", con el nodo 
+
+	"Simulation Root/Simulate"
+
+
+	_luego seleccionamos mesh/motive, que hará de colisionador en la escena ó en el explorer,
+
+	procedemos a cargarlo en el ICETree, hacendo "Shift+F3", ó arrastrándolo desde el explorer,
+ 
+	este se cargará en una etiqueda "get Data"
+
+
+	_luego conectamos los nodos "Get Data -motive/Value", con el nodo 
+
+	"Simulate Rigid Bodies/Geometry1"
+
+
+
+-------------------------------------------------------------------------------------------
+
+
+	de esta manera los métodos de "ICETree/Particles/Surface Interaction/", podrán ser
+
+	sustituídos en gran manera con la modalidad rigid bodies, en la interacción con las
+
+	surfaces/superficies
+
+
+
+
+

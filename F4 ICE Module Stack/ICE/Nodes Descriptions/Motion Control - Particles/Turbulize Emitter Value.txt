@@ -1,0 +1,63 @@
+
+
+DETALLES
+
+
+el nodo "Turbuleze Emitter Value", permitirá variar el comportamiento de las partículas como 
+cantidad de emisión medido en frecuencia de emisión así, como su spread/dispersión y turbulencia,
+
+permitiendo así, agregar aleatoriedad dinamismo al proceso de emisión de partículas
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	_Task/Particles/Emission Control/Turbuleze Emitter Value
+
+		va conectado por lo general ha "Emit from Geometry/Rate"
+		
+
+
+------------------------------------------------------------------------------------------
+
+
+Turbulence Emitter Value
+________________________
+
+
+
+	_Min Value:
+
+		podemos indicar un valor mínimo de la variación de las partículas
+
+
+	_Max Value:
+
+		podemos indicar un valor maximo de la variación de las partículas
+
+
+	_Animation Spread:
+
+		podemos indicar un rango animable de la spread/dispersión
+
+
+	_Turbulence Scale:
+
+		podemos indicar un valor de escala de la turbulencia
+
+	
+	_Seed:
+
+		podemos indicar un valor de la seed/semilla, ó influencia
+
+
+	_Complexty:
+
+		podemos indicar un valor que representará la complejidad como sumatoria de los 
+		valores en su conjunto
+
+
+

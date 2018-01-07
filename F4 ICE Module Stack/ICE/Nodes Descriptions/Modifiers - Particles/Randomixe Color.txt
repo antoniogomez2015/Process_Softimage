@@ -1,0 +1,61 @@
+
+
+DETALLES
+
+
+El "Randomize Color", nos permite hacer aleatoria la propiedade de color de un sistema de 
+
+partículas a través de diferentes criterior de color como "RGB, R, G, B, Luminacia, Saturación,
+
+alfa"
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	_Tsk/Emitter/Modifiers/Randomize Color
+
+	
+		Va conectado por lo general al "Simulate Root/Color"
+
+
+
+---------------------------------------------------------------------------------------------
+		
+	
+
+Randomize Color
+_______________
+
+
+	_Randomized Channel:
+
+		podemos cambiar el tipo de canal que variará el color de las partículas, estos son:
+
+			_RGB / R / G / B / Limunance / Saturation / Alpha
+
+
+	_Seed:
+
+		podemos variar el valor de la semilla ó influencia de envio inicial
+
+
+	_Animated:
+
+		podemos hacer estas propiedades animables
+
+	
+	_Mean Value:
+
+		podemos cambiar el valor/color, principal de las partículas de forma general
+
+
+	_Variance:
+
+		podemos indicar un rango de variación de la alternabilidad del color de las 
+		partículas
+
+	
+

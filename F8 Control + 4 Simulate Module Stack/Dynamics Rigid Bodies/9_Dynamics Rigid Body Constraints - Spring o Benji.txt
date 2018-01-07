@@ -1,0 +1,93 @@
+
+
+Detalles
+
+
+tenemos la posibilidad de utilizar ayudantes ó controladores de simulación para hacer más interactiva las simulaciones,
+
+estos los sistemas de contraints, para rigid bodies, los cuales hacer de fuerzas de inercia ó de fuerza
+
+centrífuca y de fuerza centrípeta, otras
+
+
+el constraint "Spring", nos permite relacionar a dos elementos rigid bodys, a través, de un elástico tipo
+
+benji ó también resorte, el cuál es altamente configurable
+
+ 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Spring/Benji:
+_____________
+
+
+	
+	Spring:
+	_______
+
+
+	_primero creamos la meshes/motives, que harán de rigi bodys, según la lógica de la escena
+
+
+	_luego seleccionamos las meshes,/motives, que harán de rigid bodys, y con estas seleccionadas vamoa ha
+
+	"Simulate/Create/Rigid BOdy/Active-Passive Rigid Body", según la lógica de la escena
+
+
+	_ahora seleccionamos uno de los elemento rigid bodys, creados por lo general será el rigid body/passive,
+
+	al cuál lo relacionaremos con el constraint, spring, en la base del slástico/spring, así, nos aparecerá
+
+	un "Picker", con el cuál debemos seleccionar al otro elemento rigid body, al cuál se le asignará el extremo
+
+	del spring, ó elástico quedando el modificador entre ambas meshs, rigid bodys, a continuación los atributos
+
+	del contraint spring:
+
+
+		_Active:
+
+			permite hacer el constraint activo ó inactivo
+
+
+		_Visible
+
+			permite hacer visible ó invisible el constraint en el viewport
+
+
+		_Attached Bodies intercollide:
+
+			permite hacer que un elemento rigid body, respete el área del otro y no 
+
+			permita que uno se interpenetre con el otro
+
+
+		_Spring (KP):
+
+			fuerza contractora del benji ó resorte
+
+
+		_Damping (KG):
+
+			capacidad de amortiguación del benji ó resorte
+
+
+		_Rest Length (R):
+
+			gradua la longitud que tendrá el benjig ó resorte
+
+
+		_Body A - Local Offset: 
+
+			desplazamiento del punto de unión con el elemento rigid body, respectivo
+
+
+		_Body B - Local Offset:
+
+			desplazamiento del punto de unión con el elemento rigid body, respectivo
+
+
+_______________________________________________________________________________________________________________
+

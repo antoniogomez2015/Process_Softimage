@@ -1,0 +1,91 @@
+
+
+DETALLES
+
+
+a contnuación procederemos a realizar el proceso estandar de creación de configuración del proceso de rigging, de
+ 
+un character en Softimage, con todos sus controles
+
+
+a través, de un estudio estructurado y totalmente escalables por medio de módulos
+
+
+Tutorial:  Curso: D:\Nuevos Respaldos\DT_Softimage Bundle\DT_Softimage_Bundle_DVD1-6\Character Rigging in XSI
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+Consideraciones Previas:
+________________________
+
+
+
+	1_debemos preparar la escena y proyecto el proceso de rigging
+
+
+	2_agrupamos nuestro mesh ó body de nuestro personaje "Edit/Create Group", en un nuevo grupo y lo ubicamos en una
+ 
+	capa nueva llamada "body", "Control + 6", y le ponemos la opcion de no seleccionable para que nos obstruya para 
+
+	el desarrollo del rigging 
+
+	
+	3_también creamos una capa para el skeleton y riggins denuestro personaje
+
+
+	4_en la propiedades de "display option", de cada viewport debemos activar la opcion de Shaded Mode/XRay 
+
+	Mode, para poder ver el skeleton a través de la mesh
+
+
+	5_para la creación y desarrollo de el el skeleton y riggins de nuestro personaje debemos entrar en modo 
+
+	"Animate" con "F2"
+
+
+	6_para la creación y ubicación del proceso de skeleton debemos hacerlo en vistas axonométricas como 
+
+	left/right/top, para obtener una perspectiva paralela entre nodos
+
+
+	7_para crear "bones", ó skeletons vamos al menú a Animate/Create/Skeleton/Draw 2D Chain, procedemos ha 
+
+	crear el primer punto correspondiente al "roots" de la cadena, y luego creamos los nodos respectivos a la
+ 
+	kinemática del personaje, para terminar la creación de una cadena, le damos botón derecho en el camvas para 
+
+	finalizar la creación de bones/chain
+
+
+	8_es recomendable renombrar las cadenas con nombres descriptivos, ejemplo: R_arm/antebraso/brazo..
+
+
+	9_para seleccionar una cadena de bones, seleccionamos su "root", para articular y mover la cadena, y para
+ 
+	selecionar todos sus componentes y moverla como un todo, seleccionamos su roots con right+click 
+
+
+	10_para redimencionar los bones utilizamos la siguiente herramienta: Animate/Create/skeleton/Move Join 
+
+	Branch, comando Control+J
+
+
+	11_para ver las relaciones entre cadenas de elementos y riggins, podemos utilizar la ventana de Schematic,
+ 
+	a través del menú View/General/Schematic, ó con el comando Control+9
+
+
+	12_al crear y reubicar splines y formas poligonales para ser usadas en el proceso de riggings, es preciso
+ 
+	resetear sus propiedades de posición, escala y rotación, yendo al menú Transform/Free Transforms
+
+
+
+
+
+

@@ -1,0 +1,68 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de hacer animación "NoLinear", ó animación no lineal, a través, del modo de animación
+
+avanzado de "animación mixer", el cuál, permite diferentes tipos de métodos y sistemas de animación:
+
+
+el modo de animación mixer, permite los siguientes tipos de datos
+
+
+	_FCurve Animation
+
+	_Expression Animation
+
+	_Constraints Animation
+
+	_Shape Animation
+
+	_Audio Animation
+
+	_Animation Layers
+
+	_Cached Animation
+
+	_Simulation Sources
+
+	_Image Clips
+
+
+
+Animación no lineal es la animación que no está limitada por el tiempo. Se le permite trabajar en la animación 
+
+a un alto nivel de control en cualquier punto de tiempo en la escena. Se le da un control de alto nivel sobre 
+
+la animación porque puede en cada capa mezclar secuencias de una manera no lineal y no destructiva. Además, 
+
+se puede reutilizar y afinar muchas fuentes de datos.
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Looping the Clip Playback:
+__________________________
+
+
+
+	_Puede reproducir repetidamente uno o varios clips mediante el establecimiento de marcadores de ese intervalo 
+
+	de fotogramas, como para recorrer la animación de un solo clip.
+
+
+	_para esto, seleccionamos el clip, deseado el cuál, deseamos reproducir indefinidamente para una mejor visualización
+
+	y con este seleccionamos hacemos "mouse right click/", y seleccionamos la opción de "Set In/Out Loop", así,
+
+	aparecerán dos pines, tanto en el timeline, general como el timeline, del mixer panel, estos pines son limitadores 
+
+	los cuales aparecen uno a cada extremos de la ubicación del clip, repectivo
+
+	
+
+--------------------------------------------------------------------------------------------------------------

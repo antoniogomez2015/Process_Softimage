@@ -1,0 +1,82 @@
+
+
+DETALLES
+
+
+tenemos la posibilidad de lograr mejores simulaciones en relación a la interacción de las partículas
+
+al colisionar sobre superficies, pudiendo así, hacer una simulación de tipo "rigid body", con mayor
+
+realismo y capacidad de cálculo que la simulación de sólo rebote de la superficie de la simulación por 
+
+defecto
+
+
+	Tool/Simulation/Simulate Rigid Bodies
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Simulate Rigid Bodies
+
+
+	_este es el nodo nos permite convertir al sistema de partículas en un sistema de rigid bodies,
+
+	con el cuál, lograremos resultados más relista de colisión de las partículas sobre superficies
+
+
+NOTE:	este nodo "Simulate Rigid Bodies", no sustituye al nodo "Bounce off Surface", si no que más bien
+
+	actua en el campo de la simulación de las partículas sobre la superficie ya seteada por el nodo
+
+	"Bounce off Surface"
+
+
+	_por lo general este nodo va conectado ha:
+
+
+		-Simulate Rigid Bodies-
+
+
+			_In:
+
+				_none
+
+
+			_Out:
+
+				_"Tool/ Simulation/ Simulation Root/ Simulate"
+
+
+
+----------------------------------------------------------------------------------------
+
+
+	_alternativamente tenemos la posibilidad de conectar directamente obstáculos ó elementos
+
+	de colisión directamente en el nodo "Simulate Rigid Bodies", prescindiendo así, del nodo
+
+	"Bounce off Surface", de forma alternativa y con ánimos de obtener un resultado algo 
+
+	diferente, para esto:
+
+
+		_debemos conectar el nodo "Get Mesh/Value",
+
+
+		_al nodo "Simulate Rigid Bodies/Obstacle1/Geoemtry1"
+
+
+	así, la simulación responderá diferente, mucho más realista al ser toda la configuración
+
+	nativa de "Simulate Rigid Bodies"
+			
+
+
+
+		
+	
+

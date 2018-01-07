@@ -1,0 +1,637 @@
+
+
+
+
+Rigging de: Curso: D:\Nuevos Respaldos\DT_Softimage Bundle\DT_Softimage_Bundle_DVD1-6\Character Rigging in XSI
+
+Skinning de: D:\Nuevos Respaldos\DT_Softimage Bundle\DT_Softimage_Bundle_DVD4-6\Character Enveloping in XSI
+
+
+
+
+______________________________________________________________________________________________
+
+
+
+es muy recomentable que para la edición del skinning ó envelope, utilicemos un character, modelo ó mesh, de low poly 
+
+ó de una baja geometría para producción, de esta manera será más facil hacer selecciones así como su manejo es 
+
+recomendable seleccionar todas las meshes ó geometrías que compemen nuestro modelo ó character e ir al panel 
+
+"Model/Create/Model/New Model", así se creará un nodo de character con las geometrías que componen el modelos dentro
+
+del xplorer, también podriamos crear un grupo general ó global de nuestro character ó modelo, lo hacemos yendo a 
+
+"Edit/Create Group", así tendremos nuestro character organizado y accesible para diferentes procesos a su vez, en 
+
+conveniente crear un grupo especifico con solo la geometría ó mesh implicada en el proceso de skinning, así, estará 
+
+siempre accesible para ser utilizada en los diferentes procesos para la edición y seteo del proceso del skinning, 
+
+es recomendable hacerlo en uno de sus lados, sl tomar esta opción deberá ser en el lado izquierdo del character, 
+
+para que luego éste sea reflejado al lado derecho, así obtendremos un resultado simétrico y perfecto como también 
+
+habremos trabajado mucho menos
+
+
+
+
+1.para poder aplicar más fácil y ordenadamente el skinning ó enveloping, es recomendable seleccionar todos los 
+
+elementos ó joins y parte del rigging que interbienen en la kinemática del character, para luego agruparla en un 
+
+grupo de deformación para su facil acceso y asignación del skinning
+
+
+	1.1.primero vamosa las opciones de filtrado de selección del menú select/Bone, (así no seleccionaremos los 
+
+	root de las chain ó cadenas respectivas), luego hacemos draw y seleccionamos sólo los bones del caracter 
+
+	como cabeza,brazos, manos, vertebras, piernas y pies (deseleccioando los demás complementos de kinemática 
+
+	por ejemplo el de los pies como los de reverse y base)
+
+
+	1.2.del rigging del caracter solo seleccionamos la cadena, para esto en el menú de sub elementos 
+
+	Select/Object, y seleccionamos el handle de la cadera del cahracter
+
+
+
+2.luego debemos agrupar esta selcción con toda la kinemática del character en un nuevo grupo de deformación, para 
+
+esto vamos al menú Edit/Create Group, el grupo creado lo renombramos ejemplo: kinematica
+
+
+3.ahora hacemos seleccionable la capa "body", que contiene la mesh del character, para así, hacerla seleccionable 
+
+para su asignación el proceso de skinning
+
+
+4.para aplicar el skinning al character, seleccionamos el contenido de la capa body ó toda la geometrías del 
+
+character y vamos al menú Animate/Deform/Envelope/Set Envelope, nos aparecerá una ventana preguntandonos si deseamos 
+
+asignaselo a un elemento de deformación de animación, le decimos que sí, luego hacemos Pick, en el grupo de 
+
+deformación que hicimos con la kinemática de nuestro character "Kinematica", right click para terminar
+
+
+	4.1.luego nos aparecerá una ventana contextual "Automatic Envelope Asignment"
+	
+
+	4.2. y en la opcion Assignment Method; seleccionamos la opción "Normal-based" ó Distance-based, para lograr 
+
+	una mejor deformación en las articulaciones del character
+
+
+	4.3.en la opción Number of Skeleton: se refiere al suavisado ó calado del skining, dependiendo de la forma 
+
+	y volúmen de la mesh de nuestro character debemos probar hasta conseguir el mejor valor con resultados más 
+
+	balanceados para todas las poses del character
+
+
+5.para acceder a las opciones de seteo del enveloper ó skinning del character, vamos a las opciones del explorador 
+
+de la mesh ó body del character; body/folder Clusters/EnvelopweightCls/Enter
+
+
+6.también tenemos la posibilidad de crear poses del character, una pose inicial para que cuando movamos nuestro 
+
+personaje siempre podamos colocarlo en la posición inicial, así como también podemos salvar las poses que desiemos, 
+
+como un especie de blend shapes
+
+
+	6.1.para esto, seleccionamos todos los handles del rigging generales del character controls en el xplorer; 
+
+	y los arrastramos dentro del "handle_global_body", para así, que todos estos controles generales esten 
+
+	ordenados y subordinados a un control master
+
+
+	6.2.ahora hacemos draw y seleccionamos todos los elementos del character como, kinemática: 
+
+	(joins/bones/roots/hansles), riggings, y vamos al menú Animate/Action/Store/Transformatios - Current Values; 
+
+	nos aparecerá una ventana llamada "StoreAction", allí, en Action Name, le colocamos un nombre descriptivo, 
+
+	ejemplo: Default Stance, luego en el xplorer se creará un nodo de animación llamada "Mixer"
+
+
+	6.3.en el nodo Mixer, que se ha creado vamos a las sub opciones que creamos dentro del mismo automaricamente 
+
+	en el paso anterior; Mixer/Sources/Default_Stance(Scena_Root)
+
+
+	6.4.luego al haber movimo nuestro character de su posición por "default", si deseamos volverlo a colocar en 
+
+	su posición original, vamos al xplorer y seleccionamos el nodo: "Mixer/Sources/Default_Stance(Scena_Root)", 
+
+	luego vamos al menú Animate/Actions/Aplly/Action; lo aplicamos "Action", varias veces hasta que el character 
+
+	recupere su posición defacult, deseada
+
+
+	6.5.esto puede crear que se inviertan las cordeandas de la kinemática invertida de alginas cadenas ó chains 
+
+	como de las piernas por ejemplo, por ende, debemos configurarlas para que reestablescan su articulación 
+
+	correcta
+
+
+		6.5.1.para esto, seleccionamos el el join ó bone, ejemplo: L_leg_root/L_leg_pierna/"L__leg_femur", 
+
+		y vamos a sus propiedades de Kinematic Joint/Rotations Limits; e invertimos los valores en las 
+
+		cordenadas respectivas de "Minimun Angles", y "maximun Angles", así, se restaurá la kinemática 
+
+		invertida inicial seteada
+
+
+
+ahora vamos a editar los criterios en forma general y en forma detallada del skinning ó enveloping, en las diferentes 
+
+partes del character, así, como en las diferentes articulaciones y necesidades de flexibilidad dedicada a las mismas
+
+
+	1.en panel capa, hacemos seleccionable la capa de body, donde esta la geometría ó mesh del character
+
+
+	2.debemos flexionar ó contraer la articulación ó sección que deseamos corregir y configurar de del skinning, moviendo la geometría del character ó modelo a través de la kinemática y rigging
+
+
+	3.para corregir ó configurar una área específica, seleccionamos los subelementos de vertices y vamos al menú
+
+	Animate/Deform/Envelope/Reagssign Locally, luego hacemos "Pick", en el bone ó joint, respectivo a la zona 
+
+	de la articulación de los subelementos vertex seleccionados en relación a la kinemática del character; para 
+
+	finalizar hacermos right+click, ahora si movemos la geometría nuevamente veremos que la independencia de la 
+
+	geometría seteada es más independiente de la demás
+
+
+		3.1. al seleccionar solo los vertices de entre las articulaciones ó extremidades del body (dejando 
+
+		de seleccinar los vertex de las articulaciones), y aplicarles "Reagssign Locally", permite que éstas 
+
+		zonas no reacciónes ó se muevan con las acciones de la kinemática, moviéndose sólo las articulaciones
+
+
+	4.para corregir ó configurar el érea de las articulaciones, selecciones los vertices de un articulación, luego 
+
+	vamos al menú Animate/Deform/Envelope/Smooth ENvelope Weights, en el panel que se abre podemos ajustar la 
+
+	cuerva de suavisado entre otros controles
+
+
+
+para editar el weight ó peso del skinning entre áreas entre diferentes bones y sus fuerzas entre sí, podiendo hacer 
+
+selecciones y edición detalladas en el modo de pintura de skinning
+
+
+	1.para esto, seleccionamos la geometría ó mesh del character, y vamos al menú Weight Paint Panel, en el 
+
+	"sidebar-left", de la interface
+
+
+	2.en la lista de elementos por nombres y colores del panel Weight Paint Panel, debemos seleccionar el 
+
+	elemento al cual vamos a editar la influencia del skinning sobre la mesh ó geometría, otra forma de 
+
+	seleccionar es a través del botón "Pick", del panel Weight Paint Panel, y hacemos pick, sobre el bone ó 
+
+	handle-rigging, que le deseamos editar su influencia
+
+
+	3.luego de haber seleccionado el elemento bone ó handle, al cuál deseamos editar la influencia de skinning 
+
+	(en el panel Weight Paint Panel), seleccionamos la geometría ó mesh del character, luego vamos en el menú 
+
+	Weight Paint Panel/Paint Tools/paint-icon
+
+
+	4.las diferentse extremidades ó bones, son representadas en la geometría en el modo de edición de 
+
+	paint skinning, como zonas de colores!, cada color representa un bone ó extremidad en concreto
+
+
+		4.1.con la herramienta paint skinning, en su modo "Add", podemos replegar ó retraer la influencia 
+
+		ó ataque  del skinning de una área hacia otra, en relación a la kinemática correcta y lógica del 
+
+		character en una articulación en concreto, la inflienta de un bone y su skinning extendida se 
+
+		representará en la mesh en el modo de paint skinning, como un área de color más grande sobre la 
+
+		área afectada contigua
+
+
+			4.1.1.la opción de opacity permite graduar la intensidad en el cambio de influencia al 
+
+			pintar sobre el skinning seleccionado
+
+
+			4.1.2.para cambiar el radio de la paint brush, vamos a la opción radius y alli cambiamos 
+
+			el valor del mismo ó con el shortcut mouse midle button and draw
+
+
+		4.2.con la herramienta paint skinning, en su modo "Smooth", podemos suavizar ó hacerl blend, entre 
+
+		ambas fuerzas de skinnig, correspondientes a 2 bones contiguos
+
+
+		4.3.con la opción interactive refresh, los cambio en representación en la geometría de las fuerzas 
+
+		de skinnings y colores se actualizaran de inmediado de forma dinámica
+
+
+
+los controles configurados como el "L_arm_handle_contraction", que configuramos para la contracción de los dedos de 
+
+las manos al unisono, no funcionan despues de haber aplicado el Animate/Actions/Apply/Action, para reestablecer 
+
+la pose seleccionada
+
+
+	1.para reestablecer las acciones de los controles afectados, desplazamos hacia adelante y hacia atras, para 
+
+	así, reestablecer los controles nuevamente
+
+
+
+configurar el weight/pesos, de cada sub-elemento de vertex de la geometría en relación de la influencia del skinning
+
+
+	1.para esto seleccionamos la geometría a editar y vamos al menú View/Animation/Weight Editor, ó en el menú 
+
+	Weight Paint Panel/"Weight Editor"
+
+
+	2.ahora seleccionamos los sub-elementos vertex del área deseada a configurar y editar, así, el panel 
+
+	Weight Editor, sólo cargará los valores de los vertex, seleccionamos y la influencias que repercuten en 
+
+	estos
+
+
+	3.estas opciones de edición detallada permite configurar hasta el comportamiento de cada vertex, 
+
+	especificamente, esto es especialemente útil para zonas con muchas funciones y éstas a su vez, estan muy 
+
+	cerca las unas de las otros, ejemplo: las manos, muñecas, palmas, dedos, otros
+
+
+4.también podemos reasignar los vertex que responden a la fuerza del skinning de un bone específico, podemos hacer 
+
+que los vertex de un bone respondan al skinning de otro bone
+
+
+	4.1.para esto, seleccionamos los vertex a los cuales deseamos hacerle el cambio de bone luego la operación 
+
+	la podemos hacer a pertir de 4 formas diferentes
+	
+		
+		4.1.1.con la selección de vertex seleccionada, vamos al menú 
+		
+		Animate/Deform/Envelope/Reasign Locally
+
+
+		4.1.2.con la selección de vertex seleccionada, vamos al menú Weight Paint Panel/Local Reasign
+
+
+		4.1.3.con la selección de vertex seleccionada, vamos al menú 
+	
+		Animate/Deform/Envelope/Edit Weight/Reasign Locally
+
+
+		4.1.4.con la selección de vertex seleccionada, vamos al menú 
+
+		Weight Paint Panel/Weight Editor/Reasign Locally
+
+
+	4.2.luego hacemos pick, en el bone al cuál deseamos reasignar los vertex seleccionados, para finalizar 
+
+	la operación hacer mouse right click
+
+
+para reflejar todos los ajustes de skinning ó envelope, que hemos realizado en uno de los lados de nuestro character 
+
+ó modelo 
+
+
+	1.es recomendable primero hacer una plantilla totalmente editable y configurable de nuestro trabajo de 
+
+	skinning sobre el modelo y las influencias del skinning sobre el mismo, para esto primeto seleccionamos 
+
+	la geometría ó mesh implicada en el skinning (una mesh), y luego vamos al menú Animate/Deform/Envelope/Create Symetry Mapping Template, si deseamos tener la misma plantilla los demás elementos (meshes) implicados en el skinning, tendremos que repetir el proceso para una de ellas
+
+
+		1.1.luego en la ventana "Create Symetry Mapping Template", seleccionamos el grupo de cordenadas 
+
+		a proyectar ó reflejar el mirrow skinning, luego nos aparecerá un panel donde tendremos un acceso 
+
+		todas a todas las propiedades de modelo ó character
+
+
+		1.2.ahora para acceder a las propiedades de symetry skinning, debemos seleccionar la geometría ó 
+
+		mesh deseada e ir al xplorer, en las propiedades Polygon Mesh/Cluster/"SymetryMapCls", en esta 
+
+		hacemos doble click
+
+
+	2.ahora para hacer mirrow ó reflejar el trabajo realizado de skinning, del lado izquierdo hacia el lado 
+
+	derecho, debemos seleccionar la mitad de la geometría correspondiente a la mitad que hemos editado el 
+
+	skinning y aplicado el "Create Symetry Mapping Template", especificamente sus sub-elementos vertex, y 
+
+	con los vertex seleccionados luego vamos al menú Animate/Feform/Envelope/Mirrows Weights, y listo!, en
+
+	este punto se habrá reflejado nuestro trabajo de skinning de un lado hacia el otro y está listo para usar
+
+
+
+envelope con una configuración y edición más específica, yendo más allá de las técnicas de skinning ó envelope, 
+
+podemos hacer una de selecciones de sub-elementos vertes manejados por Clusters para así, poder hacer mejores y 
+
+detalladas correcciones vertez a vertes de forma libre bajo nuestro propio criterio a mano alzada
+
+
+	1.para esto, primero cambiamos el modo de "Modeling Construction Mode" a "Secundary Shape Mode", en el menú 
+
+	sueprior de la interface
+
+
+	2.ahora seleccionamos los sub elementos vertex, del área de la geometría del character deseada, por ejemplo: 
+
+	una articulación como las partes del área del pliegue entre la cintura, la cadera y la pierna
+
+
+	3.con la selección de vertices anterior, le damos Control+Alt+Right Click ó su shortcut Control+L, sobre la 
+
+	selección y en el menú contextual seleccionamos "Create Cluster", en la ventana contextual, le colocamos un 
+
+	nombre descriptivo, emeplo: "L_cadena_Skinning_cluster"
+
+
+	4.para acceder a las propiedades y edición del cluster que hemos creado, vamos al xplorer, seleccionamos la 
+
+	geometría ó mesh a la cuál le aplicamos el clustes y en sus propiedades de 
+
+	"Polygon Mesh/Clusters/"L_cadena_Skinning_cluster", le damos a "enter", para abrir sus propiedades en un 
+
+	menú contextual
+
+
+	5.ahora vamos al xplorer y seleccionamos la geometría ó mesh a la cuál le aplicamos el clustes y en sus 
+
+	propiedades de Polygon Mesh/Clusters/"L_cadena_Skinning_cluster" y, vamos al menú 
+
+	Animate/Deform/Shape/Deform Keys/Link Deform With Orientation, luego hacemos "pick", sobre el bone ó joint, 
+
+	que articula, en este ejmplo de la cadera es el bone ó joint de la pierna izquierda, para finalizar hacer 
+
+	mouse right click en el canvas
+
+
+	6.luego de haber seteado el proceso del cluster y creado y su configuración, ahora si podemos flexionar el 
+
+	pliegue de la cadena levantando la pierna respectiva
+
+
+	7.entonces ahora si activamos el cluster, yendo ha xplorer y seleccionamos la geometría ó mesh a la cuál le 
+
+	aplicamos el clustes y en sus propiedades de Polygon Mesh/Clusters/"L_cadena_Skinning_cluster"
+
+
+	8.ahora activamos el modo de edición múltiple de sub elementos con el shirtcut "M"
+
+
+	9.con la herramienta de edición múltiple "M", es recomendada para la edición individual de sub elementos de 
+
+	forma dinámica, así, podremos hacer los ajustes y correcciones a mano de los vertex, edges y polígonos, que 
+
+	deseamos mover a una ubicación en la que tengan un comportamiento más correcto en la acción de la coyuntura, 
+
+	articulación y pliegues de las mismas
+
+
+	10.luego de haber movido y ajustado los sub elementos debemos fijar estos cambios en la posición flexionada 
+
+	de la articulación de la extremidad en cuestión
+
+
+	10.1.con la articulación flexionada y los ajustes en los sub elementos vertex/edges/polygon, del clustes, 
+
+	salimos del modo de edición sub objecto a modo objeto, luego vamos al menú xplorer, y seleccionamos el mesh 
+
+	ó geometría, respectiva y vamos a su /Polygon/Clusters/ y seleccionamos el nombre respectivo 
+
+	"L_cadena_Skinning_cluster"
+
+
+	10.2.ahora vamos al menú Animate/Deform/Shape/Deform Keys/Save Deform Key, y listo ya los cambios han sido 
+
+	aplicados y el modelo y éste artilará con los cambios y mejoras que realizamos en el comportamiento de esos 
+
+	sub elementos especificamente en esa flexión de la articulación en concreto
+
+
+
+opcionalmente podemos utilizar elementos de deformación para complementar ajustes del skinning
+
+
+	1.para esto, seleccionamos la mesh ó geometría respectiva y seleccionamos los sub elementos vertex de por 
+
+	ejemplo: un codo de un brazo, luego vamos al menú Animate/Get/Primitive/Lattice, renombramos esta, ejemplo: 
+
+	"L_lattice_arm_codo", en sus cantidad de geometría del Lattice, la simplificamos hasta dejar sólo 5 aristas 
+
+	orientadas hacia kinemática del character
+
+
+	2.luego con el "L_lattice_arm_codo", seleccionado vamos al menú Transform/Resset Rotation, para así, colocar 
+
+	el Lattice, orientado con las cordenadas globales y no con las de la mesh y los sub elementos seleccionados
+
+
+	3.ahora con el "L_lattice_arm_codo", seleccionado vamos al menú: Animate/Deform/Envelope/Set Envelope, la 
+
+	ventana contextual que se abrirá nos pregunrará si deseamos relacionar con un elemento de animación, le 
+
+	decimos que si y, hacemos "Pick", en los bones ó joint, que interbienen en el Laticce, osea el bone ó joint 
+
+	del brazo y del antebrazo, para finalizar, hacemos mouse right click, en el canvas
+
+
+	4.ahora seleccionamos la mesh ó geometría respectiva y los sub elementos vertex, que estan debajo del 
+
+	Lattice, del brazo respectivo, con los vertexs seleccionado vamos al menú Animate/Deform/Asigned to No 
+
+	Deforme, así, éstos vertexs estarán libres del proceso de skinning aplicado al Lattice y, estarán sujetos 
+
+	al efecto del Lattice
+
+
+	5.ahora consideramos preciso, podriamos aplicar una reasignación selectiva, para esto seleccionamos el 
+
+	vertexs del Lattice que aplican ó influyen en el bone del antebrazo, luego vamos al menú 
+
+	Animate/Deform/Envelope/Reassign Locally, para terminar hacemos mouse button right click, luego 
+
+	seleccionamos lo vertexs que influyen en el bone ó joint, del brazo y vamos al menú 
+
+	Animate/Deform/Envelope/Reassign Locally, para terminar hacemos mouse button right click
+
+
+
+también podemos hacer controles especiales de tipo blend shape, para controlar de formación animada del skinning, 
+
+la progresión de una deformación a través de la creación de controles ajustables y animables
+
+
+	1.para esto, seleccionamos el nodo de skinning de la mesh deseada, para esto, vamos al 
+
+	"Explorer/mesh/Poly Mesh/Clusters/"EnvelopWeightCls"
+
+
+	2.con el nodo "EnvelopWeightCls", seleccionado vamos al menú 
+
+	"Animate/Deform/Shape/Deform keys/Link Deform with Conection", luego hacemos pick, en el bone a influenciar 
+
+	su skinning ó envelope, y para finalizar hacemos mouse right click en el canvas, y se abrirán unas opciones 
+
+	las cuales las dejamos por defecto
+
+
+	3.al aplicar el "Link Deform with Conection", se crearán en los nodos de skinning de la mesh respectiva los 
+
+	siguientes controles en xplorer/mesh/Poly Mesh/Clusters/EnvelopWeightCls/"DeformFalloffs" y 
+
+	"DeformOriControls"
+
+
+	4.primero para crea las formas ó poses de deformación blend shapes para con ellas poder animar y ajustar las 
+
+	transiciones del skinning, debemos pasar del modo de edición "Modelling Construction Mode" a 
+
+	"Secunadary Shape Mode", en la barra superior de la interface
+
+
+	5.ahora debemos flexionar la kinemática deseada del bone controlado, luego para crear una forma de 
+
+	blend shape, de deformación, seleccionamos el nodo de skinning de la mesh respectiva en 
+
+	"Explorer/mesh/Poly Mesh/Clusters/"EnvelopWeightCls", y vamos al menú 
+
+	"Animate/Deform/Shape/Deform Keys/Save Deform Key", en las opciones contexutales que se abrirán le asignamos 
+
+	un nombre a la nueva forma blend shape, ejemplo: defaul_Deform_pose
+
+
+	6.luego empezamos a modificar la geometría de la mesh ó modelo, modificando sus sub elementos, por ejemplo 
+
+	para suaviar algunos vertex, ó para exagerar un músculo entre otros
+
+
+	7.si deseamos utilizar el panel Animate/Deform/Shape/"Shape Manager", para la edición de la mesh para crear 
+
+	la forma de blend shape, debemos activar la opción Edit/Display with Animation deformation, para que así el 
+
+	panel shape manager pueda trabajar en el modo "Shape Modeliing Mode"
+
+
+	8.al terminar la edición de los sub elementos de la mesh deseada, seleccionamos el nodo de skinning en 
+
+	"Explorer/mesh/Poly Mesh/Clusters/"EnvelopWeightCls", y luego vamos al menú 
+
+	"Animate/Deform/Shape/Deform Keys/Save Deform Key", para crear una nueva forma de blend shape con las 
+
+	modificaciones que hemos creado, en las opciones contextuales la renombramos la nueva forma de blend shape, 
+
+	creada, por ejemplo: deform_muscle
+
+
+	9.en este punto se habrá creado el nodo de animación Mixer/Source/Shape/"defaul_Deform_pose" y 
+
+	"deform_muscle"
+
+
+	10.y también los nodos de skinning en xplorer/mesh/Poly Mesh/Clusters/EnvelopWeightCls/"defaul_Deform_pose", 
+
+	y "deform_muscle"
+
+
+	11.en este punto, veremos que el proceso de skinning inicial antes de aplicar las formas ó capas 
+
+	blend shapes, se ve intervenido por las formas blend shape que hemos creado, creando entre ellas una 
+
+	transición interpolada
+
+
+	12.para ir más allá ahora podríamos seleccionar la mesh en la cuál creamos de formas de blend shape y 
+
+	abrimos el Animation Mixer, su shortcut Alt+0, luego le damos doble click, en el track que aparece por 
+
+	defecto en el panel para que aparescan los otros tracks creamos de blend shape "defaul_Deform_pose" y 
+
+	"deform_muscle", y podemos jusgar con sus opciones e interrelación en ellos
+
+
+	13.y para hacer graduaciones controladas por nosotros mismos para una mayor presición y control, vamos al 
+
+	panel Animation Mixer, hacemos right click en un track de blend shape deseado y seleccionamos en el menú 
+
+	contextual la opción "Clip Properties", y en sus propiedades vamos ha las opciones Interpolator/Interpolator Falloff; allí podemos cambiar su fuerza acción de forma gradual
+
+
+
+transferir envelope ó skinning de una low-mesh a una hi-mesh
+
+
+	1.para esto seleccionamos la hi-mesh, y vamos al menú Animate/Deform/Deform/by Cage, y hacemos "Pick", en el 
+
+	low-mesh, en el xplorer/low-mesh, y finalizamos haciendo right+click, en el canvas
+
+
+	2. al aplicar el Animate/Deform/Deform/"by Cage", se abrirán unas opciones contextuales 
+
+	"Automatic Cage Assignment", en "Strengh", controla la fuerza con la cual hi-mesh emula el skinning de la 
+
+	low-mesh y, en "Falloff", permite interpolar el calado entre ambas acciones de ambas meshes
+
+
+	3.en este punto se habrán creado las siguiente propiedades dentro de la mesh hi-mesh: 
+
+	"Explorer/hi/Poly Mesh/", Cage Deform Operator
+
+	"/Clusters/"CageWeightCls"/"Envelope_weights"/"Automatic Cage Assignment", y a través de éstos podemos 
+
+	controlar todo el proceso de emulación de skinning entre ambas meshes
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+

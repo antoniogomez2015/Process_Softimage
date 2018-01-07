@@ -1,0 +1,101 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de crear trayectorias de animación, las cuales podemos modificar para ahcer ajuste de animación
+
+directamente en el viewport, a través, de la modificación de los sub-elementos que componen la curva/spline/path, ó
+
+trayectoria de animación generada
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	_primero tenemos que tener un elemento animado en el viewport
+
+
+	_si deseamos tener un apreciación previa de como será la curva/trayectoria, sugeridad podemos activar
+
+	tanto en el viewport, como en el objeto animado las propiedades de "Ghosh/Trail", así, podremos ver
+
+	la trayectoria sugeria que obtendremos, más la trayectoria que obtendremos no será virtual, si nó, que 
+
+	será un spline, nueva que se agregará a la escena, la cuál, podremos modificar para modificar así, la 
+
+	trayectoria de animación del objeto animado, cambiando así, la animación final resultante
+
+
+	_para crear un trayectoria de animación primero seleccionamos el objecto animado y con este seleccionado
+
+	vamos ha "Tool/Plot/Curve", así, nos saldrá un panel de opciones:
+
+
+-------------------------------------------------------------------------------------------------------------
+
+
+	Plot Curve
+	__________
+
+
+
+		_Start:
+
+			_podemos indicar en que keyframe, comenzará a crearse la trayectoria de animación
+
+
+		_End:
+
+			_podemos indicar en que keyframe, terminará de crearse la trayectoria de animación
+
+
+		_Step:
+
+			_podemos indicar la resolución de la spline/trayectoria, resultante, tenga en cuenta 
+
+			las siguientes consideraciones:
+
+
+				_si colocamos un valor de "1", este parámetro colocará un "Vertex", de la expline,
+
+				por cada frame, más si colocamos por ejemplo: "10", hará una ponderación para hacer
+
+				una distribución dividiendo la longitud de la spline, en relación a la cantidad
+
+				de "Vertex", indicados, en este caso "10"
+
+
+				_donde poner un valor muy alto generará un spline/trayectoria con más resolución
+
+				la cuál se señirá mejor a la trayectoria original de animación pero, a su vez,
+
+				es más dificil de manejar al tener una desidad de "vertex", poco manejable e 
+
+				interpolable
+
+			
+				_más si colocamos un valor muy bajo de "Step/Vertex", ej: "20", entonces la spline,
+
+				poco podrá hacer para señirse a la trayectoria original ya que la expline, resultante
+	
+				tendrá poca resolución, pero su valor ó grado de interpolación será alto ya que tiene
+
+				pocos vertices en un área de longitud de spline, más ámplio
+
+
+				_es por estas razones que debemos hacer una ponderación entre resolución/trayectoria,
+
+				e interpolación y manejabilidad de la spline/trayectoria resultante
+
+
+		_Curve Name:
+
+			_podemos indicarle un nombre a la spline/trayectoria resultante
+
+
+

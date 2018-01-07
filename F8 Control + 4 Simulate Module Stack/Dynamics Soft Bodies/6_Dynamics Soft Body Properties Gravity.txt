@@ -1,0 +1,62 @@
+
+
+Detalles
+
+
+tenemos la posibilidad de crear cuerpos blandos "Soft Bodys", los cuales pueden interactura con fuerzas/fields,
+
+y demás interacciones dinámicas entre otros
+
+
+el workflow, de los sistemas soft bodys, en muy diferente al de los rigid bodys, por que en los soft bodys, no existe
+
+el sistema de "Enviroments", si no, que toda la información se registra de la misma mesh/motive, que hara de soft body,
+
+ej: "Explorer/mesh/Polygon Mesh/SoftBodyOp/", y en esta sección se guardarán todos los elementos 
+relacionados con el propio sistema
+
+de soft body, particular de cada mesh/motive, respectivo, como los "Obstacles/ostáculos", "Fuerzas/Fields", otros
+
+
+podemos crear elementos soft bodys, a partir elemento/objects, completos ó enteros ó a través de selecciones de 
+
+sub-elementos como vertices, otros, para que de esta manera partes de un elemento se mantengan estáticas mientras que
+
+otras tienen propiedades de rigid bodys, dinámicas, el proceso de workflow, para este proceso es el mismo que el proceso
+
+normal para objects, completos
+
+ 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+	Forces/Gravity
+	______________
+
+
+
+		_Mute:
+
+			_podemos desactivar ó activar las fuerza/s, en este caso la gravedad
+
+			en este objecto soft body, específicamente
+
+
+		
+		_Amplitude:
+
+			_podemos variar la cantidad de fuerza/s, de gravedad ejecidad sobre en el 
+
+			elemento soft body
+
+
+
+	
+
+
+
+	
+____________________________________________________________________________________________________

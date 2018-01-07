@@ -1,0 +1,95 @@
+
+
+DETALLES:
+
+
+tenemos la posibilidad de guardar de forma ordenada la historia de todos los procesos en diferentes secciones ó bancos
+
+de información apilados, los cuales tienen un orden gerárquico y estructural, así, podremos colapsar ó eliminar sólo
+
+algunos bancos de información conservando los otros, por ejemplo: borrar las acciones del proceso de modelado pero onservar
+
+algunas acciones que hemos hecho con modificadores para la animación y, otras de simulación por otro lado, otros
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+a continuación presentamos las características de los diferentes Stacks, disponibles:
+_____________________________________________________________________________________
+
+
+
+
+	Modeling:
+	_______
+
+
+	_Puede usar esta región para definir la forma básica y la topología de un objeto utilizando ambas deformaciones y operadores 
+
+	de topología. Esta es a menudo la región que desea congelar por razones de rendimiento, usted puede congelar la "Pila", de 
+	
+	la región  "Modelado",  sin afectar las otras regiones,  
+
+	Puede incluir peradores animación en la región Modelando,  si lo desea. Sin embargo, la animación se perderá si usted 
+
+	congela la pila del stack, de  modelado. Además, si hay animación de forma por encima de una deformación animada en la 
+
+	pila,  existe el peligro de que las formas se colapsen cuando polígonos intercollide / interpenetren
+
+
+	(esta sección permite borrar todo respecto al modelado)
+
+
+
+	Shape Modeling:
+	_____________
+
+
+	_La región Modeling Forma está por encima de la región de "modelado". Además de contener el nodo combinador Forma 
+
+	Cluster, esta región le permite aplicar deformaciones para definir fotogramas de forma para la animación de la forma. Cuando 
+
+	almacena un fotograma de forma en el modo de modelado de la forma,  el efecto de los operadores en esta región se 
+
+	almacenan  en lel fotograma de forma. Cuando se crea un clip de la forma mediante la aplicación de un fotograma, sólo se
+
+	eliminan los operadores de la región - esto protege deformaciones  animadas que pueden estar presentes en la región de 
+
+	animación, tales como sobres, de ser eliminado.
+
+
+	(esta sección guarda ó coserva todo lo que pueda servir para el proceso de animación)
+
+
+
+
+	Animation:
+	________
+
+
+	_La región de Animación está por encima de la región "Modeling Shape". Se puede utilizar para deformaciones animados 
+
+	que no desee ser removido cuando se congela el modelado o aplicar una forma, por ejemplo, deformaciones tales como 
+
+	sobres, olas, jaulas, celosías, espinas, o incluso un simple empuje con una animada amplitud.
+
+
+
+
+	Secondary Shape Modeling:
+	______________________
+
+
+	_La región de modelado de la forma secundaria, es en la parte superior. Se puede utilizar para crear fotogramas de forma 
+
+	para cosas como protuberancias musculares en la parte superior de un personaje envuelto. Al igual que la región de modelado 
+
+	de la forma, el efecto de los operadores en esta región se almacenan cuando se almacena un fotograma de animación de la 
+
+	forma en el modo de modelado de forma secundaria, y los operadores de la región se eliminan cuando se crea un clip de la 	
+	forma mediante la aplicación de un fotograma
+

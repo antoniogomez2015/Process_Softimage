@@ -1,0 +1,42 @@
+
+
+DETALLES
+
+
+tenemos la posibilidad de agregar fuerzas ´fields, a los sistemas de partículas para agregar 
+
+interactividad y realismo a las simulaciones
+
+
+	Task/Particles/Forces/Add Forces
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Add Forces
+
+
+	_este es el nodo de entrada el cuál, permite conectar todos los tipos de fuerzas ó fields, 
+
+	disponibles, éste nodo sirve como administrador de todas las fuerzas que desiemos integrar
+
+	al sistema de partículas deseado
+
+
+	_por lo general este nodo va conectado ha: 
+
+	
+		_"Tool/Simulation/Simulation Root/"
+
+
+			_In/Forces
+
+
+
+
+		
+	
+

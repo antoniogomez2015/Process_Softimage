@@ -1,0 +1,81 @@
+
+
+Detalles
+
+
+tenemos la posibilidad de hacer Plot, ó volcados de objetos animados
+
+ 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+Children Objects:
+_________________
+
+
+
+	para seleccionar las "branch/ramas", de un elemento, seleccionamos el objecto y con este
+
+	seleccionado vamos ha "Panel derecho/Select/Select Child Nodes", así, se leccionarán los
+
+	sub elementos y todos los parámetro del elemento deseado en caso de desear seleccionar
+
+	todos los elementos y parámetros integrados en un elemento animado
+
+
+
+Marking Parameters:
+___________________
+
+
+	si no deseamos hacer "Plot", de los parámetros de "Local Transforms", ni cualquier otro
+
+	tipo de parámetro de forma deliberada podemos hacer un "Marked/marcado", de las propiedades
+
+	que si deseamos animar y así, ir ha "Tool/Plot/Marked Parameters"
+
+
+
+Plotting Blended FK/IK Animation on a Chain:
+____________________________________________
+
+
+	si deseamos hacer "Plot", de parámetros fusionados de  FK/IK, y cadenas/chain, de 
+
+	bones/huesos, necesitamos marked/marcar, correctamente los parámetros para obtener
+
+	unos resultados correctos ó esperados
+
+
+		_para hacer Plot, de "FK/ forward kinematic", debemos "Marked", los "bones/huesos", 
+
+		en sus parámetros de "local rotation"
+
+
+		_para hacer Plot, de "IK/ inverse kinematic", debemos "Marked", los "effector's", 
+
+		en sus parámetros de "local position"
+
+
+	y debemos escoger la opción de Plotting, "Tool/Plot/Marked Parameters"
+
+
+
+--------------------------------------------------------------------------------------------------
+
+	
+Plot/Constrained Transforms:
+
+
+	_la opción de "Plot/Constrained Trnasform", permite hacer plotting, sólo de los parámetros
+
+	que son afectados por los "Constraints"
+	
+
+
+	
+
+____________________________________________________________________________________________________

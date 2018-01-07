@@ -1,0 +1,38 @@
+
+
+DETALLES
+
+
+tenemos la posibilidad de agregar sistema de ICETree, a elementos de la escena en relación sólo a los 
+
+"Stacks",de "Modeling", y deformaciones y efectos en general sobre la geometría, otros
+
+
+"esta modalidad de ICETree, no contempla nuevas stacks, "Simulate", ni elementos dinámicos"
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	_a través, de este controlador de ICETree, agregado al elemento deseado podremos setear y 
+
+	obtener diferentes elementos, propiedades y atributos de los elementos para diferentes
+
+	aplicaciones y funciones estáticas y y pre-configuraciones dinámicas
+
+
+	_así, como explotar toda la gama de deformaciones "Task/Deformers", posibles como también, 
+
+	las de de topología "Task/Topology"
+
+
+	_más todas las posibilidades de todos los nodos de "Tools", y "Compounds", nativos y personalizados
+
+	así, como efectos complejos y dedicados, otros
+
+	
+
+

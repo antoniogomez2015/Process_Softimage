@@ -1,0 +1,291 @@
+
+
+
+curso: Digital Tutors Intro to XSI Hair 2007
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+Human head Hair Style:
+______________________
+
+
+	_consideraciones:
+
+		_por lo general es altamente aconsejable utilizar una shape proxi, del cuero cabelludo
+
+		la cuál, hará de proyección para el cabello, es aconsejable que esta sea a parte de la
+
+		geometría que conforma el mesh/motive, del character y que esta tenga una topología
+
+		diferente y apropiada en relación al estilo y forma del diseño del hair style, deseado
+
+		aplicar al character
+
+
+		_por lo general esta mesh, proxi, es generada en el mismos programa donde fué generado
+
+		el character "ZBrush", a través, de una retopología en relación a la dirección del cabello
+
+		como del perímetro ó contorno de la forma ó shape proxi
+
+
+		_también, en ocaciones es aconsejable hacer particiones de esta mesh, proxi, sea en el 
+
+		programa de origen "ZBrush", ó directamente en Softimage, para así, obtener y trabajar
+
+		por ej: la pollina por a parte de la parte tracera del cabello así, como también, la mitad
+
+		izquierda de la derecha, esto nos permitirá definir mejor en ciertos casos el comportamiento
+
+		del cabello y la diferenciación de las partes a la hora de trabajar con este y, a la hora del
+
+		proceso del render
+
+
+------------------------------------------------------------------------------------------------------
+
+
+	_initial state:
+
+
+		_podemos lograr un inicial estado del cabello a través, de diferentes métodos:
+
+
+		1_Comb: esta opción en cualquiera de sus opciones nos permite hacer que el cabello
+
+		caiga sobre la superficie del cuero cabelludo
+
+
+			_"Hair Modify/Comb/Recomb", como propiedad general de señido
+
+
+
+------------------------------------------------------------------------------------------------------
+
+
+
+Clusters:
+
+
+	_también, tenemos la posibilidad de hacer y guardar grupos selecciones en "Clusters", para así,
+
+	poder dispones de estas selecciones para una fácil edición de las partes del hair system
+
+
+	_para esto seleccionamos el hair system, deseado y vamos a las opciones de sub-elementos, "Strand",
+
+	y a través, de "Select/Tools/", disponemos de las herramientas siguientes_
+
+		_Rectangle
+
+		_Lasso
+
+		_Freeform
+
+		_Raycast
+
+		_Rectangle Raycast
+
+		_Paint (Point, Edges, Polygons)
+
+
+	_así, a través, de las herramientas de selección podremos hacer selecciones de grupos de strands,
+
+	del hair system, y guardarlas en "Clusters", para esto:
+
+
+		_nos posamos sobre los strands, seleccionadas y hacemos "mouse right click/", y seleccionamos
+
+		"Create Cluster", ó a través, de su shortcut "Control + L"
+
+
+		_así, en el "Explorer/Mesh/Hair/Cluster", se irán agregando los grupos de selecciones
+
+		de tipo clusters, que vayamos agregando para así, tenerlas disponibles para la edición
+
+		del hair system
+
+
+		_de esta manera podremos guardar seleccionaes de clusters, tanto la pollina, la parte
+
+		posterior de la cabeza, la mitad, izquierda y derecha del cabello así, como cuadrantes
+
+		de la cabeza para una más fácil edición del cabello y acceso rápido a las partes más
+
+		importantes para nuestro workflow
+
+
+
+
+------------------------------------------------------------------------------------------------------
+
+
+
+Cabellera/tail Workflow:
+
+	
+	Clusters:
+	_________
+
+
+	_para hacer una cabellera de tipo cola ó pelo largo es recomendable inicialmente seleccionar
+
+	el grupo cluster, que hará de cola ó pelo largo
+
+
+
+	History:
+	________
+
+	
+	_a partir de este punto es aconsejable desactivar el registro de "history", del programa en las
+
+	diferentes stacks, para esto, vamos ha "edit/", y activamos la opción de "Immed"
+
+
+	_manejando el modo historia podremos decidir premeditadamente que elementos de la historia
+
+	deseamos permacezcan y cuales deseamos que no se graven en la historia, evitando así, tener que
+
+	hacer "Freeze/Freeze M", perdiendo así, todos los controles y parámetros que si nos interesan
+
+	de la historia como los animables entre otros
+
+
+
+	Estiramiento:
+	_____________
+
+
+	_luego es aconseble estirar el cabello ó fibras, para esto, seleccionamos el cluster, deseado
+
+	y activamos ha herramienta de selección normal "W", en el modo "mouse rigt click/Global", y
+
+	procedemos ha arrastras ó estirar el cabello hacia abajo ó dirección deseada, eliminando así,
+
+	la curvatura del cabello en relación al cuero cabelludo pos el efecto de "Hair/Modify/Comb",
+
+	"Recomb"
+
+
+
+	Scale:
+	______
+
+
+	_luego si procedemos a escalar el cabello con la herramienta "Hair/Modify/Scale", manteniendo
+
+	ahora sí la dirección del cabello
+
+
+
+	Puff/levantamiento:
+	___________________
+
+
+	_luego de haber estirado y escalado el cabello podremos ahora expandir y levantar el cabello hasta
+
+	que éste recupere parcialmente su su posición original hasta que este respete el área de la cabeza
+	
+	en general
+
+
+	_para esto, seleccionamos el cluster, respectivo de la cola ó tail, y vamos ha "hair/Modify/Puff/",
+
+	y aplicamos "Puff Roots", esta herramienta levantará las fibras desde su base ó root, hasta la punta 
+
+	ó Tip, así, podremos realizar este paso hasta conseguir una posición deseada del cabello
+
+
+
+	Shrink Warp:
+	____________
+
+
+	_más para lograr una mejor apariencia del cabello sobre la superficies y anatomía del modelo podemos
+
+	optar por la aplicación de un modificador de formas, para esto:
+
+
+	_seleccionamos el cluster, deseado y vamos ha "Model/Deform/", y aplicamos "Shrink Warp", luego
+
+	hacemos "mouse left click", sobre el mesh/motive, del character, respectivo y, para finalizar
+
+	la acción hacemos "mouse right click", sobre el canvas 
+
+
+		_Shrink Warp:
+
+
+			_Proyection:
+
+				_escogemos una de estas opciones:
+
+					_Closest Surface
+
+					_Closest Surface (Smoothed)
+
+
+		para que así, el modificador tome como criterio de acción la superficie el model
+
+		mesh/motive
+
+
+	_de esta manera el con el modificador "Shrink Warp", al cabello se señirá sobre la superficie
+
+	de la mesh/motive, del character
+
+
+
+	Smoother Hair:
+	______________
+
+
+	_luego de aplicar el modificador "Shrink Warp", es aconsejable suaviar el flow, del cabello
+	
+	para que éste tenga una mayor naturalidad, para esto:
+
+		_seleccionamos el cluster, deseado y vamos ha "Hair/Modify/Lenght/", y aplicamos
+
+		"Resample Stretched Hairs"
+
+
+
+	Brush:
+	______
+
+
+	_ahora podremos personalizar el cabello aplicando nuevamente "Resample Stretched Hairs",
+
+	como aplicado "Hair/Modify/Brush", en sus modo de escale, atracción y rotación entre otros
+	
+	
+	
+	Modifuer Smooth:
+	________________
+
+
+	_para lograr un suavizado general podemos aplicar un modificador de suavizado general, para esto:
+
+
+		_primero seleccionamos el cluster, deseado del hair system, y luego vamos ha 
+
+		"Hair/Display/", y seleccionamos la opción de "Stretchy", para hacer el cabello
+
+		editable ante las opciones de modificación del programa
+
+
+		_luego aún con el custer, respectivo del hair system, deseado vamos ha "Model/Deform/",
+
+		y seleccionamos "Smooth", así, nos aparecerá un slider, del modificador con el cuál,
+
+		podremos hacer un suavizado gradual y animable entre otros
+	
+
+
+

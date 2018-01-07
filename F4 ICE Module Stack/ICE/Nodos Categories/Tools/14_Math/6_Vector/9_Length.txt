@@ -1,0 +1,50 @@
+
+
+DETALLES
+
+
+tenemos la posibilidad de hacer deformación en la mesh,motive, a través, de la longitud ó "length",
+
+transmitiendo datos obtenidos por ej: los de un "Sustract", de la posición de un objecto en la escena
+
+3d, del viewport, para que ésta a su vez, haga una modificación ó deformación controlada en la condenada
+
+"Y", por ejemplo por medio de un "Scalar to 3D Vector", entre otros nodos intermedios posibles de
+
+amplicación y estilización
+
+
+	Tool/Math/Vector/Length
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Length
+
+
+	_este nodo nos permite obtener datos de posición de la escena de un objeto determinado y traducirlos
+
+	como un valor determinado que éste a su vez, tenga influencia en pos procesos de deformación controlada
+
+	
+
+		-Length-
+
+
+			_In:
+
+				_"Sustract"
+
+
+			_Out:
+
+				_"Multiply"
+
+
+	
+
+
+

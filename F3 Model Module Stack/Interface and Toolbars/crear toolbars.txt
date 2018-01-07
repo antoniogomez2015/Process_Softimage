@@ -1,0 +1,37 @@
+
+configuración general de ToolBars en Softimage
+
+1.para activar ó sacar el Main Shielf, en la interface, vamos al menú: Vew/Optional Panel/y hacemos check, en Main Shelf
+
+2.para abrir un Main Shielf, ó barra de toolbars flotante, vamos al menú View/Toolbars/Main Shelf
+
+3.en cualquiera de los casos aparecerá al final de las pestañas un ícono que despliega una menú contextual que permite agregar y editar nuevas tags ó pertañas nuevas
+
+4.para crear un nuevo tag, vamos al icono de agregar nuevas tags y en su menú contextual seleccionamos Add Tag/Toolbar
+
+5.para renombrar la tag que hemos creado, le damos right click mouse button, y seleccionamos "Rename", y luego le colocamos un nombre descriptivo al tipo de controles que ésta contendrá
+
+6.para personalizar sin límites algunas funciones especiales y convertirlas en scripts a través de botones, es preciso abrir el Scripts Panel, para esto vamos a su icono en la barra inferior al lado izquierdo del timeline, ó vamos al menú View/Scripting/Script Editor, ó si shortcut Alt+4 
+
+7.para crear controles sobre la visualización de los joint, bones y kinemáticas, activamos las opciones de visualización de todas las views de la interface, para esto vamos al menú Display/Display Options (All Camaras)
+
+8.ahora limpiamos todos los scripts en la panel Script Editor haciendo mouse right click/clear all
+
+9.luego en el menú Display/Display Options (All Camaras)/Shaded Mode, activamos la opción "XRay Mode",
+
+10.luego de esta acción se habrá generado en el Script Editor el script del último comando; activar el "XRay Mode"
+
+11.ahora vamos al panel script editor y seleccionamos el script generado de nuestro comando y lo arrastramos al tag que hemos creado, llamado en este caso: "Rigging"
+
+12.al momento de arrastrar el script al tag rigging, nos aparecerá un menú contextual "Script Button" en el cual seleccionaremos "Script Button", y le damos OK
+
+13.al darle OK, nos aparecerá de inmediato el panel "Customize Button", y en Button Lebel: le colocamos un nombre descriptivo corto, ejemplo: "XRay On", y en Tooltip: le colocamos ejemplo: Turn_off_XRay, luego le damos ok y el botón está listo para usarse
+
+14.luego para crear otro botón script de XRay Off, repetiremos los pasos del 8 al 13
+
+15.para editar ó configurar un botón ya creado le damos mouse right click/Customize Button
+
+16.en las opciones de crear nuevas tags, tenemos la posibilidad de guardar las tags que hayamos creado, para esto vamos al menú contextual y elegimos/Save Ass, luego elegimos la ubicación en la ruta permitida dentro del orden de carpetas del proyecto relacionadas con las interface y toolbars, si deseamos llevar nuestro propio respaldo de las toolbars que creamos podemos luego copiaras de la carpeta asígnada hasta nuestro resplados 
+
+	16.1.las toolbars creadas se guardan por el sistema en la siguiente ubicación: C:\Users\mono\Autodesk\Softimage_2013\Application\toolbars
+

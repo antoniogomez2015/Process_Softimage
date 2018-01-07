@@ -1,0 +1,360 @@
+
+
+DETALLES
+
+tenemos la pobilidad de crear grupos de parámetros , a un objeto determinado y a su gerarquía/hierachy, no necesitando
+
+tener que seleccionar el objecto para poder editar y animar estos parámetros seleccionados y agrupados en un 
+
+set", sólo bastando con seleccionar el character ha animar en las opciones de "Keyable Parameter", del timeline, 
+
+podremos animar todos los parámetro agrupados con "S", especialmente útil para characters como los que tienen kinemática
+
+invertida del proceso de controles del rigging, entre otros
+
+
+así, podremos hacer agrupaciones de parámetros y controles en una etiqueda de control como una estructura a parte 
+
+de un character
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Attributes:
+___________
+
+
+
+	para crear un character set, es conveniente primero seleccionar al elemento y seleccionar previamente 
+
+	las propiedades ó atributos a incluir ó incorporar dentro del character set, así se agregarán sólo los
+
+	parámetros deseados
+
+
+
+	_si no seleccionamos ninguno de los atributos de un objecto y creamos un character set, con este seleccionado, 
+
+	se creará un character set, con las propiedades básicas de "rotation/scale/translation"
+
+	
+	_más para seleccionar atributos específicos tenemos diferentes métodos para seleccionar éstos atributos:
+
+		_a través, ej: del "Explorer/Mesh Motive/Polygon Mesh/Kinematics/", y seleccionamos por ejemplo
+
+		"local Translation", y otras propiedades deseadas
+
+
+		_también, disponemos del "Filter", de "Key All Keyables", sobre el timeline, donde tendremos a
+ 
+		disposición las mismas opciones del explorer
+
+
+		_también, podemos abrir las propiedades de un objeto "Enter", ó las propiedades avanzadas de un objeto
+
+		"Alt + Enter", y, en cualquiera de los casos podemos marcar "Marked", los parámetros deseados, para
+
+		marcar los parámetros deseados basta con hacer "mouse left click", sobre el nombre de un parámetro
+
+		deseado y, si es más de una parámetro a seleccionar lo haremos con "Control + mouse left click", así,
+
+		veremos que al ir seleccionando los atrobutos éstos se colorearán de color amarillo/yellow, indicandonos
+
+		así, que estos atributos han quedado "Marked/marcados"
+
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+Hierachy:
+_________
+
+
+
+	_para crear correctamente un character de estructuras complejas de jerarquías como las de character, es
+
+	recomendable seleccionar esas "Branch", ó ramas, para esto, seleccionamos el objeto ó model/modelo, y 
+
+	con este seleccionado vamos al menú derecho principal "Select/", y elija la opción "Select Child Nodes",
+
+	ó alternativamente la opción "Select Branch", así, todos los elementos dentro de la gerarquía serán 
+
+	contemplados a la hora de crear el character set, también podríamos seleccionar atributos específicos
+
+	de cada elemento de la esctrutura gerárquica manualmente si así, lo deseamos
+
+
+	_también, para selecciones de grupos de propiedades ó parámetros avanzados especialmente para characters,
+
+	seleccionamos el character, u objeto deseado y vamos ha panel derecho "Select/Select Members-Components"
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+Crear Characters Set:
+_____________________
+
+
+
+	disponemos de varias vías ó accesos para crear characters set, estas son:
+
+
+	_primero seleccionamos el elemento ya con los parámetros deseados seleccionados ó marcados/marked, a través,
+
+	de las opciones disponibles:
+
+
+		_del explorer 
+
+
+		_selecciones directas de propiedades "Enter/Alt Enter",
+
+
+		_a través, del "filter", sobre el timeline, podemos seleccionar parámetro y hasta bloquearlos
+
+
+	más para seleccionar avanzadas de elementos emparentados/hierachy, de elemento complejos ó characters, 
+
+	disponemos de varios métodos de selección para estos casos, estos son:
+
+		
+		_panel derecho "Select/Select Branch"
+
+		
+		_panel derecho "Select/Select Child Nodes"
+
+
+		_panel derecho "Select/Select/Members-Components"
+
+
+
+	_así, luego de haber seleccionado los elementos deseados correctamente podemos ahora sí, crear el character set,
+
+	deseado, para esto disponemos de las siguientes opciones:	
+
+
+		_luego vamos ha "Key/Create Character Key Set", (ó llave/icono de "character set", sobre el timeline)
+
+
+		_ó vamos a las opciones de "Animation", sobre el timeline, y elegimos la opción de 
+
+		"Animation/Character Key Sets/Create Character Key Set"
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+Active Character Set:
+_____________________
+
+
+
+
+	_para activar un character set, ó hacer que este sea animable debemos seleccionar y activarlo como character set
+
+	seleccionado, para esto disponemos de las siguientes opciones
+
+
+		_"Key/Set Current/", y seleccionamos allí, el nombre del character deseado (ó llave/icono de "character 
+
+		set", sobre el timeline)
+
+
+		_ó vamos a las opciones de "Animation", sobre el timeline, y elegimos la opción de 
+
+		"Animation/Character Key Sets/Set Current/", y seleccionamos el nombre del character set, deseado
+
+
+	
+-----------------------------------------------------------------------------------------------------------------
+
+
+Keyframes / Animation:
+______________________
+
+
+	
+	_leugo de haber seleccionado el character set, deseado debemos ir a las opicones de "Keyables Parameters", y,
+
+	seleccionar la opción ó fiter, de "Key Character Key Set", así, todos los keyframes, que creemos de forma 
+
+	manual "S", ó "auto", se crearán asignandose al character set, seleccionados
+
+
+	_y para visualizar en el timeline, sólo los keyframes, del character set, seleccinado aislados de los demás,
+
+	podemos hacer "mouse right click", sobre el timeline, y seleccionar la opción de 
+
+	"Show Keys/Current Cahracter Set"
+
+
+	_tenemos la posibilidad de abrir las propiedades dentro del character set, activo, para eso vamos ha
+
+
+		_(Icon) "Key/Inspect.."
+
+
+		_Character Key sets/Character Key Sets/Inspect..
+
+
+	_también, podemos seleccionar el character set, activo, en el "Explorer", para así, saber cuál, es el
+
+	character set activo, para esto vamos ha:
+
+
+		_(Icon) "Key/Select Character Key Set"
+
+
+		_Character Key sets/Character Key Sets/Select Character Key Set
+
+
+	_también, tenemos la posibilidad de seleccionar los elementos dentro de un character set, para posteriores
+
+	edicioens del grupo de elementos, para esto vamos ha:
+
+
+		_(Icon) "Key/Select Objects From Key Set
+
+
+		_Character Key sets/Character Key Sets/Select Object From Key Set
+
+
+	_también, tenemos la posibilidad de agregar ó remover "Keys", dentro del character set active, 
+
+	para esto vamos ha: 
+
+
+		_(Icon) "Key/Set Key - Remove Key
+
+
+		_Character Key sets/Character Key Sets/Set key - Remove Key
+
+
+	_también, tenemos la posibilidad de hacer "Bypass", de los atributos de character set, active, para esto
+
+	vamos ha:
+
+
+		_(Icon) "Key/Set Zero Keys
+
+
+		_Character Key sets/Character Key Sets/Set Zero Keys
+
+
+	_también, tenemos la posibilidad de hacer ediciones de la animación en el panel "FCurve Editor", del character
+
+	set, active, para esto vamos ha:
+
+
+		_(Icon) "Key/Animation Editor..
+
+
+		_Character Key sets/Character Key Sets/Animation Editor...
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+Filter Explorer:
+________________
+
+
+
+	_tenemos la posibilidad de filtrar el tipo de información en el explorer e ir ha "Explorer/Custom/", y escpger
+
+	"Character Set Only", así, sólo veremos los character sets, disponibles
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+Add Marked Parameters:
+______________________
+
+
+	
+	_tenemos la posiblidad de agregar/eliminar, parámetros de a un character set, ya creado previamente, esto
+
+	permite una gran flexibilidad en las estructuras de characters, para esto seleccionamos los parámtros deseados
+
+	y con estos seleccionamos vamos ha:
+
+
+		_(Icon) "Key/Add-Remuve Marked Parameters"
+
+
+		_Character Key sets/Character Key Sets/Add-Remove Marked Parameters
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+Sub-Character Key Set:
+______________________
+
+
+
+	_también, disponemos de la opción de crear sub-characters set, para tener un control mayor aún a la hora del
+
+	manejo de "hierachy", componentes de un character, para tener así, un mejor manejo de los elementos 
+
+	individualmente, para esto seleccionamos las propiedades ó atributos deseados y con estos seleccionados 
+
+	vamos ha 
+
+
+		_(Icon) "Key/Create Sub-Character Key Set
+
+
+		_Character Key sets/Character Key Sets/Create Sub-Character Key Set
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+Actions:
+________
+
+
+
+	_también, disponemos de la opción de crear un "Action", de los parámetro que hemos incluidos en un character 
+
+	set, para así, disponemos de éstos para futuras acciones en otros elementos como también, la posibilidad
+
+	de la edición en el panel "Animation Mixer Editor", otros, para esto vamos ha:
+
+
+	seleccionamos el character set, deseado y con esto seleccionamos vamos ha:
+
+
+		_"Animate/Actions/Store/", y, allí, disponemos de las siguientes opciones:
+
+
+			_Character Key Set - Current Values
+
+
+			_Character Key Set - FCurves
+
+
+			_Character Key Set - Animation or Current Values
+			
+
+
+
+

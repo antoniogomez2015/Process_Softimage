@@ -1,0 +1,63 @@
+
+
+
+
+Envelope - Skinning
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+Smooth Envelope Weight Operator:
+________________________________
+
+
+		_más aún tenemos la posiblidad de realizar un suavizado personalizado de los vertices ó
+
+		vertex, de forma ponderada y animable en relación a la animación de la cinemática respectiva
+
+
+		_para esto, primero seleccionamos la mesh, respectiva con el envelope, deseado
+
+
+		_luego entramos al modo de sub-element, vertex, y seleccionamos los vertex, deseados
+
+
+		_luego, vamos al "Weight Paint Panel/", shortcut "Control 3", y seleccionamos la opción
+
+		de "Apply Smooth", así, nos aparecerá un panel con las siguientes opciones animables
+
+
+
+		-----------------------------------------------------------------------------------------
+
+
+
+
+		Smooth Envelope Weight Operator:
+		________________________________
+
+
+
+		_Neighborhood depth:
+
+			_esta opción permite controlar la fierza de la infliencia del bone, ó hueso 
+
+			respectivo, el valor por defecto a la influencia natural del bone, es "1"
+
+
+		_Distance Profile Scaling:
+
+			_esta opción permite graduar la escala relativa de trabajo, la cuál, es
+			
+			imprescindible para parámetro anterior
+
+	
+		_Distance Effect Profile:
+
+			_esta opción nos permite variar ó ajustar de forma gráfica el primer parámetro
+
+			ó deformación del ajuste ó suavizado respectivo

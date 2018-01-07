@@ -1,0 +1,51 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de hacer volcados de animación de uno ó varios elemento en una trayectoria/spline, curve,
+
+resultante para que así, podamos tener una trayectoria totalmente editable en el viewport, teniendo un curve,
+
+trayectoria dinámica y visual
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	_primero debemos seleccionar un elemento el cuál, posea animación
+
+
+	_luego seleccionamos el elemento con animación y con este seleccionado vamos ha "Animate/Create/Path/", y,
+
+	seleccionamos la opción "Convert Position FCurve to Path"
+
+
+	así, podremos indicar el inicio y fin de la trayectoria extraida "start/end", así, como la resolución "Steps",
+
+	ó interpolación de fotogramas/keyframes
+
+
+
+---------------------------------------------------------------------------------------------------------
+
+Optional:
+_________
+
+
+
+	en caso de ser necesario, podemos reducir la cantidad de resolución/keyframes, de la spline/path, resultante
+
+	para un mejor manejo y edición, para esto seleccionamos la spline, y vamos ha 
+
+
+		"Model/Modify/Curve/Clean", nos aparecerá un "Picker", con el cuál, tendremos que seleccionar la spline,
+
+		path, resultante de la animación, y luego, nos aparecerá una ventana contextual en la cuál, tendremos
+
+		que indicar con un slider, la densidad que deseamos de nodos, en la spline resultante
+

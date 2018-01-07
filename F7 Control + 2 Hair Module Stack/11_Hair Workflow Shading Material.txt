@@ -1,0 +1,177 @@
+
+
+
+curso: Digital Tutors Intro to XSI Hair 2007
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+Hair Shader for Default:
+
+	
+	Shader/Render Setting:
+	______________________
+
+
+	_para ver las opciones de render setting, del material del hair system, disponemos de dos opciones:
+
+
+		_vamos ha "Hair/Modify/", y aplicamos "Shader", así, se abrirá "Hair_Material", luego
+
+		entraremos a las opciones de "Hair_Material/Render Setting"
+
+
+		_ó vamos ha "Explorer/Mesh/Hair/", y abrimos "Hair_Material", luego entraremos a las 
+
+		opciones de "Hair_Material/Render Setting"
+
+
+
+	_así, en las opciones de render settings, disponemos de las siguientes opciones:
+
+
+		_Name:
+
+			_esta opción nos permite asignarle un nuevo nombre el shader, del hair system
+
+
+		_Shading Model/Difuse Model:
+
+			_Long Hair:
+
+				_esta opción ofrece una reacción diferente en relación a la iluminacióon
+
+				y a la dirección de las normales de surface generadora del hair system
+
+
+			_Short Hair:
+
+				_esta opción ofrece una reacción diferente en relación a la iluminacióon
+
+				y a la dirección de las normales de surface generadora del hair system
+
+
+		_Normal Blend:
+
+			_esta opción permite fusionar los valores de las normales entre las posibilidades
+
+			entre ambas opciones del paso anterior
+
+
+
+
+
+------------------------------------------------------------------------------------------------------
+
+
+	Illumination:
+	_____________
+
+
+	_Name:
+		
+		_esta opción permite indicar un nuevo nombre a la iluminación por shader
+
+
+	_ambient:
+
+		_esta opción permite agregar iluminación por ambiente, donde Black, es iuminación
+
+		cero y white, es iluminación full/100
+
+
+	_difuse:
+
+		_esta opción se refiere al color que tendrá el root, ó raíz, de cada fibr ó cabello
+
+
+	_Tip Colors:
+
+		_esta opción se refiere al color que tendrá el tip, ó punta, de cada fibr ó cabello
+
+		la cuál, esta dividida en dos partes "Color A", y "Color B", esto permite una mayor
+
+		amplitud y gama posibilidades del color en las puntas del cabello, fibra ó filamento
+
+
+
+	_A/B Balance:
+
+
+		_esta es una característica de la opción enterior "Tip Colors", la cuál, permite hacer
+
+		un balance entre ambas secciones de color "Color A y B", que componen "Tip Colors"
+
+
+
+	_Flat Shading:
+
+		_esta opción permite sintetizar el color ó volverlo plano tanto en la raíz, "Root",
+
+		con en las puntas "Tip"
+
+
+	_Root/Tip Crossover:
+
+		_esta opción permite fusionar ambas partes que conforman el hair system, ó cabello
+
+		así, podremos mezclar los valores de color que hemos indicado tando para la raíz,
+
+		root, como para las puntas tip, a través, de slider, independientes pudiendo así,
+
+		controlar "Center", ó amplitud y "Range", ó gradación 
+
+
+	_Specular:
+
+
+		_esta opción permite agregar brillo especular tanto el color como en decaimiento, 
+
+		es aconsejable colocar valores muy bajos de este atributo
+
+
+
+
+------------------------------------------------------------------------------------------------------
+
+
+	Transparency:
+	_____________
+
+
+	_Name:
+		
+		_esta opción permite indicar un nuevo nombre a la iluminación por shader
+
+
+	_enable:
+
+		_esta opción permite activar ó desactivar las opciones de transparencia para 
+
+		el material
+
+
+	_Tip:
+
+		_esta opción permite indicar los valores de transparencia para "Tip", la punta 
+
+		del cabello fibra ó filamento
+
+
+	_Root_
+
+		_esta opción permite indicar los valores de transparencia para "Root", la raíz
+
+		del cabello fibra ó filamento
+
+
+	_Root/Tip Crossover:
+
+		_esta opción perminte mezclar ambos atributos a modo de fusión para tener así,
+
+		un mayor control entre el color y la paariencia general del hair system
+

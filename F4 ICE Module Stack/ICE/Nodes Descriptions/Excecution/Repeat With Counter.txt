@@ -1,0 +1,31 @@
+
+
+DETALLES
+
+
+el nodo "Repeat with Counter", permitirá repetir un valor entrante de forma exponencial, así, 
+
+podemos indicarle un valor el cuál multiplicará en relación al valor/repetición, entrante
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	_Excecution/Repeat with Counter
+
+		va conectado de forma general, ICETree
+
+
+
+
+------------------------------------------------------------------------------------------------
+
+
+	_Number Iterations:
+
+		
+		debemos indicar un número de iteración así, como estará relacionado con un elemento
+
+		de la escena ó si estará relacionado con sigo mismo "Self.CounterValue"
+

@@ -1,0 +1,190 @@
+
+Help User Guide:
+________________
+
+
+
+User Guide 2013:
+
+	http://download.autodesk.com/global/docs/softimage2013/en_us/userguide/index.html
+
+
+User Guide 2014:
+
+	http://download.autodesk.com/global/docs/softimage2014/en_us/userguide/index.html
+
+
+User Guide 2015:
+
+	http://docs.autodesk.com/SI/2015/ENU/#!/url=./files/mePortal.htm
+
+
+
+
+
+Pendientes para ver:
+____________________
+
+
+
+
+
+	CG Meetup.
+		http://www.cgmeetup.net/home/tutorials/autodesk-softimage/
+
+
+	Softimage Xsi - Ice : Strands and Flow along curve (español)
+		https://www.youtube.com/watch?v=OHzo3cjnQ1g
+
+	Tutorial - Softimage Fire and Smoke (español)
+		https://www.youtube.com/watch?v=wsMR8Noxr-c
+
+	Softimage Xsi - Crear particulas en los vertices
+		https://www.youtube.com/watch?v=iTFAZfFI7Wg
+
+	Softimage Xsi - Particles and Rigid Bodies with States
+		https://www.youtube.com/watch?v=QnFgso2vd4M
+
+	Ice - Move Towards
+		https://www.youtube.com/watch?v=P_YIaaNXUTA
+
+	Ice - simulacion de fuego
+		https://www.youtube.com/watch?v=hEGEmwHx4r8
+
+
+	motion ice xsi 5 2
+		https://www.youtube.com/watch?v=-LlEbKhy9js
+
+	Softimage ICE strandanization. Mesh from strands
+		https://www.youtube.com/watch?v=KDKdMYi_i34
+
+	Softimage 2012 - Motion Graphics - Assemble Pieces
+		https://www.youtube.com/watch?v=542Zp2JdL5E
+
+	Simulation: Spline hair
+		https://www.youtube.com/watch?v=cgyltrobR_I
+
+	Create dust cloud effects in Softimage (Part 1)
+		https://www.youtube.com/watch?v=dLZVzbZkU7Q
+
+	Generating a Forest with ICE Modeling - Part 2: Adding Materials and Textures
+		https://www.youtube.com/watch?v=clvmq7ikWbY
+
+
+	SlipstreamVX Tutorial (SlipstreamVX by Exocortex)
+		https://vimeo.com/14003048
+
+
+
+	AceMastermind1
+
+		ICE Training Sessions (48 Videos)
+
+			https://www.youtube.com/playlist?list=PL15E0E82534A86655
+
+
+	How to create retopology in Softimage ICE
+		https://vimeo.com/14821651
+
+
+
+-------------------------------------------------------------------------------------
+
+
+
+
+
+
+AAUGA Barcelona
+
+	https://www.youtube.com/channel/UCRwT32vUowN_teDZ6Mf0YyQ/videos
+
+
+Softimage 2014
+
+	http://download.autodesk.com/global/docs/softimage2014/en_us/userguide/index.html
+
+
+Softimage 2015
+
+	http://docs.autodesk.com/SI/2015/ENU/#!/url=./files/mePortal.htm
+
+Softimage 2015 Developer
+
+	http://docs.autodesk.com/SI/2015/ENU/Softimage-Developer-Help/#!/url=./files/si_sdk_landing.htm
+
+
+lagoa softimage (lista de reproducción de 25 video de lagoa)
+
+	01_Overview.mp4
+
+		https://www.youtube.com/watch?v=lthBbDY59YQ&list=PLK_5RPD_xfANYVpm722UPHlVGtuKGuUEv
+
+
+///////////////////////////////////////////////////////////////////
+
+https://vimeo.com/channels/softimageice/
+
+https://vimeo.com/groups/softimagetutorials
+
+http://softimage.wiki.softimage.com/index.php?title=Main_Page
+
+
+http://www.edharriss.com/tutorials/tutorials_all.html
+
+
+Autodesk Softimage Learning Channel
+	https://www.youtube.com/user/SoftimageHowTos
+
+
+
+
+///////////////////////////////////////////////////////
+
+YouTube en español:
+
+	https://www.youtube.com/user/GeoDracs/featured
+
+
+Javier Vega
+
+	https://www.youtube.com/user/zao3d?feature=mhee
+
+
+Miquel Campos
+
+	https://www.youtube.com/user/akaosaru
+
+
+gen16com
+
+	https://www.youtube.com/user/gen16com/search?query=xsi
+
+
+AceMastermind1
+
+	https://www.youtube.com/user/AceMastermind1
+
+
+
+ICE/ mschoennagel
+
+	https://www.youtube.com/user/mschoennagel/search?query=softimage
+
+
+
+Softimage ICE and Maya Fluids collaboration
+
+	https://vimeo.com/64659866
+
+
+nika ragua
+
+	https://vimeo.com/user8046507
+
+
+
+///////////////////////////////////////////////////////
+
+SoftImage XSI - Tutorial MEGAPACK (68gb)
+	http://cgpeers.com/torrents.php?id=5390&torrentid=5387#torrent5387

@@ -1,0 +1,28 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de equalizar ó ponderar "N", cantidad de clips, así, como loops, otros dentro
+
+de un track/s,, así, podremos crear un compound clip, con los elementos seleccionados más un controlador
+
+con los weights, de los clips, incorporados, este compound, se crear de forma duplicada de los clips,
+
+originales los cuales permanecen en el mixer panel, de forma passive, ó mute
+
+
+tamién, se agregan estas estructuras al explorer
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Equialize Clip:
+______________
+
+
+
+
+	_primero 

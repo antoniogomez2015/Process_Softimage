@@ -1,0 +1,51 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de hacer animaciones a través, de la deformación de geometrías/meshes, de esta manera
+
+podremos animar las deformaciones realizadas sobre la morfologías de las meshes, respectivas en el tiempo,
+
+e incluso realizar sources, de animación, keys, otros
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+_Replace Shape Keys:
+
+
+	_tenemos la posibilidad de reemplazar key shapes, aplicados a frames, determinados en timeline, esto
+
+	nos permite cambiar una animación rápidamente son tan sólo reemplazar el source, de un clip, animación
+
+	ó key shapes, respectiva una por otra simplemente, respetando toda las estructura de animación previa
+
+	y posterior
+
+
+
+	Workflow:
+	_________
+
+
+	_primero procedemos a ubicar un tiempo específico en el tiemeline, moviendo el cabezal hasta un frame, 
+
+	determinado
+
+
+	_luego vamos ha "Explorer/Model/Mixer/Sources/Shapes", y seleccionamos la key shape, que reemplazará
+
+	a la key shape, existente en un frame, determinado del timeline	
+
+
+	_luego vamos ha "Animate/Deform/Shape/" y aplicamos "Replace Shape Keys", así, los key shapes, serán
+
+	intercambiados
+	
+

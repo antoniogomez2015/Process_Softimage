@@ -1,0 +1,123 @@
+
+
+DETALLES
+
+
+presentaremos los nodos correspondientes al sistema de Lagoa, y los demás nodos implicados en el workflow,
+
+del proceso de creación y simulación
+
+para cargar nodos de lagoa, dentro de ice, tenemos dos opciones, o escribimos "lagoa", dentro del inuput "Searh"
+
+en la sección de abajo, desplegamos las opciones y escogemos "Lagoa", así, se desplegarán todas las opciones 
+
+de los nodos especializados lagoa
+
+Los nodos la Lagoa, no son otra cosa que sistemas compounds, creados como pressets, ó gurpos personalizados
+
+con funciones personalizadas y especializadas para unas funciones dinámicas especializadas
+
+ha estos nodos podemos acceder e incluso modificarlos ó personalizarlos, a través de su "e", de edit/edición
+
+
+
+
+lista de reproducción:
+
+	Lagoa Multiphysics
+
+		https://www.youtube.com/playlist?list=PLgBgTdALf1XOgtBS-_LAZDQIaZodIfDzn
+
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	_Get Null:
+
+		este nos permite obtener objectos del viewport, en este caso para obtener el objeto que 
+
+		emite las partículas
+
+
+----------------------------------------------------------------------------------------------------------------
+
+
+	_Lago Emit Grid (Compound):
+	___________________________
+
+		este nodo nos indica como se van a emitir las partículas y desde que objeto que el que le hemos
+
+		conectado y, si hacemos doble click, en el podremos ver las características de control del compound
+
+
+			_recibe el nodo por lo general de nodo/Get Null
+
+
+			_va conectado por lo general al nodo/Simulation Root/emiter
+
+
+----------------------------------------------------------------------------------------------------------------
+
+
+	_Lagoa Add Forces:
+	__________________
+
+		este nodos nos permite agregar fuerzas/fields, al siste ma lagoa, hace de nodo conector al cuál podremos
+
+		conectarle diferentes tipos de fuerzas lagoa sistem
+
+	
+			_recibe por lo general alguna fuerza/field, lagoa
+
+			
+			_va conectado por lo general a node/simulation root/forces
+
+----------------------------------------------------------------------------------------------------------------
+
+
+	_Lagoa Main Material:
+	_____________________
+
+		_este nodo nos permite indicar al sistema de lagoa, que tipo de simulaciones deseamos realizar,
+
+		como líquidos, fluidos, cuerpos blandos, elástico, viscoso otros
+
+
+----------------------------------------------------------------------------------------------------------------
+	
+
+	_Lagoa Phase:
+	_____________
+
+		_este nodo nos permite indicar las "fases", ó modos de intercambio entre diferentes materiales
+
+		ó configuraciones de sumilaciones creadas por nosotros, así, podremos intercambiar entre los
+
+		diferentes modos de simulación, por ejemplo, para que una material pase de ser espuma y pase
+
+		ha hacer líquido, otros
+
+
+			_por lo general va conectado al nodo/simulation root/execute
+
+
+----------------------------------------------------------------------------------------------------------------
+	
+
+	_Lagoa Simulate Multiphysiscs:
+	______________________________
+
+
+		_este nodo es el núcleo del sistema de nodos lagoa
+
+			
+			_por lo general se le conecta ó recibe el nodo de el elemento colisionador
+
+
+			_por lo general va conectado al nodo/Simulate Root/Simulate
+	
+
+		
+	
+

@@ -1,0 +1,50 @@
+
+
+DETALLES
+
+
+tenemos la posibilidad de especificar que un tipo de data determinada sea interpretada como 
+
+IsElement, "como un elemento", esta opción permite muchos procesos en diferentes workflows,
+
+ya que así, no será interpretada como el prio elemento original, por ejemplo un weight map,
+
+ó un cluster, u otros, si no, que este tipo de elemento en este caso a través, del atributo
+
+"IsElement", será interpretado como un objecto entero booleano, lo cuál permite un sin número
+
+de procesos, otros
+
+
+	ej: (shift + f3)  /  Explorer/Mesh/Polygon Mesh/Clusters/Punta/IsElement
+
+
+		ej: Reference/ motive.cls.punta.IsElement
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Is Element
+
+
+	_este atributo nos permite sintetizar otro atributo más complejo ó de un tipo de atributo que 
+
+	no nos sirve para determinados procesos ó compatibilidades entre diferentes nodos y procesos así,
+
+	como de velores interpretativos para workflows, prácticos y abstractos como los procesos 
+
+	universales booleanos, otros
+
+
+	_por lo general este proceso se realiza a través, de un nodo ej: "Tool/Data Access/Set Data",
+
+	ó también de "particle emitters", u otros
+	
+
+		
+
+
+			

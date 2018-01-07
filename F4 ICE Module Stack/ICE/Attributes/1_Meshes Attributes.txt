@@ -1,0 +1,128 @@
+
+
+DETALLES
+
+
+tenemos la posibilidad de no sólo utilizar e implementar elementos meshes, dentro del ICETree, si no
+
+también, podemos utilizar ó seleccionar propiedades específicas que conforman ese elemento como por ej:
+
+la masa, la posición el volúmen, otros., a modo de "Object Mode", a comparación con los lenguajes de
+
+programación
+
+
+Como también, tenemos la posibilidad de agregar nuestros propios atributos y asignarles valores deseados
+
+e interactuar con éstos, otros
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Esto es posible gracias al nodo "Tool/Data Access/Set Data"
+
+
+Set Data
+
+
+	_el cuál, nos permitirá seleccionar ó crear atributos de la data del objeto
+	
+
+		-Set Data-
+
+
+			_In:
+
+				_"Varios"
+
+
+			_Out:
+
+				_"Varios"
+
+
+
+
+----------------------------------------------------------------------------------------------
+
+
+
+Workflow: seleccionando data existente
+______________________________________
+
+
+
+	_primero el elemento mesh/motive, deseado ya debe de tener un nodo ICETree
+
+
+	_ahora cargamos un nodo "Tool/Data Access/Set Data", el conectaremos:
+
+		Set Data/Execute, al nodo "ICETree/Port1"
+
+
+	_y dentro de las opciones de "Set Data", iremos ha "Preference/Explorer/Mesh/Polygon Mesh/",
+
+	y allí, podremos seleccionar el atributo ó propiedad deseado
+
+
+	
+
+----------------------------------------------------------------------------------------------
+
+
+
+Workflow: crear nueva data:
+___________________________
+
+
+
+	_primero el elemento mesh/motive, deseado ya debe de tener un nodo ICETree
+
+
+	_ahora cargamos un nodo "Tool/Data Access/Set Data", el conectaremos:
+
+		Set Data/Execute, al nodo "ICETree/Port1"
+
+
+	_y dentro de las opciones de "Set Data", iremos ha "Preference/", y allí, podremos 
+
+	ver que en el textfield, ó campo, se expresa el nombre de la mesh/motive, más un
+
+	punto y, luego el nombre de la propiedad seleccionada previamente, ej: "motive.mass",
+
+	así, de esta misma manera podremos crear nuestros propios atributos, para esto:
+
+	
+	_luego del nombre de la mesh/motive, y el punto posterior tenemos la posibilidad de
+
+	agregar un nombre diferente a nueva propiedad que desiemos agregar ó crear;
+
+	NOTE: dicho nombre no debe existir entre las propiedades existentes a seleccionar, ej:
+
+	"motive.Heat", así, podremos ver que esta propiedad que hemos designado a través, de este
+
+	nombre "Heat", no existe en la lista de opciones de atributos, así, al no existir previamente
+
+	será agregada automáticamente, de esta manera, al desplegar las opciones de atributos podremos
+
+	ver que la propiedad que hemos agregado aparece como opción en la lista de opciones ó atributos 
+
+
+
+
+----------------------------------------------------------------------------------------------
+
+
+
+Workflow: agregar valores a nueva data creada previamente:
+__________________________________________________________
+
+
+
+	_primero el elemento mesh/motive, deseado ya debe de tener un nodo ICETree
+
+

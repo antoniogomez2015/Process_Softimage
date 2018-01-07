@@ -1,0 +1,73 @@
+
+
+DETALLES
+
+
+a contnuación procederemos a realizar el proceso estandar de creación de configuración del proceso de rigging, de
+ 
+un character en Softimage, con todos sus controles
+
+
+a través, de un estudio estructurado y totalmente escalables por medio de módulos
+
+
+Tutorial:  Curso: D:\Nuevos Respaldos\DT_Softimage Bundle\DT_Softimage_Bundle_DVD1-6\Character Rigging in XSI
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+Neck and Head:
+______________
+
+
+
+a continuación procederemos con el proceso de creación de una pierna de un character bipedo, humano
+
+
+--------------------------------------------------------------------------------------------------------------
+
+
+
+	18_ahora vamos a crear la kinemática de la sección del cuello y la cabeza, para esto creamos una cadena 
+
+	desde el cuello hacia la corona de la cabeza
+
+
+		18.1_creamos el root de la cadena a la altura de la base del cuello, creamos un bone hata la
+ 
+		articulación de la nuca, y creamos el último bone proyectado hasta la zona coronaria de la cabeza,
+ 
+		esta cadena la renombramos ejemplo: head_root/head_cuello/head_corona/handle_head
+
+
+		18.2_ahora creamos una cadena correspondiente a la extención de la boca; la root la creamos en la
+ 
+		base de la nuca y se proyecta el bone hacia la boca, la renombramos ejemplo: 
+
+		boca_root/boca/handle_boca
+
+
+		18.3_ahora debemos emparentar ambas cadenas para articular la cabeza, para esto seleccionamos el
+ 
+		root de la cadena de boca_root, luego vamos al menú Constrain/Parent, y hacemos Pick en el bone
+ 
+		"head_cuello", de la cadena "head_root", que va desde la base del cuello hasta la nuca, así la 
+
+		cabeza se moverá como un todo
+
+
+	19_para emparentar la sección de cadenas de la cabeza con el torso y columna vertebral, seleccionamos el
+ 
+	root de la cabeza "head_root", y vamo al menú Constrain/Parent, y hacemos Pick en la primera vertebra ó 
+
+	vertebra0 de la espina dorsal ó columna, así, quedará relacionada toda la kinemática del body con la 	
+
+	cabeza
+
+
+
+

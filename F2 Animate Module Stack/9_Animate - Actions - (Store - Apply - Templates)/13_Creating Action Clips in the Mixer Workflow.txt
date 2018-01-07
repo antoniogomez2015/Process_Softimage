@@ -1,0 +1,79 @@
+
+
+
+DETALLES
+
+
+Las acciones son paquetes de animación de bajo nivel, tales como curvas de función, las expresiones, las limitaciones 
+
+y los parámetros vinculados. Mediante la creación de un paquete que representa la animación, se puede trabajar en un nivel 
+
+superior de la animación que no está limitado por el tiempo
+
+
+Las acciones son los paquetes de cualquier tipo de animación, tales como curvas de función, las expresiones, 
+
+las limitaciones y los parámetros vinculados. Después de crear una acción, se carga como un clip en el mezclador 
+
+de animación, donde puede modificar la animación de una manera no lineal y no destructiva.
+
+
+Este paquete en el mezclador de animación le permite trabajar en un nivel superior de la animación que no está limitada 
+
+por el tiempo: se puede mover una acción en torno a cualquier parte a tiempo, apretar o estirar su longitud como quieras, 
+
+aplique una acción después de otras en secuencias, y mezclar dos o más acciones juntos para crear una nueva animación.
+
+
+Puede crear una biblioteca completa de acciones, como ciclos de pie o saltos, y utilizarlos como muchas veces como quieras 
+
+en una escena, o compartirlos entre cualquier número de modelos
+
+
+También puede crear acciones de compuestos/compounds, que son "contenedores" para múltiples acciones, incluyendo 
+
+la animación de diferentes fuentes/sources, (curvas de funciones, expresiones, restricciones y parámetros vinculados). 
+
+Trabajar con datos animaciones complejas convierte en una tarea más simple que tratar con múltiples fcurves.
+
+
+Dado que los datos de animación paquete/package, de acciones en una sola unidad utilizable, que hace que sea fácil 
+
+para copiar la animación de un modelo a otro, incluso si el modelo no comparte las mismas convenciones jerarquía, 
+
+escala, o de denominación. Cuando hay diferencias entre los modelos, se abre una plantilla para ayudar a trazar 
+
+los elementos del modelo correspondientes.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Creating Action Clips in the Mixer:
+___________________________________
+
+
+
+
+	
+
+	para almacenar ó cargar "sources", como clip, de animación en el mixer panel, tenemos las siguientes opciones:
+
+
+
+	1_primero tenemos la opción de agregar los "sources", creados en la misma creación de los mismos, a través,
+
+	de la siguiente opción en panel de "Store/Action/Add Source as a Clip in the Mixer"
+
+
+	2_otra forma es abrir el mixer panel, shortcut "alt + 0", y en éste, podremos hacer "mouse right click/", y
+
+	seleccionamos la opción de "Insert Source", en un área vacía ó disponible de un track existente
+
+
+	3_otra opción es abrir el "Explorer", shortcut "Control + 8", y en éste, podremos hacer 
+
+	"Explorer/Model/Mixer/Sources/Animation/NameSource", así, podremos arrastrar un source
+
+	haciendo "mouse left click and drag", a un especio vacio dentro de un track, en el mixer panel
+

@@ -1,0 +1,46 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de hacer animaciones a través, de la deformación de geometrías/meshes, de esta manera
+
+podremos animar las deformaciones realizadas sobre la morfologías de las meshes, respectivas en el tiempo,
+
+e incluso realizar sources, de animación, keys, otros
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+_Compound Clips:
+
+
+	_Forma/shape, de animación se almacena para clusters, lo que significa que usted puede tener varios grupos 
+
+	en el mismo objeto que todos tienen la animación forma/shape. En el mezclador de animación mixer, un clip 
+
+	compuesto que contiene todas las keys shapes, es creado para cada grupo de forma/shape, animada.
+
+
+NOTE:	Si quieres clips de forma/shape, para estar vinculados en el tiempo de la escena, se les puede dar una 
+
+	"infinita" de longitud tiempo. Esto es útil para los clips de compuestos que tienen la longitud total 
+
+	de la escena: al cambiar el fotograma de inicio o al final del tiempo de la escena, el clip compuesto 
+
+	refleja este cambio y continúa manejado por la geometría en lugar de tener la geometría de retorno a su
+
+	in- forma de animación por estado.
+
+
+---------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+

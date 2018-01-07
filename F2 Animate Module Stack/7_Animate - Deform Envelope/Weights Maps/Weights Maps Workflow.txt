@@ -1,0 +1,121 @@
+
+
+DETALLES
+
+
+podemos generar mapas de peso de vetices, para diferentes aplicaciones, tanto de deformación,
+
+animación, dinámicos, ICE, skinning, otros
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	_Get/Property/Weight Mao
+
+	
+		NOTA	podemos generar mapa de una mesh/motive, en su modo "object mode", ó
+
+			también podemos crear weights maps, a través, de una selección de vertices
+
+			
+
+
+
+---------------------------------------------------------------------------------------------
+		
+	
+
+Crear weight maps:
+_________________
+
+
+
+	_weight map de superficie:
+
+
+		podemos generar un weight map a través de una mesh/motive, para esto la 		
+		seleccionamos y vamos ha "Get/property/Weight Map", así, se agregará un weight map,
+
+		en el "Explorer/mesh-motive/Polygon Mesh/Clusters/WeightMapCls"
+
+
+	_weight map de selección:
+
+		podemos generar un weight map a través de una selección de sub.elementos vertex,
+
+		con el objetivo de limiar el alcance y acción de weight map, generado, seleccionamos 
+		y vamos ha "Get/property/Weight Map", así, se agregará un weight map, en el
+
+		"Explorer/mesh-motive/Polygon Mesh/Clusters/WeightMapCls"
+
+
+
+
+Editar weight map:
+__________________
+
+
+
+	_primero seleccionamos el weight map, ha editar, para esto vamos ha "Explorer/mesh-
+
+	motive/Polygon Mesh/Clusters/WeightMapCls", y con este seleccionamos vamos ha 
+
+
+	"Get/Property/Map Paint Tools", podemos desanclar este panel para un mejor acceso, así,
+
+	podemos seleccionar la herramienta "Map Paint Tools/Paint Tool", para empezar ha editar
+
+	el weight map
+
+
+
+	_Sin infuencia:
+
+		así, las partes que no tienen influencia en el weight map, serán de color negro
+
+
+	_Con influencia:
+
+		así, las partes que vayamos pintando serán representadas de color cyan/azul
+
+
+
+	_Paint tool:
+
+		aparecerá una brush, que puede señirse a la superficie y haciendo mouse left click
+
+		and draw, podemos pintar los pesos sobre la superficie para editarlos
+
+
+			_Radius:
+
+				mouse midle buttom click and draw left/right
+
+
+			_Erase:
+
+				mouse left click + Shift
+
+
+			_Smooth:
+
+				mouse left click + Control
+
+
+	_Brush Properties:
+
+		es aconsejable abrir las opciones de la herramienta brush tool, para un mejor
+
+		control de la edición de la misma, para esto vamos ha 
+
+		"Map Paint Tools/Brush Properties"
+		
+		
+
+
+	
+
+	

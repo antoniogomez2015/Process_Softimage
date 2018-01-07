@@ -1,0 +1,81 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de incluir audio de referencia para el proceso avanzado de animación el cuál tiene
+
+diferentes opciones para la sincronización entre otros modos y proceso
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Sharing Actions between Models:
+_______________________________
+
+
+los siguientes formatos de sonido son soportados
+
+
+	*.aiff /.aif: Audio Interchange File Format
+
+ 	*.aifc : Audio Interchange Format - Compressed
+
+	*.avi : Audio Video Interleave
+
+	*.mov : Apple® QuickTime
+
+	*.qt : Apple QuickTime
+
+	*.wav : Windows waveform
+
+
+NOTE: Quicktime, debe estar instalado
+
+
+--------------------------------------------------------------------------------------------------
+
+
+Sólo puede utilizar archivos de sonido que tienen la misma frecuencia de muestreo. Si ya ha añadido un archivo 
+
+de sonido muestreado en un caso, no se puede añadir archivos que fueron muestreados en otras tarifas.
+	
+
+Notes on Audio Compression Methods:
+___________________________________
+
+
+	Los archivos de audio se pueden formatear de manera particular. Archivos WAV permiten diferentes métodos 
+
+	de compresión que se utilizarán dentro de ellos: por ejemplo, MPEG-3 de compresión no significa MPEG-3 
+
+	archivos de audio
+
+
+	Softimage es compatible con archivos WAV que utilizan MPEG-3 de compresión, pero no soporta MPEG-3 (MP3) 
+
+	archivos de audio. Además, Softimage no soporta compresión MPEG-1 o archivos de audio que tengan más 
+
+	de dos canales o resoluciones de alta de la muestra. Esto es debido a que utilizan un formato diferente 
+
+	a los métodos de compresión WAV estándar y deben ser tratados de manera especial.
+
+
+	Normalmente, los archivos WAV utilizan Pulse Code Modulation (PCM) como el esquema de compresión, pero hay 
+
+	una variedad de esquemas que se puede utilizar. Si nos fijamos en el Archivo> cuadro de diálogo Propiedades 
+
+	de la aplicación de la grabadora de sonidos de Windows ', se puede ver los diferentes esquemas de conversión 
+
+	que se pueden utilizar.
+
+
+	Además, un archivo de audio que utiliza una frecuencia de muestreo irregular puede fallar juego. Frecuencias 
+
+	de muestreo habituales son 8 kHz, 11,025 kHz, 12 kHz, 16 kHz, 22,050 kHz, 24 kHz, 32 kHz, 44,1 kHz y 48 kHz. 
+
+	En el caso de una frecuencia de muestreo no compatible, aparece un mensaje de error.
+
+	

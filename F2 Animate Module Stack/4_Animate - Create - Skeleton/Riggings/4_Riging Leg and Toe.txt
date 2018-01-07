@@ -1,0 +1,232 @@
+
+
+DETALLES
+
+
+a contnuación procederemos a realizar el proceso estandar de creación de configuración del proceso de rigging, de
+ 
+un character en Softimage, con todos sus controles
+
+
+a través, de un estudio estructurado y totalmente escalables por medio de módulos
+
+
+Tutorial:  Curso: D:\Nuevos Respaldos\DT_Softimage Bundle\DT_Softimage_Bundle_DVD1-6\Character Rigging in XSI
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+Rigging Leg and Toe:
+____________________
+
+
+
+a continuación procederemos con el proceso de creación de una pierna de un character bipedo, humano
+
+
+--------------------------------------------------------------------------------------------------------------
+
+
+
+	17_ahora empezaremos a realizar el riggings y controles para manejar la pierna y el pie/toe
+
+		17.1_creamos una forma sugerida a la forma de pie, a través de splines ó polygons, la renombramos
+ 
+			ejemplo: handle_base_toe, seleccionamos el root "L_toe_reverse_root", de la cadena base
+ 
+			del pie "L_toe_reverse", y vamos al menú Constrain/Option/Position, y hacemos Pick en el
+ 
+			handle handle_base_toe, que creamos con la forma de pie, así podremos controlar facilmente
+ 
+			toda la acción de pierna a través de la planta del pie
+
+
+				17.1.1_al hacer el emparentamiento se moverán los joins hacia el centro del handle
+ 
+				"handle_base_toe", debemos corregirlo moviendo el pivot del "handle_base_toe"
+, 
+				cambiando de modo Select/Object a edición en Select/Center, debemos mover el pivot
+ 
+				"handle_base_toe", al final del talón de la forma de pie, hasta que los joins
+ 		
+				retomen su posición inicial
+
+
+				17.2_ahora podemos crear movimientos estandarizados del pie, a través del handle
+ 
+				"handle_base_toe",
+ 
+
+					17.2.1_vamos a crear un control para levantar el pie conservando su base
+ 
+					de apollo en el talón del pie, a través de la handle "handle_base_toe"
+
+						17.2.1.1.para esto, vamos a la ventana View/Animation/Parameter
+ 
+						Conection Editor, seleccionamos el handle "handle_base_toe", y lo
+ 
+						cargamos en Driving Source, a través del botón refresh, luego lo 
+
+						bloqueamos
+
+			
+						17.2.1.2_luego seleccionamos el handle "L_toe_reverse_handle" de
+ 
+						la cadena base del pie "L_toe_reverse", y lo cargamos en Driven
+ 
+						Target, a través del botón refresh, luego lo bloqueamos
+
+			
+						17.2.1.3_ahora en la sección Driving Source, debemos indicar la
+ 
+						cordenada en la cual el handle "handle_base_toe", levanta el la
+ 
+						punta del pie hacia arriba
+
+
+						17.2.1.4_ahora en la sección Driven Target, debemos indicar las
+ 
+						cordenadas que utiliza el handle "L_toe_reverse_handle", de la
+ 
+						base del pie L_toe_reverse, para levantar el pie hacia arriba,
+ 
+						como es un movimiento complejo, utilizará todas las cordenadas; 
+						x,y,Z
+
+
+						17.2.1.5_uego de indicar las cordenadas le damos a "Link", luego
+ 
+						le damos al botón "Set relative Values", para así, levantar el 					
+						hadle como el "handle_base_toe" y el "L_toe_reverse_handle", hasta 			
+						su posición "arriba", luego activamos la opción "Set relative
+ 
+						Values", para activar los setting, ahora se levanrá el pie cuando
+ 
+						rote el handle "handle_base_toe", desde su base
+
+		
+					17.2.2_ahora vamos a crear un control para levanta el pie conservando su
+ 
+					base de apollo en la punta del pie, a través de la handle
+
+					"handle_base_toe"
+
+			
+						17.2.2.1_para esto seleccionamos el handle "handle_base_toe", y 
+
+						los cargamos en el Driving Source, y lo bloqueamos, luego
+ 
+						seleccionamos la propiedad de rotación que permita levantar el pie
+ 
+						en forma de puntillas 
+
+			
+						17.2.2.2_luego seleccionamos el handle "L_toe_mov_handle", de la 
+
+						cadena L_toe_mov, que es la que emula la forma del pie pero
+ 
+						invertida, y la cargamos en el Driven Target, del Parameter
+ 
+						Conection Editor, luego la bloqueamos
+
+				
+						17.2.2.3_ahora en el Driving Source, en la propiedades del handle
+ 
+						"L_toe_mov_handle", seleccionamos las propiedades del position 
+
+						x,y,z
+
+			
+						17.2.2.4_luego le damos al botón "link", posteriormente le damos
+ 
+						al botón "Set Relative Values", para poder colocar los joins del
+ 
+						pie en la posición flexionada en puntillas, y el handl lo
+ 
+						flexionamos hacia abao como es deseado hacer el setting
+
+			
+						17.2.2.5_ahora le volvemos a dar al botón "Set Relative Values",
+ 
+						para activar las propiedades que hemos seteado, así, cuando 
+
+						bajemos el handle "handle_base_toe", que controla el pie en su 
+
+						rotación hacia abajo, el pie se levanrá en puntillas
+
+	
+					17.3_ahora vamos a duplicar la pierna y pie de forma reflejada ó 
+
+					espejo/mirrow, para esto seleccionamos todos los elementos haciando click
+ 
+					con el midle butón del mouse, en el root de la leg ó pierna, luego
+ 
+					selecionamos los demás elementos haciendo draw y midle click del mouse,
+ 
+					luego vamos al menú Animate/Create/Skeleton/Duplicate Symetry, y 
+
+					seleccionamos las cordenadas de duplicación y propiedades
+
+			
+						15.3.1_para centrar algunos elementos duplicados que queden en la
+ 
+						posición anterior, podemos mover el cabezal de la línea de tiempo
+ 
+						hacia adelante y hacia atras para que éstos retomen la posición 
+
+						duplicada y correcta 
+
+		
+						15.3.2_al duplicar simétricamente en forma de mirrow ó espejo la
+ 
+						kinemática y riggins de la pierna y pie que hemos seteado, las
+ 
+						propiedades que controla el handle "handle_base_toe", del pie se
+ 
+						han reflejado invertidas
+
+			
+							15.3.2.1_para corregir esta inversión de valores, debemos 
+
+							seleccionar le "handle_base_toe", y vamos a sus 
+
+							propiedades en el explorador y buscamos las opciones en
+
+ 
+							Kinematics/Global Transform/Pose/Rotation/allí invertimos
+ 
+							el valor de la cordenada modificada, ejemplo: de y: 180,
+ 
+							lo colocamos en y:0, así, se invertirá pa posición del
+ 
+							"handle_base_toe", pero habrá recobrado el sentido de
+ 
+							orientación de sus controles de forma correcta
+
+
+							15.3.2.2_ahora para colocar la forma del handle_base_toe",
+ 
+							a aspecto inicial, lo escalamos hasta valores negativos en
+ 
+							la misma proporción hasta que este rebre su posición y
+ 
+							aspecto deseado ó lógico
+
+
+					17.4_ahora vamos a emparentar las piernas/legs con el handle cadera, para 
+
+					esto seleccionamos los roots de la legs ó piernas y vamos al menú
+ 
+					Constrain/Parent, y hacemos Pick en el handle de la cadera 
+
+					"Rigging_cadera", así quedarán unidas las piernas y la cadera con la
+ 
+					kinemática global del body
+
+
+
+

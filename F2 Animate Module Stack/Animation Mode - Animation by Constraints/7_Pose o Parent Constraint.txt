@@ -1,0 +1,175 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de vincular diferentes elementos de diferentes manera de cara a mejorar la animación
+
+e interactividad entre los elemento para mejorar así, la flexibilidad y facilidad en el proceso de animación
+
+y de relación entre los elementos
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+_Pose/Parent Constraint:
+
+
+	_tenemos la posibilidad de vincular la propiedad "Multi", 'o "translate,rotate,scale" de un elemento a la 
+
+	a otro elemento para que así, los elementos queden emparendados, similar el proceso de "Parent", más
+
+	sin el relacionamiento jerárquico y de hierachy, para que así, al hacer "translation/rotation/scale", 
+
+	del primer elemento "parent", estos atributos afectarán a la "translation/rotation/scale", de los elementos
+
+	relacionados de los otros elementos "hijos", para esto:
+
+
+		_primero seleccionamos el elemento se "hijo/constraint/limitado"
+
+
+		_luego con este objeto seleccionado vamos ha "Contrain/", y hacemos click, en "Pose", así,
+
+		el primer elemento "hijo/constraint", responderá a la acción del elemento "parent", ó manejador
+
+		
+		_así, se agregará el elemento "hijo/parent", en el "Explorer/Polygon Mesh/Kinematics/Constraint/",
+
+		será agregado el elemento "Pose Cns", y, al hacer doble click, en este entraremos a sus opciones:
+
+
+------------------------------------------------------------------------------------------------------------
+
+		Pose:
+		_____
+
+			_Active:
+
+				_tenemos la posibilidad de activar ó desactivar temporalmente un constraint
+
+
+			_Blend Weight:
+
+				_podemos ajustar la influencia ó fuerza de retardo ó inercia que tendrá ó ejercerá 
+
+				el contraint, sobre los sus elementos relacionados
+
+
+			Scaling:
+			________
+
+
+			_X,Y,Z:
+
+				_podemos indicar que la proporción de incluencia de escala en cordenadas
+
+				específicas las cuales afectarán las propiedades símiles de los objetos
+
+				relacionados hijos/constrint
+			
+			Rotation:
+			_________
+
+
+			_X,Y,Z:
+
+				_podemos indicar que la proporción de incluencia de rotación en cordenadas
+
+				específicas las cuales afectarán las propiedades símiles de los objetos
+
+				relacionados hijos/constrin
+
+			Position:
+			_________
+
+
+			_X,Y,Z:
+
+				_podemos indicar que la proporción de incluencia de translación en cordenadas
+
+				específicas las cuales afectarán las propiedades símiles de los objetos
+
+				relacionados hijos/constrin
+
+
+--------------------------------------------------------------------------------------------------------------
+
+
+		Scaling:
+		________
+
+
+			Scaling Orientation (Shear)
+			___________________________
+
+
+			_X,Y,Z:
+
+				_tenemos la posibilidad de indicar el escalado en orientación y distorción oblicua
+
+				en cordenadas específicas
+
+			
+			Scaling:
+			________				
+
+
+			_X,Y,Z:
+
+				_tenemos la posibilidad de indicar el escalado de un elemento constrint, de forma
+
+				individual al conjunto de elemento en cordenadas específicas
+
+
+--------------------------------------------------------------------------------------------------------------
+
+
+		Options:
+		________
+
+
+			Constrain
+			_________
+
+
+				_Position:
+
+					_podemos activar la propiedade de "Position/Translation", del constrint
+
+
+				_Orientation:
+
+					_podemos activar la propiedade de "Orientation/Rotation", del constrint
+
+
+				_Scaling:
+
+					_podemos activar la propiedade de "Scale/Escala", del constrint
+
+
+
+			Position Affeted by Constraining Object?:
+			_________________________________________
+
+
+				_Affeted by Orientation:
+
+					_podemos afectar la orientación de los elementos relacionados con la "Rotate",
+
+					ó rotación del elemento parent
+
+
+				_Affeted by Scaling:
+
+					_podemos afectar la orientación de los elementos relacionados con la "Scale",
+
+					ó escala del elemento parent
+				
+
+
+---------------------------------------------------------------------------------------------------------------
+

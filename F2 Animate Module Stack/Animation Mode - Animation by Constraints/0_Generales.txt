@@ -1,0 +1,80 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de vincular diferentes elementos de diferentes maneras de cara a mejorar la animación
+
+e interactividad entre los elementos para mejorar así, la flexibilidad y facilidad en el proceso de animación
+
+y de relación entre los elementos
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+_Gerarquías:
+
+
+	_los elementos limitadores "Constraint", son leidos después, de los elementos con parámetros "Scripted",
+
+	así, los elementos y parámetros con scripts, tendrán prioridad de lectura ante los elementos contrsints
+
+
+---------------------------------------------------------------------------------------------------------------
+
+
+_Global Space:
+
+
+	_los elemento constrints, se suceden en un espacio "Global", por ende las ediciones de estos elementos en 
+
+	"Local", tendrán efecto en el elemento con contraint
+
+
+	_para modificar elemento con constraint, la mejor opciones es editar estos "Location/Rotation/Scale", con la
+
+	herramient "Constrain/CnsCom", ó "Constraint Compensation"
+
+
+---------------------------------------------------------------------------------------------------------------
+
+
+_Multiple Constraints:
+
+
+	al tener múltiples constraints, aplicado a un mismo objecto pueden haber conflictos de prioridades entre ellos
+
+	y existen reglas de prioridades entre algunas propiedades y atributos específicos entre ellos
+
+
+	más por lo general el último constraint, aplicado a un elemento éste tendrá la prioridad de ejecución ante
+
+	los demás constraint, aplicados a un mismo objeto
+
+
+
+---------------------------------------------------------------------------------------------------------------
+
+
+
+_Select Constraints:
+
+
+
+	_tenemos la posibilidad de seleccionar elemento constraint, en el viewport, para esto:
+
+
+		_vamos ha "Constrain/"Select Constraining Objects" ó "Select Objects Constrained"
+
+
+		_ó hacemos sobre el un objecto "Control + Alt + mouse right click/Select Constraining Object ó
+
+		Select Object Constrained"
+
+
+
+
+

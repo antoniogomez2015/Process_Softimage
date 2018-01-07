@@ -1,0 +1,102 @@
+
+
+
+DETALLES
+
+
+Las acciones son paquetes de animación de bajo nivel, tales como curvas de función, las expresiones, las limitaciones 
+
+y los parámetros vinculados. Mediante la creación de un paquete que representa la animación, se puede trabajar en un nivel 
+
+superior de la animación que no está limitado por el tiempo
+
+
+Las acciones son los paquetes de cualquier tipo de animación, tales como curvas de función, las expresiones, 
+
+las limitaciones y los parámetros vinculados. Después de crear una acción, se carga como un clip en el mezclador 
+
+de animación, donde puede modificar la animación de una manera no lineal y no destructiva.
+
+
+Este paquete en el mezclador de animación le permite trabajar en un nivel superior de la animación que no está limitada 
+
+por el tiempo: se puede mover una acción en torno a cualquier parte a tiempo, apretar o estirar su longitud como quieras, 
+
+aplique una acción después de otras en secuencias, y mezclar dos o más acciones juntos para crear una nueva animación.
+
+
+Puede crear una biblioteca completa de acciones, como ciclos de pie o saltos, y utilizarlos como muchas veces como quieras 
+
+en una escena, o compartirlos entre cualquier número de modelos
+
+
+También puede crear acciones de compuestos/compounds, que son "contenedores" para múltiples acciones, incluyendo 
+
+la animación de diferentes fuentes/sources, (curvas de funciones, expresiones, restricciones y parámetros vinculados). 
+
+Trabajar con datos animaciones complejas convierte en una tarea más simple que tratar con múltiples fcurves.
+
+
+Dado que los datos de animación paquete/package, de acciones en una sola unidad utilizable, que hace que sea fácil 
+
+para copiar la animación de un modelo a otro, incluso si el modelo no comparte las mismas convenciones jerarquía, 
+
+escala, o de denominación. Cuando hay diferencias entre los modelos, se abre una plantilla para ayudar a trazar 
+
+los elementos del modelo correspondientes.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Storing Inverse and Forward Kinematics Animation:
+_________________________________________________
+
+
+
+
+	------------------------------------------------------------------------------------------------------
+
+
+
+	Si sus fuentes/sources, contienen esqueletos/skeleton, animados, es necesario almacenar diferentes parámetros 
+
+	en función de cómo se animan
+
+
+
+	_Si está trabajando con cinemática inversa (IK), seleccione los efectores y marcar/marked, los valores 
+
+	de traducción locales (kine.local.pos). A continuación, utilice la "Action/Store" adecuada "Marked Parameters"
+
+
+	_También puede configurar los parámetros de "Effector Local Translation" 'como parámetros keyables, a continuación, 
+
+	poner en un "Set key" carácter y utilizar el carácter Store Set Key - comando Fcurves
+
+
+	_Si está trabajando con la cinemática directa (FK), seleccione los huesos y marcar/marked, los valores de rotación 
+
+	locales (kine.local.rot). A continuación, utilice el comando apropiado tienda parámetros marcados.
+
+
+	_También puede establecer rotaciones locales, los huesos como parámetros keyables, a continuación, poner en un 
+
+	"set key" de caracteres y utilizar Action/Store "Character Key Set - Fcurves command"
+
+
+	_Utilice la tienda Esqueleto Pose comando para almacenar adecuadamente un esqueleto completo pose (ver más abajo).
+
+
+TIPS:	Almacenamiento de todas las transformaciones (escala, rotación y traducción) en los elementos de la cadena/chain, 
+
+	puede conducir a problemas con la animación. En su lugar, asegúrese de almacenar exactamente los parámetros 
+
+	que necesita, lo que usted puede hacer fácilmente mediante la creación de conjuntos de marcado 
+
+	(consulte Almacenamiento de los parámetros marcados) o mediante la creación de conjuntos de caracteres key 
+
+	(Almacenamiento de juegos de caracteres key). Por ejemplo, puede crear un conjunto keys de caracteres para que 
+
+	los efectores de un esqueleto tengan sus parámetros de posición de la zona en el conjunto.
+	

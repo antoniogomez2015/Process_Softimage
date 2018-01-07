@@ -1,0 +1,32 @@
+
+
+DETALLES
+
+
+podemos copiar y pegar proiedades de animación de un elemento a otro ó unos elementos a otros a
+
+través, de las opciones de las propiedades de los atributos en el Explorer para conjuntos de
+
+elementos
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Copy and Paste per Explorer
+___________________________
+
+
+
+	_primero seleccionamos un objecto y, con este seleccionado vamos ha, ej:
+
+	"Explorer/Mesh-motive/Polygon Mesh/Kinematics/Local Transform/", e ir a una de los grupos
+
+	de propiedades ej: "Pos", los caules contienen las cordenadas X,Y,Z, y hacer 
+
+	"mouse right clic/Copy-Paste Animation", y repitir este proceso para pegar las propiedades
+
+	en otro elemento para animarlo
+
+	

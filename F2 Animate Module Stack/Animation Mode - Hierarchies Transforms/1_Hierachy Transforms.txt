@@ -1,0 +1,102 @@
+
+
+Detalles
+
+
+	tenemos la posibilidad de hacer transformaciones en relación a su elemento padre/parent, esto 
+
+	es especialmente útil, para animaciones anidadas complejas como también, para las animaciones
+
+	de tipo character, con funciones Fk/IK, otros
+
+ 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+Plot to Actions:
+________________
+
+
+
+	transform Parent:
+
+		_Al traducir, utilice el modo Par (padre), que controla las transformaciones del 
+
+		objeto con respecto a su padre, al igual que la animación local. Este es el único
+ 
+		modo de manipulación de la transformaciones donde los ejes de interacción
+ 
+		corresponden exactamente a las coordenadas de posición local del objeto con el
+ 
+		propósito de animación. Al activar ejes individuales en el panel Transformar, los
+ 
+		parámetros de posición locales correspondientes se marcan automáticamente.
+
+
+
+	_Rotation Parent:
+
+
+		_Al girar, utilice el modo de suma (aditivo), que controla la rotación del objeto
+
+		con respecto a su padre, al igual que la animación local. Este es el único modo de
+ 
+		manipulación de rotación, donde los ejes de interacción corresponden exactamente a
+ 
+		las coordenadas de orientación local del objeto para el propósito de la animación. 
+		
+		Al activar ejes individuales en el panel Transformar, los parámetros de orientación
+ 
+		locales correspondientes se marcan automáticamente. Este modo es especialmente útil
+ 
+		cuando la animación de huesos y otros objetos en jerarquías.
+
+
+-----------------------------------------------------------------------------------------------
+
+
+NOTA	tanto las opciones de edición de elementos con parámetros con elementos padres/parent, sea a
+ 
+	través de "Transform/(Par)", ó de "Rotation/(Add)", relacionados a los elementos a modificar
+ 
+	éstas nos permiten la opción de editar sólo los atributos "Marked/marcados", al esta opción
+ 
+	accesar a los atributos locales sobre los las cordenadas centrales del objecto en relación
+ 
+	al centro global de la escena.
+
+
+	Así, podremos por ej, sólo animar una propiedades de rotacion ej: "Y", sin tener que animar
+
+	automáticamente las demás cordenadas de rotación "X,Z"
+
+
+	para esta modalidad también, disponemos de las siguientes opciones yendo ha 
+
+	"panel derecho/transform/Automark Active Transform Axe"
+
+
+	_también, tenemos esta modalidad para hacer modificaciones en elementos únicos en el modo
+
+	global de edición, yendo ha "Panel derecho/ Automark Global Transform"
+
+
+
+----------------------------------------------------------------------------------------------
+
+
+NOTA	también, disponemos de una herramienta de selección para elemento chaild/hijos, en relación
+
+	a los elementos padres, para esto vamos ha "Constraint/Chaild Transform Compensation", ó 
+
+	a través, de su acceso directo en panel "Constraint/(ChldCom)"
+
+
+
+
+
+			
+____________________________________________________________________________________________________

@@ -1,0 +1,298 @@
+
+
+Detalles
+
+
+
+Para ayudarle a volver a utilizar la animación forma/shape, usted puede compartir clips de shapes, 
+
+animadas y mezcladores entre diferentes objetos, modelos y escenas.
+
+
+Puede transferir y fusionar grupos con los atributos de la animación de la forma de un objeto a otro
+
+utilizando GATOR (Generalized Attributes Transfer Operator).
+
+funciona con "Polygon Mesh", y "NURBS"
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+DESCRIPCION
+
+
+operador de transferencia de grupos y atributos de cualquier conjunto de entrada de objetos a un
+ 
+objeto de destino. Esto es útil para transferir UVs, de texturas, mapas envolvente, y otros datos 
+
+entre los objetos que no comparten una relación de modelado, tales como versiones de alta y baja 
+
+resolución del mismo carácter. Los componentes se asignan sobre la base de su proximidad en el 
+
+espacio 3D, por lo que la transferencia funciona mejor si los objetos son similares en tamaño y 
+
+forma
+
+
+
+
+GATOR:
+______
+
+
+
+	primero debemos tener ya en la escena un elemento el cuál ya debe de tener una animación
+
+	generada a través, de keyframes, ó similares
+
+
+
+	_luego seleccionamos la mesh/motive, a la cuál, deseamos tomar los atributos y, con esta 
+
+	seleccionada vamos ha "Get/Property/GATOR", así, nos aparecerá un "Picker", con el cuál,
+
+	tendremos que seleccionar a la mesh/motive, a la cuál, deseamos aplicarle el plot/volcado
+
+	de las propiedades ó atributos copiados y, para finalizar el procemos hacemos mouse right 
+
+	click, posteriormente ha realizar este paso nos aparecerá un panel en el cuál tendremos
+
+	que confirar las propiedades y atributos a transferir
+
+
+
+-------------------------------------------------------------------------------------------------
+
+GATOR Panel Options
+___________________
+
+
+	
+	Gneralized Attributes Trnsfer Operator
+	______________________________________
+
+
+	
+	_Inputs - Hide/Unhide:
+
+		_podemos ocultar ó dejar visible la meh/motive, de la cuál hemos extraido las 
+
+		propiedades y atributos a transferir
+
+
+	_Inputs - Delete:
+
+		_podemos borrar ó elimina la meh/motive, de la cuál hemos extraido las 	propiedades 
+		y atributos a transferir
+
+
+	_Inputs construction mode:
+	__________________________
+
+
+
+		_podemos elegir el criterio de elemento ó alcance de lectura de atributos a 
+		transferir, a través, de la estructura de las "Stacks", del "Explorer", entre las
+
+		cuales disponemos:
+
+
+			_Modeling / Shape Modeling / Secundaty Shape (Result) / Animation
+
+
+
+		_Modleing:
+		__________
+
+		 si se establece en Modelado, el operador lee la geometría y otros atributos de la
+ 
+		parte superior de las entradas de la región de Modelado, e ignora el resto de los
+ 
+		operadores por encima de ella. 
+
+
+		_Shape Modeling:
+		________________
+
+		si establecemos el modo "Shape Modeling", el operador leerá de forma ascendente, 
+
+		tanto las operaciones de modelado más la de formación de "Shape", ignorando el resto
+
+		de operaciones de simulación y animación superiores
+
+
+		_Animation:
+		___________
+
+		si establemos el modo de "Animation", el operador leerá de forma ascendente, tanto
+
+		las operaciones de animación e ignorará las operaciones de simulaciones superiores
+
+
+		_Secundaty Shape (Result):
+		__________________________
+
+		si se establece en forma secundaria (Resultado), se lee desde la parte superior de 
+
+		toda la pila de las entradas/stacks ', teniendo en cuenta todos los operadores.
+
+
+
+
+	Mateials UVs, Vertex Colors, Weights Maps
+	_________________________________________
+
+
+		_Materials, UVs, VertexColors, WeightMaps:
+		__________________________________________
+
+
+		transferencias clusters y propiedades del clúster de los objetos de entrada al 
+
+		objeto de destino. Todas las propiedades del clúster de los siguientes tipos se 
+
+		transfieren: materiales, UVs textura, color de vértices en propiedades, las normales
+
+		de usuario, y mapas de peso propiedad (pero no sobre de pesos). Propiedades del 
+
+		clúster similares sobre diferentes objetos se fusionan automáticamente si Softimage
+
+		determina que es seguro hacerlo.
+
+
+
+		Shape Animation, Envelope Weights
+		_________________________________
+
+
+		transferir envolventes de pesos. envolventes sobre en objetos separados siempre se
+ 
+		fusionan, pero los mesh/source no se fisiona, los Clips de peso/weight, se duplican.
+
+
+		Envelope:
+		_________
+
+
+		Desactivar esta opción para desactivar la transferencia de los Envelopes, cuando se 
+		pulsa el botón de transferencia correspondiente
+
+
+		
+		Edit Transfer:
+		______________
+
+
+		Le permite transferir de forma manual, fusionar y eliminar grupos y propiedades de 			
+		Clusters
+
+
+
+	Additional Options
+	__________________
+
+
+		_Preserve Property Discontinuities:
+
+			_Conserva las ruptura/Breaks, en las UVs textura o propiedades de color 
+
+			vértice.
+
+
+		_Transfer Method:
+
+			El método utilizado para calcular los valores de atributo en el objeto de 			
+			destinoson los siguientes:
+
+
+			_Closest Surface (smoothed):
+			____________________________
+
+			Más cercano de la superficie (suavizado) es una variación de la superficie 
+
+			más cercana que ayuda a evitar el estiramiento de los valores en las 
+			esquinas afilados y otras situaciones. Por ejemplo, en la imagen de abajo, 
+			la ubicación más cercana en el cubo más pequeño es el mismo para todos los 
+			puntos de la sección transversal de bisel del cubo más grande, lo que 		
+			resultaría en estiramiento y bandas. Este método detecta tales situaciones y 			
+			compensa.
+
+
+			Closest Surface:
+			________________
+
+			Más cercano en superficie se encuentra el punto de la superficie del objeto 
+			de entrada más cercana e interpola un valor basado en los vértices o nudos 
+			de alrededor.
+
+
+			Closest Vertex (or Knot):
+			_________________________
+
+			Vertex más cercano (o nudo) utiliza el valor desde el vértice más cercano o
+
+			nudo en el objeto (s) de entrada. No se realiza ninguna interpolación. Este 
+			método funciona mejor cuando las topologías son extremadamente similares.
+
+
+			Raycast Along Normals casts:
+			____________________________
+
+			Raycast Junto Normales arroja unos rayos lo largo de uno de los puntos de 
+
+			las normales en ambas direcciones e interpola un valor basado en donde el
+ 
+			rayo golpea el objeto de origen. Si el rayo golpea la fuente en múltiples
+ 
+			ubicaciones, se utiliza la distancia más corta. Si no hay éxito, un valor se
+ 
+			calcula utilizando el método de "superficie más próxima". Este método 
+
+			generalmente da peores resultados que más cercano de superficie, pero puede
+ 
+			dar mejores resultados en casos específicos como los relacionados con
+ 
+			concavidades profundas.
+
+			
+
+
+	Mirrow:
+	_______
+
+
+		_Mirrow Properties:
+
+			_a través del plano especificado. Esto es útil, por ejemplo, para copiar 
+
+			formas desde el lado izquierdo de un objeto a la derecha de otro objeto 
+			incluso si hay diferencias topológicas.
+
+
+		_Plane Reference:
+
+			_El sistema de coordenadas para el plano de simetría:
+
+				 Global: El plano de simetría pasa a través del centro de la escena.
+			
+				Local: El plano de simetría pasa a través del centro del objeto de 
+				destino.
+
+
+		_Plane Normal:
+
+			_El plano de simetría: Eje X refleja a través del plano YZ; Eje refleja a 
+			través del plano XZ; Z Eje refleja a través del plano XY.
+	
+			
+
+
+	-----------------------------------------------------------------------------------------
+
+
+		
+
+
+	
+____________________________________________________________________________________________________

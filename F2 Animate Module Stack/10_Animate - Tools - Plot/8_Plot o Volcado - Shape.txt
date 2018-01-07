@@ -1,0 +1,51 @@
+
+
+Detalles
+
+
+tenemos la posibilidad de hacer Plot, ó volcados de información de objetos en si mismos y en 
+
+archivos externos, esta información puede ser de position, rotación, scale, SRT, parámetros 
+
+marcados, parámetros animables, transformaciones constraint, de curvas, y también, tenemos la 
+
+posibilidad de exportar caches en archivos externos entre otras opciones
+
+
+estas opciones son especialmente útiles para hacer volcados de animaciones complejas y sobre todo
+
+para volcar simulaciones de efectos como partículas, rigid body, soft body, otros
+
+ 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+Volcados/Plot, de Shape:
+________________________
+
+
+
+	primero debemos tener ya en la escena un elemento el cuál ya debe de tener una animación
+
+	generada a través, de keyframes, ó de forma dinámica como soft body, ó rigid body, cloth,
+
+	otros
+
+
+
+	_Use Body Animation:
+
+
+		_podemos activar este elemento soft body, para animaciones dinámicas
+
+			(
+
+
+		
+
+
+	
+____________________________________________________________________________________________________

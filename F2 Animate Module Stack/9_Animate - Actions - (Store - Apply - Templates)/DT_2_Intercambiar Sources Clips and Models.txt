@@ -1,0 +1,120 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de intercambiar sources/clips, de un elemento motive, y otro elemento entre 
+
+diferentes modelos/modelos, así podremos intercambiar animaciones de forma muy avanzada y no destructiva
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Exchance Source Clips Animation:
+________________________________
+
+
+
+
+	_primero debemos tener un source, creado de una animación de un motive en el explorer/mixer/animation/sources/.,
+
+	NOTE: (antes de crear este source, de animación debemos seleccionar ó marcar/marked, muy las propiedades 
+
+	de animación deseadas y tenerlas en cuenta ya que las necesitaremos para reflejarlas en el nuevo motive, 
+
+	ya que ambos deben coincidir en sus propiedades)
+
+
+	_ahora procedemos a crear un nuevo modelo/model, yendo ha "Model/Model/New Model", y le asignamos un nombre
+
+	
+	_posteriormente creamos un nuevo motive, al cuál le asignaremos el source/clip, de animación previamente creado
+
+
+	_ahora ha este nuevo motive, que hemos creado para agregarle el source, clip, existente debemos de crearle las
+
+	mismas propiedades de animación que le han sido agregadas al clip original el cuál deseamos reasignar al nuevo
+
+	motive, ej: (si el source, original fué creado sólo con las propiedades de animaction "position X,Y,Z"), entonces
+
+	al nuevo motive, antes de crearlo debemos activarle las propiedades de animación "position X,Y,Z", para esto
+
+	abrimos sus propiedades de animación y activamos ó creamos estos keyframes, ó relojes en rojo
+
+
+	_luego seleccionamos el nuevo motive, que hemos creado y activado las propiedades de animación deseadas y,
+
+	con este seleccionado vamos ha "Animate/Actions/Store/", y seleccionamos la opción ej "Transformation - Fcurves",
+
+	para crear así, un source, de esta animación respectiva del mesh, motive creado
+
+
+	_ahora abrimos el mixer panel, del motive, que hemos creado, para esto, seleccionamos el motive, que hemos 
+
+	creado y hacemos "Alt + 0", así, se abrirá el panel mixer
+
+
+	_luego vamos al "explorer/mixer/animation/source", así, podremos seleccionar y arrastrar el source, deseado
+
+	del motive, original para así, arrastrarlo hasta el mixer panel del nuevo motive, que hemos creado
+
+
+	_de esta manera si la compatibilidad entre ambos elementos así, como sus atributos de animación son los mismos
+
+	el source, se pasará del explorer, al mixer panel, del nuevo motive, sin ningún tipo de problema ó requerimiento
+
+	ni intervención, más si hay alguna diferencia nos aparecerá un panel contextual en el cuál tendremos que hacer
+
+	la sincronización de forma manual:
+
+
+		_en la parte superior del panel "Action Connection Resolution", nos aparecerán las opciones de "Replace",
+
+		en la cuál, existen dos campos en los cuales debemos asignar los nombre de los motives, A, y B, los
+
+		cuales harán el intercambio de información, ej: 
+
+
+			1_en el campo 1 (izquierdo), colocaremos el nombre del elemento original "motive", en el que
+
+			realizamos la animación que queremos copiar y del cuál creamos un "source"
+
+
+			2_en el segundo campo 2 (derecho), colocaremos el nombre del segundo elemento "proxi",
+
+			ó el nombre del elemento del cuál, deseamos transpasar ó pegar la animación del elemento 
+
+			original "motive"
+
+
+			de esta manera estamos diciendo que deseamos cambiar el vínculo del "source", de el mesh/motive, 
+
+			del elemento "A", por el elemento "B"
+
+
+		_y en la parte media del panel nos aparecerán las opciones de intercambio las cuales tienen problemas
+
+		ó incompatibilidades en sí
+
+
+	_así, al indicar los respectivos nombre del elemento A, y el elemento B, debemos darle al botón "Replace",
+
+	en la parte superior izquierda, así, se podrán comprobar las opciones disponibles compatibles "Connect To"
+
+
+	_y para finalizar le damos en la parte inferior del panel a la opción de "Validate", para verificar así, de que
+
+	no existe ningún problema y, por último, le damos a la opción de "Connect", contigua a validate
+
+
+	_así, podremos ver como ha quedado transferido el source, del elemento "A", del motive, original, al elemento
+
+	"B", ó nuevo motive, que hemos creado al reproduir el timeline
+
+	
+
+
+	

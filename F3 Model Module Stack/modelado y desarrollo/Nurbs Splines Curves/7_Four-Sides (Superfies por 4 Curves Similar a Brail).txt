@@ -1,0 +1,46 @@
+
+
+
+	Tenemos la posibilidad de crear superficies pologonales a partir de 4 splines, ésta opción es muy similar
+
+	a la opción de "Brail", aunque ésta es más estricta en relación a la unión de las splines, aunuqe da 
+
+	resultados más sólidos
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	Four-Sides:
+	___________
+
+	_tenemos la posibilidad de extruir a través, de splines, formas complejas de ésta manera, podremos a partir
+
+	de una primera spline, demarcar ó describir la morfología que tendrá la forma polymesh, resultante
+
+
+	_y a través, de dos ó más splines, en paralelo podremos dibujar el perímetro ó área a cubrir y forma a 
+
+	partir de la morfología de la primera spline, que creamos y modelamos
+
+
+	_para posteriormente seleccionar la primera spline, la cuál, demarca la morfología de la mesh, resultante
+
+	para con ésta spline, seleccionada vamos ha "Model/Create/Poly.Mesh/Four-Sides", para que así, nos aparesca un
+
+	"Picker", a través, del cuál, el sistema no requiera que vayamos seleccionando las demás splines, en orden
+
+	sobre las cuáles, se conformará la polymesh, resultante
+
+
+	_para que así, el sistema a partir de éste punto cree una nueva geometría poligonar con la forma y 
+
+	morfología indicada y a su vez, nos aparesca un panel en el cuál, podremos ajustar la geometría resultante
+
+	pudiendo así, austar la resolución y detalles como también, ocultar ó eliminar las splines, de trabajo
+
+
+

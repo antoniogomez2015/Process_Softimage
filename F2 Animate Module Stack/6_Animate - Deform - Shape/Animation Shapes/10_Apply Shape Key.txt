@@ -1,0 +1,117 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de hacer animaciones a través, de la deformación de geometrías/meshes, de esta manera
+
+podremos animar las deformaciones realizadas sobre la morfologías de las meshes, respectivas en el tiempo,
+
+e incluso realizar sources, de animación, keys, otros
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+_Apply Shape Keys:
+
+
+	_tenemos la posibilidad de key shape, a través, de sources, creados previamente para así, aplicarlos
+
+	como estados animables en el timeline, a través, de un controlador de la mesh, base, ubicado en:
+
+	"Explorer/Model/Mesh/Polygon Mesh/Stack Shape Modeling/Cluster Shape Combiner"
+
+
+
+
+	Workflow:
+	_________
+
+
+	_primero seleccionamos la mesh, base, a la cuál, deseamos aplicar los key shapes, ó estados de deformación
+
+
+	_luego vamos a seleccionar los estados key shapes, que deseamos aplicar, para esto vamos a la ubicación de:
+
+	"Explorer/Model/Mixer/Sources/Shapes/", y allí seleccionamos la hey shape, deseada, ej: 
+
+	"blende_shape_eyes_ShapeKey"
+
+
+	_luego, con el keys shape, deseada seleccionada vamos ha "Animate/Deform/Shape/", y aplicamos la opción de
+
+	"Apply Shape Key",
+
+
+	NOTE: este paso lo podemos repetir para cuantas key shapes, desiemos aplicar sobre la mesh base
+
+
+	_así, al aplicar las key shapes, deseadas sobre la mesh, base, podremos ver que se agregará al mixer panel
+
+	un "Shape Track", shortcut (Shoft + S), con un clip, base el cuál, representará un deformación base
+
+
+	_más todos los controladores de los sources clips, serán agregados en la sección de la mesh, base en:
+
+	"Stack Shape Modeling/Cluster Shape Combiner", a través, de un controlador general, ej:
+
+
+		_Cluster Shape Combiner
+
+
+			_Cluster mixing
+
+
+				_Shape Weight:
+
+				_ShapeOverlap Weight:
+
+
+		con los cuales podremos animar las deformaciones deseadas a través, del timeline
+
+
+
+
+--------------------------------------------------------------------------------------------------------------
+
+Mixer Workflow:
+_______________
+
+
+
+	_aunque es más recomendable el control y manipulación de los sources, a través, de clips, en el mixer panel
+
+	
+	_así, al disponer de una librería de key shapes, deformadores creados de una mesh, base, es aconsejable
+
+	abrir el mixer panel, shortcut "Alt + 0"
+
+
+	_a continuación debemos crear un "Shape Track", shortcut (Shoft + S), ó los tracks, que sean necesarios,
+
+	en los cuales cargaremos los clips, de deformación keys shapes
+
+
+	_luego vamos al "Explorer/Model/Mixer/Sources/Shapes/", y allí, podremos seleccionar y arrastrar los 
+
+	sources, deseados a uno de los tracks, creados dentro del mixer panel
+
+
+	_de esta manera podremos crear clips, de aninación de las deformaciones de los key shapes, esta opción
+
+	tiene la ventaja de que podremos manipular, nover, escalar, mezclar, y variar su influencia entre otras
+
+	opciones que nos permiten los clips, de animación
+
+
+	_más en este caso los clips, nos permitirán hacer la deformación de manera dinámica y fluida y con las 
+
+	mayores posibilidades de edición de las deformaciones sobre la geometría de la mesh, base
+
+	
+

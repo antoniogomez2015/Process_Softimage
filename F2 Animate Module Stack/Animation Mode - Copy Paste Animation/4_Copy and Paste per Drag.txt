@@ -1,0 +1,37 @@
+
+
+DETALLES
+
+
+podemos copiar y pegar proiedades de animación de un elemento a otro ó unos elementos a otros a
+
+través, de las opciones de las propiedades de los atributos en la ventanas respectiva de cada
+
+propiedad de los objetos como también, en el Explorer
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Copy and Paste per Drag
+_______________________
+
+
+
+	_primero seleccionamos un objecto y, con este seleccionado vamos ha, ej:
+
+	"Explorer/Mesh-motive/Polygon Mesh/Kinematics/", y en "Local Transform", hacemos doble 
+
+	click, para abrir esas propiedades y, en "SRT/Scaling/", podría hacer 
+
+	"mouse right click and drag", sobre el ícono de una propiedad animada ej "SRT/Scaling/X"
+
+	para luego arrastrar esta propiedad hasta otro icono de elemento de esta ventana ó de otra
+
+	ventana de propiedades de otro elemento, para que así, las propiedades sean pegadas en el
+
+	otro elemento
+
+
+

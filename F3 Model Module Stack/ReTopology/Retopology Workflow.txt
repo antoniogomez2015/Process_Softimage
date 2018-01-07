@@ -1,0 +1,236 @@
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+Importar
+________
+
+
+
+	_primero importamos el high mesh/motive, a la escena
+
+
+	_es aconsejable colocar esta mesh, motive, en alta resolución en una nueva capa 
+
+	"Control + 6", así, seleccionamos la mesh, motive ó proxi, en alta resolución hacemos 
+
+	"Scene Layer Manager/Layers/New Layer from Selection", así, ya la mesh, en alta resolución
+
+	en una nueva capa podemos desactivar la opción de "seleccionable", "S", para que así,
+
+	nos podamos seleccionar la mesh, en alta resolución en el proceso de re topología
+
+	
+
+
+
+------------------------------------------------------------------------------------------------
+
+Magnetismo
+__________
+
+
+	_luego activamos las opciones de "Snap/ON" y "Snap/faces - surfaces", en el panel derecho
+
+
+	_otra opción es agregar un modificador a la mesh, resultante de la topología, para esto
+
+	seleccionamos la mesh, resultante de la topología y, con esta seleccionada vamos ha
+
+	"Deform/Shrink Warp", y en las opciones de proyección elegimos "Closest Surface (Smoothed)",
+
+	este modificador ayudará a la que la geometría resultante del proceso de topología se siña
+
+	mejor a la superficie proxi, en alta resolución
+
+
+
+
+
+------------------------------------------------------------------------------------------------
+
+Polygonizer
+____________
+
+
+
+	_debemos comenzar agregando geometría para comenzar la re-topología, y crear a su vez,
+
+	un elemento de polygon mesh, en el explorer
+
+
+	_para esto hay varias opciones, pero la más rápida y sencilla es ir ha "Models/Modify
+
+	/Poly. Mesh/Add-Edit Polygon Tool", shortcut "N", así, son esta herramienta de creación
+
+	libre de polígonos podemos empezar ha crear el primer "Quad", sobre la superficie en alta
+
+	resolución, de esta manera se creará automáticamente un "Polygon Mesh", en el explorer
+
+
+	_al polygonizar, es posible que los polígonos se creen de forma invertida ó mejor dicho
+
+	con sus normales invertidas y, para mejorar eso ó inveritr las normales, debemos seleccionar
+
+	la mesh, resultante de la retopología, la original y, con esta seleccionada vamos ha 
+
+	"Model/Modify/Poly.Mesh/Invert Polygons"
+
+
+
+
+
+------------------------------------------------------------------------------------------------
+
+
+Visualización
+_____________
+
+
+	_ahora vamos a la "Pallete and Script Tool Bar", luego seleccionamos la mesh/motive,
+
+	en alta resolución, y con esta seleccionada vamos ha "Display Types", y seleccionamos "W",
+
+	que es el modo de visualización "Wareframe", así, nos aparecerá un "Picker", con el cuál
+
+	tendremos que seleccionar nuevamente la mesh/motive, en alta resolución, ahora para ver
+
+	los cambios debemos ir a las opcioens de visualización del panel viewport, y desactivar
+
+	la opción de "Override Object Properties", para que así la mesh/motive, en alta resolución
+
+	se muestre siempre en modo "Wareframe", sin importan si el modo de visualización del panel
+
+	vieport, se encuentre en "shaded", y otro
+
+
+	_también es recomentable el modo de visualización el el viewport de "Contant", que pone
+
+	todo plano, con esta opción podriamos aplicar el proceso de "Override", es a la mesh,
+
+	resultante del proceso de retopología
+
+
+
+------------------------------------------------------------------------------------------------
+
+
+Simetry
+_______
+
+
+	_para que la mesh, resultante de la retopología se refleje al otro lado del character,
+
+	y que de esta manera podemos trabajar con geometría reflejada debemos primero seleccionar
+
+	la geometría resultante del proceso de la retopología, luego con esta seleccionada vamos 
+
+	al "Explorer/low mesh deseada/mouse right click/Clone", de esta manera se generará 
+
+	un clone, de la mesh, low, resultante de la retopología más este clon, si responderá al 
+
+	proceso de "mirrow simetry", y mantendrá a su vez, relación con los cambios y deformaciones
+ 
+	realizadas en la mesh, original de la cuál fue clonado
+
+
+	_ahora seleccionamos la mesh "Clone", y con esta seleccionada vamos ha "Model/Modify
+
+	/poly. Mesh/Simetrize Polygons", y en las opciones de creación debemos seleccionar
+
+
+		_reference: global
+
+		_Plane Normal: X Axis
+
+
+	_de esta manera debemos seguir trabajando en el proceso de la retopología es con la mesh,
+
+	orignal y no con el clon, ya que el trabajo del clon es sólo hacer "Mirrow geometry"
+
+
+
+
+------------------------------------------------------------------------------------------------
+
+
+Workflow
+________
+
+
+
+	_para ajustar la visualización la mesh en alta resolución primero camabiamos 
+
+	la visualización en sus opciones de "Override Object Properties"
+
+
+	_para empezar a crear la retopología sobre la mesh en alta resolución hacemos "N", 
+
+	y empezamos a creamos los primeros polígonos "Quads"
+
+
+	_para mover y editar los polígonos generados y ajustar su posición disponemos de varias 
+
+	herramientas, estas son:
+
+
+		_Models/Modify/Component/Tweak Component Tool, shortcut "M"
+
+
+		_Models/Modify/Component/Move Point Tool
+
+
+		_Models/Modify/Component/Relative Mode
+
+
+		_Models/Modify/Component/Proportional
+
+
+	más las opciones de básicas de edición
+
+
+	_pero para evitar las limitantes de movimiento del proceso de "Snap", de superficie activado
+
+	de forma constante, podemos desactivarlo sólo cuando vamos hacer ajustes ó mover sub-elentos
+
+	como vertices de forma rápida, para estto, solo tenemos que pulsar "Control", 
+
+	más la herramienta que estamos usando para la edición, de esta manera, el snap, se 
+
+	desactivará temporalmente mientras tengamos pulsado la tecla "Control"
+
+
+	NOTA: para editar también debemos hacerlo en la geometría resultante del proceso de 
+	retopología y nos en la geometría clonada
+
+
+
+------------------------------------------------------------------------------------------------
+
+
+Post-Visualización
+__________________
+
+
+
+	
+	_primero seleccionamos la mesh, "Clone"
+
+
+	_y luego vamos ha "View/General/Object View", en cuál es un viewer, 3d, en el cuál podremos 
+
+	ver mejor la mesh resultante de la retopología, y en sus opciones de visualización 
+
+	seleccionamos "Shaded"
+
+
+	_es recomendable aígnarle un nuevo marial a la mesh, resultante de la retopología y 
+	colocarle un color oscuro casi negro para que así, este resalte y ten contraste de los
+
+	demás elementos de la escena y sea mejor en el panel "Object View"
+
+
+

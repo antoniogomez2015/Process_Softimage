@@ -1,0 +1,75 @@
+
+
+DETALLES
+
+
+podemos tener una visualización fantasma/ghosh, de los objetos en movimiento en la escena a través,
+
+de diferentes visualizaciones así, como también, un filtrado para visualizar sólo determinados
+
+objectos con "Ghosh", ó visualizar todos los objectos con ghosh
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Modos de visualización / Ghosh Type
+___________________________________
+
+
+
+	_Object:
+
+		_esta modilidad permite ver "instancias", del objecto gradadas en color para sugerir
+
+		la velocidad del movimiento
+
+
+	_Point:
+
+		_esta modilidad permite ver una cadena de "Locators", del objecto gradadas en color 
+		para sugerir la velocidad del movimiento
+
+
+	_Pose:
+
+		_esta modilidad permite ver una cadena de "Axis", del objecto
+
+
+	_Velocity:
+
+		_esta modilidad permite ver una cadena de "Trayectorias", del objecto gradadas en 
+		color para sugerir la velocidad del movimiento
+
+
+	_Trail:
+
+		_esta modilidad permite ver una "Trayectoria", del objecto gradadas en color
+ 
+		para sugerir la velocidad del movimiento
+
+
+
+-------------------------------------------------------------------------------------------------
+
+
+
+Ghosh / Viewport:
+_________________
+
+
+
+	_
+
+	_para ver el modo de visualización de ghosh, en el viewport, debemos activarlo en el 
+	viewport, para que así, este disponible este modo de visualización para todos los elementos
+
+	que tengan el modo de visualización ghosh, activado
+
+
+	_para activar el modo de visualización de ghosh, en el viewport, vamos a las opciones
+
+	de visualización del viewport en la parte superior derecha y, elegimos la opción de 
+
+	"Animation Ghosting"
+

@@ -1,0 +1,57 @@
+
+
+DETALLES
+
+
+el nodo "Randomize Around Value", permitirá variar el tamaño de las partículas a nivel general, 
+
+rompiendo su patrón de creación haciendolas más aleatorias
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	_Task/Particles/Modifiers/Randomize Around Value
+
+		va conectado por lo general ha "Emit from Geometry/Size"
+		
+
+
+------------------------------------------------------------------------------------------
+
+
+Randomize Around Value
+______________________
+
+
+
+	_Selection:
+
+		debemos indicar un elemento de la escena a través, de un picker, ó el explorer, como 		
+		también podemos indicale que se tome a si mismo como valor "Self"
+
+
+	_Ease Value:
+
+		podemos indicar el rango mínimo de comienzo
+
+
+	_Variance:
+
+		podemos indicar un rango de variación ó doferencia
+
+
+	_Seed:
+
+		podemos indicar un valor de see/semilla, ó influencia
+
+	
+	_Animate:
+
+		podemos hacer estos parámetros animables
+
+
+

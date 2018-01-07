@@ -1,0 +1,125 @@
+
+
+Detalles
+
+
+
+Para ayudarle a volver un volcado de una simulación soft body, de un elemento a otro diferente
+
+así, podrán transmitirse tando las propiedades de animación como las deformaciones realizadas en
+
+el proceso de colisionaes en la similación
+
+
+para esto, primero tenemos que converir la simulación, animación y deformación del objecto soft body
+
+en una deformación "Modeling Shape / Secundary Shape (Result)", para que puedan ser transferidas
+
+y manejables las propiedades
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	_primero reproducimos en el timeline, la simulación completa ó hasta el punto deseada para
+
+	que esta sea cacheada
+
+
+	_luego seleccionamos la mesh/motive, con la simulación de soft body, y con esta seleccionada
+
+	vamos ha "Animate/Tools/Plot/Shape", este panel dispone de las siguientes opciones:
+
+
+-------------------------------------------------------------------------------------------------
+
+
+	Plot Shape To Action:
+	_____________________
+
+
+	Shape Clip:
+
+		_esta opción la desactivamos para que nos permita seleccinar el "Interaction Mode"
+
+
+	_Interaction Mode:
+
+		_elegimos la interacción "Mixed Weight"
+
+
+	Frame Range/ Star:
+
+		_podemos indicar el inicio del cálculo de la simulación en el timeline
+
+
+	Frame Range/ End:
+
+		_podemos indicar el fin del cálculo de la simulación en el timeline
+
+
+	Frame Range/ Step:
+
+		_podemos indicar los pasos de interpolación de fotogramas del cálculo de la 
+		simulación en el timeline
+
+
+	los demás atributos los dejamos igual ó por defecto
+
+
+	y para finalizar el volcado le damos ha "Ok"
+
+
+-------------------------------------------------------------------------------------------------
+
+
+
+	_ahora creamos la mesh/motive, a la cuál deseamos volcarles las propiedades de soft body,
+
+	y la ubicamos según la lógica de la escena, por lo general en la misma ubicación inicial
+
+	de la mesh/motive, soft body
+
+
+	_ahora seleccionamos la mesh/motive, a la cuál deseamos volcarles las propiedades del 
+
+	elemento soft body, y con esta seleccionada vamos ha "Get/Property/GATOR", así, nos
+ 
+	aparecerá un "Picker", con el cuál, tendremos que seleccionar la mesh/motive, soft body,
+
+	con la simulación transpasada al "Plot/Shape", y, para terminar el proceso hacemos
+
+	"mouse right click", de esta manera nos aparecerá el panel de opciones de "GATOR", en el
+
+	cuál, elegiremos las opciones siguietnes:
+
+
+-------------------------------------------------------------------------------------------------
+
+
+
+	_Inputs construction mode:
+
+		_seleccionaremos "Secundary Shape (Result)"
+
+
+		DETALLES
+
+		si se establece en forma secundaria (Resultado), se lee desde la parte superior de 
+
+		toda la pila de las entradas/stacks ', teniendo en cuenta todos los operadores.
+
+
+
+-------------------------------------------------------------------------------------------------
+	
+
+	_Shape Animation, Envelope, Weights:
+
+		_hacemos click, en "Transfer", para transferir todas las propiedades al nuevo 
+		objecto ó elemento
+
+
+	
+____________________________________________________________________________________________________

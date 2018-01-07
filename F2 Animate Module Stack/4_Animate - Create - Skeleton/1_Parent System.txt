@@ -1,0 +1,184 @@
+
+
+
+Digital Tutors Introduction to Rigging in XSI 2008
+
+
+
+	Skeleton System
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+Parent System:
+______________
+
+
+
+
+	Descripción:	el emparentamiento permite hacer que una mesh, u objecto resnponda al movimiento
+
+			y comportamiento de otro objeto determinado, para lo cuál, hay diferentes métodos:
+
+
+
+	_tenemos la posibilidad de ir al "explorer", shortcut "Control + 8", y seleccionar la mesh, que 
+
+	será controla "partent", y, luego debemos hacer "mouse midle click and drag", sobre la mesh, que hará 
+
+	de controlador, esto nos permitirá meter un mesh, sobre la otra, esto quiere decir que una mesh
+
+	contendrá a la otra
+
+
+	_otra opción es seleccionar a la mesh, que hará de padre he ir al panel derecho "Constrain/", y 
+
+	hacer "Parent", así, nos aparecerá un "Picker", con el cuál, debemos seleccionar al elemento que será
+
+	controlado ó hijo "Parent", y para finalizar la operación hacemos "mouse right click", en un área 
+
+	vacía del canvas
+
+
+
+----------------------------------------------------------------------------------------------------------
+
+
+Parent Joints:
+______________
+
+
+
+	_tenemos la posibilidad de generar articulaciones entre las intercecciones de las mehses, que están
+
+	unidas ó relacionadas a través, del sistema de emparentamiento "Parent",
+
+
+	_para esto, basta con cambiar sus punto de orientación hasta la ubicación de la articulación deseada
+
+
+	Pivot:
+	______
+
+
+	_primero, para cambiar el pivot, vamos ha "Transform/", y chequeamos la opción de "Modify Object Pivot",
+
+	esta opción nos permitirá poder cambiar la ubicación por defecto del povot
+
+
+	_ahora podemos seleccionar la mesh, respectiva y hacer shortcut: "Insert", (versión maya), para cambiar
+
+	la ubicación del pivot, hasta una nueva ubicación, y, para finaliza el proceso volvemos a aplicar
+
+	"Insert"
+
+
+
+
+----------------------------------------------------------------------------------------------------------
+
+
+Parent Kinematic:
+_________________
+
+
+
+	_al tener emparentadas varias mesehes, u elementos y ajustado sus respectivos puntos de pivotes, en
+
+	relación a los joints, ó articulaciones generadas tenemos la posibilidad de articulas estas meshes,
+
+	relacionadas con un cinemática progresiva
+
+
+	_ para esto, debemos seleccionar las respectivas meshes, en orden descendente en relación a su orden
+
+	gerárquico, es decir, ir seleccionando de forma progresiva las meshes, que contienen a otras meshes
+
+
+	_así, leugo de seleccionar todas las meshes, deseadas de forma progresiva el cursor se encontrará
+
+	en la mesh, primaria ó padre, la cuál, podremos articular a través, de la herramienta de rotación
+
+	shortcut "E", de esta manera cada de una las meshes, relacionadas ó emparendas se rotará de forma
+
+	gradual ó relativa a la principal ó padre
+
+
+
+----------------------------------------------------------------------------------------------------------
+
+
+Parent Edit:
+____________
+
+
+
+	_disponemos de una herramienta para mover los elementos ó meshes, emparendas fuera de su movimiento
+
+	relativo ó articulado al estar emparentadas, esto nos permite editar y hacer ajustes fuera de las 
+
+	reglas y limitaciones del emparentamiento
+
+
+	_así, podremos seleccionar una ó más elementos emparentados y ir al panel derecho "Constraint/", y
+
+	seleccionar la opción de "ChildComp", ó "Child Transform Compensation"
+
+
+
+----------------------------------------------------------------------------------------------------------
+
+
+Parent Cut:
+___________
+
+
+
+	_tenemos la posibilidad de romper cadenas de emparentamientos de elementos, para esto seleccionamos
+
+	uno ó más elementos deseados y vamos ha "Constraint/", y hacemos "Cut", así, dichos elementos se verán
+
+	libres del emparentamiento así, como habrán roto con la cadena general de emparentamiento
+
+
+
+
+----------------------------------------------------------------------------------------------------------
+
+
+Parent Tree/Brach:
+_________________
+
+
+
+	_tenemos la pobilidad de seleccionar no sólo a elementos primparios ó independientes unos de otros
+
+	así estén emparentados si no, que también, tenemos la posibilidad de seleccionar cadenas de elementos
+
+	emparentados de diferentes propósitos:
+
+
+		_Select Tree:
+
+			_esta opción nos permite seleccionar toda la cadena de elementos emparentados no 
+
+			importando donde seleccionemos, pudiemdo así, seleccionar hasta el último elemento 
+
+			de la cadena se seleccionará así, toda la cadena completa
+
+
+				_shortcut: "Mouse Right Click", sobre cualquier elemento de la cadena, sea 
+
+				este elemento padre o hijo sin importar su posición en la cadena
+
+
+		_Select Brach:
+
+			_esta opción nos permite seleccionar el elemento padre y a los elementos hijos
+
+				_shortcut: "Mouse Midle Click", sobre un elemento padre deseado de la cadena

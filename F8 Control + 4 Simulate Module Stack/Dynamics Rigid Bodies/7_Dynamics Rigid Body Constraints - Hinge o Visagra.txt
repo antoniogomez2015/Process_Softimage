@@ -1,0 +1,158 @@
+
+
+Detalles
+
+
+tenemos la posibilidad de utilizar ayudantes ó controladores de simulación para hacer más interactiva las simulaciones,
+
+estos los sistemas de contraints, para rigid bodies, los cuales hacer de fuerzas de inercia ó de fuerza
+
+centrífuca y de fuerza centrípeta, otras
+
+
+el constraint Hinge/visagra, nos permite ampliar las posibilidades de choche controladas simulando un visagra
+
+como de ej: una puerta, otros
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Contrainsts:
+____________
+
+
+	
+	Hinge/Visagra:
+	______________
+
+
+	_primero colocamos la mehes, que hará de rigid body, según la lógica de la escena
+
+	
+	_luego, el elemento mesh/motive, que hara de rigid body, active, ej: de puerda ó elemento que será
+
+	accionado como visagra, debemos convertirlo en un elemento rigd body, active, para esto, seleccionamos
+
+	el elemento deseado y con este seleccionado vamos ha "Simulate/Create/Rigid Body/Active Rigid Body"
+
+
+	_luego el elemento mesh/motive, que hará de contrapeso ó elemento complementario rigid body, passive,
+
+	ej: el marco ó palo de la puerta, lo seleccionamos y con este seleccionado vamos ha Simulate/Create/Rigid Body
+
+	/Passive Rigid Body"
+
+
+	_ahora vamos ha relacionar ambos elementos rigid bodys, creados, tanto el active, como el passive, esto
+
+	lo hacemos a través del constraint/hinge
+
+
+
+		_primero seleccionamos el elemento rigid body, active, ó ej; "puerta", y con este elemento
+
+		seleccionado vamos ha "Simulate/Create/Rigid Body/Rigid Constrint/Hinge", así, nos aparecerá
+
+		un "Picker", con el cuál debemos indicar cuál sera el elemento que hará palanda ó serivirá de
+
+		base a la lacción de la visagra ó de rigid bidy, passive, de esta manera el sistema nos pide
+
+		que elijamos a un elemento rigid body passive, luego de seleccionarlo hacemos mouse right click,
+
+		en un área vacía del viewpor, para terminar la acción, así, nos aparecerá un ventana con las opciones
+
+		de configuración de contrant/hinge
+
+		
+		también en el viewpor, nos aparecerá una "Visagra", literalmente la cuál deberemos ajustar su
+
+		posición y rotación según la lógica de la escena, al entrar en las opciones del constraint/hinge,
+
+		tenemos las siguientes opciones:
+
+
+
+		Rigid Dynamics Cns:
+		___________________
+
+
+
+		Constraint:
+		___________
+
+
+		
+		_Active:
+
+			esta opción permite activar ó desactivar el constraint
+
+
+		_Visible:
+
+			esta opción permite hacer visible en el viewport, el constraint
+
+
+		_Attached Bodies Intercollide:
+
+			mantener unido el constraint al sistema rigid body
+
+
+		_Parameters
+
+
+			_Spring (KP):
+
+				suavidad ó interpolación de la simulación
+
+
+			_Damping (Kd):
+
+				entre memor el valor, mayor será la amortiguación
+
+
+			_Rest Angle (R):
+
+				permite ajustar el estado de la visagra pos simulación, para que así,
+
+				la visagra pueda quedar afectada post impacto y quedar ej, un poco abierta
+
+
+
+		Limits:
+		_______
+
+
+		Minimum Angle:
+
+			podemos ajustar cuanto abre la visagra creando límiten de fuelle ó expansión
+
+
+	
+		Maximum Angle:
+
+			podemos ajustar cuanto abre la visagra creando límiten de fuelle ó expansión
+
+
+
+		Motor:
+		______
+
+
+		Motor Velocity
+
+			velocidad de la rotación a partír de la simulación (así, se moverá la visagra indefinidamente)
+
+
+		Maximun Torque
+
+			resistencia inversa al sentido de la velocidad del (Motor Velocity)
+
+
+_______________________________________________________________________________________________________________
+

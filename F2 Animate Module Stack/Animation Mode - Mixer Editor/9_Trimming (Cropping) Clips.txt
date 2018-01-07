@@ -1,0 +1,82 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de hacer animación "NoLinear", ó animación no lineal, a través, del modo de animación
+
+avanzado de "animación mixer", el cuál, permite diferentes tipos de métodos y sistemas de animación:
+
+
+el modo de animación mixer, permite los siguientes tipos de datos
+
+
+	_FCurve Animation
+
+	_Expression Animation
+
+	_Constraints Animation
+
+	_Shape Animation
+
+	_Audio Animation
+
+	_Animation Layers
+
+	_Cached Animation
+
+	_Simulation Sources
+
+	_Image Clips
+
+
+
+Animación no lineal es la animación que no está limitada por el tiempo. Se le permite trabajar en la animación 
+
+a un alto nivel de control en cualquier punto de tiempo en la escena. Se le da un control de alto nivel sobre 
+
+la animación porque puede en cada capa mezclar secuencias de una manera no lineal y no destructiva. Además, 
+
+se puede reutilizar y afinar muchas fuentes de datos.
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Trimming (Cropping) Clips:
+__________________________
+
+
+
+	_Recorte/trimming, de un clip, implica establecer dentro y puntos de salida de manera que sólo una parte 
+
+	de la fuente/source, original contribuye al clip. 
+
+
+	_A continuación se presentan las diferentes maneras de recortar un clip, dependiendo de qué método prefiere 
+
+	utilizar:
+
+
+NOTE:	Cuando se cambia de un clip, compuesto en frames de entrada / salida, va a cambiar la "ventana" en los datos dentro. 
+	Clips, o porciones de los clips, dentro del complejo no se reproduzcan debido a que sus frames, se encuentran fuera 
+
+	del rango.
+
+	
+	Interactive Trimming:
+	_____________________
+
+
+	_primer seleccione un clip de los siguiente tipos: "action", "shape", "audio", or "compound clip"
+
+
+	_luego presione "alt + mouse middle click and drag", en uno de los extremos
+
+	
+
+	
+
+--------------------------------------------------------------------------------------------------------------

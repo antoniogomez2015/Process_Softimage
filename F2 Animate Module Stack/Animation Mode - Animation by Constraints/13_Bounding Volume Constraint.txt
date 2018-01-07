@@ -1,0 +1,108 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de vincular la propiedad de "tranlate", y "Orientation", de objeto a un superficie
+
+de volúmen implícita, estas formas pueden ser sólo "Spheres", y "Cubes"
+
+
+así, el objecto/motive, estará limitado a la superficie "implícita", para estar influenciada fuera de esta,
+
+sobre esta y, dentro de esta, así, dispondremos de estas tres opciones
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Bounding Volume:
+________________
+
+
+	_primero vamos ha "Get/Primitives/Implicit/Cube-Sphere", así, podremos crear tanto un esfera como un cubo,
+
+	este lo posicionamos en relación a la lógica de la escena y el objecto mesh/motive
+
+
+	_luego, seleccionamos el elemento mesh/motive, el cuál, será limitado por el constraint, y, con este seleccionado
+
+	vamos ha "Constraint/Bounding Volume", así, nos aparecerá un "picker", con el cuál, podremos seleccionar 
+
+	el elemento "inplicit/cube-sphere", de esta manera quedarán relacionados ambos elemento del sistema constraint
+
+
+	_así, podremos ver en el "outliner/mesh-motive/Kinematics/Constraints/", se creará un elemento 
+
+	"Bounding Volume Cns", con el cuál, podremos ajustar las opciones del constraint:
+
+
+
+---------------------------------------------------------------------------------------------------------------------
+
+
+	_active:
+
+		_podemos activar ó desactivar el constraint
+
+
+	_Blend Weight:
+
+		_podemos variar la infliencia ejercida por el constraint
+
+
+	_Bounding Type:
+
+		_podemos seleccionar el modo de constraint
+
+
+			_Outside:
+
+				_restricción del mesh/motive, fuera de la forma
+
+
+			_Inside:
+
+				_restricción del mesh/motive, dentro de la forma
+
+
+			_On Surface:
+			
+				_restricción del mesh/motive, sobre la forma
+
+
+			_Monitor Only:
+
+				_modo libre para visualización y edición son constrinat
+			
+
+
+	_Location:
+
+		_indeterminado
+
+
+	_Constrained Shape Type:
+
+		_algunas variantes del modo de constraint
+
+
+			_Points Bounding Box
+
+			_Surface Bounding Box
+
+			_Point
+
+			_Surface
+
+			_Center
+
+
+			
+
+
+
+--------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,330 @@
+
+
+
+curso: Digital Tutors Intro to XSI Hair 2007
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Descripción:	tenemos la posibilidad de integrar diferentes tecnologías para lograr resultados
+
+		alternativos altamente controlables así, podremos generar hair system a traves,
+
+		de sistemas nCloth, previos los cuales puedas simular mejor los bloques, módulos
+
+		ó mechones de cabello como partes independientes así, como otros comportamientos
+
+		y simulaciones avanzadas
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+
+
+Mesh/motive:
+____________
+
+
+	_primero debemo preparar ó colocar el mesh/motive, con todas sus partes en el lugar deseado,
+
+	estas partes por lo general son: body, eyes, proxi hair, otros, modulos hair (opcional)
+
+
+
+
+
+
+Skeleton System:
+________________
+
+
+	_luego procedemos a crear el skeleton system, con el cuál, haremos la animación del character
+
+
+
+
+
+
+Character System:
+_________________
+
+
+	_ahora es conveniente crear un character system, para tener un mayor control y práctico para
+
+	lograr una animación más controlable
+
+
+	_para esto, seleccionamos los bones, que conforman nuestro skeleton system, y que deseamos
+
+	animar (sin seleccionar el "Root", ni "Eff"), del skeleton system
+
+
+	_luego de seleccionar los "bones", deseados vamos ha:
+ 
+
+		_"Button Bar/icon-character/Create Character Key Set",
+
+		_"Button Bar/Animation/Character Key Sets/Create Character Key Set"
+
+	así, crearemos un character set, al cuál, le asignaremos un nombre al crearlo
+
+
+
+
+
+Animación del character set:
+____________________________
+
+
+
+	_luego vamos a la "button bar/Key All Keyable", y seleccionamos "Key Character Key Set", y en
+
+	la parte inferior "C", buscamos entre los characters, creados buscamos el character deseado, ej:
+
+	"busto_master_proof"
+
+
+	_ahora debemos animar el character set, que hemos creado para animar el character deseado
+
+	para esto, seleccionamos el character set, en el explorer, ej: "busto_master_proof", el cuál,
+
+	tiene todos los controles de los bones, deseados
+
+
+	_ahora con el character set, deseado activado y seleccionado vamos al frame, deseado, por lo 
+
+	general es el frame "0", y creamos el primer "keyframe", de animación del character set, para
+
+	esto, vamos ha "Button Bar/Icon-character/", y seleccionamos "Set Keys", así, habremos creado
+
+	un keyframe, del character set, en el frame, deseado
+
+
+	_ahora movemos el frame, del timeline hasta una nueva posición en el tiempo y seleccionamos los 
+
+	bones, del skeleton system, del character, y luego, movemos bones, en sentido de la animación  
+
+	deseada, posteriormente seleccionamos el character set, en el explorer, ej: "busto_master_proof",
+
+	y creamos un keyframe, al character set, para esto, vamos ha: "Button Bar/Icon-character/", y 
+
+	seleccionamos "Set Keys", así, habremos creado un keyframe, del character set, en el frame, 
+
+	deseado
+
+
+	_así, podremos repetir este proceso para cuantos keyframes, desiemos para nuestro character
+
+	
+
+
+
+Módulos ó Secciones de Cabello:
+_______________________________
+
+
+	Creación de secciones de cabello:
+
+
+		_primero debemos crear las formas ó secciones de cabello a través, de geometrías NURBS,
+
+		como planos yendo ha: "Mode/Get/Promitive/Surface/Grid", dichos grid, ó planos, debemos 
+
+		colocarlos sobre el modelo mesh/motive, en las ubicaciones de cabello deseados siñiéndonos 
+
+		a la forma del cuero cabelludo del mesh/motive, deformando los planos de cabello
+
+
+
+
+
+
+Emparentamiento:
+________________
+
+
+	_luego de haber creado y animado el charater, deseado así, como de haber creado los módulos
+
+	de cabello deseados debemos relacionar ambos elementos para que éstos, los módulos de cabello 
+
+	sigan la animación del character
+
+
+	_primero ubicamos el "bone", del skeleton system, donde se genera el movimiento principal por
+
+	lo general es el último bone, del "head", antes del efector
+
+
+	_luego seleccionamos los módulos de cabello deseado y, los arrastramos hasta el bone, deseado
+
+	en este caso el "bone/head", así, los módulos de cabello, quedarán emparentados al skeleton system,
+
+	de esta manera al reproducirse la animación los módulos de cabello serán arrastrados por ésta
+
+
+
+
+
+
+
+Creación de nCloth System:
+__________________________
+
+
+	
+	_luego de haber creado los módulo ó secciones de cabello debemos convertir cada uno de éstos
+
+	en un Cloth system, individual
+
+
+	_para lo cuál, debemos entrar al modo edición de sub-elementos vertex, shortcut F9, y seleccionar
+
+	todos los vextex, deseado menos los que deseamos se queden estáticos como parte del cuero cabelludo
+
+
+	_luego de tener los vertex, deseados seleccionamos vamos ha "Simulate/Create/Cloth/From Selection",
+
+
+	_así, se agregará en el "Explorer/Mesh/Polygon Mesh/", el apartado de "ClothOp", con todas las 
+
+	opciones de configuración
+
+
+	_como también, se agregará en el "Explorer/Mesh/Polygon Mesh/Clusters/", Point_AUTO, con la 
+
+	selección de vertex, que conforman el nCloth System
+
+
+
+
+Fuelds/Fuerzas:
+_______________
+
+
+
+	_ahora seleccionamos el Cloth System, "Explorer/Mesh/Polygon Mesh/ClothOp", y vamos ha:
+
+	"Simulate/Get/Force/", y agregamos por ejemplo: "Gravity", así, esta quedará relacionada
+
+	directamente con el Cloth System, ya que ésta ahora debe aparecer en la estructura del
+
+	Cloth System:
+
+		
+	_Explorer/Mesh/Polygon Mesh/ClothOp
+
+
+		_Point_AUTO(base1)
+
+		_Cloth(base1)
+
+		_Gravity
+
+
+	_así como "Explorer/Mesh/Cloth"
+
+
+
+	_es altamente aconsejable para este caso ó utilidad, utilizar un preset, para esto vamos ha:
+
+
+		_Explorer/Mesh/Cloth/Presets", y seleccionamos el preset, de "paper"
+
+
+	_también, es importante hacer que el mesh/motive, sea obstáculo del Cloth System, para que así,
+
+	el cloth system, respete el área ocupara por el mesh/motive, en la animación permitiéndonos así,
+
+	obtener una animación y simulación más realista, para esto, seleccionamos el cloth system, y 
+
+	vamos ha: "Hair/Modify/Enviroment/", y seleccionamos "Set Obstacle", así, nos aparecerá un 
+
+	"Picker", con el cuál, tendremos que hacer "mouse left click", sobre el mesh/motive, y para
+
+	finalizar la operación debemos hacer "mouse right click", sobre un área vacia del canvas
+
+
+	así, en "Explorer/Mesh/ClothOp/", se agregará "busto_obstacle(busto)", con los controles de
+
+	configuración
+
+
+
+
+Spline Proxis:
+______________
+
+
+	_ahora debemos crear las splines, las cuales servirán de proxis para la creación de hair system,
+
+	por spline, así, crearemos estas splines, a través, de los módulos de cabello los cuales tienen 
+
+	cloth system, asignado así, al simularse el cloth system, también, se moverán las spline, proxis,
+
+	con las cuales será formado el hair system, por spline, lo que se traduce que el cabello se moverá,
+
+	a través, de la simulación del cloth system
+
+
+	_primero seleccionamos un modulo de cabello de NURBS system
+
+
+	_luego con este seleccionamos vamos ha "menu opction right/Sub-elements/", y seleccionamos la opción
+
+	de "V Isolate"
+
+
+	_luego nos posabre la nurbs, respectiva e indicamos la spline, vertical que deseamos extraer
+
+
+	_luego con la spline, signada a extraer vamos ha "Model/Create/Curve/", y seleccionamos la opción
+
+	de "Extract From Surface", (cerramos el menu contextual sin oculta la original)
+
+
+	_luego repetimos este proceso hasta terminar de extrar todas las spline, deseadas, por lo general
+
+	haremos una poderación de splines, en relación al ancho del módulo de cabello
+
+
+	_así, estas splines, generadas las podemos renombrar, ej: "proxi_hair_spline", así, como también,
+
+	cambiar de color
+
+
+
+
+
+Creación del Hair System:
+_________________________
+
+
+	
+	_ahora procedemos a seleccionar las spline, creadas "proxi_hair_spline", en orden en relación
+
+	a la forma del módulo de cabello
+
+
+	_ahora con las spline proxis, seleccionamos vamos ha "Hair/Create/Hair/From Curves", así, será
+
+	creado un hair system, a través, de las splines simuladas por el cloth system
+
+
+	_así, al reproducir la simulación veremos como el nuevo hair system, será simulado junto con las
+
+	las splines, proxis, y el cloth system, que sigue a su vez, al mesh/motive
+
+
+	_en este punto si consideramos necerio es posible ocultar el múdulo de cabello conformado por el
+
+	NURBS, para esto, seleccionamos la respectivo nurbs, y vamos ha "Explorer/Mesh/", y abrimos sus
+
+	opciones de "Visibility", en las cuales tenemos las opciones de "View Visibility", y 
+
+	"Render Visibility", así, podemos desactivar éstas
+
+

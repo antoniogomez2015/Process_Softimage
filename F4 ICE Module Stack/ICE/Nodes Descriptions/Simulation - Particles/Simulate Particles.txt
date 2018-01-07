@@ -1,0 +1,38 @@
+
+
+DETALLES
+
+
+El nodo "Simulate Particles", actualiza la posición y la velocidad de cada partícula en cada trama 
+
+en base a su masa, la posición y la velocidad (basado en las fuerzas que afectan a ellos) de la 
+
+trama anterior. Actualiza cada marco basado en el cuadro/frame, anterior es lo que hace que las 
+
+partículas sean simuladas.
+
+
+El nodo "Simulate Particles", toma toda la información de los compound/compuestos, que están 
+
+conectados en por encima de el, y luego utiliza esa información para actualizar cada partícula en 
+
+cada marco/frame.
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	_Simulation/Simulate Particles
+
+	
+		Va conectado por lo general al "Simulate Root/Emitter"
+
+
+			Por lo general va conectdo al nodo "Simulation Root/Simulate"
+
+
+		
+	

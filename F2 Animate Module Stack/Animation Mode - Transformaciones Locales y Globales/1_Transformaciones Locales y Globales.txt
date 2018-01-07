@@ -1,0 +1,53 @@
+
+
+Detalles
+
+
+Puede animar objetos, ya sea en términos de sus padres (animación local) o en términos de origen el
+
+"Global", de la escena (la animación Global). Al hacer esto, los valores de transformación locales o
+
+globales apropiados se almacenan, como se puede ver en los editores de propiedades locales y 
+
+globales de Transformación. Si se anima transformaciones tanto en el local y lo global, la animación 
+
+"Global", tiene prioridad.
+
+ 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Explorer:
+_________
+
+
+	
+	_Transform Global:
+
+
+		_para acceder a las transformaciones Globales de un elemento debemos ir ha
+
+		"Explorer/mesh-motive/Kinematics/Global Transform"
+
+		
+		_la opciones de transformaciones globales tienen las opciones de cálculo de 
+
+		velocidad y aceleración del objeto, para vamos a las sección de "Explorer
+
+		/mesh-motive/Kinematic/Global Transform/Velocity-Aceleration/Compute Velo-Acc"
+
+
+
+	_Transformation Local:
+
+		__para acceder a las transformaciones Locales de un elemento debemos ir ha
+
+		"Explorer/mesh-motive/Kinematics/Global Transform"
+
+
+
+
+
+
+____________________________________________________________________________________________________

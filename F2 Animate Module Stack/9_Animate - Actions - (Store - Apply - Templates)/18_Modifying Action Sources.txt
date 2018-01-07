@@ -1,0 +1,131 @@
+
+
+
+DETALLES
+
+
+Las acciones son paquetes de animación de bajo nivel, tales como curvas de función, las expresiones, las limitaciones 
+
+y los parámetros vinculados. Mediante la creación de un paquete que representa la animación, se puede trabajar en un nivel 
+
+superior de la animación que no está limitado por el tiempo
+
+
+Las acciones son los paquetes de cualquier tipo de animación, tales como curvas de función, las expresiones, 
+
+las limitaciones y los parámetros vinculados. Después de crear una acción, se carga como un clip en el mezclador 
+
+de animación, donde puede modificar la animación de una manera no lineal y no destructiva.
+
+
+Este paquete en el mezclador de animación le permite trabajar en un nivel superior de la animación que no está limitada 
+
+por el tiempo: se puede mover una acción en torno a cualquier parte a tiempo, apretar o estirar su longitud como quieras, 
+
+aplique una acción después de otras en secuencias, y mezclar dos o más acciones juntos para crear una nueva animación.
+
+
+Puede crear una biblioteca completa de acciones, como ciclos de pie o saltos, y utilizarlos como muchas veces como quieras 
+
+en una escena, o compartirlos entre cualquier número de modelos
+
+
+También puede crear acciones de compuestos/compounds, que son "contenedores" para múltiples acciones, incluyendo 
+
+la animación de diferentes fuentes/sources, (curvas de funciones, expresiones, restricciones y parámetros vinculados). 
+
+Trabajar con datos animaciones complejas convierte en una tarea más simple que tratar con múltiples fcurves.
+
+
+Dado que los datos de animación paquete/package, de acciones en una sola unidad utilizable, que hace que sea fácil 
+
+para copiar la animación de un modelo a otro, incluso si el modelo no comparte las mismas convenciones jerarquía, 
+
+escala, o de denominación. Cuando hay diferencias entre los modelos, se abre una plantilla para ayudar a trazar 
+
+los elementos del modelo correspondientes.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Modifying Action Sources:
+_________________________
+
+
+
+
+	Después de haber creado una acción/action, puede modificar los datos de animación almacenados en su 
+
+	fuente/source. Al modificar la fuente/source, cambia la animación para todas las instancias 
+
+	(clips de acción) que se refieren a esa fuente/source. Clips de acción que contienen curvas de función 
+
+	se actualizan inmediatamente, pero los clips de acción que contengan expresiones o animación restricción 
+
+	mantener una copia local de los datos y no se refieren a la fuente - el cambio de expresiones o limitaciones 
+
+	en una fuente sólo afecta a los nuevos clips de instancia de esa fuente.
+
+
+	Puede modificar los datos de animación (curvas de función, expresiones, y limitaciones) de forma manual 
+
+	a través de editor de propiedades de la fuente de la acción (ver más abajo).
+
+
+	Before You Edit a Source:
+	_________________________
+
+
+	Debido a que la edición de una fuente/source, de la acción es destructiva, siempre se debe hacer una copia 
+
+	de seguridad (pulse Ctrl + D) en esta antes de editar. Esto también es útil para hacer si usted no quiere 
+
+	un clip de una acción de compartir la misma fuente/source (duplicar la fuente antes de generar ejemplares 
+
+	de clips de ella).	
+
+
+	Además, hay una manera de modificar la animación de un clip sin cambiar la fuente: utilizar un efecto clip. 
+
+	Clip efectos, incluidos los efectos de compensación y plantear, le permiten agregar una "capa" de la animación 
+
+	sin tocar su fuente/source
+
+
+
+	Viewing Action Source Properties
+	________________________________
+
+
+	_podemos hacer "mouse right click/Source...", así, se abrirá el panel de propiedades del "source"
+
+
+	_otra opción es directamenete en el "explorer/model/mixer/source/nameSource", hacemos doble click,
+
+	sobre un source, para así, entrar en sus propiedades de edición
+
+
+
+	Edit Source Properties:
+	_______________________
+
+
+	_podemos seleccionar un valor del panel de propiedades de source y darle ha "Edit Source Data.."
+
+	
+	_así, dependiendo del tipo/type, de data se abrirá un respectivo menú editor. las opciones son:
+
+
+		_ Fcv: function curve (keys)
+
+ 		_Exp: expression
+
+ 		_Cns: constraint
+
+		_CMP: items in a compound action clip
+
+		_Key: shape key
+
+		_SHP: items in a compound shape clip
+

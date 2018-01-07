@@ -1,0 +1,62 @@
+
+
+
+	Convertir Splines, to Polygons Mesh
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	Curve To Mesh:
+	______________
+
+	_ésta opción es muy práctica y nos permite convertir directamente elementos de tipo spline, directamente
+
+	ha elmentos poligonales de tipo "Mesh Polygon", los cuáles, podremos seguir editar y texturizando y demás
+	
+	procesos de producción
+
+
+
+	Spline:
+
+	_para lo cuál, primeramente debemos de tener creado una ó varias splines, las cuáles, conformarán la mesh,
+
+	poligonal resultante
+
+
+
+	Freeze:
+
+	_y posteriormente lo más recomendable es borrar todo el historial del stack, modeling, yendo a las opcoines 
+
+	del panel derecho en la parte inferior en "Edit/Freeze M", para que así, el historial de acciones sobre las
+
+	splines, sea borrado y ésto no obstaculize la conversión ha "polymesh", posteriormente
+
+
+
+	Curve To Mesh:
+
+	_así, de ésta manera, debemos de seleccionar las respectivas splines, y con éstas seleccionadas ir al menú
+
+	"Model/Create/Poly.Mesh/Curve To Mesh"
+
+
+	_para que así, nos aparesca un ventana con opciones de configuración en la cuál, podremos conservar la 
+
+	spline, así, como también, borrar ésta, ajustar las subdivisiones de la mesh, resultante, otros
+
+
+	_la cuál, está divida en seccines como "General/ Tessellation / Extrude / Bevel", de ésta manera, dodremos
+
+	hacer que la forma de tipo mesh, resultante tenga una apariencia determinada, un grosor, un bisel, otros,
+
+	en el mismo momento de su creación
+
+
+
+

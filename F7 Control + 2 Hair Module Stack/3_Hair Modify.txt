@@ -1,0 +1,552 @@
+
+
+
+curso: Digital Tutors Intro to XSI Hair 2007
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+Hair/Modify:
+____________
+
+
+	_Shader:
+
+		_esta opción permite acceder rápidamente al material de un determinado hair system
+
+
+	_Scale:
+
+		_esta opción permite escalar de forma rápida y práctica fibras ó filamentos, también,
+
+		funcional con el "Strand Mode"
+
+
+		_para esto seleccionamos las fibras ó filamentos deseados y aplicamos "Hair/Modify/Scale",
+
+		luego movemos el "mouse left/right/up/down", en cualquier dirección aplicará escala
+
+
+	_Brush_
+
+		_esta opción permite peinar las fibras ó filamentos a través, de diferentes funciones
+
+
+			_para escalar el diámetro de la brush:
+
+				_XSI: Scroll Up/Down
+
+				_Maya: B + mouse left click + left/right arrows
+
+			
+
+			_paint:
+
+				_mouse left click and draw, sobre el hair system
+
+
+			_rotation grupal:
+
+				_mouse midle click and draw, sobre el hair system
+
+
+			_escala grupal:
+
+				_mouse right click and draw, sobre la hair system
+
+
+			
+
+	_Rotate:
+
+		_Around Root:
+
+			_esta opción permite rotar las fibras ó filamentos en relación su respectiva
+
+			"root", ó raíz, esta opción es especialmente útil en fibras ó filamentos que 
+
+			ya tengas cierta inclinación ó arqueado ya que así, se notará la rotación 
+
+			sobre su propio eje ó root/raíz
+
+
+			_para esto, seleccionar el grupo ó fibra ó filamento deseado y aplicamos
+
+			"Hair/Modify/Rotate/Around Root" 
+
+
+		_Around Tip:
+
+			_esta opción permite rotar las fibras ó filamentos en relación su respectiva
+
+			Tip, ó punta, esta opción es especialmente útil en fibras ó filamentos que ya 
+
+			tengas cierta inclinación ó arqueado ya que así, se notará la rotación sobre
+
+			su punta ó extensión
+
+
+			_para esto, seleccionar el grupo ó fibra ó filamento deseado y aplicamos
+
+			"Hair/Modify/Rotate/Around Tip" 
+
+
+		_Around Cursor:
+
+			_esta opción permite rotar las fibras ó filamentos en relación a la posición
+
+			relativa del cursor en el viewpor, respectivo, esta opción es especialmente
+
+			útil al seleccionar fibras ó filamentos que deseamos rotar en un sentido 
+
+			determinado en relación a un punto de pivote específico
+
+
+			_para esto, seleccionar el grupo ó fibra ó filamento deseado luego colocamos
+
+			el cursor en el punto de pivote a rotar del conjunto y aplicamos
+
+			"Hair/Modify/Rotate/Around Cursor" 
+	
+
+
+	_Puff:
+
+		_Stand On End:
+
+			_esta opción permite hacer un reset, a las fibras ó filamentos a su estaos inicial
+
+			esta opción es especialmente útil cuando hemos modificado el hair system, a un 
+
+			nivel más allá del deseado y desemos restaurar la configuración inicial
+
+
+			_la opción "Stand On End", tiende ha estirar cada fibra ó filamento para luego
+
+			llevarlo gradualmente hasta su ubicación inicial
+
+
+		_Puff Roots:
+
+			_esta opción permite hacer un reset, a las fibras ó filamentos a su estaos inicial
+
+			esta opción es especialmente útil cuando hemos modificado el hair system, a un 
+
+			nivel más allá del deseado y desemos restaurar la configuración inicial
+
+
+			_la opción "Puff Roots", tiende ha restaurar la posición inicial de la fibra
+
+			ó filamente a partir de su root, ó raíz, 
+
+
+			_esta opción es animable ya que al restaurar la posición inicial del hair system
+
+			se agregar "Explorer/Mesh/Hair/" el grupo "Hair PuffOperator [ej:2]", el cuál,
+
+			tiene un slider el cuál, es animable, serciorece que la opción "edit/immed", no
+
+			esta activada
+
+	
+	_Clump:
+
+		_modo hair system, como un todo:
+
+
+			esta opción permite meter ó proyectar las fibras ó filamentos hacia adentro 
+
+			de la geometría ó al reverso de las normales, esto es especialmente útil 
+
+			para hacer efectos especiales como también hacer salir, nacer ó crecer 
+
+			cabello ó filamentos ó fibras
+
+
+
+		_modo sub-elemento: (Tip/Strand):
+
+
+			_esta opción permte aproximar los sub-elementos, seleccionados de forma ordenada
+
+			ó pseudo agrupada, otros
+
+
+	_Comb:
+
+		_Along Normals:
+
+			_esta opción permite restaurar la posición inicial de los filamentos y fibras
+
+			en relación a la posición de las normales del mesh/motive, respectivo
+
+
+		_Recomb:
+
+			_esta opción permite doblar, acostar ó señir las fibras ó filamentos sobre la
+
+			superficie de la geometría mesh/motive
+
+
+			_esta opción funciona de forma grupal para el hair system, completo ó para 
+
+			sub-elementos "Tip", y "Strands"
+
+
+		_Along X Axis:
+
+			_esta opción permite doblar, acostar ó señir las fibras ó filamentos sobre la
+
+			superficie de la geometría mesh/motive, en relación a una coordenada del plano
+
+			X,Y,Z, determinada "X"
+
+
+			_esta opción funciona de forma grupal para el hair system, completo ó para 
+
+			sub-elementos "Tip", y "Strands"
+
+
+
+		_Along Y Axis:
+
+			_esta opción permite doblar, acostar ó señir las fibras ó filamentos sobre la
+
+			superficie de la geometría mesh/motive, en relación a una coordenada del plano
+
+			X,Y,Z, determinada "Y"
+
+
+			_esta opción funciona de forma grupal para el hair system, completo ó para 
+
+			sub-elementos "Tip", y "Strands"
+
+
+		_Along Z Axis:
+			
+			_esta opción permite doblar, acostar ó señir las fibras ó filamentos sobre la
+
+			superficie de la geometría mesh/motive, en relación a una coordenada del plano
+
+			X,Y,Z, determinada "Z"
+
+
+			_esta opción funciona de forma grupal para el hair system, completo ó para 
+
+			sub-elementos "Tip", y "Strands"
+
+
+		_Along Negative X Axis:
+
+			_esta opción permite doblar, acostar ó señir las fibras ó filamentos sobre la
+
+			superficie de la geometría mesh/motive, en relación a una coordenada negativa
+
+			del plano X,Y,Z, determinada "X"
+
+
+			_esta opción funciona de forma grupal para el hair system, completo ó para 
+
+			sub-elementos "Tip", y "Strands"
+
+
+		_Along Negative Y Axis:
+
+			_esta opción permite doblar, acostar ó señir las fibras ó filamentos sobre la
+
+			superficie de la geometría mesh/motive, en relación a una coordenada negativa
+
+			del plano X,Y,Z, determinada "Y"
+
+
+			_esta opción funciona de forma grupal para el hair system, completo ó para 
+
+			sub-elementos "Tip", y "Strands"
+
+
+		_Along Negative Z Axis:
+
+			_esta opción permite doblar, acostar ó señir las fibras ó filamentos sobre la
+
+			superficie de la geometría mesh/motive, en relación a una coordenada negativa
+
+			del plano X,Y,Z, determinada "Z"
+
+
+			_esta opción funciona de forma grupal para el hair system, completo ó para 
+
+			sub-elementos "Tip", y "Strands"
+
+
+		_Away from Camara View A:
+
+			_esta opción permite doblar, acostar ó señir las fibras ó filamentos sobre la
+
+			superficie de la geometría mesh/motive, en relación a una proyección axonométrica
+
+			de una de las cámaras disponibles sin necesidad de que éstas esten activas en el
+
+			viewport, las cámaras disponibles son:
+
+		
+				_A = Top
+
+				_B = Camara
+
+				_C = From
+
+				_D = Right
+
+			
+
+
+			_esta opción funciona de forma grupal para el hair system, completo ó para 
+
+			sub-elementos "Tip", y "Strands"
+
+
+		_Away from Camara View B
+
+			_esta opción permite doblar, acostar ó señir las fibras ó filamentos sobre la
+
+			superficie de la geometría mesh/motive, en relación a una proyección axonométrica
+
+			de una de las cámaras disponibles sin necesidad de que éstas esten activas en el
+
+			viewport, las cámaras disponibles son:
+
+		
+				_A = Top
+
+				_B = Camara
+
+				_C = From
+
+				_D = Right
+
+			
+
+
+			_esta opción funciona de forma grupal para el hair system, completo ó para 
+
+			sub-elementos "Tip", y "Strands"
+
+
+		_Away from Camara View C:
+
+			_esta opción permite doblar, acostar ó señir las fibras ó filamentos sobre la
+
+			superficie de la geometría mesh/motive, en relación a una proyección axonométrica
+
+			de una de las cámaras disponibles sin necesidad de que éstas esten activas en el
+
+			viewport, las cámaras disponibles son:
+
+		
+				_A = Top
+
+				_B = Camara
+
+				_C = From
+
+				_D = Right
+
+			
+
+
+			_esta opción funciona de forma grupal para el hair system, completo ó para 
+
+			sub-elementos "Tip", y "Strands"
+
+
+		_Away from Camara View D:
+
+			_esta opción permite doblar, acostar ó señir las fibras ó filamentos sobre la
+
+			superficie de la geometría mesh/motive, en relación a una proyección axonométrica
+
+			de una de las cámaras disponibles sin necesidad de que éstas esten activas en el
+
+			viewport, las cámaras disponibles son:
+
+		
+				_A = Top
+
+				_B = Camara
+
+				_C = From
+
+				_D = Right
+
+			
+
+
+			_esta opción funciona de forma grupal para el hair system, completo ó para 
+
+			sub-elementos "Tip", y "Strands"
+
+
+	_Cut:
+
+		_esta opción permite cortar ó recortar (escala ó comprime la distancia entre los 
+
+		sub-elementos), de las fibras ó filamentos en modo hair system, ó de forma individual:
+
+		
+		_esta opción animable ya que crea en "Explorer/Mesh/hair/", un grupo "Hair CurOperator",
+
+		el cuál, dispone de un slider, animable
+
+
+			_modo hair system ó modo completo:
+
+
+				_al seleccionar un hair system, y aplicar "Hair/Modify/Cut", esta opción
+
+				realizará un corte general en relación el sub-elemento, "vertex", más
+
+				cercano ó p´roximo
+
+
+			_modo sub-elemento: (Point/Strands)
+
+
+				_Point:
+
+					_primero seleccionamos un hair system, y entramos el modo point
+
+					shortcut (F9), y seleccionamos un sub-elemento vertex, luego 
+
+					vamos ha "Hair/Modify/", y aplicamos "Cut", así, veremos como
+
+					los sub-elementos son redistribuidos en relación al seleccionado
+
+
+
+				_Strand:
+
+					_el modo strand, nos permite la selección de sub-elemtos, más este
+
+					como un todo si resive una escala general ó global a la mínima 
+
+					expresión
+
+
+	_Length:
+
+		_Attenuate:
+
+			_esta opción permite atenuar ó redimensionar la longitud de las fibras ó 
+
+			filamentos creados en relación a la morfología y topología del mesh/motive,
+
+			esto es especialmente útil para lograr  un "initial state", más intuitivo
+
+			y realista en modelos complejos
+
+
+		_Pop Zero Hairs:
+
+			_esta opción permite restaurar el tamaño ó longitud, de las fibras ó filamentos
+
+			como un todo ó de todo el hair system, seleccionando así, el hair system, deseado
+
+			y aplicamos "Hair/Modify/Pop Zero Hairs"
+
+
+		_Pop Selected Hairs:
+
+			_esta opción permite restaurar el tamaño ó longitud, de las fibras ó filamentos
+
+			seleccionados , seleccionando así, tando "Tip", como "Strands", deseados
+
+			y aplicamos "Hair/Modify/Pop Selected Hairs"
+
+
+		_Resample Stretched Hairs:
+
+			_esta opción remuetrea ó estilizar las modificaciones ó torciones realizadas
+
+			sobre fibras ó filamentos determinados
+
+
+	_Interpolation:
+
+
+		_opcional: si deseamos ver los cambios numéricos graduales relativos de esta opción 
+
+			debemos ir a las opciones de visualización del viewport, para esto accedemos 
+
+			a las opciones del "Eye/ojito", al lado de la cámara y entramos a las opciones 
+
+			de "Eye/Visibility Options.../Attributes/", y, activamos las opciones de 
+
+			"Hair Interpolation Group IDs", por defecto el valor de interpolación es de "0",
+
+			cero ó sin interpolación, así, a medida que agregemos interpolación los valores
+
+			indicados en número nos indicarán el valor relativo de interpolación aplicado a 
+
+			cada uno de las fibras ó filamentos, aunque esta opción ó visualización no es 
+
+			necesaria para funcionamiento de la opción ó herrmaienta
+
+
+		_Split:
+
+			_esta opción ofrece una grado de interpolación moderado de las fibras y 
+
+			filamentos en relación a la curvatura relativa de las mismas
+
+		_Shatter:
+
+			_esta opción ofrece una grado de interpolación mayor de las fibras y filamentos 
+
+			en relación a la curvatura relativa de las mismas
+
+
+		_Marge:
+
+			_esta opción permite multiplicar ó sumar exponencialmente valores ya aplicados
+
+			de interpolación en determinado filamentos ó fibras
+
+
+	_Surf lock:
+
+		_lock:
+
+			_
+
+
+		_Unlock:
+
+			_
+
+
+	_Enviroment:
+
+		_Apply Force:
+
+			_
+
+
+		_Set Obstacle:
+
+			_
+
+
+	_Transfer Map:
+
+		_
+
+
+	_Copy Style:
+
+		_
+
+

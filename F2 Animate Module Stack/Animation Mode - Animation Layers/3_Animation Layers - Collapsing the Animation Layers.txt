@@ -1,0 +1,177 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad al finalizar de crea capas de animación y realizar los ajustes respectivos de acoplar/bake,
+
+las layers/capas, en una sola capa "layer base", de esta manera podemos obtener una sóla capa resultante de todo
+
+el proceso de edición, así, podremos hace "actions", como clips, FCurves, otros 
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Collapsing the Animation Layers:
+________________________________
+
+
+
+	_Consideraciones:
+
+		_por que cuando colapsamos la capa base, en una FCurve, ó Actions, la capa base, se pierde ó es 
+		descartada por el sistema, más si deseamos conservar la capa base, en su estado original, debemos
+
+		almacenar en una acción su contenido antes de hacer cualquiera de las opciones de "Bake/acoplamiento",
+
+		de la layer base
+
+
+		_esto permite poder aplicar esta acción del vuelta con el contenido original de capa base, a cualquier
+
+		otro elemento que desiemos aplicarle el resultado de la animación acoplada poteriormente
+
+
+
+	_Collapsing the Animation Layers_
+
+		_cuando colapsamos una layer base, la información de la animación resultante es almacenada en el objecto
+
+		a través, de un FCurve
+
+
+	_desactivar capas para el acoplado/bake:
+
+		_si hay ciertas capas creadas en la estructuras de capas que no deseamos incluir en el 
+
+		"Bake/acoplamiento", de las capas en la capa base, podemos hacer "Mited/Silenciar", una determinada 
+
+		_capa para que ésta no se contemplada en el proceso de acoplado de las capas de animación en la capa 
+
+		base pero tiene efectos secundarios en el resultado final, es más recomendable eliminar esta capa 	
+
+		temporalmente antes de hacer "bake"
+
+
+		_al acoplar las capas de animación, todas las capas de la pila de la estrura desaparecen, no son 
+
+		conservadas, al estas ser acopladas en la capa base, incluyendo las capas en "Mited", así, sólo
+
+		la capa base se mantiene con la información de las capas acopladas
+
+
+		_más al hacer un acoplado de las capas sobre la capa base, se crean en el "Explorer/model/Mixer..",
+
+		una estructura la cuál pertenece a la esctructura de clips, correspondiente a las capas acopladas
+
+		en el panel de animación, estas poseen la siguiente estructura:
+
+
+			_Mixer/Source:
+
+				_Animation:
+
+					_LayerSource1 (Scene_Root)
+
+			_Mixer/Tracks:
+
+				_Animation:
+
+					_LayerTrack1:
+
+						_Clip List:
+
+							_Layer1
+
+								_Instanced Action:
+
+									_LayerSource1(Scene_Root)
+
+									_Static Kinematic
+
+			_Compounds:
+
+				_Animation:
+
+					_CompoundContainer
+
+						_Mixer
+
+
+	_así, al hacer "Bake", en el ícono del panel se acoplarán todas las capas en la capa base, así, se eleminarán
+
+	las capas del panel y del panel "Mixer", representandose todas al final sobre la capa base, a través de "FCurve"
+
+	editor como proceso resultante del acoplamiento, más sus respaldo en la sección "Explorer/Motive/Model/Mixer"
+
+
+
+	_conservar/keep, Layer Base:
+
+		_antes de hacer el proceso de "Bake", podemos hacer una "Actions", del proceso de animación para así,
+
+		poder almacenar una acción de combinado de animación ó de alguna capa en particular, para esto, 
+
+		seleccionamos el objeto y con este seleccionado vamos ha "Animate/Actions/Stores/", y hacemos click,
+
+		en "Animated Parameters - FCurve", así, se agregará una esctura en de "Mixer/animaction..", en el
+
+		Explorer
+
+
+	_en la versión "2015", nos apacerá en hacer "Bake", las layer, de animación un panel contextual de opciones:
+
+	
+		_Colapsing Layer:
+
+			Time Span Options:
+			__________________
+
+			
+			_Star Frame:
+
+				_podemos indicar un keyframe de inicio de acoplado de las capas de animación
+
+			
+			_End Frame:
+
+				_podemos indicar un keyframe de fin de acoplado de las capas de animación
+
+			_Step Value:
+
+				_podemos indicar los pasos de interpolación de os keyframes resultante en el timeline
+
+
+		_FCurve Options:
+
+			_Fit Plotted Values with an FCurves:
+
+				_podemos indicar que los valores resultantes sean ajustados a la FCurve
+
+
+			_Fit Tolerance:
+
+				_podemos ajustar un valor de tolerancia del paso anterior, es recomendable un valor bajo
+
+
+
+	_Storing Animation Layers in an Action Source:
+
+		_
+	
+	
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------
+
+
+
+

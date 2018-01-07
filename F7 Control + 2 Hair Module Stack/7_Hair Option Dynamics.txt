@@ -1,0 +1,215 @@
+
+
+
+curso: Digital Tutors Intro to XSI Hair 2007
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Descripción:	esta opciones ofrecen caracterícas de como reaccionará el hair system, en relación
+
+		a las influencias ejercidas por las fuerzas/fields, aplicadas y relacionadas con el
+
+		hair system
+
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+
+opciones básicas Hair/Dynamics:
+_______________________________
+
+
+	Stiffness:
+
+
+		_esta opción nos permite indicar la cantidad de rigidéz que tendrá el hair system, ante
+
+		la influencia de los elementos y fuerzas dinámicas
+
+
+	_Root Stiffness:
+
+		_esta opción nos permite indicar la cantidad de rigidéz que tendrá el hair system, ante
+
+		la influencia de los elementos y fuerzas dinámicas específicamente en la raíz ó roots,
+
+		de las fibras que lo componen
+
+
+	_Dampening:
+
+		_esta opción nos permite indicar la cantidad relativa de rebote que tendrá el hair system,
+
+		ante de las diferentes interacciones con las fuerzas y elementos dinámicos
+
+
+	_Wiggle amplitude:
+
+		_esta opción permite indicar la amplitud de alietoriedad ó turbulenciaque tendrá el 
+
+		hair system, de modo dinámnico para generar un simulación de "Wiggle"
+
+
+	_Wiggle speed:
+
+		_esta opción permite indicar la velocidad de alietoriedad ó turbulenciaque tendrá el 
+
+		hair system, de modo dinámnico para generar un simulación de "Wiggle", esta opcion
+
+		es requerida para el fincionamiento de este tipo de simulación
+			
+
+-----------------------------------------------------------------------------------------------------
+
+
+
+opciones avanzadas Hair/Create/Dynamics:
+________________________________________
+
+
+	Dynamics:
+
+
+		_primero seleccionamos el hair systema, deseado
+
+		
+		_luego vamos ha "Hair/Create/", y aplicamos "Dynamics", así se agregarán en 
+
+		"Explorer/Mesh/Hir/", las opciones de "Hair Dynamics Operator", las cuales se componen
+
+		de las siguientes características:
+
+	
+-----------------------------------------------------------------------------------------------------
+
+
+
+Hair Dynamics Operator:
+
+
+	_Mute:
+
+		_esta opción permite activar ó desactivar las opciones avanzadas dinámicas
+
+
+	_Reset Dynamics:
+
+
+		_esta opción nos permite crear una pseudo posición inicial y, a su vez, poder hacer
+
+		"reset", la simulación ó animación realizada sobre el hair system, de todas las 
+
+		interacciones como fields, obstacles, effects, animations. otros
+
+
+		_así, cada vez que terminamos de reproducir una simulación y deseamos volverla a 
+
+		reproducir desde su punto inicial, debemos hacer "Hair Dynamics Operator/Reset Dynamics",
+
+
+		así, el hair system, volverá a su posición inicial, eliminando la deformación sobre 
+
+		el mismo de una simulación anterior ó previa
+
+
+	
+
+	Sensivility To Forces
+	_____________________
+
+
+	_Attractor:
+
+		_esta opción hace disponible el hair system, ante fuerzas de atracción ó "Attractor"
+
+
+	_Drag:
+
+		__esta opción hace disponible el hair system, ante fuerzas de arrastre ó "Drag"
+
+
+	_Eddv:
+
+		_(indeterminado)
+
+
+	_Fan:
+
+		__esta opción hace disponible el hair system, ante fuerzas de aire ó "Fan"
+
+
+	_Gravity:
+
+		_esta opción hace disponible el hair system, ante fuerzas de gravedad ó "Gravity"
+
+
+	_Toric:
+
+		_(indeterminado)
+
+
+	_Turbulence:
+
+		_esta opción hace disponible el hair system, ante fuerzas de turbulencia ó "Turbulence"
+
+
+	_Vortex:
+
+		_esta opción hace disponible el hair system, ante fuerzas de votice ó "Vortex"
+
+
+	_Wind:
+
+		_esta opción hace disponible el hair system, ante fuerzas de viento ó "wind"
+
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+
+Workflow:
+
+
+	_así, es más recomendable trabajar con ambos páneles para tener a disposición todas las características
+
+	y posibilidades a la mano
+
+
+	_así, primero abrimos las opciones básicas, para lo cuál, disponemos de dos opciones, estas son:
+
+
+		_Explorer/Mesh/Hair/Dynamics
+
+
+		_Explorer/Mesh/Hair/Hair Generator Operator
+
+
+	así, podríamos bloquear la actualización de este panel para que no actuliza y no lo perdamos de vista
+
+
+
+	_también, debemos abrir las opciones avanzadas dinámicas, para esto vamos ha: 
+
+	
+		_Explorer/mesh/Hair/Hair Dynamics Operator
+
+
+
+
+		
+	MOSTER AECLUB AaBbCcDdEeFfGgHh123456789<>!?%$
+
+http://forum.cgpersia.com/f68/scripts-ae-collection-june-2015-new-monter4-84025/
+
+https://www.youtube.com/user/Fabiocomplejo/videos
+
+https://www.youtube.com/user/KevinOilPainting
+
+

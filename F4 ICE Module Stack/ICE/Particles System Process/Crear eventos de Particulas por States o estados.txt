@@ -1,0 +1,133 @@
+
+
+
+DETALLES
+
+
+Los "States", ó estados nos permitirán ampliar las opciones de los condicionales ya que los States,
+
+nos permiten agregar a acción a partír de eventos generados por medio de los condicionales
+
+
+pero los states, no sólo funcionan con los condicionales "Test/If", si no, que tambén, funcioan
+
+con una gran variedad de elementos los cuales dependerán de la lógica y diseño de nuestro ICETree
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+NOTA:	ya tenemos que tener un sistema "Point Cloud", cargado en el ICETree, con sus respetivos 
+
+	elementos como el emisor y la/s superficies colisionadoras, otros
+
+	en el ejemplo utilizamos un sistema obtenido de "Get/Primitive/Point Cloud/Grid"
+
+
+
+	_ahora seleccionamos las partículas y vamos al ICE "Alt+9", y hacemos refresh
+
+
+	_ahora hacemos "ICETree/Create/Simulate ICE Tree", es conveniente bloquear el ICETree,
+
+	para que se mantenga el sistema de partículas siempre seleccionado
+
+
+----------------------------------------------------------------------------------------------
+
+Crear States
+____________
+
+
+	_ahora vamos ha "ICETree/Particles/State/State Machine", y lo creamos, el "estat machine",
+
+	en un nodo el cuál sirve de controlador para diferentes "States", que creemos 
+
+
+	_luego relacionaremos los nodos "State Machine/Execute", con el nodo "Simulate Root/Simuate"
+
+
+	_ahora vamos ha "ICETree/Particles/States/State", y lo creamos, los States, nos permitirán
+
+	crear eventos más completos a través de un condicionador, (cualquier elementos puede ser
+
+	un condicionados), de allí, la gran potencialidad de los "States"
+
+
+	_luego relacionamos los nodos "State/Execute State", con el nodo 
+
+	"State Machine/Execute State1", así, todos los "States", que queden conectados al nodo
+
+	State Machine, quedarán listos para trabajar
+
+
+----------------------------------------------------------------------------------------------
+
+Crear Eventos de States
+_______________________
+
+
+	_ahora vamos ha "ICETree/Particles/Conditionals/Test Collision With Surface", y lo creamos
+
+
+	_luego relacionamos los nodos "Test Collision With Surface/Hit", con el nodo 
+
+	"State/Trigger1", así, el Trigger, hará de disparador ó gatillo
+
+
+	_ahora cargamos el mesh/motive, que hará de colisionador, al ICETree, para esto, lo 
+	seleccionamos en el viewport, ó explorer, y hacemos "F3", y los arrastramos al ICETree
+
+
+	_luego relacionamos los nodos "Get Data - Mesh-motive/Value", con el nodo 
+
+	"Test Collision With Surface/Surface1"
+
+
+----------------------------------------------------------------------------------------------
+
+Crear Acciones de States
+________________________
+
+
+	_ahora vamos ha "ICETree/Particles/Setters/Set Particle Shape", y lo creamos "puede ser
+
+	cualquier elemento  ó atributo como acción, en este caso utilizaremos este"
+
+
+	_luego relacionaremos los nodos "Set Particle Shape/Execute", con el nodo 
+
+	"State/Execute on Trigget1", así, esta será la acción a realizar luego comprobar el 
+	condicional establecido para el State
+
+
+
+----------------------------------------------------------------------------------------------
+
+Lógica de States
+________________
+
+
+	primero el "State", llamará al "Trigger1", el cuál esta activamos y, este a su vez, 
+
+	comprobará "Test Collision With Surface", que si las partículas colisionan con la superficie
+
+	"Get Data-Mesh Motive", y si es así, entonces ejecute la acción del elemento "Trigger1",
+
+	la cuál es obtener las partículas y cambiarle su forma "Set Particle Shape"
+
+
+
+
+
+
+
+
+
+
+
+
+

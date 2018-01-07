@@ -1,0 +1,54 @@
+
+
+
+curso: Digital Tutors Intro to XSI Hair 2007
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	
+	_Fields:
+
+
+		_tenemos la posibilidad de agregar fields, ó fuerzas a los sistemas de hair system,
+
+		para que así, éstos puedan interactuar con las diferentes fuerzas compatibles con
+
+		con hair system
+
+
+		_primero seleccionamos el hair system, deseado
+
+
+		_luego vamos ha "Hair/Create/Forces", y hacemos "mouse left click", sobre la fuerza
+
+		ó fields, deseada, entre las cuales disponemos de las siguientes:
+
+
+			_Attractor
+
+			_Drag
+
+			_Eddy
+
+			_Fan
+
+			_Gravity
+
+			_Toric
+
+			_Turbulence
+
+			_Vortex
+
+			_Wind
+
+
+	_así, al crear y relacionar un fuerza ó field, a un hair system, se agregará en
+
+	"Explorer/Mesh/Hair/Hair/Hir Dynamics Operator/", la fuerza creada, ej: "Gravity"/"Wind"
+
+		
+	

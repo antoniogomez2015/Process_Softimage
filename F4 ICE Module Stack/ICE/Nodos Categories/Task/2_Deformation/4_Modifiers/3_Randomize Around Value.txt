@@ -1,0 +1,48 @@
+
+
+DETALLES
+
+
+tenemos la posibilidad de modificar a modo de deformación de elementos como meshes, especialmente en el
+
+ámbito vector, esto permite deformar de forma aleatoria geometrías a través, de diferentes nodos, por lo
+
+general nodos de vector and basic, otros
+
+
+	Task/Deformation/Modifiers/Randomize Around Value
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Randomize Around Value
+
+
+	_este nodo nos permite tomar un valor ó una serie de valores y variarlos ó modificarlos
+
+	de forma aleatoria para lograr resultados de deformación controlada en elementos por lo
+
+	general de geometrías mesh
+
+
+
+		-Randomize Around Value-
+
+
+			_In:
+
+				_"basic value/Randomize Around Value"
+
+
+			_Out:
+
+				_"Randomize Around Value/value", a "Multiply", ó "Scalar to 3D Vector", u otro vector
+
+
+	
+
+
+

@@ -1,0 +1,40 @@
+
+
+DETALLES
+
+
+el nodo "Randomize Direction", permitirá variar el flujo ampliando su "spread", ó dispersión
+ 
+desordenando las partículas (de forma detallada), rompiendo su patrón de creación haciendolas más 
+
+aleatorias
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	_Task/Particles/Emission Control/Randomize Direction
+
+		va conectado por lo general ha "Emit from Geometry/Excecute on Emi1"
+		
+
+
+------------------------------------------------------------------------------------------
+
+
+Randomize Direction
+___________________
+
+
+
+	_Start Angle:
+
+		podemos rango mínimo de variación del tamaño de las partículas
+
+
+	_End Angle:
+
+		podemos rango maximo de variación del tamaño de las partículas

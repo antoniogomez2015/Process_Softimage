@@ -1,0 +1,73 @@
+
+
+Detalles
+
+
+tenemos la posibilidad de configurar las caracteristicas de las simulaciones rigid bodies
+
+para obtener as'i, diferentes resultados
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Simulation Properties:
+______________________
+
+
+	
+	Play Mode:
+	__________
+
+
+	_primero creamos ambos elementos mesh/motive, que harán de rigi body, y los colocamos contíguos según
+
+	la lógica de la escena más con cierta separación entre estos
+
+
+	_luego seleccionamos ambos elementos y los convertimos en elemento rigid body, active/passive, según 
+
+	la lógica de la escena
+
+____________________________________________________________________________________________________
+
+
+
+	para ver las características de las simulaciones rigid bodys, vamos ha "Simulate/Modify
+
+	/Rigid Body/Edit Simulation Properties"
+
+
+
+	_así, si vamos ha "Simulation/Play Mode, podemos elegir las opciones siguientes
+
+
+		_Live, y Standar, estas opciones son similares y permite hacer simulaciones
+
+		estáticas osea, que solo reaccionarán a las acciones de fuerzas colaterales e impactos
+
+		generados entre sí
+
+
+		_Interactive, más esta opción es igual a las anteriores más esta cotempla la acción
+
+		del usuario al mover elementos en tiempo real, esto permite agregar fuerzar centrífugas
+
+		y centrípetas así, como inercias entre otros
+
+
+
+	Cache Files:
+	____________
+
+
+		_podemos "Cachear", la simulación para que así, esta quede fijada en el timeline,
+
+		y poder así, hacer ajustes y visualizaciones al simplemente arrastrar el cabezal
+	
+		del timeline, hasta el punto del tiempo deseado
+
+
+		_así, como también, tenemos la posibilidad de exportar un archivo de cache entre otros
+

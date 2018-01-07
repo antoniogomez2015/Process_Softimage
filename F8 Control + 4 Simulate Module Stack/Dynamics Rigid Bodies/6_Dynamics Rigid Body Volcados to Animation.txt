@@ -1,0 +1,109 @@
+
+
+Detalles
+
+
+tenemos la posibilidad de realizar volcados de una simulación a a fotogramas ó a un clip, de animación para ser
+
+usado luego en los diferentes procesos de animación de forma simplifica, al prescindir del proceso de simulación
+
+y cálculos complejos que esta representa
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Volcados ha Animación:
+______________________
+
+
+	
+	Tipos de Volcados:
+	__________________
+
+
+
+	Keyframes:
+	__________
+
+
+	_podemos hacer un volcado de una simulación a fotogramas/keyframes, ó al F-Curve Editor, ó Animation Editor,
+
+	para esto, primero seleccionamos a un elemento el cuál ya posee una simulación por rigid body, y con este
+
+	elemento seleccionado vamos ha "Animate(F2)/Tools/Plot/All tranformation", así, se abrirá un panel con las
+
+	opciones de conversión, las cuales tendremos que configurar a nuestras necesidades personalizadas, y para
+
+	finalizar el proceso hacemos "Ok", así, podremos ver que si ahora desactivamos el sistma rigid body, para 
+
+	este elemento y el sistema de Enviroment, respectivo, yendo ha "Enviroment/Simulation Time Control/Active",
+
+	desactivando esta opción temporalmente podremos ver de que de esta manera la mesh, rigid body, en cuestión
+
+	mantendrá su comportamiento igualmenteya que ahora este fue volvado a la timeline
+
+
+
+	Clip de Animación:
+	__________________
+
+
+	_en las mismas opciones de "List/Enviroment/Simulate Time Control/", disponemos de las 	opciones de 
+
+	"Caching Files", las cuál podemos activar, 
+
+
+	_luego reproducimos nuevamente el timeline, para cargar así, la simulación en cache
+
+
+	_ahora vamos ha "List/Enviroment/Simulate Time Control/Caching Files", y hacemos "Save Cache to Mixer",
+
+	así, se nos abrirá una ventana contextual "Store enviroment caches in mixer", con las opciones:
+
+
+		_RED Action:
+
+			podemos asignarle un nombre al clip de animación generado
+
+
+		_Add clip to Mixer:
+
+			agregar es clip al panel mixer, "activamos esta opción"
+
+
+	de esta manera se habran volcado todas las simulaciones de los elementos rigid bodys, dentro del
+
+	enviroment, respectivo a un clip, de animación al panel mixer
+
+
+	_y automáticamente veremos que al hacer este paso se ha desactivado todo el sistema del enviroment,
+
+	respectivo
+
+
+	_así, podremos ver que al reproducir el timeline, veremos que la animación se reproduce correctamente
+
+	el volcado de los elementos que antes se movian sólamente con el proceso de la simulación rigid body
+
+
+	_ahora vamos ha abrir el panel "Animation Mixer", yendo ha "Voew/Animation/Animation Mixe", ó "Alt+0", 
+
+	ya en el panel "Animation Mixer", debemos seleccionar cualquiera de los elementos que se les hizo el
+
+	volcado y, luego hacemos "Refresh", en el panel "Animation Mixer", para actualizar el panel y cargar
+
+	así, el clip, respectivo a los elementos de la simulación deseada
+
+
+	
+
+
+
+
+
+_______________________________________________________________________________________________________________
+

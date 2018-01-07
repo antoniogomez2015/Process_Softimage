@@ -1,0 +1,82 @@
+
+
+
+DETALLES
+
+
+Las acciones son paquetes de animación de bajo nivel, tales como curvas de función, las expresiones, las limitaciones 
+
+y los parámetros vinculados. Mediante la creación de un paquete que representa la animación, se puede trabajar en un nivel 
+
+superior de la animación que no está limitado por el tiempo
+
+
+Las acciones son los paquetes de cualquier tipo de animación, tales como curvas de función, las expresiones, 
+
+las limitaciones y los parámetros vinculados. Después de crear una acción, se carga como un clip en el mezclador 
+
+de animación, donde puede modificar la animación de una manera no lineal y no destructiva.
+
+
+Este paquete en el mezclador de animación le permite trabajar en un nivel superior de la animación que no está limitada 
+
+por el tiempo: se puede mover una acción en torno a cualquier parte a tiempo, apretar o estirar su longitud como quieras, 
+
+aplique una acción después de otras en secuencias, y mezclar dos o más acciones juntos para crear una nueva animación.
+
+
+Puede crear una biblioteca completa de acciones, como ciclos de pie o saltos, y utilizarlos como muchas veces como quieras 
+
+en una escena, o compartirlos entre cualquier número de modelos
+
+
+También puede crear acciones de compuestos/compounds, que son "contenedores" para múltiples acciones, incluyendo 
+
+la animación de diferentes fuentes/sources, (curvas de funciones, expresiones, restricciones y parámetros vinculados). 
+
+Trabajar con datos animaciones complejas convierte en una tarea más simple que tratar con múltiples fcurves.
+
+
+Dado que los datos de animación paquete/package, de acciones en una sola unidad utilizable, que hace que sea fácil 
+
+para copiar la animación de un modelo a otro, incluso si el modelo no comparte las mismas convenciones jerarquía, 
+
+escala, o de denominación. Cuando hay diferencias entre los modelos, se abre una plantilla para ayudar a trazar 
+
+los elementos del modelo correspondientes.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Storing Animation for Custom Parameters and Marking Sets:
+_________________________________________________________
+
+
+
+
+	------------------------------------------------------------------------------------------------------
+
+
+
+	Puede almacenar las acciones de parámetros personalizados individuales en un conjunto o para todo el conjunto 
+
+	de parámetros en sí. Esto también, se aplica a los conjuntos de marca/marked, ya que también, son conjuntos 
+
+	de parámetros personalizados.
+
+
+	De cualquier manera, asegúrese de que ha "marked/marcado", los elementos correctos primero y luego usar el comando 
+
+	Parámetros apropiada "Marked Parameters"
+
+
+	Para marcar/marked, todos los parámetros personalizados o conjuntos de marcados/marked, haga clic en el nombre 
+
+	del tab/list, de los atributos personlizados de parámetros. así, todos sus parámetros también, estarám marcadas.
+
+
+	Para marcar/marked, los parámetros personalizados individuales, haga clic en el explorador de la lista 
+
+	de parámetros marcados como lo haría con cualquier otro parámetro.
+

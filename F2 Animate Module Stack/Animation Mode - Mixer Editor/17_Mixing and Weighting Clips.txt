@@ -1,0 +1,176 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de hacer animación "NoLinear", ó animación no lineal, a través, del modo de animación
+
+avanzado de "animación mixer", el cuál, permite diferentes tipos de métodos y sistemas de animación:
+
+
+el modo de animación mixer, permite los siguientes tipos de datos
+
+
+	_FCurve Animation
+
+	_Expression Animation
+
+	_Constraints Animation
+
+	_Shape Animation
+
+	_Audio Animation
+
+	_Animation Layers
+
+	_Cached Animation
+
+	_Simulation Sources
+
+	_Image Clips
+
+
+
+Animación no lineal es la animación que no está limitada por el tiempo. Se le permite trabajar en la animación 
+
+a un alto nivel de control en cualquier punto de tiempo en la escena. Se le da un control de alto nivel sobre 
+
+la animación porque puede en cada capa mezclar secuencias de una manera no lineal y no destructiva. Además, 
+
+se puede reutilizar y afinar muchas fuentes de datos.
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Mixing and Weighting Clips:
+___________________________
+
+
+
+	_Una de las características más potentes del mixer, de mezclas de animación es su capacidad para mezclar clips 
+
+	de peso/weight, contra la otra. Cuando dos o más clips, se solapan en el tiempo y en coche los mismos elementos,
+ 
+	usted puede mezclarlos estableciendo pesos que controlan su influencia relativa.
+
+
+	_Al ajustar el peso de un clip, se puede controlar la cantidad de influencia que ha comparado con los otros clips, 
+
+	de la animación resultante. Cuanto mayor sea el peso de la mezcla, más fuertemente un clip contribuye a la 
+
+	animación. Mezcle clips, compuestos de una manera fácil de mezclar la animación a un nivel aún más alto.
+
+
+	_Puede configurar keys en el peso/weight, de cada clip, para animar los cambios. Cuando se anima el peso, se crea 
+
+	un fcurve, del peso que usted puede ajustar como cualquier otro fcurve.
+
+
+	_También puede establecer las propiedades de mezcla para controlar cómo se combinan los pesos en cada modelo 
+
+	y clip, compuesto. Puede establecer los pesos de mezcla fuera del rango [0,1]. Por defecto, mezclar los pesos 
+
+	se promedian (normalizado) de modo que, por ejemplo, si Clip A tiene un peso de 1 y Clip B tiene un peso de 1,5 
+
+	en una trama dada, entonces la influencia de A es 40% (1 Ö (1 + 1,5 )) y la influencia de B es del 60%.
+
+
+	_Si apaga la normalización en el editor de la propiedad del mixer, de mezclas, es posible a "rebasamiento" 
+
+	los datos en el clip, mediante el establecimiento de los pesos superiores a 1
+
+
+	About the Weight Mixer Panel:
+	____________________________
+
+
+	_Al ajustar los pesos de los clips, en el mezclador de animación, asegúrese de que Ver Peso Panel Mezclador está 
+
+	activada (pulse la tecla W). en el Panel Mezclador mixer, para que la sección de peso/weight, sea mostrada en el
+ 
+	extremo derecho de cada "acción" y la "shape" de pista, mostrando un control deslizante de peso y un icono de la 
+
+	animación verde para introducir el peso.
+
+
+	_Una línea roja atraviesa el clip, lo que significa que su peso en general a través, del tiempo. Si el peso es 1 
+
+	(por defecto), la línea roja es en la parte superior; si el peso es 0, la línea roja está en el fondo, etc.
+ 
+	Asegúrese de que las curvas Ver Peso se selecciona para ver esto.
+
+
+	_A la derecha, el panel de mezclador de peso para cada pista tiene un control deslizante y un icono de animación 
+
+	para establecer y keiging, el peso de un clip.
+
+
+	_Para cada pista/track, el Panel Mezclador de peso/weight, afecta el clip, en el cuadro/frame, actual. 
+
+	Si el cursor de reproducción no está en un clip, el mezclador de la pista correspondiente no está disponible.
+
+
+	Animation Weights:
+	__________________
+
+
+	_tenemos la posibilidad de animar los weights, ó pesos de un clip, en relación a los demás clips, para esto
+
+	seleccionamos el clip, deseado y vamos a sus opciones del "weight", en el panel mixer, en el extremo defecho,
+
+	
+	_así, podremos ir al comienzo del clip, ej: en el "frame 1", y colocar el primer "keyframe", y, posteriormente
+
+	seguir avanzando en el tiempo y colocando más keyframes, con diferentes pesos/weights, en esta medida veremos 
+
+	como va variando la forma de la curva de visualización de pesos del clip, en el tiempo de duración del clip
+
+
+	_otra opción es hacer "mouse right click/", sobre el click, deseado y seleccionar la opción de "Clip Properties",
+
+	y entras a las opciones de "Weight", para proceder ha animamar el peso del clip, en el tiempo
+
+
+
+	Add Clips Parameters:
+	_____________________
+
+
+	_tenemos la posibilidad de agregar parámetros posteriormente a un clip, deseado
+
+	
+	_para esto, seleccionamos el clip, deseado y vamos ha "Animate/Create/Parameter/", y seleccionamos la opción
+
+	de "New Custom Parameter Set"
+
+
+	_así, se agregará en el "Explorer/Model/Mixer/Tracks/Animation/Clip_Name/Custom/", el siguiente atributo
+
+	personalizado "Atribute_name", al cuál, podremos arrastrarle cualquier otro clip, ó propiedad específica
+
+	que deseamos que este agrege al clip
+
+	
+	_así, al entrar en las opciones del clip, veremos el nuevo atributo agregado ha este
+
+
+	Pressets Weights:
+	_________________
+
+
+	_más tenemos la posibilidad de utilizar pressets, weights, para controlar así, más fácilmente la interpolación
+
+	entre clip, de forma más práctiva
+
+
+	_para esto, seleccionamos el clip, desedo y, con este seleccionado vamos ha "mixer/clips/", y vamos ha la
+
+	sección de "Presset Weights/", en la cuál, dispondremos de diferentes pressets, listos para usar los cuales
+
+	son los más convencionales y útiles para la mayoría de casos
+
+
+--------------------------------------------------------------------------------------------------------------

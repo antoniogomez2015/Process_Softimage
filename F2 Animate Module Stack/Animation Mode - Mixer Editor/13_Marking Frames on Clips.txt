@@ -1,0 +1,126 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de hacer animación "NoLinear", ó animación no lineal, a través, del modo de animación
+
+avanzado de "animación mixer", el cuál, permite diferentes tipos de métodos y sistemas de animación:
+
+
+el modo de animación mixer, permite los siguientes tipos de datos
+
+
+	_FCurve Animation
+
+	_Expression Animation
+
+	_Constraints Animation
+
+	_Shape Animation
+
+	_Audio Animation
+
+	_Animation Layers
+
+	_Cached Animation
+
+	_Simulation Sources
+
+	_Image Clips
+
+
+
+Animación no lineal es la animación que no está limitada por el tiempo. Se le permite trabajar en la animación 
+
+a un alto nivel de control en cualquier punto de tiempo en la escena. Se le da un control de alto nivel sobre 
+
+la animación porque puede en cada capa mezclar secuencias de una manera no lineal y no destructiva. Además, 
+
+se puede reutilizar y afinar muchas fuentes de datos.
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Marking Frames on Clips:
+________________________
+
+
+
+	_Los marcadores/marking, permiten resaltar y anotar los frames, en los clips, como para la identificación 
+
+	como ej: de los fonemas musicales,  al hacer playback o marcando un cuadro/frame, en un clip, para que coincida 
+
+	con un frame, en otro clip, para hacer una transición. Puede crear marcadores en cualquier tipo de clip: "acción",
+ 
+	"shape" o "audio".
+
+
+	_Puede agregar marcadores a un rango de fotogramas en un clip, o para un solo fotograma en uno o más clips a la vez.
+ 
+	Marcadores de rango de frames, aparecen como cuadros grises debajo del clip, mientras que los marcadores de un solo
+ 
+	cuadro/frame, se muestran como líneas de color herrumbre en un clip.
+
+
+	_Cada marcador tiene su propio nombre, así como cualquier valor o tipo que se asigna a la misma. Esto le permite 
+
+	añadir notas a un marcador, como para marcar los diferentes fonemas (sonidos) en un clip de audio
+
+
+NOTE:	podemos seleccionar previamente varios clips, en diferentes tracks, para así, poder agregar markes, en diferentes
+
+	clips, a la vez, los cuales estén en diferente niveles de tracks
+
+
+
+Simple Markes:
+______________
+
+	_primero nos aseguramos que este activada la opción "mixer/view/Clip markes"
+
+
+	_para crear marcas/markes, disponemos de la opción "mixer/edit/Create Marked Tools", shortcut "M", así, nos 
+
+	aparecerá la herramiento con la cuál tendremos que hacer "mouse left click", en las partes deseadas donde 
+
+	deseemos hacer "markes", en el clip, respectivo
+
+
+	_también disponemos de la opción "mixer/edit/Add Marker", shortcut "Shoft + M"
+
+
+Range Markes:
+_____________
+
+
+	_para crear marcas/markes, disponemos de la opción "mixer/edit/Create Marked Tools", shortcut "M", así, nos 
+
+	aparecerá la herramiento con la cuál tendremos que hacer "shift + mouse left click and drag", en la parte inicial
+ 
+	deseados donde deseemos que comience la selección hasta donde deseamos que temine el rango "marked", del clip, 
+
+	respectivo, así, aparecerá bajo el clip, una banda indicando el "range - marke"
+
+	NOTE   también, podemos hacer "range markes", dentro de otras
+
+
+
+Explorer Markes:
+________________
+
+
+	_las "markes", creadas también, son guardadas ó registradas en el explorer, estas pueden encontrarse en:
+
+	"Explorer/Model/Mixer/Tracks/Animation/Clip_Name/Clip List/Marked0", así, si hacemos doble click, en el nombre
+
+	de una "marke", podremos entrar en sus propiedades para su edición
+
+
+	
+	
+
+--------------------------------------------------------------------------------------------------------------

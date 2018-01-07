@@ -1,0 +1,61 @@
+
+
+DETALLES
+
+
+podemos renderizar los sistemas de partículas a través de materiales volumétricos para poder así,
+
+convertir las representaciones básicas de los sistemas de partículas en el viewport, en verdaderas
+
+simulaciones de elementos, fluidos, sólidos, gaseosos, otros
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+	_primero seleccionamos el sistema de partículas deseado en el viewport
+
+
+	_luego vamos ha "Voew/Rendering-Texturing/RenderTree", shortcut "Shift + 7"
+
+
+	_podemos seleccionar las partículas en la escena ó en el "Explorer", y hacer "Refresh",
+
+	en el Render Tree, para aparesca el sistema de partículas en el Render Tree
+
+
+	_ahora si el sistema de partículas no tiene un material asignado debemos asignarle uno
+
+	para esto vamos ha "Render Tree/Nodes/illumination/ej: Phong"
+
+
+	_otra opción de agregar un material a un sistema de partículas es ir al "Explorer", y 
+
+	seleccionar un "Ponint CLoud", y con este seleccionado vamos al "Tool/Model/Material/Phong"
+
+
+	_ahora vamos ha "Render Tree/Nodes/Particles/Particle Shape"
+
+
+	_posteriormente también debemos cargar el "Render Tree/Nodes/Particles/Particle Renderer"
+
+	
+	_ahora eliminamos el nodo "Presset", del material que agregamos por defecto, ej: "Phong"
+
+
+	_y conectamos el nodo "Particle Renderer", en el nodo ej: "Scene Material/Volume", que este
+
+	nodo biene siendo el nodo de salida del material
+
+
+	_ahora conectamos el nodo "Particle Shape", al nodo "Particle Renderer/Density Shape"
+		
+
+
+

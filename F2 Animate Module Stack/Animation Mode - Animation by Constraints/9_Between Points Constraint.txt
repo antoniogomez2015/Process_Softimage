@@ -1,0 +1,175 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de vincular diferentes elementos de diferentes manera de cara a mejorar la animación
+
+e interactividad entre los elemento para mejorar así, la flexibilidad y facilidad en el proceso de animación
+
+y de relación entre los elementos
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Descripción:
+
+	tenemos la posibilidad de hacer constraint, a través, de "2", dos ó más elementos, de esta forma
+
+	podremos influir en el elemento hijo/constraint, a través, de la influencia de los dos ó más elementos
+
+	controladores, por medio de sus variaciones de "orientation" "Translation,Rotation,Scale"
+
+
+	así, el mover, rotar ó escalar cualquiera de los elemento controladores cada uno de estos influirá 
+
+	de forma inversa en los elemento hijos/constraint,
+
+
+--------------------------------------------------------------------------------------------------------------
+
+
+
+_Between Points Constraint:
+
+
+	_tenemos la posibilidad de vincular la propiedad "Orientation", ó "Translation,Rotation,Scale", de un elemento 
+
+	a la "Orientation", de otro para que así, al hacer "Translation,Rotation,Scale", del primer elemento "parent", 
+
+	sea afectada la orientación del otro elemento "hijo", para esto:
+
+
+		_primero seleccionamos el ó los elementos "hijos/constraint/limitados"
+	
+		_luego con este objeto seleccionado vamos ha "Contrain/", y hacemos click, en "2 Points", así,
+
+		los elementos quedarán relacionados al elemento "parent", ó manejador
+
+		
+		_así, se agregará el elemento "hijo/parent", en el "Explorer/Polygon Mesh/Kinematics/Constraint/",
+
+		será agregado el elemento "Two Points Cns", y, al hacer doble click, en este entraremos a sus opciones:
+
+
+
+
+NOTA:	2 Point: nos permite hacer un controlador a través, de dos elementos 
+
+	3 Point: nos permite hacer un controlador a través, de tres elementos 
+
+	N Point: nos permite hacer un controlador a través, de "N" elementos ó una cantidad de elementos definidos por
+
+	nosotros y, al terminar de seleccionar elementos hacemo "mouse right click", para finalizar la selección 
+
+	de elementos constraint
+
+
+------------------------------------------------------------------------------------------------------------
+
+		Position:
+		_________
+
+			_Active:
+
+				_tenemos la posibilidad de activar ó desactivar temporalmente un constraint
+
+
+			_Blend Weight:
+
+				_podemos ajustar la influencia ó fuerza de retardo ó inercia que tendrá ó ejercerá 
+
+				el contraint, sobre los sus elementos relacionados
+
+
+			_Distance Percentage:
+
+				_se refiere a la distancia relativa del objeto "parent", con los objetos controladores
+
+				así, al variar la distanci diferente de "50", verevemos que el objeto parent, se 
+				desplazará hacia un elemento controlador ó hacia otro respectivamente
+
+
+			Attack Point Constrained Object
+			_______________________________
+
+
+			_Affected by Orientation:
+
+				_podemos indicar que si el elemento "hijo/constraint" será afectado por la
+
+				orientación del elemento controlador al elemento "hijo/constraint", hacer
+
+				"Rotation", lo hará con la referencia de orientación del elemento controlador
+
+				no, con la su propia referencia en su punto centro ó donde este su "Pivot"
+
+
+			_Affected by Scalling:
+
+				_podemos indicar que si el elemento "hijo/constraint" será afectado por la
+
+				orientación del elemento controlador al elemento "hijo/constraint", hacer
+
+				"Scale", lo hará con la referencia de orientación del elemento controlador
+
+				no, con la su propia referencia en su punto centro ó donde este su "Pivot"
+
+
+			_X,Y,Z:
+
+				_podemos desplazar el elemento "hijo/constraint", al este tomar la posición
+
+				del elemento controlador, haciendo "offset", del elemento hijo/constraint, para
+
+				así, desplazarlo hasta una posición deseada
+
+			
+
+			Coupling
+			________
+
+
+			Coupling:
+
+				_RIGID:
+
+					_método más estricto de interpolación del constraint
+
+
+				_SOFT:
+
+					_método más suavizado de interpolación del constraint
+
+
+		Tangent:
+		________
+
+
+			_Active:
+
+				_podemos activar ó desactivar las opciones de tangentes
+
+
+			_Axis to Align
+			______________
+
+
+				_X,Y,Z:
+
+					_podemos elegir la cordenada ó plano de acción del efecto constraint,
+
+					para elegir el palno ó ubicación deseada del elemento
+
+
+
+
+		upVector:
+		_________
+				
+
+
+---------------------------------------------------------------------------------------------------------------
+

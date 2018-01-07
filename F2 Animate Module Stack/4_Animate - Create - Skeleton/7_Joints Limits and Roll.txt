@@ -1,0 +1,114 @@
+
+
+
+Digital Tutors Introduction to Rigging in XSI 2008
+
+
+
+	Skeleton System
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+Joints Limits:
+______________
+
+
+
+
+	_para optimizar la animación tenemos posibilidad de indicar límites de movimiento para determinados
+
+	huesos ó bones, según la cinemática de nuestro character, de esta manera podemos limitar la flexión 
+
+	y la contracción de determinadas articulasciones ó joints
+
+
+	_para esto, seleccionamos el bone, deseado y hacemos "Enter", ó "Alt + Enter", ó ir al "explorer
+	
+	/Root/bone/", y hacer doble click, para entrar a editar
+
+
+	_así, a través, de cualquiera de las opciones ó alternativas anteriores podremos acceder a la sección
+
+	de: "Kinematic Joint/Rotation Limits/", en las cuales disponemos de las siguientes opciones:
+
+
+		_Active:
+
+			_esta opción nos activar ó desactivar limitadores de ángulos de movimiento
+
+
+		_Minimum Angles:
+
+			_esta opción contempla la mitad del campo de rotación "360* (grados)", osea (-180),
+
+			en sus cordenadas posibles (XYZ),
+
+			_de esta manera podremos indicar un valor personalizado inferior ó igual a (+/-180),
+
+			en las cordenadas respectivas para limitar el rango de acción de un bone ó joint
+
+
+		_Maximum Angles:
+
+			_esta opción contempla la mitad del campo de rotación "360* (grados)", osea (180),
+
+			en sus cordenadas posibles (XYZ)
+
+			_de esta manera podremos indicar un valor personalizado inferior ó igual a (+/-180),
+
+			en las cordenadas respectivas para limitar el rango de acción de un bone ó joint
+
+
+	_otra opción más práctiva ó interactiva y colocar directamente el bone, deseado en la posición 
+
+	límite mínima y, con éste seleccionado ir ha "Animate-Model/Create/Skeleton/", y aplicar 
+
+	"Set Minimum Rotation Limit"
+
+
+	_así, como también, la posición límite máxima y, con éste seleccionado ir ha "Animate-Model/Create/Skeleton/", 
+
+	y aplicar "Set Manimum Rotation Limit"
+
+
+	----------------------------------------------------------------------------------------------------
+
+
+
+
+
+Joint Roll:
+___________
+
+
+
+	_tenemos la posibilidad de hacer que un bone, ó hueso determinado rote, esto es especialmente
+
+	útil para animaciones de extremidades entre otros tipos de animación especial
+
+	
+	_para seleccionamos el bone, deseado y vamos a la sección de "Kinematic Joint/Resolution Plane",
+
+
+		_Res. Plane:
+
+			_Up Vector (esta es la opción que da mejores resultados)
+
+
+		_Roll:
+
+			_esta opción nos permite indicar el grado de rotación del bone, ó hueso
+
+
+		_Use Root Coordinates:
+
+			_esta opción nos permite indicar que el bone, ó hueso contemple ó cordine
+
+			con el root, de la cadena de huesos a la hora de rotar
+

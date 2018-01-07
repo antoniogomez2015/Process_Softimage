@@ -1,0 +1,170 @@
+
+
+
+curso: Digital Tutors Intro to XSI Hair 2007
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Descripción	a través, de un weight map, podremos controlar la generación de un hair system
+
+		de forma personalizada y animable, otros
+
+
+
+---------------------------------------------------------------------------------------------------
+
+
+
+Cut Map:
+________
+
+
+	Creación de Weight Map:
+
+
+		_primero seleccionamos la mesh/motive, del character, ó el mesh, proxi, en el cuál,
+
+		generamos el hair system
+
+
+		_luego, con este seleccionado vamos ha "Model/Property/", y creamos un "Weight Map",
+
+		sobre la mesh, generadora del hair system
+
+
+		_así, se agregará en el "Explorer/Mesh/Clusters/", un "WeightMapCLs", con el mapa
+
+		que peso que hemos creado, en este ejemplo "Weight:Map:hair_syste,"
+
+
+
+	-------------------------------------------------------------------------------------------
+
+		
+	
+
+	Transfer Map:
+
+
+		_ahora debemos transferir el weight map, que hemos creado sobre el mesh/motive, generador
+
+		del hair system, para que este disponible en el grupo del hair system, para esto,
+
+
+		_primero seleccionamos el hair system, deseado
+
+	
+		_luego vamos ha "Hair/Modify/", y aplicamos "Transfer Map", así, nos aparecerá un "Picker",
+
+		con el cuál tendremos que ir al "Explorer/Mesh/Clusters/WeightMapCLs/", y seleccionar
+
+		el mapa de peso deseado en este ejemplo: "Weight:Map:hair_syste,", así, es weightmap,
+
+		quedará disponible y activo para el hair system
+
+
+		_así, en la sección de "Explorer/Mesh/Hair/Clusters/", aparecerá la sección de
+
+		"WeightMapCLs/Weight_Map_hair_System"
+
+
+
+
+	-------------------------------------------------------------------------------------------
+
+		
+	
+
+	Cut Map:
+
+
+		_ahora vamos ha activar el weight map, para que éste aplique sobre la generación
+
+		del hair system, para esto:
+
+
+		_primero seleccionamos el hair system, deseado
+
+
+		_luego vamos a las opciones del hair system, seleccionando el hair system, deseado y 
+
+		haciendo "enter", sobre éste para ver sus opciones
+
+
+		_así, vamos a las opciones de "Hair/Effects/Cut map", y entramos a sus opciones de
+
+		"output/Connet/", en la cuál, se nos abrirá un "explorer", contextual en el cuál, 
+
+		tendremos que ubicar el weight map, que hemos relaionado previamente al hair system,
+
+		yendo ha "Hair/hair/Clusters/WeightMapCLs/", y seleccionamos el weight map, deseado
+
+
+		_así, al renderizar no veremos el hair system, ya que éste ahora esta condicionando
+
+		su generación de filamento por el weight map
+
+
+		_de esta manera ahora tendremos que modificar el weight mao, para que permita la 
+
+		generación a través, de el, ya que en este momento el mapa esta totalmente opaco
+
+		y tiene unformación
+
+
+		_ahora para comenza a editar el weight map, primero seleccionamos el mesh/motive,
+
+		con el cuál, generamos el hair system, y en el cuál, generamos el weight map, previamente
+
+
+		_ahora con la mesh/motive, seleccionada podremos ir al panel "Weight Paint Tool", en las
+
+		opciones del panel de herramienta de la izquierda ó a través, de su shortcut "Control + 3"
+
+
+		_ahora para comenzar a pintar y editar el weight map, podemos hacer mouse left click, sobre
+
+		el ícono de paleta de pintura en el panel "Weight Paint Tool", ó yendo ha "Model/Property
+
+		/map Paint Tool/", y hacemos mouse left click, sobre "Paint Tool"
+
+
+		_así, se activará el "Paint Brush", y el mesh motive, se tornará de color negro el cuál,
+
+		toma el color actual del weight map, manejando la fuerza ó intensidad de emisión a través,
+
+		de los valores "Weight Paint Tool/Opacity, y Smooth"
+
+		
+		_y para graduar más fácilmente el tamaño de paint brush, podemos hacerlo a través, del
+
+		shortcut "B + mouse left click + left/right arrows"
+
+
+		_ahora para Agregar información el weight map, debemos colocar en  "Weight Paint Tool",
+
+		la opción de "Paint tools/Add", y procemos a pintar en las partes que deseamos que se
+
+		genera hair systems
+
+
+
+
+
+NOTE:	también, podemos repetir todo este proceso el cuál, es idéntico para la opción de 
+
+	"Hair/Effects/Density Map", para utilizarlo de manera complementaria ó de refuerzo para el
+
+	procedo de "Cur Map"
+
+
+	de esta manera tendríamos 2 weight maps, disponibles y trabajando al unísono sobre la misma
+
+	mesh/motive
+
+
+

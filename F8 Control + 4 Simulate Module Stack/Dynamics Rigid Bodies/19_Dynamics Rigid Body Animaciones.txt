@@ -1,0 +1,79 @@
+
+
+Detalles
+
+
+tenemos la posibilidad de trabajar con cuerpos rígidos/rigid bodies, en softimage, para realizas 
+
+diferentes tipos de simulaciones e interacciones
+
+para crear simulaciones en softimage, debemos ir a la sección de  simulaciones yendo ha "Simulate/Control+4"
+
+
+los sistemas de rigid body, por lo general requieren de la aplicación fields/fuerzas, en la escena, para que
+
+así, los sistemas rigid bodys, estén sometidos ha estas
+
+
+
+NOTA a continuación presentamos el características principales de los rigid bodies
+
+	_Actives, esto ebedecerán a fuerzas/fields, y serán por lo general los elementos colisionadores
+
+	_Passives, estos no obecederán a fuerzas/fields, y serán por lo general los elementos colisionados
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+	_Active/Passive animable:
+	_________________________
+
+
+
+
+	_tmabién podemos interactuar entre los estados de los elementos rigid body, para poder así, animarlos 
+
+	para lograr simulaciones más controladas, como una alternativa a las opciones de "Dynamics Initial State/Velocity"
+
+
+	en esta modalidad las acciones se verán invertidas ya que por lo general los elementos "actives", son los 
+
+	que van hacia los elementos "Passives", más en este caso serán los elementos passivos los que irán hacia
+
+	los elementos activos
+
+
+		_primero configuramos los elementos rigid body passivos como el "floor"
+
+
+		_luego configuramos los elementos activos ha colisionar y configuramos su inicial estado
+
+
+		_ahora configuramos el elmentos que inicialmente será rigid body/passive, el cuál animaremos
+
+
+		_ahora procedemos ha animar es mesh/motive, rigid body, passive, que hará de colisionador,
+
+		lo animamos según la lógica de colisión de la escena, otros
+
+		
+		_así, luego de a penas ó antes preferiblemente de haber colisionado con los elementos 
+
+		rigid bidy "actives", deseados de la escena, podemos cambiar animando el estado del elemento 
+
+		rigid body, colisionador cambiandolo a un elemento rigid body "Active", ternimando la animación
+
+		del elemento colisionador en ese momento ya que éste al pasar a un elemento rigid body active, 
+
+		pasará a la simulación
+
+
+
+____________________________________________________________________________________________________
+
+

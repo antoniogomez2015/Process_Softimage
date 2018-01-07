@@ -1,0 +1,41 @@
+
+
+Detalles
+
+
+un elemento ó cuerpo blando soft body, puede ser también un cuerpo rígido rigid body, pasivo/passive
+
+para que así, un cuerpo blando pueda interactuar con un cuerpo rígido
+
+
+ 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+	_primero creamos los cuerpos rigid bodys, activos y pasivos deseados y los ubicamos según 
+
+	la lógica de la escena 
+
+
+	_luego creamos los elementos soft bodys, deseados y, luego procedemos ha animarlos 
+	procurando que los elementos soft body, colisionen ó se intercepten con los elementos 
+
+	rigid bodys
+
+
+	_luego seleccionamos la meshes, soft bodys, y con estas seleccionadas vamos ha 
+
+	"Simnulate/Create/Rigid Body/Passive Rigid Body", así, podremos ver que al reproducir
+
+	la animación que se producirá también la simulación al colisionar los diferentes tipos
+
+	de elementos, tando los rigid bodys, como los soft bodys
+
+	
+
+
+
+	
+____________________________________________________________________________________________________

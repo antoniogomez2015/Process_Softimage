@@ -1,0 +1,50 @@
+
+
+
+DETALLES
+
+
+tenemos la posibilidad de hacer animaciones a través, de la deformación de geometrías/meshes, de esta manera
+
+podremos animar las deformaciones realizadas sobre la morfologías de las meshes, respectivas en el tiempo,
+
+e incluso realizar sources, de animación, keys, otros
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+_Store and Apply Shape Keys:
+
+
+	_tenemos la posibilidad de crear y asignar directamente los "Key Shapes", creados automáticamente
+
+	sobre la mesh, respectiva en mismo momento de su creación ó en un sólo paso
+
+
+	_para esto, primero vamos al modo "Stack Shape Modeling", y generamos sobre la mesh, respectiva
+
+	de forma directa ó a través, de un cluster, generamos una deformación deseada a través, de los 
+
+	deformadores necesarios u otro método
+
+
+	_luego de haber creado la deformación deseada sobre la mesh, respectiva en el modo "Stack Shape Modeling",
+
+	debemos seleccionar la mesh, respectiva y estando aún en el modo "Stack Shape Modeling", vamos ha 
+
+	"Animate/Deform/Shape/", y aplicamos "Store and Apply Shape Keys"
+
+
+	_de esta manera se creará dentro del "model", respectivo un elemento "Mixer", dentro del cuál, se generarán
+
+	elementos "Sources", y elementos "Tracks"
+
+
+	_mientras que a su vez, serán cargados en el "Mixer Panel", los souces, respectivos creando así, los
+
+	respectivos clips, de animación de las "keys Shapes", respectivas de forma automática en un sólo paso
+
