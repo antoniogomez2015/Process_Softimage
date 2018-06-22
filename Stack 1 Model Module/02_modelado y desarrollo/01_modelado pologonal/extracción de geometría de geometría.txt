@@ -1,0 +1,32 @@
+
+
+
+
+	Modelado Poligonal
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+	extracción de geometría de geometría:
+	_____________________________________
+
+	_para esto seleccionamos los sub elementos polígonos deseados, luego vamos al menú 
+
+	Model/Ply. Mesh/Extract Polygons (Keep)/(Delete), y escogemos entre "keep" y "Delete", si deseamos conservar 
+
+	los poligonos que hemos seleccionados previamente
+
+
+
+
+
+
+
+
+

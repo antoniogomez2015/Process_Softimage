@@ -1,0 +1,53 @@
+
+
+
+
+desarrollos con splines ó curves y nurbs
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+	Unir splines complejas:
+	_______________________
+
+
+
+	_para unir 2 splines, creando un tercera spline resultante:
+
+
+	_para esto vamos al menú Model/Create/Curve/marge, luego hacemos mouse left+click and draw, sobre las 2 
+
+	splines a unificar 
+
+
+	_e inmediatamente hacemos draw, sobre uno de los vertexs de uno de los extremos de la primera spline, e 
+
+	inmediatamente despues hacemos draw, sobre uno de los vertexs de uno de los extremos de la segunda spline 
+
+
+	_a contenuación creará una termira spline, con la forma de las dos anteriores y unida por los vetex que 
+
+	hemos seleccionados previamente
+
+
+	_y en las opciones que se despliegan de la spline resultante, en Marge Curves/Clear/Inputs; escogemos 
+
+	entre hiden y delete
+
+
+
+
+
+
+
+
+
+
+
+

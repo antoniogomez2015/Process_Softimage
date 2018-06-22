@@ -13,15 +13,16 @@
 	Curve To Mesh:
 	______________
 
-	_ésta opción es muy práctica y nos permite convertir directamente elementos de tipo spline, directamente
+	_ésta opción es muy práctica y nos permite convertir directamente elementos de tipo spline, ha elmentos 
 
-	ha elmentos poligonales de tipo "Mesh Polygon", los cuáles, podremos seguir editar y texturizando y demás
+	poligonales de tipo "Mesh Polygon", los cuáles, podremos seguir editando y texturizando y demás
 	
 	procesos de producción
 
 
 
 	Spline:
+	_______
 
 	_para lo cuál, primeramente debemos de tener creado una ó varias splines, las cuáles, conformarán la mesh,
 
@@ -30,8 +31,9 @@
 
 
 	Freeze:
+	_______
 
-	_y posteriormente lo más recomendable es borrar todo el historial del stack, modeling, yendo a las opcoines 
+	_y posteriormente lo más recomendable es borrar todo el historial del stack, modeling, yendo a las opciones 
 
 	del panel derecho en la parte inferior en "Edit/Freeze M", para que así, el historial de acciones sobre las
 
@@ -40,6 +42,7 @@
 
 
 	Curve To Mesh:
+	______________
 
 	_así, de ésta manera, debemos de seleccionar las respectivas splines, y con éstas seleccionadas ir al menú
 
@@ -56,6 +59,17 @@
 	hacer que la forma de tipo mesh, resultante tenga una apariencia determinada, un grosor, un bisel, otros,
 
 	en el mismo momento de su creación
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,34 @@
+
+
+
+
+	Modelado Poligonal
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+	crear formas poligonales a mano libre:
+	______________________________________
+
+	_para esto, vamos al menú Model/Modify/Poly Mesh/Add/Edit Polygon Toll, ó su shortcut "N", para crear formas 
+
+	hacemos pick, y vamos construyendo la forma a través de triángulos y cuadrados poligonales que vallamos creando 
+
+	y uniendo entre sí, para lograr formas complejas y personalizadas
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+
+
+
+
+	Modelado Poligonal
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+	convertir NURBS, a Poly Mesh:
+	_____________________________
+
+	_para esto, seleccionamos la nurb, deseada y vamos al menú Model/Create/Poly. Mesh/Nurbs To Mesh
+
+
+
+
+
+
+
+
+
+
+
+
+

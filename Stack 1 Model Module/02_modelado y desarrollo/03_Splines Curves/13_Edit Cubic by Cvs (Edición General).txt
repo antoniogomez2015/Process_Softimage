@@ -1,0 +1,51 @@
+
+
+
+
+	desarrollos con splines ó curves y nurbs
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+Edit Cubic by Cvs:
+__________________
+
+
+	Edición General:
+	________________
+
+	_para editar spline en modo sub elementos "Point" tenemos las opciones del menú Model/Modify/Curve, donde 
+
+	podemos agregar point, alinear, individualizar complejamente
+
+
+
+	_para continuar con una curva en la cual en un paso anterior hemos salido de su modo de creación, 
+
+	seleccionamos la curve y, vamos al menú Modify/Curve/Add - Point Tool boy Cvs, y hacemos left click para 
+
+	continuar agregando puntos en la spline
+
+
+
+	_si hemos salido del modo de creación ó de edición de curve splines, y no la hemos cerrado y deseamos hacerlo, 
+
+	para cerrarla seleccionamos la spline creada y vamos al menú Mode/Modify/Curve/Open/clouse
+
+
+
+
+
+
+
+
+
+
+
+

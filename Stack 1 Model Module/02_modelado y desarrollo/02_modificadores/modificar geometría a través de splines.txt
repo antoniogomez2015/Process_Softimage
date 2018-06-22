@@ -1,0 +1,24 @@
+
+
+
+
+	Modificadores
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+	modificar geometría a través de splines:
+	________________________________________
+
+	_seleccionamos la mesh y vamos al menú Model/Modify/Deform/by Curve, y hacemos pick, en la spline que hará la 
+
+	deformación sobre le mesh ó geometría
+
+
+
+

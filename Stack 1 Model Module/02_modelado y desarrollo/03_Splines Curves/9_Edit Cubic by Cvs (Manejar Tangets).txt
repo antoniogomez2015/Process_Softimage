@@ -1,0 +1,38 @@
+
+
+
+
+	desarrollos con splines ó curves y nurbs
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+Edit Cubic by Cvs:
+__________________
+
+
+	Manejar Tangets:
+	________________
+
+	_en la forma de edición de aplines "Component/Weak Component Tool", podemos manejar las tangentes de los 
+
+	handles con la opción "Make Knot Bezier", tomando una tangente y haciendo mouse midle click and draw
+
+
+
+
+
+
+
+
+
+
+
+
+

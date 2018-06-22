@@ -30,18 +30,23 @@
 
 
 
+
 	Extrusión:
+	__________
 
-	_para a continuación seleccionar primero la spline, que hará de motivo ha extruir para posteriormente
+	_para a continuación seleccionar primero la spline, que hará de motivo ó forma ha extruir para 
 
-	seleccionar la spline, que hará de path, ó trayectoria de extrusión y con ambas seleccionadas vamos ha
-
-	"Model/Create/Poly.Mesh/Extrude Along Curve"
+	posteriormente ir al menú "Model/Create/Poly.Mesh/Extrude Along Curve"
 
 
-	_para que así, nos paresca un panel el cuál, podremos controlar todos los parámetro de extrusión incluso 
+	_para que así, nos aparezca un picker, en el viewport 3d, a través, del cuál, debemos de seleccionar
 
-	animar la trayectoria de extrusión y su evolución, resolución, morfología, otros
+	la spline, que hará de path, ó trayectoria de extrusión
+
+
+	_de ésta manera, nos aparecerá un panel el cuál, podremos controlar todos los parámetros de extrusión 
+
+	incluso animar la trayectoria de extrusión y su evolución, resolución, morfología, otros
 
 
 	_así, como también, podremos dejar visible las splines, ocultar éstas ó directamente borrarlas

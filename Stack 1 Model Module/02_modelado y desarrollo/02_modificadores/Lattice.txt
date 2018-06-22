@@ -1,0 +1,44 @@
+
+
+
+
+	Modificadores
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+	Lattice:
+	________
+
+	_para deformar de forma personalizada una mesh, a través de un wareframe de una figura grométrica cuadrada, 
+
+	la cuál es configurable en sus proporciones y sub elementos, con los cuales podremos deformar la mesh 
+
+	seleccionada
+
+
+	_para alicar el lettice, seleccionamos la mesh a la cuál aplicar el lattice, luego vamos al menú 
+
+	Model/Get/Primitive/Lattice
+
+
+	_en el panel contextual que se abrirá al aplicar el lattice, podremos configurar las dimensiones como los sub 
+
+	elementos del mismo, también podremos colocarle un nomrbe característico
+
+
+	_ahora para poder deformar la mesh a la cual le aplicamos el Lattice, debemos entrar en el modo de sub elementos 
+
+	del Lattice, ésto lo hacemos con el shortcut F9, así podremos mover sus vertex en relación al grado de 
+
+	modificación del efecto del Lattice
+
+
+
+
+

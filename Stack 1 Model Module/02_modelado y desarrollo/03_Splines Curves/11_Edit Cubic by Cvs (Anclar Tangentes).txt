@@ -1,0 +1,42 @@
+
+
+
+
+	desarrollos con splines ó curves y nurbs
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+Edit Cubic by Cvs:
+__________________
+
+
+	Anclar Tangentes:
+	_________________
+
+
+	_en la forma de edición de aplines "Component/Weak Component Tool", podemos mover solo el point seleccionado, 
+
+	dejando inmóviles los handles del modo bezier, haciendo mouse midle click and draw, sobre el point 
+
+	seleccionado
+
+
+
+
+
+
+
+
+
+
+
+
+
+

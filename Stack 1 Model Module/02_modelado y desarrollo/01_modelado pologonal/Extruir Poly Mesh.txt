@@ -1,0 +1,37 @@
+
+
+
+
+	Modelado Poligonal
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+	Extruir Poly Mesh:
+	__________________
+
+	_para crear extruciones de sub elementos seleccionados, seleccionamos los sub elementos y vamos al menú 
+
+	Model/Modify/Poly Mesh/Extrude along Axis, ó su sortcut Control+D
+
+
+	_ó también, dispondremos de los siguientes comandos:
+
+
+		_Fast Extrude: Control + D
+	
+		_Extrude Along Axis: Shift + L
+
+		_Extrude Along Normals: Shift + N
+
+		_Extrude Along Curve: Shift + O
+
+
+
+

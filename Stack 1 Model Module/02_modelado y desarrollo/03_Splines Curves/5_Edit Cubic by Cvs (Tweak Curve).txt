@@ -1,0 +1,43 @@
+
+
+
+
+	desarrollos con splines ó curves y nurbs
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+Edit Cubic by Cvs:
+__________________
+
+
+	Tweak Curve:
+	____________
+
+	_más para entrar en las opciones avanzadas de edición de las splines creadas las cuáles, se componen de 
+
+	varios sub elementos, y para acceder ha éstos debemos de entrar en el en modo de edición 
+
+	"Tweak User Normals Tool", su shortcut "M", yendo al menú 
+
+
+		_Model/Modify/Component/Weak Component Tool, su shortcut "M"
+
+
+	_esta incluso incorpora a los point ó vetex unos handles para controlar la influencia resultante en sus 
+
+	extremos
+
+
+
+
+
+
+
+

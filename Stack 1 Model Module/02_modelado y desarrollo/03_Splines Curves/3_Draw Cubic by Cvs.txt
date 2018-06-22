@@ -2,41 +2,12 @@
 
 
 
-desarrollos con splines ó curves y nurbs
+	desarrollos con splines ó curves y nurbs
 
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-
---------------------------------------------------------------------------------------------------------------------
-
-
-Tipos de Splines:
-_________________
-
-
-	1.Draw Cubic by CVs; permite crear splines a partir de arcos de puntos a través de su relación de fuerza e 
-
-	influencia entre sí
-
-
-	2.Draw Cubic by Bezier + Knot Points; permite crear spline donde cada point creado es un point de bezier con 
-
-	handles y fuerzas resultantes
-
-
-	3.Draw Cubic by Knot Points; esta permite crear splines donde cada punto es point de fuerza e incluencia pero 
-
-	sin los handles de beizer
-
-
-	4.Draw Linear; esta permite crear spline en formar rectas indicadas por cada punto creado
-
-
-	5.Sketck, esta modalidad permite crear spline forma de trazo libre, crean puntos simples equidistantes entre sí
-	
 
 
 --------------------------------------------------------------------------------------------------------------------
@@ -160,120 +131,11 @@ __________________
 
 
 
---------------------------------------------------------------------------------------------------------------------
 
 
-Para crear splines complejas:
-_____________________________
 
 
 
-	para unir 2 splines, creando un tercera spline resultante:
-
-
-	1.para esto vamos al menú Model/Create/Curve/marge, luego hacemos mouse left+click and draw, sobre las 2 
-
-	splines a unificar, e inmediatamente hacemos draw sobre uno de los vertexs de uno de los extremos de la 
-
-	primera spline, e inmediatamente despues hacemos draw sobre uno de los vertexs de uno de los extremos de la 
-
-	segunda spline, a contenuación creará una termira spline, con la forma de las dos anteriores y unida por los 
-
-	vetex que hemos seleccionados previamente
-
-
-	2.y en las opciones que se despliegan de la spline resultante, en Marge Curves/Clear/Inputs; escogemos entre 
-
-	hiden y delete
-
-
-
---------------------------------------------------------------------------------------------------------------------
-
-
-Procesos de Construcción:
-_________________________
-
-
-
-1.Para crear polygons de splines creadas
-
-
-	_seleccionamos la spline creada y vamos al menú model/Create/Poly Mesh/Curve To Mesh
-
-
-
-2.para polygons en trayectos de plines
-
-
-	_vamos al menú Model-Animate/Create/Curve/Draw Cubic Cvs, y creamos la spline con la forma de nuestro 
-
-	trayecto
-
-
-	_ahora creamos la spline ó primitica de curve, de deseamos que sea la forma extruida en el trayecto que 
-
-	creamos en el paso anterior
-
-
-	_para hacer la extrución, seleccionamos la la spline con la forma a extruir y vamos al menú 
-
-	"Model/Create/Poly Mesh/Extrusion Along Curve", en la ventana de creación podemos indicar la resolución y 
-
-	demás controles de la forma resultante
-
-
-
-3.creación volumétrica con splines "Brail"
-
-
-	_para esto primero debemos crear dos splines con la forma sugerida de la forma exterior, una paralela a la 
-
-	otra
-
-
-	_ahora debemos crear una curva ó spline de sección, y la colocamos al centro del plano hacia atras donde no 
-
-	estorbe, luego le aplicamos Tansform/Free All Transforms
-
-
-	_ahora para crear la forma resulante polygonal, debemos seleccionar la curva de sección que hemos creado y 
-
-	luego vamos al menú Model/Create/Poly Mesh/Brail, luego hacemos "Pick", en una de las splines de la forma 
-
-	sugerida y luego en la otra, en el panel contextual que se abrirá podemos indicar la resolución de la mesh 
-
-	resultante entre otras opciones
-
-
-	_si la mesh resultante se crea con las normales invertidas, osea si ves de color negro, debemos invertir las 
-
-	normales, para esto seleccionamos la mesh resultante y vamos al menú Model/Modify/Poly Mesh/Invert Polygons
-
-
-
-4.extraer splines e geometría
-
-
-	_para esto, seleccionamos el edges ó bordes deseados de una poly mesh, luego vamos al menú 
-
-	"Model/Curve/Extract From Edges"
-
-
-
-5.extruir a través de trayectos splines
-
-
-	_para esto, creamos el trayecto deseado con spline ejemplo: Draw cubic by Cvs, luego creamos la spline que 
-
-	será la forma extruida sobre el trayecto creado anteriormente y colocamos en la parte inicial del sentido del 
-
-	trayecto
-
-
-	_ahora seleccionamos la forma de spline a extruir en el trayecto, y vamos al menú 
-
-	"Model/Create/Surf. Mesh/Extrusion Along Curve"
 
 
 

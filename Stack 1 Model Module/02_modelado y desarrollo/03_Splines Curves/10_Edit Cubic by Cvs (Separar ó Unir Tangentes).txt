@@ -1,0 +1,35 @@
+
+
+
+
+	desarrollos con splines ó curves y nurbs
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+Edit Cubic by Cvs:
+__________________
+
+
+	Separar ó Unir Tangentes:
+	_________________________
+
+
+	_en la forma de edición de aplines "Component/Weak Component Tool", podemos unir ó hacer converger las 
+
+	tangentes separadas, seleccionado el point y haciendo right click/LBM Bind Broken Tangents
+
+
+
+
+
+
+
+
+

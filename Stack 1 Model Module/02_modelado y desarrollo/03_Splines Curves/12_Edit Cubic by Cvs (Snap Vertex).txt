@@ -1,0 +1,46 @@
+
+
+
+
+	desarrollos con splines ó curves y nurbs
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+Edit Cubic by Cvs:
+__________________
+
+
+	Snap Vertex:
+	____________
+
+	_en la forma de edición de aplines "Component/Weak Component Tool", para poder editar los points en un modo 
+
+	de vista de user ó cámara en forma 3d, pero dentro del mismo plano 2d de creación 
+
+
+	_para esto, debemos activar el modo de snap curve, a continuación seleccionamos un point y le damos right click 
+
+	sobre el mismo y activamos en el menú contextual la opción "Snap To Curve Plane" 
+
+
+	_así, todos los point que conforman la spline se moverán en el plano en el cuál fueron creados pero en un 
+
+	entorno 3d
+
+
+
+
+
+
+
+
+
+
+

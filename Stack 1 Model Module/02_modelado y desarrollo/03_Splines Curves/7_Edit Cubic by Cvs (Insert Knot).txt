@@ -1,0 +1,53 @@
+
+
+
+
+	desarrollos con splines ó curves y nurbs
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+Edit Cubic by Cvs:
+__________________
+
+
+	Insert Knot:
+	____________
+
+	_y entando aún el modo "Modify/Curve/Tweak Curve", tendremos la posibilidad de agregar más nodos sobre una
+
+	parte de la spline, para lo cuál, debemos de posarnos sobre un área de la spline, específicamente
+
+
+	_para a continuación agregar points de ajutes temporales a los segmentos, podemos hacer mouse midle click ó 
+
+	left click, para que así, un nuevo nodo ó "knot", sea agregado temporalmente, es decir, que si hacemos 
+
+	"click", sobre otra área de la spline, el knot, que creamos previamente se sustituirá por el anterior
+
+
+	_para a continuación proceder ha fijar un point, temporalmente creado hacemos "mouse right click", sobre 
+
+	el mismo para que así, se abra el menú contextual en el cuál, debemos de seleccionamos la opción 
+
+	"Insert Knot", de ésta manera, el "Knot", será agregado permanentemente
+
+
+
+
+
+
+
+
+
+
+
+
+
+

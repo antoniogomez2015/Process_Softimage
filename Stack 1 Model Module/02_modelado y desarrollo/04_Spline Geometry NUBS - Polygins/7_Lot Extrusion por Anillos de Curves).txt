@@ -6,7 +6,7 @@
 	ser editables posteriormente
 
 	
-	_ésta modalidad nos pemritirá crear forma extensas y con muchas variaciones a partir de formas modulares,
+	_ésta modalidad nos pemritirá crear formas extensas y con muchas variaciones a partir de formas modulares,
 
 	y que pueden variar en la longitud y en el tiempo de la forma resultante
 
@@ -30,7 +30,7 @@
 
 	_y dicha forma de tipo spline, lo más usual es duplicarla y hacer variaciones sobre ésta mientras que a su
 
-	vez, ésta se va lococando de forma paralelas ha modos de pilares de puente
+	vez, ésta se va colocando de forma paralelas ha modos de pilares de puente
 
 
 	_para posteriormente seleccionar la primera forma que creamos y, a continuación ir ha 

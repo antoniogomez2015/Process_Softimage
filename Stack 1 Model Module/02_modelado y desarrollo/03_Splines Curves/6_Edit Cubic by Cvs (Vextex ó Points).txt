@@ -1,0 +1,49 @@
+
+
+
+
+	desarrollos con splines ó curves y nurbs
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+Edit Cubic by Cvs:
+__________________
+
+
+	vextex ó points:
+	________________
+
+	_estos permiten mover los puntos de fuerza de control de la spline shortcut F9, (para la 
+
+	versión Maya), al seleccionar un punto podemos desplegar su menú contextual para sus opciones, haciendo 
+
+	Control + Alt + Right Click, sobre el mismo
+
+
+
+	_en la forma de edición de aplines "Component/Weak Component Tool", seleccionando un point ó punto, podemos 
+
+	desplegar su menú contextual para ver sus opciones de edición individual, haciendo right click, sobre el 
+
+	mismo
+
+
+
+
+
+
+
+
+
+
+
+
+
+

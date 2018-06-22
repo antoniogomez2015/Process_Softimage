@@ -1,0 +1,65 @@
+
+
+
+
+	Modelado Poligonal
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+	modelado simétrico con sub divisiones:
+	______________________________________
+
+	_creamos una forma polygonal y la colocamos en el centro del canvas, a esta le agregamos un loops de sub 
+
+	elementos de "edges", en su mitad donde se divide el canvas verticalmente
+
+
+	_luego seleccionamos la mitad de sub elementos "Polygons", que corresponden a la mitad izquierda, y los 
+
+	suprimimos ó borramos "delete"
+
+
+	_ahora seleccionamos el objeto mesh, que es la mitad restante derecha, y vamos al menú 
+
+	Model/Create/Poly Mesh/SubDivision, para crear una sub división, y en las opciones contextuales de creación 
+
+	seleccionamos el nivel de sub división y si queremos oculatar ó borrar la geometría inicial
+
+
+	_y prodremos ver que la forma inicial poligonal está relacionada con la forma creada de sub división, de esta 
+
+	manera los sub elementos y la forma poligonal modifican y tienen influencia en la forma de sub división, esto 
+
+	permite trabajar con menos puntos de referencia y edisión para un mejor y mayor manejo de geometría que en la 
+
+	forma de sub división
+
+
+	_para una mayor visualización en el modelado es conveniente asignarle un material a la forma poligonal que 
+
+	controla la forma de sub división, para que así la forma poligonal deje ver fácilmente la forma de sub división
+
+
+	_ahora seleccionamos la forma de sub división solamente, y vamos al menú Model/Modify/Symetrize Polygons, y 
+
+	en las opciones de creación indicamos la cordenada, distancia y referencia, de esta manera la forma de sub 
+
+	división trabajará simétricamente en si misma, más no la forma de polymesh
+
+
+
+
+
+
+
+
+
+
+

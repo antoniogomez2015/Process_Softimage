@@ -1,0 +1,42 @@
+
+
+
+
+	Modelado Poligonal
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+	extruir sub elementos poligonales sobre trayectos spline:
+	_________________________________________________________
+
+	_creamos la mesh a extruir, luego creasmos trayecto con ejemolo: "Draw Cubic by Cvs",  el sentido de inicio 
+
+	de la spline igual al sentido de la expresión 
+
+
+	_luego ubicamos la spline alineada sobre el poligono a extruir
+
+
+	_ahora seleccionamos el sub elemento ó la cara del poligono a extruir que está alineado con la spline 
+
+	previamente creada,y vamos al menú Model/Modify/Extrude Along Curve
+
+
+	_en las opciones contextuales editamos opciones como seguimiento de la spline, segmentos, bend, taper, 
+
+	transforms
+
+
+
+
+
+
+
+

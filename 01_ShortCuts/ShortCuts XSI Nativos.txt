@@ -1,0 +1,286 @@
+
+
+
+
+
+	El interface 01 | Introducción a Autodesk Softimage por Javier Vega
+		https://www.youtube.com/watch?v=mEc4Ewlesrs&list=PLgBgTdALf1XPJV70GcoRlhknyPCZnv3SI
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+Softimage XSI SHORTCTS Interface Native
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+	Navegation:
+	___________
+
+
+		_Navegation Tool: S
+
+		_Pan and Zoom Tool: Z
+
+		_Orbit Tool: O
+
+			_O + Mouse Left Click and Drag, free Orbit
+
+			_O + Mouse Right Click and Drag, Vertical Only Orbit
+
+			_O + Mouse Midle Click and Drag, Horizontal Only Orbit
+
+		_Roll: L
+
+		_Dolly: P
+
+
+
+
+		_Orbit: S + Mouse Right Click and Drag
+				
+		_Pan: S Mouse Left Click and Drag
+
+		_Zoom: S Mouse Midle Click and Drag | Scrool Up/Down
+
+
+
+
+		_Reset Viewport: R
+
+		_Frame Selection: F
+
+		_Center Selection: Alt + C
+
+		_Frame All: A 
+
+
+		_Translate Axis: V
+
+		_Rotate Axis: C
+
+		_Scale Axis: X
+
+		_Alternar entre Translate/Scale/Rotation: Tab/Tab/Tab
+
+
+		_Select Mode: Doble Mouse Left Click V | C | X |  /  U | Y (temporalmente) 
+
+
+		_Ir la posición de la cámara en un punto anteirores en el viewport: Alt + Z
+
+
+		_Maximizaer Windows: F12
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+	Vew:
+	____
+
+		_Grid: G/G
+
+		_Grid Acentuado: F11
+
+		_Maximizar Viewport: F12
+
+		_Hide/Show: H
+
+		_Viewport Memo: Mouse Midle Click (En Memo Slot)
+
+
+		_Start Capture: (esta opción nos permite hacer un proxi de render del viewport)
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+	Selection Object Mode:
+	______________________
+
+
+		_Multi Selection: Shift + Mouse Left Click, sobre más de un elemento
+
+		_DeSelection Multi: Control + Mouse Left Click, sobre más de un elemento
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+	Modeling Polygons:
+	__________________
+
+
+		_Modeling Mode Stack: 1
+
+
+		_Sub-Division Surface: +,../-,..  | (en el Path numérico)
+
+			_ver sub divisiones: Alt + +,../-,..  | (en el Path numérico)
+
+		
+		_Sub-elementos:
+
+			_Vertex Mode: T
+
+			_Edge Mode: I / E
+
+			_Polygon: U
+
+			_Object: Spacebar
+
+
+
+			_Tweak Component Tools: "M" (Selection Multi sub elements) (Model/Modify/Component/)
+
+				_para cambiar de tipo de sub elemento de trabajo dentro de la herramienta "Tweak Component Tools"
+
+					_Tab | X | C | V
+
+
+
+			_Special Edition: B
+
+
+			_Selection Mode: C | X | Z | (dos veces)
+
+				_Select Loops: Control + Alt + Mouse Midle Click 
+		
+
+
+		_Punto de Anclaje (Pivot): Alt + Mouse Left Click and Drag
+
+
+		_Fast Extrude: Control + D
+
+		_Extrude Along Axis: Shift + L
+
+		_Extrude Along Normals: Shift + N
+
+		_Extrude Along Curve: Shift + O
+
+
+		_Polygonizer: N (Unir holes, ó hacer bridges)
+
+
+		
+		Transform Mode:
+
+			_La edición proporcional funciona con el modo activo de: Tweak Component Tools: "M" 
+
+		
+			_Proportional Mode: Alt + 2 (Path Numérico)
+
+				_Size Brush: R + Mouse Left CLick and Drag
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+	Curve Splines:
+	______________
+
+
+		_para geometría a partir de spline, el método más efecto es crear formas a través, de la herramienta
+
+		de "Create/Curve/Draw Cubic by Cvs"
+
+
+		_creando puntos en cada punto de angular de la forma ya que podremos convertir un punto de de curva
+
+		tipo "Cubic", ha "Bezier", en cualquier momento, para las áreas con ángulos de la forma a crear
+
+
+		_para lo cuál, debemos de ir al mmode "Twaek Curve", shortcut, "M", en el cuál, podremos hacer
+
+		mouse right click, y una vez allí, seleccionar la opcíon de "Make Knot Bazier", shortcut, "B"
+
+
+		_para que así, podamos individualizar nos handles, de los bezieres y ajustar la dureza la forma 
+
+		deseada
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+	Rendering:
+	__________
+
+		_Render Preview: Q + Mouse Left Click and Drag
+	
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+	Panels:
+	_______
+
+		_Explorer Express: F3
+
+		_Explorer: 8
+
+		_Layers: 6
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+	Shortcut Personalizados por el Usuario:
+	_______________________________________
+
+
+	_Split Edge Tools: Shift + L | ,
+
+	_Bevel Component: Shift + O | .
+
+	_Extrude Along Axis: Shift + L
+
+	_Extrude Along Curve: Shift + O 
+
+	_Extrude Along Normals: Shift + N
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+	Explorer: 8
+	_________
+
+	_mostrar y ocualtar elementos ocultos: seleccionados éstos en el explorer y aplicados: "H"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

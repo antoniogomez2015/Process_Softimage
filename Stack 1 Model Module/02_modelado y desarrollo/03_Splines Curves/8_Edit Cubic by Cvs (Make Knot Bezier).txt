@@ -1,0 +1,39 @@
+
+
+
+
+	desarrollos con splines ó curves y nurbs
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+Edit Cubic by Cvs:
+__________________
+
+
+	Make Knot Bezier:
+	_________________
+
+	_en la forma de edición de aplines "Component/Weak Component Tool", podemos convertir un punto normal en un 
+
+	punto bezier, haciendo right click/Make Knot Bezier, shortcut "B", así, al vertex le aparecerán los handle ó 
+
+	manejadores de fuerza
+
+
+
+
+
+
+
+
+
+
+
+

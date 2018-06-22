@@ -1,0 +1,43 @@
+
+
+
+
+	desarrollos con splines ó curves y nurbs
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+Edit Cubic by Cvs:
+__________________
+
+
+	Vertex Mode:
+	____________
+
+
+	_podremos seleccionar la spline, que hemos creado y entrar a su modo de edición de "Vertex", a través, del
+
+	shorcut, "T"
+
+
+	_para que así, podamos editar la posición de los vertex, seleccionados, pudiendo así, mover éstos en el 
+
+	espacio de forma libre a travé, de la herramineta "Translate", shortcut, "V/V"
+
+
+
+
+
+
+
+
+
+
+
+

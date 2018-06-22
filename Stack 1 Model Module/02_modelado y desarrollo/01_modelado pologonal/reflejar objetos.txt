@@ -1,0 +1,43 @@
+
+
+
+
+	Modelado Poligonal
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+	reflejar objetos:
+	_________________
+
+	_es recomendable entes de aplicar simetrías/mirrows, seleccionar los elementos y ir a Edit/Freeze, para así, 
+
+	aliminar las propiedades y nodos de transformación de edición y modelado previos, se puede hacer mirrow symetry 
+
+	de un elemento ó de varios a la vez	
+
+
+	_para crear mirrow/symetry, primero seleccionamos el objeto ó meshes, luego vamos al menú 
+
+	Model/Modify/Symetrize Polygons, y en las opciones contexteuales podemos seleccionar las cordenadas axis, que 
+
+	tomara como creiterio para reflejar y duplicar el objeto, así como el grado de separación entre otros
+
+
+
+
+
+
+
+
+
+
+
+
+

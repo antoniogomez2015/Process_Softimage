@@ -1,0 +1,36 @@
+
+
+
+
+	Modelado Poligonal
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+	hacer bordes duros:
+	___________________
+	
+	_para hacer bordes duros en una mesh, seleccionamos los edges ó bordes y vamos al menú 
+
+	Model/Modify/Component/Mark Hard Edge/Vertex, ó en el menú contextual de los sub elementos con el shortcut 
+
+	control+Alt+Right+Click, y seleccionamos "Mark Hard Edges/Vertex"
+
+
+
+
+
+
+
+
+
+
+
+
+

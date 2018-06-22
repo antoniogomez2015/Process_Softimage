@@ -2,7 +2,7 @@
 
 
 
-desarrollos con splines ó curves y nurbs
+	desarrollos con splines ó curves y nurbs
 
 
 
@@ -42,8 +42,8 @@ _________________
 --------------------------------------------------------------------------------------------------------------------
 
 
-Draw Cubic by Cvs Edición:
-__________________________
+Draw Cubic by Cvs:
+__________________
 
 
 	1.para crear una curva con esta modalidad vamos al menú 
@@ -195,29 +195,85 @@ Procesos de Construcción:
 _________________________
 
 
-	Transform: V
+
+1.Para crear polygons de splines creadas
 
 
-	_Tweak Curve: M
+	_seleccionamos la spline creada y vamos al menú model/Create/Poly Mesh/Curve To Mesh
 
 
-		_Contextual Menú: Mouse Right Click
+
+2.para polygons en trayectos de plines
 
 
-		_Make Knot Non-Bezier: B
+	_vamos al menú Model-Animate/Create/Curve/Draw Cubic Cvs, y creamos la spline con la forma de nuestro 
+
+	trayecto
 
 
-		_Free Handle Temporal: Mouse Midle Click and Drag
+	_ahora creamos la spline ó primitica de curve, de deseamos que sea la forma extruida en el trayecto que 
+
+	creamos en el paso anterior
 
 
-		_Knot Anckle: Mouse Midle Click and Drag (con un nodo seleccionado)
+	_para hacer la extrución, seleccionamos la la spline con la forma a extruir y vamos al menú 
+
+	"Model/Create/Poly Mesh/Extrusion Along Curve", en la ventana de creación podemos indicar la resolución y 
+
+	demás controles de la forma resultante
 
 
-		_Insert Knot: Mouse Midle Click y Soltar (en una spline, entre puntos)
 
-			_para luego hacer "Mouse Right Click/", y seleccionar "Insert Knot"
+3.creación volumétrica con splines "Brail"
 
 
-		_Reomve Knot: "Mouse Right Click/", y seleccionar "Remove Knot"
+	_para esto primero debemos crear dos splines con la forma sugerida de la forma exterior, una paralela a la 
+
+	otra
+
+
+	_ahora debemos crear una curva ó spline de sección, y la colocamos al centro del plano hacia atras donde no 
+
+	estorbe, luego le aplicamos Tansform/Free All Transforms
+
+
+	_ahora para crear la forma resulante polygonal, debemos seleccionar la curva de sección que hemos creado y 
+
+	luego vamos al menú Model/Create/Poly Mesh/Brail, luego hacemos "Pick", en una de las splines de la forma 
+
+	sugerida y luego en la otra, en el panel contextual que se abrirá podemos indicar la resolución de la mesh 
+
+	resultante entre otras opciones
+
+
+	_si la mesh resultante se crea con las normales invertidas, osea si ves de color negro, debemos invertir las 
+
+	normales, para esto seleccionamos la mesh resultante y vamos al menú Model/Modify/Poly Mesh/Invert Polygons
+
+
+
+4.extraer splines e geometría
+
+
+	_para esto, seleccionamos el edges ó bordes deseados de una poly mesh, luego vamos al menú 
+
+	"Model/Curve/Extract From Edges"
+
+
+
+5.extruir a través de trayectos splines
+
+
+	_para esto, creamos el trayecto deseado con spline ejemplo: Draw cubic by Cvs, luego creamos la spline que 
+
+	será la forma extruida sobre el trayecto creado anteriormente y colocamos en la parte inicial del sentido del 
+
+	trayecto
+
+
+	_ahora seleccionamos la forma de spline a extruir en el trayecto, y vamos al menú 
+
+	"Model/Create/Surf. Mesh/Extrusion Along Curve"
+
 
 

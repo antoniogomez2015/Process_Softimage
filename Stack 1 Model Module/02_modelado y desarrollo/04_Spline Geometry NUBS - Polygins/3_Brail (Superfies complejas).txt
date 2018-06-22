@@ -1,0 +1,55 @@
+
+
+
+	Modelado de un Colt 45 (Parte 2) | Introducción a Autodesk Softimage por Javier Vega
+		https://www.youtube.com/watch?v=Z9QdL8c7RHA&index=7&list=PLgBgTdALf1XPJV70GcoRlhknyPCZnv3SI
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	Definición:
+	___________
+
+	_tenemos la posibilidad de extruir a través, de splines, formas complejas de ésta manera, podremos a partir
+
+	de una primera spline, demarcar ó describir la morfología que tendrá la forma polymesh, resultante
+
+
+	_y a través, de dos splines, en paralelo podremos dibujar el perímetro ó área a cubrir y forma a 
+
+	partir de la morfología de la primera spline, que creamos y modelamos
+
+
+
+	Brail:
+	______
+
+	_para posteriormente seleccionar la primera spline, perpendicular entre las dos splines, paralelas la cuál, 
+
+	demarca la morfología de la mesh, resultante
+
+
+	_para con ésta spline, seleccionada vamos ha "Model/Create/Poly.Mesh/Brail", para que así, nos aparesca un
+
+	"Picker", a través, del cuál, el sistema no requiera que vayamos seleccionando las demás splines, paralelas
+
+	en orden sobre las cuáles, se conformará la polymesh, resultante
+
+
+	_para que así, el sistema a partir de éste punto cree una nueva geometría poligonal con la forma y 
+
+	morfología indicada y a su vez, nos aparesca un panel en el cuál, podremos ajustar la geometría resultante
+
+	pudiendo así, austar la resolución y detalles como también, ocultar ó eliminar las splines, de trabajo
+
+
+
+
+
+
+
+

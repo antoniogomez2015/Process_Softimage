@@ -1,0 +1,130 @@
+
+
+
+
+
+	Comandos Softimage Interface Maya
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	VIEW:
+	_____
+
+	Control+"+"; del teclado numérico: permite ver las huls de las sub divisiones
+
+	Alt+"+", permite las sub divisiones
+
+	Alt+1: GOG, center of geometry
+
+	Alt+2: Prop
+
+	Alt+3: Sym
+
+	Alt+4: Par, parent
+
+	Alt+5: Ref, referencia
+
+	Alt+6: Plane
+
+	Alt+7: Global
+
+	Alt+8: Local
+
+	Alt+9: View
+
+	Control: Snap active
+
+	A: center view
+
+	F: frame selection
+
+	Alt+C: frame view
+
+	slow sliders: Shift and draw
+
+
+___________________________________________
+
+
+	INTERFACE:
+	__________
+
+	vista panorámica: Control+Spacebar
+
+	model: F3
+
+	animate: F2
+
+	ice: F4
+
+	render: F5
+
+	face robot: F6
+
+	hair: Control+2
+
+	simulate: Control+4
+
+	weight paint panel: Control+3
+
+	browser: Control+5
+
+	scene layer manager: Control+6
+
+	material manager: Control+7
+
+	xplorer: Control+8
+
+	schematic: Control+9
+
+	animation editor: Control+0
+
+	fx tree: Alt+1
+
+	fx viewer: Alt+2
+
+	spreadSheet: Alt+3
+
+	script editor: Alt+4
+
+	net view: Alt+5
+
+	image clip viewer: Alt+6
+
+	texture editor: Alt+7
+
+	xsi explorer objec view: Alt+8
+
+	ice tree: Alt+9
+
+	animation mixer: Alt+0
+
+
+___________________________________________
+
+
+	MODELING:
+	_________
+
+	creación poligonal: "N"
+
+	repetir la última acción: "G"
+
+	isolate selection: Shit+I
+
+
+__________________________________________
+
+	atributos y propiedades
+
+	Properties: Enter
+
+	All Properties
+
+	Properties Local Transform: Control+K
+
