@@ -1,0 +1,43 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Lambert:
+	________
+
+	_éste es un nodo de uso general el cuál, nos permitirá reproducir material de tipo plásticos mates, sintéticos
+
+	mates, superficies como paredes entre otros, éste es un material de uso general
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	Opcionales:
+	___________
+	
+	_éste nodo tiene las opciones de "Specular, Transparency, otros", desactivadas por defecto aunque ésta opciones
+
+	pueden ser activadas entrando en las pestañas superiores de esos parámetro para que así, podamos activas éstos
+
+
+
+
+
+
+
+
+

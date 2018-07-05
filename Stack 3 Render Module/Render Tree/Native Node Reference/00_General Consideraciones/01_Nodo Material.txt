@@ -1,0 +1,40 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Nodo Material:
+	______________
+
+	_una vez hemos aplicado un material sobre un superficie podremos comenzar ha editar sus nodos y relacionamiento
+
+	en relación a los resultados deseados
+
+
+	_sea través, del panel render tree, ó material manager, en cualquiera de los dos encontraremos dos nodos bases,
+
+	el nodo con el nombre del material asignado, ej: "Phong", el cuál, a su vez estará conectado con el nodo 
+
+	"Material"
+
+
+	_el cuál, siempre será el último nodo de salida de render y el cuál, nunca cambiará a través, del tiempo ni
+
+	será sustituible por ningún otro nodo
+	
+
+
+
+
+
+
+
+

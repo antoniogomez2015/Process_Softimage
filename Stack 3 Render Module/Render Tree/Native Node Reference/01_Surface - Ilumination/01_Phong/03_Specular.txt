@@ -1,0 +1,78 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Phong:
+	______
+
+	_éste es un nodo de uso general el cuál, nos permitirá reproducir material plásticos como altamente reflectivos
+
+	como neutros
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	Specular:
+	_________
+	
+	_éste parámetro a través, de un selector de color nos permitirá indicar el color ó valor de luminancia el cuál, 
+
+	será el umbral de luz para la especulariadad aplicada sobre la superficie
+
+
+	_de ésta manera, podremos crear un especularidad más intensa indicando un color más blanco ó una especularidad 
+
+	menos indicando un gris medio ó un negro
+
+
+	_como también podremos crear una especularidad de un color determianado
+
+
+
+	Specular Decay:
+	_______________
+
+	_más también, podremos aumentar ó disminuir el alcance ó umbral y comportamiento de la especularidad aplicada 
+
+	de ésta manera, podremos crear un especularidad más grande y abrasisa y suave a la vez 
+
+
+	_ó por el contrario podremos crear un especularidad más afilada y limitada como estilizada
+
+
+	_de ésta manera, con valores cercanos ha "0", la especularidad será más grande y suavizada lo cuál, es 
+
+	especialmente útil para la creación de superficies plásticas
+
+
+	_más si indicamos valores superioes ha "0", ó "1", la especularidad generada será más afilada y estilizada y 
+
+	menor lo cuál, es especialmente útil para creación de materiales y superficies metálicas
+
+
+
+	NOTA: para que la especularidad haga presencia sobre una superficie es requerido que haya al menos una luz 
+
+	direccionada sobre el motivo ó superficie, ya que la iluminación global generada por superficies no genera por 
+
+	si sola especilaridad
+
+
+
+	
+
+

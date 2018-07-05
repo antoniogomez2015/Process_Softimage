@@ -99,7 +99,14 @@ Softimage XSI SHORTCTS Interface Native
 		_Viewport Memo: Mouse Midle Click (En Memo Slot)
 
 
+		_Isolate Selected: Alt + I (shortcut personaliado)
+
+
 		_Start Capture: (esta opción nos permite hacer un proxi de render del viewport)
+
+
+		
+		_Front View: Pad 1
 
 
 
@@ -135,11 +142,31 @@ Softimage XSI SHORTCTS Interface Native
 
 			_Vertex Mode: T
 
-			_Edge Mode: I / E
+			_Edge Mode: E
 
-			_Polygon: U
+			_Raycast Edge: I
+
+			_Raycast Edge (Extended): Shift + I
+
+			_Polygon: Y
+
+			_Raycast Polygon: U
+
+			_Cluster: ¿ (botón al lado izquierdo del backspace)
 
 			_Object: Spacebar
+
+
+
+			_Select Edge Loop: Shift + 1
+
+			_Select Parallel Edge Lop: Shift + 2
+		
+			_Grow Selection: Shift + =
+
+			_Shrink Selection: Shift + -
+
+			_Island From Selection: Alt + L
 
 
 
@@ -157,6 +184,21 @@ Softimage XSI SHORTCTS Interface Native
 			_Selection Mode: C | X | Z | (dos veces)
 
 				_Select Loops: Control + Alt + Mouse Midle Click 
+
+
+		_Select Mode Sub-elementos:
+
+			_Rectangle: F7
+
+			_Lasso: F8
+
+			_Freedom: F9
+
+			_Raycast: F10
+
+			_Rectangle Raycast: Shift + F10
+
+			_Paint (Point/Edge/Faces): F11
 		
 
 
@@ -172,6 +214,25 @@ Softimage XSI SHORTCTS Interface Native
 		_Extrude Along Curve: Shift + O
 
 
+		_Knife: [
+
+		_Add Vertex Tool: Insert | ",", (coma)		
+
+		_Add Edge Tool: Alt + C (shortcut personalizado)		
+
+		_Split Edge Tool: Alt + Z (shortcut personalizado)
+
+		_Bridge Edges: Control + B (shortcut personalizado)
+
+		_Bridge Polygon: Control + Shift + B
+
+		_Bevel: Shift + B (shortcut personaliado)
+
+		_Weld Points to Target: Alt +  S (shortcut personalizado)
+
+		_Insert Polygons: Control + E (shortcut personalizado)
+
+
 		_Polygonizer: N (Unir holes, ó hacer bridges)
 
 
@@ -184,6 +245,16 @@ Softimage XSI SHORTCTS Interface Native
 			_Proportional Mode: Alt + 2 (Path Numérico)
 
 				_Size Brush: R + Mouse Left CLick and Drag
+
+
+
+		_Move Center to Pints: Shift + 3
+		
+		_Move Center to Boundung Box: Shift + 4
+
+		_Freeze All Transforms: Shift + 5
+
+		_Freeze Operator Stack: Shift + 6
 
 
 

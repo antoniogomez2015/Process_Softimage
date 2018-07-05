@@ -1,0 +1,78 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Phong:
+	______
+
+	_éste es un nodo de uso general el cuál, nos permitirá reproducir material plásticos como altamente reflectivos
+
+	como neutros
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	Global Illumination / Final Gather:
+	___________________________________
+
+	_éste parámetro estará super ditado por la opcíon de "Reflecion/Raytracing Enable", la cuál, deberá estar 
+
+	seleccionada previamete
+
+	
+	_así, como también, este parámetro estará super ditado ha que las opciones de "Global Illumination", y 
+
+	"Final Gather", estén activadas en el motor de render seleccionado previamente
+
+
+	_de ésta manera, dispondremos de un selector de color a traves, del cuál, podremos indicar un color y un valor
+
+	de luminancia el cuál, servirá de unbral para el calculo de la influencia de la iluminación global e indirecta
+
+	de la escena sobre el material y las superficies respectivas
+
+
+	_de ésta manera, podremos utilizar éste parámetro ha modo de bypass, a través, del cuál, podremos graduar la
+
+	influencia e incidencia de la iluminación de la escena sobre las refleciones para que así, dispongamos de un 
+
+	control global más afinado
+
+
+
+	Filter Radiance with diffuse:
+	_____________________________
+
+	_éste parámetro nos permitirá indicarle al sistema que utiliza la luminancia del material difuso para el cálculo
+
+	de la influencia de la iluminación global e indirecta sobre las reflecciones de las superficies y el material
+
+
+	_ésta opción biene activada por defecto y es la más recomendada a menos que desiemos fuerza bruta en las 
+
+	reflexiones excluyendo al material difuso
+
+
+	
+
+
+
+
+
+
+
+
