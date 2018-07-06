@@ -1,0 +1,55 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Constant:
+	_________
+
+	_éste es un nodo nos permitirá reproducir material plásticos y mates ya que éste es un material que no 
+
+	contempla la especularidad, altas luces y reflexión como para de sus parámetro básicos
+
+
+	_de ésta manera, a través, de éste nodo podremos representar materiales totalmente planos y sin detalle y en
+	
+	iluminación global éste materia no aceptará iluminación ambiental y se verá efectado por la sombras, otros
+
+
+	_éste material es especialmete útil para representaciones sóludas de materiales mixtos, otros
+
+
+	_también, es utilizado para creación de "Screens", de iluminación para iluminación global y final gather,
+
+	haciendo uso del "tag", disponible de "Indirect Illumnination/Incandescence/Intensity"
+	
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	Diffuse:
+	________
+
+	_ésta parámetro a través, de un selector de color nos permitirá directamente cambiar el color de la superficie 
+
+	de la geometría respectiva
+
+
+
+	
+
+
+

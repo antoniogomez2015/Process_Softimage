@@ -1,0 +1,102 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Toon Paint and Host:
+	____________________
+
+	_éste es un nodo nos permitirá reproducir materiales de tipo cartoon, de forma plana como también en alto
+
+	detalle a través, de la representación del volúmen por medio de la emulación de la specularidad y reflexiones
+
+	como también, de los bordes y cortornos de la superficie
+
+
+	_éste nodo sumará ambos mundos tanto las herramientas de los nodos "host", como de los nodos "Paint", 
+
+	permitiendo disponder así, de todas las herramientas en un mismo nodo
+
+
+	_éste nodo auxiliarmente dispone de opciones de "INK, Seams, Transparency, Reflection", las cuáles, están
+
+	desactivadas por defecto
+
+
+	_y yendo más allá también, dispondremos de las opciones de "Transparency", y "Reflection", no emuladas si no
+
+	totalmente reales
+
+
+	_lo que nos permitirá llevar a otro nivel de interacción el material y las superficies respecitvas
+
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+	Ambience:
+	_________
+
+	_éste parámetro biene desactivado por defecto y el cuál, nos permitirá indicarle al material que acepte y sea
+
+	influenciable por la iluminación ambiental de la escena
+
+
+	_de ésta manera, dispondremos de los siguientes parámetros:
+
+
+
+
+	Amount:
+	_______
+
+	_éste parámetro nos permitirá indicarle al sistema la cantidad de influencia de la iluminación ambiental sobre
+
+	el material y la superficie del motivo
+
+
+	_de ésta manera, el material podrá ser contaminado de su color difuso con el color global y plano de la 
+
+	iluminación ambiental, cmabiando así, el color base y plano del material base de forma dinámica
+
+
+
+	Compositing:
+	____________
+
+	_éste parámetro nos permitirá indicarle al sistema el modo de fusión ó algoritmo de trabajo, al mismo que en
+
+	Photoshop, podremos cambiar el modo de fusión de integración en relación al resultado deseado y a los 
+
+	requerimientos
+
+
+
+	Shadows Only:
+	_____________
+
+	_éste parámetro nos permitirá indicarle al sistema que sólo afecte a las áreas en sombra ó en penumbra para que
+
+	así, sólo sea cambiado el color de las áreas en sombra por la luz ambiental
+
+
+	_lo que colateralmente emulará un reborde ó perímetro que dará profundidad a los volúmenes de la supercie lo
+
+	cuál, a su vez será de forma dinámica y obedecerá al movimiento del motivo y la iluminación en la escena
+	
+
+
+
+
+

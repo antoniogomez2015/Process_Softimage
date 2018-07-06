@@ -1,0 +1,114 @@
+
+
+
+
+	UVs in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Nodes Multi Layers:
+	___________________
+
+	_tenemos la posiblidad de agregar más de un input, por propiedad de ésta manera, por ejemplo; podremos agregar
+
+	dos texturas diferentes al canal "Diffuse", para que así, ambas texturas se comporten de manera independiente
+
+	e incluso con uvs, independientes
+
+
+	_para lo cual, debemos de abrir el panel "Render Tree", shortcut, "7", para a continuación seleccionar el nodo
+
+	respectivo de la geometría deseada
+
+
+	_por ejemplo un material de tipo "Phong", al cuál, debemos de desplegar todas sus opciones para encontrar la
+
+	opción de "Layers", y sobre la cuál, debemos de hacer "Mouse right click"
+
+
+	_para que así, se abra un menú contextual y en el cuál, debemos de seleccionar la opción de "Add Layer", para
+
+	que así, un nuevo canal de entrada sea agregado al nodo
+
+
+	_de ésta manera, en éste nuevo canal "Color", "por defecto", podremos conextar una imágen ó textura ha utilizar
+
+	para que así, posteriormente podamos hacer nuevamente "mouse right click", sobre la opción de "Layers", del 
+
+	nodo "Phong"
+
+
+	_y en la cuál, debemos seleccionar que tipo de entrada será ésta layer, que hemos creado para que así, podamos
+
+	en el menú contextual seleccionar una de las opciones disponibles, por ejemplo; "Diffuse"
+
+
+
+
+	Open Layer Options:
+	___________________
+
+	_una vez hemos creado una nueva layer, sobre un nodo y hemos agregado una textura ó imágen ha ésta, podremos
+
+	configurar cuál, será el comportamiento de ésta nueva textura auxiliar para un canal determinado
+
+
+	_para lo cuál, debemos de hacer mouse right click, sobre el nodo respectivo en éste caso "Phong", en el panel
+
+	"Render Tree", para que así, se abran todas las opciones de edición del nodo respectivo
+
+
+	_más también, podremos abrir las opciones de la layer, de forma específica para lo cuál, debemos nuevamente
+
+	de hacer mouse right click, sobre el tópico de la "Layer"
+
+
+	_para que así, se abra el menú contextual y en el cuál, debemos de seleccionar la opción de "Inspect Layer",
+
+	de ésta manera, se abrirá sólo las opciones de la layer, que hemos creado
+
+
+
+
+	Edit Layer Options:
+	___________________
+
+	_de ésta manera, una vez en las opciones de la layer, podremos de dos opciones muy importantes las cuáles son:
+
+
+		Weight:
+		_______
+
+		_ésta opción nos permitirá indicar la influencia de la layer, en relación con la otra layer, ó en 
+
+		relación con la otra propiedad respectiva
+
+
+		_de ésta manera, éste valor biene por defecto en "50%, ó 0.5", de ésta menera, podremos hacer que una
+
+		layer, tenga más influencia sobre la otra y viseversa en relación a nuestras necesidades
+
+
+
+		Mode:
+		_____
+	
+		_ésta opcíon nos permite disponer de modos de fusión ha modo de photoshop, para que así, podamos hacer
+
+		diferentes combinaciones de fusión en relación a las necesidades de producción y paso contínuo
+	
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+

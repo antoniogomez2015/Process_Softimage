@@ -1,0 +1,41 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Toon Paint Ambient:
+	___________________
+
+	_éste es un nodo nos permitirá reproducir materiales de tipo cartoon, de forma plana contando también, con la
+
+	iluminación ambiental para que ésta pueda cambiar el color difuso del material de forma dinámica
+
+	
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+	Color:
+	______
+
+	_éste parámetro nos pemritirá indicar el color base del material para la representación del material a través,
+
+	de formas planas tipo 2d, sin volúmen ni emulación de la especularidad, bordes, otros
+	
+
+
+
+
+
+

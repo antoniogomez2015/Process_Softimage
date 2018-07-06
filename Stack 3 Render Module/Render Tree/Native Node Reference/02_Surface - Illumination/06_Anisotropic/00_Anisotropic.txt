@@ -1,0 +1,40 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Anisotropic:
+	____________
+
+	_éste es un nodo nos permitirá reproducir material plásticos como altamente reflectivos	y metálicos, incluso
+
+	mayores que "Phong", para el uso de superficies complejas
+
+
+	_en la que deseamos tener un control de la especularidad y altas luces, tanto en su forma como en su dirección
+
+	y tamaño para tener así, un control absoluto
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

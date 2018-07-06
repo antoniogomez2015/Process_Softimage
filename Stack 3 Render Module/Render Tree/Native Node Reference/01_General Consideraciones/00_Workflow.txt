@@ -1,0 +1,136 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Workflow:
+	_________
+
+	_en softimage, disponemos de varios accesos y paneles para la creación y gestion de materiales entre los cuáles,
+
+	dispondremos de los siguientes
+
+
+
+	Agregar ó crear nuevos materiales:
+	__________________________________
+
+
+	Material:
+	_________
+
+	_primeramente dispondremos de la sección de "Get/Material", panel tool, de la izquierda de la interface, ésta 
+
+	sección estará disponible para todas las stacks, como "model, animación, render, otros"
+
+
+	_a través, de la cuál, podremos con un mesh, seleccionado aplicar un material para ser editado posteriormente
+
+
+
+
+	Shader:
+	_______
+
+	_primeramente debemos de navegar hasta el stack de "Render/Modify", a través, del shortcut, "3", en el cuál,
+
+	encontraremos la sección de "Shader"
+
+
+	_a través, de la cuál, podremos agregar diferentes tipos de materiales ordenados por categoría como "surface,
+
+	volumen, enviroment, contour, otros"
+
+
+	_lo cuál, nos permitirá aún más flexibilidad y ordenamiento que la opción anterior
+
+
+
+
+	View Materials:
+	_______________
+
+
+	Acceso Directo:
+
+	_tenemos la posibilidad de editar un material asignado ha un objeto ó superficie para lo cuál, debemos de ir al
+
+	"Stack/Render/Modify", a través, del shortcut, "3" en el cuál, encontraremos el botón de "Shader"
+
+
+	_el cuál, hará de acceso directo a las propiedades específicas del material asignado al objeto ó superficie
+
+
+	
+	Contextual Menu:	
+
+	_también, dispondremos del menú contextual a través, del cuál, podremos abrir las propiedades del material
+
+	asignado ha una geometría
+
+
+	_para lo cuál, debemos de seleccionar un mesh, u objeto y con éste seleccionado hacer "Alt + mouse right click", 
+
+	para que así, se abra el menú contextual en el cuál, debemos de seleccionar la opción de "Inspect Material"
+
+
+
+	Explorer:
+	
+	_así, como también, podremos acceder a las propiedades y características de edición de un material aplicado 
+
+	sobre una superficie u objecto a través, del panel "Explorer", a través, del shortcut, "8"
+
+
+	_así, como también, a través, del menú contextual del explorer a través, del shortcut, "F3"
+
+
+
+	
+	Material Manager:
+	_________________
+
+	_para acceder al panel material manager, dispondremos del shortcut, "Control + 7", de ésta manera, en éste panel
+
+	podremos agregar materiales y nodos así, como también, editar éstos
+
+
+	_con la diferencia de que en éste panel podremos ver todos los materiales que hemos realizado en la escena, ha
+
+	diferencia que en el panel "Render Tree", que sólo podremos ver sólo los nodos del material activo
+
+
+	_de ésta manera, a través, del panel material manager, podremos editar, asignar, re asignar, duplicar, entre 
+
+	otras posibilidades sobre los materiales, y los nodos respectivamente
+
+
+
+
+	Render Tree:
+	____________
+
+	_para acceder al panel render tree, dispondremos del shortcut, "7", de ésta manera, en éste panel podremos
+
+	crear estructuras de nodos y todo el  proceso de relacionamiento y edición de nodos
+
+
+	_con directa relación con el motor de render seleccionado y su visualización en el viewport, en tiempo real
+
+	
+
+
+
+
+
+
+
+

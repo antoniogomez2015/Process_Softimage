@@ -1,0 +1,105 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Toon Paint and Host:
+	____________________
+
+	_éste es un nodo nos permitirá reproducir materiales de tipo cartoon, de forma plana como también en alto
+
+	detalle a través, de la representación del volúmen por medio de la emulación de la specularidad y reflexiones
+
+	como también, de los bordes y cortornos de la superficie
+
+
+	_éste nodo sumará ambos mundos tanto las herramientas de los nodos "host", como de los nodos "Paint", 
+
+	permitiendo disponder así, de todas las herramientas en un mismo nodo
+
+
+	_éste nodo auxiliarmente dispone de opciones de "INK, Seams, Transparency, Reflection", las cuáles, están
+
+	desactivadas por defecto
+
+
+	_y yendo más allá también, dispondremos de las opciones de "Transparency", y "Reflection", no emuladas si no
+
+	totalmente reales
+
+
+	_lo que nos permitirá llevar a otro nivel de interacción el material y las superficies respecitvas
+
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+	Reflection:
+	___________
+
+	_éste parámetro biene desactivado por defecto el cuál, nos permitirá incorparar la reflexiones en el material
+
+	ha generar
+
+
+	_de ésta manera, dispondremos de los siguientes parámetros:
+
+
+
+
+	Mode:
+	_____
+
+	_éste parámetro nos permitirá indicarle al sistema el algoritmo de trabajo de modo de fusión entre los que
+
+	dispondremos "Sandard Blend", y "Preserve Colors"
+
+
+	_de ésta manera, en relación a los resultados deseados podremos utilizar una modalidad u otra
+
+
+
+	Color:
+	______
+
+	_éste parámetro nos permitirá indicarle al sistema a través, de un selector de color cuál, será el color
+
+	que tendrá la transparencia del motivo así, como también, los valores de lulminancia
+
+
+	_de ésta manera, los valores de luminancia bienen en un valor de "0", ó negro para que así, podamos editar 
+
+	ó manipular éste parámetro para incrementar la luminancia o reflexión como tambíen, agregar color ha ésta
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

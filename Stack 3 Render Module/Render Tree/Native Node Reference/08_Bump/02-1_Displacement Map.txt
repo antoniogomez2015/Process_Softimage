@@ -1,0 +1,228 @@
+
+
+
+
+	Render Nodes in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Displacement Map:
+	_________________
+
+	_para la generación de efectos de relieves sobre superficies dispondremos de la opción "Displacement Map", la
+
+	cuál, es una opción auxiliar ó complementaria a los nodos de "Bump"
+
+
+	_con la diferencia que la opción de displacement map, nos permitirá generar geometría real sobre la superficie
+
+	y no geoemetría emulada como un efecto visual
+
+
+	_de ésta manera, el proceso ha realizar y configurar es diferente al proceso de bump, y va más allá de la simple
+
+	configuración de nodos
+
+
+
+
+	Nodes Connection:
+	_________________
+
+	_una vez hemos creado y agregado un nodo de "image", para el canal "Diffuse", como otro nodo "Image", para la
+
+	imágen en blanco y negro
+
+
+	_y así, como también, hemos creado el nodo "Bump Generator", y hemos relacionado todos los correctamente según
+
+	el workflow, para bump maps, regular
+
+
+	_podremos entonces comenzar con el proceso de "displacement map", entendiendo que el proceso de bump map, no es
+
+	requerido ni prelativo en relación al proceso de displacement map, ya que éste proceso puede funcionar 
+
+	perfectamente sin el proceso previo de bump map
+
+
+
+
+	Connect Nodes:
+	______________
+
+	_primeramente debemos de arrastrar el "Output", el nodo "Image", correspondiente a la imágen en blanco y negro
+
+	ha utilizar regularmente en el proceso de "Bump Generator"
+
+
+	_de ésta maenra, debemos de arrasel "output", del nodo "Image", hasta el nodo "Base Material", para que así, nos
+
+	aparezca un menú contextual en el cuál, debemos de seleccionar la opcíon de "Displacement"
+
+
+	_para que así, a partir de éste punto sea agregado un nuevo nodo "Color_To_Scalar", entre el nodo "Image", y el
+
+	nodo "Base Material", como controlador del sistema de "Displacement map"
+
+
+	_de ésta manera, a partir de éste punto el efecto de displacement map, será visible en el render aunque de una
+
+	forma exagerada
+
+
+
+
+	Geometry Approximation:
+	_______________________
+
+	_de ésta manera, una vez hemos relacionado los nodos del sistema de displacement map, debemos de abrir las 
+
+	opciones de "Geometry Approximation" 
+
+
+	_ya que el sistema de displacement map, trabaja creando geometría real por lo que será requerido el controlador 
+
+	principal de la representacion de la geometría respectivamente
+
+
+	_para lo cuál, con la mesh, respectiva seleccionada debemos de ir al panel "Explorer", a través, del shortcut,
+
+	"8", ó a través, del panel "Explorer Express", shortcut, "Shift + F3"
+
+
+	_en el cuál, debemos de seleccionar la opcíon de "Geometry Approximation", para que así, podamos navegar hasta
+
+	la pestaña de "Displacement", en la cuál, podremos controlar el comportamiento del efecto de displacement map
+
+
+
+
+	Displacement Options:
+	_____________________
+
+	_de ésta manera, dispondremos de las siguientes opciones de configuración para el desplazamiento generado:
+
+
+	
+	Displacement:
+	______________
+
+
+		Parametric:
+		___________
+
+		_ésta es la opción por defecto la cuál, tiene un comportamiento de fuerza brutal y son control gradual
+
+
+
+		Length / Distance / Angle:
+		__________________________
+
+		_ésta opción permite un controla parcial del desplazamiento
+
+
+
+		Fine:
+		_____
+
+		_éste es la opción más recomendada ya que es la opción que nos permite más controles y gradaicones del
+
+		sistema de desplazamiento ha generar
+
+
+
+		Max Displacement:
+		_________________
+
+		_éste parámetro nos permitirá configurar la fuerza brutal del efecto de ésta manera, podremos crear un
+
+		desplazamiento más ó menos acusado y voluminoso en relación a nuestras necesidades de producción
+
+
+		_de ésta manera, en la mayoría de la ocaciones es recomendable utilizar valores muy bajos de entre 
+
+		"0.1", ha "1", como máximo
+
+
+
+	Refinement Settings:
+	____________________
+
+
+		Length:
+		_______
+
+		_éste parámetro nos permitirá controlar la longitud y magnitud del desplazamiento así, como también, de
+
+		afinar su agudeza y definición en las áreas más complejas
+
+
+		_ésta opción nos permitirá ajustar y acentuar y resaltar los detalles finos una vez hemos definido el 
+
+		nivel de desplazamiento
+
+
+		_es recomendable utilizar valores muy bajos como "0.1", e inferiores como "0.001", ya que entre más 
+
+		bajo sea el valor má acentuado será el detalle obtenido
+
+
+
+		View Dependent:
+		_______________
+
+		_
+
+
+		
+		Sharpness %:
+		____________
+
+
+
+
+	Subdivision Limit - Recursive Steps:
+	____________________________________
+
+	
+		Min:
+		____
+
+		_éste parámetro es convenniente dejalo en un valor de "0", para que así, las cantidad de subdivisiones
+
+		iniciales sean mínimas
+
+
+
+		Max:
+		____
+
+		_éste parámetro nos permitirá controlar la cantidad de sibdivisiones en la cuál, será subdividida la
+
+		geometría para la representación del desplazamineto
+
+
+		_de ésta manera, aumentando éste valor lograremos más detalle en la textura proyectada como también,
+
+		afinaremos y refinaremos el resultado eliminado parte del desplazamiento burdo inicial
+
+
+
+
+
+	
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+

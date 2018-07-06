@@ -1,0 +1,41 @@
+
+
+
+
+	UVs in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Multiple Projections:
+	____________________
+
+	_más también tendremos la posibilidad de agregar múltiples proyecciones de uvs, para una misma geometría lo
+
+	cuál, es especialmente útil cuando deseamos que una textura tenga diferentes comportamientos dentro de una
+
+	misma geometría
+
+
+	_de ésta maenra, podremos repetir el proceso base, en el cuál, seleccionamos la geometría respectiva y con ésta
+
+	seleccionada vamos ha panel "Get/Property/Texture Map"
+
+
+	_para que así, podamos seleccionar uno de los criterios de proyección de uvs, disponibles para que así, la 
+
+	última proyección aplicada sea la proyección activa sobre la geometría
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+

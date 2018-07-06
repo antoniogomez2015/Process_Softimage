@@ -1,0 +1,40 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Cooktornance:
+	_____________
+
+	_éste es un nodo de uso general el cuál, nos permitirá reproducir material plásticos como altamente reflectivos
+
+	incluso mayores y más afinados que "Phong"
+
+
+	_de ésta manera, podremos lograr especularidads más afiladas y con reflejos más extremos y refinados lo cuál,
+
+	es especialmente útil para superficies altamente brillantes como vidrios entre otros materiales translúcidos
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

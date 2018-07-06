@@ -1,0 +1,74 @@
+
+
+
+
+	Render Nodes in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Using Weight Map:
+	_________________
+
+	_una vez hemos creado y editado en weight map, podremos hacer uso de éste para diferentes procesos de creación
+
+	y producción
+
+
+	_para lo cuál, debemos de aplicar sobre el mesh, respectivo un elemento como un deformador, un elemento 
+
+	dináminco, ó del sistema de ICE, ó de skinning, como un muscle system, otros
+
+
+	_por ejemplo; para un deformador para lo cuál, debemos de seleccionar el mesh, respectivo para que así, con éste
+
+	seleccionado ir al "stack/Model/Modify/Deform/", y en el cuál, seleccionaremos la opción de "Push"
+
+
+	_para que así, nos aparezca la ventana de configuración en la cuál, debemos de darle click, sobre el pluging, ó
+
+	input, de entrad de la opción de "Amplitude", y en la cuál, debemos de seleccionar la opción de "Connect"
+
+
+	_para que así, nos aparezca un explorer contextual en el cuál, debemos de navegar hasta la ubicación del 
+
+	weight map, que hemos generado previamente
+
+
+	_de ésta manera, debemos navegar de la siguiente manera: "Stack Modeling/Clusters/WeightMapCls/", y una vez
+
+	allí, debemos de seleccionar la opción de "Weight_Map"
+
+
+	_para que así, ahora la información de pintura existente en el mapa weight map, sea transferida para la 
+
+	generación de la deformación controlada por el weight map, de en éste caso del deformador "Push"
+
+
+	_con la ventaja de que podremos volver ha editar de forma dinámica el weight map, que los cambios serán 
+
+	actualizados en tiempo real sobre la geometría 
+
+
+	_lo que nos permitirá crear efectos dinámicos para animación y simulaciones, otros
+
+
+
+	
+
+	
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+

@@ -1,0 +1,46 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Toon Host:
+	__________
+
+	_éste es un nodo nos permitirá reproducir materiales de tipo cartoon, de forma plana y sin detalles de
+
+	profundidas en emulación especular y altas luces
+
+
+	_éste es el material más base el cuál, sólo permite en su configuración básica indicar el color difuso del
+
+	material ha generar
+
+
+	_éste nodo auxiliarmente dispone de opciones de "INK, Seams, Transparency, Reflection", las cuáles, están
+
+	desactivadas por defecto
+	
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

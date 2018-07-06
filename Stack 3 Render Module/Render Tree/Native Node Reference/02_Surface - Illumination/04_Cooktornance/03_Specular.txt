@@ -1,0 +1,99 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Cooktornance:
+	_____________
+
+	_éste es un nodo de uso general el cuál, nos permitirá reproducir material plásticos como altamente reflectivos
+
+	incluso mayores y más afinados que "Phong"
+
+
+	_de ésta manera, podremos lograr especularidads más afiladas y con reflejos más extremos y refinados lo cuál,
+
+	es especialmente útil para superficies altamente brillantes como vidrios entre otros materiales translúcidos
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	Specular:
+	_________
+	
+	_éste parámetro a través, de un selector de "Specular", (que en la versión de "Phong", es "Color") ó color  que 
+
+	nos permitirá indicar el color ó valor de luminancia el cuál, será el umbral de luz para la especulariadad 
+
+	aplicada sobre la superficie
+
+
+	_de ésta manera, podremos crear una especularidad más intensa indicando un color más blanco ó una especularidad 
+
+	menor indicando un gris medio ó un negro
+
+
+	_como también podremos crear una especularidad de un color determianado
+
+
+
+	Roughness:
+	__________
+
+	_y a diferencia del tipo de material "Phong", en el cuál, existe la opción de "Specular Decay", y que en 
+
+	"Blinn", existen las opciones de "Roughness", y "Specular Refraction"
+
+
+	_más en "Cooktornance", essisten los parámetros de "Roughness", y "Refraction"
+
+
+	_de ésta manera, a través, de la opción de "Roughness", podremos ajustar la cantidad de área cubierta por el 
+
+	área especular la cuál, es especialmente crítica
+
+
+	_la cuál, será visible y acusada con valores de entre "0-0.2", ya que con valores superiores ha éstos se 
+
+	dispersará demaciado y pasará ha ser más un spill color, sobre la superficie respectiva
+
+
+	_de ésta manera, podremos crear un especularidad una super afilada especularidad más abrasiva ó más suavisada 
+
+	en relación al tipo de superficie ha emular como plásticos, gomas, sintéticos, otros
+
+
+
+	Refraction:
+	___________
+
+	_éste parámetro nos permitirá controlar a través, de un selector de color la cantidad de color emitida sobre la
+
+	superficie especificada lo cuál, contribuirá con el color indicado para la especularidad en general
+
+
+
+
+	NOTA: para que la especularidad haga presencia sobre una superficie es requerido que haya al menos una luz 
+
+	direccionada sobre el motivo ó superficie, ya que la iluminación global generada por superficies no genera por 
+
+	si sola especilaridad
+
+
+
+	
+
+

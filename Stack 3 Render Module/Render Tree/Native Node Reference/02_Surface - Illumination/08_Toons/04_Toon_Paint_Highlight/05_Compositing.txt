@@ -1,0 +1,51 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Toon Paint:
+	___________
+
+	_éste es un nodo nos permitirá reproducir materiales de tipo cartoon, de forma plana como también en alto
+
+	detalle a través, de la representación del volúmen por medio de la emulación de la specularidad y reflexiones
+
+	como también, de los bordes y cortornos de la superficie
+
+
+	_éste nodo auxiliarmente dispone de opciones de "Highlights, Rimlights", las cuáles, están activadas en su 
+
+	mayoría por defecto
+	
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+	Compositing:
+	____________
+
+	_éste parámetro nos permitirá indicarle al sistema el modo de fusión ó algoritmo de trabajo, al mismo que en
+
+	Photoshop, podremos cambiar el modo de fusión de integración en relación al resultado deseado y a los 
+
+	requerimientos
+
+
+
+
+
+
+
+

@@ -1,0 +1,158 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Toon Paint and Host:
+	____________________
+
+	_éste es un nodo nos permitirá reproducir materiales de tipo cartoon, de forma plana como también en alto
+
+	detalle a través, de la representación del volúmen por medio de la emulación de la specularidad y reflexiones
+
+	como también, de los bordes y cortornos de la superficie
+
+
+	_éste nodo sumará ambos mundos tanto las herramientas de los nodos "host", como de los nodos "Paint", 
+
+	permitiendo disponder así, de todas las herramientas en un mismo nodo
+
+
+	_éste nodo auxiliarmente dispone de opciones de "INK, Seams, Transparency, Reflection", las cuáles, están
+
+	desactivadas por defecto
+
+
+	_y yendo más allá también, dispondremos de las opciones de "Transparency", y "Reflection", no emuladas si no
+
+	totalmente reales
+
+
+	_lo que nos permitirá llevar a otro nivel de interacción el material y las superficies respecitvas
+
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+	Rimlight:
+	_________
+
+	_éste parámetro biene desactivado por defecto el cuál, nos permitirá emular el volúmen global del forma en toda
+
+	la superficie del motivo
+
+
+	_lo cuál, aumentará la capacidad de representar el detalle de la forma obtenida como un todo de la superficie
+
+
+	_de ésta manera, dispondremos de los siguientes parámetros:
+
+
+
+
+	Order:
+	______
+
+	_éste parámetro nos permitirá indicarle al sistema que coloque el halo perimetral delante ó detral de la
+
+	especularidad emulada
+
+
+	_a través, de las opciones de "Over Highlights", y "Under Highlights"
+
+
+
+
+	Color:
+	______
+
+	_éste parámetro nos permitirá indicarle al sistema a través, de un selector de color cuál, será el color
+
+	que tendrá la especularidad emulada sobre el material y la superficie del motivo
+
+
+
+	Compositing:
+	____________
+
+	_éste parámetro nos permitirá indicarle al sistema el modo de fusión ó algoritmo de trabajo, al mismo que en
+
+	Photoshop, podremos cambiar el modo de fusión de integración en relación al resultado deseado y a los 
+
+	requerimientos
+
+
+
+	Coverage:
+	_________
+
+	_éste parámetro nos permitirá indicarle al sistema la cantidad de área cubierta por el área especular emulada
+
+	de ésta manera, podremos aumentar ó disminuir el área afectada por la especularidad emulada	
+
+
+
+	Softness:
+	_________
+
+	_éste parámetro nos permitirá indicarle al sistema la suavidad ó acutancia entre los bordes perimetrales del
+
+	área que emulará la especularidad y el área de color difuso del material sobre la superficie
+
+
+	_de ésta manera, podremos lograr a cabados más cartoon, ó más detallados y con volúmen
+
+
+
+	Invert:
+	_______
+
+	_éste parámetro nos permitirá indicarle al sistema que invierta todo, tanto las áreas de color difuso como las
+
+	áreas de la especularidad y reflexión emulada, las cuáles, se invertirán con las áreas en halo perimetral
+
+
+	_lo que creará efectos muy interesantes y útiles en diferentes producción y efectos de paso contínuo
+
+
+
+	Vector:
+	_______
+
+	_éste parámetro pone a disposición una serie de parámetros y comportamientos para el control y funcionamiento
+
+	global del resultado final
+
+
+	_de ésta manera, dispondremos parámetro de "Over/Under", a través, de los cuáles, podremos enviar al frente ó
+
+	al fondo los efectos de especularidad y halo perimetral sobre el color difuso
+
+
+	_como también, dispondremos de control y dirección de la emulación de ambient occlusion
+
+
+	_como también, el control de la influencia en relación a la vista de cámara entre otras configuraciones
+
+
+
+	Layer 2:
+	________
+
+	_éste parámetro abre otro slot, de "Rimlight", para las áreas internas de especularidad y reflexiones emuladas
+
+	de ésta manera, podremos aumentar y duplicar los controles de halo perimetral sobre todas las áreas en
+
+	influencia sobre la superficie respectiva
+

@@ -1,0 +1,44 @@
+
+
+
+
+	UVs in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Render Tree UVs Projections:
+	____________________________
+
+	_una vez hemos creado una proyección base sobre una geometría podremos seleccionar entre las proyecciones
+
+	aplicadas directamente en el panel "Render Tree"
+
+
+	_para lo cuál, debemos de abrir el pane "Render Tree", a través, del shortcut, "7", y una vez allí, debemos 
+
+	de seleccionar una de las texturas asignadas al material respectivo como inputs, de entrada
+
+
+	_para que así, se active en la barra del panel superior de "Render Tree", un campo en el cuál, podremos
+
+	seleccionar las proyecciones aplicadas sobre una geometría respectivamente
+
+
+	_de ésta manera, incluso si un material tiene diferentes entradas de material difuso cada una de éstas ahora
+
+	puede tener diferentes proyecciones de uvs de forma independiente una de la otra
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+

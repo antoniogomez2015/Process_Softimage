@@ -1,0 +1,56 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Toon Paint and Host:
+	____________________
+
+	_éste es un nodo nos permitirá reproducir materiales de tipo cartoon, de forma plana como también en alto
+
+	detalle a través, de la representación del volúmen por medio de la emulación de la specularidad y reflexiones
+
+	como también, de los bordes y cortornos de la superficie
+
+
+	_éste nodo sumará ambos mundos tanto las herramientas de los nodos "host", como de los nodos "Paint", 
+
+	permitiendo disponder así, de todas las herramientas en un mismo nodo
+
+
+	_éste nodo auxiliarmente dispone de opciones de "INK, Seams, Transparency, Reflection", las cuáles, están
+
+	desactivadas por defecto
+
+
+	_y yendo más allá también, dispondremos de las opciones de "Transparency", y "Reflection", no emuladas si no
+
+	totalmente reales
+
+
+	_lo que nos permitirá llevar a otro nivel de interacción el material y las superficies respecitvas
+
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Phong:
+	______
+
+	_éste es un nodo de uso general el cuál, nos permitirá reproducir material plásticos como altamente reflectivos
+
+	como neutros
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+
+

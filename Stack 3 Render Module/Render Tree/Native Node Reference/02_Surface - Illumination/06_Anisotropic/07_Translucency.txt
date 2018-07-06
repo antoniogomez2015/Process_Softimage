@@ -1,0 +1,56 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Anisotropic:
+	____________
+
+	_éste es un nodo nos permitirá reproducir material plásticos como altamente reflectivos	y metálicos, incluso
+
+	mayores que "Phong", para el uso de superficies complejas
+
+
+	_en la que deseamos tener un control de la especularidad y altas luces, tanto en su forma como en su dirección
+
+	y tamaño para tener así, un control absoluto
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+
+	----------------------------------------------------------------------------------------------------------------	
+
+
+	Translucency:
+	_____________
+
+	_éste parámetro biene activado por defecto más éste no tiene acción sobre la superficie y material por su valor
+
+	de "Translucency", biene con un valor de "0"
+
+
+	_de ésta manera, aumentando éste valor mayor ha "0", se aumentarán las propiedades de translucencia y 
+
+	transparencia del material y superficie
+
+
+	_lo cuál, es especialmente útil en superficies complejas y superpuestas
+
+	
+
+
+
+
+
+
+
+

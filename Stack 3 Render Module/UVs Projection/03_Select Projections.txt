@@ -1,0 +1,59 @@
+
+
+
+
+	UVs in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Select Projections:
+	___________________
+
+	_una vez hemos agregado más de una proyección base sobre una misma geometría podremos posteriormente indicar
+
+	ó seleccionar cuál, deseamos que sea la proyección activa
+
+
+
+	Editing:
+	________
+
+	_para lo cuál, debemos de abrir el panel "Texture Editor", a través, del shortcut, "Alt + 7", y en el cuál,
+
+	debemos de ir hasta las opciones de "UVs/", y una vez allí, seleccionar una de las proyecciones
+
+
+	_como por ejemplo: "Texture Projection 1", "Texture Projection 2",...
+
+
+
+
+	Rendering:
+	__________
+
+	_más para que una proyección determinada sea renderizada debemos de seleccionar ésta en panel "Render Tree",
+
+	mientras que a su vez, tenemos seleccionado una textura a la cuál, se le asignará determinada proyección
+
+	respectivamente
+
+
+
+	_de ésta manera, la proyección seleccionada será la proyección activa de trabajo sobre la geometría respectiva
+
+	a la hora de renderizar
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+

@@ -1,0 +1,41 @@
+
+
+
+
+	Render Nodes in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Características:
+	________________
+
+	_el mapa de weight map, nos permitirá crear mapas de densidad para la creación de deformadores, dinámicos, y de
+
+	pesos ó envelopes, ó skinning, muscle system, para el proceso de rigging
+
+
+	_entre otras muchas posibilidades de producción y paso contínuo para la creación de pesos personalizados
+
+
+
+
+	
+	
+
+	
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+

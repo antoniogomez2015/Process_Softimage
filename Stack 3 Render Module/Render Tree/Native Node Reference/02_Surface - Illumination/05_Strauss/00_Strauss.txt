@@ -1,0 +1,40 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Strauss:
+	________
+
+	_éste es un nodo nos permitirá reproducir material plásticos como altamente reflectivos	y metálicos para el uso
+
+	de superficies compuestas como aleaciones y materiales cambiantes en el tiempo
+
+
+	_de ésta manera, podremos lograr especularidads promedio entre "Phong", y "Cooktornance", pero que a su vez, 
+
+	sea afectado el canal difuso del material por la especularidad del material en general
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

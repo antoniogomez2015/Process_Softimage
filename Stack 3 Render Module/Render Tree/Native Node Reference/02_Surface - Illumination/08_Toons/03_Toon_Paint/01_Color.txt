@@ -1,0 +1,48 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Toon Paint:
+	___________
+
+	_éste es un nodo nos permitirá reproducir materiales de tipo cartoon, de forma plana como también en alto
+
+	detalle a través, de la representación del volúmen por medio de la emulación de la specularidad y reflexiones
+
+	como también, de los bordes y cortornos de la superficie
+
+
+	_éste nodo auxiliarmente dispone de opciones de "Highlights, Rimlights", las cuáles, están activadas en su 
+
+	mayoría por defecto
+	
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+	Color:
+	______
+
+	_éste parámetro nos pemritirá indicar el color base del material para la representación del material a través,
+
+	de formas planas tipo 2d, sin volúmen ni emulación de la especularidad, bordes, otros
+	
+
+
+
+
+
+

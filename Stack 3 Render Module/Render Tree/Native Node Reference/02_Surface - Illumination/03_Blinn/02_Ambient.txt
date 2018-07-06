@@ -1,0 +1,53 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Blinn:
+	______
+
+	_éste es un nodo de uso general el cuál, nos permitirá reproducir material plásticos, cueros neutros, otros
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	Ambient:
+	________
+
+	_éste parámetro a través, de un selector de color nos permitirá indicar el color ó valor de luminancia el cuál, 
+
+	será el umbral de luz ambiente admitida en las partes en penumbra por las diferentes áreas de la superficie 
+
+	respecviamente
+
+
+	_lo cuál, afectará en la representación del volúmen y peso del objeto respectivo
+
+
+	_también, podremos utilizar éste parámetro para la contaminación ambiental de color ó spill color, sobre 
+
+	diferentes superficies afectadas por la luz, como un efecto adicional ó colateral
+
+
+	
+
+
+
+
+
+
+
+

@@ -1,0 +1,126 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Blinn:
+	______
+
+	_éste es un nodo de uso general el cuál, nos permitirá reproducir material plásticos, cueros neutros, otros
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	Reflection:
+	___________
+
+	_ésta propiedad está activada por defecto pero la cuál, tiene un valor de luminancia de "0", por lo cuál, no 
+
+	tiene acción directa sobre la superficie
+
+
+	_éste parámetro a través, de un selector de color nos permitirá indicar el color ó valor de luminancia el cuál, 
+
+	será el umbral de color como de luminancia para el cálculo de las reflexiones del material
+
+
+	_de ésta manera, podremos crear superficies reflectantes metales, plásticos, entre otros los cuáles, podrán
+
+	reflejas luces, colores como "enviroments", con texturas, imágenes y set, completos en relación al efecto 
+
+	deseado
+
+
+
+
+	Use Alpha:
+	__________
+
+	_éste parámetro nos permitirá utilizar el canal alpha, del selector de color y luminancia el cuál, podremos editar
+
+	previamente en el paso anterior y a través, del cuál, podremos influir sobre la transparencia de la superficie
+
+
+
+	Invert Alpha:
+	_____________
+
+	_éste parámetro nos permitirá invertir el canal alpha, del selector de color y luminancia a través, del cuál,
+
+	podremos influenciar sobre la transparencia generada sobre la superficie
+
+
+
+	Scale:
+	______
+
+	_éste parámetro nos permitirá limitar ha modo de bypass, la cantidad de transparencia aplicada sobre una 
+
+	superficie ó material respectivamente de ésta manera, podremos graduar a groso modo la influencia de la 
+
+	transparencia generada
+
+
+
+	Gloss:
+	______
+
+	_éste parámetro nos permitirá controlar el nivel de "escarchado", ó esmerilado de la superficies reflectantes
+
+	de ésta manera, podremos crear superficies reflectantes más esmeriladas entre otros muchos efectos
+
+
+
+	Samples:
+	________
+
+	_éste parámetro va de la mano del parámetro e "Gloss", de ésta manera, podremos indicar la cantidad de muestreos
+
+	para el cálculo del efecto de escarchado ó esmerilado de la superficies
+
+
+
+
+	Reflection Mode:
+	________________
+
+	
+		Raytracing Enable:
+		__________________
+
+		_éste parámetro contemplará para el cálculo de reflecciones la iluminación ambiente de los diferentes
+
+		puntos de luz, existentes en la escena así, como de la iluminación global e iluminación indirecta
+
+
+
+		Enviroment Only:
+		________________
+
+		_éste parámetro sólo contemplará la refleciones generadas por el mapa de enviromento ó entorno global
+
+		de la escena, descartando las luces de la escena y la iluminación global de la escena
+	
+
+	
+
+
+
+
+
+
+
+

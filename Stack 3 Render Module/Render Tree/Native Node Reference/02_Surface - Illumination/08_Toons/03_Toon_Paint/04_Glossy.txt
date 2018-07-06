@@ -1,0 +1,97 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Toon Paint:
+	___________
+
+	_éste es un nodo nos permitirá reproducir materiales de tipo cartoon, de forma plana como también en alto
+
+	detalle a través, de la representación del volúmen por medio de la emulación de la specularidad y reflexiones
+
+	como también, de los bordes y cortornos de la superficie
+
+
+	_éste nodo auxiliarmente dispone de opciones de "Highlights, Rimlights", las cuáles, están activadas en su 
+
+	mayoría por defecto
+	
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+	GLossy:
+	_______
+
+	_éste parámetro biene desactivado por defecto el cuál, nos permitirá emular la reflexiones lo que a su vez, nos
+
+	permitirá crear otro nivel de detalle ó altas luces dentro de la especularidad emulada previamente
+
+
+	_lo cuál, aumentará la capacidad de representar el detalle de la forma obtenida como un todo de la superficie
+
+
+	_más a su vez, el parámetro de "Luminance", biene activado por defecto el cuál, aumentará la luminancia del
+
+	color de la especularidad emulada
+
+
+	_de ésta manera, dispondremos de los siguientes parámetros:
+
+
+
+
+	Color:
+	______
+
+	_éste parámetro nos permitirá indicarle al sistema a través, de un selector de color cuál, será el color
+
+	que tendrá la especularidad emulada sobre el material y la superficie del motivo
+
+
+
+	Compositing:
+	____________
+
+	_éste parámetro nos permitirá indicarle al sistema el modo de fusión ó algoritmo de trabajo, al mismo que en
+
+	Photoshop, podremos cambiar el modo de fusión de integración en relación al resultado deseado y a los 
+
+	requerimientos
+
+
+
+	Coverage:
+	_________
+
+	_éste parámetro nos permitirá indicarle al sistema la cantidad de área cubierta por el área especular emulada
+
+	de ésta manera, podremos aumentar ó disminuir el área afectada por la especularidad emulada	
+
+
+
+	Softness:
+	_________
+
+	_éste parámetro nos permitirá indicarle al sistema la suavidad ó acutancia entre los bordes perimetrales del
+
+	área que emulará la especularidad y el área de color difuso del material sobre la superficie
+
+
+	_de ésta manera, podremos lograr a cabados más cartoon, ó más detallados y con volúmen
+
+
+

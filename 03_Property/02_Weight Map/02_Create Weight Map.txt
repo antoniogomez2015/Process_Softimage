@@ -1,0 +1,52 @@
+
+
+
+
+	Render Nodes in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Create Weight Map:
+	__________________
+	
+	_para crear un weight map, debemos primeramente de seleccionar la mesh, respectiva para a continuación ir al
+
+	panel "Get/Property/", y en cuál, debemos de seleccionar la opción de "Weight Map" 
+
+
+	_para que así, sea asignado un nuevo mapa de pesos ó weight map, al "Stack Modeling", como un nuevo "Clusters",
+
+	de ésta manera, podremos ir al panel "Explorer", shortcut, "8", ó "Shift + F3"
+
+
+	_en el cuál, encontraremos la siguiente estructura de archivos:
+
+
+		_Stack Modeling/polygon Mesh/Clusters/WeightMapCls/Weight_Map
+
+
+	_de ésta manera, haciendo doble click, sobre "WeightMapCls", ó "Weight_Map", podremos acceder a las 
+
+	características del mapa de pesos generado
+
+
+
+	
+
+	
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+

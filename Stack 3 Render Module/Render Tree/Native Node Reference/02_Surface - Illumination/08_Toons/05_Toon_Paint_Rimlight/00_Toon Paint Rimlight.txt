@@ -1,0 +1,46 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Toon Paint Rimlight:
+	____________________
+
+	_éste es un nodo nos permitirá reproducir materiales de tipo cartoon, de forma plana como también en alto
+
+	detalle a través, de la representación del volúmen por medio de la emulación de la specularidad 
+
+
+	_de ésta manera, éste nodo comparte las características de los nodos tipo "Host", y "Ambient", más la opción
+
+	de "Rimlight", en un mismo nodo
+
+
+	_de ésta manera, podremos controlar el color del material más la luminancia del ambiente y la especularidad
+
+	y halo perimetral emulada sobre el material y superficies
+
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

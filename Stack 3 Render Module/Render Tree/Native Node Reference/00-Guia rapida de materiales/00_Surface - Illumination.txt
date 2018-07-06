@@ -1,0 +1,253 @@
+
+
+
+
+	Guía Rápida de Materiales
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Surface - Illumination:
+_______________________
+
+
+
+	Phong:
+	______
+
+	_éste es el nodo nos permitirá con una crear superficies con una mayor cantidad de brillo, especularidad y
+
+	reflectividad mucho más ámplia y acudasada que los demás materiales
+
+
+	_éste es el nodo más recomendado para la creación de superficies altamente reflectivas de tipo metal, vidrio
+
+	entre otras
+
+
+
+	Cooktornance:
+	_____________
+
+	_éste es el nodo nos permitirá con una crear superficies con una especularidad  más afilada y aguda y
+
+	reflectividad mucho más ámplia y acudasada que los demás materiales
+
+
+	_éste es el nodo más recomendado para la creación de superficies altamente reflectivas de tipo metal, vidrio
+
+	entre otras
+
+
+	
+	Strauss:
+	________
+
+	_éste es un nodo nos permitirá reproducir material plásticos como altamente reflectivos	y metálicos para el uso
+
+	de superficies compuestas como aleaciones y materiales cambiantes en el tiempo
+
+
+	_de ésta manera, podremos lograr especularidads promedio entre "Phong", y "Cooktornance", pero que a su vez, 
+
+	sea afectado el canal difuso del material por la especularidad del material en general
+
+
+
+	Anisotropic:
+	____________
+
+	_éste es un nodo nos permitirá reproducir material plásticos como altamente reflectivos	y metálicos, incluso
+
+	mayores que "Phong", para el uso de superficies complejas
+
+
+	_en la que deseamos tener un control de la especularidad y altas luces, tanto en su forma como en su dirección
+
+	y tamaño para tener así, un control absoluto
+
+
+
+	Blinn:
+	______
+
+	_éste es el nodo nos permitirá con una crear superficies con una menor cantidad de brillo, especularidad 	
+
+
+	_éste es el nodo más recomendado para la creación de superficies plásticas de tipo plástico, goma, cuero,
+
+	caucho, otras
+
+
+	_ya que el sistema y parámetros de especularidad son diferentes y tienen otro propósito y función de ésta 
+
+	manera, dispondremos de parámetros y comportamientos que nos ayudarán ha crear superficies más plásticas
+
+	ó sintéticas y menos speculares
+
+
+
+	Lambert:
+	________
+
+	_éste es el nodo nos permitirá con una crear superficies sin especularidad y reflectividad como paredes y
+
+	superficies mates y sintéticas
+
+
+	_éste es el nodo más recomendado para uso general y a la creación de superficies sin especularidad y refleción 
+
+	como paredes techos, alfronbras, otros
+
+
+	
+	Toon_Host:
+	__________
+
+	_éste es un nodo nos permitirá reproducir materiales de tipo cartoon, de forma plana y sin detalles de
+
+	profundidas en emulación especular y altas luces
+
+
+	_éste es el material más base el cuál, sólo permite en su configuración básica indicar el color difuso del
+
+	material ha generar
+
+
+	_éste nodo auxiliarmente dispone de opciones de "INK, Seams, Transparency, Reflection", las cuáles, están
+
+	desactivadas por defecto
+
+
+
+	Toon_Paint Ambient:
+	___________________
+
+	_éste es un nodo nos permitirá reproducir materiales de tipo cartoon, de forma plana contando también, con la
+
+	iluminación ambiental para que ésta pueda cambiar el color difuso del material de forma dinámica
+	
+
+
+	Toon_Paint:
+	___________
+
+	_éste es un nodo nos permitirá reproducir materiales de tipo cartoon, de forma plana como también en alto
+
+	detalle a través, de la representación del volúmen por medio de la emulación de la specularidad y reflexiones
+
+	como también, de los bordes y cortornos de la superficie
+
+
+	_éste nodo auxiliarmente dispone de opciones de "Highlights, Rimlights", las cuáles, están activadas en su 
+
+	mayoría por defecto
+
+
+
+	Toon Paint and Host:
+	____________________
+
+	_éste es un nodo nos permitirá reproducir materiales de tipo cartoon, de forma plana como también en alto
+
+	detalle a través, de la representación del volúmen por medio de la emulación de la specularidad y reflexiones
+
+	como también, de los bordes y cortornos de la superficie
+
+
+	_éste nodo sumará ambos mundos tanto las herramientas de los nodos "host", como de los nodos "Paint", 
+
+	permitiendo disponder así, de todas las herramientas en un mismo nodo
+
+
+	_éste nodo auxiliarmente dispone de opciones de "INK, Seams, Transparency, Reflection", las cuáles, están
+
+	desactivadas por defecto
+
+
+	_y yendo más allá también, dispondremos de las opciones de "Transparency", y "Reflection", no emuladas si no
+
+	totalmente reales
+
+
+	_lo que nos permitirá llevar a otro nivel de interacción el material y las superficies respecitvas
+
+
+
+	Toon Paint Highlight:
+	_____________________
+
+	_éste es un nodo nos permitirá reproducir materiales de tipo cartoon, de forma plana como también en alto
+
+	detalle a través, de la representación del volúmen por medio de la emulación de la specularidad 
+
+
+	_de ésta manera, éste nodo comparte las características de los nodos tipo "Host", y "Ambient", en un modo de
+
+	pseudo "Paint" 
+
+
+	_de ésta manera, podremos controlar el color del material más la luminancia del ambiente y la especularidad
+
+	ó reflectividad emulada sobre el material y superficies
+
+
+
+	Toon Paint Rimlight:
+	____________________
+
+	_éste es un nodo nos permitirá reproducir materiales de tipo cartoon, de forma plana como también en alto
+
+	detalle a través, de la representación del volúmen por medio de la emulación de la specularidad 
+
+
+	_de ésta manera, éste nodo comparte las características de los nodos tipo "Host", y "Ambient", más la opción
+
+	de "Rimlight", en un mismo nodo
+
+
+	_de ésta manera, podremos controlar el color del material más la luminancia del ambiente y la especularidad
+
+	y halo perimetral emulada sobre el material y superficies
+
+
+
+	Toon Paint Rounded:
+	___________________
+
+	_éste es un nodo nos permitirá reproducir materiales de tipo cartoon, de forma plana como también en alto
+
+	detalle a través, de la representación del volúmen por medio de la emulación de la specularidad y reflexión
+
+
+	_de ésta manera, éste nodo de tipo "Paint", el cuál, se concentrará primeramente en el control de las áreas
+
+	tanto del área especular como del área reflectiva
+
+
+	_éste nodo tiene como característica principal que invierte la posición del color difuso con la posición del
+
+	área especular creando un especie de sandwich, defazando la posición de los elementos partes del material y
+
+	superficie
+
+
+	_de ésta manera, podremos controlar el color del material y la especularidad y reflexión emulada sobre el 
+
+	material y superficies
+
+
+
+
+
+
+
+
+
+
+
+

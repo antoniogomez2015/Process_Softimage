@@ -1,0 +1,72 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Toon Paint Highlight:
+	_____________________
+
+	_éste es un nodo nos permitirá reproducir materiales de tipo cartoon, de forma plana como también en alto
+
+	detalle a través, de la representación del volúmen por medio de la emulación de la specularidad 
+
+
+	_de ésta manera, éste nodo comparte las características de los nodos tipo "Host", y "Ambient", en un modo de
+
+	pseudo "Paint" 
+
+
+	_de ésta manera, podremos controlar el color del material más la luminancia del ambiente y la especularidad
+
+	ó reflectividad emulada sobre el material y superficies
+
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	Illumination:
+	_____________
+
+	_éste parámetro nos permitirá indicarle al sistema el tipo de emulación ha realizar, de ésta manera, 
+
+	dispondremos de los siguientes modos:
+
+
+
+	Diffuse:
+	________
+
+	_ésta opción nos permitirá indicarle al sistema que emula la especularidad sobre el material ha generar
+
+	y sobre la superficie respectiva
+
+
+
+
+	Glossy:
+	_______
+
+	_ésta opción nos permitirá indicarle al sistema que emula la reflexión sobre el material ha generar y sobre 
+
+	la superficie respectiva
+
+	
+
+
+
+
+
+

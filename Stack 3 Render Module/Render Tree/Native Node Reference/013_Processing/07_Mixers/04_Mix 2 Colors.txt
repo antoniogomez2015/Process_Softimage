@@ -1,0 +1,70 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Mix 2 Colors:
+	_____________
+
+	_éste nodo nos permitirá unir, integrar ó fusionar dos nodos sin la necesidad de crear nuevas layers, dentro
+
+	del nodo inicial por ejemplo un nodo de tipo "Phong"
+
+
+	_de ésta manera, podremos crear una fusión de textura de forma más práctica y visual a través, de un nodo
+
+	intermedio
+
+
+	
+
+	Mix 2 Colors Options:
+	_____________________
+
+	_una vez hayamos conectado ambas texturas ó imágenes ha el nodo "Mix 2 Colors", y éste a su vez a la propiedad
+
+	de destino del nodo base, por ejemplo "Diffuse"
+
+
+
+	Mode:
+
+	_podremos entonces entras en las opciones del nodo en la cuál, dispondremos de las opciones de "Mode", a través,
+
+	de la cuál, dispondremos de modos de fusión al mismo modo que en Photoshop
+
+
+	_para que así, podamos hacer variaciones sobre el método más adecuado de integración entre amboas imágenes ó
+
+	texturas en relación al resultado deseado
+
+
+
+	Weight:
+
+	_así, como también, dispondremos de las opciones de "Weight", a través, de la cuál, podremos ajustes la 
+
+	influencia de una imágen en relación al otra sobre el material resultante en relación a nuestras necesidades
+
+
+	_con la ventaja de que a través, de ésta opcíon dentro del nodo "Mix 2 Colors", podremos controlar éste 
+
+	parámetro por medio de otros nodos ó textura externa
+
+
+	_para que así, podamos modelar y animar la influencia y mezcla a su vez de ambas texturas ó imágenes
+
+	
+
+
+
+
+

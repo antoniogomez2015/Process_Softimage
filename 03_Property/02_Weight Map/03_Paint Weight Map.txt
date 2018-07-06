@@ -1,0 +1,84 @@
+
+
+
+
+	Render Nodes in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Paint Weight Map:
+	_________________
+
+
+
+	Paint Viewport:
+	_______________
+
+	_una vez hemos creado el weight map, sobre una superficie podremos comenzar ha editar éste map, pidiendo así,
+
+	pintar áreas de interés sobre la superficie directamente en el viewport, a través, de un brush, dedicado para 
+
+	tal fin
+
+
+	_para lo cual, primeramente debemos de seleccionar el mesh, respectivo para a continuación aplicar el shortcut,
+
+	"W", para que así, el brush, y el modo de pintura de pesos sean activadas
+
+
+
+	Workflow:
+	_________
+
+	_de ésta manera, una vez hemos activo el brush, a través, del shortcut, "W", podremos graduar el tamaño de éste
+
+	pincel haciendo "mouse midle click", and drag, para que así, graduemos el tamaño de éste brush
+
+
+	_más si hacemos "mouse left click", y arrastramos sobre la superficie aplicaremos densidad sobre el mapa de
+
+	densidad en las áreas sobre las cuáles, apliquemos el pintado
+
+
+	_más si hacemos "mouse right click", y arrastramos sobre la superficie restaremos densidad sobre el mapa de
+
+	densidad en las áreas sobre las cuáles, apliquemos el pintando
+
+
+
+	Weight Paint Panel:
+	___________________
+
+	_más también, dispondremos de un panel específico para el control más detallado de las herramientas y 
+
+	comportamientos del mapa
+
+
+	_para lo cuál, debemos de activar las opciones del botón de "Weight Paint Panel", para que así, en el lugar 
+
+	del panel izquierdo de opciones sea cargado el panel de weight paint panel 
+
+
+	_a través, del cuál, podremos configurar la dureza y opacidad de la brocha utilizada como también, el 
+
+	refrezcamiento del brush, entre otras muchas opciones de configuración
+
+	
+
+	
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+

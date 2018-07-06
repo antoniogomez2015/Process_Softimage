@@ -1,0 +1,44 @@
+
+
+
+
+	UVs in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Inicial Projection:
+	___________________
+
+	_para poder editar los uvs, de una geometría debemos primeramente de haberle aplicado una proyección baes de
+
+	uvs
+
+
+	_para lo cuál, debemos de seleccionar la geometría deseada y con ésta seleccionada ir al panel 
+
+	"Get/Property/Texture Map"
+
+
+	_en el cuál, podremos seleccionar entre los diferentes criterios de proyección, tanto por cordenadas como por
+
+	tipo y criterio
+
+
+	_para que así, sea agregado una nueva proyección de uvs, sobre la geometría a partir de la cuál, podremos 
+
+	comenzar ha editar los uvs, de forma personalizada de ser requerido en formas complejas
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+

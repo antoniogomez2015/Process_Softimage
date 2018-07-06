@@ -1,0 +1,69 @@
+
+
+
+
+	UVs in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Viewport Adjust Projections:
+	____________________________
+
+	_una vez hemos creado una proyección base sobre una geometría podremos editar ésta en relación a la geometría
+
+	sobre la cuál, fue proyectada
+
+
+	_lo cuál, lo podremos realizar directamente en el viewport, para lo cuál, debemos de seleccionar el marco
+
+	alámbrico ó wareframe, de la respectiva proyección 
+
+
+	_para a continuación con la herramienta "Translate", shortcut, "V/V", proceder ha mover la proyección respectiva
+
+	en las cordenadas y grados deseados para lograr hacer el ajuste deseado
+
+
+
+
+	Edit Projection Tool:
+	_____________________
+
+	_más para una edición más completa y dedicada, dispondremos de una herramienta de trabajo directamente para la
+
+	interacción y edición de las proyecciones directamente en el viewport 3d
+
+
+	_para lo cuál, debemos de ir al "Stack/Render/Modify/Projection", y en el cuál, debemos de selecionar la 
+
+	opción de "Edit Projection Tool", ó a través, del shortcut, "J", con una proyección uv, seleccionada
+
+
+	_para que así, podamos editar el comportamiento de la proyección uvs, como rotación, dirección ángulo y 
+
+	alcance
+
+
+	_de ésta manera, con "mouse left click", podremos hacer rotaciones del sistema como también, de variar el
+
+	alcance ó penetación de la proyección sobre la superficie
+
+
+	_y con "mouse midle click", podremos hacer sesgados de las proyecciones para que así, podamos hacer diferentes
+
+	tipos de correcciones sobre las uvs, generadas
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+

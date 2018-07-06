@@ -1,0 +1,54 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Toon Paint Rounded:
+	___________________
+
+	_éste es un nodo nos permitirá reproducir materiales de tipo cartoon, de forma plana como también en alto
+
+	detalle a través, de la representación del volúmen por medio de la emulación de la specularidad y reflexión
+
+
+	_de ésta manera, éste nodo de tipo "Paint", el cuál, se concentrará primeramente en el control de las áreas
+
+	tanto del área especular como del área reflectiva
+
+
+	_éste nodo tiene como característica principal que invierte la posición del color difuso con la posición del
+
+	área especular creando un especie de sandwich, defazando la posición de los elementos partes del material y
+
+	superficie
+
+
+	_de ésta manera, podremos controlar el color del material y la especularidad y reflexión emulada sobre el 
+
+	material y superficies
+
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

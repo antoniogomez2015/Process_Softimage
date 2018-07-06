@@ -1,0 +1,164 @@
+
+
+
+
+	Render Nodes in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Bump Generator:
+	_______________
+
+	_para la generación de efectos de relieves sobre superficies dispondremos de los nodos de tipo "Bump Map",
+
+	de ésta manera, debemos de realizar el siguiente workflow, para una correcta representación de los detalles
+
+	en relieve sobre la respectiva superficie
+
+
+
+
+	Basic Material:
+	_______________
+
+	_debemos de aplicar sobre la geometría un material base por ejemplo, un material tipo "Phone"
+
+
+
+	
+	Diffuse Color:
+	______________
+
+	_así, como también, debemos de agregar una imágen que hará de textura como canal difuso dentro del material 
+
+	base en éste caso "Phong"
+
+
+	_lo cuál, podremos realizar yendo al panel "Render Tree/Texture/Image", ó abriendo las propiedades del material
+
+	y yendo a las opciones de "Diffuse/Color", y una vez allí, le damos al input, del plugin, de entrada
+
+
+	_en el cuál, seleccionaremos la opción de "Image", para que así, podamos cargar una imágen externa dentro del
+
+	proyecto
+
+
+
+	
+	Bump Generator:
+	_______________
+
+
+	Node Bump Generador:
+
+	_para posteriormetne ir a las opciones de "Render Tree/Nodes/Bumb/Bumb Generator", de ésta manera, un nuevo
+
+	nodo será agregado al render tree
+
+
+
+	Node Image:
+	___________
+
+	_para que así, procedamos ha crear un nuevo nodo de tipo "Imagen", yendo ha  "Render Tree/Texture/Image",
+
+	para que así, podamos abrir éste nodo y cargar una imágen personalizada del proyecto la cuál, deberá ser 
+
+
+	_la misma textura del "Diffuse Color", pero en éste caso en blanco y negro y con un contraste mayor, a la
+
+	imágen original
+
+
+
+	Nodo Connect:
+	_____________
+
+	_para posteriormente arrastrar el "Output", el nodo "Image", de la imágen en blanco y negro, hasta el 
+
+	"input", del nodo "Bump Generator/", y en el cuál, escogeremos la opción de "Input", en el menú contextual
+
+	que se será abierto para éste proceso
+
+
+	_para posteriormente arrastrar el "Output", el nodo "Bump Generator", hasta el "input", del nodo 
+
+	"Material Base", y en el cuál, escogeremos la opción de "Bump Map", en el menú contextual que se será abierto 
+
+	para éste proceso
+
+
+
+	Bump Activate:
+	______________
+
+	_una vez hemos creado los nodos respectivos y hemos realizado los relacionamientos correctamente debemos de 
+
+	activar el sistema de bump map, para que así, éste sea visible en el proceso de render
+
+
+	_para lo cuál, debemos de abrir las propiedades del nodo "Image", correspondiente a la imágen en blanco y 
+
+	negro
+
+
+	_de ésta maenra, una vez estando en las opciones del nodo "Image", debemos de ubicar las opciones de 
+
+	"Bump Mapping/Enable", para que así, podamos activar las opciones de bump, para éste controlador de imágen
+
+
+
+
+	Bump Settings:
+	______________
+
+	_una vez hemos activa las opciones de bump map, del controlador de imágen podremos hacer ajustes y 
+
+	modificaciones sobre el bump, generado por el sistema
+
+
+	_para lo cuál, dispondremos de los siguientes parámetro:
+
+
+
+		Factor:
+		_______
+
+		_éste parámetro permite controlar el factor de la intensidad del efecto bump, de ésta manera, con un
+
+		valor cercano ha "0", el efecto bump, será sutil y casi inapreciable y con valores más altos de entre
+
+		"5", el efecto bump, será más acusado y apreciable
+
+
+		_más si indicamos valores negativos podremos invertir el sentido del bump map, en relación a nuestras
+
+		necesidades de producción y paso contínuo
+
+
+
+		Step:
+		_____
+
+		_éste es el factor de aglutinamiento ó resolución del bump, es aconsejable variar el factor X, Y, Z, 
+
+		en milésimas hasta obtener un valor visual aceptable al valor real del mapa bump ó normal map, creado 
+
+		previamente
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
