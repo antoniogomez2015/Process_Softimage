@@ -1,0 +1,55 @@
+
+
+
+
+	Render Nodes in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Fast Volume Effects:
+	____________________
+
+
+
+
+	Pass Shaders Volume:
+	____________________
+
+	_para posteriormente abrir las opciones del "default pass", haciendo doble click, sobre su nodo en el 
+
+	"render tree"
+
+
+	_para que así, podamos ir hasta el tag, de "Default pass/Pass Shaders", y una vez allí, debemos bajar hasta
+
+	las opciones de "Volume"
+
+
+	_para que así, podamos darle al botón de "Add", para que así, se abra un menú contextual en el que debemos de
+
+	seleccionar la opción de "Fast_Volume_Effects"
+
+
+	_de ésta manera, el nodo "Fast_Volume_Effects", será agregado al panel render tree, y a su vez éste nodo 
+
+	estará conectado al nodo "Default Pass"
+
+
+
+
+	
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+

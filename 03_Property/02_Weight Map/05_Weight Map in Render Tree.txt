@@ -14,9 +14,41 @@
 	Weight Map in Render Tree:
 	__________________________
 
-	_
+	_tenemos la posibilidad de incorporar el weight map, dentro del panel "render tree", para que así, podamos
+
+	utlizar el weight map, con diferentes nodos
 
 
+	_por ejemplo, en la utilización entre el modo "Mix 2 Colors", al cuál, podremos conectar el parámetro de 
+
+	"Weight", para que así, éste parámetro sea controlado por el mapa de "Weight Map", que hemos importado, otros
+
+
+
+
+	Image Lookup Node:
+	__________________
+
+	_de ésta manera, primeramente debemos de abrir el panel render tree, a través, del shortcut, "7", para que así,
+
+	podamos navegar hasta el nodo "Nodes/Data/Map Lookups/Color_Map_Lookup"
+
+
+	_de ésta manera, podremos acceder a las propiedades del nodo "Color_Map_Lookup", en las cuáles, podremos 
+
+	seleccioanr en las opciones de "Map", el mapa de "Weigt Map", que hemos creado y editado previametne
+
+
+	_para posteriormente arrastrar el "Output", del nodo "Color_Map_Lookup", al "Input", del nodo "Mix 2 Colors",
+
+	para que así, podamos conectar éste con parámetro de "Weights"
+
+
+	_para que así, de ésta manera, ahora el segundo canal del "Mix 2 Colors", sólo afecte al primer canal a través,
+
+	de la información ó área permitira a través, del "Weight Map", lo cuál, podremos ver en el render process
+
+	
 	
 
 	

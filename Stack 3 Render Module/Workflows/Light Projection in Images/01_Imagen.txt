@@ -1,0 +1,91 @@
+
+
+
+
+	Render Nodes in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Light Projection in Imagen:
+	___________________________
+
+
+
+
+
+	Imagen:
+	_______
+
+	_primeramente debemos de crear un plano ó forma de geometría sobre el cuál, se proyectará la imágen y la luz
+
+	a través, de ésta posteriormente
+
+
+	_de ésta manera, una vez que hemos creado el plano de la imágen, debemos de abrir el panel "Render Tree", a
+
+	través, del shortcut, "7", con el mesh, del plano de la imágen seleccionado previamente
+
+
+
+	Create Image Node:
+	__________________
+
+	_para que así, vamos al menú de "Render Tree/Nodes/Texture/", y una vez allí, le damos al nodo de "Image",
+
+	para que así, éste nodo sea agregado al render tree
+
+
+
+	Load Imagen:
+	____________
+
+	_para posteriormente abrir las opciones del nodo "imagen", haciendo doble click, sobre éste para que así, en el
+
+	input, de entrada podamos seleccionar opción de "New/New of File", para que así, se abra el explorar en el cuál,
+
+	debemos de ubicar la imágen ha cargar
+
+
+
+	Imagen Connection:
+	__________________
+
+	_para posteriormente seleccionar el "output", el nodo "imagen", y arrastrar éste sobre el nodo del material por 
+
+	ejemplo, "Phong", para que así, nos aparezca un menú contextual en el cuál, debemos de seleccionar "Diffuse"
+
+
+
+
+	UVs:
+	____
+
+	_una vez hemos creado el plano y hemos cargado una imágen en éste, debemos de crear un mapa de uvs, para que
+
+	así, la imágen pueda proyectarse sobre el plano correctamente
+
+
+	_de éste manera, con el plano de la imágen seleccionado debemos de ir al menú "Get/Property/Texture Map", y 
+
+	una vez allí, seleccionar una de las opciones de coordenadas disponibles, ej; "XY"
+
+
+	_para que así, luego podamos ajustar las cordenadas correcta así, como la posición de la proyección, otros
+
+
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+

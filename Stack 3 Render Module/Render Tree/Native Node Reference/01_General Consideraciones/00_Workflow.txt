@@ -94,6 +94,44 @@
 
 
 
+
+	Asignar Materiales:
+	___________________
+
+
+	Opción 1:
+
+	_tenemos la posibilidad de asignar de forma rápida un material de un elemento ha otro elemento, para lo cuál,
+
+	debemos de seleccionar el objeto al cuál, debeamos pegarle un material
+
+
+	_para seguidamente ir al panel "Get/Material/Assign Material", para que así, nos aparezca un picker, en el 
+
+	viewport, a través, del cuál, pdoremos hacer mouse left click, sobre el objeto con el material ha transpolar
+
+	al otro
+
+
+	_para que así, el material del objeto inicial sea transpolado ó compartido al otro objeto para así, ambos 
+
+	elementos compartan el mismo material
+
+
+
+	Opción 2:
+
+	_otra opción es sin ningún elemento seleccionado ir hasta el panel "Explorer", de la derecha dela interface,
+	
+	y una vez allí, navegar hasta la sección "Source / Clips", y una ve allí, selecciona la opción de "Material"
+
+
+	_para que así, se nos abra un explorer emergente el cuál, nos listará todos los materiales creados en la
+
+	escena para que así, podamos arrastrar uno de éstos sobre el objeto desedo directamente en el viewport
+
+
+
 	
 	Material Manager:
 	_________________

@@ -1,0 +1,112 @@
+
+
+
+
+	Render Nodes in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Light Projection in Imagen:
+	___________________________
+
+
+
+
+
+	Load Light:
+	___________
+
+	_primeramente debemos de seleccionar la luz de tipo spot que hemos creado, sea directamente en el viewport,
+
+	ó a través, de outliner
+
+
+	_para a continuación con éste seleccionada abrir el panel "Render Tree", a través, del shortcut, "7", ó 
+
+	refrescando éste panel
+
+	
+	_para que así, sean cargados los nodos:
+
+
+
+		_light:
+
+			_éste nodo corresponde al luz de tipo spot light, que hemos creado y a sus propiedades y 
+
+			características de configuración
+
+
+		_Soft Light:
+
+			_éste nodo de agrega por defecto al crear un luz, el controla parte de las características
+
+			de la luz ha emitir
+
+
+	
+
+	Fast Light Effects:
+	___________________
+
+	_para a continuación ir al menú "Render Tree/Nodes/Light/", y una vez allí, seleccionar el nodo de 
+
+	"Fast Light Effects", para que así, éste nodo sea agregado al render tree
+
+
+
+
+	Image Connection:
+	_________________
+
+	_para a continuación en el panel de "render tree/Clips", y una vez allí, seleccionar el archivo de la imágen
+
+	ha proyectar a través, del plano de imágen por la luz respectiva
+
+
+	_para que así, éste archivo sea agregado como un nodo de imágen al render tree, para posteriormente proceder
+
+	ha conectar el output, del nodo "image"
+
+
+	_con los inputs, de "Projector_Pic", y "Flare_Preset", para que así, ambos nodos queden conectados
+
+
+
+	
+	Fast Light Effects Connect:
+	___________________________
+
+	_para posteriormente conectar el output, del nodo "Fast Light Effects", con el imput, "Light Shader", del nodo
+
+	"Light"
+
+
+	_quedando desconectado el nodo "Soft Light", el cuál, ya no vamos ha utilizar y podremo eliminar del render tree
+
+
+	_a partir de éste punto, ya la imágen proyectada por la luz, y el plano de la imágen se proyectan sobre la 
+
+	superficie ó suelo sobre la cuál, proyectada la luz
+
+
+	_más ésta luz e imágen aún no son visibles en el ambiente volumétrico 3d
+
+
+
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+

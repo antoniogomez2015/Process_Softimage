@@ -1,0 +1,65 @@
+
+
+
+
+	Render Nodes in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Fast Volume Effects:
+	____________________
+
+
+
+
+	Fast Volume Effects:
+	____________________
+
+	_una vez hemos relacionado correctamente el nodo "Fast_Volume_Effects", debemos ahora relacionar la luz que
+
+	hemos creado de tipo spot, con el nodo "Fast_Volume_Effects"
+
+
+	_para que así, ambos elementos trabajen al unísono y a su vez, con el "Default Pass", para lo cuál, debemos de
+
+	abrir las opciones del nodo "Fast_Volume_Effects"
+
+
+	_para que así, podamos hasta el tag "Fast_Volume_Effects/Volumic/", y una vez allí, debemos de darle a la 
+
+	opción de "Lights/Add", para que así, nos aparezca una opción en la cuál, nos aparecerá la posibiliadd de
+
+	seleccionar un picker
+
+
+	_para que así, se nos abra un menú en el cuál, podremos navegar hasta encontrar la luz que tipo spot, que
+
+	creamos para la poryección de la luz a través, de la imágen y el plano respectivo
+
+
+	_de ésta manera, al haber relacionado los elementos correctamente podremos ver ahora que cuando realizemos
+
+	nuevamente el render podremos ver que ahora si será visible la iluminación en el ambiente como la imágen 
+
+	proyectada en la luz ambiental como en el plano del suelo
+
+
+	
+	
+
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+

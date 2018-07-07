@@ -1,0 +1,63 @@
+
+
+
+
+	Render Nodes in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Fast Volume Effects:
+	____________________
+
+
+
+
+	Load Default Pass:
+	__________________
+
+	_primeramente debemos de cargar el "default pass", dentro del panel "render tree", para lo cuál, lo más 
+
+	práctico e ir al panel "Explorer", de la derecha de la interfacer, y navegar hasta "Explorer/Scene/Pases"
+
+
+	_para que así, una vez allí, le demos doble click, a la opcíon de "Pases", para que así, se abra un menñu
+
+	contextual en el cuál, se mostrará el "dedault pass"
+
+
+	_para que así, podamos seleccionar éste para a continuación agregar éste a una nueva versión del panel
+
+	"render tree", para lo cuál, haremos uso del shortcut, "7"
+
+
+	_para que así, un nuevo panel "render tree", sea mostrado con el nodo del "default pass", de ésta manera, 
+
+	podremos configurar las opciones y características 
+
+
+	_que nos permitirán visualizar la iluminación ambiente directamente en el viewport, y que ésta sea 
+
+	renderizable por el pase actual y por defecto
+
+
+
+
+	
+	
+
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+

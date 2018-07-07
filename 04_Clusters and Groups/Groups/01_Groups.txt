@@ -1,0 +1,93 @@
+
+
+
+
+	Render Nodes in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Groups:
+	_______
+
+	_tenemos la posibilidad de crear grupos de elementos los cuáles, quedará relacionados de manera referencial
+
+	es decir, que su estructura gerárquica no será modificada en el outliner
+
+
+	_de ésta manera, a través, de los grupos podremos acceder rápidamente a los elementos que éste contiene para
+
+	su fácil edición, otros
+
+
+
+
+	Create Group:
+	_____________
+
+	_de ésta manera, para crear un nuevo group, debemos de primeramente seleccionar los elementos del viewport, ó
+
+	del outliner, que deseamos que sean parte del grupo ha crear
+
+
+	_para a continuación ir al menú "Edit/", y en el cuál, seleccionaremos la opción de "Create Group", ó a través,
+
+	del shortcut, "Control + G"
+
+
+	_más también, dispondremos de otra opción, con los elementos respectivos seleccionados vamos ha el panel "Edit",
+
+	pero del lado derecho de la interface, justo debajo del panel "Constrain", y en el cuál, también, encontraremos
+
+	la opción de "Create Group"
+
+
+
+
+	Group Outliner:
+	_______________
+
+	_de ésta manera, una vez hemos creado un grupo, se habrá agregado al outliner, shortcut, "8", un nuevo objeto
+
+	de tipo "Group"
+
+
+	_el cuál, a su vez contendrá una instancia ha modo de duplicado de cada objeto seleccionado a la hora de crear
+
+	el grupo respectivo
+
+
+	_de ésta manera, podremos acceder a las opciones del grupo abriendo éste haciendo doble click, sobre éste
+
+	pudiendo así, editar el nombre del grupo, la visibilidad en el viewport, en el render, animación, entre otras 
+
+	opciones disponibles
+
+
+
+
+	Select Group:
+	_____________
+
+	_una vez hemos creado un grupo, podremos seleccionar todos los elementos parte de un grupo, seleccionando sólo
+
+	uno de los elementos en el modo de "Select/Group", seleccionando ésta opción en el panel derecho de la parte
+
+	superior de la interface
+
+
+	_ó a través, del shortcut, "_Cluster: ¿ (botón al lado izquierdo del backspace)"
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+

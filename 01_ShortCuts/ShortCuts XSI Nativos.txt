@@ -166,7 +166,7 @@ Softimage XSI SHORTCTS Interface Native
 
 			_Shrink Selection: Shift + -
 
-			_Island From Selection: Alt + L
+			_Island From Selection: Alt2 + L
 
 
 
@@ -213,12 +213,14 @@ Softimage XSI SHORTCTS Interface Native
 
 		_Extrude Along Curve: Shift + O
 
+		_Weld Point Tool: Shift + Z (shortcut personalizado)
+
 
 		_Knife: [
 
 		_Add Vertex Tool: Insert | ",", (coma)		
 
-		_Add Edge Tool: Alt + C (shortcut personalizado)		
+		_Add Edge Tool: Alt + C (shortcut personalizado)	
 
 		_Split Edge Tool: Alt + Z (shortcut personalizado)
 

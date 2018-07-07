@@ -1,0 +1,78 @@
+
+
+
+
+	Render Nodes in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Light Projection in Imagen:
+	___________________________
+
+
+
+
+
+	Spot Light:
+	___________
+
+	_de ésta manera, una vez hemos creado el plano de imágen y hemos cargado una imágen correctamente en éste, 
+
+	debemos de entonces crear un nueva luz de tipo spot
+
+
+	_para lo cuál, debemos de ir al menú "Get/Primitive/Light", y una vez allí, selecciona la opción de "Spot",
+
+	para que así, una nueva luz de tipo direccional sea agreada al viewport
+
+
+
+
+	Posicionar Spot Light:
+	______________________
+
+	_de ésta manera, debemos de posicionar ésta nueva luz detrás del plano de la imágen para que así, la luz
+
+	emitida por éste foco de luz sea proyectada a través, de la imágen correctamente
+
+
+
+
+	Ajustar la luz:
+	_______________
+
+	_para lo cuál, podremos ayudarnos a posicionar la luz a través, del shortcut, "B", el cuál, nos permitirá
+
+	visualizar la proyección de la luz directamente en el viewport
+
+
+	_así, como también, de hacer variaciones sobre el ángulo del cono de la luz proyectada para lo cuál, debemos
+
+	de seleccionar el área perimetral del haz de luz proyectada haciendo "mouse midle click", and drag, para que 
+
+	así, podamos extender ó contraer el cono de luz proyectada
+
+
+	_así, como también, podremos seleccionar el área interna proyectada de la luz haciendo "mouse midle click", 
+
+	and drag, para que así, podamos extender ó contraer el área en falloff, ó área en penumbra
+
+
+
+
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
