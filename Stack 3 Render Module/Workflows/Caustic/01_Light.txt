@@ -1,0 +1,83 @@
+
+
+
+
+
+
+	Caustic in Softimage
+
+		Tutorial Caustic Softimage
+			https://www.youtube.com/watch?v=guHrtrhn6MM
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Light:
+	______
+
+
+
+
+
+	Geometry:
+	_________
+
+	_primeramente debemos de crear una geometría en la escena sobre la cuál, deseamos aplicar el efecto de
+
+	Caustic, posteriormente
+
+
+
+
+	Spot Light:
+	___________
+
+	_para posteriormente proceder ha crear un luz de tipo spot light, en la mayoría de los casos por que es la luz
+
+	que podremos direccionar pudiendo así, a su vez, direccionar el efecto
+
+
+	_de ésta manera, debemos de ir al panel "Get/Primitive/Lights/", y una vez allí, seleccionar la opción de "Spot",
+
+	para que así, una nueva luz de tipo spot, sea agregada al viewport 3d
+
+
+	_para que así, procedamos ha re ubicar ésta luz asegurándonos que la luz atraviese toda la geoemtría respectiva
+
+	para garnatizar así, que el efecto caustic, aplique sobre la superficie translúsida posteriormente
+
+
+	_para lo cuál, podremos ayudarnos haciendo visible a luz, del spot light, a través, del shortcut, "B"
+
+
+
+	
+	Caustic:
+	________
+
+	_para posteriormente abrir las opcines de la luz de tipo spot, que hemos creado para que así, podamos ir al tag,
+
+	"Photon", y una vez allí podamos activar la opción de "Caustics"
+
+
+	
+
+	
+
+
+	
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+

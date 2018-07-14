@@ -1,0 +1,113 @@
+
+
+
+
+
+
+	Caustic in Softimage
+
+		Tutorial Caustic Softimage
+			https://www.youtube.com/watch?v=guHrtrhn6MM
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Caustic:
+	________
+
+
+
+
+
+	Activate:
+	_________
+
+	_en éste punto debemos de ir a las opciones del panel "Stack/Render/Render/Regions/", y una vez allí, 
+
+	seleccionar "All Options"
+
+
+	_para que así, podamos ir al "tag", "GI and Caustics", para que así, podamos ir a las opciones de "Caustics",
+
+	y una vez allí, activar la opción de "Enable"
+
+
+	_para que así, el sistema comience ha emitir caustics, en la iluminación con emisión de caustics, y la
+
+	geometría receptoca de caustics
+
+
+
+
+	Adjustment:
+	___________
+
+	_más para ajustar el efecto y visualización de caustic, debemos de ir las opciones de luz a la cuál, le hemos
+
+	activado las opciones de caustic
+
+
+
+		Energy:
+
+
+			Intensity:
+
+				_éste parámetro nos permitirá indicarle al sistema la intensidad ó lo acusado del efecto
+
+				de ésta manera, manera, podremos crear un efecto caustico más sutil ó acudado
+
+
+				_éste parámetro adicionalmente en valores altos también, aumentará la capacidad de 
+
+				representar más detalles de efecto caustico que en valores bajos
+
+
+				_de ésta manera, en valores altos aplotarán estallidos de caustica en todas direcciones
+
+				en relación a la forma de la geometría respectiva
+
+
+		Number of Emitted Phothon:
+
+
+			Caustic:
+
+				_éste parámetro nos permitirá indicarle al sistema cuán detallado y definido deseamos
+
+				el efecto caustico, de ésta manera, con valores bajos lograremos un efecto segmentado
+
+				y con poco detalle
+
+
+				_más con valores altos crearemos un efecto caustico más detallado y con más resolución
+
+				y valores tonames
+
+
+
+	
+
+	
+
+	
+
+	
+
+
+	
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+

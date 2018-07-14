@@ -1,0 +1,95 @@
+
+
+
+
+
+
+	Caustic in Softimage
+
+		Tutorial Caustic Softimage
+			https://www.youtube.com/watch?v=guHrtrhn6MM
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Material:
+	_________
+
+
+
+
+
+	Material Manager:
+	_________________
+
+	_de ésta manera, debemos de seleccionar el mesh, del motivo y con éste seleccionado debemos de abrir el panel
+
+	de material manager, a través, del shortcut, "Control + 7"
+
+
+	_para que así, podamos ir a las opciones de "Create", y una vez allí crear un nuevo material por ejemplo 
+
+	"Architectural", ó "Phong"
+
+
+	_para posteriormente seleccionar el nuevo material creado y hacer "mouse right click", para que así, nos 
+
+	aparezca un menú contextual en el que debemos seleccionar la opción de "Assign to Selection"
+
+	
+	_para que así, el respectivo material sea agregado el objeto ó mesh, seleccionada previametne
+
+
+
+
+	Transparency Material:
+	______________________
+
+	_para a continuación abrir las opciones del material que hemos creado para lo cuál, debemos hacer doble click,
+
+	sobre el nodo del material que hemos creado anteriormente
+
+
+	_de ésta manera, si hemos creado un material de tipo de "Architectural", debemos ir al "tag", 
+
+	"Transparency / Reflection"
+
+
+	_y en el cuál, debemos de ir la opción de "Refraction", en la cuál, debemos de color el valor de "Transparency",
+
+	en "1"
+
+
+	_ó si hemos creado un material de tipo "Phong", por ejemplo debemos de ir al "tag" "Transparency / Reflection",
+
+	y en el cuál, debemos de ir a la opcíon de "Mix Color", y una vez allí cambiar el valor de luminancia
+
+
+	_de una valor de negro absoluto ha un gris ó un blanco respectivamente dependiendo de la cantidad de reflexión
+
+	deseada y color opcionalmente 
+
+
+	
+
+	
+
+	
+
+
+	
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+

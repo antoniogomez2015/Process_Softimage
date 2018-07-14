@@ -1,0 +1,74 @@
+
+
+
+
+	Render Nodes in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Light Limits:
+	_____________
+
+	_tenemos la posibilidad de limitar la emisión de luz proyectada a través, de un plano ó superficie y por 
+
+	medio de un haz de luz
+
+
+	_de ésta manera, podremos restringir la emisión de luz por ejemplo, por el marco de una ventana, portico de
+
+	pidras otros
+
+
+	_para que así, el efecto sea vea contenido y más realista y creible y relacionado con su entorno
+
+
+
+
+
+	Volumetric Properties:
+	______________________
+
+	_para lo cuál, debemos de seleccionar la light, de tipo spot, que hemos creado y configurado previamente, sea
+
+	directamente en el viewport, ó el outliner
+
+
+	_para que así, con ésta luz seleccionada proceder ha abrir el panel render tree, a través, del shortcut, "7"
+
+
+	_para que así, ésta luz sea cargada dentro del panel render tree, para que así, podamos abrir el nodo 
+
+	"Light", ó ultimo nodo final del spot light
+
+
+	_para que así, podamos abrir las propiedades de ésta haciendo doble click, sobre su nodo dentro del panel
+
+	render tree
+
+
+	_y en las cuáles, debemos de ubicar el tag, "Shadow Map", para que así, podamos activas las opciones de 
+
+	"Use Shadow Map"
+
+	
+	_y para seguidamente también, activar las opciones de "Use Volumetric Shadow Map"
+
+	
+	
+
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+

@@ -1,0 +1,69 @@
+
+
+
+
+
+
+	Displacement Map in Softimage
+
+		tutorial displacement softimage
+			https://www.youtube.com/watch?v=xHojn2xGKPA
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Scalar Change Range:
+	____________________
+
+
+
+
+
+	Load Node:
+	__________
+
+	_para a continuación ir al panel "Render Tree/Node/Processing/Math", y una vez alli cargar el nodo 
+
+	"Scalar_Chance_Range", como un nuevo nodo dentro del render tree
+
+
+
+	Node Connection:
+	________________
+
+	_de ésta manera, debemos de conectar el nodo "Scalar_Chance_Range", entre el nodo "Color_to_Scalar", 
+
+	y el nodo "Material"
+
+
+	_para lo cuál, debemos de seleccioanr el "Output", el nodo "Color_to_Scalar", y arrastrarlo hasta el 
+
+	input "Input", del nodo "Scalar_Chance_Range"
+
+
+	_para a continuación seleccionar el "Output", del nodo "Scalar_Chance_Range", y arrastrarlo hasta el
+
+	input "Displacement", del nodo "Material"
+
+
+
+	
+
+
+
+	
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+

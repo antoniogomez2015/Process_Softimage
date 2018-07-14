@@ -1,0 +1,77 @@
+
+
+
+
+	Render Nodes in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Light Limits:
+	_____________
+
+	_tenemos la posibilidad de limitar la emisión de luz proyectada a través, de un plano ó superficie y por 
+
+	medio de un haz de luz
+
+
+	_de ésta manera, podremos restringir la emisión de luz por ejemplo, por el marco de una ventana, portico de
+
+	pidras otros
+
+
+	_para que así, el efecto sea vea contenido y más realista y creible y relacionado con su entorno
+
+
+
+
+
+	Visibility:
+	___________
+
+	_de ésta manera, ahora debemos seleccionar el mesh, correspondiente al motivo que hará de obstrucción del
+
+	plano de la ventana, como por ejemplo; un marco, reja, portico, otros
+
+
+	_para que así, el obstáculo respectivo seleccionado debemos de abrir sus opciones de visibilidad para lo cuál,
+
+	dispondremos de dos opciones rápidas
+
+
+	_una es a través, del menú explorer express, a través, del shortcut, "Shift + F3", donde podremos hacer doble
+
+	click, sobre la sección de "Visibility"
+
+
+	_y como también, yendo a las opciones de "Selection", de la parte medio del panel de propiedades de la parte
+
+	derecha de la interface, y en donde también, podremos hacer doble click, sobre "Visibility"
+
+
+
+	_de ésta manera, una vez ya estando en el panel "Visibility", debemos de ubicar el tag "Rendering", y una vez
+
+	allí, debemos de ubicación la sección de "Ray Visibility"
+
+
+	_y en la cuál, debemos de desmarcar la opción de "Secundary"
+
+	
+	
+
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+

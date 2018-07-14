@@ -1,0 +1,172 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Optimization:
+	_____________
+
+	_ésta serie de parámetros por módulo ó por sección nos permitirá controlar el comportamiento e interacción de
+
+	los diferentes  parámetro para que así, éstos vayan más rápido ó se comporten de manera, alternativa
+
+
+	_lo que nos permitirá conseguir más rapidez y a su vez, diferentes efectos y características 
+
+
+
+
+	
+	Interpolate Reflection / Refractopm:
+
+
+		_Grid Density:
+
+			_
+
+
+		_Single Enviroment Sample:
+
+			_
+
+
+
+	Refraction:
+
+
+		_Enable:
+
+			_
+
+
+		_Samples:
+
+			_
+
+
+
+
+	Reflection:
+
+
+		_Enable:
+
+			_
+
+
+		_Samples:
+
+			_
+
+
+		_Distance On:
+
+			_
+
+
+		_Distance:
+
+
+
+	Refraction:
+
+		
+		_Trace Depth:
+
+			_
+
+
+		_Cauoff:
+
+			_
+
+
+
+	Falloff:
+
+		
+		_Enable:
+
+			_
+
+
+		_Distance:
+
+			_
+
+
+		_Use End Color:
+
+			_
+
+
+		_End Color:
+
+			_
+
+
+
+	Reflection:
+
+
+		_Highlights Only:
+
+			_
+
+
+		_Trace Depth:
+
+			_
+
+
+		_Cutoff:
+
+			_
+
+
+
+		Falloff:
+
+
+			_Enable:
+
+				_
+
+
+			_Distance:
+
+				_
+
+
+			_Use End Color:
+
+				_
+
+
+			_Color:
+
+				_
+
+
+		
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

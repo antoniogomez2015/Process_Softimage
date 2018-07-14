@@ -1,0 +1,74 @@
+
+
+
+
+
+
+	Caustic in Softimage
+
+		Softimage 2011 - Ambient Occlusion Pass Tutorial
+			https://www.youtube.com/watch?v=TzH_mIqfQXU
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Ambient Occlusion:
+	__________________
+
+
+
+
+
+	Material Manager:
+	_________________
+
+	_una vez hemos creado y configurado un nuevo pass, vacio debemos de abrir el panel "material manager", a través,
+
+	del shortcut, "Control + 7"
+
+
+	_para que así, podamos crear un material configurado para ambient occlusion el cuál, será utilizado para todo
+
+	el pass de "AO", que hemos configurado en el paso anterior
+
+
+
+
+	New Material:
+	_____________
+
+	_de ésta manera, estando en el panel "material manager", debemos de ir al menú de "Create", y una vez allí,
+
+	debemos de crear un material por ejempo un "lambert"
+
+
+	
+
+	Ambient Occlusion Node:
+	_______________________
+
+	_para a continuación aún estando en el panel ir ha "material manager/Nodes/Illumination", y una vez allí,
+
+	agregar un nodo de tipo "Ambien Occlusion"
+
+
+	_para que así, podamos seleccionar el "Output", del nodo "Ambient Occlusion", el cuál, debemos de arrastrarlo
+
+	hasta el nodo de "Input", de tipo "Surface", del nodo "Material", ó como lo hayamos renombrado
+
+	
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+

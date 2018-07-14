@@ -1,0 +1,82 @@
+
+
+
+
+
+
+	Caustic in Softimage
+
+		Softimage 2011 - Ambient Occlusion Pass Tutorial
+			https://www.youtube.com/watch?v=TzH_mIqfQXU
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	New Pass:
+	_________
+
+
+
+
+
+	Empty:
+	______
+
+	_debemos de crear un nuevo pass, en el cuál, realizaremos el nuevo material, partición de elementos de ser
+
+	requerida y demás asignaciones especiales sobre los elementos ó geometría y materiales, otros
+
+
+	_de ésta manera, debemos de ir al menú "Render/Pass/Edit/New Pass/", y una allí, podremos elegir una de las
+
+	opciones de "Ambient", ó "Ambient Diffuse", otros
+
+
+	_paro la opción más práctiva es seleccionar la opción de "Empty", para que así, podamos personalizar una 
+
+	salida de objeto y materiales específica y personalizada a nuevas necesidades
+
+
+
+
+	Setting Pass:
+	_____________
+
+	_de ésta manera, una vez hemos creado un nuevo pass, vacío se nos abrirá el panel de propiedades con las
+
+	opciones de "Pass Options"
+
+
+	_para que así, podamos configurar las opciones de:
+
+
+
+		Output:	
+		_______
+
+		_de ésta manera podremos configurar un nombre personalizado para el pass, por el "AO", de ambient 
+
+		occlusion
+
+
+		_así, como también, un nombre para el archivo de destino como su formato, también, podremos seleccionar
+
+		la cámara deseada entre otras opciones disponibles
+
+
+	
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+

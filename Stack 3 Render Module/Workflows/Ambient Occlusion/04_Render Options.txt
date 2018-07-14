@@ -1,0 +1,149 @@
+
+
+
+
+
+
+	Caustic in Softimage
+
+		Softimage 2011 - Ambient Occlusion Pass Tutorial
+			https://www.youtube.com/watch?v=TzH_mIqfQXU
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Render Options:
+	_______________
+
+
+
+
+
+	Regions Options:
+	________________
+
+	_en éste punto debemos de ir al panel "Stack/Render/Render/Regions/", y una vez allí, abrir las opciones de
+
+	"All Options"
+
+
+	_en la cuál, debemos de ir al "tag", de "Ambien Occlusion", en la cuál, debemos de activar la opción de "Enable"
+
+
+
+	
+	Select Pass:
+	____________
+
+	_una vez configurado y asignado el material en el pass AO, debemos de seleccionar éste en el top, de una
+
+	interface, lado de la sección "Stack", de ésta manera, debemos seleccionar el pass "AO"
+
+
+	_para que así, podamos renderizar y hacer pruebas de la configuración de AO, hasta que éste se vea con lo 
+
+	necesitamos
+
+
+
+
+	AO Setting:
+	___________
+
+	_para a continuación volver al panel "Material Manager", a través, del shortcut, "Control + 7", y una vez allí,
+
+	seleccionar el nodo y material del "AO", para que así, podamos entrar en las opciones del nodo 
+
+	"Ambient Occlusion"
+
+
+
+	_para que así, podamos configurar las opciones hasta lograr los resultados deseados:
+
+
+
+		Number of Samples:
+
+			_éste parámetro nos permitirá indicarle al sistema la cantidad de samples ó pases para el
+
+			cálculo de AO, de ésta manera, entre mayor cantidad de pases mayor será la resolución ó
+
+			definición obtenida
+
+
+			_de ésta manera, con valores altos como "128", nos permitirán ir eliminando el reuido,
+
+			granulado y artefactos posibles
+
+
+			_de ésta manera, debemos ir bajando ó subiendo en valores exponenciales, ej: "12,24,48,..",
+
+			hasta la definición deseada ó mínima aceptable
+
+
+
+		Bright Color:
+
+			_éste parámetro nos permitirá indicarle al sistema un color personalizado pero por lo 
+
+			general el color y valor de luminancia mejor siempre será el blanco en éste caso
+
+
+
+		_Dark Color:
+
+			_éste parámetro nos permitirá indicarle al sistema un color personalizado pero por lo 
+
+			general el color y valor de luminancia mejor siempre será el negro en éste caso
+
+
+
+		_Spread:
+
+			_éste parámetro nos permitirá indicarle al sistema el valor de acutancia del "AO", ha
+
+			generar 
+
+
+			_es decir, que podremos hacer que la prolongación del efecto de las sombras entre los 
+
+			elementos sea más corta ó más larga
+
+
+			_de ésta manera, podremos cambiar el contraste de la escena y la profundidad de la gama
+
+			tonal conseguida lo cuál, cambiará los resultados globales y la apariencia del mapa
+
+
+			_los valores más recomendados entán entre valores de "0.5 - 2", siendo "1", la más 
+
+			recomendada
+
+
+
+		_Maximum Distance:
+
+			_ésta parámetro nos permitirá indicarle al sistema el umbral del alcance del mapa ha generar
+
+			es decir, que en relación a la distancia de la cámara es qu interactuará al sistema de AO
+
+
+			_de ésta manera, podremos interactuar y disminuir y aumentar el contraste y capacidad de
+
+			penetración del sistema de AO, sobre los elementos de la escena
+	
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+

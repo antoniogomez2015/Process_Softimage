@@ -95,7 +95,7 @@
 	superficie ó suelo sobre la cuál, proyectada la luz
 
 
-	_más ésta luz e imágen aún no son visibles en el ambiente volumétrico 3d
+	_más ésta luz e imágen aún no serán visibles en el ambiente volumétrico 3d
 
 
 

@@ -1,0 +1,54 @@
+
+
+
+
+
+
+	Caustic in Softimage
+
+		Softimage 2011 - Ambient Occlusion Pass Tutorial
+			https://www.youtube.com/watch?v=TzH_mIqfQXU
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Partition:
+	__________
+
+
+
+
+
+	Explorer:
+	_________
+
+	_para a continuación proceder ha abrir el panel "explorer", a través, del shortcut, "8", y en el cuál, debemos
+
+	de pasar del modo "Scene Root", al modo "Current Pass", a través, del shortcut, "U"
+
+
+	_para que así, podamos arrastrar el nuevo nodo ó material que hemos creado en el panel "manterial manager",
+
+	dentro del panel "Explorer", sobre el elemento "Background_Objects_Partition"
+
+
+	_para que así, el material que hemos creado como "AO", se asigne a todos los elementos agrupados dentro de ésta 
+
+	partición heradada de la escena original
+
+	
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+

@@ -1,0 +1,71 @@
+
+
+
+
+
+
+	Caustic in Softimage
+
+		Tutorial Caustic Softimage
+			https://www.youtube.com/watch?v=guHrtrhn6MM
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Visibility:
+	___________
+
+
+
+
+
+	Activate:
+	_________
+
+	_primeramente debemos de seleccionar el mesh, del motivo y con éste seleccionado debemos de abrir el panel 
+
+	de outliner, a través, del shrotcut "8"
+
+
+	_ó también, podremos abrir el panel contextual del explorer expres a través, shortcut, "Shift + F3", y en el
+
+	cuál, debemos de ubicar y abrir las opciones de "Visibility"
+
+
+
+
+	Rendering Tag:
+	______________
+
+	_de ésta manera, una vez hemos abierto las opciones de "Visibility", debemos de ir al tag "Rendering", y en
+
+	cuál, debemos de ubicar las opciones de "Caustic"
+
+
+	_para que así, podamos activar la opción de "Caster", de ésta manera, el mesh, del motivo ahora podrá emitir
+
+	el efecto caustic
+
+	
+
+	
+
+	
+
+
+	
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+

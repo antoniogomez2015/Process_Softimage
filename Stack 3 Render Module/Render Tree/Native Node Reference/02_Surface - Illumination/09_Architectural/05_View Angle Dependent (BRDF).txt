@@ -1,0 +1,91 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	View Angle Dependent (BRDF):
+	____________________________
+
+	_en las opciones del material "Architectural", dispondremos del "tag" "Transparency / Reflection", en el 
+
+	cuál, dispondremos de las opciones de "View Angle Dependent (BRDF)", las cuáles, nos permitirá crear material 
+
+	con reflexiones aún mayores ó extendidas
+
+
+	_de ésta manera, podremos agregar un nivel superior de reflexiones las cuáles, casi alcanzan las generadas
+
+	por material de tipo "Phong"
+
+
+
+
+
+	Mnual:
+	______
+
+
+
+	Facing Reflectivity:
+
+		_éste parámetro nos permitirá aumentar la reflectividad en el material ha nivel general de ésta 
+
+		manera, con valores cercanos ha "0", la reflectividad será casi inexistente
+
+
+		_más con valores cercanos ha "1", la reflectividad será casi total ó muy acusada
+
+
+
+	Perpendicular Reflectivity:
+
+		_éste parámetro nos permitirá realizar leves ajuste en el ángulo de la reflectividad aunque a 
+
+		simple vista los cambios no serán tan apreciables
+
+
+		_por lo general sólo será visible en las áreas perimetrales de la forma del motivo las cuáles,
+
+		se verán con una reflectividad más gruesa ó acusada que de las áreas internas
+
+		
+
+	Curve Falloff:
+
+		_éste parámetro nos permitirá crear un fundido entre la reflectividad de las áreas internas y 
+
+		las áreas perimetrales
+
+
+		_de ésta manera, podremos hacer un mejor calado en las áreas con reflexiones más gruesas ó más 
+
+		acusadas y las áres con reflexiones más sutiles ó ligeras
+
+
+	Conserve Energy:
+
+		_indeterminado
+
+
+		
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

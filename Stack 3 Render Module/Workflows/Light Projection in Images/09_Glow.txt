@@ -1,0 +1,48 @@
+
+
+
+
+	Render Nodes in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Glow:
+	_____
+
+	_una vez hemos realizado todo el proceso tendremos de la posibilidad de agrear el efecto "Glow", sobre la 
+
+	superficie que emitirá la luz y proyectará a su vez la imagén
+
+
+	_para que así, sea sumado ha éste esfecto el efecto propiamente del resplandor de luz para lo cuál, debemos
+	
+	de seleccionar el mesh, del plano respectivo y con éste seleccionado para al panel "Get/Property" 
+
+
+	_y una vez allí, debemos de seleccionar la opción de "Glow", para que así, se abra el panel de propiedades del
+
+	efecto glow 
+
+
+	_de ésta manera, podremos indicarle al sistema si deseamos una emisión de luz de un color determinado ó que 
+
+	tome el muestreo de color de la propia imágen proyecto que lo más recomendado para la mayoría de los casos
+	
+	
+
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+

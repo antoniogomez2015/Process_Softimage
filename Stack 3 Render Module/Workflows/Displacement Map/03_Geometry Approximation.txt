@@ -1,0 +1,185 @@
+
+
+
+
+
+
+	Displacement Map in Softimage
+
+		tutorial displacement softimage
+			https://www.youtube.com/watch?v=xHojn2xGKPA
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Geometry Approximation:
+	_______________________
+
+
+
+
+
+	Apply Mode:
+	___________
+
+	_con el mesh, del motivo seleccionado debemos de ir al panel "Get/Property/", y una vez allí, seleccionar la
+
+	opción de "Geometry Approximation", para que así, ésta se agregada el mesh, del motivo seleccionado en el 
+
+	panel outliner
+
+
+	_de ésta manera, seleccionando el mesh, del motivo podremos ir al panel outliner, y entrar las opciones de
+
+	Geometry Approximation, para editar las opciones y configuración general de éste modo
+
+
+
+
+	Polygon Mesh:
+	_____________
+
+	_de ésta manera, una vez hemos aplicado el modo de "Geometry Approximation", podremos ir su tag "Polygon Mesh",
+
+	en la cuál, podremos configurar las siguientes opciones:
+
+
+
+		Discontinuity:
+
+
+			Angle:
+
+				_éste valor efectara el ángulo relativo de la luz para la generación del efecto sobre la
+
+				geometría
+
+
+
+		Subdivision:
+
+
+			OGL Level:
+
+				_éste valor efectará a la capacida de representar el detalle en el viewport 3d, es decir,
+
+				que con valores más bajos el detalle será más ámplio 
+
+
+				_y con valores más altos el detalle será más refinado y aglomerado
+
+
+			_Render Level:
+
+				_éste valor tiene las mismas aplicaciones que el valor anterior pero relacionadas
+
+				al render a realizar
+
+
+
+
+
+	Displacement:
+	_____________
+
+	_de ésta manera, una vez hemos aplicado el modo de "Geometry Approximation", podremos ir su tag "Displacement",
+
+	en la cuál, podremos configurar las siguientes opciones:
+
+
+
+	_"Parametric", "Length/Distance/Angle", y "Fine", la cuáles, nos darán diferentes variaciones sobre el tipo
+
+	de displacemente ha conseguir a través, de diferentes parámetros respectivamente, siendo la opción de "fine",
+
+	la opción más recomendada
+
+
+
+		Max Displ...:
+
+			_éste es un parámetro general a través, del cuál, podremos controlar la fuerza bruta del efecto
+
+			de ésta manera, con valores bajos podremos que efecto sea casi imperceptible más con valores 
+
+			altos el efecto será brutal
+
+
+
+		Refinement Setting:
+
+
+			Length:
+
+				_éste parámetro nos permitirá indicarle al sistema cuán abrasivo ó tramado será el efecto
+
+				generado de ésta manera, podremos crear efectos más densos ó aglutinados 
+
+
+				_como también, podremos crear efectos más ámplios u orgánicos y ligeros en relación a
+
+				nuestras necesidades
+
+
+				_de ésta manera, con valores más bajos crearemos efectos más aglutinados y densos y con
+
+				valores más altos, crearemos efectos más ligeros y orgánicos
+
+
+			Sharpness..(%):
+
+				_éste parámetro nos permitirá aumentar el contraste entre la formas generadas por el
+
+				sistema, es decir, a través, de éste parámetro podremos controlar la acutancia entre el
+
+				efecto generado
+
+
+				_de ésta manera, con valores más bajos podremos crear efectos más orgánicos y cremosos
+
+				y con valores más altos podremos crear efectos más sintéticos y con bordes duros
+
+
+
+		Subdivision Limit - Recursive Steps:
+
+
+			Min:
+
+				_éste parámetro nos permitirá ajustar la capacidad de representar el detalle del sistema
+
+				así, como también de hacer variaciones del sistema
+
+
+			Max:
+
+				_éste parámetro nos permitirá ajustar la capacidad de representar el detalle del sistema
+
+				así, como también de hacer variaciones del sistema
+
+
+
+
+
+	_de ésta manera, a través, de éstos parámetros podremos potenciar y personalizar el displacement, ha generar
+
+	
+
+
+
+	
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+

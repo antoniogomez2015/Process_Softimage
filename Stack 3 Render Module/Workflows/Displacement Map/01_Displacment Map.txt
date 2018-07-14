@@ -1,0 +1,91 @@
+
+
+
+
+
+
+	Displacement Map in Softimage
+
+		tutorial displacement softimage
+			https://www.youtube.com/watch?v=xHojn2xGKPA
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Displacement Map:
+	_________________
+
+
+
+
+
+	Imagen:
+	_______
+
+	_primeramente debemos de crear una geometría en la escena sobre la cuál, deseamos aplicar el efecto de
+
+	displacement map, posteriormente
+
+
+	_de ésta manera, una vez que hemos creado la geometría respectiva, debemos de abrir el panel "Render Tree", a
+
+	través, del shortcut, "7", con el mesh, del plano de la imágen seleccionado previamente
+
+
+
+	Create Image Node:
+	__________________
+
+	_para que así, vamos al menú de "Render Tree/Nodes/Texture/", y una vez allí, le damos al nodo de "Image",
+
+	para que así, éste nodo sea agregado al render tree
+
+
+
+	Load Imagen:
+	____________
+
+	_para posteriormente abrir las opciones del nodo "imagen", haciendo doble click, sobre éste para que así, en el
+
+	input, de entrada podamos seleccionar opción de "New/New of File", para que así, se abra el explorer en el cuál,
+
+	debemos de ubicar la imágen ha cargar
+
+
+
+	Imagen Connection:
+	__________________
+
+	_para posteriormente seleccionar el "output", el nodo "imagen", y arrastrar directamente éste sobre el node 
+
+	"Output", del material aplicado, es decir, no sobre el nodo por ej; "Phong", sino sobre el nodo "Material", 
+
+	final ó como lo hayamos renombrado
+
+
+	_para que así, nos aparezca un menú contextual en el cuál, debemos de seleccionar "Displacement Map"
+
+
+	_de ésta manera, a partir de éste punto se agregará el nodo "Color_to_Scalar", como un nodo intermedio 
+
+	entre el nodo "Imagen", y el nodo "Material"
+
+
+
+
+	
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+

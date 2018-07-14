@@ -1,0 +1,86 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Anisotropy:
+	__________
+
+	_en las opciones del material "Architectural", dispondremos del "tag" "Transparency / Reflection", en el 
+
+	cuál, dispondremos de las opciones de "Anisotropy", las cuáles, nos permitirá crear material 
+
+	con reflexiones esmeriladas pero a su vez, especularidades direccionadas y afiladas
+
+
+	_de ésta manera, podremos crear diferentes tipo de materiales por lo general metálicos y pulidos ó esmerilados, 
+
+	entre otras muchas posibilidades
+
+
+
+
+	
+	Anisotropy:
+
+		_éste parámetro nos permitirá indicar la cantidad ó umbral de efecto anisotropy, es decir, que con
+
+		valores cercanos ha "0" 
+
+
+		_el efecto anisotropy, será casi inexistente y más con valores cercanos ha "1", ó superiores el 
+
+		efecto de anisotropy, será mucho más acusado
+
+
+		NOTA: éstos parámetros tendrán efecto y repercución visible ó acusada cuando en los valores de 
+
+		"Reflection", activemos las opciones de "Roughness", con valores inferiores ha "1", y cercanas ha 
+
+		"0"
+
+
+	Rotation:
+
+		_éste parámetro nos permitirá indicar la gradi de la orientación del efecto anisotropy, ó 
+
+		especularidad direccionada y afilada ó refinada
+
+
+		_de ésta manera, podremos personalizar la dirección de especularidad esmerilada generada
+
+
+		NOTA: la dirección de la especularidad esmerilada del efecto anisotropy, también, estará 
+
+		superditada los las UVs, del motivo respectivo
+		
+
+	Texture Space:
+
+		_éste parámetro nos permitirá generar unos uvs, genéricos para la creación y personalización
+
+		del efecto anisotropy
+
+
+		
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

@@ -46,7 +46,7 @@
 
 	_para posteriormente abrir las opciones del nodo "imagen", haciendo doble click, sobre éste para que así, en el
 
-	input, de entrada podamos seleccionar opción de "New/New of File", para que así, se abra el explorar en el cuál,
+	input, de entrada podamos seleccionar opción de "New/New of File", para que así, se abra el explorer en el cuál,
 
 	debemos de ubicar la imágen ha cargar
 
@@ -58,6 +58,11 @@
 	_para posteriormente seleccionar el "output", el nodo "imagen", y arrastrar éste sobre el nodo del material por 
 
 	ejemplo, "Phong", para que así, nos aparezca un menú contextual en el cuál, debemos de seleccionar "Diffuse"
+
+
+	_así, como también debemos de conectar el "Output", del nodo "Imagen", con el "input", "Ambient", del nodo
+
+	"Phong", por ejejmplo
 
 
 

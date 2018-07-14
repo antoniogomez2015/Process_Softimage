@@ -1,0 +1,45 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Architectural:
+	______________
+
+	_éste es un nodo de uso general el cuál, nos permitirá reproducir todo tipo de materiales tanto  plásticos como 
+
+	altamente reflectivos y refractivos incluso mayores y más afinados que "Phong"
+
+
+	_de ésta manera, podremos lograr la más ámplia gama de materiales mixtos con especularidades más afiladas y con 
+
+	reflejos más extremos y refinados 
+
+	
+	_lo cuál, es especialmente útil para superficies altamente brillantes como vidrios entre otros materiales 
+
+	translúcidos
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+
