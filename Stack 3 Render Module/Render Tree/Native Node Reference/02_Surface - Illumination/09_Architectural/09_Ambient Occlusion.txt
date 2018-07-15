@@ -1,0 +1,115 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Ambient Occlusion:
+	_________________
+
+
+	_ésta serie de parámetros por módulo ó por sección nos permitirá hacer variaciones sobre el ambient occlusion
+
+	de ésta manera, podremos personalizar el AO, generado por la iluminación global y las superficies
+
+
+	
+
+	Final Gather:
+	_____________
+
+	_primeramente debemos de ir ha "Stack/Render/Render/Regions", y un vez allí, debemos abrir las opciones de
+
+	"All Options"
+
+
+	_para que así, podamos ir al "tag", "Final Gathering", para que así, pueda generarse el efecto de ambient
+
+	occlusion
+
+
+
+
+	Materials:
+	__________
+
+	_para que el sistema funcione, tanto el mesh, del motivo como el mesh, del suelo tendrán que tener un material
+
+	aplicado de tipo "Architectural", sea el mismo ó independientes uno del otro
+
+
+	_para que así, ha ambos materiales les activemos las opciones de "Ambient Occlusion", para que así, ambos
+
+	materiales respondan y reacciones a los cambios del AO, de forma personalizada
+
+
+	_de ésta manera, con ambos materiales seleccionados en el "Material Manager", podremos abrir sus propiedades
+
+	y editar las opciones de "AO", de forma conjunta para que así, ambos materiales reciban los mismos parámetros
+
+
+
+
+	
+	_Enable:
+
+		_éste parámetro nos permitirá activar las opciones de ambient occlusion personalizado para éste 
+
+		material
+
+
+	_Samples:
+
+		_éste parámetro nos permitirá indicarle al sistema la cantidad de samples ó pases lo que permitirá
+
+		una mayor definición ó resolución sobre el AO, generado
+
+
+		_de ésta manera, con valores cercanos ha "0", la resolución será menor pero más rápida, de ésta manera,
+
+		si indicamos valores altos, la resolución será mayor y más definida más el render será más lenta
+
+
+	_Detail Enhancement:
+
+		_éste parámetro nos permitirá indicarle al sistema que realize el AO, personalizado a través, de la
+
+		iluminación global ó final gather, ó la realize a través, de un color personalizado lo cuál, hará un
+
+		efecto de spill color
+
+
+	_Shadow Color:
+
+		_éste parámetro a través, de un picker, nos permnitirá indicar un color personalizado para generación
+
+		del AO, personalizado
+
+
+	_Ambien Color:
+
+		_éste parámetro a través, de un picker, nos permnitirá indicar un color personalizado para generación
+
+		de la iluminación ambiental, personalizada parte de la iluminación global ó final gather
+	
+		
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

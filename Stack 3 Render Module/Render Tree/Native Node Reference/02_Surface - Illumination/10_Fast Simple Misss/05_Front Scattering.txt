@@ -1,0 +1,117 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Front Scattering:
+	_________________
+
+
+
+	Color:
+
+	_éste parámetro nos permitirá indicarle al sistema cuál, será el color de la superficie interna ó subcutánea del 
+
+	material así,como también, cuál, será el valor de luminancia de éste
+
+
+	_para lo cuál, dispondremos de un selector de color a través, del cuál, podremos indicar un color 
+
+	personalizado como también, para la luminancia
+
+
+	
+	Weight:
+	_______
+
+	_éste parámetro nos permititá controlar la influencia ó peso del material en la parte frontal de cara a la
+
+	cámara de la escena respectiva
+
+
+	_de ésta manera, podremos hacer que la parte delantera tenga más influencia que la parte tracera del objeto
+
+	ó rostro respectivamente
+
+
+	_para la mayoría de los casos en los que representamos elementos orgánicos sólidos, los valores más 
+
+	recomendables son fontal "0.6", tracero ó posterior "0.4", para que así, el área frontal tenga más peso
+
+
+	
+	Radius:
+	_______
+	
+	_éste parámetro nos permitirá controlar el umbral ó rango de penetración de la parte frontal en relación a la
+
+	parte posterior ó tracera del objeto ó rostro respectivamente
+
+
+	_de ésta manera, podremos controlar cuál, será el área con un mayor grosor ó amplitud de alcance en relacíón
+
+	a la otra parte opuesta
+
+
+	_de ésta manera, indicando valores cercanos ha "0", la la influencia ó grosor de la parte frontal será infima
+
+	ó inexistente dejando así, que sólo el área tracera ó posterior penetre sobre el área frontal ó anterior
+
+
+	_más si indicamos valos ceranos ha "10", ó superiores el área frontal será igual y superior que el área 
+
+	posterior ó tracera
+
+
+	_el valor por defecto de "10", el cuál, es un punto medio entre el alcance entre ambas partes
+
+
+
+	Sample FallOff:
+	_______________
+
+	_éste parámetro nos permitirá indicarle al sistema cuál, será el umbral ó gradación entre el área frontal y el
+
+	área posterior ó tracera
+
+
+	_de ésta manera, podremos interpolar la gradación entre ambas áreas, tanto la frontal como la tracera en 
+
+	diferentes proporciones en relación a las necesidades respectivas
+
+
+	_el valor por defecto y el más recomendado de forma general es de "1", el cuál, es un punto medio entre las 
+
+	partes
+
+
+	_más para characters, los valores más recomendados son de "Radius = 2 | Sample FallOff = 2", para que así,
+
+	la penetración de luz a nivel subcutáneo sea sutil
+
+
+	_para que así, sólo haga la diferencia los valores de "Weight", entre el área frontal y el área tracera
+
+
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

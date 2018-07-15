@@ -1,0 +1,109 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Back Scattering:
+	________________
+
+
+
+	Color:
+
+	_éste parámetro nos permitirá indicarle al sistema cuál, será el color de la superficie interna ó subcutánea 
+
+	del material de la parte posterior ó tracera así,como también, cuál, será el valor de luminancia de éste
+
+
+	_para lo cuál, dispondremos de un selector de color a través, del cuál, podremos indicar un color 
+
+	personalizado como también, para la luminancia
+
+
+	
+	Weight:
+	_______
+
+	_éste parámetro nos permititá controlar la influencia ó peso del material en la parte posterior ó tracera 
+
+	de cara u objeto respectivamente
+
+
+	_de ésta manera, podremos hacer que la parte tracera tenga más influencia que la parte delantera del objeto
+
+	ó rostro respectivamente
+
+
+	_para la mayoría de los casos en los que representamos elementos orgánicos sólidos, los valores más 
+
+	recomendables son fontal "0.6", tracero ó posterior "0.4", para que así, el área frontal tenga más peso
+
+
+	
+	Radius:
+	_______
+	
+	_éste parámetro nos permitirá controlar el umbral ó rango de penetración subcutánea de la parte tracera ó 
+
+	posterior en relación a la parte frontal del objeto ó rostro respectivamente
+
+
+	_de ésta manera, podremos controlar cuál, será el área con un mayor grosor ó amplitud de alcance en relacíón
+
+	a la otra parte opuesta
+
+
+	_de ésta manera, indicando valores cercanos ha "0", la la influencia ó grosor de la parte tracera ó posterior
+
+	será infima ó inexistente dejando así, que sólo el área delantera penetre sobre el área posterior ó tracera
+
+
+	_más si indicamos valos ceranos ha "10", ó superiores el área tracera ó posterior será igual y superior que 
+
+	el área delantera
+
+
+	_el valor más recomendado para la mayoría de los casos de creación de elementos orgánicos es un valor de de 
+
+	"2", para que así, el área subcutánea penetrada por la luz sea muy leve 
+
+
+	_por ejemplo el de una oreas y parte del cuero cabelludo y perfil de un character, por ejemplo
+
+
+
+	Depth:
+	______
+
+	_éste parámetro va al unísono con el parámetro anterior de "Radius", ya que el parámetro de depth, también,
+
+	controla la capacidad de penetración de la luz subcutáneamente
+
+	
+	_de ésta manera, la recomendación general es colocar un valor de "Radius = 2 | Depth = 2", para que así, haya
+
+	más coherencia entre las áreas duras y las áreas blandas ó translúcidas del character
+
+
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

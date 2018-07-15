@@ -1,0 +1,98 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Ambient Occlusion:
+	_________________
+
+
+	_ésta serie de parámetros por módulo ó por sección nos permitirá hacer variaciones sobre el ambient occlusion
+
+	de ésta manera, podremos personalizar el AO, generado por la iluminación global y las superficies
+
+
+	
+
+	Global Illumination / Caustics / Final Gathering:
+
+
+		Radiance:
+
+			_éste parámetro nos pemritirá aumentar ó disminuir el valor de luminancia del canal difuso
+
+			del material de forma colateral al influenciar la radiación del material de cara a la 
+
+			iluminación glogal y final gather
+
+
+
+	Final Gather:
+
+		
+		_Ray Multiplier:
+
+			_éste parámetro nos permitirá indicar el alcance de los rayos del final gather, para que 
+
+			así, sea afectada la representación del material
+
+
+		_Additional Muliplier:
+
+			_éste parámetro nos permitirá indicar un valor adicional para el alcance de los rayos para
+
+			representación del material
+
+
+
+	Transparency:
+
+	
+		_Enable:
+
+			_éste parámetro nos permitirá activar la opción de spill color, sobre el material 
+
+			translúcido 
+
+
+			_de ésta manera, podremos tenir y afectar los valores de luminancia de los materiales 
+
+			translúcidos y transparentes
+
+
+		_Color:
+
+			_éste parámetro nos permitirá a través, de un selector de color seleccionar un color
+
+			personalizado para el color de los materiales translúcidos ó transparentes
+
+
+		_Weight:
+
+			_éste parámetro nos permitirá indicar un peso ó influencia para color adicional sobre
+
+			el material translúcido ó transparente
+
+
+		
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

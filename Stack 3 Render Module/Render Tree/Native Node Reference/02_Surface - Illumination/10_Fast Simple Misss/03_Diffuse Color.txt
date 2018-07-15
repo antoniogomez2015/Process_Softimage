@@ -1,0 +1,66 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Diffuse:
+	________
+
+
+
+	Color:
+
+	_éste parámetro nos permitirá indicarle al sistema cuál, será el color base del material difuse de cara a la
+
+	posición de la cámara y a los puntos de iluminación
+
+
+	_es decir, que a través, de éste parámetro podremos controlar cuál, será el color ó textura global del 
+
+	character, en relación a las áreas blandas ó semi translúcidas y a los puntos de iluminación de la escena
+
+
+	_de ésta manera, éste canal difuso podrá estar conformada por un mapa degradado, un color sólido ó una textura, 
+
+	otros
+
+
+	_y para lo cuál, dispondremos de un selector de color a través, del cuál, podremos indicar un color 
+
+	personalizado para la generación del spill color, ó luz ambiental
+
+
+
+
+	Weight:
+	_______
+
+	_éste parámetro nos permititá controlar la influencia del material difuso en relación a las áreas blandas
+
+	ó semi translúcidas
+
+
+	_de ésta manera, en relación al resultado deseado podremos seleccionar una influencia u otra
+
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

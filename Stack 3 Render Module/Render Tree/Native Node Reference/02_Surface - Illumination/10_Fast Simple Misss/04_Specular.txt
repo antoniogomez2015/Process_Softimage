@@ -1,0 +1,59 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Specular:
+	_________
+
+
+
+	Color:
+
+	_éste parámetro nos permitirá indicarle al sistema cuál, será el color de la especularidad del material así,
+
+	como también, cuál, será el valor de luminancia ó intencidad de la especularidad generada
+
+
+	_para lo cuál, dispondremos de un selector de color a través, del cuál, podremos indicar un color 
+
+	personalizado como también, para la luminancia
+
+
+	
+	Decay:
+	______
+
+	_éste parámetro nos permititá controlar el "Scattering", ó dispersión de la especularidad generada de ésta
+
+	manera, podremos crear una especularidad más ámplia y matizada ó puntual y direccionada en relación a los
+
+	volúmenes de la forma del motivo
+
+
+	_de ésta manera, indicamos valores cercanos ha "0", la especularidad generada será más dispersa ó plana e
+
+	indicando valores superiores, y cercanos ha "1", la escularidad generada será más puntual y refinada
+
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

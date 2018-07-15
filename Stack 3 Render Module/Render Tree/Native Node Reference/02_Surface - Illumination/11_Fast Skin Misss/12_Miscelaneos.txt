@@ -1,0 +1,65 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Miscelaneos:
+	____________
+
+
+	_Scale:
+
+		_éste parámetro nos permitirá aumentar ó disminuir la escala global de todo el sistema al unísono de
+
+		ésta manera, podremos controlar todo el umbral de todo el sistema
+
+
+		_de ésta manera, si indicamos valores cercanos ha "0", la amplitud ó umbral de las áreas con scattering,
+
+		serán casi totales
+
+
+		_más si indicamos valores superiores ha "1", podremos práctivamente eliminar las áreas con scatteting
+
+
+		_siendo el valor "1", el valor por defecto
+
+
+		NOTA: hay que tomar en cuenta que cuando bajamos éste parámetro a valores cercanos ha "0", generaremos
+
+		ruido y artefactos sobre el material generado
+
+
+	_Use Screen Compositing for Colors:
+
+		_éste parámetro matizará la especularidad del material, más si desactivamos ésta opción el material
+
+		cobrará una mayor especilaridad
+
+
+	
+
+
+
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

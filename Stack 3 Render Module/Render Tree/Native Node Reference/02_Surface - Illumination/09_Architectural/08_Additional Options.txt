@@ -1,0 +1,126 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Additional Options:
+	___________________
+
+	_ésta serie de parámetros por módulo ó por sección nos permitirá controlar el comportamiento y caracteríticas
+
+	del material y de las superficies emuladas
+
+
+
+
+	
+	Remove Effects:
+
+
+		_Turn Off Visible Area Light Highlights:
+
+			_activar ésta opción nos permitirá limitar ó minimizar las altas luces especulares sobre las
+
+			superficies reflectivas
+
+
+			NOTA: la especularidad será visibles sobre las áreas reflectivas por medio de la insidencia
+
+			de luces con la opción de "Area", activada tanto en el viewport, como render
+
+
+		_Turn Off Weak Internal Reflections:
+
+			_activar ésta opción permitirá las reflexiones débiles internas entre facetas reflectivas
+
+
+		_Turn Off Bumps for Diffuse Only:
+
+			_activar ésta opción permitirá el efecto bump, sólo sobre el canal difuso
+
+
+
+	Add Effects:
+
+		
+		_Enable Thin-Walled Mode:
+
+			_activar ésta opción permitirá no permitirá la creación de superficies translúcidas y sólo
+
+			permitirá la visualización limitada de superficie semi translúcidas
+
+
+		_Enable Refractive Caustics:
+
+			_activar ésta opción permitirá la generación de caustics, a través, de éste material
+
+
+		_Enable Backface Culling:
+
+			_activar ésta opción permitirá la simlificación de las superficies translúcidas de ésta 
+
+			manera, las refracciones serán limitadas ó simplificadas generando así, efecto atractivos
+
+
+			_de ésta manera, podremos crear ó emular diferentes superficies y transparencias
+
+
+		_Transparency Uses Background Alpha Channel:
+
+			_activar ésta opción permitirá permitirá que el sistema contemple las transparencia del
+
+			fondo para calcular las transparencias ó efectos translúcidos
+
+
+
+	Global Settings;
+
+	
+		_Bump Mode:
+
+			_éste parámetro nos pemritirá seleccionar el criterio del efecto bump, de ésta maenra, 
+
+			podremos seleccionar entre los algoritmos disponibles
+
+
+		_Color Bend:
+
+			_éste parámetro nos pemritirá el color de fusión general para la integración de los
+
+			efectos aplicados
+
+
+		_Highlight vs Refrection Balance:
+
+			_éste parámetro nos pemritirá indicar un umbral para el equilibrio entre las altas luces
+
+			especulares y las reflexiones aplicadas
+
+
+		_Cutout Opacity:
+
+			_éste parámetro nos pemritirá un umbral para el corte ó límite entre las áreas translúcidas
+
+			y las áreas opacas y visibles
+		
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

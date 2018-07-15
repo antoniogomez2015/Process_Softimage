@@ -1,0 +1,68 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Fast Simple Misss:
+	__________________
+
+	_primeramente debemos de tener creado un motivo en la escena como un character
+
+
+	_para que así, podamos seleccionar el mesh, del character, y con éste seleccionado abrir el panel 
+
+	"Material Manager", através, del shortcut, "Control + 7"
+
+
+	_para que así, podamos crear un nuevo material yendo ha "Create/", y una vez allí, podemos crear un nuevo 
+
+	material como un "Strauss", por ejemplo
+
+
+	_para a continuación proceder ha hacer "mouse right click", sobre el material respectivo y seleccionar la
+
+	opción de "Assign to Selection"
+
+
+
+
+	Load Nodo:
+	__________
+
+	_para que así, aún estando en el panel "Material Manager", debemos ir al menú "Node/Illumination", y una vez
+
+	allí, seleccionar el nodo "Fast Simple (Misss), para que así, éste nodo sea agregado el panel"
+
+
+
+
+	Connect Nodes:
+	______________
+
+	_para que así, posteriormente podamos conectar el "Output", del nodo "Fast Simple Misss", con el 
+
+	"Input/Material", del nodo "Material", ó como le hayamos renombrado
+
+
+	NOTA: no conectar con el nodo "Strauss", si no directamente con el nodo final del material
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

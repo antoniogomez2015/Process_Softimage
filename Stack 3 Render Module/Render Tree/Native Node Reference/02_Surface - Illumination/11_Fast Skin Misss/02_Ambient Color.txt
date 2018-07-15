@@ -1,0 +1,42 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Ambient Color:
+	______________
+
+	_éste parámetro nos permitirá agregar un spill color, en relación a la vista de la cámara y a los puntos de
+
+	iluminación sobre el motivo
+
+
+	_para lo cuál, dispondremos de un selector de color a través, del cuál, podremos indicar un color 
+
+	personalizado para la generación del spill color, ó luz ambiental
+
+
+	_de ésta manera, podremos inflienciar en la luz ambiental del motivo
+
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

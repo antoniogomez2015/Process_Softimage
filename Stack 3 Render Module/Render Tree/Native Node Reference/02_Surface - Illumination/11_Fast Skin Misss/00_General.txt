@@ -1,0 +1,38 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Fast Skin Misss:
+	________________
+
+	_éste es un nodo de uso específico para la generación de superficies orgánicas como personajes y organismos
+
+	vivos entre otras posbilidades como plásticos translúcidos, otros
+
+
+	_de ésta manera, éste nodo ofrece opciones más completas y avanzadas que el nodo "Fast Simple Misss"
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

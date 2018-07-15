@@ -1,0 +1,91 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Epidermal Scatter:
+	__________________
+
+
+
+	Color:
+
+	_éste parámetro nos permitirá indicarle al sistema cuál, será el color de la superficie más externa de la piel 
+
+	interna ó subcutánea del material así,como también, cuál, será el valor de luminancia de éste
+
+
+	_para lo cuál, dispondremos de un selector de color a través, del cuál, podremos indicar un color 
+
+	personalizado como también, para la luminancia
+
+
+	
+	Weight:
+	_______
+
+	_éste parámetro nos permititá controlar la influencia ó peso de la densidad ó grosor de la piel más superficial 
+
+	pero a su vez, subcutánea del material de la parte frontal de cara a la cámara de la escena respectiva
+
+
+	_de ésta manera, podremos hacer que la parte más superficial subcutánea delantera tenga más influencia que la 
+
+	parte tracera del objeto ó rostro respectivamente
+
+
+	_para la mayoría de los casos en los que representamos elementos orgánicos y sólidos, los valores más 
+
+	recomendables son de "0.2", tomando en cuenta que éste parámetro representa sólo el área más superficial
+
+	de la epidermis ó piel
+
+
+	
+	Radius:
+	_______
+	
+	_éste parámetro nos permitirá controlar el umbral ó rango de penetración de la parte frontal en relación a la
+
+	parte posterior ó tracera del objeto ó rostro respectivamente
+
+
+	_de ésta manera, podremos controlar cuál, será el área con un mayor grosor ó amplitud de alcance en relacíón
+
+	a la otra parte opuesta
+
+
+	_de ésta manera, indicando valores cercanos ha "0", la la influencia ó grosor de la parte frontal será infima
+
+	ó inexistente dejando así, que sólo el área tracera ó posterior penetre sobre el área frontal ó anterior
+
+
+	_más si indicamos valos ceranos ha "10", ó superiores el área frontal será igual y superior que el área 
+
+	posterior ó tracera
+
+
+	_el valor por defecto y recomendado es de "8", el cuál, podrá variar en relación a los resultados deseados
+
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

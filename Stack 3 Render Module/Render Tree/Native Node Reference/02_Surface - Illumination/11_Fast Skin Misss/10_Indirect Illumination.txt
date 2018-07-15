@@ -1,0 +1,45 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Indirect Illumination:
+	______________________
+
+
+	Radiance:
+
+		_éste parámetro nos permitirá hacer ajustes de spill color en relación a la iluminación global y al
+
+		final gather
+
+
+		_como también, influenciará sobre los valores de lumninancia del material en general
+
+
+		_para lo cuál, dispondreos de un selector de color a través, del cuál, podremos indicar un color
+
+		personalizado para la generación e interacción con la iluminación global y el final gather
+
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

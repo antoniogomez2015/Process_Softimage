@@ -1,0 +1,121 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	
+
+	_Weight:
+
+		_éste parámetro hará de master control de la especularidad primaria y la especularidad secundaria
+
+
+		_de éstam manera, si indicamos valores bajos cercanos ha "0", la especularidad global será 
+
+		imperceptible 
+
+
+		_más si indicamos valores cercanos ha "1", la especularidad será total en relación a los valores 
+
+		indicados en la especularidad tanto primaria como secundaria
+
+
+	_Edge Factor:
+
+		_ésta factor nos permitirá indicarle al sistema que acentúe ó descarte la especularidad aumentada en
+
+		relación a los ángulos, perfiles ó aristas encontradas en la superficie del motivo
+
+
+		_de ésta manera, si indicamos valores cercanos ha "0", aumentará la especularidad en las áreas donde
+
+		el sistema encuentre ángulos ó faceras
+
+
+		_más si indicamos valores cercanos ha "1", la especularidad adicional en las áreas donde el sistema
+
+		encuentre ángulos ó facetas no será relevante ó será directamente inexistente
+
+
+
+
+	Primary / Secundary:
+	____________________
+
+
+	Color:
+
+	_éste parámetro nos permitirá indicarle al sistema cuál, será el color de la especularidad del material así,
+
+	como también, cuál, será el valor de luminancia ó intencidad de la especularidad generada
+
+
+	_para lo cuál, dispondremos de un selector de color a través, del cuál, podremos indicar un color 
+
+	personalizado como también, para la luminancia
+
+
+
+	
+	Weight:	
+
+	_éste parámetro nos permititá controlar el "Scattering", ó dispersión de la especularidad generada de ésta
+
+	manera, podremos crear una especularidad más ámplia y matizada ó puntual y direccionada en relación a los
+
+	volúmenes de la forma del motivo
+
+
+	_de ésta manera, si indicamos valores cercanos ha "0", la especularidad generada será más dispersa ó plana 
+
+	e indicando valores cercanos ha "1", y superiores la escularidad generada será más puntual y refinada
+
+
+
+
+	Edge Weight:
+	
+	_éste parámetro nos permitirá indicarle al sistema el umbral para la determinación de especularidad 
+
+	adicional en las áreas donde el sistema detecte facetas ó ángulos
+
+
+	_de ésta manera, si indicamos valores cercanos ha "0", la especularidad adicional generada será aumentada	
+
+	e indicando valores cercanos ha "1", y superiores la escularidad generada adicional será casi imperceptible
+
+
+
+	Shinyness:
+
+	_éste parámetro es de fuerza bruta, y nos permitirá indicarle al sistema que incremente la especularidad
+
+	ha nivel global en todas las áreas
+
+
+	_de ésta manera, si indicamos valores cercanos ha "0", la especularidad adicional generada será aumentada	
+
+	e indicando valores cercanos ha "1", y superiores la escularidad generada adicional será casi imperceptible
+
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

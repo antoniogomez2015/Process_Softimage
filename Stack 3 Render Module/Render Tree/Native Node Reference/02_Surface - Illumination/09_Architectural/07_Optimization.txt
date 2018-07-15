@@ -30,12 +30,28 @@
 
 		_Grid Density:
 
-			_
+			_ésta parámetro nos permitirá indicarle al sistema la cantidad de resolución utilizada para la
+
+			representación de la reflexiones en su estado puro
+
+
+			_de ésta manera, con valores superiores como por ejemplo, "5", el grid, de resolución será
+
+			más ligero y por ende tendrá menos resolución
+
+
+			_y con valores inferiores el grid, tendrá más definición y resolución
+
+
+
+			NOTA: éstos parámetros estarán disponibles y activos sólo cuando activemos las opciones de
+
+			"Reflection/Enable"
 
 
 		_Single Enviroment Sample:
 
-			_
+			_Indeterminado
 
 
 
@@ -44,12 +60,18 @@
 
 		_Enable:
 
-			_
+			_éste parámetro nos permitirá activar el sistema de control de desenfoque para las 
 
+			refracciones lo que nos permitirá crear efectos y materiales plásticos y sintéticos		
 
 		_Samples:
 
-			_
+			_éste parámetro determinará el desenfoque aplicado a las refracciones
+
+
+			_de ésta manera, con valores cercanos ha "0", el desenfoque será inexistente más con valores
+
+			superiores, el desenfoque será más acusado y se emularán diferentes materiales
 
 
 
@@ -59,20 +81,31 @@
 
 		_Enable:
 
-			_
+			_éste parámetro nos permitirá activar el sistema de control de la reflexiones del material,
 
+			tanto las opciones de "Refraction", como "Interpolate Reflection / Refractopm"			
 
 		_Samples:
 
-			_
+			_éste parámetro determinará el desenfoque aplicado a las reflexiones configuradas 
+
+			parcialmente en el paso explicado más arriba
+
+
+			_de ésta manera, con valores cercanos ha "0", el desenfoque será inexistente más con valores
+
+			superiores, el desenfoque será más acusado y se generarán grandes reflexiones
+
 
 
 		_Distance On:
 
-			_
+			_Indeterminado
 
 
 		_Distance:
+
+			_Indeterminado
 
 
 
@@ -81,12 +114,24 @@
 		
 		_Trace Depth:
 
-			_
+			_éste parámetro nos permitirá indicarle al sistema el límite de superficies a calcular para
+
+			la generación de la refracciones
+
+
+			_de ésta manera, podremos definir la densidad y complejidad y alcance de la reflacciones así,
+
+			como también, la carga para el sistema
 
 
 		_Cauoff:
 
-			_
+			_éste parámetro nos permitirá indicarle al sistema el umbral de corte ó límite entre cada
+
+			faceta de refracción
+
+
+			_éste parámetro estará directamente relacionado con el parámetro de "Falloff"
 
 
 
@@ -95,22 +140,40 @@
 		
 		_Enable:
 
-			_
-
+			_éste parámetro activa las opciones de decaimiento entre las facetas de las refracciones
+			
 
 		_Distance:
 
-			_
+			_éste parámetro nos pemritirá indicarle al sistema la distancia mínima entre las 
+
+			refracciones para que así, haya un grado decaimiento de las áreas con refracciones entre
+
+			las áreas interiores y las áreas perimetrales
+
+
+			_de ésta manera, el decaimiento de las reflacciones se acumulará en las áreas donde
+
+			haya más facetas de superficies super puestras
+
+
+			_lo cuál, también, se manifestará en el color cuando se activa la opción de 
+
+			"Use End Color"
 
 
 		_Use End Color:
 
-			_
+			_éste parámetro nos permitirá indicarle al sistema la utilización de un color para resaltar
+
+			las áreas más afectadas por el decaimiento de las refracciones
 
 
 		_End Color:
 
-			_
+			_a través, de un selector de color podremos indcar un color personalizado para el 
+
+			decaimiento de las refracciones
 
 
 
@@ -119,17 +182,34 @@
 
 		_Highlights Only:
 
-			_
+			_éste parámetro nos permitirá indicarle al sistema la activación de sólo las altas luces
+
+			para que así, sea descartada la reflexiones de la superficie y sólo se conserven los
+
+			brillos especulares
 
 
 		_Trace Depth:
 
-			_
+			_éste parámetro nos permitirá indicarle al sistema la densidad de facetas de superficie
+
+			toleradas para el cálculo de la especularidad permitida en vez de las reflexiones
+
+
+			_de ésta manera, la especularidad se super pondrá y se verá más acusada en las áreas donde
+
+			las superficies estén más super puestas
 
 
 		_Cutoff:
 
-			_
+			_éste parámetro nos permitirá indicarle al sistema el umbral de corte ó límite entre cada
+
+			faceta de especularidad
+
+
+			_éste parámetro estará directamente relacionado con el parámetro de "Falloff"
+
 
 
 
@@ -138,23 +218,42 @@
 
 			_Enable:
 
-				_
+				_éste parámetro activa las opciones de decaimiento entre las facetas de las 
 
+				especularidades super puestas
+			
 
 			_Distance:
 
-				_
+				_éste parámetro nos pemritirá indicarle al sistema la distancia mínima entre las 
+	
+				especularidades para que así, haya un grado decaimiento de las áreas con 
+
+				especularidad entre las áreas interiores y las áreas perimetrales
+
+
+				_de ésta manera, el decaimiento de las especularidades se acumulará en las áreas 
+
+				donde haya más facetas de superficies super puestras
+
+
+				_lo cuál, también, se manifestará en el color cuando se activa la opción de 
+
+				"Use End Color"
 
 
 			_Use End Color:
 
-				_
+				_éste parámetro nos permitirá indicarle al sistema la utilización de un color para 
+
+				resaltar las áreas más afectadas por el decaimiento de las especularidades
 
 
-			_Color:
+			_End Color:
 
-				_
+				_a través, de un selector de color podremos indcar un color personalizado para el 
 
+				decaimiento de las refracciones
 
 		
 

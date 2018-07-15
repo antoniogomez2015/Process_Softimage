@@ -1,0 +1,50 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Textures:
+	_________
+
+	_en el panel render tree, como en el panel material manager, podremos asignar texturas y materiales compuestos
+
+	al "Fast Simple Misss"
+
+
+
+
+	Connections:
+	____________
+
+	_de ésta manera, podremos arrastrar el "Output", del nodo gradiente ó texture, deseado hasta el "Input",
+
+	"Diffuse Color", y el "Fron SSS Color", del nodo "Fast Simple Misss"
+
+
+	_para que así, tanto el color difuso como el scattering, frontal del material sean controlados por la textura
+
+	ó degradados personalizados
+
+
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

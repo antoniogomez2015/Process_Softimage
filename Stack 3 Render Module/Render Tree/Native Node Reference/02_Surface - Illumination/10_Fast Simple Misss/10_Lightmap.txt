@@ -1,0 +1,75 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Lightmap:
+	_________
+
+
+	_Group Name:
+
+		_éste parámetro nos permnitirá indicar un nombre para el lightmap, generado por el sistema
+
+
+	_Sise as % of Output Resolution:
+
+		_éste parámetro nos permitirá indicarle al sistema el umbral de subsurface scattering, de ésta manera,
+
+		podremos mantener ó disminuir el umbral de entre las áreas semi translúcidas existentes entre la parte 
+
+		frontal y parte posterior del motivo ó character
+
+
+		_por defecto éste parámetro biene en un valor de "50", lo cuál, es un punto medio
+
+
+	_Sampling Gamma:
+
+		_éste parámetro hará de master entre la configuración de "weights", y radius, de entre las zonas con
+
+		scattering, tanto frontales como traceras ó posteriores
+
+
+		_de ésta manera, podremos extender ámpliamente las áreas con scattering, ó areas semi translúcidas para
+
+		que así, éstas áreas tengan más pre pronderancia ó por el contrario, podremos limitar éstas áreas al 
+
+		mínimo
+
+
+		_de ésta manera, en relación a las necesidades de producción prodremos hacer ajustes globales en 
+
+		relación al efecto deseado
+
+
+		_el valor por defecto es de "0.76", el cuál, es un excelente punto medio de partida
+	
+
+
+	
+
+
+
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

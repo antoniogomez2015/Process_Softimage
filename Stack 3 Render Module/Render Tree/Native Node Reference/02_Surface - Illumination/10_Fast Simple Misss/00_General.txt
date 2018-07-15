@@ -1,0 +1,35 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Fast Simple Misss:
+	__________________
+
+	_éste es un nodo de uso específico para la generación de superficies orgánicas como personajes y organismos
+
+	vivos entre otras posbilidades como plásticos translúcidos, otros
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Scatter Controls:
+	_________________
+
+
+	_Lightmap Samples:
+
+		_éste parámetro nos permitirá eliminar el truido y artefactos generados tras el proceso de la 
+
+		generación del subsurface scattering, en las áreas semi translúcidas generadas
+
+
+		_de ésta manera, si indicamos valores bajos cercanos ha "0", el ruido se hará visible, más si indicamos
+
+		valores altos como "300", ó superiores, el ruido y artefactos será menos visible ó inexistente
+
+
+	_Bias:
+		
+		_éste parámetro nos permitirá controlar ha modo de master la influencia de las áreas en scattering,
+
+		delanteras como traceras
+
+
+		_de ésta manera, podremos hacer más visible las áreas semi translúcidas ó no así, como también, de
+
+		cambiar el aspecto general del motivo ó character
+
+
+		_de ésta manra, indicando valores bajos positivos podremos hacer resaltar el área frontal con scattering,
+
+		y más si indicamos valores negativos bajos, resaltaremos las áreas con scattering traceras ó posteriores
+		
+
+
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

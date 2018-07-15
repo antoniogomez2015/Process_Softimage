@@ -1,0 +1,39 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Overall Color Multiplier:
+	_________________________
+
+	_éste parámetro es similar al parámetro anterior de "Ambient Color", de ésta manera, podremos crear un spill
+
+	color, sobre el motivo pero ésta vez de manera generalizada
+
+
+	_para lo cuál, dispondremos de un selector de color a través, del cuál, podremos indicar un color 
+
+	personalizado para la generación del spill color, ó luz ambiental
+
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

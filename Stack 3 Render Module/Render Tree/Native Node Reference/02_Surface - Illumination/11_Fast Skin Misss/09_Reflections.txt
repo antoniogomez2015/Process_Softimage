@@ -1,0 +1,86 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	
+
+	Reflections:
+	____________
+
+
+	Weight:	
+
+	_éste parámetro nos permititá controlar el "Scattering", ó dispersión de la especularidad generada, extendiendo
+
+	ésta hasta lograr cierto grado de reflexiones
+
+
+	_de ésta manera, podremos crear una refleiones complementarias y matizadas en relación a los volúmenes de la 
+
+	forma del motivo
+
+
+	_de ésta manera, si indicamos valores cercanos ha "0", la reflexiones generadas serán más acusadas, e indicando 
+
+	valores cercanos ha "1", y superiores la reflexiones generadas serán más sutiles ó imperceptibles
+
+
+
+
+	Edge Weight:
+	
+	_éste parámetro nos permitirá indicarle al sistema el umbral para la determinación de la reflexiones
+
+	adicionales en las áreas donde el sistema detecte facetas ó ángulos
+
+
+	_de ésta manera, si indicamos valores cercanos ha "0", la reflexión adicional generada será aumentada	
+
+	e indicando valores cercanos ha "1", y superiores la reflexión generada adicional será casi imperceptible
+
+
+
+	Shinyness:
+
+	_éste parámetro es de fuerza bruta, y nos permitirá indicarle al sistema que incremente las refleciones
+
+	ha nivel global en todas las áreas
+
+
+	_de ésta manera, si indicamos valores cercanos ha "0", la reflexiones adicionales generadas serán 
+
+	aumentadas e indicando valores cercanos ha "1", y superiores la reflexiones generadas adicionales serán casi 
+
+	imperceptibles
+
+
+
+	Enviroment Only:
+
+	_éste parámetro nos permitirá indicarle al sistema que genere la especularidad ó reflexiones de el mapa de
+
+	enviroment y no de las luces y de la ilumninación ambienta y el final gather
+
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+
