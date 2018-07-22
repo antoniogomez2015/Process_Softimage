@@ -1,0 +1,48 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Incidnence:
+	___________
+
+	_éste nodo nos permitirá limitar una propiedad ó característica de un material determinado de ésta manera, por
+
+	ejemplo; podremos limitar la reflexión de un material en relación a la insidencia de luz sobre la superficie
+
+	del motivo
+
+
+	_como también, por medio del punto de vista de la cámara, ó en relación a un cordenada en específico ó a través,
+
+	de una combinación de entre la cámara la luz, otros
+
+
+	_de ésta manera, podremos condicionar una propiedad ó característica a otro elemento ó parámetro insidente 
+
+	sobre la superficie y volúmen del motivo
+
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

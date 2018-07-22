@@ -1,0 +1,52 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Light-Flat:
+	___________
+
+	_una forma de emumar el material flat light, ha nivel general en los demás materiales de la escena sin la 
+
+	necesidad de aplicar el nodo flat light
+
+
+	_es a través, de la creación de ilumunación de tipo flat, para lo cuál, debemos de ir ha "Get/Primitive/Light/",
+
+	y una vez allí, seleccionar la opción de "Flat"
+
+
+	_ó también, podremos activar la opción de "flat light", en luz existente en la escena, para lo cuál, debemos
+
+	de seleccionar una luz existente y entrar a sus opciones
+
+
+	_especificamente yendo ha "Modes", y una vez allí, activamos la opción de "Flat Light Mode", para que así, 
+
+	podamos disponer de ésta opcíon en la luz respectiva
+
+
+	_de ésta manera, ahora los efectos de material difuso, reflexiones y especularidad gradada desaparecerán de
+
+	todos los materiales de la escena emulando así, el efecto de flat light
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

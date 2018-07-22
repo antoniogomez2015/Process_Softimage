@@ -1,0 +1,53 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Node Assign:
+	____________
+
+	_donde primeramente abriremos el panel "Material Manager", a través, del shortcut, "Control + 7", para que así,
+
+	podamos seleccionar un material respectivo 
+
+
+	_en éste caso el material del suelo ó el material sobre el cuál, se proyectarán las sombras respectivas (NO el
+
+	material del motivo)
+
+
+	_para a continuación ir al menú "Nodes/Illumination/", y una vez allí, cargar un nodo de "Shadow", de ésta 
+
+	manera, el nodo será agregado el panel
+
+
+	_para que así, podamos conectar el "Output", del nodo "Shadow", con el "Input/Surface, del nodo
+
+	"Material", ó como lo hayamos renombrado posteriormente
+
+
+	
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

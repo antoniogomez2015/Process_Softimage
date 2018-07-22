@@ -1,0 +1,177 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Surface:
+	________
+
+
+	_Ambient:
+
+		_éste parámetro nos permitirá indicar el spill color, del ambiente el cuál, influenciará o incidirá
+
+		levemente sobre la sumatoria global del color del materia
+
+
+		_para lo cuál, dispondremos de un selector de color a través, del cuál, podremos indicar un color
+
+		personalizado para el spill color
+
+
+	_Base Color:
+
+		_éste parámetro nos permitirá indicar el color base ó color difuso del material ha generar de ésta
+
+		manera, podremos indicar el color a partir del cuál, se generará el material y sobre el cuál, se
+
+
+		_aplicarán los demás colores ó efectos colarerales al material
+
+
+		_para lo cuál, dispondremos de un selector de color a través, del cuál, podremos indicar un color
+
+		personalizado para el color base
+
+
+
+
+	_Edge Color Control:
+
+
+		_Color:
+
+			_éste parámetro nos permitirá indicar el color secundario el cuál, se hará visible en las 
+
+			áreas de las superficie del motivo en ángulos opuestos ha 90, grados
+
+
+			_de ésta manera, podremos generar materiales compuestos con diferentes matices y tonos en
+
+			relación al ángulo de la influencia de la luz, y a la morfología de la forma ó motivo
+
+
+			para lo cuál, dispondremos de un selector de color a través, del cuál, podremos indicar un 
+
+			color personalizado para el Edge Color Control
+
+
+		_Falloff:
+
+			_éste parámetro nos permitirá indicar el ángulo ó grado de decaimiento entre el primer
+
+			color y el segundo color del material generado
+
+
+			_de ésta manera, con valores cercanos ha "1", la relación entre ambos colores será la más
+
+			indicada y re comendada
+
+
+			_más con valores cercanos ha "0", la influencia del segundo color será inexistente y con
+
+			valores superiores ha "1", la influencia del segundo color será acusada sobre el primero
+
+
+
+	_Lit Region Color Controls:
+
+		
+		_Region Color:
+
+			_éste parámetro nos permitirá indicar un color para la parte del material más cercana a la
+
+			cámara, es decir, la superficie más perpendicular y cercana a la vista de la cámara
+
+
+			_de ésta manera, podremos crear materiales más complejos que tomen en cuenta el ambiente,
+
+			la dirección de la luz, y mofología de las superficies y el punto de vista de la cámara
+
+
+		_Falloff:
+
+			_éste parámetro nos permitirá indicar el grado de decaimiento entre el color más frontal
+
+			de cara a la cámara y el resto de colores implicados en la superficie general del material
+
+
+			_de ésta manera, con valores cercanos ha "1", la relación con los demás colores será la más
+
+			indicada y re comendada
+
+
+			_más con valores cercanos ha "0", la influencia del color más cercano a la cámara será 
+
+			inexistente 
+
+
+			_y con valores superiores ha "1", la influencia del color más frontal a la cámara será más 
+
+			acusada que sobre los demás colores
+
+
+
+
+	_Diffuse Controls:
+
+
+		_Wight:
+
+			_éste parámetro nos permitirá controlar el peso ó influencia del material difuso ó base 
+
+			global y su luminancia en relación al peso de las partes material mezcladas como los son
+
+		
+			_el "Edge Color Control", color complementario y opuesto y el "Lit Region Color Controls",
+
+			ó color frontal
+
+
+			_de ésta manera, con valores cercanos ha "0", la luminancia del material difuso general
+
+			será limitada ó disminuida
+
+
+			_y con valores superiores ha "1", la luminocidad e influencia del canal difuso global 
+
+			tendrá más importancia que los colores "Edge Color Control", color complementario y opuesto 
+
+			y el "Lit Region Color Controls", ó color frontal
+
+
+		_Falloff:
+
+			_más éste parámetro nos permitirá indicar exactamente lo contrario, es decir, que con 
+
+			valores cercanos ha "0", tendrá igualmente más influencia el material difuso global ó base
+
+
+			_más con valores superiores ha "1", tendrá más peso las demás características del material
+
+			como el "Edge Color Control", color complementario y opuesto y el 
+
+			"Lit Region Color Controls", ó color frontal
+
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

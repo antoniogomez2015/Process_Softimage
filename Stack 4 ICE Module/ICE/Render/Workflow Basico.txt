@@ -22,7 +22,7 @@ simulaciones de elementos, fluidos, sólidos, gaseosos, otros
 	_primero seleccionamos el sistema de partículas deseado en el viewport
 
 
-	_luego vamos ha "Voew/Rendering-Texturing/RenderTree", shortcut "Shift + 7"
+	_luego vamos ha "View/Rendering-Texturing/RenderTree", shortcut "Shift + 7"
 
 
 	_podemos seleccionar las partículas en la escena ó en el "Explorer", y hacer "Refresh",
@@ -46,7 +46,7 @@ simulaciones de elementos, fluidos, sólidos, gaseosos, otros
 	_posteriormente también debemos cargar el "Render Tree/Nodes/Particles/Particle Renderer"
 
 	
-	_ahora eliminamos el nodo "Presset", del material que agregamos por defecto, ej: "Phong"
+	_ahora eliminamos el nodo "Preset", del material que agregamos por defecto, ej: "Phong"
 
 
 	_y conectamos el nodo "Particle Renderer", en el nodo ej: "Scene Material/Volume", que este

@@ -1,0 +1,67 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Render Settings:
+	________________
+
+	
+	Name:
+
+	_éste parámetro nos permitirá indicar un nombre personalizado para el nodo directamente desde el mismo nodo
+
+
+	Shading Model:
+	
+
+		Diffuse Model:
+
+
+			_Short Hair:
+
+				_éste parámetro limitará ó contendrá el volúmen del cabello generado así, como también,
+
+				aumentará el contraste del cabello
+
+
+			_Long Hair:
+
+				_éste parámetro aumentará el volumen del cabello generado así, como también, bajará
+
+				el contraste del cabello
+
+
+
+		Normal Blend:
+
+			_éste parámetro aumentará la definición y pronfundidad del cabello de ésta manera, con valores
+
+			cercanos ha "0", no será agregado corrección ó mejora sobre el cabello
+
+	
+			_más si indicamos valores cercanos ha "1", la definición y profundidad del cabello serán 
+
+			mejoradas y optimizadas
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

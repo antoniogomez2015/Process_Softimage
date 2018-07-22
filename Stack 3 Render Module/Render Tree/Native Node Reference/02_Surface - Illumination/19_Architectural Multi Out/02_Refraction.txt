@@ -1,0 +1,120 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Refraction:
+	___________
+
+	_en las opciones del material "Architectural", dispondremos del "tag" "Transparency / Reflection", en el 
+
+	cuál, dispondremos de las opciones de "Refraction", la cuál, nos permitirá crear material translúcidos
+
+	avanzados
+
+
+
+
+
+	Transparency:
+
+		_éste parámetro nos permitirá generar materiales translúcidos en proporción de ésta manera, con 
+
+		valores cercanos ha "0", el material será totalmente sólido más con valores cercanos ha "1"
+
+
+		_el material resultante será totalmente transparence, éste parámetro estará superditado al 
+
+		parámetro de "Index off Refraction"
+
+
+		_así, como también, en los casos de realizar materiales totalmente translúcidos es aconsejable
+
+		colocar el valor de "Illumination/Diffuse/Weight", en "0"
+
+
+
+	Color:
+
+		_así, como también, a través, de un selector de color podremos indicarle al sistema un color para
+
+		la transparencia del material generado como un valor de luminancia
+
+
+		NOTA: colocar un valor de luminancia ó color oscuro llegando a negro, ésto anulará el efecto de
+
+		transparencia
+
+
+
+	Glossiness:
+
+		_éste parámetro nos permitirá indicarle al sistema que deseamos crear un material translúcido más
+
+		ó menos esmerilado ó no
+
+
+		_de ésta manera, con valor superiores ha "0", y cercanos ha "1", crearemos un material menos
+
+		esmerilado ó sin efecto esmerilado
+
+
+		_más con valores cercanos ha "0", crearemos un material totalmente espemilado
+
+
+		_éste parámetro estará superditado al parámetro de "Samples", ya que de nos existir samples no es
+
+		posible el efecto de esmerilado
+
+
+	Samples:
+
+		_éste parámetro le indicará al sistema la cantidad de sampleos ó pases para el cálculo del efecto
+
+		esmerilado
+
+
+		_de ésta manera, cuán mayor cantidad de samples conseguiremos un esmerilado más refinado y pulido
+
+		y sin menos imperfecciones ó artefactos
+
+
+		_teniendo en cuenta que al aumentar la cantidad de samples también, se aumentará el tiempo de 
+
+		render
+
+
+	Index of Refraction:
+
+		_éste parámetro nos permitirá indicarle al sistema el índice de reflacción que tendrá el material 
+
+		ha generar para lo cuál, dispondremos de diferentes tablas 
+
+
+		_para saber así, que índice tendremos que indicarle al sistema en relación a los resultados 
+
+		deseados
+
+
+		
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

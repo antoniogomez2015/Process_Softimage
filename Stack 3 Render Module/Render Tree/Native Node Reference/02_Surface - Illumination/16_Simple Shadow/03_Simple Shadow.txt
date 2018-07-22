@@ -1,0 +1,107 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Shadow:
+	_______
+
+	_una vez hemos aplicado el nodo incidence, dispondremos de las siguientes opciones:
+
+
+
+
+
+	_Name:
+
+		_éste parámetro nos permitirá re nobrar directamente el nodo desde aquí
+
+
+	_Diffuse:
+
+		_éste parámetro nos pemritirá indicar un color para las sombras así, como también, un valor de 
+
+		luminancia
+
+
+		_para lo cuál, dispondremos de un selector de color a través, del cuál, podremos indicar un color 
+
+		personalizado para la generación de las sombras
+
+
+
+	Transparency:
+
+
+		_Transparency Enable:
+
+			_ésta parámetro nos permitirá activar ó desactivar las transparencia u opacidad para las 
+
+			sombras generadas ó recueradas
+
+
+		_Color:
+
+			_éste parámetro nos pemritirá indicar un color para las sombras en transparencias así, como 
+
+			también, un valor de luminancia
+
+
+			_para lo cuál, dispondremos de un selector de color a través, del cuál, podremos indicar un 
+
+			color personalizado para la generación de las sombras
+
+
+
+		_Use Alpha:
+
+			_ésta opción nos permitirá indicarle al sistema la utilización del canal alpha, en los casos
+
+			en que se estubiese utilizando una a través, de una imágen, otros
+
+
+		_Invert:
+
+			_éste parámetro nos permitirá invertir el canal alpha utilizado para la generación del 
+
+			sistema
+
+
+		_Scale:
+
+			_éste parámetro nos permitirá tanto acentuar las sombras recuperadas como también, de 
+
+			atenuarlas hasta el punto de desaparecerlas
+
+
+			_éste parámetro estará superditado al valor de luminancia indicado en "Transparency/Color"
+
+
+			_de ésta manera, si indicamos un valor cercanos ha "0", las sombras serán acentuadas, más
+
+			si indicamos un valor superior y cercano ha "1", las sombras serán atenueadas ó eliminadas
+
+
+
+	
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

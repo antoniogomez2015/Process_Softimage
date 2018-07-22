@@ -1,0 +1,66 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Photon irradiance:
+	__________________
+
+	_éste nodo nos permitirá transpolar el efecto "Caustics", de la superficie proyectada al material del motivo
+
+
+	_de ésta manera, podremos emular también, el efecto caustics. sobre el material del motivo de forma inversa, 
+
+	es decir, que el efecto caustics, se creara de forma inversa, desde la superficie proyectada hacia el motivo, 
+
+	ó de abajo hacia arriba
+
+
+
+
+	Caustics:
+	_________
+
+	_de ésta manera, debemos de crear un escena un motivo con una geometría a la cuál, le hemos activado las 
+
+	opciones de "Visibility/Caustics/Caster", en "On"
+
+
+	_como también, de haber creado un luz de tipo spot, a la cuál, le hemos activado las opcioens de 
+
+	"Photon/Caustics", y "Global Illumination"
+
+
+	_y por último hemos ido ha "Stack/Render/Render/Regions", y una vez allí, hemos abierto las opciones de 
+
+	"All Options"
+
+
+	_y en las cuáles, hemos ido al "tag",  "GI and Caustics", y una vez allí, hemos activado las opciones de 
+
+	"Global Illumination", and "Caustics"
+
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

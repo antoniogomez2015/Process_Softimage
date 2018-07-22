@@ -1,0 +1,83 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Indirect Illumination:
+	______________________
+
+
+
+	Global Illumination:
+
+	
+		Radiance:
+	
+		_éste parámetro nos permitirá indicar un color personalizado para la generación de la iluminación global 
+
+		a través, del final gather, y global illumination
+
+
+		_así, como también, indicaremos un valor de luminancia lo que repercutirá como iteractúa el material 
+
+		con el ambiente
+
+
+		_para lo cuál, dispondremos de un selector de color a través, del cuál, podremos indicar un color 
+
+		personalizado para la generación de la iluminación global
+
+
+
+	Translucency:
+
+	
+		Enable:
+
+			_éste parámetro nos permitirá activar la opción de translucency, al sistema de hair
+
+			
+			_de ésta manera, podremos hacer que el sistema sea un copo más translúcido en ciertas áreas
+
+			del sistema generado
+
+
+			_para lo cuál dispondremos de un parámetro el cuál, afectará a todas las áreas de filamento
+
+			de forma plana y por igual
+
+
+			_más de forma avanzada podremos activar la opción de "Translucency Gradient", para que así, 
+
+			podamos utilizar un slider, a través, del cuál, podremos controlar y personalizar el 
+
+			gradiente de luminancia ó alpha, para la genración de la translucencia
+
+	
+
+			_de ésta manera, podremos personalizar el color tanto de la raiz del filamento como de la 
+
+			punta de éste
+
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

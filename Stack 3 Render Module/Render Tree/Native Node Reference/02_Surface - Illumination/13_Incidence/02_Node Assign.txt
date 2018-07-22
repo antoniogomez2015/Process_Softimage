@@ -1,0 +1,58 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Node Assign:
+	____________
+
+	_donde primeramente abriremos el panel "Material Manager", a través, del shortcut, "Control + 7", para que así,
+
+	podamos seleccionar un material respectivo 
+
+
+	_para a continuación ir al menú "Nodes/Illumination/", y una vez allí, cargar un nodo de "Incidence",
+
+	de ésta manera, el nodo será agregado el panel
+
+
+	_para que así, podamos conectar el "Output", del nodo "Incidence", con el "Input/reflectivity, por ejemplo,
+
+	del nodo "Phong", en éste ejemplo
+
+
+	_de ésta manera, una vez hayamos hecho la conexión expresada en el punto anterior se agregará el nodo 
+
+	"Scalar to Color", entre los nodos "Incidence", y "Phong", en éste caso
+
+
+	_de ésta manera, a través, del nodo "Scalar to Color", podremos controlar el canal alpha, de existir uno 
+
+	aplicado
+
+
+
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

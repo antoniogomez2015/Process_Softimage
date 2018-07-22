@@ -1,0 +1,62 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Flat Light:
+	___________
+
+	_una vez hemos aplicado el nodo flat light, dispondremos de las siguientes opciones:
+
+
+
+	_Enable:
+
+		_éste parámetro nos pemitirá activar ó desactivar el nodo flat light
+
+
+	_Diffuse:
+
+		_éste parámetro nos permitirá indicar el color especular del material ha generar
+
+
+	_Ambient:
+
+		_éste parámetro nos permitirá indicar el color de las sombras ó el área en penumbra
+
+
+
+	NOTA: para que sean visibles los colores aplicados al material, debemos de activar ó aumentar la iluminación
+
+	ambiental para lo cuál, debemos de ir ha "Stack/Render/Modify/", y una vez allí, le damos a la opción de
+
+	"Ambience"
+
+
+
+	_éste nodo también, dispone de tags, opcionales como "Transparency / Reflection", como "Indirect Illumination",
+
+	a través, de los cuáles, podremos agregar transparencia, reflexiones e iluminación global interactiva e 
+
+	irradiance
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

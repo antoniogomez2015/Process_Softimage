@@ -1,0 +1,64 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Architectural Multi Out:
+	________________________
+
+	_el nodo "Architectural Multi Out", es idéntico al nodo "Architectural", con la diferencia de que el nodo
+
+	"Architectural Multi Out", nos brindará las salidas de las diferentes características del material de forma
+
+	independiente
+
+
+	_de ésta manera, podremos configurar y exportar éstas características como render pases personalizados para que 
+
+	así, podamos hacer ajustes y personalizaciones por ejemplo, de la especularidad, reflexiones, refracciones, otros
+
+
+
+
+
+
+	Architectural:
+	______________
+
+	_éste es un nodo de uso general el cuál, nos permitirá reproducir todo tipo de materiales tanto  plásticos como 
+
+	altamente reflectivos y refractivos incluso mayores y más afinados que "Phong"
+
+
+	_de ésta manera, podremos lograr la más ámplia gama de materiales mixtos con especularidades más afiladas y con 
+
+	reflejos más extremos y refinados 
+
+	
+	_lo cuál, es especialmente útil para superficies altamente brillantes como vidrios entre otros materiales 
+
+	translúcidos
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

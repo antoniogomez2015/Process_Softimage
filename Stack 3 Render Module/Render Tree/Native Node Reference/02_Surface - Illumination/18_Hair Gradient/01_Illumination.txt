@@ -1,0 +1,158 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Hair Gradient:
+	______________
+
+
+	Name:
+
+		
+		_esta opción permite indicar un nuevo nombre al nodo directamente desde el nodo
+
+
+
+
+	Difuse:
+
+
+		Color:
+
+		_esta opción se refiere al color que tendrá el root, ó raíz, de cada fibra ó cabello
+
+
+		_para lo cuál, dispondremos de un selector de color a través, del cuál, podremos indicar un color
+
+		personalizado
+
+
+		_más de forma avanzada podremos activar la opción de "Use Diffuse Gradient", para que así, podamos
+
+		utilizar un slider, a través, del cuál, podremos controlar y personalizar el gradiente de color
+
+	
+
+		_de ésta manera, podremos personalizar el color tanto de la raiz del filamento como de la punta
+
+		de éste
+
+
+
+	Ambient:
+
+
+		Color:
+
+		_esta opción permite agregar iluminación por ambiente, donde Black, es iuminación cero y white, es 
+
+		iluminación full/100
+
+		
+		_para lo cuál, dispondremos de un selector de color a través, del cuál, podremos indicar un color
+
+		personalizado
+
+
+		_más de forma avanzada podremos activar la opción de "Use Diffuse Gradient", para que así, podamos
+
+		utilizar un slider, a través, del cuál, podremos controlar y personalizar el gradiente de color
+
+	
+
+		_de ésta manera, podremos personalizar el color tanto de la raiz del filamento como de la punta
+
+		de éste
+
+
+	
+	Diffuse / Ambient Blending:
+		
+
+		_Use Blend Gradient:
+
+			_éste parámetro nos permtirá activar las opciones utilizar un slider, a través, del cuál, 
+
+			podremos controlar y personalizar el gradiente de color
+
+
+			_para que así, podremos controlar la influencia que tendrá el color indicado para el root,
+
+			ó raiz del filamento y el color indicado para la punto del filamente
+
+
+			_de ésta manera, a través, de un slider, ha modo de alpha, ó umbral podremos indicar la 
+
+			proporción de cada uno de los colores
+
+
+			_como también, dispondremos de un controlador el cuál, va de "0", ha "1", a través, del cuál,
+
+			podremos indicar la influencia de cada color respectivamente en relación al otro
+
+
+
+
+	Specular:
+
+
+		Color:
+
+		_esta opción permite agregar iluminación por ambiente, donde Black, es iuminación cero y white, es 
+
+		iluminación full/100
+
+		
+		_para lo cuál, dispondremos de un selector de color a través, del cuál, podremos indicar un color
+
+		personalizado
+
+
+		_más de forma avanzada podremos activar la opción de "Use Diffuse Gradient", para que así, podamos
+
+		utilizar un slider, a través, del cuál, podremos controlar y personalizar el gradiente de color
+
+	
+
+		_de ésta manera, podremos personalizar la escularidad y apariencia general de el color tanto de la 
+
+		raiz del filamento como de la punta de éste
+
+
+		_así, como también, dispondremos en éste caso de opciones adicionales como un slider, a través, del
+
+		cuál, podremos controlar la ganancia y peso de las áreas especulares 
+
+
+		_relación a la raiz y a la punta del filamento ó fibra respectivamente, entre otras posibilidades
+
+		y opciones de configuración individuales
+
+
+
+	
+
+
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

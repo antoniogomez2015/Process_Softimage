@@ -1,0 +1,53 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Hair Renderer / Hair Shading:
+	_____________________________
+
+	_éste nodo nos permitirá texturizar por defecto un sistema de hair, agregado sobre una geometría respectiva
+
+
+	_éste nodo no se encuentra disponible dentro de los paneles "render tree", ó "material manager"
+
+
+
+	NOTa: los nodos "Hair Renderer / Hair Shading", son los mismos ya que cuando aplicamos un sistema de hair,
+
+	sobre una geometría, ésta se agregará con el material "Hair Renderer", como material base
+
+
+	_más adicionalmente podremos ir ha "Material Manager/Noder/Illumination", y una vez allí, podremos volver 
+
+	ha aplicar el material "Hair Renderer", base pero ésta vez con el nombre de "Hair Shading"
+
+
+	_de ésta manera, ambos serán los mismos nodos y tendrán las mismas características
+
+
+
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

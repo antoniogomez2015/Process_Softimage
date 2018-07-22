@@ -1,0 +1,136 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Hair Renderer:
+	______________
+
+	Name:
+		
+		_esta opción permite indicar un nuevo nombre a la iluminación por shader
+
+
+
+	ambient:
+
+		Color:
+
+		_esta opción permite agregar iluminación por ambiente, donde Black, es iuminación cero y white, es 
+
+		iluminación full/100
+
+		
+		_para lo cuál, dispondremos de un selector de color a través, del cuál, podremos indicar un color
+
+		personalizado
+
+
+
+	difuse:
+
+		Color:
+
+		_esta opción se refiere al color que tendrá el root, ó raíz, de cada fibr ó cabello
+
+
+		_para lo cuál, dispondremos de un selector de color a través, del cuál, podremos indicar un color
+
+		personalizado
+
+
+
+	Tip Colors:
+
+		Color A:
+
+		_esta opción se refiere al color que tendrá el tip, ó punta, de cada fibra ó cabello la cuál, esta 
+
+		dividida en dos partes "Color A", y "Color B" 
+
+
+		_para lo cuál, dispondremos de un selector de color a través, del cuál, podremos indicar un color
+
+		personalizado
+
+
+		
+
+		Color B:
+
+		_esta opción se refiere al color que tendrá el tip, ó punta, de cada fibra ó cabello la cuál, esta 
+
+		dividida en dos partes "Color A", y "Color B"
+
+		
+		_esto permite una mayor amplitud y gama posibilidades del color en las puntas del cabello, fibra 
+
+		ó filamento
+
+		
+		_para lo cuál, dispondremos de un selector de color a través, del cuál, podremos indicar un color
+
+		personalizado
+
+
+
+
+		A/B Balance:
+
+		_esta es una característica de la opción enterior "Tip Colors", la cuál, permite hacer un balance 
+
+		entre ambas secciones de color "Color A y B", que componen "Tip Colors"
+
+
+
+
+	Flat Shading:
+
+		_esta opción permite sintetizar el color ó volverlo plano tanto en la raíz, "Root", con en las puntas 
+
+		"Tip"
+
+
+
+
+	Root/Tip Crossover:
+
+		_esta opción permite fusionar ambas partes que conforman el hair system, ó cabello así, podremos 
+
+		mezclar los valores de color que hemos indicado tando para la raíz, root, como para las puntas tip 
+
+
+		_a través, de slider, independientes pudiendo así, controlar "Center", ó amplitud y "Range", ó 
+
+		gradación 
+
+
+
+	Specular:
+
+
+		_esta opción permite agregar brillo especular tanto al color como en decaimiento, es aconsejable 
+
+		colocar valores muy bajos de este atributo
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

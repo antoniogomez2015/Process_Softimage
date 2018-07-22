@@ -1,0 +1,76 @@
+
+
+
+
+
+
+	Caustic in Softimage
+
+		Softimage 2011 - Ambient Occlusion Pass Tutorial
+			https://www.youtube.com/watch?v=TzH_mIqfQXU
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	MultiPass:
+	__________
+
+	_una vez hemos aplicado el nodo de ambient occlusion, tenemos la posibilidad de optener diferentes pases de
+
+	render a partir de éste
+
+
+	_a través, de las opciones de "Outpu Mode", del nodo AO, de ésta manera, dispondremos de los siguientes pases:
+
+
+
+
+	_Occlusion Using Shading Normal:
+
+		_éste modo nos permitirá generar una imágen en escala de grises la cuál, es la más recomendada para el
+
+		proceso de ambient occlusion
+
+
+
+	_Occlusion Using Bent Normals:
+
+		_éste modo nos permitirá generar una imágen en escala de grises la cuál, es la más recomendada para el
+
+		proceso de ambient occlusion
+
+
+	_Sampled Enviroment:
+
+		_éste modo nos permitirá capturar el spill color, del "enviroment" aplicado sobre el "Current Pass",
+
+		a través, de un pass, de material difuso
+
+
+	_Return Bent Normals (Work Space):
+
+		_éste modo nos permitirá crear un mapa de "Normals", a partir del espacio global
+
+
+	_Return Bent Normals (Object Space):
+
+		_éste modo nos permitirá crear un mapa de "Normals", a partir del espacio local de los objetos, éste 
+
+		es método más recomendado
+	
+	
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+

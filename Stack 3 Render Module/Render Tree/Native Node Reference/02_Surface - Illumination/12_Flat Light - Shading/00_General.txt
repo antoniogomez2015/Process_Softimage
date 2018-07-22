@@ -1,0 +1,41 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Flat Light:
+	___________
+
+	_éste nodo nos permitirá crear un material plano tipo "toon", de dos colores el cuál, estará superditado por
+
+	la luz ambiental de la escena
+
+
+	_de ésta manera, el material se comportará en relación a la posición de la iluminación interactiva en la escena
+
+	para que así, en la representación de ambos colores del material tanto las luces como las sombras
+
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

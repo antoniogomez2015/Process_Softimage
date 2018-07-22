@@ -1,0 +1,44 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Shadow:
+	_______
+
+	_éste nodo nos permitirá cmapturar las sombras emitidas a partir de uno ó más puntos de luz sobre una 
+
+	superficie como un suelo ó una pared, otros
+
+
+	_de ésta manera, podremos personalizar posteriormente el comportamiento y características de las sombras 
+
+	emitidas a través, de nodo shadow, como también, de otros parámetros auxiliares
+
+
+	_para que así, opcionalmente podamos crear un pass, para renderizar éstas características personalizadas
+
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

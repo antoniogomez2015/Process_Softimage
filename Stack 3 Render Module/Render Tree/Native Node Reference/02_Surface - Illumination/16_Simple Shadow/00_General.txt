@@ -1,0 +1,47 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Shadow:
+	_______
+
+	_éste nodo nos permitirá representar las sombras en objetos totalmente translúcidos y transparentes de ésta 
+
+	manera, podremos recuperar las sombras perdidas cuando realizamos elementos translúcidos ó transparentes
+
+
+	
+	NOTA: para que las sombras sean producidas, primeramente debemos de tener fuentes de iluminación creadas en la
+
+	escena, como por ejemplo, spot lights
+
+
+	_así, como también, debemos de activarle las opciones de "Shadow/Enable", a las respectivas fuentes de 
+
+	iluminación
+
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

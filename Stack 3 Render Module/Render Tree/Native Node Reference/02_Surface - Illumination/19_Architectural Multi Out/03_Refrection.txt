@@ -1,0 +1,109 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Refrection:
+	___________
+
+	_en las opciones del material "Architectural", dispondremos del "tag" "Transparency / Reflection", en el 
+
+	cuál, dispondremos de las opciones de "Refrection", la cuál, nos permitirá crear material reflectivos hasta
+
+	cierto grado
+
+
+
+
+
+	Reflection:
+
+		_éste parámetro nos permitirá generar materiales reflectivos en proporción de ésta manera, con 
+
+		valores cercanos ha "0", el material no será reflectivo
+
+
+		_más con valores cercanos ha "1", el material resultante será muy reflectante, má nunca será 
+
+		totalmente reflectando como cromado por que el tipo de material no permnite llegar hasta tal nivel
+
+		de reflectancia
+
+
+
+	Color:
+
+		_así, como también, a través, de un selector de color podremos indicarle al sistema un color para
+
+		la reflectancoa del material generado como un valor de luminancia
+
+		
+
+	Glossiness:
+
+		_éste parámetro nos permitirá indicarle al sistema que deseamos crear un material reflectante más
+
+		ó menos esmerilado ó no
+
+
+		_de ésta manera, con valor superiores ha "0", y cercanos ha "1", crearemos un material menos
+
+		esmerilado ó sin efecto esmerilado
+
+
+		_más con valores cercanos ha "0", crearemos un material totalmente espemilado
+
+
+		_éste parámetro estará superditado al parámetro de "Samples", ya que de nos existir samples no es
+
+		posible el efecto de esmerilado
+
+
+	Samples:
+
+		_éste parámetro le indicará al sistema la cantidad de sampleos ó pases para el cálculo del efecto
+
+		esmerilado
+
+
+		_de ésta manera, cuán mayor cantidad de samples conseguiremos un esmerilado más refinado y pulido
+
+		y sin menos imperfecciones ó artefactos
+
+
+		_teniendo en cuenta que al aumentar la cantidad de samples también, se aumentará el tiempo de 
+
+		render
+
+
+	Metal Material:
+
+		_éste parámetro nos permitirá indicarle al sistema que el material tenga un comportamiento metálico,
+
+		es decir, que el material sea más corporeo y represente la especularidad de forma menos envolvente
+
+		y más puntualizada respetando más el color base
+
+
+		
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

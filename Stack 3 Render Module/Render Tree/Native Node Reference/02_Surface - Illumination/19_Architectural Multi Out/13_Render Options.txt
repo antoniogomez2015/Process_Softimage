@@ -1,0 +1,77 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Regions:
+	________
+
+	_una vez hemos agregado y configurado todos los nodos correctamente como se ha indicado en pasos anterior, 
+
+	entonces es hora de realizar los renders, correctamente
+
+
+	_para lo cuál, debemos de activar el render regions, a través, del shortcut, "Q", and drag, sobre cualquier
+
+	área del viewport 3d
+
+
+	_para posteriormente ir al triángulo de la parte superior del panel render regions, y en el cuál, debemos de
+
+	seleccionar la opcíon de "Regions/Render Channel/"
+
+
+	_y una vez allí, seleccionar uno de los canales personalizados de render que hemos creado y configurado 
+
+	previamente, por ejemplo; "proof_diffuse", "proof_reflect", "proof_refract", "proof_AO",...
+
+
+	_para que asi, éstos canales sean renderizados en el render regions, de forma independiente de los demás 
+
+	canales de render, como render pases personalizados ha modo de visualización
+
+
+
+
+
+	Pass Options:
+	_____________
+
+	_así, como también, si vamos a las opciones de "Render/Render/Render/Pass Option", para que así, se abra el
+
+	panel de opciones de render en el cuál, debemos de ir al tag, de "Output"
+
+	
+	_y en el cuál, debemos de ubicar las opciones de "Add", para que así, se abra una ventana en el cuál, 
+
+	podremos seleccionar de entre los canales de render disponibles y entre los cuáles 
+
+
+	_se encontrarán los canales que hemos personalizado a través, del nodo "Architectural Multi Out"
+
+
+		
+
+
+		
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

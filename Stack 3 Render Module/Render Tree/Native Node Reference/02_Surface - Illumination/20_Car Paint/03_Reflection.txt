@@ -1,0 +1,194 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Reflection:
+	___________
+
+
+	_Surface Reflection:
+
+
+		_Color:
+
+			_éste parámetro nos permitirá indicar el valor de luminancia como del color ha aplicar ha la
+
+			reflexión general del material
+
+
+			_para lo cuál, dispondremos de un selector de color a través, del cuál, podremos seleccionar
+
+			un color personalizado para la generación de la reflexión general del material
+
+
+		_Facing Angle Weight:
+
+			_éste parámetro nos permitirá indicar la cantidad de reflexión ó fuerza bruta con la 
+
+			cuál, es emitida ó generada la reflexión
+
+
+			_de ésta manera, podremos crear una reflexión más ó menos acusada en relación a las
+
+			necesidades del material respectivamente
+
+
+
+	_Edge Reflection:
+
+		
+		_Factor:
+
+			_éste parámetro nos permitirá indicarle al sistema la intensidad ó el peso ó fuerza bruta
+
+			para la reflexión del área del color complementario 
+
+
+			_es decir, del área en ángulo opuesto ha 90, grados del color difuso del material de ésta
+
+			manera, podremos agregar reflexión sólo para el área del color complementario
+
+
+			_de ésta manera, con valores cercanos ha "0", la reflexión agregada será casi total, más
+
+			con valores superiores, por ejemplo "20", la reflexión será mucho mejor y menos invasiva
+
+			sobre el material en general 
+
+
+		_Weight:
+
+			_éste parámetro nos permitirá aumentar de forma exponencial ó no, las áreas de brillo 
+
+			especular sobre el área en reflexión del color complementario
+
+
+			_de ésta manera, podremos hacer más brillantes los extremos ó lugares donde se encuentren
+
+			ángulos ó aristas en la superficie del motivo
+
+
+			_de ésta manera, con valores cercanos ha "0", los brillo especulares extremos se serán casi
+
+			perceptibles y no habrán áreas totalmente blancas
+
+
+			_más si indicamos valores cercanos ha "10", ó superiores ha "1", los brillos especulares 
+
+			sobre las reflexiones complementarias será excesivos y habran áreas totalmente brancas y 
+
+			posterizadas
+
+
+			_de ésta manera, lo más recomendable es indicar valores altos de "Factor", por ejemplo de 
+
+			"20", y valores bajos de "Weight", como por ejemplo "0.1", de ésta manera, obtendremos el 
+
+			equilibrio deseado
+
+
+
+	_Glossy Reflection:
+
+
+		_Glossy Rays:
+
+			_éste parámetro nos permitirá indicarle al sistema la cantidad de rayos para la generación
+
+			del efecto esmerilado sobre la superficie general del material
+
+
+			_de ésta manera, la relación más recomendada es "5-1", cindo ha uno, en relación al parámetro
+
+			de "Glossiness"
+
+
+			_lo que quiere decir que por cada valor de "1", de "Glossiness", debemos de indicar "5", de
+
+			"Glossy Rays", para que así, no se produzca flake, ó mopas exageradas y distantes sobre el
+
+			material resultante
+
+
+		_Glossiness:
+
+			_éste parámetro nos pemritirá indicarle al sistema la cantidad de efecto esmerilado y de
+
+			flake, sobre el material resultante
+
+
+			_de ésta manera, con valores cercanos ha "0", el efecto será casi inapreciable, más con 
+
+			valores superiores y cercanos por ejemplo, ha "5", el efecto será más acusado y apreciable
+
+
+
+	_Optimization Settings:
+
+		
+		_Max Ray Distance:
+
+			_éste parámetro nos permitirá mejorar la calidad y limpieza del efecto de "Glossy Reflection",
+
+			del paso anterior 
+
+
+			_de ésta manera, podremos refinar los resultados y dejar ver los demás efectos como reflexiones 
+
+			y especulares y colores primarios y secundarios y cercanos ha cámara de una manera, más limpia
+
+
+			_así, como también, adicionalmente éste parámetro aumenta la definición de la reflectividad
+
+			dejando ver mucho más el enviroment material a niveles exquisitos
+
+
+			_como también, variando el ángulo de reflectividad en relación a la dirección de la luz
+
+
+			_de ésta manera, con valores cercanos ha "0", no habrá mejora ó limpieza del efecto 
+
+			"Glossy Reflection"
+
+
+			_más valores superiores ha "1", y cercanos ha "10", los resultados de refinamiento y limpieza
+
+			será agregables y alta calidad
+
+
+		_Optimize Enviroment Sampling:
+
+			_desactivar éste parámetro eliminará las reflexiones dejando sólo el efecto de 
+
+			"Glossy Reflection", lo cuál, puede ser necesario en relación a los requerimientos de 
+
+			producción
+
+
+			_más si dejamos activado éste parámetro permanecerán todas las opciones de reflexión y las
+
+			características del efecto "Glossy Reflection"
+
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

@@ -1,0 +1,161 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Incidence:
+	__________
+
+	_una vez hemos aplicado el nodo incidence, dispondremos de las siguientes opciones:
+
+
+
+
+	_Name:
+
+		_éste parámetro nos permitirá cambiarle el nombre el nodo directamente
+
+	_Mode:
+
+		_Camara / Lights:
+
+			_éste algoritmo nos permitirá limitar una propiedad en relación a la vista de la cámara y a su
+
+			vez a la posición incidente de luz en le escena
+
+
+		_Camara / Lights (Light List):
+
+			_éste algoritmo nos permitirá limitar una propiedad en relación a la vista de la cámara y a su
+
+			vez a la posición incidente de luz en le escena
+
+
+			_pero específicamente a la lista de luces seleccionadas previamente
+
+
+		_Surface / Lights:
+
+			_éste algoritmo nos permitirá limitar una propiedad en relación a topología del motivo y a su
+
+			vez a la posición incidente de luz en le escena
+
+
+		_Surface / Lights (Light List):
+
+			_éste algoritmo nos permitirá limitar una propiedad en relación a topología del motivo y a su
+
+			vez a la posición incidente de luz en le escena
+
+
+			_pero específicamente a la lista de luces seleccionadas previamente
+
+
+
+		_Surface / Camara:
+
+			_éste algoritmo nos permitirá limitar una propiedad en relación a topología del motivo y a su
+
+			vez a la posición incidente de la cámara
+
+
+		_Surface / Vector:
+
+			_éste algoritmo nos permitirá limitar una propiedad en relación a a la topología que se 
+
+			encuentre a 90, grados tanto de la cámara como de las luces en la escena
+
+
+		_+- X|Y|Z:
+
+			_éste algoritmo nos permitirá limitar una propiedad en relación a una cordenada en específico,
+
+			sea ésta cordenada tanto en positivo como en negativo
+
+
+	Shading Range:
+
+		_éste parámetro nos permitirá cambiar ó virar la incidencia de la propiedad limitada de 90, grados ha
+
+		180, grados respectivamente
+
+
+		NOTA: ésta propiedad sólo estará disponible para las opciones donde haya iluminación implicada
+
+
+
+
+
+	Modify:
+
+
+		_Invert:
+
+			_ésta propiedad nos permitirá invertir todo el sistema, de ésta manera, podremos hacer que
+
+			las áreas que antes estaban afectadas por la propiedad limitada ahora no lo estén y 
+
+			viceversa
+
+
+		_Bias:
+
+			_éste parámetro nos permitirá controlar el umbral ó cantidad de efecto limitador aplicado
+
+			sobre el material y sobre las superficies respectivamente
+
+
+			_de ésta manera, si indicamos un valor bajo, cercano ha "0", la influencia limitadora será
+
+			casí total 
+
+
+			_más si indicamos un valor alto, cercano ha "1", a influencia limnitadora será casi 
+
+			inexistente
+
+
+		_Gain:
+
+			_el parámetro de gain, ó ganancia nos permitirá tanto limitar como potencializar el efecto
+
+			limitador
+
+
+			_de ésta manera, si indicamos un valor bajo cercano ha "0", la incluencia limitadora será
+
+			mermada ó contenido
+
+
+			_más si indicamos un valor superior ha "0", y cercano ha "1", la influencia limitadora será
+
+			potencializada ó extendida
+
+			
+			_el valor más recomendado se encuentra entre "0.2", como promedio, sigue siguendo un valor 
+
+			bajo
+
+
+	
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

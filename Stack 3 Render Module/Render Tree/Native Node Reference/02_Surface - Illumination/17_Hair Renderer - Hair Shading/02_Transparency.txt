@@ -1,0 +1,63 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Transparency:
+	_____________
+
+	Name:
+		
+		_esta opción permite indicar un nuevo nombre a la iluminación por shader
+
+
+
+	Enable:
+
+		_esta opción permite activar ó desactivar las opciones de transparencia para el material
+
+
+
+	Tip:
+
+		_esta opción permite indicar los valores de transparencia para "Tip", la punta 	del cabello fibra ó 
+
+		filamento
+
+
+
+	Root:
+
+		_esta opción permite indicar los valores de transparencia para el "Root", la raíz del cabello fibra 
+
+		ó filamento
+
+
+
+	Root/Tip Crossover:
+
+		_esta opción perminte mezclar ambos atributos a modo de fusión para tener así, un mayor control entre 
+
+		el color y la apariencia general del hair system
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

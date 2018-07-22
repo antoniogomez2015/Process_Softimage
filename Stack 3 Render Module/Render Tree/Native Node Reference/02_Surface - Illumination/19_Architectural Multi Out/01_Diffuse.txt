@@ -1,0 +1,58 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Diffuse:
+	________
+
+	_el tag, de diffuse, nos permitirá indicarle al sistema un color para el material a través, de un selector
+
+	de color
+
+
+		Diffuse:
+
+			_a través, de un selector de color podremos indicarle al sistema un color general para el
+
+			material ha generar
+
+
+
+		Weight:
+
+			_éste parámetro nos permitirá indiarle al sistema el "Intensity Multiply", ó la luminocidad
+
+			del material ó influencia de éste 
+
+
+			¨_de ésta manera, podremos crear un material más ó menos luminiso 
+
+
+
+		_Roughtness:
+
+			_éste parámetro nos pemritirá indicarle al sistema la capacidad de recibir el brillo
+
+			general del material, de ésta manera, con valores mayores el material será menos especular
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

@@ -1,0 +1,145 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Store Color in Channel:
+	_______________________
+
+
+	_una vez hemos agregado y conectado correctamente el nodo "Architecture Multi Out", en el material de salida
+
+	del objeto respectivo
+
+
+	_podremos ahora comenzar con el proceso de personalización de los diferentes canales de las propiedades del 
+
+	material para su posterior renderización en render pases
+
+
+	_de ésta manera, estando aún el "Material Manager", debemos de ir ha "Nodes/Data/Render Channel/", y una vez 
+
+	allí, debemos de agregar el nodo "Store Color in Channel"
+
+
+		
+
+	Conection:
+	__________
+
+	_de ésta manera, ahora debemos de ir haciendo las conexiones de salida del nodo "Architectural Multi Out", con
+
+	cada una de las instancias del nodo "Store Color in Channel"
+
+	
+	_de ésta manera, debemos de arrastrar el respectivo "Outout", por ejemplo; "Diffuse", del nodo 
+
+	"Architectural Multi Out", al "Input", del nodo "Store Color in Channel/Input", para que así, ambos nodos queden 
+
+	conectados
+
+
+
+	Settings:
+	_________
+
+	_para que así, una vez conectados ambos nodos podremos ahora abrir las propiedades del nodo 
+
+	"Store Color in Channel", haciendo doble click, sobre éste nodo en el material manager
+
+
+	_para que así, se abra el panel contextual del nodo y en el cuál, encontraremos las siguientes opciones:
+
+
+
+
+
+		_Name:
+
+			_ésta parámetro nos pemritirá indicar un nombre personalizado para el nodo, lo más 
+
+			recomendable es indicar un nombre correlativo con el tipo de mapa ha generar
+
+
+
+		_Render Channel:
+
+			_ésta parámetro nos pemritirá indicar un canal existente ó genérico, de ésta manera, 
+
+			podremos seleccionar una propiedad estandar como diffuse, specular, refraction, otros
+
+
+
+		Add:
+
+			_así, como también, podremos agregar propiedades personalizadas las cuáles, estarán
+
+			disponibles tanto en el "render regions", como en el pass render final
+
+
+			_de ésta manera, ésta es la opción más recomendada para que así, podamos crear pases 
+
+			de render personalizados
+
+
+			_de ésta manera, podremos controlar la influencia y demás características de una propiedad
+
+			determinada y su integración con las demás propiedades
+
+
+			_de ésta manera, una vez le demos al botón "Add", se abrirá una ventana con el cual, 
+
+			debemos de indicar un nombre para la nueva propiedad de render ha crear y configurar
+
+
+			_a la cuál, debemos de indicar un nombre característico el cuál, aparecerá en la lista
+
+			de canales de render
+
+
+
+		_Store with Ray Type:
+
+			_éste parámetro nos permitirá relacionar el tipo de mapa ha generar con un tipo de mapa
+
+			existente para que así, una correlación de entre los tipos de mapas disponibles		
+
+
+
+		_Components to Store:
+
+			_éste parámetro nos pemritirá seleccionar el grupo de canales de color ha incorporar
+
+			como parte del mapa ha generar
+
+
+			_de ésta manera, podremos crear un mapa full color, ó un mapa en canales separados como
+
+			R/G/B/A
+
+
+		
+
+
+		
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

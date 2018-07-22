@@ -1,0 +1,136 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Specular:
+	_________
+
+
+	_Primary Highlight:
+
+
+		_Color:
+
+			_éste parámetro nos permitirá indicar el valor de luminancia y color asignado para la 
+
+			especularidad puntual del material
+
+
+			_de ésta manera, a través, de la especularidad primaria podremos crear áreas de brillo
+
+			focalizadas en relación al ángulo de la indicencia de la luz y la superficie
+
+
+		_Weight:
+
+			_éste parámetro nos permitirá indicar la influencia ó fuerza las áreas especulares ha
+
+			generar sobre el material
+
+
+			_de ésta manera, podremos crear áreas más grandes y más intensas ó blancas sobre el
+
+			material y la superficie del motivo
+
+
+		_Specular Decay:
+
+			_éste parámetro nos permitirá indicar el decaimiento y ángulo de incidencia y reacción
+
+			a la luz para la generación del brillo especular puntual
+
+
+			_de ésta manera, podremos crear áreas más alargadas ó afiladas como también más grandes
+
+			así, como también, hasta desaparecer las áreas especulares puntuales
+
+
+			_de ésta manera, a través, de éste parámetro podremos personalizar como desieamos las
+
+			áreas especulares, éste parámetro hace también, como una especularidad "Anisotropic"
+
+
+
+	_Secundary Highlight:
+
+
+		_Color:
+
+			_éste parámetro nos permitirá indicar el valor de luminancia y color asignado para la 
+
+			especularidad glosiness ó dispersa del material
+
+
+			_de ésta manera, a través, de la especularidad secundario podremos crear áreas de brillo
+
+			extendidas de forma general a la luz y a la superficie
+
+
+		_Weight:
+
+			_éste parámetro nos permitirá indicar la influencia ó fuerza de área especular generada
+
+			de forma global sobre el material y la superficie respectivamnete
+
+
+			_de ésta manera, podremos crear ágrandes áreas y más intensas ó blancas sobre el
+
+			material y la superficie del motivo
+
+
+		_Specular Decay:
+
+			_éste parámetro nos permitirá indicar el decaimiento y ángulo de incidencia y reacción
+
+			a la luz para la generación del brillo especular glosiness ó disperso
+
+
+			_de ésta manera, podremos crear áreas más blanquecinas y contrastadas como más brillantes
+
+			como también, más definidas 
+
+
+			_ó con una mayor acutancia entre las áreas especulares y las áreas son especularidad ó todo 
+
+			lo contrario respectivamente
+
+
+			_así, como también, hasta desaparecer las áreas especulares  ó glosiness ó dispersas
+
+
+			_de ésta manera, a través, de éste parámetro podremos personalizar como desieamos las
+
+			áreas especulares
+
+
+
+	_Glazing:
+
+		_activar éste parámetro tratará de optimizar el aspecto general del material tomando en cuenta el 
+
+		enviroment map, aplicado al entorno de la escena
+
+
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

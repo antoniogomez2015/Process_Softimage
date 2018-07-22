@@ -1,0 +1,46 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Indirect Illumination:
+	______________________
+
+	
+	Color:
+
+	_éste parámetro nos permitirá indicar un color personalizado para la generación de la iluminación global a 
+
+	través, del final gather, y global illumination
+
+
+	_así, como también, indicaremos un valor de luminancia lo que repercutirá como iteractúa el material con el 
+
+	ambiente
+
+
+	_para lo cuál, dispondremos de un selector de color a través, del cuál, podremos indicar un color personalizado
+
+	para la generación de la iluminación global
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

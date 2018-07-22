@@ -1,0 +1,42 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Hair Renderer:
+	______________
+
+	_éste nodo nos permitirá texturizar de forma más avanzada un sistema de hair, agregado sobre una geometría 
+
+	respectiva
+
+
+	_de ésta manera, podremos crear fibras, pelo y cabellos con gradaciones y diferentes comportamientos tanto 
+
+	en el filamento medio como la raiz y la puntas
+
+
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

@@ -1,0 +1,97 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Transparency:
+	_____________
+
+	Name:
+		
+		_esta opción permite indicar un nuevo nombre al nodo directamente desde el node
+
+
+
+	Enable:
+
+		_este parámetro nos permitirá activar ó desactivar las opciones de transparencia para el material
+
+
+
+	Overlay Transparency:
+
+		_éste parámetro nos permitirá hacer transparente ó translúcido el sistema de hair, de ésta manera,
+
+		con valores cercanos ha "0", el sistema de hair, será insible
+
+
+		_más con valores cercanos ha "1" el sistema de hair, será totalmente sólido de ésta manera, 
+
+		podremos controlar la apariencia del sistema de hair
+
+
+
+
+	Length:
+
+
+		Enable:
+
+			_este parámetro nos permitirá activar ó desactivar las opciones de transparencia para el 
+
+			material
+
+
+			_de ésta manera, dispondremos de un slider, a través, del cuál, podremos controlar las áreas
+
+			que serán visibles, atenuadas ó resaltadas
+
+			
+			_de ésta manera, podremos controlar la longitud, cantidad y apariencia en general, de ésta
+
+			manera, podremos ajustar la presencia y porte ó apariencia del sistema de hair
+
+
+			_así, como también, dispondremos de un controlador a través, del cuál, podremos controlar
+			
+			el valor del canal alpha, ó valor de luminancia para el slider, de más arriba
+
+
+
+	Cross:
+
+		Enable:
+
+			_este parámetro nos permitirá activar ó desactivar las opciones de transparencia para el 
+
+			material
+
+
+			_éstos parámetros son idénticos a los de "Length", expresados en el paso de más arriba
+
+			más éstos parámetros están orientados ha la raiz del filamento 
+
+
+			_y no a la punta del filamento, como si lo están los parámetros de "Length"
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

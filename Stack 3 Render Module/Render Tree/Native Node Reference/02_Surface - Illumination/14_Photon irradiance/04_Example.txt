@@ -1,0 +1,56 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Example:
+	________
+
+	_un gran ejemplo de aplicación de éste nodo ó material sería el siguiente:
+
+
+	
+
+	_donde primeramente estando en el material manager, shortcut, "Control + 7", debemos de ir al menú 
+
+	"Nodes/Processing/Mixers", y una vez allí, agregar el nodo de "Gradient"
+
+
+	_para que podamos conectar el "Output", del nodo "Gradient", en el "Input/Diffuse", del nodo "Phong", en éste
+
+	casí
+
+
+	_para posteriormente arrastrar el "output", del nodo "incident", en "Input/Input", del nodo "Gradient", para 
+
+	que así, podamos a través, del nodo gradient, y el nodo incident, jugar con la volumetría de la forma 
+
+
+	_a través, del decaimiento del color y sombreado, generando así, un efecto de volúmen y peso de la forma, 
+
+	otros
+
+
+
+	
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

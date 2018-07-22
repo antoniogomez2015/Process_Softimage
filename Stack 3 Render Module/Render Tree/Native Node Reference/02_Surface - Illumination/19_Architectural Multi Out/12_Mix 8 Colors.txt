@@ -1,0 +1,79 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Mix 8 Colors:
+	_____________
+
+	_una vez hemos agregado los nodos "Store Color in Channels", con el nodo "Architectural Multi Out", podremos
+
+	agregar un nodo que nos permita fusionar y hacer interactuar los canales personalizados de las diferentes
+
+	propiedades del material
+
+
+	_para lo cuál, debemos de ir ha "Material Manager/Nodes/Processing/Mixers/", y una vez allí, debemos de 
+
+	seleccionar el nodo "Mix 8 Colors"
+
+
+
+
+	Conections:
+	___________
+
+	_para que así, podamos ir arrastrando el "Output", del nodo "Store Color in Channel", en el nodo 
+
+	"Mix 8 Colors/Base Color, Color 1, Color 2,....", hasta conectar todos los nodos de tipo 
+
+	"Store Color in Channel"
+
+
+	_para luego abrir las propiedadesl del nodo "Nix 8 Colors", para que así, podamos ir activando las layers,
+
+	para cada uno de las "Inputs", que hemos agregado
+
+
+	_y para que a su vez vayamos ajustando el "Weight", ó influencia de cada canal a través, de los valores de 
+
+	luminancia del selector de color respectivo 
+
+
+	_donde blanco será la mayor incluencia y negro será la ausencia de influencia
+
+
+	_de ésta manera, debemos de repetir éste proceso hasta haber cubierto todos los inputs, respectivos
+
+
+
+	_para posteriormente tomar el "Output", del nodo "Mix 8 Colors", y arrastrarlo hasta el nodo 
+
+	"Material/Diffuse", ó último material de salida
+
+
+		
+
+
+		
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

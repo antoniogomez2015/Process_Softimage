@@ -1,0 +1,58 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Global Illumination:
+	____________________
+
+	_de ésta manera, hasta éste punto el efecto caustics, se manifestará sobre la superficie del motivo, más ésta
+
+	proyección será de manera, plano, es decir, no habrán profundidad ni integración dentro del material
+
+
+	_de ésta manera, lo más aconsejables es seleccionar la luz a la cuál, le hemos activado las opciones de 
+
+	"Phothon/Caustics"
+
+
+	_y con ésta luz de tipo spot, seleccionada ir igualmente a las opciones de "Photon", y una vez allí, activas
+
+	las opciones de "Global Illumination"
+
+
+	_para que así, la emisión de fotones intervenga en la generación del efecto posteriormente
+
+
+	_para posteriormente ir ha "Stack/Render/Render/Regions/", y una vez allí, abrir las opciones de "All Options",
+
+	para que así, podamos ir y activar las opciones del "tag", "Global Illumination"
+
+
+	_de ésta manera, una vez hagamos el render nuevamente podremos ver que ahora si interactuará la iluminación 
+
+	global en el proceso de generación del efecto caustics, sobre el material en su totalidad
+
+
+	
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

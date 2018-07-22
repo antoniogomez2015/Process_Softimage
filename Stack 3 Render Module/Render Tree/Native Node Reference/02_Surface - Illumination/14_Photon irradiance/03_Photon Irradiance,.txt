@@ -1,0 +1,52 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Photon Irradiance:
+	__________________
+
+	_una vez hemos aplicado el nodo incidence, dispondremos de las siguientes opciones:
+
+
+
+
+	_Name:
+
+		_éste parámetro nos permitirá re nombrar el nodo directamente
+
+
+	_Input:
+
+		_ésta parámetro nos pemritirá indicarle al sistema un color personalizado para la generación del efecto
+
+		de radiación así, como un valor de luminancia
+
+
+		_para lo cuál, dispondremos de un selector de color a través, del cuál, podremos indicar un color
+
+		personalizado para la generación del sistema
+
+
+	
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Node Assign:
+	____________
+
+	_donde primeramente abriremos el panel "Material Manager", a través, del shortcut, "Control + 7", para que así,
+
+	podamos seleccionar un material respectivo 
+
+
+	_para a continuación ir al menú "Nodes/Illumination/", y una vez allí, cargar un nodo de "Flat Light",
+
+	de ésta manera, el nodo será agregado el panel
+
+
+	_para que así, podamos conectar el "Output", del nodo "Flat Light", con el "Input/Surface, Shadow y Photon", 
+
+	del nodo "Material", ó como lo hayamos renombrado
+
+
+
+
+	NOTA: los nodos "Flat Light", y "Flat Light Shading", son iguales, la diferencia es que el nodo "Flat Light",
+
+	dispone de las tags, "Transparency / Reflection", como "Global Illumination", de forma opcional para el material
+
+
+	_más el nodo "Flat Light Shaing", sólo incorporará la opcíon de "Global Illumination", como un parámetro más
+
+	incorpotado
+
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

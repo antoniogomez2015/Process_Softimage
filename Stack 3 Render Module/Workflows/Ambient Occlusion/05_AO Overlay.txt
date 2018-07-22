@@ -1,0 +1,111 @@
+
+
+
+
+
+
+	Caustic in Softimage
+
+		Softimage 2011 - Ambient Occlusion Pass Tutorial
+			https://www.youtube.com/watch?v=TzH_mIqfQXU
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	AO Overlay:
+	___________
+
+	_tenemos la posibilidad de agregar ambient occlusion, ha cualquier material de la escena sin que éste pierda 
+
+	sus características y tenga que convertirse en un material en blanco y negro
+
+
+	_de ésta manera, podremos acentuar el efectos de sombras e iluminación global en un material y en la escena en
+
+	su conjunto
+
+
+	_de ésta manera, podremos agregar el efecto de AO, a un nodo en específico el cuál, se lo aplicaríamos a todos
+
+	los elementos de la escena, ó por el contrario podres agregar el efecto de AO, a la mayoría de materiales de 
+
+	la escena
+
+
+	_más lo que si hay que tener en cuenta es que tanto las superficies que emitirán sombra ó penumbra, como las
+
+	superficies que serán receptoras de las sombras ó penumbras 
+
+
+	_ambas tendrán que tener aplicado un material con el efecto AO, aplicado, para que así, el efecto de AO, sea 
+
+	visible en el render
+
+
+
+
+
+	Nodos Assign:
+	_____________
+
+	_para los casos en los que deseamos superponer el AO, sobre un material sin que éste pierda sus características
+
+	debemos hacer el mismo proceso de asignación de ambient occlusion, normal
+
+
+	_donde primeramente abriremos el panel "Material Manager", a través, del shortcut, "Control + 7", para que así,
+
+	podamos seleccionar un material respectivo al cuál, deseamos aplicar el efecto de AO
+
+
+	_para a continuación ir al menú "Nodes/Illumination/", y una vez allí, cargar un nodo de "Ambient Occlusion",
+
+	de ésta manera, el nodo "AO", será agregado el panel
+
+
+	_para que así, podamos conectar el "Output", del nodo "Ambient Occlusion", con el "Input/Surface", deo nodo
+
+	"Material", ó como lo hayamos renombrado
+
+
+	NOTA: debemos de conectar el nodo "AO", en el nodo final del material y no el material creado como un "Phong",
+
+	por ejemplo
+
+
+
+
+	AO Overlay:
+	___________
+
+	_más ahora para hacer que el material original conserve sus características debemos de ahora arrastrar el 
+
+	"Output", del material base ej; "Phong", y hasta el "Input/Bright", del nodo "Ambient Occlusion" 
+
+
+	_para que así, el valor difuso sea controlado por el material base, de ésta manera, las sombras y penumbras
+
+	serán controladas por el AO
+
+
+	_de ésta manera, optendremos ambas cosas, tanto el material base como el efecto AO, de forma superpuesta en
+
+	un mismo  material final ó unificado
+
+	
+	
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+

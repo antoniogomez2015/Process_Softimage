@@ -1,0 +1,112 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Shadow:
+	_______
+
+	_una vez hemos aplicado el nodo incidence, dispondremos de las siguientes opciones:
+
+
+
+
+
+	_Name:
+
+		_éste parámetro nos permitirá re nobrar directamente el nodo desde aquí
+
+
+	_Minimum Intensity:
+
+		_éste parámetro nos permitirá indicar la dispersión de las sombras representadas, de ésta manera, 
+
+		podremos representar más ó menos sombras colaterales adicionales 
+
+
+		_y como también, de forma más ámplia ó con menos acutancia en sus bordes
+
+
+		_de ésta manera, con valores ceranos ha "0", las sombras directas y colaterales serán superiores
+
+		ó ayores
+
+
+		_más con valores superiores y cercanos ha "1", las sombras serán más contenidas y menores 
+
+		colarealmente así, como también, éstan tendrán más acutancia y contraste en sus bordes
+
+
+	_Maximum Intensity:
+
+		_éste parámetro nos permitirá aumentar el contraste e intensidad en las sombras que se encuentre más
+
+		cercanas a la superficie de la cuál, son emitidas
+
+
+		_de ésta manera, podremos emular más cercanía y contraste lo cuál, se traducirá en un mayor realismo
+
+
+	_RGB:
+
+		_éste parámetro nos permitirá visualizar las sombras proyectadas sobre las superficies directamente 
+
+		en el render region 
+
+
+		_para que así, podamos hacer ajustes mientras vemos los resultados del mapa ó pass, resultante del 
+
+		proceso respectivo
+
+
+	_Shadow Cast on Visible Faces:
+
+		_éste parámetro cobra sentido cuando le aplicado también, a la geometría del motivo el nodo "Shadow",
+
+		ya que de ésta manera, sólo se verán algunas parte de la geometría y las otras partes permanecerán en
+
+		penumbra
+
+
+		_de ésta manera, podremos indicarle al sistema através, de éste parámetro que contemple las áreas 
+
+		visibles del motivo para la generación de las sombras como sombras adicionales ó caleterales
+
+
+
+
+	Alpha:
+	______
+
+	_una opción para la visualización de las sombras proyectadas sobre la superficies, es haciendo uso en el
+
+	render regions, es activando la opción de "Render Regions/Options/Display/Alpha"
+
+
+	_de ésta manera, entrando en la pestaña en el render regions, directamente en el viewport 3d, podremos
+
+	seleccionar el modo de visualización del canal alpha, para que así, podamos ver el mapa de shadows, generado
+
+
+	
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+
