@@ -1,0 +1,46 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Connections:
+	____________
+
+	_de ésta manera, una vez hemos agregado los nodos respectivos debemos entonces proceder ha conectar todos los
+
+	nodos para que éstos funcionen correctamente
+
+
+	_para lo cuál, primeramente debemos de arrastrar el "Output", del nodo "Matte Shadow", al "Input", del nodo
+
+	"Material/Surface"
+
+
+	_para posteriormente arrastrar el "Output", del nodo "Camara_Map_Mip", sobre el "Input", del nodo 
+
+	"Matte Shadow/Background"
+
+
+
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

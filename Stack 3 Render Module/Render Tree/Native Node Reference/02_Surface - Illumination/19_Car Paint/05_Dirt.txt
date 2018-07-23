@@ -1,0 +1,65 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Dirt:
+	_____
+
+
+	_Dirt Color:
+
+		_éste parámetro nos pemritirá indicar un color para el dirt, ó suciedad del color ó también, se podría
+
+		decir, un spill color, focalizado
+
+
+		_de ésta manera, podremos agregar un spill color, a las áreas en penumbra del color complementario del
+
+		sistema
+
+
+		_de ésta manera, a través, de un selector de color podremos indicar un color personalizado para la 
+
+		generación del spill color ha generar
+
+
+
+	Weight:
+
+		_éste parámetro nos permitirá indicar la influencia ó fuerza que tendrá el spill color sobre las áreas
+
+		en penumbra del color complementario del sistema
+
+
+		_de ésta manera, si indicamos un valor de "0", la presencia del spill color, será inexistente, más
+
+		si indicamos un valor superior ha "0", ya se comenzará ha evidenciar el spill color
+
+
+		_de ésta manera, se recomiendan valores muy bajos para hacer cambios sutiles del color, valores de 
+
+		entre valores de "0.1", ó "0.2"
+
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

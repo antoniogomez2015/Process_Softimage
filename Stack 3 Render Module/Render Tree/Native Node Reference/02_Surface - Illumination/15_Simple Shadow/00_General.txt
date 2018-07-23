@@ -11,8 +11,8 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	Shadow:
-	_______
+	Simple Shadow:
+	______________
 
 	_éste nodo nos permitirá representar las sombras en objetos totalmente translúcidos y transparentes de ésta 
 

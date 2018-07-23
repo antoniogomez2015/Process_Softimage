@@ -14,9 +14,9 @@
 	Car Paint:
 	__________
 
-	_el nos nos permitirá emular los efecto de pintura horneada y con copos y suciedad de las pinturas automotrices
+	_éste nodo "Car Paint", nos permitirá emular los efecto de pintura horneada y con copos y suciedad de las 
 
-	de ésta manera, podremos generar materiales con profundidad especular y de reflectividad 
+	pinturas automotrices de ésta manera, podremos generar materiales con profundidad especular y de reflectividad 
 
 
 	_así, como con diversos matices y tonos de pintura en relación al ángulo de incidencia de la luz y los ángulos 

@@ -1,0 +1,93 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Matte Externo como Alpha:
+	_________________________
+
+	_más si la imágen no tiene canal alpha, incorporada con el caso anterior, debemos entonces de hacer una
+
+	variación en la configuración de los nodos para que así, la información sea reconocida de forma correcta
+
+	
+
+	Card Opacity Node:
+
+	
+	_primera debemos de seleccionar el mesh, del motivo y con éste seleccionado abrir el material manager, a través,
+
+	del shortcut, "Control + 7", ó a través, del render tree, shortcut, "7"
+
+
+	_para que así, una vez allí, podamos ir ha "Node/Illumination/", y una vez allí agregar el nodo "Card Opacity"
+
+
+
+	
+	Connections:
+
+
+	_para posteriormente proceder ha arrastrar el "output", del nodo "Imagen", al "Input", del nodo 
+
+	"Card Opacity/Input", para luego arrastrar el "Output", del nodo "Card Opacity", al "Input", del nodo 
+
+	"Material/Surface"
+
+
+	_para posteriormente arrastrar el "Output", del nodo "Imagen", (de la imágen con el matte que hará de alpha),
+
+	hasta el "Input", del nodo "Card Opacity/Opacity"
+
+
+	_para posteriormente abrir las opciones del nodo "Card Opacity", haciendo doble click, sobre el nodo 
+
+	respectivo para que así, vayamos a las opciones de "Opacity in Alpha", y una vez allí, debemos de desactivar
+
+	ésta opción
+
+
+
+
+
+	_para que así, podamos ver que ahora al renderizar con el render regions, podremos colocar el modo de 
+
+	visualización en "Display/ALpha", para que así, podamos ver renderizado el canal alpha, solamente
+
+
+	_más también, podremos colocar el modo de visualización en "Render Channel/Depth", ó en "Normal", otros,
+
+	para que así, podamos ver que ahora si es contemplada la información del canal alpha 
+
+
+	_en éste caso incorporada dentro de la imágen para los procesos de generación de mapas como depth map, 
+
+	normal map, entre otros 
+
+
+	_de ésta manera, ahora podremos crear render pass, de diferentes mapas de imágen compuestos lo cuál, es
+
+	necesario para procesos como mapeos convencionales como para camara mapping, y camara  projection, otros
+
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

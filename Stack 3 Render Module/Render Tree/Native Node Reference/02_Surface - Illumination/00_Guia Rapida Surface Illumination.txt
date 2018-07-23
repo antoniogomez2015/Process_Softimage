@@ -1,0 +1,299 @@
+
+
+	Phong:
+	______
+
+	_éste es un nodo de uso general el cuál, nos permitirá reproducir material plásticos como altamente reflectivos
+
+	como neutros
+
+
+	Cooktornance:
+	_____________
+
+	_éste es un nodo de uso general el cuál, nos permitirá reproducir material plásticos como altamente reflectivos
+
+	incluso mayores y más afinados que "Phong"
+
+
+	_de ésta manera, podremos lograr especularidads más afiladas y con reflejos más extremos y refinados lo cuál,
+
+	es especialmente útil para superficies altamente brillantes como vidrios entre otros materiales translúcidos
+
+
+	Anisotropic:
+	____________
+
+	_éste es un nodo nos permitirá reproducir material plásticos como altamente reflectivos	y metálicos, incluso
+
+	mayores que "Phong", para el uso de superficies complejas
+
+
+	_en la que deseamos tener un control de la especularidad y altas luces, tanto en su forma como en su dirección
+
+	y tamaño para tener así, un control absoluto
+
+
+	Blinn:
+	______
+
+	_éste es un nodo de uso general el cuál, nos permitirá reproducir material plásticos, cueros neutros, otros
+
+
+	Strauss:
+	________
+
+	_éste es un nodo nos permitirá reproducir material plásticos como altamente reflectivos	y metálicos para el uso
+
+	de superficies compuestas como aleaciones y materiales cambiantes en el tiempo
+
+
+	_de ésta manera, podremos lograr especularidads promedio entre "Phong", y "Cooktornance", pero que a su vez, 
+
+	sea afectado el canal difuso del material por la especularidad del material en general
+
+
+	Lambert:
+	________
+
+	_éste es un nodo de uso general el cuál, nos permitirá reproducir material de tipo plásticos mates, sintéticos
+
+	mates, superficies como paredes entre otros, éste es un material de uso general
+
+
+	Constant:
+	_________
+
+	_éste es un nodo nos permitirá reproducir material plásticos y mates ya que éste es un material que no 
+
+	contempla la especularidad, altas luces y reflexión como para de sus parámetro básicos
+
+
+	_de ésta manera, a través, de éste nodo podremos representar materiales totalmente planos y sin detalle y en
+	
+	iluminación global éste materia no aceptará iluminación ambiental y se verá efectado por la sombras, otros
+
+
+	Architectural:
+	______________
+
+	_éste es un nodo de uso general el cuál, nos permitirá reproducir todo tipo de materiales tanto  plásticos como 
+
+	altamente reflectivos y refractivos incluso mayores y más afinados que "Phong"
+
+
+	_de ésta manera, podremos lograr la más ámplia gama de materiales mixtos con especularidades más afiladas y con 
+
+	reflejos más extremos y refinados 
+
+	
+	_lo cuál, es especialmente útil para superficies altamente brillantes como vidrios entre otros materiales 
+
+	translúcidos
+
+
+	Fast Simple Misss:
+	__________________
+
+	_éste es un nodo de uso específico para la generación de superficies orgánicas como personajes y organismos
+
+	vivos entre otras posbilidades como plásticos translúcidos, otros
+
+
+	Fast Skin Misss:
+	________________
+
+	_éste es un nodo de uso específico para la generación de superficies orgánicas como personajes y organismos
+
+	vivos entre otras posbilidades como plásticos translúcidos, otros
+
+
+	_de ésta manera, éste nodo ofrece opciones más completas y avanzadas que el nodo "Fast Simple Misss"
+
+
+	Flat Light:
+	___________
+
+	_éste nodo nos permitirá crear un material plano tipo "toon", de dos colores el cuál, estará superditado por
+
+	la luz ambiental de la escena
+
+
+	_de ésta manera, el material se comportará en relación a la posición de la iluminación interactiva en la escena
+
+	para que así, en la representación de ambos colores del material tanto las luces como las sombras
+
+
+	Incidnence:
+	___________
+
+	_éste nodo nos permitirá limitar una propiedad ó característica de un material determinado de ésta manera, por
+
+	ejemplo; podremos limitar la reflexión de un material en relación a la insidencia de luz sobre la superficie
+
+	del motivo
+
+
+	_como también, por medio del punto de vista de la cámara, ó en relación a un cordenada en específico ó a través,
+
+	de una combinación de entre la cámara la luz, otros
+
+
+	Photon irradiance:
+	__________________
+
+	_éste nodo nos permitirá transpolar el efecto "Caustics", de la superficie proyectada al material del motivo
+
+
+	_de ésta manera, podremos emular también, el efecto caustics. sobre el material del motivo de forma inversa, 
+
+	es decir, que el efecto caustics, se creara de forma inversa, desde la superficie proyectada hacia el motivo, 
+
+	ó de abajo hacia arriba
+
+
+	Shadow:
+	_______
+
+	_éste nodo nos permitirá cmapturar las sombras emitidas a partir de uno ó más puntos de luz sobre una 
+
+	superficie como un suelo ó una pared, otros
+
+
+	_de ésta manera, podremos personalizar posteriormente el comportamiento y características de las sombras 
+
+	emitidas a través, de nodo shadow, como también, de otros parámetros auxiliares
+
+
+	Simple Shadow:
+	______________
+
+	_éste nodo nos permitirá representar las sombras en objetos totalmente translúcidos y transparentes de ésta 
+
+	manera, podremos recuperar las sombras perdidas cuando realizamos elementos translúcidos ó transparentes
+
+
+	
+	NOTA: para que las sombras sean producidas, primeramente debemos de tener fuentes de iluminación creadas en la
+
+	escena, como por ejemplo, spot lights
+
+
+
+	Hair Renderer / Hair Shading:
+	_____________________________
+
+	_éste nodo nos permitirá texturizar por defecto un sistema de hair, agregado sobre una geometría respectiva
+
+
+	_éste nodo no se encuentra disponible dentro de los paneles "render tree", ó "material manager"
+
+
+
+	NOTa: los nodos "Hair Renderer / Hair Shading", son los mismos ya que cuando aplicamos un sistema de hair,
+
+	sobre una geometría, ésta se agregará con el material "Hair Renderer", como material base
+
+
+
+	Hair Renderer:
+	______________
+
+	_éste nodo nos permitirá texturizar de forma más avanzada un sistema de hair, agregado sobre una geometría 
+
+	respectiva
+
+
+	_de ésta manera, podremos crear fibras, pelo y cabellos con gradaciones y diferentes comportamientos tanto 
+
+	en el filamento medio como la raiz y la puntas
+
+
+
+	Architectural Multi Out:
+	________________________
+
+	_el nodo "Architectural Multi Out", es idéntico al nodo "Architectural", con la diferencia de que el nodo
+
+	"Architectural Multi Out", nos brindará las salidas de las diferentes características del material de forma
+
+	independiente
+
+
+	_de ésta manera, podremos configurar y exportar éstas características como render pases personalizados para que 
+
+	así, podamos hacer ajustes y personalizaciones por ejemplo, de la especularidad, reflexiones, refracciones, otros
+
+
+
+	Car Paint:
+	__________
+
+	_éste nodo "Car Paint", nos permitirá emular los efecto de pintura horneada y con copos y suciedad de las 
+
+	pinturas automotrices de ésta manera, podremos generar materiales con profundidad especular y de reflectividad 
+
+
+	_así, como con diversos matices y tonos de pintura en relación al ángulo de incidencia de la luz y los ángulos 
+
+	de la morfología del objeto respectivo ó geometría
+
+
+	
+	Card Opacity:
+	_____________
+
+	_éste nodo "Card Opacity", nos pemritirá poder hacer utilizable el canal alplha, aplicados a las texturas por
+
+	medio del canal de "Transparency/Color"
+
+
+	_para que así, podamos utilizar ésta información del canal alpha, para la generación de mattes, normal map,
+
+	depth map, otros
+
+
+	_ya que directamente con la relación de nodos convencional no sería posible que ésta información adicional
+
+	a la textura del canal difuso sea comtemplada para los otros procesos externos a la representación de la imágen
+
+
+
+	Matte Shadow:
+	_____________
+
+	_éste nodo "Card Opacity", nos pemritirá realizar el proceso camara mapping, para que asi, podamos proyectar
+
+	una textura sobre un conjunto de geometría que conformará tanto un fondo como un suelo
+
+
+	_para que así, las sombras de los objetos 3d, sean proyectadas sobre el suelo y a su vez, sobre la textura
+
+	respectiva proyectada 
+
+
+	_para que así, haya una coherencia entre la parte de la imágen de fondo y la imágen del suelo emulando así,
+
+	que el objeto se encuentra en el lugar que representa la textura proyectada, gracias a las sombras generadas
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

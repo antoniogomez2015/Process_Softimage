@@ -11,48 +11,20 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	Flakes:
-	______
+	Camara_Map_Mip:
+	______________
+
+	_de ésta manera, ahora debemos de crear un nuevo nodo estando aún en el panel render tree ó en el panel
+
+	material manager
 
 
-	_Reflectivity:
+	_para lo cuál, debemos de ir ha "Node/Material/", y una vez allí, debemos de agregar el nodo
 
-		_
-
-
-	_Color Weight:
-
-		_
+	"Camara_Map_Mip"
 
 
-	_Raytraced Reflection:
 
-		_
-
-
-	_Specularity:
-
-		_
-
-
-	_Density:
-
-		_
-
-
-	_Decay Distance:
-
-		_
-
-
-	_Strength:
-
-		_
-
-
-	_Scale:
-
-		_
 
 
 

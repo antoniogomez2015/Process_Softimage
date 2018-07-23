@@ -1,0 +1,47 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Set:
+	____
+
+	_primeramente debemos de crear al menos un set básico el cuál, representará las morfologías 3d, ha representar
+
+	las cuáles, por lo general y en su conjunto representarán un suelo y un fondo
+
+
+	_para que así, ésta geometría base pueda ser mapeada posteriormente por la textura utilizada en el proceso
+
+	de camara mapping
+
+
+	_para lo cuál, en sets, complejos podremos utilizar la opción de "Rotoscopy", para que así, podamos ubicar la
+
+	misma imágen a proyectar de fondo en un viewport, para que así, podamos tener referencia a la hora de modelar
+
+
+	_las áreas claves y básicas de interés ha representar por el mapeado de cámara posteriormente
+
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

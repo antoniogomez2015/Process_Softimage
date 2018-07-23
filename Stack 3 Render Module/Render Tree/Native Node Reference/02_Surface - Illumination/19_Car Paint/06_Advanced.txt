@@ -1,0 +1,65 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Advanced:
+	_________
+
+
+	_Overall Shader Effect:
+
+
+		_Global Effect:
+
+			_éste parámetro nos pemirtirá hacer ajustes sobre la luminancia global del material de ésta
+
+			manera, con un valor de "0",la luminocidad no se verá afectada 
+
+
+			_más si indicamos valores superiores ha "0", y mayores que "1", ya podremos ha comenzar ha ver
+
+			incrementos en la luminancia general del material lo cuál, resaltará los colores y el efecto
+
+			en general
+
+
+
+	_Indirect Lighting:
+
+		
+		_Global Weight:
+
+			_éste parámetro nos permitirá convertir el material en luminicente para que así, éste emita
+
+			luz mientras haya iluminación global en la escena, sea ésta través, de final gather, ó global
+
+			illumination
+
+
+			_de ésta manera, con un valor de "0", la luminicencia será inexistente más con valores
+
+			superioers ha "0", ya se comenzará ha ver la luminicencia ó radiación del material
+
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

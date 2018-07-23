@@ -1,0 +1,85 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Light:
+	______
+
+	_una vez hemos creado el set, de geometría sobre la cuál, vamos ha proyectar la imágen a través, del proceso
+
+	de camara mapping
+
+
+	_debemos ahora de crear al meno una luz en la escena, para lo cuál, debemos de ir ha "Get/Primitive/Light", y
+
+	una vez allí, podremos crear un luz por ejemplo; de tipo "Spot"
+
+
+	_la cuál, debemos de ubicar en la escena según la lógica de la iluminación implícita en la imágen ha proyectar
+
+	para que así, haya coherencia entre la luz ha emular y la luz existente previamente en la imágen de referencia
+
+
+	_para que así, las sombras obtenidas de las geometría que hará de motivo sea correcta y creible y convincente
+
+
+
+
+	Light Options:
+	______________
+
+	_una vez hemos creado la luz y la hemos re ubicado correctamente debemos de entrar en sus propiedades para
+
+	lo cuál, debemos de hacer doble click, en el ícono de light, en el panel explorer, shortcut, "8"
+
+	
+	_la luz debe al menos de emitir algo de luz natural para lo cuál, debemos de ir al "tag", "Soft Light/",
+
+	y una vez allí, dispondremos del parámetro de "Intensity", en el cuál, podremos indicar un valor de "0.5"
+
+
+	_de ésta manera, en las opciones de la luz respectiva debemos ir al "tag", "Soft Light/General/Shadow", y
+
+	una vez allí, debemos activar la opción de "Enable"
+
+
+	_para que así, la luz respectiva ahora pueda emitir sombras así, como también, dispondremos seguidamente de 
+
+	las opciones de "Raytraced Soft Shadows", en la cuál, podremos suavizar las sombras a través, del parámetro
+
+	
+	_"Softness", en el cuál, podremos por ejemplo, indicar un valor de "10", para a continuación indicar un
+
+	valor de "10", también, en el parámetro de "Samples", lo cuál, aumentará la resolución eliminando ruido y 
+
+	artefactos de la sombra suavizada generada
+
+
+
+	NOTA: el sistema de "Matte Shadow", ó camara projection, no requiere la existencia de iluminación global
+
+	sea a través, de final gather, ó global illumination
+
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

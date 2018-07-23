@@ -1,0 +1,42 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Matte Shadow:
+	_____________
+
+	_de ésta manera, ahora debemos de seleccionar la geometría sobre la cuál, será proyectado el sistema de camara
+
+	mapping, y con éste seleccionado debemos de abrir el panel render tree, a través, del shortcut, "7"
+
+
+	_para que así, nos aparezca el nodo del material de la geoemtría ha proyectar, de ésta manera, ahora podremos
+
+	agregar un nuevo nodo yendo ha "Node/Illumination/Matte Shadow"
+
+
+
+
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

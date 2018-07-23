@@ -1,0 +1,46 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Card Opacity:
+	_____________
+
+	_éste nodo "Card Opacity", nos pemritirá poder hacer utilizable el canal alplha, aplicados a las texturas por
+
+	medio del canal de "Transparency/Color"
+
+
+	_para que así, podamos utilizar ésta información del canal alpha, para la generación de mattes, normal map,
+
+	depth map, otros
+
+
+	_ya que directamente con la relación de nodos convencional no sería posible que ésta información adicional
+
+	a la textura del canal difuso sea comtemplada para los otros procesos externos a la representación de la imágen
+
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

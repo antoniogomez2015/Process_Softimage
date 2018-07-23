@@ -1,0 +1,153 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Flakes:
+	______
+
+
+	_Reflectivity:
+
+		_éste parámetro nos pemritirá indicar el color y valor de luminancia que tendrá el efecto de falkes, ó
+
+		copos sobre el material generado
+
+
+		_para lo cuál, dispondremos de un selector de color a través, del cuál, podremos seleccionar una color
+
+		personalizado para la generación del color del efecto
+
+
+
+	_Color Weight:
+
+		_éste parámetro nos permitirá indciar la influencia ó presencia del efecto de ésta manera, podremos
+
+		hacer que el efecto sea más acentuado ó visible sobre el material resultante
+
+
+		_de ésta manera, a través, de valores cercanos ha "0", el efecto será casi imperceptible, más con
+
+		valores superiores ha "1", y cercanos ha "10", el efecto será mucho más acusado y visible sobre el
+
+		material base
+
+
+
+	_Raytraced Reflection:
+
+		_éste parámetro nos pemritirá aumentar la luminancia de la reflexión sobre las áreas con el efecto
+
+		de flakes, de ésta manera, podremos crear diferentes efectos en relación al efecto deseado
+
+
+		_de ésta manera, con valores cercanos ha "0", la radiación adicional será inexistente, más con
+
+		valores superiores ha "0", ya se comenzará a apreciar irradiación sobre el efecto falkes
+
+
+		_la cuál, resaltará el efecto falkes, creando así, diferentes connotaciones y efectos colaterales
+
+		de ésta manera, es recomendable utilizar valores como por ejemplo; "0.1", ó "0.2"
+
+
+
+	_Specularity:
+
+		_éste parámetro nos permitirá hacer varaiones sobre el ángulo de insidencia de la luz sobre la 
+
+		superficie del material, lo que a su vez cambiará las zonas más iluminadas ó especulares 
+
+
+		_las cuáles resaltarán el efecto flakes, en relación a la zona ó morfología que desiemos resaltar
+
+		sobre el motivo en relación a las necesidades de producción
+
+
+
+	_Density:
+
+		_éste parámetro nos pemitirá controlar la intensidad ó influencia de la especularidad sobre el 
+
+		material, lo que a su vez intensificará el efecto flakes, sobre las demás áreas sin el efecto
+
+		flakes
+
+
+		_de ésta manera, con valores cercanos ha "0", el brilo especular adicional será inexistente, más con
+
+		valores superiores ha "0", ya se comenzará a apreciar la especularidad adicional sobre el efecto 
+
+		falkes
+
+
+
+	_Decay Distance:
+
+		_éste parámetro nos pemritirá controlar la influencia del efecto flakes, en relación a los demás
+
+		colores como el primario y el secundario y más próximo a la cámara
+
+
+		_de ésta manera, con valores de "0", el efecto será visible en su totalidad, más con valores 
+
+		superiores ha "0", el efecto tenderá ha desaparecer de sobre el material de forma súbita
+
+
+
+	_Strength:
+
+		_éste parámetro nos permitirá indicar la escala del efecto flakes, ó el tamaño y separación de cada
+
+		"flake", ó copo sobre el material
+
+
+		_de ésta manera, podremos diferentes efectos de pintura en relación al efecto deseado, escala del
+
+		objeto y la cercanía de la cámara
+
+
+		_de éste manera, con valores cercanos ha "0", la escala de efecto y tamaño de flakes, será altamente
+
+		refinada, pequeña y compacta entre si, creando así, un efecto sutil y muy integrado en el material
+
+
+		_más si indicamos valores superiores ha "0", y cercanos por ejemplo, ha "20", la escala del efecto
+
+		será mucho más grande y acusada así, como también, los flakes, estarán bastante separados entre si
+
+
+
+	_Scale:
+
+		_éste parámetro nos permitirá controlar la escala de flakes, en específico de cada uno de éstos de
+
+		ésta manera, podremos crear efecto de escala del efecto flakes, totalmente personalizados
+
+
+		_pudiendo así, tanto ajustar el tamaño ó escala del sistema a través, del parámetro "Strength", 
+
+		como de también, hacer escala de cada flake, respectivamente a través, del parámetro "Scale"
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

@@ -1,0 +1,51 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Image:
+	______
+
+	_para posteriormente entrar en las opciones del nodo "Camara_Map_Mip", haciendo doble click, sobre el nodo en 
+
+	el panel render tree ó material manager
+
+
+	_para que así, podamos entrar en la opción de "New", en la que podremos seleccionar la imágen que utilizaremos
+
+	para proceso de proyección de "camara mapping"
+
+
+	_de ésta manera, ahora podremos ver que cuando hagamos el render a través, del render regions, ahora se verá
+
+	proyectada la imágen respectiva sobre el fondo y el suelo del set 
+
+
+	_y así, como también, el mesh, del motivo también, proyectará sombras sobre el suelo y sobre la imágen 
+
+	proyectada en éste respectivamente
+
+
+
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+
+
+
+
+	Shaders and Render in Softimage
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Matte Shadow:
+	_____________
+
+	_éste nodo "Card Opacity", nos pemritirá realizar el proceso camara mapping, para que asi, podamos proyectar
+
+	una textura sobre un conjunto de geometría que conformará tanto un fondo como un suelo
+
+
+	_para que así, las sombras de los objetos 3d, sean proyectadas sobre el suelo y a su vez, sobre la textura
+
+	respectiva proyectada 
+
+
+	_para que así, haya una coherencia entre la parte de la imágen de fondo y la imágen del suelo emulando así,
+
+	que el objeto se encuentra en el lugar que representa la textura proyectada, gracias a las sombras generadas
+
+
+
+
+	_éste nodo dispone de las siguientes características ó entradas:
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+	
+
+
+
+
+
+

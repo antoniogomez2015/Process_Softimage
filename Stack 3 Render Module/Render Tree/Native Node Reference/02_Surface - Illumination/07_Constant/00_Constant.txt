@@ -24,7 +24,7 @@
 	iluminación global éste materia no aceptará iluminación ambiental y se verá efectado por la sombras, otros
 
 
-	_éste material es especialmete útil para representaciones sóludas de materiales mixtos, otros
+	_éste material es especialmete útil para representaciones sóludos de materiales mixtos, otros
 
 
 	_también, es utilizado para creación de "Screens", de iluminación para iluminación global y final gather,
